@@ -1,0 +1,49 @@
+.hf-agent-mail .field-value {
+  &:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+    content: '\f003';
+  }
+}
+
+.hf-agent-skype .field-value {
+  &:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+    content: '\f17e';
+  }
+}
+
+
+.hf-agent-contact-information {
+  margin-bottom: 10px;
+  .group-field-item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.agent-detail {
+  margin-bottom: 30px;
+}
+
+.agent-detail-picture {
+    border: 1px solid $color-gray;
+    padding: 1px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.agent-detail {
+    .social {
+        li {
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}

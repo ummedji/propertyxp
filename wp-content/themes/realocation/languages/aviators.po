@@ -1,0 +1,2538 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: aviators\n"
+"POT-Creation-Date: 2014-05-27 10:19+0100\n"
+"PO-Revision-Date: 2014-05-27 10:19+0100\n"
+"Last-Translator: \n"
+"Language-Team: aviators\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_x;_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:10 ../installer/realocation/404.php:10
+msgid "Page Not Found"
+msgstr ""
+
+#: ../comments.php:4 ../comments.php:30
+#: ../installer/realocation/comments.php:4
+#: ../installer/realocation/comments.php:30
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:23 ../installer/realocation/comments.php:23
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:24 ../installer/realocation/comments.php:24
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:25 ../installer/realocation/comments.php:25
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:37 ../installer/realocation/comments.php:37
+#: ../installer/realocation/utility/comments.php:81 ../utility/comments.php:81
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:39 ../installer/realocation/comments.php:39
+#: ../installer/realocation/utility/comments.php:61 ../utility/comments.php:61
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:41 ../installer/realocation/comments.php:41
+#: ../installer/realocation/utility/comments.php:63 ../utility/comments.php:63
+msgid "Email"
+msgstr ""
+
+#: ../content-none.php:2 ../installer/realocation/content-none.php:2
+msgid "Current listing (search, archive or taxonomy) yielded into no results."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:164 ../core/settings/tgm.php:218
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:164
+#: ../installer/realocation/core/settings/tgm.php:218
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:165 ../core/settings/tgm.php:219
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:165
+#: ../installer/realocation/core/settings/tgm.php:219
+msgid "Install Plugins"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:166 ../core/settings/tgm.php:220
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:166
+#: ../installer/realocation/core/settings/tgm.php:220
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:167
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:180
+#: ../core/class-tgm-plugin-activation.php:562 ../core/settings/tgm.php:232
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:180
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:562
+#: ../installer/realocation/core/settings/tgm.php:232
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:181
+#: ../core/class-tgm-plugin-activation.php:2050 ../core/settings/tgm.php:233
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:181
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2050
+#: ../installer/realocation/core/settings/tgm.php:233
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:182
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:589
+#: ../core/class-tgm-plugin-activation.php:2267
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:589
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2267
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:617
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:617
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:797
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:797
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1216
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1216
+msgid "External Link"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1221
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1221
+msgid "Private Repository"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1225
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1225
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1230
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1230
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1233
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1233
+msgid "Required"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1233
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1233
+msgid "Recommended"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1236
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1236
+msgid "Not Installed"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1239
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1239
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1242
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1242
+msgid "Not Updated"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1245
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1245
+msgid "Active"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1446
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1446
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1462
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1462
+msgid "Plugin"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1463
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1463
+msgid "Source"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1464
+#: ../core/plugins/aviators_agents/aviators_agents.php:62
+#: ../core/plugins/aviators_properties/aviators_properties.php:59
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1464
+#: ../installer/realocation/templates/property/submission-property-table.php:18
+#: ../templates/property/submission-property-table.php:18
+msgid "Type"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1465
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:158
+#: ../core/plugins/aviators_transactions/templates/table.php:20
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1465
+#: ../installer/realocation/templates/agency/submission-agency-table.php:16
+#: ../installer/realocation/templates/agent/submission-agent-table.php:19
+#: ../installer/realocation/templates/package/content-package-overview.php:21
+#: ../installer/realocation/templates/property/submission-property-table.php:21
+#: ../templates/agency/submission-agency-table.php:16
+#: ../templates/agent/submission-agent-table.php:19
+#: ../templates/package/content-package-overview.php:21
+#: ../templates/property/submission-property-table.php:21
+msgid "Status"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1483
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1483
+msgid "Install"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1484
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:1484
+msgid "Activate"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2033
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2033
+msgid "Install package not available."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2034
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2034
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2035
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2035
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2036
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2036
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2037
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2037
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2038
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2038
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2049
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2049
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2162
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2162
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2163
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2163
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2163
+#: ../core/class-tgm-plugin-activation.php:2172
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2163
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2172
+msgid "Show Details"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2163
+#: ../core/class-tgm-plugin-activation.php:2172
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2163
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2172
+msgid "Hide Details"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2164
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2164
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2165
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2165
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2169
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2169
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2170
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2170
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2171
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2171
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2172
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2172
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2173
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2173
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:2174
+#: ../installer/realocation/core/class-tgm-plugin-activation.php:2174
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:21
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:33
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:53
+#: ../core/plugins/aviators_submission/aviators_submission.php:56
+#: ../installer/realocation/templates/package/content-package-overview.php:64
+#: ../templates/package/content-package-overview.php:64
+msgid "Agencies"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:22
+msgid "Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:23
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:24
+msgid "Add New Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:25
+msgid "Edit Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:26
+msgid "New Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:27
+msgid "All Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:28
+msgid "View Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:29
+msgid "Search Agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:30
+msgid "No agencies found"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:31
+msgid "No agencies found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.php:43
+msgid "agencies"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.submission.php:18
+#: ../core/plugins/aviators_agents/aviators_agents.submission.php:18
+#: ../core/plugins/aviators_properties/aviators_properties.submission.php:18
+msgid "Read here"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.submission.php:19
+#: ../core/plugins/aviators_agents/aviators_agents.submission.php:19
+#: ../core/plugins/aviators_properties/aviators_properties.submission.php:19
+msgid "I agree with terms and conditions: "
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/aviators_agencies.submission.php:42
+#: ../core/plugins/aviators_agents/aviators_agents.submission.php:42
+#: ../core/plugins/aviators_properties/aviators_properties.submission.php:49
+msgid "You need to confirm you agree with terms and conditions"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:7
+msgid "Aviators: Agencies"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:97
+#: ../core/plugins/aviators_agents/widgets/agents.php:92
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:153
+#: ../core/plugins/aviators_properties/widgets/properties.php:103
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:97
+#: ../core/plugins/aviators_transactions/templates/table.php:6
+#: ../core/plugins/aviators_widgets/widgets/accordion.php:39
+#: ../core/plugins/aviators_widgets/widgets/accordion.php:55
+#: ../core/plugins/aviators_widgets/widgets/features.php:64
+#: ../core/plugins/aviators_widgets/widgets/features.php:84
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:60
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:67
+#: ../core/plugins/aviators_widgets/widgets/text.php:57
+#: ../installer/realocation/templates/agency/submission-agency-table.php:13
+#: ../installer/realocation/templates/agent/submission-agent-table.php:13
+#: ../templates/agency/submission-agency-table.php:13
+#: ../templates/agent/submission-agent-table.php:13
+msgid "Title"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:100
+msgid "Display only agencies assigned to currently displayed property"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:102
+#: ../core/plugins/aviators_agents/widgets/agents.php:97
+msgid "Property Reference field"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:106
+msgid "Display only agencies assigned to currently displayed agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:108
+msgid "Agent Reference field"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:111
+#: ../core/plugins/aviators_agents/widgets/agents.php:109
+#: ../core/plugins/aviators_properties/widgets/properties.php:127
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:131
+msgid "Limit"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:113
+#: ../core/plugins/aviators_agents/widgets/agents.php:111
+#: ../core/plugins/aviators_properties/widgets/properties.php:129
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:133
+msgid "Set -1 for unlimited"
+msgstr ""
+
+#: ../core/plugins/aviators_agencies/widgets/agencies.php:123
+#: ../core/plugins/aviators_agents/widgets/agents.php:121
+#: ../core/plugins/aviators_properties/widgets/properties.php:139
+msgid "Display format"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:23
+#: ../core/plugins/aviators_agents/aviators_agents.php:35
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:10
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:36
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:57
+#: ../core/plugins/aviators_submission/aviators_submission.php:55
+#: ../installer/realocation/templates/package/content-package-overview.php:46
+#: ../templates/package/content-package-overview.php:46
+msgid "Agents"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:24
+msgid "Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:25
+#: ../core/plugins/aviators_agents/aviators_agents.php:26
+msgid "Add New Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:27
+msgid "Edit Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:28
+msgid "New Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:29
+msgid "All Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:30
+msgid "View Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:31
+msgid "Search Agent"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:32
+msgid "No agents found"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:33
+msgid "No agents found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:45
+msgid "agents"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:61
+#: ../core/plugins/aviators_agents/aviators_agents.php:71
+#: ../core/plugins/aviators_properties/aviators_properties.php:58
+#: ../core/plugins/aviators_properties/aviators_properties.php:68
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:103
+msgid "Types"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:63
+#: ../core/plugins/aviators_properties/aviators_properties.php:60
+msgid "Search Types"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:64
+#: ../core/plugins/aviators_properties/aviators_properties.php:61
+msgid "All Types"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:65
+#: ../core/plugins/aviators_properties/aviators_properties.php:62
+msgid "Parent Type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:66
+#: ../core/plugins/aviators_properties/aviators_properties.php:63
+msgid "Parent Type:"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:67
+#: ../core/plugins/aviators_properties/aviators_properties.php:64
+msgid "Edit Type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:68
+#: ../core/plugins/aviators_properties/aviators_properties.php:65
+msgid "Update Type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:69
+#: ../core/plugins/aviators_properties/aviators_properties.php:66
+msgid "Add New Type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:70
+#: ../core/plugins/aviators_properties/aviators_properties.php:67
+msgid "New Type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.php:78
+msgid "agent-type"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:14
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:16
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:20
+msgid "Archive"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:53
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:43
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:73
+msgid "Archive title"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:54
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:61
+#: ../core/plugins/aviators_properties/aviators_properties.php:22
+#: ../core/plugins/aviators_properties/aviators_properties.php:34
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:16
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:53
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:74
+#: ../core/plugins/aviators_submission/aviators_submission.php:54
+#: ../installer/realocation/templates/package/content-package-overview.php:28
+#: ../templates/package/content-package-overview.php:28
+msgid "Properties"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/aviators_agents.settings.php:56
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:76
+msgid "Default Archive display"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/widgets/agents.php:7
+msgid "Aviators: Agents"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/widgets/agents.php:95
+msgid "Display only agents assigned to currently displayed property"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/widgets/agents.php:103
+msgid "Display only agents assigned to currently displayed agency"
+msgstr ""
+
+#: ../core/plugins/aviators_agents/widgets/agents.php:105
+msgid "Agency Reference field"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:29
+msgid "Interest"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:40
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:176
+msgid "Taxes"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:48
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:182
+msgid "Insurance"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:78
+msgid "Monthly payments"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:79
+msgid "Total per Month:"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:96
+msgid "Yearly payments"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:97
+msgid "Total per Year:"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:118
+msgid "Total payments"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:119
+msgid "Total:"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:155
+msgid "Home Price"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:158
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:60
+msgid "Value of your home"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:160
+msgid "Down Price"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:163
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:63
+msgid "Value of your savings"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:165
+msgid "Interest Rate"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:168
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:67
+msgid "Enter loan interest rate"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:170
+msgid "Loan Term"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:172
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:70
+msgid "Months"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:173
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:71
+msgid "Number of months"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:185
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:78
+msgid "Insurance per Year"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:188
+msgid "Calculate"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.php:215
+msgid "Home price cannot be lesser than down price"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:5
+msgid "Calculator"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:9
+msgid "Mortgage"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:41
+msgid "Currency Sign"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:43
+msgid "Display Taxes"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:44
+msgid "Display Insurance"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:47
+msgid "Display Monthly payments table"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:48
+msgid "Display Yearly payments table"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:49
+msgid "Display Total payments table"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:51
+msgid "Interest Color"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:53
+msgid "Taxes Color"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:55
+msgid "Insurance Color"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:59
+msgid "Home Price Default"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:62
+msgid "Down Price Default"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:65
+msgid "Interest Rate Default"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:69
+msgid "Loan Term Default"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:73
+msgid "Taxes Default"
+msgstr ""
+
+#: ../core/plugins/aviators_calculator/aviators_calculator.settings.php:76
+msgid "Insurance Default"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:15
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:27
+msgid "Landlords"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:16
+msgid "Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:17
+msgid "Add New"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:18
+msgid "Add New Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:19
+msgid "Edit Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:20
+msgid "New Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:21
+msgid "All Landlords"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:22
+msgid "View Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:23
+msgid "Search Landlord"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:24
+msgid "No landlords found"
+msgstr ""
+
+#: ../core/plugins/aviators_landlords/aviators_landlords.php:25
+msgid "No landlords found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:65
+#: ../installer/realocation/templates/property/submission-property-table.php:15
+#: ../templates/property/submission-property-table.php:15
+msgid "Price"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:69
+msgid "Tax"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:72
+msgid "Trial period"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:74
+msgid "No Trail"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:75
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:86
+msgid "Day"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:76
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:87
+msgid "Week"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:77
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:88
+msgid "Month"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:78
+msgid "Year"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:80
+msgid "Starting period which will be for free"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:84
+msgid "Subscription period"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:90
+msgid "Period of one subscription, recurring payment will occur once in period"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.metabox.php:93
+msgid "Is Featured"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.paypal.php:24
+#, php-format
+msgid "Subscription for %s"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:29
+#: ../core/plugins/aviators_packages/aviators_packages.php:41
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:12
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:44
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:91
+msgid "Packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:30
+#: ../core/plugins/aviators_submission/aviators_submission.php:33
+msgid "Package"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:31
+#: ../core/plugins/aviators_packages/aviators_packages.php:32
+msgid "Add new package"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:33
+msgid "Edit package"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:34
+msgid "New package"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:35
+msgid "All packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:36
+msgid "View packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:37
+msgid "Search packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:38
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:27
+msgid "No transactions found"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:39
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:28
+msgid "No transactions found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.php:53
+msgid "packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:46
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:71
+msgid "Number of packages in one line"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:49
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:74
+msgid "Merged"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:50
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:75
+msgid "If checked, there will be no space between packages"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:52
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:77
+msgid "Weight"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:63
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:89
+msgid "Go to page display"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:66
+msgid "Title Position"
+msgstr ""
+
+#: ../core/plugins/aviators_packages/aviators_packages.settings.php:69
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:92
+msgid "Disable sidebar"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:17
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:29
+msgid "Profiles"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:18
+msgid "Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:19
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:20
+msgid "Add New Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:21
+msgid "Edit Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:22
+msgid "New Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:23
+msgid "All Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:24
+msgid "View Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:25
+msgid "Search Profile"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:26
+msgid "No profiles found"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:27
+msgid "No profiles found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:39
+msgid "profiles"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:52
+#: ../installer/realocation/page-login.php:12 ../page-login.php:12
+msgid "You are already logged in."
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:56
+msgid "Site configuration does not allow registration."
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:96
+#: ../core/plugins/aviators_submission/aviators_submission.php:159
+msgid "View"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:101
+#: ../core/plugins/aviators_submission/aviators_submission.php:166
+#: ../installer/realocation/utility/comments.php:309
+#: ../utility/comments.php:309
+msgid "Edit"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:180
+msgid "Email address you provided is already registered in our system"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:188
+msgid "Email address you provided is not valid"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:196
+msgid "Username you provided is already registered in our system"
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:240
+msgid ""
+"You have been successfully registered. You will receive an e-mail with your "
+"password."
+msgstr ""
+
+#: ../core/plugins/aviators_profiles/aviators_profiles.php:244
+msgid "Your have updated your profile."
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:23
+msgid "Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:24
+#: ../core/plugins/aviators_properties/aviators_properties.php:25
+msgid "Add New Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:26
+msgid "Edit Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:27
+msgid "New Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:28
+msgid "All Properties"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:29
+msgid "View Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:30
+msgid "Search Property"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:31
+msgid "No Properties found"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:32
+msgid "No Properties found in Trash"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:43
+msgid "properties"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:75
+msgid "property-type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:81
+#: ../core/plugins/aviators_properties/aviators_properties.php:91
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:103
+msgid "Contract Types"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:82
+msgid "Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:83
+msgid "Search Contract Types"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:84
+msgid "All Contract Types"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:85
+msgid "Parent Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:86
+msgid "Parent Contract Type:"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:87
+msgid "Edit Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:88
+msgid "Update Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:89
+msgid "Add New Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:90
+msgid "New Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:98
+msgid "contract-type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:104
+#: ../core/plugins/aviators_properties/aviators_properties.php:114
+#: ../installer/realocation/templates/property/content-property-detail.php:48
+#: ../templates/property/content-property-detail.php:48
+msgid "Amenities"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:105
+msgid "Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:106
+msgid "Search Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:107
+msgid "All Amenities"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:108
+msgid "Parent Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:109
+msgid "Parent Amenity:"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:110
+msgid "Edit Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:111
+msgid "Update Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:112
+msgid "Add New Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:113
+msgid "New Amenity"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:121
+msgid "amenities"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:128
+#: ../core/plugins/aviators_properties/aviators_properties.php:138
+msgid "Locations"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:129
+#: ../installer/realocation/page-submission-property.php:40
+#: ../page-submission-property.php:40
+msgid "Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:130
+msgid "Search Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:131
+msgid "All Locations"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:132
+msgid "Parent Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:133
+msgid "Parent Location:"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:134
+msgid "Edit Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:135
+msgid "Update Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:136
+msgid "Add New Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:137
+msgid "New Location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:145
+msgid "location"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:281
+#: ../core/plugins/aviators_submission/aviators_submission.php:136
+msgid "Add new"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.php:296
+#: ../core/plugins/aviators_submission/aviators_submission.php:200
+#: ../core/plugins/aviators_submission/aviators_submission.php:226
+msgid "Delete"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:94
+msgid "Display Style"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:96
+msgid "Grid"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:97
+msgid "Row"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:98
+msgid "Isotope"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:101
+msgid "Isotope Taxonomy Filter"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:106
+msgid "Display pager"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:109
+msgid "Items per Page"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:116
+#: ../core/plugins/aviators_properties/widgets/properties.php:109
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:113
+msgid "Filter by Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:121
+#: ../core/plugins/aviators_properties/widgets/properties.php:115
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:119
+msgid "Filter by Contract Type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:134
+msgid "Include Sorting"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:135
+msgid "Sorting fields"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:138
+msgid "Default sort by"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:141
+#: ../core/plugins/aviators_properties/widgets/properties.php:124
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:128
+msgid "Default sort order by"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:142
+#: ../core/plugins/aviators_properties/aviators_properties.sort.php:27
+#: ../core/plugins/aviators_properties/widgets/properties.php:125
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:129
+msgid "Ascending"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:142
+#: ../core/plugins/aviators_properties/aviators_properties.sort.php:27
+#: ../core/plugins/aviators_properties/widgets/properties.php:125
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:129
+msgid "Descending"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.settings.php:154
+msgid "Date"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.sort.php:21
+#: ../core/plugins/aviators_properties/widgets/properties.php:121
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:125
+msgid "Sort By"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/aviators_properties.sort.php:26
+msgid "Order"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:5
+msgid "Aviators: Map"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:12
+msgid "Latitude"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:15
+msgid "Longitude"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:16
+msgid "Zoom"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:42
+msgid "Show filter"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:53
+msgid "Select Filter"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:56
+msgid "Filter is horizontal"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:59
+msgid ""
+"If you wish to overwrite template for map filter, open theme directory and "
+"rename filter-horizontal-sample.php to filter-horizontal.php. Now you can do "
+"custom render of filter."
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:63
+msgid "Height"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:65
+msgid "Width"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:68
+msgid "Filtering on Map"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/map.php:71
+msgid "Enable Geolocation"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties.php:7
+msgid "Aviators: Properties"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:21
+msgid "Aviators: Properties Carousel"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:100
+#: ../core/plugins/aviators_widgets/widgets/generic.php:70
+msgid "Image Url"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:104
+#: ../core/plugins/aviators_widgets/widgets/generic.php:73
+msgid "Add image"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:107
+#: ../core/plugins/aviators_widgets/widgets/generic.php:76
+msgid "Background Color"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:109
+#: ../core/plugins/aviators_widgets/widgets/generic.php:78
+msgid "Transparent"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:110
+msgid "Gray Color"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:111
+#: ../core/plugins/aviators_widgets/widgets/generic.php:79
+#: ../core/settings/sidebars.php:8
+#: ../installer/realocation/core/settings/sidebars.php:8
+msgid "Primary"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:115
+#: ../core/plugins/aviators_widgets/widgets/generic.php:82
+msgid "Use Fullwidth Background"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:117
+#: ../core/plugins/aviators_widgets/widgets/generic.php:84
+#: ../core/plugins/aviators_widgets/widgets/generic.php:90
+msgid "No"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:118
+#: ../core/plugins/aviators_widgets/widgets/generic.php:85
+msgid "Yes"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:122
+msgid "Top/Bottom padding"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:124
+#: ../core/plugins/aviators_widgets/widgets/generic.php:91
+msgid "Small padding"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:125
+#: ../core/plugins/aviators_widgets/widgets/generic.php:92
+msgid "Large padding"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:130
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:138
+#: ../core/plugins/aviators_widgets/widgets/generic.php:95
+msgid "Title position"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:132
+#: ../core/plugins/aviators_widgets/widgets/generic.php:97
+msgid "Left"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:133
+#: ../core/plugins/aviators_widgets/widgets/generic.php:98
+msgid "Center"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:134
+#: ../core/plugins/aviators_widgets/widgets/generic.php:99
+msgid "Right"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:140
+#: ../core/plugins/aviators_widgets/widgets/generic.php:104
+msgid "Default Color"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:141
+#: ../core/plugins/aviators_widgets/widgets/generic.php:105
+msgid "Primary Color"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:146
+msgid "Filter by ID"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:148
+msgid "List ONLY specific properties"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_carousel.php:157
+msgid "Filter by type"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:7
+msgid "Aviators: Properties Slider"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:106
+msgid "Property IDs"
+msgstr ""
+
+#: ../core/plugins/aviators_properties/widgets/properties_slider.php:107
+msgid ""
+"Property IDs separated by comma. If set other filtering criteria will be "
+"ignored"
+msgstr ""
+
+#: ../core/plugins/aviators_settings/aviators_settings.php:33
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:1153
+msgid "Settings"
+msgstr ""
+
+#: ../core/plugins/aviators_settings/aviators_settings.php:74
+msgid "Save"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:180
+msgid "Publish"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:192
+msgid "Unpublish"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:232
+#: ../installer/realocation/page-change-password.php:7
+#: ../page-change-password.php:7
+msgid ""
+"You are not allowed to access this page as anonymous user. Please sign in "
+"before."
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:295
+#, php-format
+msgid "Post \"%s\" was successfully published"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:301
+msgid "You can not publish this post."
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:306
+#, php-format
+msgid "Post \"%s\" was successfully unpublished"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:317
+#, php-format
+msgid "%s was successfully deleted"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:320
+msgid "Do you really want to delete this post: "
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.php:322
+msgid "Yes, delete"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:5
+msgid "Submissions"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:9
+#: ../core/settings/customizations.php:30
+#: ../installer/realocation/core/settings/customizations.php:30
+msgid "General"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:12
+msgid "Terms and Conditions"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:41
+msgid "Frontend Submission Types"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:44
+msgid "Default active Tab"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:47
+msgid "Display Link"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:51
+msgid "Enable Terms and Conditions"
+msgstr ""
+
+#: ../core/plugins/aviators_submission/aviators_submission.settings.php:67
+msgid "Page containing terms and conditions text"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:18
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:30
+msgid "Transactions"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:19
+msgid "Transaction"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:20
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:21
+msgid "Add new transaction"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:22
+msgid "Edit transaction"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:23
+msgid "New Transaction"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:24
+msgid "All Transactions"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:25
+msgid "View Transactions"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:26
+msgid "Search transactions"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:150
+msgid "Cost"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:152
+msgid "Post ID"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:154
+msgid "User ID"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:156
+msgid "Payer ID"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:160
+msgid "Token"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:162
+msgid "Payment Type"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:274
+msgid ""
+"Your paypal - sandbox enviroment is not configured properly. Disabling "
+"payments"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:285
+msgid ""
+"Your paypal - live enviroment is not configured properly. Disabling payments"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:378
+#, php-format
+msgid "You need to pay for %s if you wish to publish it"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:415
+msgid "Already Purchased"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:417
+msgid "Purchase"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.php:421
+msgid "Register First"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.return.php:28
+msgid "Paypal transaction was successful."
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.return.php:54
+msgid "Paypal transaction was canceled."
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.return.php:60
+msgid "Payment failed, please contact site administrator for more information"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:5
+msgid "Payment System"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:9
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:90
+msgid "Paypal"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:12
+msgid "Submission"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:49
+#: ../installer/realocation/page-login.php:23 ../page-login.php:23
+msgid "Username"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:50
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:52
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:54
+msgid "This information is obtained from your paypal account"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:51
+#: ../installer/realocation/page-login.php:28 ../page-login.php:28
+msgid "Password"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:53
+msgid "Signature"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:56
+msgid "Sandbox Username"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:57
+msgid "Sandbox Password"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:58
+msgid "Sandbox Signature"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:60
+msgid "Currency"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:63
+msgid "Property publishing fee"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:66
+msgid "Property publishing taxes"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:70
+msgid "Agent publishing fee"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:73
+msgid "Agent publishing taxes"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:77
+msgid "Agency publishing fee"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:81
+msgid "Agency publishing taxes"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:87
+msgid "Submission system"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/aviators_transactions.settings.php:89
+msgid "Free"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/templates/table.php:12
+msgid "Post Type"
+msgstr ""
+
+#: ../core/plugins/aviators_transactions/templates/table.php:28
+msgid "Author"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/accordion.php:5
+msgid "Aviators: Accordion"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/accordion.php:46
+#: ../core/plugins/aviators_widgets/widgets/features.php:75
+msgid "Number of items"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/accordion.php:56
+#: ../core/plugins/aviators_widgets/widgets/features.php:86
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:68
+#: ../core/plugins/aviators_widgets/widgets/text.php:61
+msgid "Text or HTML"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/features.php:5
+msgid "Aviators: Features"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/features.php:71
+msgid "Number of columns"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/features.php:85
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:71
+msgid "Icon"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/generic.php:88
+msgid "Increase Top/Bottom padding"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/generic.php:102
+msgid "Title color"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:5
+msgid "Aviators: Hexagons"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:72
+msgid "Button Text"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/hexagon.php:73
+msgid "Button Link"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/templates/hexagons.php:33
+#: ../functions.php:145 ../installer/realocation/functions.php:145
+msgid "Read More"
+msgstr ""
+
+#: ../core/plugins/aviators_widgets/widgets/text.php:5
+msgid "Aviators: Text"
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:275
+msgid "Image support for taxonomies successfully updated"
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:278
+msgid "Image support has been disabled for all taxonomies."
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:749
+msgid "term"
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:800
+#, php-format
+msgid "Associate an image with the %1$s named &#8220;%2$s&#8221;."
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:801
+#, php-format
+msgid "Upload a new image for this %s."
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:802
+#, php-format
+msgid "Remove image from this %s."
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:1157
+msgid "Donate"
+msgstr ""
+
+#: ../core/plugins/taxonomy-images/taxonomy-images.php:1175
+msgid "Manage Settings"
+msgstr ""
+
+#: ../core/settings/customizations.php:35
+#: ../installer/realocation/core/settings/customizations.php:35
+msgid "Map Style"
+msgstr ""
+
+#: ../core/settings/customizations.php:40
+#: ../installer/realocation/core/settings/customizations.php:40
+msgid "Default Map Style"
+msgstr ""
+
+#: ../core/settings/customizations.php:41
+#: ../installer/realocation/core/settings/customizations.php:41
+msgid "Style 1"
+msgstr ""
+
+#: ../core/settings/customizations.php:42
+#: ../installer/realocation/core/settings/customizations.php:42
+msgid "Style 2"
+msgstr ""
+
+#: ../core/settings/customizations.php:43
+#: ../installer/realocation/core/settings/customizations.php:43
+msgid "Style 3"
+msgstr ""
+
+#: ../core/settings/customizations.php:44
+#: ../installer/realocation/core/settings/customizations.php:44
+msgid "Style 4"
+msgstr ""
+
+#: ../core/settings/customizations.php:45
+#: ../installer/realocation/core/settings/customizations.php:45
+msgid "Style 5"
+msgstr ""
+
+#: ../core/settings/customizations.php:46
+#: ../installer/realocation/core/settings/customizations.php:46
+msgid "Style 6"
+msgstr ""
+
+#: ../core/settings/customizations.php:47
+#: ../installer/realocation/core/settings/customizations.php:47
+msgid "Style 7"
+msgstr ""
+
+#: ../core/settings/customizations.php:48
+#: ../installer/realocation/core/settings/customizations.php:48
+msgid "Style 8"
+msgstr ""
+
+#: ../core/settings/customizations.php:49
+#: ../installer/realocation/core/settings/customizations.php:49
+msgid "Style 9"
+msgstr ""
+
+#: ../core/settings/customizations.php:56
+#: ../installer/realocation/core/settings/customizations.php:56
+msgid "Color"
+msgstr ""
+
+#: ../core/settings/customizations.php:61
+#: ../installer/realocation/core/settings/customizations.php:61
+msgid "Default"
+msgstr ""
+
+#: ../core/settings/customizations.php:62
+#: ../installer/realocation/core/settings/customizations.php:62
+msgid "Red"
+msgstr ""
+
+#: ../core/settings/customizations.php:63
+#: ../installer/realocation/core/settings/customizations.php:63
+msgid "Pink"
+msgstr ""
+
+#: ../core/settings/customizations.php:64
+#: ../installer/realocation/core/settings/customizations.php:64
+msgid "Blue"
+msgstr ""
+
+#: ../core/settings/customizations.php:65
+#: ../installer/realocation/core/settings/customizations.php:65
+msgid "Green"
+msgstr ""
+
+#: ../core/settings/customizations.php:66
+#: ../installer/realocation/core/settings/customizations.php:66
+msgid "Cyan"
+msgstr ""
+
+#: ../core/settings/customizations.php:67
+#: ../installer/realocation/core/settings/customizations.php:67
+msgid "Purple"
+msgstr ""
+
+#: ../core/settings/customizations.php:68
+#: ../installer/realocation/core/settings/customizations.php:68
+msgid "Orange"
+msgstr ""
+
+#: ../core/settings/customizations.php:69
+#: ../installer/realocation/core/settings/customizations.php:69
+msgid "Brown"
+msgstr ""
+
+#: ../core/settings/customizations.php:76
+#: ../installer/realocation/core/settings/customizations.php:76
+msgid "Logo"
+msgstr ""
+
+#: ../core/settings/customizations.php:86
+#: ../installer/realocation/core/settings/customizations.php:86
+#: ../installer/realocation/templates/template-palette.php:23
+#: ../templates/template-palette.php:23
+msgid "Layout"
+msgstr ""
+
+#: ../core/settings/customizations.php:91
+#: ../installer/realocation/core/settings/customizations.php:91
+#: ../installer/realocation/templates/template-palette.php:26
+#: ../templates/template-palette.php:26
+msgid "Wide"
+msgstr ""
+
+#: ../core/settings/customizations.php:92
+#: ../installer/realocation/core/settings/customizations.php:92
+#: ../installer/realocation/templates/template-palette.php:27
+#: ../templates/template-palette.php:27
+msgid "Boxed"
+msgstr ""
+
+#: ../core/settings/customizations.php:100
+#: ../installer/realocation/core/settings/customizations.php:100
+#: ../installer/realocation/templates/template-palette.php:82
+#: ../templates/template-palette.php:82
+msgid "Header Variant"
+msgstr ""
+
+#: ../core/settings/customizations.php:105
+#: ../core/settings/customizations.php:119
+#: ../core/settings/customizations.php:133
+#: ../installer/realocation/core/settings/customizations.php:105
+#: ../installer/realocation/core/settings/customizations.php:119
+#: ../installer/realocation/core/settings/customizations.php:133
+#: ../installer/realocation/templates/template-palette.php:86
+#: ../installer/realocation/templates/template-palette.php:106
+#: ../installer/realocation/templates/template-palette.php:127
+#: ../templates/template-palette.php:86 ../templates/template-palette.php:106
+#: ../templates/template-palette.php:127
+msgid "Dark"
+msgstr ""
+
+#: ../core/settings/customizations.php:106
+#: ../core/settings/customizations.php:120
+#: ../core/settings/customizations.php:134
+#: ../installer/realocation/core/settings/customizations.php:106
+#: ../installer/realocation/core/settings/customizations.php:120
+#: ../installer/realocation/core/settings/customizations.php:134
+#: ../installer/realocation/templates/template-palette.php:87
+#: ../installer/realocation/templates/template-palette.php:107
+#: ../installer/realocation/templates/template-palette.php:128
+#: ../templates/template-palette.php:87 ../templates/template-palette.php:107
+#: ../templates/template-palette.php:128
+msgid "Light"
+msgstr ""
+
+#: ../core/settings/customizations.php:114
+#: ../installer/realocation/core/settings/customizations.php:114
+msgid "Map Filter Variant"
+msgstr ""
+
+#: ../core/settings/customizations.php:128
+#: ../installer/realocation/core/settings/customizations.php:128
+#: ../installer/realocation/templates/template-palette.php:124
+#: ../templates/template-palette.php:124
+msgid "Footer Variant"
+msgstr ""
+
+#: ../core/settings/customizations.php:142
+#: ../installer/realocation/core/settings/customizations.php:142
+msgid "Background Pattern"
+msgstr ""
+
+#: ../core/settings/customizations.php:174
+#: ../installer/realocation/core/settings/customizations.php:174
+msgid "Enable Customizer"
+msgstr ""
+
+#: ../core/settings/customizations.php:184
+#: ../installer/realocation/core/settings/customizations.php:184
+msgid "Enable Topbar"
+msgstr ""
+
+#: ../core/settings/menus.php:9
+#: ../installer/realocation/core/settings/menus.php:9
+msgid "Main"
+msgstr ""
+
+#: ../core/settings/menus.php:10
+#: ../installer/realocation/core/settings/menus.php:10
+msgid "Header"
+msgstr ""
+
+#: ../core/settings/menus.php:11
+#: ../installer/realocation/core/settings/menus.php:11
+msgid "Anonymous user"
+msgstr ""
+
+#: ../core/settings/menus.php:12
+#: ../installer/realocation/core/settings/menus.php:12
+msgid "Authenticated user"
+msgstr ""
+
+#: ../core/settings/sidebars.php:13
+#: ../installer/realocation/core/settings/sidebars.php:13
+msgid "Topbar Left"
+msgstr ""
+
+#: ../core/settings/sidebars.php:18
+#: ../installer/realocation/core/settings/sidebars.php:18
+msgid "Top: Full Width"
+msgstr ""
+
+#: ../core/settings/sidebars.php:20
+#: ../installer/realocation/core/settings/sidebars.php:20
+msgid "Use for \"Homepage\" and \"Empty page\" page template. No sidebar."
+msgstr ""
+
+#: ../core/settings/sidebars.php:25
+#: ../installer/realocation/core/settings/sidebars.php:25
+msgid "Top"
+msgstr ""
+
+#: ../core/settings/sidebars.php:30
+#: ../installer/realocation/core/settings/sidebars.php:30
+msgid "Content Top"
+msgstr ""
+
+#: ../core/settings/sidebars.php:32 ../core/settings/sidebars.php:39
+#: ../installer/realocation/core/settings/sidebars.php:32
+#: ../installer/realocation/core/settings/sidebars.php:39
+msgid "Use for pages with content."
+msgstr ""
+
+#: ../core/settings/sidebars.php:37
+#: ../installer/realocation/core/settings/sidebars.php:37
+msgid "Content Bottom"
+msgstr ""
+
+#: ../core/settings/sidebars.php:44
+#: ../installer/realocation/core/settings/sidebars.php:44
+msgid "Footer First Column"
+msgstr ""
+
+#: ../core/settings/sidebars.php:49
+#: ../installer/realocation/core/settings/sidebars.php:49
+msgid "Footer Second Column"
+msgstr ""
+
+#: ../core/settings/sidebars.php:54
+#: ../installer/realocation/core/settings/sidebars.php:54
+msgid "Footer Third Column"
+msgstr ""
+
+#: ../core/settings/sidebars.php:59
+#: ../installer/realocation/core/settings/sidebars.php:59
+msgid "Bottom"
+msgstr ""
+
+#: ../core/settings/sidebars.php:61 ../core/settings/sidebars.php:68
+#: ../core/settings/sidebars.php:75
+#: ../installer/realocation/core/settings/sidebars.php:61
+#: ../installer/realocation/core/settings/sidebars.php:68
+#: ../installer/realocation/core/settings/sidebars.php:75
+msgid "Widgets are situated under the main content area and widget."
+msgstr ""
+
+#: ../core/settings/sidebars.php:66
+#: ../installer/realocation/core/settings/sidebars.php:66
+msgid "Footer Lower Left"
+msgstr ""
+
+#: ../core/settings/sidebars.php:73
+#: ../installer/realocation/core/settings/sidebars.php:73
+msgid "Footer Lower Right"
+msgstr ""
+
+#: ../core/settings/sidebars.php:81
+#: ../installer/realocation/core/settings/sidebars.php:81
+msgid "Footer Bottom"
+msgstr ""
+
+#: ../core/settings/tgm.php:221
+#: ../installer/realocation/core/settings/tgm.php:221
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../core/settings/tgm.php:234
+#: ../installer/realocation/core/settings/tgm.php:234
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../functions.php:44 ../installer/realocation/functions.php:44
+msgid "Sticky"
+msgstr ""
+
+#: ../functions.php:51 ../installer/realocation/functions.php:51
+msgid ", "
+msgstr ""
+
+#: ../functions.php:62 ../installer/realocation/functions.php:62
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../functions.php:64 ../installer/realocation/functions.php:64
+msgid "Posted by"
+msgstr ""
+
+#: ../functions.php:64 ../installer/realocation/functions.php:64
+msgid "on"
+msgstr ""
+
+#: ../functions.php:70 ../installer/realocation/functions.php:70
+msgid "Pages:"
+msgstr ""
+
+#: ../functions.php:79 ../installer/realocation/functions.php:79
+msgid "Leave a comment"
+msgstr ""
+
+#: ../functions.php:80 ../installer/realocation/functions.php:80
+msgid "One comment so far"
+msgstr ""
+
+#: ../functions.php:81 ../installer/realocation/functions.php:81
+#, php-format
+msgid "View all % comments"
+msgstr ""
+
+#: ../functions.php:86 ../installer/realocation/functions.php:86
+msgid "Continue reading"
+msgstr ""
+
+#: ../functions.php:98 ../installer/realocation/functions.php:98
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: ../functions.php:102 ../installer/realocation/functions.php:102
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../functions.php:127 ../installer/realocation/functions.php:127
+msgid "Configure"
+msgstr ""
+
+#: ../functions.php:137 ../installer/realocation/functions.php:137
+msgid "<i class=\"fa fa-pencil\"></i> Edit"
+msgstr ""
+
+#: ../functions.php:212 ../installer/realocation/functions.php:212
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../installer/realocation/page-change-password.php:14
+#: ../page-change-password.php:14
+msgid ""
+"Password has been successfully changed. Now you are required to sign in."
+msgstr ""
+
+#: ../installer/realocation/page-change-password.php:17
+#: ../page-change-password.php:17
+msgid "Passwords are not same."
+msgstr ""
+
+#: ../installer/realocation/page-change-password.php:37
+#: ../page-change-password.php:37
+msgid "New password"
+msgstr ""
+
+#: ../installer/realocation/page-change-password.php:42
+#: ../page-change-password.php:42
+msgid "Confirm new password"
+msgstr ""
+
+#: ../installer/realocation/page-change-password.php:46
+#: ../page-change-password.php:46
+msgid "Set new password"
+msgstr ""
+
+#: ../installer/realocation/page-login.php:33 ../page-login.php:33
+msgid "Log In"
+msgstr ""
+
+#: ../installer/realocation/page-packages.php:89 ../page-packages.php:89
+msgid "No packages set for this page"
+msgstr ""
+
+#: ../installer/realocation/page-profile.php:18 ../page-profile.php:18
+msgid "You need to be logged in to access your login page"
+msgstr ""
+
+#: ../installer/realocation/page-properties.php:73 ../page-properties.php:73
+msgid "All"
+msgstr ""
+
+#: ../installer/realocation/page-reset-password.php:26
+#: ../page-reset-password.php:26
+msgid "Username or E-mail"
+msgstr ""
+
+#: ../installer/realocation/page-submission-agency.php:39
+#: ../installer/realocation/page-submission-agent.php:39
+#: ../page-submission-agency.php:39 ../page-submission-agent.php:39
+msgid "Social"
+msgstr ""
+
+#: ../installer/realocation/page-submission-agency.php:44
+#: ../page-submission-agency.php:44
+msgid "Contact"
+msgstr ""
+
+#: ../installer/realocation/page-submission-agency.php:90
+#: ../installer/realocation/page-submission-agent.php:85
+#: ../installer/realocation/page-submission-property.php:105
+#: ../page-submission-agency.php:90 ../page-submission-agent.php:85
+#: ../page-submission-property.php:105
+msgid "Close"
+msgstr ""
+
+#: ../installer/realocation/page-submission-property.php:47
+#: ../page-submission-property.php:47
+msgid "Rooms"
+msgstr ""
+
+#: ../installer/realocation/page-submission-property.php:58
+#: ../page-submission-property.php:58
+msgid "Gallery"
+msgstr ""
+
+#: ../installer/realocation/page-submission-property.php:64
+#: ../page-submission-property.php:64
+msgid "Map"
+msgstr ""
+
+#: ../installer/realocation/searchform.php:3 ../searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: ../installer/realocation/templates/agency/content-agency-submission.php:38
+#: ../installer/realocation/templates/agent/content-agent-submission.php:43
+#: ../installer/realocation/templates/property/content-property-submission.php:46
+#: ../templates/agency/content-agency-submission.php:38
+#: ../templates/agent/content-agent-submission.php:43
+#: ../templates/property/content-property-submission.php:46
+msgid "Buy now!"
+msgstr ""
+
+#: ../installer/realocation/templates/agency/submission-agency-table.php:5
+#: ../installer/realocation/templates/agent/submission-agent-table.php:5
+#: ../installer/realocation/templates/property/submission-property-table.php:6
+#: ../templates/agency/submission-agency-table.php:5
+#: ../templates/agent/submission-agent-table.php:5
+#: ../templates/property/submission-property-table.php:6
+msgid "ID"
+msgstr ""
+
+#: ../installer/realocation/templates/agency/submission-agency-table.php:9
+#: ../templates/agency/submission-agency-table.php:9
+msgid "Image"
+msgstr ""
+
+#: ../installer/realocation/templates/agency/submission-agency-table.php:19
+#: ../installer/realocation/templates/agent/submission-agent-table.php:22
+#: ../installer/realocation/templates/property/submission-property-table.php:24
+#: ../templates/agency/submission-agency-table.php:19
+#: ../templates/agent/submission-agent-table.php:22
+#: ../templates/property/submission-property-table.php:24
+msgid "Actions"
+msgstr ""
+
+#: ../installer/realocation/templates/agent/submission-agent-table.php:16
+#: ../templates/agent/submission-agent-table.php:16
+msgid "Subtitle"
+msgstr ""
+
+#: ../installer/realocation/templates/header-top.php:6
+#: ../templates/header-top.php:6
+msgid "Home"
+msgstr ""
+
+#: ../installer/realocation/templates/header-top.php:28
+#: ../templates/header-top.php:28
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../installer/realocation/templates/package/content-package-overview.php:13
+#: ../installer/realocation/templates/package/submission-index.php:26
+#: ../templates/package/content-package-overview.php:13
+#: ../templates/package/submission-index.php:26
+msgid "You dont have any active package"
+msgstr ""
+
+#: ../installer/realocation/templates/package/content-package-overview.php:20
+#: ../templates/package/content-package-overview.php:20
+msgid "Package Name"
+msgstr ""
+
+#: ../installer/realocation/templates/package/content-package-overview.php:22
+#: ../templates/package/content-package-overview.php:22
+msgid "Objects"
+msgstr ""
+
+#: ../installer/realocation/templates/profile/content-profile-view.php:14
+#: ../templates/profile/content-profile-view.php:14
+msgid "You have active package:"
+msgstr ""
+
+#: ../installer/realocation/templates/profile/content-profile-view.php:18
+#: ../templates/profile/content-profile-view.php:18
+msgid "View details"
+msgstr ""
+
+#: ../installer/realocation/templates/property/content-property-detail.php:25
+#: ../templates/property/content-property-detail.php:25
+msgid "Description"
+msgstr ""
+
+#: ../installer/realocation/templates/property/content-property-detail.php:38
+#: ../templates/property/content-property-detail.php:38
+msgid "Presentation"
+msgstr ""
+
+#: ../installer/realocation/templates/property/submission-property-table.php:9
+#: ../templates/property/submission-property-table.php:9
+msgid "Picture"
+msgstr ""
+
+#: ../installer/realocation/templates/property/submission-property-table.php:12
+#: ../templates/property/submission-property-table.php:12
+msgid "Address"
+msgstr ""
+
+#: ../installer/realocation/templates/template-palette.php:5
+#: ../templates/template-palette.php:5
+msgid "Options"
+msgstr ""
+
+#: ../installer/realocation/templates/template-palette.php:10
+#: ../templates/template-palette.php:10
+msgid "Color Variant"
+msgstr ""
+
+#: ../installer/realocation/templates/template-palette.php:43
+#: ../templates/template-palette.php:43
+msgid "Patterns"
+msgstr ""
+
+#: ../installer/realocation/templates/template-palette.php:102
+#: ../templates/template-palette.php:102
+msgid "Map Filter"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:65 ../utility/comments.php:65
+msgid "Website"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:69 ../utility/comments.php:69
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:82 ../utility/comments.php:82
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:83 ../utility/comments.php:83
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:84 ../utility/comments.php:84
+msgid "Your email address will not be published."
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:85 ../utility/comments.php:85
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:88 ../utility/comments.php:88
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:89 ../utility/comments.php:89
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:90 ../utility/comments.php:90
+msgid "Cancel reply"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:91 ../utility/comments.php:91
+msgid "Post Comment"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:266
+#: ../utility/comments.php:266
+msgid "Pingback:"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:266
+#: ../utility/comments.php:266
+msgid "(Edit)"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:287
+#: ../utility/comments.php:287
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:296
+#: ../utility/comments.php:296
+msgid "Post author"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:304
+#: ../utility/comments.php:304
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../installer/realocation/utility/comments.php:314
+#: ../utility/comments.php:314
+msgid "Reply"
+msgstr ""
+
+#: ../installer/realocation/utility/settings.php:11 ../utility/settings.php:11
+msgid "Analytics"
+msgstr ""
+
+#: ../installer/realocation/utility/settings.php:15 ../utility/settings.php:15
+msgid "Google analytics"
+msgstr ""
+
+#: ../installer/realocation/utility/settings.php:31 ../utility/settings.php:31
+msgid "Tracking Code"
+msgstr ""
+
+#: ../installer/realocation/utility/settings.php:33 ../utility/settings.php:33
+msgid "Domain"
+msgstr ""

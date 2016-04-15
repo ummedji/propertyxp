@@ -1,0 +1,1890 @@
+[02/14/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/14/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/14/2015 4:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 5:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 6:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 7:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 8:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 9:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/14/2015 10:57 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 1:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 2:37 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 5:57 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 6:48 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 7:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 8:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 9:58 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 10:58 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 1:04 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 1:55 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 2:55 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/15/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/15/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 5:59 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 6:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 9:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 10:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/15/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 1:04 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 1:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 2:55 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 3:53 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 4:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 8:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 9:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 1:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 3:35 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/16/2015 3:35 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/16/2015 3:35 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 4:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 5:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 6:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 7:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 8:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 9:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 10:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/16/2015 11:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 1:02 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 1:56 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 2:59 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 4:04 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 4:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 5:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 6:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 7:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 9:48 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 9:48 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 11:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 12:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 2:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 3:47 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/17/2015 3:47 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/17/2015 3:47 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 4:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 5:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 7:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 8:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 9:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 10:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/17/2015 11:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 12:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 1:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 2:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 3:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 4:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 5:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 6:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 8:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 9:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 10:36 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 11:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 2:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/18/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/18/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 4:54 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 5:43 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 6:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 7:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 7:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 8:42 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 9:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/18/2015 11:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 12:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 1:55 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 2:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 3:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 4:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 5:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 6:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 7:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 8:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 9:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 10:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 11:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 12:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 1:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 2:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 3:17 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/19/2015 3:17 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/19/2015 3:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 4:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 5:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 6:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 7:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 8:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 9:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 10:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/19/2015 11:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 12:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 1:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 3:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 4:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 5:42 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 6:41 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 6:41 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 7:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 9:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 10:45 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 11:45 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 12:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 1:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 2:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/20/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/20/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 4:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 5:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 6:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 7:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 8:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 8:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 9:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 10:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/20/2015 11:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 12:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 1:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 2:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 3:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 4:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 5:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 6:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 8:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 9:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 9:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 10:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 11:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 12:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 1:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 2:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/21/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/21/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 4:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 5:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 6:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 7:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 8:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 8:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 9:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 10:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 11:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/21/2015 11:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 12:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 1:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 1:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 2:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 3:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 4:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 5:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 6:48 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 8:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 9:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 10:43 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 11:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 12:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 2:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 3:31 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/22/2015 3:31 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/22/2015 3:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 4:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 5:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 6:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 7:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 8:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 9:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 10:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/22/2015 11:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 1:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 2:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 2:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 3:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 4:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 4:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 5:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 6:46 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 8:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 9:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 10:37 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 11:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 12:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 2:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/23/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/23/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 3:28 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/23/2015 3:28 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/23/2015 3:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 4:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 5:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 6:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 7:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 8:42 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 9:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 9:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 10:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/23/2015 11:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 12:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 2:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 4:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 5:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 6:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 7:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 8:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 9:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 10:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 11:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 12:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 1:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 2:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/24/2015 3:32 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/24/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 4:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 5:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 6:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 7:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 8:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 9:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 10:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 11:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/24/2015 11:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 12:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 12:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 1:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 2:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 4:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 6:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 7:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 8:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 9:37 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 9:37 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 10:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 11:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 12:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 2:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 2:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/25/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/25/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 4:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 5:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 6:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 7:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 9:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 10:40 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/25/2015 11:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 12:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 1:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 2:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 3:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 4:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 5:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 6:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 7:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 8:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 9:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 10:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 11:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 12:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 1:33 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 2:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 2:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 3:27 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/26/2015 3:27 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/26/2015 3:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 4:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 5:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 6:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 7:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 8:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 9:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 10:43 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/26/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 12:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 12:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 1:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 2:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 3:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 4:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 5:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 6:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 7:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 8:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 9:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 10:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 11:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 12:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 1:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 2:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/27/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/27/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 5:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 6:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 7:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 8:41 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 9:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 10:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/27/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 12:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 1:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 2:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 4:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 5:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 6:44 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 8:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 9:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 10:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 11:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 12:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 1:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 2:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[02/28/2015 3:32 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[02/28/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 4:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 5:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 6:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 7:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 8:58 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 8:58 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 9:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 10:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[02/28/2015 11:42 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 12:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 1:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 2:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 3:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 4:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 5:43 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 5:43 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 6:39 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 9:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 10:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 10:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 1:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 2:33 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/01/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/01/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 4:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 5:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 6:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 7:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 8:58 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 8:58 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 9:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 10:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 11:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/01/2015 11:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 12:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 1:38 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 2:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 3:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 4:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 5:40 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 6:36 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 7:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 8:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/02/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/02/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 5:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 6:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 7:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 8:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 10:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/02/2015 11:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 12:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 1:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 2:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 3:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 4:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 5:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 6:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 8:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 9:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 12:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 1:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 2:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/03/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/03/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 4:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 6:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 7:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 8:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 9:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 10:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/03/2015 11:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 12:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 1:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 2:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 4:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 6:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 8:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 9:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 10:25 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 1:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 2:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/04/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/04/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 4:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 5:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 6:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 7:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 8:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 10:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/04/2015 11:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 12:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 1:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 3:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 4:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 5:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 6:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 7:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 8:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 9:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 10:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 11:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 12:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 1:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/05/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/05/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/05/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/05/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/05/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/05/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 4:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 5:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 6:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 7:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 9:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 10:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/05/2015 11:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 12:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 12:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 1:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 2:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 3:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 4:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 5:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 6:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 7:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 8:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 9:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 10:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 12:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 2:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/06/2015 3:32 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/06/2015 3:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 4:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 5:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 7:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 8:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 9:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 10:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/06/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 12:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 1:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 3:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 4:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 6:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 7:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 8:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 9:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 10:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/07/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/07/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 4:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 5:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 6:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 7:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 9:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 10:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/07/2015 11:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 2:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 4:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 6:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 6:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 8:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 9:36 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 10:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 11:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 1:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 2:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/08/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/08/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 4:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 5:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 6:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 9:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 10:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/08/2015 11:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 12:25 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 1:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 2:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 4:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 8:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 9:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 10:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 1:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/09/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/09/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 4:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 5:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 6:49 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 8:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 10:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/09/2015 11:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 1:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 2:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 4:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 5:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 6:47 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 8:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 9:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 10:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 11:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 12:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 1:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 3:18 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/10/2015 3:18 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/10/2015 3:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 4:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 5:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 6:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 7:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 8:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 9:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 10:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/10/2015 11:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 12:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 12:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 1:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 2:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 3:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 4:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 5:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 6:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 8:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/11/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/11/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 4:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 6:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 7:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 8:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 9:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 10:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/11/2015 11:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 12:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 2:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 3:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 4:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 5:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 6:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 7:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 9:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 10:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 11:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 12:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 2:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 3:15 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/12/2015 3:15 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/12/2015 3:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 4:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 5:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 6:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 7:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 8:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 9:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 10:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/12/2015 11:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 1:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 2:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 6:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 7:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 8:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 11:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 11:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/13/2015 3:16 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/13/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 4:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 5:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 6:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 7:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 8:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 10:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/13/2015 11:45 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 12:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 1:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 3:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 4:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 6:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 7:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 9:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 10:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 11:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 12:33 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 1:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 2:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/14/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/14/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 4:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 5:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 6:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 8:46 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 10:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/14/2015 11:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 1:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 2:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 3:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 4:57 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 5:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 6:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 9:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 10:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 11:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 12:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 1:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/15/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/15/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 6:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 7:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 10:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/15/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 1:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 2:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 4:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 5:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 6:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 7:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 9:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 11:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 12:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 1:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 2:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/16/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/16/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 4:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 6:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 7:49 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 8:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 9:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 10:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/16/2015 11:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 12:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 1:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 4:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 5:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 6:45 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 8:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 9:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 10:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 12:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 2:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 3:19 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/17/2015 3:19 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/17/2015 3:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 4:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 5:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 6:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 8:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 10:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/17/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 2:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 8:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 11:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 1:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/18/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/18/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 4:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 6:31 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 8:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 9:59 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 10:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/18/2015 11:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 12:42 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 1:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 2:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 3:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 5:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 6:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 8:25 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 9:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 10:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 2:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/19/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/19/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 4:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 5:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 6:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 7:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 8:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 9:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 10:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/19/2015 11:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 12:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 2:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 3:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 4:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 7:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 8:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 9:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 10:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 11:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/20/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/20/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 6:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 8:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 9:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 10:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/20/2015 11:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 2:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 3:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 4:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 5:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 6:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 10:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 11:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 1:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 2:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/21/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/21/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 4:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 6:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 7:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 9:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 10:41 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/21/2015 11:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 1:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 2:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 3:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 4:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 9:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 11:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 12:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/22/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/22/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 4:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 6:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 8:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 9:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 10:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/22/2015 11:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 12:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 1:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 2:46 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 3:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 4:36 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 5:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 6:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 7:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 8:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 9:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 10:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 12:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 2:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/23/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/23/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 4:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 5:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 6:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 7:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 8:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 10:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/23/2015 11:43 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 12:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 1:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 1:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 2:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 3:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 4:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 5:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 6:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 8:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 9:41 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 11:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 11:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 12:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/24/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/24/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 4:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 5:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 6:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 8:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 9:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 10:52 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/24/2015 11:50 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 2:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 3:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 4:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 5:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 6:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 8:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 9:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 2:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/25/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/25/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 4:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 7:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 8:26 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 9:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 9:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 10:51 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/25/2015 11:36 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 2:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 3:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 5:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 6:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 9:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 10:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 11:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 2:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/26/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/26/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/26/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/26/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 4:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 5:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 6:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 7:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 8:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 9:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 10:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/26/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 12:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 2:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 3:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 4:36 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 5:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 6:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 7:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 8:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 9:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 11:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 12:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 2:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 3:19 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/27/2015 3:19 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/27/2015 3:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 4:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 6:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 7:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 8:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 9:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 10:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/27/2015 11:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 12:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 3:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 5:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 6:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 8:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 9:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 12:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 1:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 2:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/28/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/28/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 4:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 5:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 6:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 7:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 8:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 9:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 10:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/28/2015 11:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 1:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 2:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 3:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 5:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 6:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 9:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 10:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 11:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 12:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 1:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 2:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/29/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/29/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 4:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 8:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 9:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 10:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/29/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 12:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 2:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 3:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 4:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 5:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 6:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 7:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 8:38 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 9:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 10:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 11:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 12:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 1:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/30/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/30/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 4:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 6:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 7:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 8:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 9:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 10:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/30/2015 11:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 12:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 1:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 2:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 3:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 4:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 5:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 6:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 7:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 9:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 10:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 12:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 2:35 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[03/31/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[03/31/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 4:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 6:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 7:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 8:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 9:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 10:46 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[03/31/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 1:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 2:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 3:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 4:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 6:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 7:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 8:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 9:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 10:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 12:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/01/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/01/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 4:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 6:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 8:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 9:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 10:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/01/2015 11:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 12:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 1:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 2:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 3:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 4:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 6:29 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 7:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 8:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 9:39 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 10:46 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 11:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 12:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 1:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 2:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/02/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/02/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 4:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 6:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 7:40 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 8:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 9:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 10:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/02/2015 11:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 12:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 1:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 2:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 3:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 4:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 5:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 6:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 7:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 8:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 9:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 10:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 11:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/03/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/03/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 4:35 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 6:53 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 7:30 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 8:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 9:35 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 10:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/03/2015 11:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 12:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 1:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 2:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 3:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 4:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 5:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 6:39 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 7:45 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 8:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 9:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 11:39 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 11:39 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 1:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/04/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/04/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 4:39 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 6:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 7:33 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 8:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 9:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 10:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/04/2015 11:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 12:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 1:28 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 2:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 3:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 4:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 4:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 5:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 7:43 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 8:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 9:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 10:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 11:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 12:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 2:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/05/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/05/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 4:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 6:50 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 7:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 8:43 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 9:39 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 10:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/05/2015 11:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 1:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 1:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 2:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 3:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 4:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 6:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 7:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 8:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 9:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 11:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 1:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 2:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/06/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/06/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 4:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 6:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 7:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 8:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 8:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 9:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 10:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/06/2015 11:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 12:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 1:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 2:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 3:26 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 4:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 6:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 6:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 7:49 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 8:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 9:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 10:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 11:21 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 12:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 1:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 2:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/07/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/07/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 4:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 6:46 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 7:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 8:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 9:12 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 10:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/07/2015 11:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 12:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 1:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 2:32 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 3:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 4:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 5:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 6:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 7:47 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 8:08 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 9:34 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 10:37 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 11:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 12:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 1:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 2:40 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/08/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/08/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 4:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 5:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 6:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 9:04 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 9:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 10:39 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/08/2015 11:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 12:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 2:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 3:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 4:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 4:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 4:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 7:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 8:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 8:27 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 9:12 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 10:59 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 11:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 12:14 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 1:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 2:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/09/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/09/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 4:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 5:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 6:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 7:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 8:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 9:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 10:18 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/09/2015 11:13 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 12:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 2:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 3:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 4:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 5:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 6:49 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 7:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 8:41 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 9:33 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 10:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 11:42 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 12:40 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 1:27 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 2:19 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/10/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/10/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 4:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 5:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 6:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 7:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 8:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 9:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 10:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/10/2015 11:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 12:31 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 1:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 2:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 3:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 4:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 6:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 7:10 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 8:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 9:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 9:30 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 10:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 11:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 12:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 1:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/11/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/11/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 4:40 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 5:09 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 6:23 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 7:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 8:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 9:37 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 10:25 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/11/2015 11:24 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 12:35 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 1:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 2:38 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 3:23 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 4:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 5:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 6:18 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 7:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 8:19 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 9:20 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 10:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 11:16 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 12:28 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 1:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 2:05 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 3:22 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/12/2015 3:22 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/12/2015 3:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 4:22 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 5:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 6:33 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 7:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 8:29 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 9:32 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 10:20 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/12/2015 11:16 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 12:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 1:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 2:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 3:15 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 4:11 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 5:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 6:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 7:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 8:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 9:13 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 10:07 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 11:14 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 12:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 1:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 2:06 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 3:21 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/13/2015 3:21 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/13/2015 3:21 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 4:35 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 5:08 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 6:11 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 7:10 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 8:17 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 9:39 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 10:34 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/13/2015 11:15 PM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 12:06 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 1:09 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 2:22 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 3:05 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 4:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 4:17 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[04/14/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/14/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/15/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/15/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/16/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/16/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/17/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/17/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/18/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/18/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/19/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/19/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/20/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/20/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/21/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/21/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/22/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/22/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/23/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/23/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/24/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/24/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/25/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/25/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/26/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/26/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/27/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/27/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/28/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/28/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/29/2015 3:21 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/29/2015 3:21 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[04/30/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[04/30/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/01/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/01/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/02/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/02/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/03/2015 3:48 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/03/2015 3:48 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/04/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/04/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/05/2015 3:28 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/05/2015 3:28 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/06/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/06/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/07/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/07/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/08/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/08/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/09/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/09/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/10/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/10/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/11/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/11/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/12/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/12/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/13/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/13/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/14/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/14/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/15/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/15/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/16/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/16/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/17/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/17/2015 3:16 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/18/2015 3:22 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/18/2015 3:22 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/19/2015 3:15 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/19/2015 3:15 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/20/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/20/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/21/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/21/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/22/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/22/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/23/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/23/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/24/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/24/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/25/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/25/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/26/2015 3:18 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/26/2015 3:18 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/27/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/27/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/28/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/28/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/29/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/29/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/30/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/30/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[05/31/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[05/31/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/01/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/01/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/02/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/02/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/03/2015 3:17 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/03/2015 3:17 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/04/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/04/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/05/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/05/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/06/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/06/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/07/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/07/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/08/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/08/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/09/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/09/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/10/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/10/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/11/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/11/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/12/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/12/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/13/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/13/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/14/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/14/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/15/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/15/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/16/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/16/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/17/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/17/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/18/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/18/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/19/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/19/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/20/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/20/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/21/2015 3:14 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/21/2015 3:14 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/22/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/22/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/23/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/23/2015 3:16 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/24/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/24/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/25/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/25/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/26/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/26/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/27/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/27/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/28/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/28/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/29/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/29/2015 3:16 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[06/30/2015 3:16 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[06/30/2015 3:16 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/01/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/01/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/02/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/02/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/03/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/03/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/04/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/04/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/05/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/05/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/06/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/06/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/07/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/07/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/08/2015 3:24 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/08/2015 3:24 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/09/2015 3:27 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/09/2015 3:27 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/10/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/10/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/11/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/11/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/12/2015 3:27 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/12/2015 3:27 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/13/2015 3:33 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/13/2015 3:33 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/14/2015 3:31 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/14/2015 3:31 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/15/2015 3:37 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/15/2015 3:37 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/16/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/16/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/16/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/16/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/17/2015 3:14 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/17/2015 3:14 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/18/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/18/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/19/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/19/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/20/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/20/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/23/2015 7:39 AM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/23/2015 7:39 AM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/23/2015 3:22 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/23/2015 3:22 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/24/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/24/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/25/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/25/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/26/2015 3:13 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/26/2015 3:13 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/27/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/27/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/28/2015 3:28 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/28/2015 3:28 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/29/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/29/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/30/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/30/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[07/31/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[07/31/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/01/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/01/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/02/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/02/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/03/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/03/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/04/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/04/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/05/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/05/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/06/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/06/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/07/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/07/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/08/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/08/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/08/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/08/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/09/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/09/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/10/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/10/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/11/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/11/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/12/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/12/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/13/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/13/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/14/2015 3:21 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/14/2015 3:21 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/15/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/15/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/16/2015 3:25 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/16/2015 3:25 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/17/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/17/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/18/2015 3:14 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/18/2015 3:14 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/19/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/19/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/20/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/20/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/31/2015 5:46 AM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/31/2015 5:46 AM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[08/31/2015 3:15 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[08/31/2015 3:15 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/01/2015 3:22 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/01/2015 3:22 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/02/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/02/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/03/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/03/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/04/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/04/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/05/2015 3:15 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/05/2015 3:15 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/06/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/06/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/07/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/07/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/08/2015 3:07 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/08/2015 3:07 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/09/2015 3:19 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/09/2015 3:19 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/10/2015 3:11 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/10/2015 3:11 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/11/2015 3:34 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/11/2015 3:34 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/12/2015 3:12 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/12/2015 3:12 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/13/2015 3:26 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/13/2015 3:26 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/14/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/14/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/14/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/14/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/15/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/15/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/16/2015 3:20 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/16/2015 3:20 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/17/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/17/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/18/2015 3:35 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/18/2015 3:35 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/19/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/19/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/20/2015 3:10 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/20/2015 3:10 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/30/2015 2:45 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/30/2015 2:45 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[09/30/2015 3:05 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[09/30/2015 3:05 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[10/01/2015 3:23 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[10/01/2015 3:23 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[10/02/2015 3:08 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[10/02/2015 3:08 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[10/03/2015 3:06 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[10/03/2015 3:06 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...
+[10/04/2015 3:09 PM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[10/04/2015 3:09 PM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...

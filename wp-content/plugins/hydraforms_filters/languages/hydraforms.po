@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HydraForms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-27 10:23+0100\n"
+"PO-Revision-Date: 2014-05-27 10:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: Pragmatic Mates <info@pragmaticmates.com>\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../hydraforms_filters.php:18
+msgid "Range Slider"
+msgstr ""
+
+#: ../hydraforms_filters.php:26
+msgid "Carousel Select"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:30
+msgid "Options"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:46
+msgid "No options available"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:75
+msgid "In Array"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:96
+msgid "Mode"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:98
+msgid "Horizontal"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:99
+msgid "Vertical"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:100
+msgid "Fade"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:103
+msgid "Slide Width"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:104
+msgid "Works only with horizontal mode! Otherwise ignored"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:106
+msgid "Min. Slides"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:109
+msgid "Max. Slides"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:112
+msgid "Move Slides"
+msgstr ""
+
+#: ../widgets/CarouselSelect.php:115
+msgid "Enable Pager"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:85
+msgid "In Between"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:109
+msgid "Min. Value"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:113
+msgid "Max. Value"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:117
+msgid "Step"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:122
+msgid "Prefix"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:123
+msgid "Postfix"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:125
+msgid "Has Grid"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:126
+msgid "Hide label"
+msgstr ""
+
+#: ../widgets/RangeSlider.php:127
+msgid "Do <b>not</b> display label for this element"
+msgstr ""

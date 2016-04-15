@@ -1,0 +1,1387 @@
+/*****************************************************************
+ * Title
+ *****************************************************************/
+.hydra-title {
+}
+
+.hydra-title h2 {
+}
+
+.hydra-title .hydra-logo {
+    float: left;
+    margin: 8px 10px 0px 0px;
+}
+
+/*****************************************************************
+ * WordPress Default Table
+ *****************************************************************/
+.wp-list-table {
+}
+
+.wp-list-table .yes {
+    color: green;
+}
+
+.wp-list-table .no {
+    color: red;
+}
+
+.wp-list-table .post-count {
+    text-align: center;
+}
+
+.wp-list-table .post-count .count {
+    background-color: #bbb;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    height: 1.4em;
+    line-height: 1.4em;
+    min-width: .7em;
+    padding: 0 6px;
+}
+
+.wp-list-table .column-views {
+}
+
+.wp-list-table .column-using_hydra {
+    width: 10%;
+}
+
+.wp-list-table .column-of_elements {
+    width: 10%;
+}
+
+/*****************************************************************
+ *
+ *****************************************************************/
+.btn {
+    cursor: pointer;
+    background-color: #2a2e3c;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.tabs-hydra:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+input[type="text"] {
+    margin-right: 10px;
+}
+
+.checkbox {
+    display: inline-block;
+    background-color: transparent;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#hydra-save {
+    margin-right: 20px;
+}
+
+#add-handler,
+#add-new-group,
+#add-new-field {
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 15px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+#add-handler .field-item,
+#add-new-group .field-item,
+#add-new-field .field-item {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+#add-handler .field-item .field-prefix,
+#add-new-group .field-item .field-prefix,
+#add-new-field .field-item .field-prefix {
+    display: inline-block;
+    clear: left;
+}
+
+#add-handler .field-item .machine-name-source,
+#add-new-group .field-item .machine-name-source,
+#add-new-field .field-item .machine-name-source {
+    height: 32px;
+}
+#add-handler .field-item .machine-name,
+#add-new-group .field-item .machine-name,
+#add-new-field .field-item .machine-name {
+    height: 32px;
+}
+
+#add-handler .field-item .chosen-container,
+#add-new-group .field-item .chosen-container,
+#add-new-field .field-item .chosen-container {
+    top: 1px;
+}
+
+#add-handler .field-item.field-type-field-name label,
+#add-new-group .field-item.field-type-field-name label,
+#add-new-field .field-item.field-type-field-name label {
+    margin-left: 50px;
+}
+
+#add-handler .field-item.field-type-field-name .description,
+#add-new-group .field-item.field-type-field-name .description,
+#add-new-field .field-item.field-type-field-name .description {
+    margin-left: 50px;
+}
+
+#add-handler .field-item.field-type-add-field,
+#add-new-group .field-item.field-type-add-field,
+#add-new-field .field-item.field-type-add-field {
+    margin-top: 21px;
+}
+
+#add-handler .field-item.field-type-add-field .btn,
+#add-new-group .field-item.field-type-add-field .btn,
+#add-new-field .field-item.field-type-add-field .btn {
+    background-color: #2a2e3c;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+}
+
+#add-handler .field-item .description,
+#add-new-group .field-item .description,
+#add-new-field .field-item .description {
+    margin-top: 5px;
+}
+
+#add-handler .field-item label,
+#add-new-group .field-item label,
+#add-new-field .field-item label {
+    clear: both;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#edit-form {
+    background-color: #f8f8f8;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#edit-form .field-item {
+    padding: 10px;
+}
+
+#edit-form .field-item label {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    width: 15%;
+}
+
+#edit-form .field-item ul {
+    display: inline-block;
+}
+
+#edit-form .hydra-fieldset {
+    margin: 10px;
+}
+
+#field-delete .cancel {
+    float: left;
+}
+#field-delete .field-type-delete .btn {
+    background-color: red;
+    border: none;
+    float: left;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+}
+
+#hydra-export {
+    background-color: #f8f8f8;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#hydra-export label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#hydra-export ul li label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#hydra-export .field-item {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#hydra-export .field-item:last-child {
+    margin-bottom: 0;
+    border: none;
+}
+
+#hydra-export input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#hydra-import {
+    background-color: #f8f8f8;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#hydra-import .field-type-file {
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+#view-form {
+    background-color: #f8f8f8;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#view-form .field-item {
+    padding: 10px;
+}
+
+#view-form .field-item label {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    width: 15%;
+}
+
+#view-form .field-item ul {
+    display: inline-block;
+}
+
+#view-form .hydra-fieldset {
+    margin: 10px;
+}
+
+.field-item > ul {
+    display: inline-block;
+}
+
+.field-item > label {
+    display: inline-block;
+}
+
+.alert-success {
+    background-color: #ddf5a4;
+    color: green;
+    padding: 10px;
+}
+
+.error {
+    border: 1px solid red !important;
+    color: red;
+}
+
+.hydra-list .delete {
+    color: #464646;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
+    right: 0px;
+}
+
+.hydra-list .edit {
+    color: #464646;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
+    float: right;
+}
+
+.hydra-list .delete {
+    float: none;
+}
+
+.hydra-list .hide-action {
+    margin-left: 15px;
+    float: none;
+    position: relative;
+    top: -2px;
+    outline: none;
+}
+
+.hydra-list .settings-action {
+    margin-left: 15px;
+    position: relative;
+    top: 1px;
+    outline: none;
+}
+
+.hydra-list .error-form {
+    border: 1px solid red !important;
+    color: red;
+}
+
+.hydra-sort .inner > div {
+    display: inline-block
+}
+
+.hydra-sort .inner > a {
+    display: inline-block
+}
+
+.fieldset-title .inputs > div {
+    display: inline-block
+}
+
+.fieldset-title .inputs > a {
+    display: inline-block
+}
+
+.fieldset-title > .field-name {
+    color: #6f6f6f;
+}
+
+.field-name {
+    display: inline-block;
+}
+
+.error-messages {
+    background-color: #f1b2b5;
+    padding: 10px;
+    color: darkred;
+}
+
+.hydra-list {
+    font-family: Arial;
+    padding-right: 15px;
+}
+
+.hydra-list ul.hydra-sort {
+    border-width: 0px
+}
+
+.hydra-list .fieldset {
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.hydra-list .fieldset-title h2 {
+    color: #464646;
+    font-size: 16px;
+    display: inline;
+    padding: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.hydra-list .select-chosen {
+    width: 130px
+}
+
+.hydra-list .field-type-save {
+    margin-top: 20px;
+}
+
+.hydra-list.hydra-fields .fieldset {
+    border-radius: 3px;
+}
+
+.hydra-list.hydra-fields li.parent {
+    border: 1px solid #dfdfdf;
+}
+
+.hydra-list .drag {
+    cursor: move;
+    float: left; /*line-height: 18px;*/
+    margin-left: 5px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.hydra-list .fieldset-title {
+    background: #fff; /* Old browsers */
+    margin: 0px;
+    text-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 12px 20px 10px 10px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.hydra-list .fieldset-title .inputs {
+    min-width: 70px;
+    display: inline;
+    float: right;
+    margin-top: -4px;
+}
+
+.hydra-list .fieldset-title .fieldset-title .chosen-container {
+    border-radius: 4px
+}
+
+.hydra-list .fieldset > .inner {
+    /*padding: 4px 5px 0px 3px;*/
+    padding: 5px 7px 1px 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.hydra-list .inner .actions {
+    margin-right: 8px;
+    text-align: right;
+}
+
+.hydra-list .inner .actions span {
+    text-align: left;
+}
+
+.hydra-list .inner .actions li {
+    text-align: left;
+}
+
+.hydra-list li.parent {
+    border: 2px solid #cccccc;
+}
+
+.hydra-list ul.inner {
+    /*background: url('img/bg-pattern-fields.png') top left #ffffff repeat*/
+    background-color: #f9f9f9;
+}
+
+.hydra-list ul.inner {
+    background: url('img/bg-pattern-fields.png') top left #ffffff repeat;
+}
+
+.hydra-list ul.inner {
+    padding: 5px
+}
+
+.hidden-item {
+    opacity: 0.50;
+    transition: opacity 0.5s;
+}
+
+.hydra-list .field {
+    box-shadow: inset 0 0 0 1px #fff;
+    width: 100%;
+    border-radius: 3px;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0); /* IE6-9 */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+
+    margin-bottom: 4px;
+}
+
+.hydra-list .field .inner .item:first-child {
+    font-weight: bold
+}
+
+.drag {
+    cursor: move
+}
+
+.hydra-list .field > .inner {
+    padding: 7px 5px
+}
+
+.hydra-list .field .item {
+    display: inline-block;
+    line-height: 24px;
+    width: 19%;
+    vertical-align: middle;
+}
+
+.hydra-list .field .item:last-child {
+    float: right
+}
+
+.hydra-list .add-new-field {
+    font-weight: bold;
+    position: absolute;
+    height: auto !important;
+    z-index: 10;
+    line-height: 30px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 3px;
+    background: rgb(75, 75, 75); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(75, 75, 75, 1) 0%, rgba(66, 66, 66, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(75, 75, 75, 1)), color-stop(100%, rgba(66, 66, 66, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(75, 75, 75, 1) 0%, rgba(66, 66, 66, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(75, 75, 75, 1) 0%, rgba(66, 66, 66, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(75, 75, 75, 1) 0%, rgba(66, 66, 66, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(75, 75, 75, 1) 0%, rgba(66, 66, 66, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b4b4b', endColorstr='#424242', GradientType=0); /* IE6-9 */
+}
+
+.hydra-list .add-new-field a {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+hydra-sort {
+    padding: 0px !important
+}
+
+.hydra-list .add-new-field .options {
+    display: none;
+    z-index: 10;
+}
+
+.hydra-list .add-new-field .options li {
+    display: block
+}
+
+.hydra-list .add-new-field .options li a {
+    display: block;
+    width: 100%;
+}
+
+.hydra-list .group-actions {
+    /*background: url("http://localhost/inventor/wp-content/plugins/hydra/assets/img/bg-pattern-fields.png") #FFFFFF;*/
+    position: relative;
+    min-height: 30px;
+    padding: 0px 3px 3px;
+    padding-top: 0;
+}
+
+.hydra-list.hydra-views .hydra-fieldset {
+    border: none;
+}
+
+.hydra-list.hydra-views .hydra-fieldset.form-fieldset > div {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.hydra-list.hydra-views .hydra-fieldset.form-fieldset label {
+    width: 15%;
+}
+
+.form-actions {
+    margin-top: 30px
+}
+
+li,
+dd {
+    margin-bottom: 5px
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+body.dragging,
+body.dragging * {
+    cursor: move !important
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ul li.placeholder {
+    position: relative;
+    background-color: #ff8c82 !important; /** More li styles **/
+    height: 5px;
+    width: 100%;
+}
+
+ul li.placeholder:before {
+    position: absolute;
+    background-color: #ff8c82 !important;
+    width: 100%;
+    height: 5px; /** Define arrowhead **/
+}
+
+.chosen-container {
+    position: relative;
+    top: -4px;
+}
+
+.chosen-container-single .chosen-single {
+    box-shadow: none !important;
+    border-radius: 3px;
+    background-color: #fff;
+    background-image: none !important;
+    border: 1px solid #e4e4e4 !important;
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.chosen-container-single .chosen-single div b {
+    background-position: 0 8px
+}
+
+.tabs {
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+}
+
+.tabs ul {
+    margin: 0px
+}
+
+.tabs li {
+    background-color: #f8f8f8;
+    margin: 0px;
+    border: 1px solid #d3d3d3;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    position: relative;
+    bottom: -1px;
+    margin-right: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.tabs li:hover {
+    background-color: #f2f2f2;
+}
+
+.tabs li .active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    bottom: -1px;
+    position: relative;
+}
+
+.tabs li a {
+    padding: 10px 15px;
+    color: #464646;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.tabs .fields {
+    float: left
+}
+
+.tabs .views {
+    float: right;
+    margin-right: 15px;
+}
+
+/****** FIELD EDIT ******/
+.hydra-form {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.hydra-fieldset {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+
+.hydra-fieldset h3 {
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #e6e6e6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(100%, #e6e6e6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2f2f2 0%, #e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2f2f2 0%, #e6e6e6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f2f2f2 0%, #e6e6e6 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f2f2f2 0%, #e6e6e6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#e6e6e6', GradientType=0); /* IE6-9 */
+    margin: 0px;
+    text-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px;
+}
+
+.hydra-fieldset h3 legend {
+    padding: 10px;
+    color: #494949;
+}
+
+.hydra-fieldset .form-group {
+    background-color: #fff;
+}
+
+.hydra-fieldset table {
+    background-color: #fff;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.hydra-fieldset table th {
+    background-color: #f4f4f4;
+}
+
+.hydra-fieldset table tr {
+    border-bottom: 3px solid #fff;
+}
+
+.formatter-settings.formatter-settings-group .hydra-fieldset h3 {
+    background: #ffffff;
+    font-size: 12px;
+}
+
+.formatter-settings.formatter-settings-field .hydra-fieldset h3 {
+    background: transparent
+}
+
+.formatter-settings.formatter-settings-field .hydra-fieldset table {
+    background: transparent
+}
+
+.formatter-settings-group .hydra-fieldset table {
+    background-color: #fff
+}
+
+.formatter-settings-field .hydra-fieldset table {
+    background-color: #fdfdfd
+}
+
+.hydra-fieldset table th {
+    font-weight: normal;
+    width: 20%;
+    text-align: left;
+    padding: 10px;
+}
+
+.hydra-fieldset table td {
+    padding: 10px
+}
+
+.hydra-form .form-group {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hydra-form .field-type-checkbox li {
+    display: inline-block;
+    width: 25%;
+}
+
+.hydra-form textarea {
+    min-height: 150px;
+}
+
+.hydra-form .form-group label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.hydra-form .hydra-fieldset {
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+.hydra-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.hydra-form .hydra-fieldset .form-control {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.hydra-form .hydra-fieldset .field-item {
+    border-bottom: 1px solid #dedede;
+    padding: 15px;
+}
+
+.hydra-form .hydra-fieldset .field-item.form-group {
+    margin-bottom: 0px;
+}
+
+.hydra-form .hydra-fieldset .field-item:last-child {
+    border: none;
+}
+
+.hydra-form .hydra-fieldset .field-item label {
+    font-weight: bold;
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+    margin-top: 5px;
+}
+
+.hydra-form .hydra-fieldset .field-item .input-group {
+    display: inline-block;
+}
+
+.hydra-form .hydra-fieldset .field-item .input-group .description {
+    margin-left: 5px;
+}
+
+.hydra-form .hydra-fieldset .field-item ul {
+    display: inline-block;
+}
+
+.form-tokens {
+    padding: 10px;
+}
+
+div.sidebar-name h3,
+#menu-management .nav-tab,
+#dashboard_plugins h5,
+a.rsswidget,
+#dashboard_right_now td.b,
+#dashboard-widgets h4,
+.tool-box .title,
+#poststuff h3,
+.metabox-holder h3,
+.pressthis a,
+#your-profile legend,
+.inline-edit-row fieldset span.title,
+.inline-edit-row fieldset span.checkbox-title,
+.tablenav .displaying-num,
+.widefat th,
+.quicktags,
+.search {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* WORDPRESS ADMIN STYLING */
+#hydra_meta_box input[type="text"] {
+    min-width: 200px;
+}
+
+#hydra_meta_box {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+#hydra_meta_box {
+    background: transparent;
+}
+
+#hydra_meta_box .hndle {
+    display: none;
+    background: transparent;
+    font-size: 24px;
+    padding-left: 0;
+    border-bottom: none;
+}
+
+#hydra_meta_box .hndle .stuffbox h3 {
+    border: none;
+}
+
+#hydra_meta_box .handlediv {
+    display: none;
+}
+
+#hydra_meta_box h3 {
+    cursor: default;
+}
+
+#hydra_meta_box .inside, .stuffbox .inside {
+    padding: 0;
+}
+
+#hydra_meta_box .inside {
+    margin: 10px 0px 10px
+}
+
+#hydra_meta_box .inside fieldset {
+    margin-top: 20px
+}
+
+#hydra_meta_box h3 legend {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#hydra_meta_box .hydra-fieldset table th {
+    padding-left: 15px;
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+/*#hydra_meta_box .hydra-fieldset { border: none; }*/
+#hydra_meta_box .hydra-fieldset .field-item-wrapper {
+    border-top: 1px solid #dfdfdf;
+    display: inline-block;
+    width: 100%;
+}
+
+#hydra_meta_box .hydra-fieldset .field-item .input-group {
+    display: inline-block;
+}
+
+#hydra_meta_box .hydra-fieldset .field-type-checkbox label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#hydra_meta_box .hydra-fieldset .field-widget-image-wrapper .field-type-text {
+    float: left;
+}
+
+#hydra_meta_box .hydra-fieldset .field-widget-image-wrapper .field-type-text label {
+    float: left;
+    width: auto;
+    top: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+#hydra_meta_box .hydra-fieldset .field-widget-image-wrapper .field-type-text .hydra-image-url {
+    float: left;
+    display: inline-block;
+}
+
+#hydra_meta_box .hydra-fieldset table th label {
+    font-weight: bold;
+}
+
+#hydra_meta_box .hydra-fieldset table td ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+#hydra_meta_box .hydra-fieldset table td ul li input {
+    margin-right: 10px;
+}
+
+#hydra_meta_box .hydra-fieldset table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#hydra_meta_box .hydra-fieldset table tr:last-child {
+    border-bottom: none;
+}
+
+#hydra_meta_box .field-suffix {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#hydra_meta_box .field-prefix {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#hydra_meta_box .field-item {
+    background-color: #f7f7f7;
+    padding: 6px 10px;
+}
+
+#hydra_meta_box .field-item label {
+    display: inline-block;
+    width: 15%;
+}
+
+#hydra_meta_box .field-item ul li .form-control {
+    margin-right: 10px;
+}
+
+#hydra_meta_box .field-item ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+#hydra_meta_box .field-item ul li label {
+    width: 100%;
+}
+
+#hydra_meta_box .form-control.hydra-fieldset.form-fieldset {
+    border: 1px solid #dfdfdf;
+}
+
+#hydra_meta_box .error-form {
+    border: 1px solid red !important;
+}
+
+.alert-danger {
+    border: 1px solid red !important;
+    padding: 10px;
+    background-color: #ffd8d8;
+}
+
+.alert-success {
+    border: 1px solid #19592c !important;
+    padding: 10px;
+    background-color: #ceffd4;
+}
+
+/*.information { border: 1px solid #4b6faa !important; padding: 10px; background-color: #c8e1ff; }*/
+/*.information li.information-message { border-bottom: 1px dotted #4b6faa !important; padding: 5px; }*/
+
+.tutor-wrapper ul.information {
+    border-left: 5px solid #ffE16B;
+    background-color: #fff;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    list-style: disc;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+#message-control {
+    margin-bottom: 20px;
+}
+.tutor-wrapper ul.information li {
+    border-bottom: none;
+}
+
+.tutor-wrapper .btn {
+    margin-top: 20px;
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #FFCF5B));
+    background: -moz-linear-gradient(top, #ffec64 5%, #FFCF5B 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #FFCF5B 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #FFCF5B 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #FFCF5B 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #FFCF5B 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#FFCF5B', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.tutor-wrapper .btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFCF5B), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #FFCF5B 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #FFCF5B 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #FFCF5B 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #FFCF5B 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #FFCF5B 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCF5B', endColorstr='#ffec64', GradientType=0);
+    background-color: #FFCF5B;
+}
+
+.tutor-wrapper .btn:active {
+    position: relative;
+    top: 1px;
+}
+
+/****
+Widgets
+****/
+.widget-inside .form-fieldset {
+    margin-bottom: 15px;
+
+}
+
+.widget-inside .field-item {
+    padding: 10px;
+}
+
+.widget-inside .field-item label {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.widget-inside .field-item .language-inputs {
+    padding: 0px;
+}
+
+.widget-inside .field-item img {
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.hydra-form .btn {
+    background-color: #2a2e3c;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.hydra-page {
+    max-width: 1200px;
+}
+
+.field-item .button-green,
+.form-actions .button-green {
+    -moz-box-shadow: inset 0px 1px 0px 0px #caefab;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
+    box-shadow: inset 0px 1px 0px 0px #caefab;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+    background: -moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background: -webkit-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background: -o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background: -ms-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811', GradientType=0);
+    background-color: #77d42a;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #268a16;
+    display: inline-block;
+    cursor: pointer;
+    color: #306108;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #aade7c;
+    height: auto;
+    width: auto;
+}
+
+.field-item .button-green:hover,
+.form-actions .button-green:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+    background: -moz-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background: -webkit-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background: -o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background: -ms-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a', GradientType=0);
+    background-color: #5cb811;
+}
+
+.field-item .button-green:active,
+.form-actions .button-green:active {
+    position: relative;
+    top: 1px;
+}
+
+.fl {
+    float: left;
+}
+.hydra-page .delete, .cancel {
+    display: inline-block;
+    float: right;
+    margin-left: 5px;
+}
+.hydra-page .delete a {
+    -moz-box-shadow: inset 0px 1px 0px 0px #f5978e;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f5978e;
+    box-shadow: inset 0px 1px 0px 0px #f5978e;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background: -moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24537;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+.hydra-page .delete .a:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+    background-color: #c62d1f;
+}
+
+.hydra-page .cancel {
+    display: inline-block;
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    background-color: #ffffff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.hydra-page .cancel:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=0);
+    background-color: #f6f6f6;
+}
+
+.hydra-page .cancel:active {
+    position: relative;
+    top: 1px;
+}
+
+/******
+BxSlider
+******/
+
+.carousel-select .bx-viewport > ul.list-unstyled {
+    padding-top: 0px; margin-top: 0px;
+    overflow: hidden;
+}
+.carousel-select .bx-viewport > ul.list-unstyled > li {
+    padding: 10px;
+
+}
+.carousel-select .bx-viewport > ul.list-unstyled > li .icon {
+    float: left;
+    max-width: 20%;
+    margin-right: 5px;
+}
+.carousel-select .bx-viewport > ul.list-unstyled > li .checkbox {
+    max-width: 80%;
+    padding: 10px 0px;
+    float: left;
+}
+
+#widget {
+    background-color: transparent;
+    border-width: 0px;
+
+}
+#widget > .form-set,
+#widget .hydra-fieldset {
+    margin-bottom: 20px;
+}
+
+#widget > .form-set {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+#widget > .form-set table {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+#widget > .form-set table tr {
+    border-bottom-width: 0px;
+}
+
+#widget > h3 {
+    background: transparent;
+}
+
+table.token-table tr td {
+    padding: 1px 5px;
+    font-size: 11px;
+    border-right: 1px solid #f0f0f0;
+}
+table.token-table tr {
+    border: 1px solid #f0f0f0;
+}
+table.token-table tr.odd {
+    background-color: #f5f5f5;
+}
+
+table.token-table .token-description {
+    color: #717171;
+    font-size: 10px;
+}
+table.token-table thead td {
+    background-color: #525254;
+    color: #fff;
+}
+table.token-table .expander .switch {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+table.token-table .expander .switch.closed {
+    background: url('img/icon-plus.png') center center;
+}
+
+table.token-table .expander .switch.open {
+    background: url('img/icon-minus.png') center center;
+}
+
+.tokens {
+    padding: 10px;
+}

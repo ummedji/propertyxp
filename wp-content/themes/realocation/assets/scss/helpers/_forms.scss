@@ -1,0 +1,95 @@
+label {
+    cursor: pointer;
+}
+
+input {
+    -webkit-font-smoothing: antialiased;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], textarea, .form-control {
+    -webkit-appearance: none;
+	@include border-radius(0px);
+	@include box-shadow(none);
+	border: 0px;
+	color: $color-black;
+	font-size: 14px;
+	font-weight: 300;
+
+	&:active, &:focus {
+		@include box-shadow(none);
+	}
+
+    #main & {
+        border: 2px solid rgba(0, 0, 0, .1);
+    }
+}
+
+input[type=submit] {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-inversed;
+}
+
+.input-group-addon {
+    background-color: #fff;
+    @include border-radius(0px);
+    border: 2px solid rgba(0, 0, 0, .1);
+    color: $color-black;
+    font-weight: bold;
+}
+
+.form-control-static {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 6px 0px;
+}
+
+.select-wrapper {
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+        background-color: #fff;
+        color: $color-black;
+        content: '\f078';
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 2px;
+        text-align: right;
+        top: 2px;
+        width: 24px;
+        z-index: 2;
+        padding: 4px 8px;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    select {
+        background-color: #fff;
+        @include background-image(none);
+        @include border-radius(0px !important);
+        border: 2px solid rgba(0, 0, 0, .1)  !important;
+        @include box-shadow(none);
+        cursor: pointer;
+        font-size: 14px !important;
+        height: 34px  !important;
+        line-height: 1.42857 !important;
+        padding: 6px 12px !important;
+        text-indent: 0.01px !important;
+        text-overflow: '';
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    select[disabled] {
+        background-color: transparent !important;
+        cursor: not-allowed;
+        @include opacity(.6);
+    }
+}

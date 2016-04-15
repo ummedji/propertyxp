@@ -1,0 +1,9 @@
+[06-May-2015 23:24:10 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.submission.php on line 27
+[07-May-2015 12:57:42 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.settings.php on line 39
+[08-May-2015 11:00:55 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/map.php on line 3
+[15-May-2015 11:59:53 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.settings.php on line 39
+[15-May-2015 16:37:53 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.submission.php on line 27
+[17-Jul-2015 20:41:55 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.settings.php on line 39
+[07-Sep-2015 17:33:53 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.settings.php on line 39
+[12-Sep-2015 00:18:29 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/aviators_properties.submission.php on line 27
+[12-Sep-2015 23:57:09 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/map.php on line 3

@@ -1,0 +1,70 @@
+.hf-agency-contact-information {
+  margin-bottom: 10px;
+  .group-field-item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.hf-agency-mail .field-value {
+  &:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+    content: '\f003';
+  }
+}
+
+.hf-agency-phone-number .field-value {
+  &:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+    content: '\f10b';
+  }
+}
+
+.hf-agency-skype .field-value {
+  &:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+    content: '\f17e';
+  }
+}
+
+.hf-agency-contact-information {
+  margin-bottom: 20px;
+  ul {
+    padding: 0px;
+    li.group-field-item {
+      display: block;
+    }
+  }
+}
+h3.agency-row-title {
+  margin-bottom: 20px;
+}
+
+.agency-detail {
+    margin-bottom: 30px;
+}
+
+.agency-detail-picture {
+    border: 1px solid $color-gray;
+    padding: 1px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.agency-detail {
+    .social {
+        li {
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}

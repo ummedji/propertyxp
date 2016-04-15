@@ -1,0 +1,1248 @@
+<?xml version="1.0"?>
+<data>
+    <postTypes>
+        <postType name="agency">
+            <views>
+                <view post_type="agency" name="default" label="Default"/>
+                <view post_type="agency" name="row" label="Row"/>
+            </views>
+            <fields>
+                <field id="43" parent_id="0" field_name="hf_agency_properties" wrapper="0" post_type="agency"
+                       field_type="reference" field_label="Assigned Properties" widget="checkboxes" weight="0"
+                       cardinality="0">
+                    <attributes hide_label="0" prefix="" suffix="" post_type="property"/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="95" formatter="post" field_name="hf_agency_properties"
+                              field_label="Assigned Properties" view="default" weight="4">
+                            <settings hide_label="0" label_element="h2" display_type="grid" view_id="95"
+                                      formatter_name="95"/>
+                        </view>
+                        <view id="117" formatter="post" field_name="hf_agency_properties"
+                              field_label="Assigned Properties" hidden="1" view="row" weight="5">
+                            <settings hide_label="0" label_element="div" display_type="default" view_id="117"
+                                      formatter_name="117"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="42" parent_id="0" field_name="hf_agency_agents" wrapper="0" post_type="agency"
+                       field_type="reference" field_label="Assigned Agents" widget="checkboxes" weight="1"
+                       cardinality="0">
+                    <attributes hide_label="0" prefix="" suffix="" post_type="agent"/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="94" formatter="post" field_name="hf_agency_agents" field_label="Assigned Agents"
+                              view="default" weight="5">
+                            <settings hide_label="0" label_element="h2" display_type="grid" view_id="94"
+                                      formatter_name="94"/>
+                        </view>
+                        <view id="118" formatter="post" field_name="hf_agency_agents" field_label="Assigned Agents"
+                              hidden="1" view="row" weight="6">
+                            <settings hide_label="0" label_element="div" display_type="default" view_id="118"
+                                      formatter_name="118"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="59" parent_id="0" field_name="hf_agency_social" wrapper="0" post_type="agency"
+                       field_type="social_links" field_label="Social" widget="social_links_widget" weight="2"
+                       cardinality="1">
+                    <attributes hide_label="0" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="119" formatter="social_links_formatter" field_name="hf_agency_social"
+                              field_label="Social" view="row" weight="4">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="119"
+                                      formatter_name="119"/>
+                        </view>
+                        <view id="110" formatter="social_links_formatter" field_name="hf_agency_social"
+                              field_label="Social" view="default" weight="6">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="110"
+                                      formatter_name="110"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="61" parent_id="0" field_name="hf_agency_mail" wrapper="0" post_type="agency"
+                       field_type="text" field_label="Mail" widget="text" weight="3" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="115" formatter="basic" field_name="hf_agency_mail" field_label="Mail" parent_id="114"
+                              view="row" weight="2">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="115"
+                                      formatter_name="115"/>
+                        </view>
+                        <view id="112" formatter="basic" field_name="hf_agency_mail" field_label="Mail" parent_id="113"
+                              view="default" weight="2">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="112"
+                                      formatter_name="112"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="62" parent_id="0" field_name="hf_agency_phone_number" wrapper="0" post_type="agency"
+                       field_type="text" field_label="Phone Number" widget="text" weight="4" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="121" formatter="basic" field_name="hf_agency_phone_number" field_label="Phone Number"
+                              parent_id="114" view="row" weight="1">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="121"
+                                      formatter_name="121"/>
+                        </view>
+                        <view id="120" formatter="basic" field_name="hf_agency_phone_number" field_label="Phone Number"
+                              parent_id="113" view="default" weight="1">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="120"
+                                      formatter_name="120"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="60" parent_id="0" field_name="hf_agency_skype" wrapper="0" post_type="agency"
+                       field_type="text" field_label="Skype" widget="text" weight="5" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="116" formatter="basic" field_name="hf_agency_skype" field_label="Skype"
+                              parent_id="114" view="row" weight="3">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="116"
+                                      formatter_name="116"/>
+                        </view>
+                        <view id="111" formatter="basic" field_name="hf_agency_skype" field_label="Skype"
+                              parent_id="113" view="default" weight="3">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="111"
+                                      formatter_name="111"/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups>
+                <view id="113" formatter="html" field_name="hf_agency_contact_information"
+                      field_label="Contact Information" wrapper="1" view="default">
+                    <settings class="" hide_label="on" display_title="0" view_id="113" formatter_name="113"/>
+                </view>
+                <view id="114" formatter="list" field_name="hf_agency_contact_information"
+                      field_label="Contact Information" wrapper="1" view="row">
+                    <settings class="" hide_label="0" display_title="0" view_id="114" formatter_name="114"/>
+                </view>
+            </groups>
+        </postType>
+        <postType name="agent">
+            <views>
+                <view post_type="agent" name="default" label="Default"/>
+                <view post_type="agent" name="Detail" label="Detail"/>
+                <view post_type="agent" name="row" label="Row"/>
+                <view post_type="agent" name="grid" label="Grid"/>
+            </views>
+            <fields>
+                <field id="34" parent_id="0" field_name="hf_agent_properties" wrapper="0" post_type="agent"
+                       field_type="reference" field_label="Assigned Properties" widget="checkboxes" weight="0"
+                       cardinality="0">
+                    <attributes hide_label="0" prefix="fa fa-envelope" suffix="" post_type="property"/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="76" formatter="post" field_name="hf_agent_properties"
+                              field_label="Assigned Properties" view="default">
+                            <settings hide_label="0" label_element="h2" display_type="grid" view_id="76"
+                                      formatter_name="76"/>
+                        </view>
+                        <view id="80" formatter="post" field_name="hf_agent_properties"
+                              field_label="Assigned Properties" view="Detail" weight="1">
+                            <settings hide_label="0" label_element="div" display_type="default" view_id="80"
+                                      formatter_name="80"/>
+                        </view>
+                        <view id="96" formatter="post" field_name="hf_agent_properties"
+                              field_label="Assigned Properties" hidden="1" view="grid" weight="3">
+                            <settings hide_label="0" label_element="div" display_type="default" view_id="96"
+                                      formatter_name="96"/>
+                        </view>
+                        <view id="84" formatter="post" field_name="hf_agent_properties"
+                              field_label="Assigned Properties" view="row" weight="4">
+                            <settings hide_label="0" label_below="0" label_element="div" display_type="default"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="41" parent_id="0" field_name="hf_agent_subtitle" wrapper="0" post_type="agent"
+                       field_type="text" field_label="Subtitle" widget="text" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="Agents Title" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="98" formatter="basic" field_name="hf_agent_subtitle" field_label="Subtitle"
+                              view="grid" weight="1">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="98"
+                                      formatter_name="98"/>
+                        </view>
+                        <view id="91" formatter="basic" field_name="hf_agent_subtitle" field_label="Subtitle"
+                              view="default" weight="2">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="91"
+                                      formatter_name="91"/>
+                        </view>
+                        <view id="92" formatter="basic" field_name="hf_agent_subtitle" field_label="Subtitle"
+                              view="Detail" weight="3">
+                            <settings class="" hide_label="0" label_element="div" columns="no-columns" view_id="92"
+                                      formatter_name="92"/>
+                        </view>
+                        <view id="93" formatter="basic" field_name="hf_agent_subtitle" field_label="Subtitle" view="row"
+                              weight="3">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="40" parent_id="0" field_name="hf_agent_type" wrapper="0" post_type="agent"
+                       field_type="taxonomy" field_label="Type" widget="select" weight="2" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" taxonomy="agent-types"/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="97" formatter="taxonomy" field_name="hf_agent_type" field_label="Type" view="grid">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" link_bool="0"
+                                      view_id="97" formatter_name="97"/>
+                        </view>
+                        <view id="88" formatter="taxonomy" field_name="hf_agent_type" field_label="Type" view="default"
+                              weight="1">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" link_bool="0"
+                                      view_id="88" formatter_name="88"/>
+                        </view>
+                        <view id="89" formatter="taxonomy" field_name="hf_agent_type" field_label="Type" view="Detail"
+                              weight="2">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" link_bool="0"
+                                      view_id="89" formatter_name="89"/>
+                        </view>
+                        <view id="90" formatter="taxonomy" field_name="hf_agent_type" field_label="Type" hidden="1"
+                              view="row" weight="6">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="0"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="38" parent_id="0" field_name="hf_agent_mail" wrapper="0" post_type="agent" field_type="text"
+                       field_label="Mail" widget="text" weight="3" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="87" formatter="basic" field_name="hf_agent_mail" field_label="Mail" parent_id="85"
+                              view="row" weight="2">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                        <view id="77" formatter="basic" field_name="hf_agent_mail" field_label="Mail" parent_id="79"
+                              view="default" weight="5">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="77"
+                                      formatter_name="77"/>
+                        </view>
+                        <view id="101" formatter="basic" field_name="hf_agent_mail" field_label="Mail" parent_id="99"
+                              view="grid" weight="6">
+                            <settings class="" hide_label="0" label_element="div" columns="no-columns" view_id="101"
+                                      formatter_name="101"/>
+                        </view>
+                        <view id="83" formatter="basic" field_name="hf_agent_mail" field_label="Mail" parent_id="81"
+                              view="Detail" weight="6">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="83"
+                                      formatter_name="83"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="39" parent_id="0" field_name="hf_agent_skype" wrapper="0" post_type="agent" field_type="text"
+                       field_label="Skype" widget="text" weight="4" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="86" formatter="basic" field_name="hf_agent_skype" field_label="Skype" parent_id="85"
+                              view="row" weight="1">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                        <view id="78" formatter="basic" field_name="hf_agent_skype" field_label="Skype" parent_id="79"
+                              view="default" weight="4">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="78"
+                                      formatter_name="78"/>
+                        </view>
+                        <view id="100" formatter="basic" field_name="hf_agent_skype" field_label="Skype" parent_id="99"
+                              view="grid" weight="5">
+                            <settings class="" hide_label="0" label_element="div" columns="no-columns" view_id="100"
+                                      formatter_name="100"/>
+                        </view>
+                        <view id="82" formatter="basic" field_name="hf_agent_skype" field_label="Skype" parent_id="81"
+                              view="Detail" weight="5">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="82"
+                                      formatter_name="82"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="58" parent_id="0" field_name="hf_agent_social" wrapper="0" post_type="agent"
+                       field_type="social_links" field_label="Social" widget="social_links_widget" weight="5"
+                       cardinality="1">
+                    <attributes hide_label="0" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="107" formatter="social_links_formatter" field_name="hf_agent_social"
+                              field_label="Social" view="Detail">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="107"
+                                      formatter_name="107"/>
+                        </view>
+                        <view id="109" formatter="social_links_formatter" field_name="hf_agent_social"
+                              field_label="Social" view="grid" weight="2">
+                            <settings class="" hide_label="on" label_element="div" columns="no-columns" view_id="109"
+                                      formatter_name="109"/>
+                        </view>
+                        <view id="108" formatter="social_links_formatter" field_name="hf_agent_social"
+                              field_label="Social" view="row" weight="5">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                        <view id="106" formatter="social_links_formatter" field_name="hf_agent_social"
+                              field_label="Social" view="default" weight="99">
+                            <settings class="" hide_label="0" label_element="div" columns="no-columns" view_id="106"
+                                      formatter_name="106"/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups>
+                <view id="79" formatter="html" field_name="hf_agent_contact_information"
+                      field_label="Contact Information" wrapper="1" view="default" weight="3">
+                    <settings class="" hide_label="0" display_title="0" view_id="79" formatter_name="79"/>
+                </view>
+                <view id="81" formatter="html" field_name="hf_agent_contact_information"
+                      field_label="Contact Information" wrapper="1" view="Detail" weight="4">
+                    <settings class="" hide_label="on" display_title="0" view_id="81" formatter_name="81"/>
+                </view>
+                <view id="85" formatter="html" field_name="hf_agent_contact_information"
+                      field_label="Contact Information" wrapper="1" view="row">
+                    <settings class="" hide_label="0" display_title="0"/>
+                </view>
+                <view id="99" formatter="html" field_name="hf_agent_contact_information"
+                      field_label="Contact Information" hidden="1" wrapper="1" view="grid" weight="4">
+                    <settings class="" hide_label="0" display_title="0" view_id="99" formatter_name="99"/>
+                </view>
+            </groups>
+        </postType>
+        <postType name="landlord">
+            <views>
+                <view post_type="landlord" name="default" label="Default"/>
+            </views>
+            <fields>
+                <field id="75" parent_id="0" field_name="hf_landlord_name" wrapper="0" post_type="landlord"
+                       field_type="text" field_label="Name" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="150" formatter="basic" field_name="hf_landlord_name" field_label="Name" view="default"
+                              weight="99">
+                            <settings/>
+                        </view>
+                    </views>
+                </field>
+                <field id="76" parent_id="0" field_name="hf_landlord_phone" wrapper="0" post_type="landlord"
+                       field_type="text" field_label="Phone" widget="text" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="151" formatter="basic" field_name="hf_landlord_phone" field_label="Phone"
+                              view="default" weight="99">
+                            <settings/>
+                        </view>
+                    </views>
+                </field>
+                <field id="77" parent_id="0" field_name="hf_landlord_address" wrapper="0" post_type="landlord"
+                       field_type="text" field_label="Address" widget="text" weight="2" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="152" formatter="basic" field_name="hf_landlord_address" field_label="Address"
+                              view="default" weight="99">
+                            <settings/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups/>
+        </postType>
+        <postType name="package">
+            <views>
+                <view post_type="package" name="default" label="Default"/>
+            </views>
+            <fields>
+                <field id="74" parent_id="0" field_name="hf_package_subtitle" wrapper="0" post_type="package"
+                       field_type="text" field_label="Subtitle" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="148" formatter="basic" field_name="hf_package_subtitle" field_label="Subtitle"
+                              parent_id="149" view="default" weight="1">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="73" parent_id="0" field_name="hf_package_price" wrapper="0" post_type="package"
+                       field_type="text" field_label="Price" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="147" formatter="basic" field_name="hf_package_price" field_label="Price"
+                              parent_id="149" view="default" weight="2">
+                            <settings class="" hide_label="on" label_below="0" label_element="div"
+                                      columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups>
+                <view id="149" formatter="html" field_name="hf_package_header" field_label="Header" wrapper="1"
+                      view="default">
+                    <settings class="" hide_label="on" display_title="0"/>
+                </view>
+            </groups>
+        </postType>
+        <postType name="profile">
+            <views>
+                <view post_type="profile" name="default" label="Default"/>
+            </views>
+            <fields>
+                <field id="93" parent_id="0" field_name="hf_profile_phone" wrapper="0" post_type="profile"
+                       field_type="text" field_label="Phone" widget="text" weight="0" cardinality="1">
+                    <attributes/>
+                    <widget_settings hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views>
+                        <view id="177" formatter="basic" field_name="hf_profile_phone" field_label="Phone"
+                              view="default" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="94" parent_id="0" field_name="hf_profile_username" wrapper="0" post_type="profile"
+                       field_type="text" field_label="Username" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="178" formatter="basic" field_name="hf_profile_username" field_label="Username"
+                              view="default" weight="99">
+                            <settings/>
+                        </view>
+                    </views>
+                </field>
+                <field id="95" parent_id="0" field_name="hf_profile_email" wrapper="0" post_type="profile"
+                       field_type="text" field_label="Mail" widget="text" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="179" formatter="basic" field_name="hf_profile_email" field_label="Mail" view="default"
+                              weight="99">
+                            <settings/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups/>
+        </postType>
+        <postType name="property">
+            <views>
+                <view post_type="property" name="default" label="Default"/>
+                <view post_type="property" name="row" label="Row"/>
+                <view post_type="property" name="grid" label="Grid"/>
+                <view post_type="property" name="detail" label="Detail"/>
+                <view post_type="property" name="small" label="Small"/>
+                <view post_type="property" name="sidebar" label="Sidebar"/>
+            </views>
+            <fields>
+                <field id="81" parent_id="0" field_name="hf_property_available" wrapper="0" post_type="property"
+                       field_type="date" field_label="Available from" widget="date" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" min="" max=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="174" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              hidden="1" view="detail" weight="11">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d.m.Y"/>
+                        </view>
+                        <view id="176" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              hidden="1" view="sidebar" weight="12">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d-m-y"/>
+                        </view>
+                        <view id="175" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              view="small" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d-m-y"/>
+                        </view>
+                        <view id="173" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              view="grid" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d-m-y"/>
+                        </view>
+                        <view id="172" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              view="row" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d-m-y"/>
+                        </view>
+                        <view id="171" formatter="date" field_name="hf_property_available" field_label="Available from"
+                              view="default" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="d-m-y"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="56" parent_id="0" field_name="hf_property_type" wrapper="0" post_type="property"
+                       field_type="taxonomy" field_label="Type" widget="select" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" taxonomy="types"/>
+                    <widget_settings/>
+                    <default_values items="types"/>
+                    <translations/>
+                    <views>
+                        <view id="139" formatter="taxonomy" field_name="hf_property_type" field_label="Type"
+                              parent_id="144" view="sidebar" weight="2">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="104" formatter="checkboxes" field_name="hf_property_type" field_label="Type"
+                              hidden="1" view="grid" weight="7">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="105" formatter="taxonomy" field_name="hf_property_type" field_label="Type"
+                              parent_id="71" view="detail" weight="8">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="103" formatter="checkboxes" field_name="hf_property_type" field_label="Type"
+                              hidden="1" view="row" weight="10">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="128" formatter="taxonomy" field_name="hf_property_type" field_label="Type" hidden="1"
+                              view="small" weight="10">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="0"/>
+                        </view>
+                        <view id="102" formatter="taxonomy" field_name="hf_property_type" field_label="Type"
+                              view="default" weight="99">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="29" parent_id="0" field_name="hf_property_amenities" wrapper="0" post_type="property"
+                       field_type="taxonomy" field_label="Amenities" widget="checkboxes" weight="2" cardinality="0">
+                    <attributes taxonomy="amenities" hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="130" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              hidden="1" view="small" weight="9">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="58" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              view="detail" weight="9">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="3" columns_class="col-xs-6 col-sm-4"/>
+                        </view>
+                        <view id="51" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              hidden="1" view="grid" weight="9">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="50" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              hidden="1" view="row" weight="9">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="141" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              hidden="1" view="sidebar" weight="10">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                        <view id="49" formatter="checkboxes" field_name="hf_property_amenities" field_label="Amenities"
+                              view="default" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      columns_number="2" columns_class="column"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="33" parent_id="0" field_name="hf_property_location" wrapper="0" post_type="property"
+                       field_type="hierarchy_select" field_label="Location" widget="hierarchy_select_widget" weight="3"
+                       cardinality="1">
+                    <attributes taxonomy="locations" hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="129" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" view="small" weight="1">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="75" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" view="detail" weight="2">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="74" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" view="grid" weight="6">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="73" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" view="row" weight="6">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="on"/>
+                        </view>
+                        <view id="140" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" hidden="1" view="sidebar" weight="11">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="0"/>
+                        </view>
+                        <view id="72" formatter="hierarchy_select_formatter" field_name="hf_property_location"
+                              field_label="Location" view="default" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      link_bool="0"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="32" parent_id="0" field_name="hf_property_map" wrapper="0" post_type="property"
+                       field_type="gmap" field_label="Map" widget="gmap" weight="4" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="132" formatter="basic" field_name="hf_property_map" field_label="Map" hidden="1"
+                              view="small" weight="7">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="68" formatter="basic" field_name="hf_property_map" field_label="Map" hidden="1"
+                              view="row" weight="7">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="143" formatter="basic" field_name="hf_property_map" field_label="Map" hidden="1"
+                              view="sidebar" weight="8">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="69" formatter="basic" field_name="hf_property_map" field_label="Map" hidden="1"
+                              view="grid" weight="8">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="70" formatter="basic" field_name="hf_property_map" field_label="Map" hidden="1"
+                              view="detail" weight="12">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="67" formatter="basic" field_name="hf_property_map" field_label="Map" view="default"
+                              weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="30" parent_id="0" field_name="hf_property_gallery" wrapper="0" post_type="property"
+                       field_type="image" field_label="Gallery" widget="image" weight="5" cardinality="0">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="62" formatter="flexslider_gallery" field_name="hf_property_gallery"
+                              field_label="Gallery" view="detail" weight="1">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" width="840"
+                                      height="500"/>
+                        </view>
+                        <view id="60" formatter="image" field_name="hf_property_gallery" field_label="Gallery"
+                              hidden="1" view="row" weight="8">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="131" formatter="image" field_name="hf_property_gallery" field_label="Gallery"
+                              hidden="1" view="small" weight="8">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="142" formatter="image" field_name="hf_property_gallery" field_label="Gallery"
+                              hidden="1" view="sidebar" weight="9">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="61" formatter="image" field_name="hf_property_gallery" field_label="Gallery"
+                              hidden="1" view="grid" weight="10">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                        <view id="59" formatter="image" field_name="hf_property_gallery" field_label="Gallery"
+                              view="default" weight="99">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="26" parent_id="0" field_name="hf_property_price" wrapper="0" post_type="property"
+                       field_type="number" field_label="Price" widget="number" weight="6" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="$" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="57" formatter="number" field_name="hf_property_price" field_label="Price"
+                              view="detail">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                        <view id="127" formatter="number" field_name="hf_property_price" field_label="Price"
+                              view="small">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                        <view id="138" formatter="number" field_name="hf_property_price" field_label="Price"
+                              parent_id="144" view="sidebar" weight="1">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="3"/>
+                        </view>
+                        <view id="45" formatter="number" field_name="hf_property_price" field_label="Price" view="grid"
+                              weight="5">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                        <view id="38" formatter="number" field_name="hf_property_price" field_label="Price" view="row"
+                              weight="5">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                        <view id="37" formatter="number" field_name="hf_property_price" field_label="Price"
+                              view="default" weight="5">
+                            <settings class="" hide_label="on" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="21" parent_id="0" field_name="hf_property_rooms" wrapper="1" post_type="property"
+                       field_type="fieldset" field_label="Rooms" widget="fieldset" weight="7" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="22" parent_id="21" field_name="hf_property_bedrooms" wrapper="0" post_type="property"
+                       field_type="number" field_label="Beds" widget="number" weight="8" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="20" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="39" view="default" weight="2">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="42" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="40" view="grid" weight="2">
+                            <settings class="col-xs-3" hide_label="0" label_below="0" label_element="div"
+                                      columns="no-columns" format="4"/>
+                        </view>
+                        <view id="21" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="35" view="row" weight="2">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="124" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="122" view="small" weight="4">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="135" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="133" view="sidebar" weight="5">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="54" formatter="number" field_name="hf_property_bedrooms" field_label="Bedrooms"
+                              parent_id="71" view="detail" weight="5">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="23" parent_id="21" field_name="hf_property_bathrooms" wrapper="0" post_type="property"
+                       field_type="number" field_label="Baths" widget="number" weight="9" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="22" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="39" view="default" weight="1">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="41" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="40" view="grid" weight="1">
+                            <settings class="col-xs-3" hide_label="0" label_below="0" label_element="div"
+                                      columns="no-columns" format="4"/>
+                        </view>
+                        <view id="23" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="35" view="row" weight="1">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="123" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="122" hidden="1" view="small" weight="3">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="134" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="133" view="sidebar" weight="4">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="53" formatter="number" field_name="hf_property_bathrooms" field_label="Bathrooms"
+                              parent_id="71" view="detail" weight="4">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="24" parent_id="21" field_name="hf_property_garages" wrapper="0" post_type="property"
+                       field_type="number" field_label="Garages" widget="number" weight="10" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="32" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="35" view="row" weight="3">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="31" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="39" view="default" weight="4">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="0"/>
+                        </view>
+                        <view id="44" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="40" view="grid" weight="4">
+                            <settings class="col-xs-3" hide_label="0" label_below="0" label_element="div"
+                                      columns="no-columns" format="4"/>
+                        </view>
+                        <view id="126" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="122" view="small" weight="6">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="137" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="133" view="sidebar" weight="7">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="56" formatter="number" field_name="hf_property_garages" field_label="Garages"
+                              parent_id="71" view="detail" weight="7">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                    </views>
+                </field>
+                <field id="25" parent_id="21" field_name="hf_property_area" wrapper="0" post_type="property"
+                       field_type="number" field_label="Area" widget="number" weight="11" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="m&lt;sup&gt;2&lt;/sup&gt;" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views>
+                        <view id="33" formatter="number" field_name="hf_property_area" field_label="Area" parent_id="39"
+                              view="default" weight="3">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="0"/>
+                        </view>
+                        <view id="43" formatter="number" field_name="hf_property_area" field_label="Area" parent_id="40"
+                              view="grid" weight="3">
+                            <settings class="col-xs-3" hide_label="0" label_below="0" label_element="div"
+                                      columns="no-columns" format="4"/>
+                        </view>
+                        <view id="34" formatter="number" field_name="hf_property_area" field_label="Area" parent_id="35"
+                              view="row" weight="4">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="col-xs-3"
+                                      format="4"/>
+                        </view>
+                        <view id="125" formatter="number" field_name="hf_property_area" field_label="Area"
+                              parent_id="122" view="small" weight="5">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="136" formatter="number" field_name="hf_property_area" field_label="Area"
+                              parent_id="133" view="sidebar" weight="6">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="0"/>
+                        </view>
+                        <view id="55" formatter="number" field_name="hf_property_area" field_label="Area" parent_id="71"
+                              view="detail" weight="6">
+                            <settings class="" hide_label="0" label_below="0" label_element="div" columns="no-columns"
+                                      format="4"/>
+                        </view>
+                    </views>
+                </field>
+            </fields>
+            <groups>
+                <view id="35" formatter="html" field_name="hf_property_meta" field_label="Meta" wrapper="1" view="row">
+                    <settings class="" display_title="0"/>
+                </view>
+                <view id="39" formatter="html" field_name="hf_property_meta" field_label="Meta" wrapper="1"
+                      view="default">
+                    <settings class="" display_title="0"/>
+                </view>
+                <view id="40" formatter="html" field_name="hf_property_meta" field_label="Meta" wrapper="1" view="grid">
+                    <settings class="" display_title="0"/>
+                </view>
+                <view id="52" formatter="html" field_name="hf_property_meta" field_label="Meta" hidden="1" wrapper="1"
+                      view="detail" weight="10">
+                    <settings class="" display_title="0"/>
+                </view>
+                <view id="71" formatter="table" field_name="hf_property_overview" field_label="Overview" wrapper="1"
+                      view="detail" weight="3">
+                    <settings class="" display_title="0"/>
+                </view>
+                <view id="122" formatter="html" field_name="hf_property_meta" field_label="Meta" hidden="1" wrapper="1"
+                      view="small" weight="2">
+                    <settings class="" display_title="on"/>
+                </view>
+                <view id="133" formatter="html" field_name="hf_property_meta" field_label="Meta" hidden="1" wrapper="1"
+                      view="sidebar" weight="3">
+                    <settings class="" display_title="on"/>
+                </view>
+                <view id="144" formatter="html" field_name="hf_property_information" field_label="Information"
+                      wrapper="1" view="Sidebar">
+                    <settings class="" display_title="0"/>
+                </view>
+            </groups>
+        </postType>
+    </postTypes>
+    <taxonomies/>
+    <taxonomies>
+        <taxonomy vocabulary="agent-types">
+            <term slug="elite" id="46"/>
+        </taxonomy>
+    </taxonomies>
+    <taxonomies/>
+    <taxonomies/>
+    <taxonomies/>
+    <taxonomies>
+        <taxonomy vocabulary="types">
+            <term slug="apartment" id="47"/>
+            <term slug="office" id="48"/>
+            <term slug="villa" id="49"/>
+        </taxonomy>
+        <taxonomy vocabulary="amenities">
+            <term slug="air-conditioning" id="12"/>
+            <term slug="balcony" id="23"/>
+            <term slug="bedding" id="34"/>
+            <term slug="cable-tv" id="13"/>
+            <term slug="cleaning-after-exit" id="24"/>
+            <term slug="cofee-pot" id="35"/>
+            <term slug="computer" id="14"/>
+            <term slug="cot" id="25"/>
+            <term slug="dishwasher" id="36"/>
+            <term slug="dvd" id="15"/>
+            <term slug="fan" id="26"/>
+            <term slug="fridge" id="37"/>
+            <term slug="hairdryer" id="27"/>
+            <term slug="heating" id="38"/>
+            <term slug="hi-fi" id="17"/>
+            <term slug="internet" id="28"/>
+            <term slug="iron" id="39"/>
+            <term slug="juicer" id="18"/>
+            <term slug="lift" id="29"/>
+            <term slug="microwave" id="40"/>
+            <term slug="oven" id="19"/>
+            <term slug="parking" id="30"/>
+            <term slug="parquet" id="41"/>
+            <term slug="radio" id="20"/>
+            <term slug="roof-terrace" id="31"/>
+            <term slug="smoking-allowed" id="42"/>
+            <term slug="terrace" id="21"/>
+            <term slug="toaster" id="32"/>
+            <term slug="towelwes" id="43"/>
+            <term slug="use-of-pool" id="22"/>
+        </taxonomy>
+    </taxonomies>
+    <forms>
+        <form id="1" name="contact_agent" label="Contact Agent" type="form">
+            <translations/>
+            <settings enable_title="on" enable_widget="0" submit_text="Send" class=""/>
+            <fields>
+                <field id="35" parent_id="0" field_name="hf_contact_agent_name" wrapper="0" post_type="contact_agent"
+                       field_type="text" field_label="Name" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="36" parent_id="0" field_name="hf_contact_agent_mail" wrapper="0" post_type="contact_agent"
+                       field_type="text" field_label="Mail" widget="text" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="37" parent_id="0" field_name="hf_contact_agent_message" wrapper="0" post_type="contact_agent"
+                       field_type="textarea" field_label="Message" widget="textarea" weight="2" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" rows="" cols=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+            </fields>
+            <handlers>
+                <handler label="Success" type="message" weight="0" name="success" form_id="1">
+                    <settings enable_title="on" enable_widget="0" submit_text="Send" class=""/>
+                    <translations/>
+                </handler>
+            </handlers>
+        </form>
+        <form id="2" name="contact_agency" label="Contact Agency" type="form">
+            <translations/>
+            <settings enable_title="on" enable_widget="0" submit_text="Submit" class=""/>
+            <fields>
+                <field id="46" parent_id="0" field_name="hf_contact_agency_message" wrapper="0"
+                       post_type="contact_agency" field_type="textarea" field_label="Message" widget="textarea"
+                       weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" rows="" cols=""/>
+                    <widget_settings/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="45" parent_id="0" field_name="hf_contact_agency_mail" wrapper="0" post_type="contact_agency"
+                       field_type="text" field_label="Mail" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="44" parent_id="0" field_name="hf_contact_agency_name" wrapper="0" post_type="contact_agency"
+                       field_type="text" field_label="Name" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+            </fields>
+            <handlers>
+                <handler label="Message" type="message" weight="0" name="message" form_id="2">
+                    <settings message="Thank you for contacting us. We will contact you as soon as possible."/>
+                    <translations/>
+                </handler>
+                <handler label="Mail" type="mail" weight="0" name="mail" form_id="2">
+                    <settings subject="Contact form" mail_to="[agency:hf_agency_mail:value]"
+                              message="[contact_agency:hf_contact_agency_mail:value][contact_agency:hf_contact_agency_name:value]"/>
+                    <translations>
+                        <translation name="settings[subject]">
+                            <language langcode="fr">Contact form</language>
+                            <language langcode="de">Contact form</language>
+                        </translation>
+                    </translations>
+                </handler>
+            </handlers>
+        </form>
+        <form id="4" name="enquire_form" label="Enquire Now" type="form">
+            <translations/>
+            <settings enable_title="on" enable_widget="on" submit_text="Enquire Now" class=""/>
+            <fields>
+                <field id="87" parent_id="0" field_name="hf_enquire_form_full_name" wrapper="0" post_type="enquire_form"
+                       field_type="text" field_label="Full Name" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="Full name" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="47" parent_id="0" field_name="hf_enquire_form_mail" wrapper="0" post_type="enquire_form"
+                       field_type="text" field_label="Your e-mail" widget="text" weight="0" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="49" parent_id="0" field_name="hf_enquire_form_date_from" wrapper="0" post_type="enquire_form"
+                       field_type="date" field_label="Date From" widget="date" weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" min="" max=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="50" parent_id="0" field_name="hf_enquire_form_date_to" wrapper="0" post_type="enquire_form"
+                       field_type="date" field_label="Date To" widget="date" weight="2" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" min="" max=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="48" parent_id="0" field_name="hf_enquire_form_message" wrapper="0" post_type="enquire_form"
+                       field_type="textarea" field_label="Message" widget="textarea" weight="3" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="" suffix="" class="" rows="" cols=""/>
+                    <widget_settings/>
+                    <default_values/>
+                    <translations/>
+                    <views/>
+                </field>
+            </fields>
+            <handlers>
+                <handler label="Message" type="message" weight="0" name="message" form_id="4">
+                    <settings enable_title="on" enable_widget="on" submit_text="Enquire Now" class=""/>
+                    <translations/>
+                </handler>
+                <handler label="Mail" type="mail" weight="0" name="mail" form_id="4">
+                    <settings subject="Enquire form" mail_to="[enquire_form:hf_enquire_form_mail:value]"
+                              message="Hello, &#13;&#10;&#13;&#10;Thank you for your enquiry"/>
+                    <translations>
+                        <translation name="settings[subject]">
+                            <language langcode="fr">Enquire form</language>
+                            <language langcode="de">Enquire form</language>
+                        </translation>
+                    </translations>
+                </handler>
+                <handler label="Mail to administrator" type="mail" weight="0" name="mail_administrator" form_id="4">
+                    <settings enable_title="on" enable_widget="on" submit_text="Enquire Now" class=""/>
+                    <translations/>
+                </handler>
+            </handlers>
+        </form>
+        <form id="5" name="map_properties" label="Search properties" type="filter">
+            <translations>
+                <translation name="label">
+                    <language langcode="fr">Search properties</language>
+                    <language langcode="de">Search properties</language>
+                </translation>
+                <translation name="settings[redirect]">
+                    <language langcode="fr">/properties</language>
+                    <language langcode="de">/properties</language>
+                </translation>
+            </translations>
+            <settings post_type="property" redirect="/properties" enable_title="on" enable_widget="on"
+                      submit_text="Search" class=""/>
+            <fields/>
+            <handlers/>
+        </form>
+        <form id="6" name="properties_horizontal" label="Horizontal Filter" type="filter">
+            <translations/>
+            <settings post_type="property" redirect="/properties" enable_title="on" enable_widget="on"
+                      submit_text="Search" class=""/>
+            <fields>
+                <field id="86" parent_id="0" field_name="hf_property_type_filter" wrapper="0"
+                       post_type="properties_horizontal" field_type="taxonomy" field_label="Type"
+                       widget="carousel_select" weight="0" cardinality="0">
+                    <attributes taxonomy="types"/>
+                    <widget_settings mode="horizontal" slide_width="180" min_slides="1" max_slides="8" move_slides="1"
+                                     pager="0" hide_label="on" placeholder="" prefix="" suffix="" class=""/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="89" parent_id="0" field_name="hf_property_price_filter" wrapper="0"
+                       post_type="properties_horizontal" field_type="number" field_label="Price" widget="range_slider"
+                       weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="$" suffix="" class=""/>
+                    <widget_settings min_value="100000" max_value="500000" step="5000" prefix="" postfix="$"
+                                     has_grid="0" hide_label="0"/>
+                    <default_values items="0"/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="85" parent_id="0" field_name="hf_property_location_filter" wrapper="0"
+                       post_type="properties_horizontal" field_type="hierarchy_select" field_label="Location"
+                       widget="hierarchy_select_widget" weight="99" cardinality="1">
+                    <attributes taxonomy="locations"/>
+                    <widget_settings levels="3" level_1_label="City" level_2_label="Location"
+                                     level_3_label="Sublocation" hide_label="on" class=""/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views/>
+                </field>
+            </fields>
+            <handlers/>
+            <filters>
+                <filter id="39" field_id="86" referrer_id="0" col="value" condition="in_array"/>
+                <filter id="40" field_id="89" referrer_id="0" col="value" condition="in_between"/>
+                <filter id="43" field_id="85" referrer_id="0" col="location" condition="equals"/>
+            </filters>
+        </form>
+        <form id="7" name="properties_vertical" label="Vertical Filter" type="filter">
+            <translations/>
+            <settings post_type="property" redirect="/properties" enable_title="on" enable_widget="on"
+                      submit_text="Search" class=""/>
+            <fields>
+                <field id="92" parent_id="0" field_name="hf_property_location_filter_1" wrapper="0"
+                       post_type="properties_vertical" field_type="hierarchy_select" field_label="Location"
+                       widget="hierarchy_select_widget" weight="0" cardinality="1">
+                    <attributes taxonomy="locations"/>
+                    <widget_settings levels="3" level_1_label="City" level_2_label="Locatio" level_3_label="Sublocation"
+                                     hide_label="on" class="locations"/>
+                    <default_values items="locations"/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="91" parent_id="0" field_name="hf_property_price_filter_1" wrapper="0"
+                       post_type="properties_vertical" field_type="number" field_label="Price" widget="range_slider"
+                       weight="1" cardinality="1">
+                    <attributes hide_label="0" placeholder="" prefix="$" suffix="" class=""/>
+                    <widget_settings min_value="100000" max_value="500000" step="5000" prefix="" postfix="$"
+                                     has_grid="0" hide_label="0"/>
+                    <default_values items="0"/>
+                    <translations/>
+                    <views/>
+                </field>
+                <field id="90" parent_id="0" field_name="hf_property_type_filter_1" wrapper="0"
+                       post_type="properties_vertical" field_type="taxonomy" field_label="Type" widget="select"
+                       weight="2" cardinality="1">
+                    <attributes taxonomy="types"/>
+                    <widget_settings hide_label="on" placeholder="" prefix="" suffix="" class=""/>
+                    <default_values items=""/>
+                    <translations/>
+                    <views/>
+                </field>
+            </fields>
+            <handlers/>
+            <filters>
+                <filter id="45" field_id="91" referrer_id="0" col="value" condition="in_between"/>
+                <filter id="46" field_id="90" referrer_id="0" col="value" condition="equals"/>
+                <filter id="48" field_id="92" referrer_id="0" col="location" condition="equals"/>
+            </filters>
+        </form>
+    </forms>
+</data>

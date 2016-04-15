@@ -1,0 +1,24 @@
+table {
+  font-size: 12px;
+}
+#map_canvas {
+
+  border: 1px solid grey;
+  float: left;
+}
+#map-content {
+  position: relative;
+  
+}
+#listing {
+  width: 210px;
+  overflow: auto;
+  float: left;
+  cursor: pointer;
+  overflow-x: hidden;
+  border: 1px solid lightgrey;
+}
+#controls {
+  text-align: left;
+  padding: 5px 0;
+}

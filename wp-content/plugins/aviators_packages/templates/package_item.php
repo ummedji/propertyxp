@@ -1,0 +1,1 @@
+<li class="<?php print $flag; ?>"><?php print $content; ?></li>

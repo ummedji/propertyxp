@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HydraForms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-27 10:22+0100\n"
+"PO-Revision-Date: 2014-05-27 10:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: Pragmatic Mates <info@pragmaticmates.com>\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../HierarchySelect.php:124 ../HierarchySelect.php:131
+#: ../HierarchySelect.php:149
+msgid "- ANY -"
+msgstr ""
+
+#: ../HierarchySelect.php:186 ../HierarchySelect.php:189
+#: ../HierarchySelect.php:192
+msgid "Equals"
+msgstr ""
+
+#: ../HierarchySelect.php:198
+msgid "Levels"
+msgstr ""
+
+#: ../HierarchySelect.php:201
+msgid "Number of nesting levels"
+msgstr ""
+
+#: ../HierarchySelect.php:203
+msgid "Level 1 Label"
+msgstr ""
+
+#: ../HierarchySelect.php:205
+msgid "Level 2 Label"
+msgstr ""
+
+#: ../HierarchySelect.php:207
+msgid "Level 3 Label"
+msgstr ""
+
+#: ../HierarchySelect.php:366
+msgid "Link to taxonomy page"
+msgstr ""
+
+#: ../hydraforms_hs.php:13
+msgid "Hierarchical Select"
+msgstr ""
+
+#: ../hydraforms_hs.php:27
+msgid "Hierarchical select"
+msgstr ""
+
+#: ../hydraforms_hs.php:42
+msgid "Taxonomy Hierarchy"
+msgstr ""

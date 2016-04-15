@@ -1,0 +1,30 @@
+#contact-map {
+  background-color: #fff;
+  border: 2px solid rgba(0,0,0,0.1);
+  padding: 10px 10px 4px 10px;
+  margin-bottom: 20px;
+  iframe {
+    border-width: 0px !important;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.contact-box {
+  i.fa {
+    margin-right: 10px;
+  }
+}
+
+#contact-form {
+  margin-top: 40px;
+}
+
+.wpcf7 {
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.lang_sel_list_horizontal {
+    float: right;
+    margin-left: 20px;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            display: inline-block;
+            margin-left: 5px;
+            list-style: none;
+        }
+    }
+}

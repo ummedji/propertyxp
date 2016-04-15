@@ -1,0 +1,80 @@
+#menu-social,
+.social {
+	margin: 0px;
+	padding: 0px;
+
+    #header & {
+        margin-top: 7px;
+    }
+
+	li {
+		display: inline-block;
+		margin-left: 20px;
+        font-size: 16px;
+	}
+
+	a {
+		color: rgba(255, 255, 255, .8);
+		font-size: 16px;
+		@include transition(color .2s linear);
+		&:hover {
+			color: #fff;
+		}
+        #header & {
+            font-size: 20px;
+        }
+	}
+}
+
+#menu-social {
+  li {
+    position: relative;
+    a {
+      top: 0px;
+      display: block;
+      text-indent: -9999px;
+      position: absolute;
+      height: 16px;
+      width: 16px;
+    }
+
+    &:first-child {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.widget .social li {
+    margin: 0px 8px 10px 0px;
+}
+
+.social-links {
+    .field-item {
+        a {
+            @include transition(all .2s linear);
+            background-color: $color-primary !important;
+            color: #fff;
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            width: 32px;
+            text-align: center;
+            margin-left: 15px;
+            &:first-child {
+              margin-left: 0px;
+            }
+
+            i {
+              font-size: 16px;
+              line-height: 32px;
+              text-align: center;
+              width: 100%;
+              height: 100%;
+            }
+
+            &:hover {
+                @include border-radius(50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.property-detail-amenities {
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 10px;
+
+        i {
+            font-size: 14px;
+            margin-right: 7px;
+            vertical-align: 0px;
+        }
+
+        .ok {
+            color: $color-primary;
+        }
+
+        .no {
+            color: $color-gray;
+        }
+    }
+}
+
+.property-detail  {
+  .hf-property-overview {
+    .label {
+      color: $color-black;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    table {
+      width: 100%;
+    }
+    tr {
+      border: 3px solid lighten($color-gray, 15%);
+      &.odd {
+        background-color: lighten($color-gray, 15%);
+      }
+      &.even {
+        background-color: lighten($color-gray, 20%);
+      }
+    }
+    td {
+      padding: 5px 8px;
+    }
+    td.item-label {
+      width: 50%;
+    }
+    td.item-value {
+      width: 50%;
+    }
+  }
+}
+
+h1,
+h1.property-detail-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 0px;
+    position: relative;
+}
+h2.property-detail-title {
+  margin-bottom: 15px;
+}
+
+.property-detail-subtitle {
+    @extend h3;
+
+    a {
+        color: $color-black;
+        font-size: 16px;
+    }
+
+    > div {
+        display: inline-block;
+    }
+
+    .hf-property-price {
+        background-color: $color-primary;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0px 0px 0px 20px;
+        padding: 6px 15px;
+        vertical-align: middle;
+    }
+}
+
+.property-detail-overview {
+    border: 2px solid rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+
+.property-detail-overview-item {
+    padding: 8px 0px;
+    text-align: center;
+
+    &:nth-child(2n) {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}

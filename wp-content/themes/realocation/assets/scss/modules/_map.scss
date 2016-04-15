@@ -1,0 +1,86 @@
+.map-wrapper {
+    background-image: url('../img/preloader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: -1px;
+
+    .ui-resizable-handle {
+        background-color: $color-primary;
+        background-image: url($image_path + 'handler.png');
+        background-position: center 3px;
+        background-repeat: no-repeat;
+        cursor: ns-resize;
+        height: 8px;
+        left: 50%;
+        margin-left: -20px;
+        margin-top: -10px;
+        position: absolute;
+        width: 40px;
+        z-index: 999 !important;
+    }
+}
+
+#map {
+    border-bottom: 3px solid $color-primary;
+}
+
+.filter-container {
+    margin: 0px auto;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.map-wrapper {
+    margin-top: -62px;
+    position: relative;
+}
+
+.map-navigation-positioning {
+    min-height: 0px;
+}
+
+.map-navigation-wrapper {
+	position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.filter-horizontal {
+  .map-navigation-wrapper {
+    position: relative;
+  }
+}
+.map-navigation {
+	background-color: $color-black-transparent;
+	border-top: 3px solid $color-primary;
+	padding: 15px;
+    width: 100%;
+	z-index: 9999;
+	label {
+		color: #fff;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 0px 0px 5px 0px;
+
+		.map-navigation-light & {
+			color: $color-black;
+		}
+	}
+
+    h2 {
+        display: none;
+    }
+
+	.map-navigation-light & {
+		background-color: rgba(255, 255, 255, .85);
+
+		.form-control {
+			border: 2px solid rgba(0, 0, 0, .1); 
+		}
+	}
+
+    .btn {
+        @extend .btn-block;
+        @extend .btn-inversed;
+    }
+}

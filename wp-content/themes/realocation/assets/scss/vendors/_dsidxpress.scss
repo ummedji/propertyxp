@@ -1,0 +1,221 @@
+#dsidx-contact-form-submit {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-inversed;
+}
+
+#dsidx-description-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#dsidx-media-td {
+    background-color: lighten($color-gray, 15%);
+    padding: 25px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+#dsidx-actions {
+    background-color: lighten($color-gray, 15%);
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.dsidx-actions-button {
+    color: $color-black;
+    font-size: 14px;
+
+    &:hover {
+        background-color: transparent;
+        background-image: none !important;
+        color: $color-black;
+        text-decoration: none !important;
+    }
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.dsidx-widget-search {
+    .dsidx-search-widget {
+        background-color: lighten($color-gray, 15%);
+        padding: 15px;
+
+        tr {
+            th, td {
+                padding-bottom: 20px;
+            }
+        }
+
+        input[type=submit] {
+            display: block;
+            font-size: 14px;
+            padding: 8px 12px !important;
+            width: 100%;
+
+            &:focus, &:active, &:hover {
+                background-color: $color-primary !important;
+                border-color: $color-primary !important;
+                color: #fff !important;
+            }
+        }
+
+        .separator {
+            display: none;
+        }
+
+        #idx-q-PriceMin {
+            width: 48%;
+        }
+
+        #idx-q-PriceMax {
+            float: right;
+            width: 48%;
+        }
+
+        #idx-search-invalid-msg {
+            display: none;
+        }
+    }
+}
+
+ul.dsidx-list.dsidx-panel {
+    padding: 0px;
+
+    li {
+        border: 0px !important;
+        height: 42px;
+        line-height: 42px;
+
+        &:nth-child(odd) {
+            background-color: lighten($color-gray, 15%) !important;
+        }
+
+        a {
+            font-size: 12px !important;
+            height: 42px;
+            line-height: 42px;
+            opacity: 1;
+            padding: 0px 15px !important;
+        }
+    }
+}
+
+p.dsidx-error {
+    background-color: $color-red;
+    border: 0px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0px !important;
+    padding: 20px;
+}
+
+#dsidx {
+    h3 {
+        @extend h2;
+        border: 0px;
+        margin: 20px 0px;
+    }
+
+    #dsidx-primary-data, .dsidx-supplemental-data, #dsidx-secondary-data  {
+        @extend .table-bordered;
+    }
+}
+
+body.dsidx {
+    h2 {
+        .edit-link {
+            display: none;
+        }
+    }
+
+    #dsidx {
+        .dsidx-paging-control {
+            background-color: lighten($color-gray, 15%);
+            font-size: 12px;
+            margin: 0px 0px 30px 0px;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        .dsidx-map-control {
+            float: left;
+        }
+
+        .dsidx-sorting-control {
+            float: right;
+            font-size: 14px;
+
+            form {
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+
+        #dsidx-map {
+            background-color: transparent !important;
+            border: 5px solid rgba(0, 0, 0, .05);
+            margin-top: 30px;
+        }
+
+        #dsidx-map-control {
+            font-size: 14px;
+            font-weight: normal;
+
+            a {
+                color: $color-black !important;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #dsidx-listings .dsidx-media .dsidx-photo {
+            border: 0px;
+        }
+
+        #dsidx-listings .dsidx-primary-data .dsidx-address {
+            font-size: 16px;
+            font-weight: normal;
+            padding: 5px 0px 5px 0px;
+        }
+
+        #dsidx-listings .dsidx-primary-data .dsidx-price {
+            padding: 0px 0px 5px 0px;
+        }
+
+        #dsidx-listings .dsidx-secondary-data {
+            > div {
+                float: left;
+                line-height: 30px;
+                width: 50%;
+
+                &:before {
+                    content: '\f178';
+                    color: $color-primary;
+                    display: inline;
+                    font-family: 'FontAwesome';
+                    font-size: 14px;
+                    padding-right: 10px;
+                    vertical-align: -1px;
+                }
+            }
+        }
+
+        #dsidx-disclaimer {
+            display: none;
+        }
+
+        #dsidx-listings > li {
+            margin-bottom: 30px;
+
+            hr {
+                background-color: rgba(0, 0, 0, .05);
+                height: 2px;
+            }
+        }
+    }
+}

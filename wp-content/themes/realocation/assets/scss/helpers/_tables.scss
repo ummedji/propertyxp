@@ -1,0 +1,28 @@
+.table {
+    font-size: 14px;
+    .summary {
+      float: right;
+    }
+    thead {
+      tr {
+        th {
+          background-color: #f4f4f4;
+        }
+      }
+    }
+    tbody {
+        tr {
+            th {
+                vertical-align: middle;
+            }
+            td {
+                vertical-align: middle;
+
+                &.min-width {
+                    white-space: nowrap;
+                    width: 1px;
+                }
+            }
+        }
+    }
+}

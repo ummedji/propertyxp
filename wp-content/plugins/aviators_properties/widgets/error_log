@@ -1,0 +1,6 @@
+[21-May-2015 20:20:30 UTC] PHP Fatal error:  Class 'Aviators_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/properties_slider.php on line 3
+[21-May-2015 22:54:38 UTC] PHP Fatal error:  Class 'WP_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/map.php on line 3
+[23-May-2015 09:15:25 UTC] PHP Fatal error:  Class 'Aviators_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/properties.php on line 3
+[29-May-2015 17:31:17 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/properties_carousel.php on line 14
+[13-Sep-2015 19:38:46 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/properties_carousel.php on line 14
+[15-Sep-2015 10:38:21 UTC] PHP Fatal error:  Class 'Aviators_Widget' not found in /home/propertyxp8421/public_html/wp-content/plugins/aviators_properties/widgets/properties_slider.php on line 3

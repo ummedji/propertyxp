@@ -1,0 +1,314 @@
+/*
+Theme Name: Realocation
+Theme URI: http://wp.realocation.byaviators.com
+Description: Modern Real-Estate Theme
+Author: Aviators
+Author URI: http://byaviators.com
+Version: 1.5.7
+Tags: two-columns, right-sidebar, featured-images, translation-ready
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+.center             { text-align: center; }
+.aligncenter        { margin: auto; text-align: center; margin-bottom: 22px; display: block !important;}
+.alignleft          { float: left; margin: 0px 30px 22px 0px;  }
+.alignright         { float: right; margin: 0px 0px 22px 30px; }
+
+.left               { float:left;  }
+.right              { float:right; }
+
+small               { font-size: 12px; line-height: 14px; }
+strong              { font-weight: bold;}
+b                   { font-weight: bold; }
+
+.normal             { font-weight: normal; }
+.hidden             { display: none; }
+.wp-caption         { }
+.wp-caption-text    { }
+.sticky             { }
+.gallery-caption    { }
+.bypostauthor       { }
+
+
+
+
+iframe {
+    max-width: 100%;
+}
+
+.developer-details #details , .developer-details #amenities , .developer-details #gallery , .developer-details #flats , .developer-details #map , .developer-details #line_chart , .developer-details #about-developer , .developer-details #contact-developer{position:relative;padding: 120px 0 0 0px} 
+.property-main-image{height:550px;width: 100%;display: block;}
+.developer-property-title{margin-top: -100px!important;position:relative;color:#fff;z-index:9999;font-weight: 600!important;}
+.developer-prperty-price{margin-top: -10px!important;z-index:9999;position:relative}.developer-menu a{text-align: center;cursor: pointer;vertical-align: middle;text-decoration: none;display: inline-block;position: relative;font-size: 14px;color: #666666;width: 90px;padding: 13px 10px;}
+.developer-menu a .icon-small, .developer-menu a .icon-filled {height: 30px;width: 100%;font-size: 24px;}
+.fixed{ z-index: 9999;position: fixed;left: 0;top: 0;width: 100%;background:#fff;border-bottom: 3px solid #eee;}
+.ui-widget-content {z-index:100000!important}
+.project-spec-details .project-specs {width:30%;display: inline-block;position: relative;text-align: center;height: auto;margin-bottom:30px;margin-right: 30px;}
+
+
+.project-spec-details .project-specs .icon-small, .project-spec-details .project-specs .icon-filled {height: 30px;width: 100%;font-size: 24px;}
+.project-spec-details .project-specs .item-label{display: inline-block;vertical-align: top;font-size: 24px;height: 30px;width: auto;margin-top:45%;background:#fff;border-radius:25px}
+.project-spec-details .project-specs .item-value {margin-top: 5%;line-height: 22px;font-weight: bold;display: inline-block;vertical-align: top;height: 120px;width: 80%;font-size: 20px;top: 60%;color: #fff;}
+
+
+
+.amenities-options li {position: relative;display: inline-block;height: 110px;margin: 0px 0px 50px 0;text-align: center;color: #000;vertical-align: top;}
+.amenities-options .icon-large {height: 50px;line-height: 30px;font-size: 48px;}.amenities-options .text {white-space: nowrap;line-height: 30px;font-size: 14px;color: #000000;white-space: normal;}
+.amenities-options .fade ,.amenities-options .fade-text {/*white-space: nowrap;*/opacity: 0.4;}
+
+#amenities .content {margin: auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 50px 0 0 0;width: 1170px;}
+#amenities .building-info-card {position: relative;}#amenities .building-card {width:30%;background-color: #ffffff;padding-bottom: 50px;margin-left: 35px;height: 650px;margin-top: 20px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;text-align: center;border: 3px solid #eee;}
+#amenities .building-card .icon-small {margin-top: 20px;height: 30px;width: 100%;font-size: 24px;text-align: center;}
+#amenities .building-card .header-text {color: #000000;top: 20px;position: relative;line-height: 26px;font-size: 22px;font-weight: bold;text-transform: uppercase;text-align: center;}
+#amenities .building-card .separator {top: 20px;position: relative;position: relative;display: inline-block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;text-align: center;height: 5px;width: 30px;margin: 10px 0px 15px 0px;border-bottom: 2px solid #dadada;}
+#amenities .building-card .pills {position: relative;text-align: center;}
+#amenities .building-card .pills .header {position: relative;font-size: 13px;margin: 5px;margin-top: 30px;color: #a8a8a8;text-align: center;}
+#amenities .building-card .pills .texts {position: relative;font-size: 15px;font-weight: 700;margin: auto;text-align: center;}
+
+
+.developer-menu img{margin-bottom:5px}
+.developer-details .section-title h2 {background-attachment: scroll;background-image: url('images/divider.png');background-repeat: repeat-x;background-position: center center;}
+.developer-details .section-title h2 span {background: #FFFFFF;padding: 0 20px;}
+
+.grid10 { margin: .1%; width: 14%; float: left; padding: 0 1%;}
+.scroll-active{display:blok}
+.scroll-deactive{display:none}
+/*
+.project-spec-details .project-specs {-moz-border-radius: 50%;-webkit-border-radius: 50%;-khtml-border-radius: 50%;border-radius: 50%;padding: 55px;text-align: center;position: relative;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;border: 3px solid #39B54A;}
+.project-spec-details .project-specs:hover{background: #39B54A;color:#fff}
+*/
+
+
+/*
+#nks-content-1 #menu-primary-menu li {position: relative;display: block;background: #fff;margin: 0 0 5px 0px;color: #39B54A;font-size: 16px;font-weight: 600;float:none}
+*/
+.row-wise-amenities .properties-filter li{margin:0 40px!important;opacity:0.7}
+.row-wise-amenities .properties-filter li.selected{opacity:1}
+.row-wise-amenities .properties-filter .selected a {border-color:#fff;font-weight: 700;text-decoration: blink!important;}
+.row-wise-amenities .properties-filter .selected a .header-text {font-size: 24px;}
+.row-wise-amenities .properties-filter a {border-color:#fff;}
+.row-wise-amenities .properties-filter a:hover {text-decoration: blink!important;}
+.row-wise-amenities .properties-items .building-card {width:100%!important;margin-left: 0!important;height: auto!important;margin-top:0!important}
+.row-wise-amenities .properties-filter a .icon-small{font-size:42px!important}
+
+h5.info-links a {margin:0 10px 0 10px}
+
+.clear{clear:both}
+.config-content p{font-size:13px}
+.single-amenity {width:14%!important}
+.blogs-slider .flex-control-thumbs , .article-slider .flex-control-thumbs{display:none}
+.block-content-inner .col-md-9 .posts .article_type{margin-bottom:50px}
+.config-content .grid10 .fade , .config-content .grid10 .fade-text{opacity:0.4!important}
+
+.col-md-9 .blog-links a {font-size: 24px;margin: 0 20px 0 0;}
+#nks-content-1 .tooltips-menu a{margin: 0 auto;display: block;width: 55%;margin-bottom: 10px;}
+#nks-content-1{height: 150px;overflow: scroll;background-color: #ffffff !important;}
+.widget_text .state-select option{color:#000;font-weight: 600;}
+.widget_text .select-wrapper{width: 100%;}
+.widget_text .state-select {color: #ff3401;font-weight: 600;}
+.newsletter-popup .wysija-submit {margin: 0 auto;}
+#AnythingPopup_BoxContainerHeader1 {background: none!important;}
+#AnythingPopup_BoxContainerHeader1 #AnythingPopup_BoxClose1 a {color: #ff3401!important;}
+.newsletter-popup {margin: 0 auto; text-align:center;background-color: #eee;padding-top: 20px;padding-bottom: 20px;}
+.do-not-display{display:none}
+
+.newsletter-popup .select-statewise{width: 18%;margin: 0 auto;}
+.newsletter-popup .select-propertywise{width: 13%;margin: 0 auto;}
+h5.brochure-pdf-link { display: block;border: 2px solid #FF3401;width: 28%;padding: 5px;font-weight: 600;}
+#AnythingPopup_BoxContainer3 {top:50px!important}
+
+.custom-menu{position:fixed;right:0px;top:50px;z-index:44}
+
+.custom-menu a.custom-menu-button{display:block;position:absolute;width:46px;height:230px;text-indent:-9999px;right:0px;top:0px;}
+.color_active{color: #029EDC;text-shadow: none;}
+.custom-menu-active {display: block}
+.custom-menu-deactive {display: none}
+
+#slidx_menu {
+
+background: #FF3401;
+z-index: 50000!important;
+}
+#slidx_menu a {
+   /* padding: 20px 0px 20px 15px;*/
+    display: block;
+}
+#slidx_menu a:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+#slidx_button {
+    padding: 8px 12px;
+    margin: 20px 20px 0px 0px;
+    z-index:50000!important;
+    top: 11% !important;
+    color:#fff;
+    font-weight:bold;
+    text-transform:uppercase;
+    border:1px solid #ff3401;
+    background:#ff3401!important;
+    border-radius: 10px;
+}
+#slidx_button:hover {
+    cursor: pointer;
+}
+#slidx_menu .nav-pills li {float: none;display: block;background: #fff;text-transform: uppercase;font-size: 16px;text-align: center;font-weight: bold;margin:5px} 
+h1, h1.property-detail-title {margin-bottom: 30px!important; margin-top: 40px!important;} 
+
+.property-box-price .hf-property-price .label , .slider-info .price .hf-property-price .label {display:none}
+
+.col-md-12 .article-slider{width:66%; margin: 0 0 0 7px}
+.col-md-12 .blogs-slider , .col-md-12 .article-slider{/*background:#eee;*/ border: 2px solid #ff3401;}
+.col-md-12 .blogs-slider .flex-viewport{margin-bottom:2px}
+
+.developer-menu .im-interested{float: right;
+width: 141px;
+position: relative;
+margin: 1.5% 0 0 -22%;
+border: 2px solid #ff3401;}
+.developer-menu .developer-menu-links{float:left;width:100%}
+.developer-menu .im-interested .icon-message-filled{padding: 18px 0px 0px 5px; float:left;position: absolute;}
+.im-interested .do-not-display{width: 160px}
+.additional-tools {margin: 100px 0px;}
+.additional-tools a.center {display: block;float: left;width: 11.5%;}
+.additional-tools a.center img {margin-bottom: 6px;}
+#footer-wrapper{display: table;width: 100%;}.map-tabs-links a{color: #ff3401;font-size: 18px}#map-content #listing{right:0;position:absolute}
+
+.property-box-meta .col-xs-3{width:22%}
+.featured-builders .bxslider li img{width:100%}
+
+.tooltips-menu a span { height : 100px}
+
+#main-content .additional-tools a.center {
+            opacity: 1;
+            -webkit-transform: scale(1,1);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transform: scale(1,1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            cursor:pointer;
+}
+#main-content .additional-tools a.center:hover {
+            opacity: .7;
+            -webkit-transform: scale(1.10,1.12);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transform: scale(1.10,1.12);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            position: relative;
+            z-index: 99;
+            margin : 0 5px 0 5px;
+}
+#AnythingPopup_BoxContainerHeader4 #AnythingPopup_BoxClose4 a {width: 50px!important;padding: 0;}
+#properties-slider .carousel-inner>.item>a>img{width:100%}
+
+.search-brochure-form form .col-md-3 .statewise select, .search-brochure-form form .col-md-3 .propertywise select ,.search-brochure-form form .col-md-3  input {width:100% ; height: 34px;padding: 0px;}
+.search-brochure-form .brochure-form { background-color:#EEE;padding: 10px 0 0;}
+
+.all-state-list {float:left;width:150px;cursor:pointer}
+.all-state-list .state-menu{display:none;border-top: 0px;background:rgba(238, 238, 238, 0.3);padding: 0px;position: absolute;width: 120px;z-index: 999999999;border-bottom: 2px solid #FF3401;}
+.all-state-list:hover .state-menu{display:block;margin-top:2px}
+.all-state-list .state-menu a {padding:8px;font-size: 14px;}
+.all-state-list .state-menu .sub-menu{display:none;border-top: 0px;background:#fff;padding: 0px;position: absolute;width: 120px;z-index: 99999999;left: 120px;top: 0px;}.all-state-list .state-menu:hover .sub-menu {display:block}
+.newsletter-page img{margin-bottom: 20px}
+.newsletter-page .wysija-paragraph .wysija-input {width:70%}span.shortcheckedwrap {display: block;padding: 0 0 0 10px;}
+.monthyearwrapper {padding: 0 !important;}
+#properties_widget-5 .property-box{width:31%; margin-right:15px; float:left }
+
+@media only screen and (min-width: 1200px)  { 
+.additional-tools a.center{margin: 0 5px 0 5px;}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) { 
+	#main-content .additional-tools a.center span {height:110px}
+	#details .project-spec-details .project-specs {-webkit-background-size: 270px;background-size: 270px;}
+	#details .project-spec-details .project-specs .item-label {font-size: 20px;margin-top: 47%;}
+	#details .project-spec-details .project-specs .item-value {font-size: 16px;}
+	#properties_widget-5 .property-box{width:30%; margin-right:30px; float:left }
+}
+@media only screen and (min-width: 990px) and (max-width: 1023px) { 
+	.amenities-options .text {font-size:12px}
+	#main-content .additional-tools a.center span {height:80px}
+	#details .project-spec-details .project-specs {-webkit-background-size: 250px;background-size: 250px; width:29% ; margin-bottom: 0px;}
+	#details .project-spec-details .project-specs .item-label {font-size: 16px;margin-top: 48%;}
+	#details .project-spec-details .project-specs .item-value {font-size: 12px;}
+#properties_widget-5 .property-box{width:45%; margin-right:35px; float:left }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 989px) { 
+	.amenities-options .text {font-size:12px}
+	#main-content .additional-tools a.center span {height:80px}
+	#details .project-spec-details .project-specs {-webkit-background-size: 290px;background-size: 290px;width:45% ; margin-bottom: 0px;}
+	#details .project-spec-details .project-specs .item-label {font-size: 16px;margin-top: 48%;}
+	#details .project-spec-details .project-specs .item-value {font-size: 12px;}
+	#main-inner .developer-menu .developer-menu-links a {width:60px;padding: 13px 0;}
+	#main-inner .developer-menu .developer-menu-links a span {width: 50px;margin : 0 auto;}
+	#main-inner .developer-menu .developer-menu-links a div.title{font-size: 12px; width: 100%;overflow: hidden;text-transform: lowercase;}
+#properties_widget-5 .property-box{width:45%; margin-right:35px; float:left }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) { 
+	#main-inner .container {width:600px}
+	.amenities-options .text {font-size:12px}
+	#main-content .additional-tools a.center span {height:80px}
+	#main-content .additional-tools a.center label {font-size:10px}
+	.developer-menu .developer-menu-links {width:75%}
+	#details .project-spec-details .project-specs {-webkit-background-size: 300px;background-size: 300px; width:100% ; margin-bottom: 0px;display: block;}
+	#details .project-spec-details .project-specs .item-label {font-size: 16px;margin-top: 25%;}
+	#details .project-spec-details .project-specs .item-value {margin-top: 5%;display: block;height: 120px;width: 70%;font-size: 12px;padding-left: 170px;}
+	#main-inner .developer-menu .developer-menu-links a {width:60px;padding: 13px 0;}
+	#main-inner .developer-menu .developer-menu-links a span {width: 50px;margin : 0 auto;}
+	#main-inner .developer-menu .developer-menu-links a div.title{font-size: 12px; width: 100%;overflow: hidden;text-transform: lowercase;}
+	.wpcf7-form-control span.wpcf7-list-item {display: block;}
+#properties_widget-5 .property-box {width: 100%;margin-right: 15px;float: left;}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) { 
+.amenities-options li.single-amenity img{width:100%}
+	#main-inner .container {width:500px}
+	.additional-tools a.center { width : 23.5%}
+	.developer-menu .developer-menu-links {float: left;width: 78%;}
+	.developer-menu a {text-align: center;display: inline-block;font-size: 10px;color: #666666;width: 11%;padding: 0;}
+	.amenities-options .text {font-size:12px}
+	.developer-menu .developer-menu-links a span {width: 41px;display: block;}
+	.developer-menu .developer-menu-links a div.title {font-size: 10px;text-transform: lowercase;}
+	.developer-menu .im-interested .icon-message-filled {padding: 6px 0px 0px 5px;}
+	#main-content .additional-tools a.center span {height:85px}
+	#main-content .additional-tools a.center label {font-size:10px}
+	#details .project-spec-details .project-specs {-webkit-background-size: 300px;background-size: 300px; width:100% ; margin-bottom: 0px;display: block;}
+	#details .project-spec-details .project-specs .item-label {font-size: 16px;margin-top: 31%;}
+	#details .project-spec-details .project-specs .item-value {margin-top: 3%;display: block;height: 120px;width: 70%;font-size: 12px;padding-left: 135px;}
+.wpcf7-form-control span.wpcf7-list-item {display: block;}
+#properties_widget-5 .property-box {width: 100%;margin-right: 15px;float: left;}
+}
+
+
+@media only screen and (max-width: 499px) { 
+.amenities-options li.single-amenity img{width:100%}
+	#main-inner .container {width:400px}
+	.additional-tools a.center { width : 23.5%}
+	.amenities-options .text {font-size:12px}
+	.developer-menu .developer-menu-links {float: left;width: 78%;}
+	.developer-menu a {text-align: center;display: inline-block;font-size: 10px;color: #666666;width: 11%;padding: 0;}
+	.amenities-options .text {font-size:10px;line-height: 22px;}
+	.developer-menu {display:none}
+	.developer-menu .developer-menu-links a span {width: 41px;display: block;}
+	.developer-menu .developer-menu-links a div.title {font-size: 10px;text-transform: lowercase;display: none;}
+	.developer-menu .im-interested .icon-message-filled {padding: 6px 0px 0px 5px;}
+	#main-content .additional-tools a.center span {height:82px}
+	#main-content .additional-tools a.center label {font-size:10px}
+	#details .project-spec-details .project-specs {-webkit-background-size: 250px;background-size: 250px; width:100% ; margin-bottom: 0px;display: block;}
+	#details .project-spec-details .project-specs .item-label {font-size: 14px;margin-top: 34%;}
+	#details .project-spec-details .project-specs .item-value {margin-top: 3%;display: block;height: 120px;width: 70%;font-size: 12px;padding-left: 100px;}
+	#map #map-content {width:100%!important}
+	#map #map-content #map_canvas {width:100%!important}
+	#map-content #listing {position:relative}
+.wpcf7-form-control span.wpcf7-list-item {display: block;}
+#properties_widget-5 .property-box {width: 100%;margin-right: 15px;float: left;}
+.blog-article-display {display:none}
+}
+.blog-article-display {display:none}

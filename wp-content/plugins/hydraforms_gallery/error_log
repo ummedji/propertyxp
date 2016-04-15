@@ -1,0 +1,4 @@
+[05-May-2015 22:57:34 UTC] PHP Fatal error:  Class 'Hydra\Formatter\Formatter' not found in /home/propertyxp8421/public_html/wp-content/plugins/hydraforms_gallery/Gallery.php on line 11
+[12-May-2015 18:54:04 UTC] PHP Fatal error:  Call to undefined function plugin_dir_url() in /home/propertyxp8421/public_html/wp-content/plugins/hydraforms_gallery/hydraforms_gallery.php on line 9
+[05-Sep-2015 22:52:34 UTC] PHP Fatal error:  Call to undefined function plugin_dir_url() in /home/propertyxp8421/public_html/wp-content/plugins/hydraforms_gallery/hydraforms_gallery.php on line 9
+[07-Sep-2015 02:28:34 UTC] PHP Fatal error:  Call to undefined function plugin_dir_url() in /home/propertyxp8421/public_html/wp-content/plugins/hydraforms_gallery/hydraforms_gallery.php on line 9

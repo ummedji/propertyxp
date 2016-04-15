@@ -1,0 +1,114 @@
+#map-property {
+  border-bottom: 3px solid $color-primary;
+  height: 200px;
+}
+
+.map-navigation-wrapper {
+  opacity: 0;
+}
+
+.filter-horizontal {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  padding-bottom: 10px;
+  .field-widget-hierarchy_select-wrapper {
+     @extend .row;
+    .field-type-select {
+      @extend .col-sm-4;
+    }
+  }
+  .map-navigation-wrapper {
+    top: 0px;
+  }
+  background-color: rgba(0,0,0,0.05);
+  .map-navigation {
+    background-color: transparent;
+    border-top-width: 0px;
+  }
+  label {
+    color: #252525;
+  }
+  .field-widget-hierarchyselect-wrapper {
+    .field-type-select {
+      @extend .col-sm-4;
+    }
+  }
+  .field-type-submit {
+    padding-top: 20px;
+    margin: 0px;
+  }
+  .form-group {
+    margin-bottom: 0px;
+  }
+}
+
+.carousel-select {
+  margin: 0px;
+  .bx-wrapper {
+    padding: 0px 45px;
+    .bx-controls-direction {
+      a {
+        margin-top: -16px;
+      }
+      .bx-prev {
+        left: 0px;
+      }
+      .bx-next {
+        right: 0px;
+      }
+    }
+  }
+  .list-unstyled {
+    padding: 0px;
+    margin: 0px;
+    > li {
+      @include transition(all .2s linear);
+      cursor: pointer;
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
+      &.active{
+        background-color: darken($color-primary, 10%);
+        @include box-shadow(none);
+        &:after {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-family: 'FontAwesome';
+          font-size: 16px;
+          color: #fff;
+          content: "\f00c";
+        }
+      }
+
+      padding: 5px;
+      .icon {
+        background-color: #fff;
+        position: relative;
+        @include border-radius(50%);
+        border: 3px solid darken($color-primary, 20%);
+        float: left;
+        padding: 8px;
+        width: 45px;
+        height: 45px;
+        img {
+          width: auto !important;
+          height: auto !important;
+        }
+      }
+      .checkbox {
+        float: left;
+        width: 70%;
+        label {
+          color: #fff;
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+}

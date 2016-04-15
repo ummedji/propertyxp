@@ -1,0 +1,61 @@
+#post-form {
+  .box {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+  }
+
+  .hydra-fieldset {
+    h3 {
+      display: none;
+    }
+  }
+
+  i.fa {
+    margin: 0px 10px;
+    color: #252525;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  #map {
+    border-bottom-width: 0px;
+  }
+}
+
+.field-widget-gmap-wrapper {
+  h3 {
+    display: none;
+  }
+  .field-type-text {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.field-widget-checkboxes-wrapper {
+  li {
+    display: inline-block;
+    width: 30%;
+    > div {
+      padding: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin: 0px;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.field-widget-image-wrapper {
+  .field-item-wrapper {
+    .field-type-text {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .field-type-button {
+      display: inline-block;
+    }
+  }
+}
