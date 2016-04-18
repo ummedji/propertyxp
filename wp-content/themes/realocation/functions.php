@@ -676,58 +676,94 @@ function get_property_average_value(){
  * FOR GETTING LOGIN USER POSTS PROPERTIES ONLY
  */
 
-function posts_for_current_author($query) {
-	global $user_level;
-
-	if($query->is_admin && $user_level < 5) {
-		global $user_ID;
-		$query->set('author',  $user_ID);
-		unset($user_ID);
-	}
-	unset($user_level);
-
-	return $query;
+add_action('pre_get_posts', 'filter_posts_list');
+function filter_posts_list($query)
+{
+    //$pagenow holds the name of the current page being viewed
+     global $pagenow;
+ 
+    //$current_user uses the get_currentuserinfo() method to get the currently logged in user's data
+     global $current_user;
+     get_currentuserinfo();
+     
+     //Shouldn't happen for the admin, but for any role with the edit_posts capability and only on the posts list page, that is edit.php
+      if(!current_user_can('administrator') && current_user_can('edit_posts') && ('edit.php' == $pagenow)){
+        //global $query's set() method for setting the author as the current user's id
+        $query->set('author', $current_user->ID);
+        }
 }
-add_filter('pre_get_posts', 'posts_for_current_author');
+
 /*
+ * HIDE COUNT WORDPRESS ADMIN PANEL POST COUNTS ON THE BASICS OF USER LOGIN
+ */
 
-add_action( 'admin_bar_menu', 'toolbar_link_to_mypage', 100 );
-
-function toolbar_link_to_mypage( $wp_admin_bar ) {
-	$args = array(
-		'id'    => 'my_page',
-		'title' => 'UMMED',
-		'href'  => 'http://mysite.com/my-page/',
-		'meta'  => array( 'class' => 'my-toolbar-page' ),
-                'parent'	=>	'',
-	);
-	$wp_admin_bar->add_group( $args );
+function jquery_remove_counts()
+{
+	?>
+	<script type="text/javascript">
+	jQuery(function(){
+            <?php
+             global $current_user;
+             get_currentuserinfo();
+    
+             if(!current_user_can('administrator')){
+                  ?>
+		jQuery("li.all").remove();
+             <?php   } ?>
+		jQuery("li.publish").remove();
+		jQuery("li.trash").remove();
+                jQuery("li.draft").remove();
+	});
+	</script>
+	<?php
 }
-*/
+add_action('admin_footer', 'jquery_remove_counts');
+
 /*
-add_action("wpcf7_before_send_mail", "wpcf7_do_something_else");  
+ * SHOW ADD NEW PROPERTY ONLY FOR ADDING ONE PROPERTY FOR AUTHOR TYPE USER.
+ */
 
-function wpcf7_do_something_else($cf7) {
-    // get the contact form object
-    $wpcf = WPCF7_ContactForm::get_current();
+add_action('admin_footer', 'filter_add_posts_singletime');
+function filter_add_posts_singletime($query)
+{
+    //$pagenow holds the name of the current page being viewed
+     global $pagenow;
+ 
+    //$current_user uses the get_currentuserinfo() method to get the currently logged in user's data
+     global $current_user;
+     get_currentuserinfo();
+     
+     //Shouldn't happen for the admin, but for any role with the edit_posts capability and only on the posts list page, that is edit.php
+      if(!current_user_can('administrator') && current_user_can('edit_posts')){
+        //global $query's set() method for setting the author as the current user's id
+        //$query->set('author', $current_user->ID);
+          
+           $user_ID = get_current_user_id();
+          
+          $args = array(
+	
+	'orderby'          => 'date',
+	'order'            => 'DESC',
+	'post_type'        => 'property',
+	'author'	   => $user_ID,
+        'post_status'      => 'publish',
+	'suppress_filters' => true 
+);
+          
+          $posts_array = get_posts( $args ); 
 
-    // get current SUBMISSION instance
-    $submission = WPCF7_Submission::get_instance();
-
-    // get submission data
-    $data = $submission->get_posted_data();
-      
-   // $new_reciptent = $data["post_author"];
-    
-   // $wpcf["mail"]["recipient"] = $new_reciptent;
-   
-    //$wpcf->mail['recipient'] = $new_reciptent;
-    
-    echo "<pre>";
-    
-    print_r($wpcf);
-    die;
-
-    return $wpcf;
+          if(count($posts_array) >= 1){
+            ?>
+          <script type="text/javascript">
+              
+	jQuery(document).ready(function(){
+           
+           if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
+              jQuery("div.wrap h2 a.add-new-h2").remove();
+           }
+        });  
+          </script>
+       <?php 
+          }
+        }
 }
-*/
