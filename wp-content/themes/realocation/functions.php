@@ -471,8 +471,10 @@ add_filter('aviators_package_supported_page_type', 'aviators_package_theme_suppo
  *
  */
 function aviators_allow_upload() {
+	
     $contributor = get_role('subscriber');
     $contributor->add_cap('upload_files');
+	
 }
 add_action('init','aviators_allow_upload');
 
@@ -631,7 +633,6 @@ function search_location_by_city() {
 
 }
 
-
 add_action("wp_ajax_get_property_average_value", "get_property_average_value");
 function get_property_average_value(){
 	$state_id = $_REQUEST["state_id"];
@@ -751,7 +752,6 @@ function filter_add_posts_singletime($query)
 );
           
           $posts_array = get_posts( $args ); 
-
           if(count($posts_array) >= 1){
             ?>
           <script type="text/javascript">
@@ -761,9 +761,37 @@ function filter_add_posts_singletime($query)
            if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
               jQuery("div.wrap h2 a.add-new-h2").remove();
            }
+              jQuery("li#menu-posts-property ul.wp-submenu-wrap li:nth-child(3)").remove();
+              
+           
         });  
           </script>
        <?php 
           }
         }
 }
+	
+/*##############ADD TOOLTIP CODE START#############*/
+add_action( 'admin_footer', 'custom_admin_pointers_footer' );
+function custom_admin_pointers_footer() {
+	?>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+  <?php if(isset($_REQUEST['post_type']) && $_REQUEST['post_type'] == 'property') { ?>
+   
+  <link rel="stylesheet" href="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/css/customtooltip.css'; ?>">
+  <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/tooltipconstant.js'; ?>"></script>
+  <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/customtooltip.js'; ?>"></script>
+  
+	<?php } ?>
+	<?php if(isset($_REQUEST['page']) && $_REQUEST['page'] == 'CF7DBPluginSubmissions') { ?>
+   
+  <link rel="stylesheet" href="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/css/customtooltip.css'; ?>">
+  <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/tooltipconstant.js'; ?>"></script>
+  <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/customtooltip.js'; ?>"></script>
+  
+	<?php } ?>
+	<?php 
+}
+/*##############ADD TOOLTIP CODE END#############*/

@@ -1,5 +1,5 @@
 <?php
-
+include("curlwrap_v2.php");
 class WPCF7_Submission {
 
 	private static $instance;
@@ -127,10 +127,71 @@ class WPCF7_Submission {
 			'unit_tag' => isset( $_POST['_wpcf7_unit_tag'] )
 				? $_POST['_wpcf7_unit_tag'] : '' );
 
-		$contact_form = $this->contact_form;
-//echo "<pre>";
-       //        print_r($contact_form);
-       //        die;
+              $contact_form = $this->contact_form;
+               
+              if(isset($this->posted_data["post_title"]) && $this->posted_data["post_title"] !=""){
+                  
+                $fullname = $this->posted_data["your-name"];
+                $explode_name = explode(" ",$fullname);
+                $first_name = $explode_name[0];
+                $last_name = $explode_name[1];
+
+                $contact_email = $this->posted_data["your-email"];
+                $contact_number = $this->posted_data["phone"];
+                $property = $this->posted_data["post_title"];
+
+                $user_info = get_userdata($this->posted_data["post_author_id"]);
+                $builder_name = $user_info->user_login;
+                
+                $contact_json = array(
+                  "lead_score"=>"",
+                  "star_value"=>"",
+                  "tags"=>array($property),
+                  "properties"=>array(
+                    array(
+                      "name"=>"first_name",
+                      "value"=>$first_name,
+                      "type"=>"SYSTEM"
+                    ),
+                    array(
+                      "name"=>"last_name",
+                      "value"=>$last_name,
+                      "type"=>"SYSTEM"
+                    ),
+                    array(
+                      "name"=>"email",
+                      "value"=>$contact_email,
+                      "type"=>"SYSTEM"
+                    ),  
+                    array(
+                        "name"=>"title",
+                        "value"=>"Customer",
+                        "type"=>"SYSTEM"
+                    ),
+                    array(
+                        "name"=>"address",
+                        "value"=>"",
+                        "type"=>"SYSTEM"
+                    ),
+                    array(
+                        "name"=>"phone",
+                        "value"=>$contact_number,
+                        "type"=>"SYSTEM"
+                    ),
+                      array(
+                        "name"=>"company",
+                        "value"=>$builder_name,
+                        "type"=>"SYSTEM"
+                    )
+
+                  )
+                );
+
+                $contact_json = json_encode($contact_json);
+                curl_wrap("contacts", $contact_json, "POST", "application/json");
+
+             }   
+               
                 
 		if ( ! $this->validate() ) { // Validation error occured
 			$this->status = 'validation_failed';
