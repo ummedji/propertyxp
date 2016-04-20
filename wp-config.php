@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-echo $_SERVER["HTTP_HOST"];die;
+
 if($_SERVER["HTTP_HOST"] == "www.propertyxp.com"){
 
 define('DB_NAME', 'property_proxp_local');
