@@ -1,216 +1,216 @@
 .wrap h2::after {
-    content: url('/wp-content/themes/realocation/assets/img/question.png');
+    content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-minimum-price label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-gallery label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-gallery2 label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-maximum-price label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-person label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-contract-type label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-available label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-type label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 /*#hf-property-amenities label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }*/
 #hf-property-location label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-map label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-price label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-bedrooms label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-bathrooms label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-garages label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #hf-property-area label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf_2311 p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-3_bedroom_apartment_ame p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-4_bedroom_apartment_ame p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-4_bed_flat_slider_alias p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-address p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-configurations p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-starting_price p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-builtup_area p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-blocks p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-possession p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-developer_name p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-developer_description p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-developer_image p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-year_of_establishment p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-total_projects p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-associate_memberships p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-developer_contact_no. p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-contact_form_shortcode p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-doors p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-electrical p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-fitting_kitchen p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-windows p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-fitting_toilets p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-others p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-balcony p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-kitchen p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-living/dining p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-master_bedroom p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-other_bedroom p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-other_bedroom p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-toilets p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 /*#acf-jan p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-feb p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-mar p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-apr p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-may p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-jun p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-jul p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-aug p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-sep p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-oct p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-nov p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-dec p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }*/
 #acf-select_template p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-slider_alias p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-exterior p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-interior p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-kitchen_walls p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf-toilets_walls p label::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #commentstatusdiv h3 span::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #slugdiv h3 span::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #mymetabox_revslider_0 h3 span::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #acf_2397 h3 span::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #members-cp h3 span::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
 #displayform::after{
-	content: url('/wp-content/themes/realocation/assets/img/question.png');
+	content: url('/wp-content/themes/realocation/images/question.png');
 }
