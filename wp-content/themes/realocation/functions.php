@@ -672,7 +672,7 @@ function get_property_average_value(){
 	die();
 	
 }
-
+#################CUSTOM CODE######################
 /*
  * FOR GETTING LOGIN USER POSTS PROPERTIES ONLY
  */
@@ -739,23 +739,24 @@ function filter_add_posts_singletime($query)
         //global $query's set() method for setting the author as the current user's id
         //$query->set('author', $current_user->ID);
           
-           $user_ID = get_current_user_id();
-          
-          $args = array(
-	
+    $user_ID = get_current_user_id();
+    $args = array(
 	'orderby'          => 'date',
 	'order'            => 'DESC',
 	'post_type'        => 'property',
 	'author'	   => $user_ID,
         'post_status'      => 'publish',
 	'suppress_filters' => true 
-);
+	);      
+    $posts_array = get_posts( $args ); 
+   
+	 
           
           $posts_array = get_posts( $args ); 
           if(count($posts_array) >= 1){
             ?>
-          <script type="text/javascript">
-              
+          <script type="text/javascript">      
+	
 	jQuery(document).ready(function(){
            
            if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
@@ -769,6 +770,7 @@ function filter_add_posts_singletime($query)
        <?php 
           }
         }
+		
 }
 	
 /*##############ADD TOOLTIP CODE START#############*/
@@ -795,3 +797,26 @@ function custom_admin_pointers_footer() {
 	<?php 
 }
 /*##############ADD TOOLTIP CODE END#############*/
+
+/*##############REMOVE CONTACT FORM FROM ADMIN MENU FOR AUTHOR #############*/
+
+add_action('admin_menu', 'remove_menus_data');
+
+function remove_menus_data () {
+    
+    global $menu;
+	$restricted = array(__('Contact'),__('Media'));
+         global $current_user;
+             get_currentuserinfo();
+    
+             if(!current_user_can('administrator')){
+                end ($menu);
+                while (prev($menu)){
+                        $value = explode(' ',$menu[key($menu)][0]);
+                        if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+                }
+             }
+    
+}
+
+/*##############NEWSLETTER USERWISE END#############*/
