@@ -16,6 +16,9 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+echo $_SERVER["HTTP_HOST"];die;
+if($_SERVER["HTTP_HOST"] == "www.propertyxp.com"){
+
 define('DB_NAME', 'property_proxp_local');
 
 /** MySQL database username */
@@ -26,7 +29,14 @@ define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
-
+}
+else{
+    
+    define('DB_NAME', 'ab95976_pxp');
+    define('DB_USER', 'ab95976_pxp');
+    define('DB_PASSWORD', 'as*yX=7wwv9$');
+    define('DB_HOST', 'ftp.webcluesglobal.com');
+}
 //define('DB_NAME', 'property_proxp_new');
 
 /** MySQL database username */
