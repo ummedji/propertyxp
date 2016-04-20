@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
 
 global $wpdb, $wp_version;
-define("AnythingPopupTable", $wpdb->prefix . "AnythingPopup");
+define("AnythingPopupTable", $wpdb->prefix . "anythingpopup");
 define('AnythingPopup_FAV', 'http://www.gopiplus.com/work/2012/05/25/wordpress-popup-plugin-anything-popup/');
 
 if ( ! defined( 'ANYTHGPOPUP_PLUGIN_BASENAME' ) )
