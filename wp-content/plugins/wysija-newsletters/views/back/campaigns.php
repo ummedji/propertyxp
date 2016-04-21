@@ -7,9 +7,9 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 	var $column_action_list = 'name';
 	var $queuedemails = false;
 
-	function WYSIJA_view_back_campaigns() {
+	function __construct() {
 		$this->title = __('All Newsletters');
-		$this->WYSIJA_view_back();
+		parent::__construct();
 		$this->jsTrans['selecmiss'] = __('Select at least 1 subscriber!', WYSIJA);
 		$this->search = array('title' => __('Search newsletters', WYSIJA));
 		$this->column_actions = array('editlist' => __('Edit', WYSIJA), 'duplicatelist' => __('Duplicate', WYSIJA), 'deletelist' => __('Delete', WYSIJA));
@@ -35,13 +35,11 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 			break;
 		}
 	}
-
-	WYSIJA_view_back::header($data);
+	parent::header($data);
 	}
 
 	function main($data) {
 		$this->menuTop($this->action);
-
 		echo '<form method="post" action="" id="posts-filter">';
 		$this->filtersLink($data);
 		$this->filterDDP($data);
@@ -53,7 +51,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
 		$array_translation = array(
 			'back' => __('Back', WYSIJA),
-			'add' => __('Create a new email', WYSIJA)
+			'add' => __('Create a new email', WYSIJA)	
 		);
 
 		$arrayMenus = array();
@@ -302,6 +300,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 	 */
 
 	function listing($data, $simple = false) {
+		
 	if (empty($data['campaigns']))
 		return;
 	?>
@@ -413,7 +412,6 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 									if (isset($row['params']['schedule']['isscheduled']) && $row['status'] == 4) {
 										$helper_toolbox = WYSIJA::get('toolbox', 'helper');
 
-
 										//no recording just conversion
 										$scheduletimenoffset = strtotime($row['params']['schedule']['day'] . ' ' . $row['params']['schedule']['time']);
 										$timeleft = $helper_toolbox->localtime_to_servertime($scheduletimenoffset) - time();
@@ -432,8 +430,6 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 											}
 
 										}
-
-
 
 										$statusshared = $durationsent;
 										echo __('Scheduled', WYSIJA);
@@ -653,7 +649,6 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
 								break;
 							case -1:
-
 								if ($row['type'] == 2) {
 									$resumelink = __('Not active.', WYSIJA) . ' | <a href="admin.php?page=wysija_campaigns&id=' . $row['email_id'] . '&action=resume&_wpnonce='.$this->secure(array('action' => 'resume' , 'id' => $row["email_id"]), true).'" class="submitedit">' . __('Activate', WYSIJA) . '</a>';
 									echo $resumelink;
@@ -702,8 +697,6 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 				echo '<p>' . $row['sent_at'] . '</p>';
 			}
 			?></td>
-
-
 					</tr><?php
 			$alt = !$alt;
 		}
@@ -1327,14 +1320,23 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
 			function saveWYSIJA(callback) {
 				wysijaAJAX.task = 'save_editor';
-                                wysijaAJAX._wpnonce = wysijanonces.campaigns.save_editor;
+				wysijaAJAX._wpnonce = wysijanonces.campaigns.save_editor;
 				wysijaAJAX.wysijaData = Wysija.save();
 				WYSIJA_SYNC_AJAX({success: callback});
 			}
 
 			// trigger the save on these links/buttons (save, next step, view in browser, unsubscribe)
-			$$('#wysija-do-save, #wysija-next-step, #wysija_viewbrowser a, #wysija_unsubscribe a').invoke('observe', 'click', function() {
-				saveWYSIJA();
+			$$('#wysija-do-save, #wysija-next-step, #wysija_viewbrowser a, #wysija_unsubscribe a').invoke('observe', 'click', function(e) {
+				if (this.id === 'wysija-next-step') {
+					e.preventDefault();
+					var id = this.id,
+					    href = this.href;
+					var callback = function () {
+						if (id === 'wysija-next-step') window.location.href = href
+					};
+				}
+				else var callback = function() {};
+				saveWYSIJA(callback);
 				return false;
 			});
 
@@ -1940,7 +1942,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 						<input type="button" id="sub-theme-box" name="submit" value="<?php echo esc_attr(__('Upload Theme (.zip)', WYSIJA)); ?>" class="button-secondary"/>
 						<span id="filter-selection"></span>
 						&nbsp;&nbsp;
-						<span><?php echo str_replace(array('[link]', '[/link]'), array('<a href="http://support.mailpoet.com/knowledgebase/guide-to-creating-your-own-wysija-theme?utm_source=wpadmin&utm_campaign=theme%20guide" target="_blank">', '</a>'), __('[link]Guide[/link] to create your own theme.', WYSIJA)); ?></span>
+						<span><?php echo str_replace(array('[link]', '[/link]'), array('<a href="http://support.mailpoet.com/knowledgebase/guide-to-creating-your-own-mailpoet-theme?utm_source=wpadmin&utm_campaign=theme%20guide" target="_blank">', '</a>'), __('[link]Guide[/link] to create your own theme.', WYSIJA)); ?></span>
 						<div id="wj_paginator">
 							<a class="selected" href="javascript:;" data-type="free"><?php _e('Free', WYSIJA); ?></a>
 							<a href="javascript:;" data-type="premium"><?php _e('Premium', WYSIJA); ?></a>
@@ -2863,12 +2865,10 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
 											default :
 												foreach ($section['paragraphs'] as $line) {
-													?>
-													<p><?php echo $line ?></p>
-								<?php
-							}
-					}
-					?>
+													echo '<p>'.$line.'</p>';
+												}
+										}
+										?>
 									</div>
 								</div>
 					<?php
@@ -2888,14 +2888,36 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 				$helper_readme = WYSIJA::get('readme', 'helper');
 				$helper_readme->scan();
 				$helper_licence = WYSIJA::get('licence', 'helper');
+                                $model_config = WYSIJA::get('config', 'model');
 				$data = array();
-				$data['abouttext'] = __('You updated! It\'s like having the next gadget, but better.', WYSIJA);
+				//
+
+                                $installed_time = (int)$model_config->getValue('installed_time');
+                                $usage =  time() - $installed_time;
+
+                                $helper_toolbox = WYSIJA::get('toolbox', 'helper');
+                                $usage_string = $helper_toolbox->duration_string($usage, true, 1);
+
+                                $onemonth = 3600*24*31;
+                                $twomonths = 3600*24*62;
+                                $year = 3600*24*365;
+                                if( $usage > $twomonths){
+                                    $data['abouttext'] = sprintf(__('You have been a MailPoet user for %s.', WYSIJA), '<strong>'.trim($usage_string).'</strong>');
+                                     if( $usage > $twomonths){
+                                         $data['abouttext'] .= '<br/>'.__( 'Wow! Thanks for being part of our community for so long.' , WYSIJA ) ;
+                                     }
+
+                                }else{
+                                    $data['abouttext'] = __('You updated! It\'s like having the next gadget, but better.', WYSIJA);
+                                }
+
+
 				// this is a flag to have a pretty clean update page where teh only call to action is our survey
-				$show_survey = true;
+				$show_survey = false;
 
 				$is_multisite = is_multisite();
 				$is_network_admin = WYSIJA::current_user_can('manage_network');
-				$model_config = WYSIJA::get('config', 'model');
+
 
 				if ($is_multisite) {
 					if ($is_network_admin) {
@@ -2905,12 +2927,32 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 					$model_config->save(array('wysija_whats_new' => WYSIJA::get_version()));
 				}
 
-                                $data = $this->_inject_alert( $data );
+                                $sharing_data = $model_config->getValue('analytics');
+                                if( empty( $sharing_data ) ){
+                                    $data['sections'][] = array(
+                                            'title' => __('One quick question...',WYSIJA),
 
-				// inject a poll in the what's new page
-				if($show_survey === false){
-                                    $data = $this->_inject_poll( $data );
+                                            'content' => '<div class="feature-section"><iframe frameborder="0" width="100%" height="370" scrolling="auto" allowtransparency="true" src="//mailpoet.polldaddy.com/s/what-s-new-sept-2015?iframe=1"><a href="//mailpoet.polldaddy.com/s/what-s-new-sept-2015">View Survey</a></iframe></div>'.
+											 '<div class="mpoet-update-subscribe" ><h4>'.__( 'Subscribe to our newsletters', WYSIJA ).'</h4><div class="mpoet-update-subscribe-left"> <p>'.__('We send a monthly newsletter with the following:',WYSIJA).'</p>' .
+                                                                                                    '<ul>' .
+                                                                                                            '<li>'.__('Important plugin updates',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('Coupons',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('Tips for you, or your customers',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('What we’re working on',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('News from us, the team',WYSIJA).'</li>' .
+                                                                                                    '</ul>
+                                                                                                     <p>View an <a target="_blank" href="http://www.mailpoet.com/?wysija-page=1&controller=email&action=view&email_id=1181&wysijap=subscriptions-3">an example blog post email</a> and <a target="_blank" href="http://www.mailpoet.com/?wysija-page=1&controller=email&action=view&email_id=64&wysijap=subscriptions-2">an example newsletter</a>.</p>
+                                                                                                        </div>' .
+                                                                                            '<div class="mpoet-update-subscribe-right">' .
+
+                                                                                            '<iframe width="380" scrolling="no" frameborder="0" src="http://www.mailpoet.com/?wysija-page=1&controller=subscribers&action=wysija_outter&wysija_form=5&external_site=1&wysijap=subscriptions-3" class="iframe-wysija" vspace="0" tabindex="0" style="position: static; top: 0pt; margin: 0px; border-style: none; height: 180px; left: 0pt; visibility: visible; background-color: #f1f1f1!important;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" title="Subscription Wysija"></iframe>
+                                                                                                </div>
+                                                                                                <div style="clear:both;"></div>',
+                                            'format' => 'title-content',
+                                    );
                                 }
+
+
 
 				$msg = $model_config->getValue('ignore_msgs');
 				if ( !isset($msg['ctaupdate']) && $show_survey === false ) {
@@ -2934,7 +2976,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
                                     $data['sections'][] = array(
 						'title' => 'Answer our survey and make your plugin better',
 
-						'content' => '<iframe frameborder="0" width="100%" height="600" scrolling="auto" allowtransparency="true" src="//mailpoet.polldaddy.com/s/mailpoet-survey-2014?iframe=1"><a href="//mailpoet.polldaddy.com/s/mailpoet-survey-2014">View Survey</a></iframe><hr/>',
+						'content' => '<iframe frameborder="0" width="100%" height="600" scrolling="auto" allowtransparency="true" src="//mailpoet.polldaddy.com/s/what-s-new-sept-2015?iframe=1"><a href="//mailpoet.polldaddy.com/s/what-s-new-sept-2015">View Survey</a></iframe><hr/>',
 						'format' => 'title-content',
 					);
                                 }
@@ -3034,28 +3076,8 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 											echo '<div class="'.$class_name.'">';
 											echo '</div>';
 											echo '</div>';
-
-
-                                                                                        echo '<div class="mpoet-update-subscribe" ><h4>3. '.__( 'Subscribe to our newsletters', WYSIJA ).'</h4>'.
-                                                                                                '<div class="mpoet-update-subscribe-left"><p>'.__('We send a monthly newsletter with the following:',WYSIJA).'</p>' .
-                                                                                                    '<ul>' .
-                                                                                                            '<li>'.__('Important plugin updates',WYSIJA).'</li>' .
-                                                                                                            '<li>'.__('Coupons',WYSIJA).'</li>' .
-                                                                                                            '<li>'.__('Tips for you, or your customers',WYSIJA).'</li>' .
-                                                                                                            '<li>'.__('What we’re working on',WYSIJA).'</li>' .
-                                                                                                            '<li>'.__('News from us, the team',WYSIJA).'</li>' .
-                                                                                                    '</ul>
-                                                                                                     <p>View <a target="_blank" href="http://www.mailpoet.com/?wysija-page=1&controller=email&action=view&email_id=64&wysijap=subscriptions-2">an example</a> of a newsletter we sent previously.</p>
-                                                                                                        </div>' .
-                                                                                            '<div class="mpoet-update-subscribe-right">' .
-
-                                                                                            '<iframe width="380px" scrolling="no" frameborder="0" src="http://www.mailpoet.com/?wysija-page=1&controller=subscribers&action=wysija_outter&wysija_form=5&external_site=1&wysijap=subscriptions-3" class="iframe-wysija" vspace="0" tabindex="0" style="position: static; top: 0pt; margin: 0px; border-style: none; height: 125px; left: 0pt; visibility: visible; background-color: #f1f1f1!important;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" title="Subscription Wysija"></iframe>
-                                                                                                </div>
-                                                                                                <div style="clear:both;"></div>
-
-                                                                                                </div>';
-
 											break;
+
 										default :
 											foreach ($section['paragraphs'] as $line) {
 												?>
@@ -3128,31 +3150,6 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 		// returning the new data array
 		return $data;
 	}
-
-        private function _inject_alert( $data ){
-            if ( WYSIJA::current_user_can( 'install_plugins' ) && version_compare( PHP_VERSION , '5.3' , '<' )) {
-
-                $data['abouttext'] .= '</div><div class="mp_php_alert">
-                    <h3>'.__('Hey! Your site is running an old software!', WYSIJA).'</h3>
-                    <ul>
-                        <li> '.__('MailPoet is modernizing itself in the coming months.',WYSIJA).'</li>
-                        <li>'.__("In order to enjoy our latest enhancements, you'll need to ask your hosting company to update your site.",WYSIJA).'</li>
-
-                        <li>'.' <h4>'.__("What are the benefits of updating my site now?",WYSIJA).'</h4>'.'</li>
-                        <li>
-                            <ol>
-                                <li>'.__("Your website will be more secure, running an updated software.",WYSIJA).'</li>
-                                <li>'.__("Your MailPoet will be more performant, scalable and reliable.",WYSIJA).'</li>
-                                <li>'.__("You will be one-step closer to the next generation of WordPress coming in 2015 which will require more recent software.",WYSIJA).'</li>
-                            </ol>
-                        </li>
-                        <li><h4>'.__("Ready to Update your site?",WYSIJA).'</h4></li>
-                        <li><a href="http://support.mailpoet.com/knowledgebase/how-to-prepare-my-site-for-mailpoet-3-0" target="_blank">'.__("Yes, please guide me!",WYSIJA).'</a> - <a href="http://support.mailpoet.com/?utm_source=wpadmin&utm_medium=plugin&utm_campaign=contact_php_update" class="mp_negative" target="_blank">'.__("No, I have a few concerns...",WYSIJA).'</a></li>
-                    </ul>';
-
-            }
-            return $data;
-        }
 
 	private function _get_social_buttons($inline=true){
 

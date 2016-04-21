@@ -31,7 +31,7 @@
 
             <p class="submit">
                 <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary btn-block" value="<?php echo __('Log In', 'aviators'); ?>">
-                <input type="hidden" name="redirect_to" value="<?php echo site_url(); ?>">
+                <input type="hidden" name="redirect_to" value="<?php echo site_url()."/wp-admin"; ?>">
             </p>
         </form>
     </div><!-- /.col-md-4 -->

@@ -170,7 +170,7 @@ class WJ_Import extends WYSIJA_object {
 	 * @return type
 	 */
 	private function _get_import_query_header() {
-		return 'INSERT IGNORE INTO [wysija]user (`' . implode('` ,`', $this->_data_to_insert) . '`,`created_at`) VALUES ';
+		return 'INSERT INTO [wysija]user (`' . implode('` ,`', $this->_data_to_insert) . '`,`created_at`) VALUES ';
 	}
 
 	/**
@@ -338,10 +338,11 @@ class WJ_Import extends WYSIJA_object {
 			if($rows_to_read!=0 && $i> $rows_to_read) return $data;
 
 			// str_getcsv only exists in php5 and is a faster and cleaner function than our csv_explode
-			if (!function_exists('str_getcsv')) {
+			if (!function_exists('str_getcsv') || strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 				$data[] = $this->_lines_explode($csv_line, $delimiter, $enclosure);
 			} else {
 				$data[] = str_getcsv($csv_line, $delimiter, $enclosure);
+
 			}
 
 			$i++;
@@ -463,6 +464,9 @@ class WJ_Import extends WYSIJA_object {
 
 		$query .= implode(', ', $lines);
 
+	  	// update values when the user already exists
+		$query .= ' ON DUPLICATE KEY UPDATE '.implode(', ', array_map(array($this, 'process_data_to_insert'), $this->_data_to_insert));
+
 		// replace query to import the subscribers
 		$model_wysija = new WYSIJA_model();
 		$import_query = $model_wysija->query($query);
@@ -499,7 +503,7 @@ class WJ_Import extends WYSIJA_object {
 	 * @param type $value
 	 */
 	function _validate_value($column_name, $value) {
-		$value = trim($value);
+		$value = esc_attr(trim($value));
 
 		switch ($column_name) {
 			case 'email':
@@ -841,5 +845,9 @@ class WJ_Import extends WYSIJA_object {
 
 		return $this->_data_result;
 	}
+
+	private function process_data_to_insert($v) {
+		return '`'.$v.'` = VALUES(`'.$v.'`)';
+  	}
 
 }

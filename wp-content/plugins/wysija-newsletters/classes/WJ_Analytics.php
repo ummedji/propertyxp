@@ -28,6 +28,10 @@ class WJ_Analytics {
           'label' => 'Confirmed subscribers',
           'value' => ''
         ),
+        'range_confirmed_subscribers' => array(
+          'label' => 'Range Confirmed subscribers',
+          'value' => ''
+        ),
         'unconfirmed_subscribers' => array(
           'label' => 'Unconfirmed subscribers',
           'value' => ''
@@ -155,11 +159,14 @@ class WJ_Analytics {
         'is_multisite' => array(
           'label' => 'Using Multisite',
           'value' => ''
-        )
+        ),
+        'bounce_enabled' => array(
+          'label' => 'Using bounce',
+          'value' => ''
+      )
     );
 
     function __construct() {
-
     }
 
     /**
@@ -182,7 +189,7 @@ class WJ_Analytics {
 
       foreach ($this->analytics_data as $key => $data) {
         $method = $key;
-        $this->analytics_data[$key]['value'] = $this->$method();
+        $this->analytics_data[$key]['value'] = call_user_func(array($this, $method));
       }
 
     }
@@ -303,6 +310,66 @@ class WJ_Analytics {
         $confirmed_percentage = round(($confirmed_subscribers * 100) / $total_subscribers);
 
         return $confirmed_percentage;
+    }
+
+    /**
+     *
+     * @return string range eg: 0-100 101-200 2001-500
+     */
+    private function range_confirmed_subscribers(){
+        $model_user = WYSIJA::get('user', 'model');
+        $query = 'SELECT COUNT(*) as confirmed_subscribers
+              FROM ' . '[wysija]' . $model_user->table_name . '
+              WHERE  status = 1';
+        $result = $model_user->query('get_res', $query);
+
+        $confirmed_subscribers =  (int) $result[0]['confirmed_subscribers'];
+
+        $ranges_increment = array( 2000 => 100, 10000 => 500, 20000 => 1000, 40000 => 2000, 100000 => 5000, 200000 => 10000, 500000 => 25000, 1000000 => 50000);
+
+        $found_range = $this->range_finder( $confirmed_subscribers, $ranges_increment );
+
+        return $found_range['lower'].' - '.$found_range['upper'];
+    }
+
+    private function range_finder($value, $ranges_increment){
+
+        $limit_max = 0;
+        foreach( $ranges_increment as $limit => $range_increment ){
+            $small_limit = $limit_max + $range_increment;
+            $limit_max = $limit;
+
+            if( $value > $limit_max){
+                continue;
+            }
+
+            while( $value >= $small_limit && $small_limit <= $limit_max ){
+
+                if( $value > $small_limit ){
+                    $min_value = $small_limit - $range_increment + 1;
+                }
+                if( $value == $small_limit ){
+                    break;
+                }
+                $small_limit += $range_increment;
+            }
+
+            if( $value <= $small_limit){
+                break;
+            }
+        }
+
+        if( $value > $limit_max){
+            return array( 'lower' => $limit_max , 'upper' => 'above' );
+        }else{
+            if( $value < 1 ){
+                return array( 'lower' => 0 , 'upper' => 'or undefined' );
+            }else{
+                $min_value = $small_limit - $range_increment + 1;
+                return array( 'lower' => $min_value , 'upper' => $small_limit );
+            }
+        }
+
     }
 
     /**
@@ -814,4 +881,19 @@ class WJ_Analytics {
 		return $php_version;
 	}
 
+
+    /**
+     * Check if bounce is enabled
+     * @return string
+     */
+    private function bounce_enabled() {
+      $multisite_prefix = '';
+      if ( is_multisite() ) {
+        $multisite_prefix = 'ms_';
+      }
+      $model_config = WYSIJA::get('config', 'model');
+      return ($model_config->getValue(
+          $multisite_prefix . 'bounce_process_auto')
+        ) ? "Yes" : "No";
+    }
 }

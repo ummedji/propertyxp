@@ -2,19 +2,43 @@ jQuery(document).ready(function () {
 	jQuery(".field-item label").mouseover(function(){
 		showTooltip(this);
 	});
+	jQuery(".field-item label").mouseleave(function(){
+		hideTooltip(this);
+	});
 	jQuery(".field label").mouseover(function(){
 		showTooltip(this);
+	});
+	jQuery(".field label").mouseleave(function(){
+		hideTooltip(this);
 	});
 	jQuery(".hndle span").mouseover(function(){
 		showTooltip(this);
 	});
+	jQuery(".hndle span").mouseleave(function(){
+		hideTooltip(this);
+	});
 	jQuery(".wrap h2").mouseover(function(){
 		showTooltip(this);
+	});
+	jQuery(".wrap h2").mouseleave(function(){
+		hideTooltip(this);
 	});
 	jQuery("#displayform").mouseover(function(){
 		showEnquiryTooltip(this);
 	});
+	jQuery("#displayform").mouseleave(function(){
+		hideEnquiryTooltip(this);
+	});
 });
+function hideTooltip(elem)
+{
+var tooltipLabel = jQuery(elem).text().toLowerCase().trim();
+	tooltipLabel = tooltipLabel.replace('*', '').trim();
+		if(typeof tooltipMessage[tooltipLabel] != 'undefined'){
+			jQuery(elem).attr("title","");
+			jQuery(elem).tooltip('close');
+		}	
+}
 function showTooltip(elem)
 {
 	var tooltipLabel = jQuery(elem).text().toLowerCase().trim();
@@ -25,6 +49,11 @@ function showTooltip(elem)
 			  content: tooltipMessage[tooltipLabel]
 			});
 		}				
+}
+function hideEnquiryTooltip()
+{
+	jQuery('#displayform').attr("title","");
+	jQuery('#displayform').tooltip('close');
 }
 function showEnquiryTooltip()
 {

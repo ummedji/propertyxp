@@ -7,8 +7,8 @@ defined('WYSIJA') or die('Restricted access');
  */
 class WYSIJA_help_back extends WYSIJA_help{
 
-    function WYSIJA_help_back(){
-        parent::WYSIJA_help();
+    function __construct(){
+        parent::__construct();
         //check that the application has been installed properly
         $config=WYSIJA::get('config','model');
 
@@ -529,6 +529,7 @@ class WYSIJA_help_back extends WYSIJA_help{
         }
             $jstrans['newsletters']=__('Newsletters',WYSIJA);
             $jstrans['urlpremium']='admin.php?page=wysija_config#tab-premium';
+            $jstrans['premium_activating'] = __('Checking license', WYSIJA);
             if(isset($_REQUEST['page']) && $_REQUEST['page']=='wysija_config'){
                 $jstrans['urlpremium']='#tab-premium';
             }

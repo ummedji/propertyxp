@@ -73,7 +73,11 @@ class WJ_Upgrade extends WYSIJA_object {
 		}
 	}
 
-	public function update_plugin_complete_actions( $update_actions, $mixed = null, $plugin = null ){
+  //$titlelink=str_replace(array('[link]','[\link]'), array('<a href="">','</a>'),'');
+
+
+
+  public function update_plugin_complete_actions( $update_actions, $mixed = null, $plugin = null ){
 		$actions = array(
 			'refresh_page' => '<a href="#" onclick="window.parent.location.reload(true);return false;" title="' . esc_attr__( 'Refresh the page you current are!', WYSIJA ) . '" target="_parent">' . __( 'Return to MailPoet', WYSIJA ) . '</a>'
 		);
@@ -337,23 +341,25 @@ class WJ_Upgrade extends WYSIJA_object {
 				return;
 			}
 
-			switch ( $_POST['action'] ){
+			$action = (isset($_POST['action']) ? $_POST['action'] : null);
+
+			switch($action) {
 				case 'delete-selected':
-					break;
+
+				break;
 
 				case 'deactivate-selected':
 					if ( in_array( self::$plugins[0], $plugins ) && ! in_array( self::$plugins[1], $plugins ) && is_plugin_active( self::$plugins[1] ) ){
 						$plugins[] = self::$plugins[1];
 					}
-					break;
+				break;
 
 				case 'update-selected':
 				case 'activate-selected':
 					if ( in_array( self::$plugins[1], $plugins ) && ! in_array( self::$plugins[0], $plugins ) ){
 						$plugins[] = self::$plugins[0];
 					}
-
-					break;
+				break;
 			}
 
 			$_POST['checked'] = $plugins;

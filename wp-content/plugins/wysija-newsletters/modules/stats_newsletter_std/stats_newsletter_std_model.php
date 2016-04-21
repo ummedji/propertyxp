@@ -111,7 +111,8 @@ class WYSIJA_model_stats_newsletter_std extends WYSIJA_module_statistics_model {
 	 *      int => string (id => name),
 	 *  )
 	 */
-	public function get_lists($campaign_id) {
+	public function get_lists($campaign_id) { 
+	
 		$campaign_id = (int)$campaign_id;
 		$lists	   = array( );
 		if (!empty($campaign_id)) {

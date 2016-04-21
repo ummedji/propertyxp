@@ -12,8 +12,9 @@ class WYSIJA_control_back extends WYSIJA_control{
     var $viewShow=null;
     var $_affected_rows = 0; //affected rows by batch select
 
-    function WYSIJA_control_back(){
-        parent::WYSIJA_control();
+    function __construct($extension="wysija-newsletters"){
+        $this->extension=$extension;
+        parent::__construct();
         global $wysija_msg,$wysija_queries,$wysija_queries_errors;
         $wysija_msgTemp=get_option('wysija_msg');
 
@@ -186,7 +187,7 @@ class WYSIJA_control_back extends WYSIJA_control{
      * by default this is the first method called from a controller this is from where we route to other methods
      */
     function main(){
-        $this->WYSIJA_control_back();
+        $this->__construct();
         if($this->model){
             if(isset($_REQUEST['action']))  $action=$_REQUEST['action'];
             else  $action='defaultDisplay';
@@ -312,7 +313,7 @@ class WYSIJA_control_back extends WYSIJA_control{
 
         //Create a temporary table
         $temp_table_name = '[wysija]user'. time();
-        $temp_table_create = 'CREATE TEMPORARY TABLE IF NOT EXISTS '.$temp_table_name . ' (user_id int (10) NOT NULL, PRIMARY KEY (user_id)) ENGINE=MyISAM';
+        $temp_table_create = 'CREATE TEMPORARY TABLE IF NOT EXISTS '.$temp_table_name . ' (user_id int (10) NOT NULL, PRIMARY KEY (user_id))';
         $temp_table_insert = 'INSERT IGNORE INTO '.$temp_table_name.' ' . $this->_batch_select['query'];
         $model_user = WYSIJA::get('user','model');
 

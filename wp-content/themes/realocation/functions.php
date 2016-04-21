@@ -745,7 +745,7 @@ function filter_add_posts_singletime($query)
 	'order'            => 'DESC',
 	'post_type'        => 'property',
 	'author'	   => $user_ID,
-        'post_status'      => 'publish',
+    'post_status'      => 'publish',
 	'suppress_filters' => true 
 	);      
     $posts_array = get_posts( $args ); 
@@ -770,31 +770,64 @@ function filter_add_posts_singletime($query)
        <?php 
           }
         }
-		
+        
+       ?> 
+ <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script type="text/javascript">      
+	
+	jQuery(document).ready(function(){
+           
+           jQuery("body").find(".field-item label").each(function() {
+                var data = jQuery(this).text();
+                alert(data);
+                  jQuery(this).attr({
+                    title: data
+                  });
+            
+          });
+           
+           jQuery(document).tooltip();
+           
+        });  
+          </script> -->
+        
+<?php		
 }
 	
 /*##############ADD TOOLTIP CODE START#############*/
+
 add_action( 'admin_footer', 'custom_admin_pointers_footer' );
 function custom_admin_pointers_footer() {
-	?>
+?>
+
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  
-  <?php if(isset($_REQUEST['post_type']) && $_REQUEST['post_type'] == 'property') { ?>
-   
+<?php
+if(isset($_REQUEST['post']))   
+{
+$post_type = get_post_type($_REQUEST['post']);	
+	if($post_type == 'property')
+	{ ?>
+	<link rel="stylesheet" href="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/css/customtooltip.css'; ?>">
+	<script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/tooltipconstant.js'; ?>"></script>
+	<script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/customtooltip.js'; ?>"></script>
+	<?php }
+}
+?>
+<?php if(isset($_REQUEST['post_type']) && $_REQUEST['post_type'] == 'property') { ?>
   <link rel="stylesheet" href="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/css/customtooltip.css'; ?>">
   <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/tooltipconstant.js'; ?>"></script>
   <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/customtooltip.js'; ?>"></script>
-  
 	<?php } ?>
-	<?php if(isset($_REQUEST['page']) && $_REQUEST['page'] == 'CF7DBPluginSubmissions') { ?>
-   
+	
+<?php if(isset($_REQUEST['page']) && $_REQUEST['page'] == 'CF7DBPluginSubmissions') { ?>
   <link rel="stylesheet" href="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/css/customtooltip.css'; ?>">
   <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/tooltipconstant.js'; ?>"></script>
   <script src="<?php echo bloginfo('url').'/wp-content/themes/realocation/assets/js/customtooltip.js'; ?>"></script>
-  
 	<?php } ?>
-	<?php 
+<?php 
 }
 /*##############ADD TOOLTIP CODE END#############*/
 
@@ -819,4 +852,27 @@ function remove_menus_data () {
     
 }
 
-/*##############NEWSLETTER USERWISE END#############*/
+/*##############ADDING PHONE NUMBER VALIDATION FOR PHONE NUMBER#############*/
+
+/*
+Validate Numbers in Contact Form 7
+This is for 10 digit numbers
+*/
+
+function is_number( $result, $tag ) {
+$type = $tag['type'];
+$name = $tag['name'];
+
+if ($name == 'phone' || $name == 'fax') { // Validation applies to these textfield names. Add more with || inbetween
+$stripped = preg_replace( '/\D/', '', $_POST[$name] );
+$_POST[$name] = $stripped;
+if( strlen( $_POST[$name] ) != 10 ) { // Number string must equal this
+$result['valid'] = false;
+$result['reason'][$name] = $_POST[$name] = 'Please enter a 10 digit phone number.';
+}
+}
+return $result;
+}
+
+add_filter( 'wpcf7_validate_text', 'is_number', 10, 2 );
+add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );

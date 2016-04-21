@@ -2,8 +2,8 @@
 defined('WYSIJA') or die('Restricted access');
 class WYSIJA_help_articles extends WYSIJA_object {
 
-	function WYSIJA_help_articles() {
-
+	function __construct(){
+	  parent::__construct();
 	}
 
 	function stripShortcodes($content) {
@@ -301,7 +301,7 @@ class WYSIJA_help_articles extends WYSIJA_object {
 			$post_thumbnail = get_post_thumbnail_id($post['ID']);
 
 			// get attachment data (src, width, height)
-			$image_info = wp_get_attachment_image_src($post_thumbnail, 'single-post-thumbnail');
+			$image_info = wp_get_attachment_image_src($post_thumbnail, 'wysija-newsletters-max');
 
 			// get alt text
 			$altText = trim(strip_tags(get_post_meta($post_thumbnail, '_wp_attachment_image_alt', true)));

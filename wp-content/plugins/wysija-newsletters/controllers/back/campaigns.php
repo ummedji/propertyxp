@@ -12,10 +12,11 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 	var $filters = array();
 	var $base_url = 'admin.php';
 
-	function WYSIJA_control_back_campaigns() {
-
+	function __construct(){
+	  global $wpdb;
+	  parent::__construct();
+	  $this->wpdb = $wpdb;
 	}
-
 
 	private function _wysija_subaction() {
 		if (isset($_REQUEST['subaction'])) {
@@ -64,7 +65,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 			$condition = '>=';
 			if ($model_config->getValue('confirm_dbleoptin'))
 				$condition = '>';
-			$qry1 = "SELECT count(distinct A.user_id) as nbsub,A.list_id FROM `[wysija]user_list` as A LEFT JOIN `[wysija]user` as B on A.user_id=B.user_id WHERE B.status $condition 0 and A.sub_date>0 and A.unsub_date=0 GROUP BY list_id";
+			$qry1 = "SELECT count(distinct A.user_id) as nbsub,A.list_id FROM `[wysija]user_list` as A LEFT JOIN `[wysija]user` as B on A.user_id=B.user_id WHERE B.status $condition 0 and A.unsub_date=0 GROUP BY list_id";
 
 			$total = $model_list->getResults($qry1);
 
@@ -105,7 +106,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 
 		//add a new language code with a new video
 		$video_language=array();
-		$video_language['en_EN'] = '<iframe src="//player.vimeo.com/video/81479899" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+		$video_language['en_EN'] = '<iframe src="//player.vimeo.com/video/130224536" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 
 		$wp_lang = get_locale();
 		if (!empty($wp_lang) && isset($video_language[$wp_lang])) {
@@ -115,28 +116,25 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 		}
 
 		$this->data['sections'][] = array(
-			'title' => __('Hey, we\'re curious! How did you find out about us?', WYSIJA) . '<span id="poll_result"></span>',
+			'title' => __('Stay up to date! Subscribe to our newsletters', WYSIJA) . '<span id="poll_result"></span>',
 			'format' => 'normal',
-			'paragraphs' => array(
-				'<ul class="welcome_poll">
-						<li>
-							<input type="radio" id="how_did_you_find_us_1" value="repository" name="how_did_you_find_us">
-							<label value="lab1" for="how_did_you_find_us_1">' . __('WordPress.org plugin repository', WYSIJA) . '</label>
-						</li>
-						<li>
-							<input type="radio" id="how_did_you_find_us_2" value="search_engine" name="how_did_you_find_us">
-							<label value="lab2" for="how_did_you_find_us_2">' . __('Google or other search engine', WYSIJA) . '</label>
-						</li>
-						<li>
-							<input type="radio" id="how_did_you_find_us_3" value="friend" name="how_did_you_find_us">
-							<label value="lab3" for="how_did_you_find_us_3">' . __('Friend recommendation', WYSIJA) . '</label>
-						</li>
-						<li>
-							<input type="radio" id="how_did_you_find_us_4" value="url" name="how_did_you_find_us">
-							<label value="lab4" for="how_did_you_find_us_4">' . __('Blog post, online review, forum:', WYSIJA) . '</label>
-							<input type="text" id="how_did_you_find_us_4_url"  name="how_did_you_find_us_url" placeholder="' . __('Please enter the address where you\'ve found out about us', WYSIJA) . '">
-						</li>
-					</ul>'
+			'paragraphs' => array('<div class="mpoet-update-subscribe" ><h4></h4><div class="mpoet-update-subscribe-left"> <p>'.__('We send a monthly newsletter with the following:',WYSIJA).'</p>' .
+                                                                                                    '<ul>' .
+                                                                                                            '<li>'.__('Important plugin updates',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('Coupons',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('Tips for you, or your customers',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('What we’re working on',WYSIJA).'</li>' .
+                                                                                                            '<li>'.__('News from us, the team',WYSIJA).'</li>' .
+                                                                                                    '</ul>
+                                                                                                     <p>View an <a target="_blank" href="http://www.mailpoet.com/?wysija-page=1&controller=email&action=view&email_id=1181&wysijap=subscriptions-3">an example blog post email</a> and <a target="_blank" href="http://www.mailpoet.com/?wysija-page=1&controller=email&action=view&email_id=64&wysijap=subscriptions-2">an example newsletter</a>.</p>
+                                                                                                        </div>' .
+                                                                                            '<div class="mpoet-update-subscribe-right">' .
+
+                                                                                            '<iframe width="380" scrolling="no" frameborder="0" src="http://www.mailpoet.com/?wysija-page=1&controller=subscribers&action=wysija_outter&wysija_form=5&external_site=1&wysijap=subscriptions-3" class="iframe-wysija" vspace="0" tabindex="0" style="position: static; top: 0pt; margin: 0px; border-style: none; height: 180px; left: 0pt; visibility: visible; background-color: #f1f1f1!important;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" title="Subscription Wysija"></iframe>
+                                                                                                </div>
+                                                                                                <div style="clear:both;"></div>
+
+                                                                                                </div>',
 			)
 		);
 
@@ -206,7 +204,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 
 	// when curl or any php remote function not available mailpoet.com returns lcheck to that function
 	function licok() {
-		parent::WYSIJA_control_back();
+		parent::__construct();
 		$dt = get_option('wysijey');
 
 		if (isset($_REQUEST['xtz']) && $dt === $_REQUEST['xtz']) {
@@ -442,6 +440,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 
 
 	function edit($dataPost = false) {
+		$this->unauthorisedRedirection($_REQUEST['id']);
 		if (!$this->_checkEmailExists($_REQUEST['id']))
 			return;
 		$this->add();
@@ -462,6 +461,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 	}
 
 	function editTemplate() {
+		
 		// make sure the editor content is not cached
 		header('Cache-Control: no-cache, max-age=0, must-revalidate, no-store'); // HTTP/1.1
 		header('Expires: Fri, 9 Mar 1984 00:00:00 GMT');
@@ -497,12 +497,56 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 
 		$this->viewObj->title = sprintf(__('Second step:  "%1$s"', WYSIJA), $this->data['email']['subject']);
 		$this->title = sprintf(__('Step %1$s', WYSIJA), 2) . " | " . $this->data['email']['subject'];
-
+		$this->addUserId($_REQUEST['id']);
 		// check if html source is enabled in the config (this will add the "html source" button in tinymce)
 		$model_config = WYSIJA::get('config', 'model');
 		$this->jsTrans['html_source_enabled'] = (int) $model_config->getValue('html_source');
 	}
-
+	function unauthorisedRedirection($email_id)
+	{
+		global $wpdb;
+		$user_id = get_current_user_id();
+		$data = $wpdb->get_results("SELECT user_id FROM `wp_wysija_email` WHERE email_id=$email_id");
+		$templateUser = $data[0]->user_id;
+			$currentUser = wp_get_current_user();
+			if(in_array('administrator', $currentUser->roles))
+			{
+			return true;
+			}
+			else
+			{
+				if($user_id != $templateUser)
+				{
+				$this->redirect('admin.php?page=wysija_campaigns');	
+				}
+			}
+		
+	}
+	function addUserId($email_id)
+	{
+		global $wpdb;
+		$user_id = get_current_user_id();
+		$currentUser = wp_get_current_user();
+		
+				if(in_array('administrator', $currentUser->roles))
+				{
+					$data = $wpdb->get_results("SELECT user_id FROM `wp_wysija_email` WHERE email_id=$email_id");
+					$templateUser = $data[0]->user_id;
+					if($templateUser != $user_id)
+					{
+						
+					}
+					else
+					{
+						$wpdb->query($wpdb->prepare("UPDATE `wp_wysija_email` SET user_id='$user_id' WHERE email_id=$email_id"));
+					}
+				}
+				else
+				{
+					$wpdb->query($wpdb->prepare("UPDATE `wp_wysija_email` SET user_id='$user_id' WHERE email_id=$email_id"));
+				}
+				
+	}
 	function checkIsEditable() {
 		if (
 				!($this->data['email'] == 2 || isset($this->data['email']['params']['schedule']['isscheduled'])) && $this->data['email']['status'] > 0
@@ -545,17 +589,18 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 	}
 
 	function duplicate() {
+		$user_id = get_current_user_id();
 		/* 1 - copy the campaign entry */
                 $this->requireSecurity();
 		$model = WYSIJA::get( 'campaign', 'model' );
 		$query = 'INSERT INTO `[wysija]campaign` (`name`,`description`)
-			SELECT concat("' . mysql_real_escape_string( __( 'Copy of ', WYSIJA ) ) . '",`name`),`description` FROM [wysija]campaign
+			SELECT concat("' . $this->wpdb->_real_escape( __( 'Copy of ', WYSIJA ) ) . '",`name`),`description` FROM [wysija]campaign
 			WHERE campaign_id=' . (int) $_REQUEST['id'];
 		$campaignid = $model->query( $query );
 
 		/* 2 - copy the email entry */
-		$query = 'INSERT INTO `[wysija]email` (`campaign_id`,`subject`,`body`,`type`,`params`,`wj_data`,`wj_styles`,`from_email`,`from_name`,`replyto_email`,`replyto_name`,`attachments`,`status`,`created_at`,`modified_at`)
-			SELECT ' . $campaignid . ', concat("' . mysql_real_escape_string( __( 'Copy of ', WYSIJA ) ) . '",`subject`),`body`,`type`,`params`,`wj_data`,`wj_styles`,`from_email`,`from_name`,`replyto_email`,`replyto_name`,`attachments`,0,' . time() . ',' . time() . ' FROM [wysija]email
+		$query = 'INSERT INTO `[wysija]email` (`campaign_id`,`subject`,`body`,`type`,`params`,`wj_data`,`wj_styles`,`from_email`,`from_name`,`replyto_email`,`replyto_name`,`attachments`,`status`,`created_at`,`modified_at`,`user_id`)
+			SELECT ' . $campaignid . ', concat("' . $this->wpdb->_real_escape( __( 'Copy of ', WYSIJA ) ) . '",`subject`),`body`,`type`,`params`,`wj_data`,`wj_styles`,`from_email`,`from_name`,`replyto_email`,`replyto_name`,`attachments`,0,' . time() . ',' . time() . ' ,"'.$user_id.'" FROM [wysija]email
 			WHERE email_id=' . (int) $_REQUEST['email_id'];
 		$emailid = $model->query( $query );
 
@@ -1376,7 +1421,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 			$order_by.='B.type desc, ';
 			$order_by.='A.' . $this->modelObj->getPk() . ' DESC';
 		}
-
+		$user_id = get_current_user_id();
 		$query = '
 			SELECT
 				A.`campaign_id`,
@@ -1407,7 +1452,17 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 				`[wysija]email` AS B on A.`campaign_id` = B.`campaign_id`
 			LEFT JOIN
 				`[wysija]campaign_list` AS C on A.`campaign_id` = C.`campaign_id`';
-		$campaigns = $this->modelObj->getResults($query . $this->modelObj->makeWhere() . ' GROUP BY B.email_id' . $order_by . $this->modelObj->setLimit());
+				$currentUser = wp_get_current_user();
+				if(in_array('administrator', $currentUser->roles))
+				{
+					$makeWhaereQuery = $this->modelObj->makeWhere();
+				}
+				else
+				{
+					$makeWhaereQuery = $this->modelObj->makeWhere() .' AND `user_id` = '.$user_id;
+				}
+		
+		$campaigns = $this->modelObj->getResults($query . $makeWhaereQuery.' GROUP BY B.email_id' . $order_by . $this->modelObj->setLimit());
 
 		// calculate percetange of open / click / unsubscribe
 		$helper_numbers = WYSIJA::get('numbers', 'helper');
@@ -1443,6 +1498,16 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 	 * @todo: move to model
 	 */
 	protected function count_emails_by_status() {
+		$user_id = get_current_user_id();
+		$currentUser = wp_get_current_user();
+				if(in_array('administrator', $currentUser->roles))
+				{
+					$makeWhaereQuery = '';
+				}
+				else
+				{
+					$makeWhaereQuery =  'AND `user_id` = '.$user_id;
+				}
 	   $query = '
 			SELECT
 				COUNT(`email_id`) AS `campaigns`,
@@ -1450,7 +1515,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 			FROM
 				`[wysija]email`
 			WHERE
-				`campaign_id` > 0
+				`campaign_id` > 0 '.$makeWhaereQuery.'
 			GROUP BY `status`';
 
 		$countss = $this->modelObj->query('get_res', $query);
@@ -1480,6 +1545,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 			$total = $total + $count['campaigns'];
 			$counts['status-' . $type] = $count['campaigns'];
 		}
+		
 		return $counts;
 	}
 
@@ -1503,6 +1569,16 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 	 * Count ALL emails of each type of email
 	 */
 	protected function count_emails_by_type() {
+		$user_id = get_current_user_id();
+		$currentUser = wp_get_current_user();
+				if(in_array('administrator', $currentUser->roles))
+				{
+					$makeWhaereQuery = '';
+				}
+				else
+				{
+					$makeWhaereQuery =  'AND `user_id` = '.$user_id;
+				}
 		$query = '
 			SELECT
 				COUNT(`email_id`) AS `campaigns`,
@@ -1510,7 +1586,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 			FROM
 				`[wysija]email`
 			WHERE
-				`campaign_id` > 0
+				`campaign_id` > 0 '.$makeWhaereQuery.'
 			GROUP BY `type`';
 		$countss = $this->modelObj->query('get_res', $query, ARRAY_A);
 		$counts = array();
