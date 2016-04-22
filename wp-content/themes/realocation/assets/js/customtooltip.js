@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+/*jQuery(document).ready(function () {
 	jQuery(".field-item label").mouseover(function(){
 		showTooltip(this);
 	});
@@ -61,7 +61,10 @@ function showEnquiryTooltip()
 	jQuery('#displayform').tooltip({
 	content: tooltipMessage['displayform']
 	});
-}		
+}	
+
+
+*/
 			/* var Arr = { 'Add New Property':'.wrap h2', 'aaaa':'bbb' };
 			var getTitle = jQuery( ".wrap h2" ).text();
 			jQuery( Arr[getTitle] ).hover(function(){

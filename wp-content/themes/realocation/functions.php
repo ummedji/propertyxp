@@ -772,26 +772,79 @@ function filter_add_posts_singletime($query)
         }
         
        ?> 
- <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
          <script type="text/javascript">      
 	
 	jQuery(document).ready(function(){
            
-           jQuery("body").find(".field-item label").each(function() {
-                var data = jQuery(this).text();
-                alert(data);
-                  jQuery(this).attr({
-                    title: data
-                  });
-            
-          });
+           <?php
+           if($_REQUEST["post_type"] == "property" || (isset($_REQUEST["post"]) && $_REQUEST["action"] == "edit")){
+           ?>
            
+           jQuery("body").find("label").each(function() {
+                var data = jQuery(this).text();
+                data = data.replace('*', '').trim();
+                
+                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
+                  var key = jQuery.trim(data.toLowerCase());
+                  var tooltip_new_data = tooltipMessage[key];
+                  
+                  jQuery(this).attr({
+                    title: tooltip_new_data
+                  });
+              }
+              
+           });
+           
+           jQuery("body").find(".hndle span").each(function() {
+                var data = jQuery(this).text();
+                data = data.replace('*', '').trim();
+               
+                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
+                  var key = jQuery.trim(data.toLowerCase());
+                  var tooltip_new_data = tooltipMessage[key];
+                  
+                  jQuery(this).attr({
+                    title: tooltip_new_data
+                  });
+              }
+                
+           });
+           
+           jQuery("body").find(".wrap h2").each(function() {
+                var data = jQuery(this).text();
+                data = data.replace('*', '').trim();
+                
+                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
+                  var key = jQuery.trim(data.toLowerCase());
+                  var tooltip_new_data = tooltipMessage[key];
+                  
+                  jQuery(this).attr({
+                    title: tooltip_new_data
+                  });
+              }
+                
+           });
+           <?php
+           }
+           if($_REQUEST["page"] == "CF7DBPluginSubmissions"){
+           ?>
+           jQuery("body").find("#displayform").each(function() {
+              
+                  var tooltip_new_data = tooltipMessage["displayform"];
+                  
+                  jQuery(this).attr({
+                    title: tooltip_new_data
+                  });
+               
+           });
+           <?php } ?>
            jQuery(document).tooltip();
            
         });  
-          </script> -->
+        
+          </script> 
         
 <?php		
 }
