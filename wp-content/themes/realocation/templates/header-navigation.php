@@ -1,5 +1,5 @@
-<div class="header-navigation">
-    <div class="container">
+<div class="header-navigation pull-right as_header_navigation">
+    
         <div class="row">
             <nav class="collapse header-nav nav-collapse" role="navigation">
                 <?php wp_nav_menu( array(
@@ -10,5 +10,5 @@
                 ) ); ?>
             </nav>
         </div><!-- /.row -->
-    </div><!-- /.container -->
+
 </div><!-- /.header-navigation -->

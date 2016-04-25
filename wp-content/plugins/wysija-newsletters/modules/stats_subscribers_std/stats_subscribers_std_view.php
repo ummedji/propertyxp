@@ -35,6 +35,7 @@ class WYSIJA_module_view_stats_subscribers_std_view extends WYSIJA_view_back {
 						$i			= 1;
 						$alt		  = false;
 						$email_helper = WYSIJA::get('email', 'helper');
+						
 						foreach ($data['opened_newsletters']['emails'] as $email) {
 							$full_url = $email_helper->getVIB($email);
 							if (empty($email['urls'])) {

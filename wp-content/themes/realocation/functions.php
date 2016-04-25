@@ -713,12 +713,74 @@ function jquery_remove_counts()
              <?php   } ?>
 		jQuery("li.publish").remove();
 		jQuery("li.trash").remove();
-                jQuery("li.draft").remove();
+        jQuery("li.draft").remove();
+		
+
 	});
 	</script>
 	<?php
 }
 add_action('admin_footer', 'jquery_remove_counts');
+
+/*
+ * FOR SENDING NEWS LETTER TO LEADS
+ */
+add_action('admin_footer', 'jquery_send_newsletter');
+
+function jquery_send_newsletter(){
+   ?> 
+    <script type="text/javascript">
+	jQuery(function(){
+           
+		jQuery("button.send_newsletter").on("click",function(){
+                    jQuery("div.error_message").empty();
+                    var user_lead_array = [];
+                    jQuery('input[name="user_leads_checkbox"]:checked').each(function() {
+                        user_lead_array.push(this.value);
+                     });
+                     
+                     var selected_newsletter = jQuery("input[name=newsletter_radio]:checked").val();
+                     var error = 0;
+                     var error_array = [];
+                     if(user_lead_array.length === 0){
+                          error = 1;
+                          error_array.push("Please Select some leads to send Newsletter.");
+                     }
+                     
+                     if(selected_newsletter == "undefined" || selected_newsletter == null || selected_newsletter == ""){ 
+                          error = 1;
+                          error_array.push("Please Select Newsletter to Send."); 
+                     }
+                     
+                     if(error_array.length === 0){
+                         
+                         // CALL AJAX TO SEND NEWS LETTER
+                         var url = "<?php echo site_url(); ?>";
+                         jQuery.post(url+"/send-newsletter",{user_lead : user_lead_array,newsletter:selected_newsletter},function(response){
+                             
+                             jQuery("div.error_message").append("<span style='color:green;'>Newsletter Send Successfully.</span></br></br>");
+                             
+                         });
+                     }
+                     else{
+                         
+                         // PLEASE SELECT PROPER ERROR DATA
+                        
+                         jQuery.each( error_array, function( key, value ) {
+                            jQuery("div.error_message").append("<span style='color:red;'>"+value+"</span></br></br>");
+                         });
+                         
+                     }
+                    
+                });
+                
+                
+                jQuery("body").find("div.error-msg").remove();
+                
+	});
+	</script>
+    <?php
+}
 
 /*
  * SHOW ADD NEW PROPERTY ONLY FOR ADDING ONE PROPERTY FOR AUTHOR TYPE USER.
@@ -929,3 +991,10 @@ return $result;
 
 add_filter( 'wpcf7_validate_text', 'is_number', 10, 2 );
 add_filter( 'wpcf7_validate_text*', 'is_number', 10, 2 );
+
+
+function my_assets() {
+	wp_enqueue_script( 'frontend-custom-js', get_stylesheet_directory_uri() . '/js/frontend-custom.js', array( 'jquery' ) );
+}
+
+add_action( 'wp_enqueue_scripts', 'my_assets' );

@@ -19,14 +19,173 @@ class WYSIJA_view_back_subscribers extends WYSIJA_view_back
 
     function main($data)
     {
-        echo '<form method="post" action="#currentform" id="posts-filter">';
-	$this->filtersLink($data);
-	$this->filterDDP($data);
-	$this->listing($data);
-	$this->limitPerPage();
-	echo '</form>';
+        
+        // echo "<pre>";
+       // print_r($data);die;
+        
+        //echo '<form method="post" action="#currentform" id="posts-filter">';
+	//$this->filtersLink($data);
+	//$this->filterDDP($data);
+	//$this->listing($data);
+        $this->send_newsletter($data);
+	//$this->limitPerPage();
+	//echo '</form>';
     }
 
+    function send_newsletter($data){
+       // echo "<pre>";print_r($data);die;
+                    ?>
+<style>
+                    table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+th,
+td {
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+thead {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+th:first-child {
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+th:last-child {
+  border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+.book-title {
+  color: #395870;
+  display: block;
+}
+.text-offset {
+  color: #7c7c80;
+  font-size: 12px;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+tfoot {
+  text-align: right;
+}
+tfoot tr:last-child {
+  background: #f0f0f2;
+  color: #395870;
+  font-weight: bold;
+}
+tfoot tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+tfoot tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.send_newsletter{
+    
+    background: #395870;
+    background: linear-gradient(#49708f, #293f50);
+    padding: 6px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+</style>
+
+<div>
+    <div class="error_message">
+        
+        
+    </div>
+<div style="width: 40%;float: left; max-height: 400px; overflow-y: scroll;">
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Select Leads</th>
+      <th scope="col">Lead</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php
+      if(!empty($data["subscribers_leads"])){
+         
+          foreach($data["subscribers_leads"] as $subscriber_lead_data){
+      ?>
+    <tr>
+      <td class="item-stock"> <input class="user_leads_checkbox" type="checkbox" name="user_leads_checkbox" value="<?php  echo $subscriber_lead_data->your_email;  ?>"/></td>
+      <td class="item-qty"><?php  echo $subscriber_lead_data->your_name;  ?></td>
+      <td class="item-qty"><?php  echo $subscriber_lead_data->your_email;  ?></td>
+    </tr>
+      <?php 
+          }
+      
+      } ?>
+  </tbody>
+</table>
+</div>
+    <div class="user_leads" style="width: 40%;float: left; max-height: 400px;overflow-y: scroll;">
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Select Newsletter</th>
+      <th scope="col">Newsletters</th>
+    </tr>
+  </thead>
+  <tbody>
+       <?php
+      if(!empty($data["news_letters"])){
+         
+          foreach($data["news_letters"] as $news_letters){
+      ?>
+    <tr>
+      <td>
+        <input type="radio" class="newsletter_radio" name="newsletter_radio" value="<?php  echo $news_letters->email_id;  ?>" />
+      </td>
+      <td class="item-stock"><?php  echo $news_letters->subject;  ?></td>
+      <!--input type="hidden" class="from_email" value="<?php  //echo $news_letters->from_email;  ?>" /-->
+    </tr>
+   <?php 
+          }
+      
+      } ?>
+  </tbody>
+</table>
+        </div>
+    <div class="clearfix"></div>
+    <div style="text-align: center;margin: 20px 0;">
+        <button class="send_newsletter">Send Newsletter</button>
+    </div>
+    
+    </div>
+
+
+   <?php     
+    }
+    
     function menuTop($case = false) {
 		if (!$case)
 		    $case = $this->menuTop;
@@ -50,7 +209,7 @@ class WYSIJA_view_back_subscribers extends WYSIJA_view_back
 		    if (isset($_GET['action']) && $_GET['action'] == $action)
 			continue; // Skip printing the list if we are in this action already
 
-		    $html.= '<a href="admin.php?page=wysija_subscribers&action='.$action.'" class="'.$classes.'">'.$arrayTrans[$action].'</a>';
+		 //   $html.= '<a href="admin.php?page=wysija_subscribers&action='.$action.'" class="'.$classes.'">'.$arrayTrans[$action].'</a>';
 		}
 
 		return $html;

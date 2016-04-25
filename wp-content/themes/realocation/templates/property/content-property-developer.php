@@ -6,6 +6,13 @@ jQuery(document).ready(function($) {
 	//event.preventDefault();
 			$("#menu").slideToggle("slow");
 		});
+		
+		
+		setTimeout(function(){
+  jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+  }, 1000);
+		
+		
 	
   });
 
@@ -666,7 +673,7 @@ jQuery(function(){
 		  
 		    	<div class="properties-items isotope">
 		    		<div class="items-list row">
-			    		<div class="building-card floors-card co  floors property-item isotope-item  col-md-12">
+			    		<div class="building-card floors-card co  floors property-item isotope-item  col-md-12 active">
 							<div class="pills col-md-6"><div class="header">BALCONY</div><div class="texts"><?php the_field('balcony'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">KITCHEN</div><div class="texts"><?php the_field('kitchen'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">LIVING/DINING</div><div class="texts"><?php the_field('living/dining'); ?></div></div>
@@ -674,7 +681,7 @@ jQuery(function(){
 							<div class="pills col-md-6"><div class="header">OTHER BEDROOM</div><div class="texts"><?php the_field('other_bedroom'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">TOILETS</div><div class="texts"><?php the_field('toilets'); ?></div></div>
 						</div>
-						<div class="building-card fittings-card  fittings property-item isotope-item col-md-12">
+						<div class="building-card fittings-card  fittings property-item isotope-item col-md-12" style="display:none;">
 							
 							<div class="pills col-md-6"><div class="header">DOORS</div><div class="texts"><?php the_field('doors'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">ELECTRICAL</div><div class="texts"><?php the_field('electrical'); ?></div></div>
@@ -683,7 +690,7 @@ jQuery(function(){
 							<div class="pills col-md-6"><div class="header">TOILETS</div><div class="texts"><?php the_field('fitting_toilets'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">OTHERS</div><div class="texts"><?php the_field('others'); ?></div></div>
 						</div>
-						<div class="building-card walls-card  walls property-item isotope-item col-md-12">
+						<div class="building-card walls-card  walls property-item isotope-item col-md-12" style="display:none;">
 							
 							<div class="pills col-md-6"><div class="header">EXTERIOR</div><div class="texts"><?php the_field('exterior'); ?></div></div>
 							<div class="pills col-md-6"><div class="header">INTERIOR</div><div class="texts"><?php the_field('interior'); ?></div></div>

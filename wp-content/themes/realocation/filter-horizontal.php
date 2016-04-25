@@ -11,23 +11,23 @@
         </div>
     </div>
 
-    <div class="row background-white filter-horizontal-padding">
+    <div class="row background-white filter-horizontal-padding as_filter-horizontal-padding">
         <!-- <div class="col-sm-3">
             <?php //echo $renderer->renderField('hf_property_price_filter'); ?>
         </div> -->
-        <div class="col-sm-4">
+        <div class="col-sm-4 as_col_col_sm_4">
             <?php echo $renderer->renderField('hf_property_minimum_price_filter'); ?>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 as_col_col_sm_4">
             <?php echo $renderer->renderField('hf_property_maximum_price_filter'); ?>
         </div> 
-        <div class="col-sm-4">
+        <div class="col-sm-4 as_col_col_sm_4">
             <?php echo $renderer->renderField('hf_property_contract_type_filter'); ?>
         </div>
         
         
 
-        <div class="col-sm-10">
+        <div class="col-sm-10 as_col_col_sm_6">
             <?php echo $renderer->renderField('hf_property_location_filter'); ?>
         </div>
         <?php if(is_page('map-mode')) {?>
@@ -39,7 +39,7 @@
         </div>
         <?php } ?>
         
-        <div class="col-sm-2">
+        <div class="col-sm-2 as_col_col_sm_4 search_bt">
             <?php $renderer->renderField('submit'); ?>
         </div>
         

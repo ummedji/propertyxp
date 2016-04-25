@@ -1,4 +1,4 @@
-<div class="header-bar">
+<div class="header-bar as_header_bar">
     <div class="container">
         <?php dynamic_sidebar( 'topbar-left'); ?>
 
@@ -19,17 +19,17 @@
                 <?php echo $menu; ?>
             <?php endif; ?>
         <?php else : ?>
-            <?php $menu = wp_nav_menu( array(
-                'container_class' => 'header-bar-nav',
-                'theme_location' => 'anonymous',
-                'menu_class' => 'nav',
-                'fallback_cb' => false,
-                'echo' => false,
-            ) ); ?>
+            <?php //$menu = wp_nav_menu( array(
+               // 'container_class' => 'header-bar-nav',
+               // 'theme_location' => 'anonymous',
+               // 'menu_class' => 'nav',
+               // 'fallback_cb' => false,
+               // 'echo' => false,
+            //) ); ?>
 
-            <?php if ( substr_count( $menu, 'class="menu-item' ) > 0 ) : ?>
-                <?php echo $menu; ?>
-            <?php endif ?>
+            <?php //if ( substr_count( $menu, 'class="menu-item' ) > 0 ) : ?>
+                <?php //echo $menu; ?>
+            <?php //endif ?>
         <?php endif; ?>
         <?php 
         $terms = get_terms( 'locations' , array('parent'=> 0,) );
@@ -54,6 +54,21 @@
 	        	echo '</div>';
 	        }
 	       
+        echo '</div>';
+
+        echo '<div class="terms_and">';
+
+            $menu = wp_nav_menu( array(
+                'container_class' => 'header-bar-nav',
+                'theme_location' => 'anonymous',
+                'menu_class' => 'nav',
+                'fallback_cb' => false,
+                'echo' => false,
+            ) );
+
+            echo $menu;
+//<a href="#">Terms & Conditions</a>';
+
         echo '</div>';
         ?>
         <?php /* ?>

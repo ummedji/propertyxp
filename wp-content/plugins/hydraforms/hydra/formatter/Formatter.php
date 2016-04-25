@@ -188,7 +188,7 @@ class Formatter {
             if (empty($settings['label_element'])) {
                 $settings['label_element'] = "div";
             }
-            return "<" . $settings['label_element'] . " class=label>" . $meta->label . "</" . $settings['label_element'] . ">";
+            return "<" . $settings['label_element'] . " class=label><p>" . $meta->label . "</p></" . $settings['label_element'] . ">";
         }
     }
 

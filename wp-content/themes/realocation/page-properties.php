@@ -69,49 +69,49 @@ if($fullwidth) {
 
 
     <div id="main-content" class="<?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ) : ?>col-md-9 col-sm-9<?php else : ?>col-md-12 col-sm-12<?php endif; ?>">
-		<h1 class="center">HOT PROPERTIES</h1>
-        <?php if (dynamic_sidebar('content-top')) : ?><?php endif; ?>
+		<div class="col-md-12 text-center"><h1 class="center">HOT PROPERTIES</h1></div>
+       <div class="as_pro_slider"> <?php if (dynamic_sidebar('content-top')) : ?><?php endif; ?> </div>
         
-<div class="additional-tools col-md-12">
+<div class="additional-tools as-additional-tools col-md-12">
 <a class="center" href='<?php bloginfo('url');?>/brochures-page/'>
 	<span class="brochure-search"></span>
-	<label>BROCHURE SEARCH</label>
+	<label class="pro_llb">BROCHURE SEARCH</label>
 </a>
 <a class="center" href='<?php bloginfo('url');?>/mortgage/'>
 	<span class="emi-calculator"></span>
-	<label>EMI CALCULATOR</label>
+	<label class="pro_llb">EMI CALCULATOR</label>
 </a>
 <a class="center" href="<?php bloginfo('url');?>/map-mode">
 	<span class="map-mode-search"></span>
-	<label>MAP MODE SEARCH</label>
+	<label class="pro_llb">MAP MODE SEARCH</label>
 </a>
 <a class="center" href="##">
 	<span class="news-and-views"></span>
-	<label>NEWS AND VIEWS</label>
+	<label class="pro_llb">NEWS AND VIEWS</label>
 </a>
 <a class="center" href="##">
 	<span class="radio-live"></span>
-	<label>RADIO LIVE</label>
+	<label class="pro_llb">RADIO LIVE</label>
 </a>
 <a class="center" href='<?php bloginfo('url');?>/subscribe-news-letter/'>
 	<span class="subscribe-news-letter"></span>
-	<label>SUBSCRIBE NEWS LETTER</label>
+	<label class="pro_llb">SUBSCRIBE NEWS LETTER</label>
 </a>
 <a class="center" href="##">
 	<span class="tv-lve"></span>
-	<label>TV LIVE</label>
+	<label class="pro_llb">TV LIVE</label>
 </a>
 <a class="center" href="<?php bloginfo('url');?>/value-me/">
 	<span class="value-me"></span>
-	<label>VALUE ME</label>
+	<label class="pro_llb">VALUE ME</label>
 </a>
 </div>
 <div class="clear"></div>
-        <h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
+        <div class="col-md-12 text-center"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
             <?php the_title(); ?>
             <?php aviators_edit_post_link(); ?>
             <?php aviators_configure_page_link('property', get_the_ID()) ?>
-        </h1>
+        </h1></div>
         <?php the_content() ?>
 
         <?php if (isset($sort) && $sort): ?>
@@ -122,7 +122,7 @@ if($fullwidth) {
 
         <?php if ($display == 'isotope'): ?>
             <?php if ($filter_terms): ?>
-                <ul class="properties-filter">
+                <ul class="properties-filter as_properties-filter">
                     <li class="selected"><a href="#" data-filter="*"><span><?php print __('All', 'aviators'); ?></span></a>
                     </li>
                     <?php foreach ($filter_terms as $slug => $filter_term): ?>
@@ -134,7 +134,7 @@ if($fullwidth) {
             <?php endif; ?>
         <?php endif; ?>
 
-        <div class="properties-items <?php print $display; ?>">
+        <div class="properties-items as_properties-items <?php print $display; ?>">
             <div class="items-list">
                 <?php $count = 0; ?>
                 <?php while (have_posts()) : the_post(); ?>
@@ -164,7 +164,8 @@ if($fullwidth) {
                 <?php endwhile; ?>
             </div>
         </div>
-        <h1 class="center">INDIVIDUAL PROPERTIES</h1>
+        <div class="col-md-12 text-center"><a class="btn vie_mr_btn" href="#">View All</a></div>
+        <div class="col-md-12 text-center"><h1 class="center">INDIVIDUAL PROPERTIES</h1></div>
         <!-- /.items-list -->
 
         <?php if($display_pager): ?>
@@ -172,7 +173,9 @@ if($fullwidth) {
         <?php endif; ?>
 
         <?php wp_reset_query(); ?>
+		<div class="properties-items as_properties-items">
         <?php if (dynamic_sidebar('content-bottom')) : ?><?php endif; ?>
+		</div>
     </div><!-- /#main-content -->
 
     <?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ): ?>

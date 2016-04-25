@@ -69,7 +69,22 @@
 		
 	});
 </script>
-  
+
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css">
+  <?php
+ $selected_template_value = get_field("select_template");    
+     if($selected_template_value == 'developer'){
+  ?>
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS">
+<?php
+     }
+     else{
+?>
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V2.css">
+<?php
+     }
+
+?>
 </head>
 
 <body <?php body_class(); ?> >
@@ -105,7 +120,7 @@
                 	if($person_field == 'Developer') {
 
                 	} else {
-                		require_once 'templates/header-navigation.php';
+                		//require_once 'templates/header-navigation.php';
 			}
 				?>	
             </div><!-- /.header-inner -->
@@ -237,6 +252,6 @@
                    
                     <?php echo aviators_render_messages(); ?>
 
-                    <div class="block-content block-content-small-padding">
+                    <div class="block-content block-content-small-padding as-content-pr">
                         <div class="block-content-inner <?php if($person_field == 'Developer') { ?>developers-all-content<?php } ?>">
                             <div class="row">

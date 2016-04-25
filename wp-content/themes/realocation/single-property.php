@@ -18,9 +18,10 @@
          * NEW TEMPLATE APPROACH CODE ADDED
          * if statement change on the basics of selected templated value earlier it dependes on person field.
          */
-        if($selected_template_value == 'developer')
-    		aviators_get_content_template('property', 'developer');
-    	else 
+        if($selected_template_value == 'developer'){
+    		//aviators_get_content_template('property', 'developer');
+                aviators_get_content_template('property', 'template-V1');
+        }else 
     		aviators_get_content_template('property', 'detail'); ?>
 
 

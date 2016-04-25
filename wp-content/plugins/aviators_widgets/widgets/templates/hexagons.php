@@ -1,4 +1,4 @@
-<div class="block-content clearfix <?php print $classes; ?>" <?php print $style; ?>>
+<div class="block-content as_as_block-content clearfix <?php print $classes; ?>" <?php print $style; ?>>
     <?php if($title): ?>
         <h2 class="<?php print $title_classes; ?>"><?php print $title; ?></h2>
     <?php endif; ?>

@@ -44,7 +44,7 @@
 			
 			</div><div style="clear:both"></div>
 		    <?php } ?>
-	<div class="block-content clearfix background-gray fullwidth block-content-small-padding featured-builders" style="background-image: url(http://wp.realocation.byaviators.com/wp-content/uploads/2014/03/map.png);">
+	<div class="block-content clearfix background-gray fullwidth text-center block-content-small-padding featured-builders as_featured-builders">
 	<h3 class="center">Featured Builders </h3>
 					        <div class="block-content-inner row">
 					            <ul class="bxslider ">
@@ -66,7 +66,7 @@
 
     <div id="footer-wrapper">
         <div id="footer">
-            <div id="footer-inner">
+            <div id="footer-inner" class="as_footer">
               <?php if (aviators_active_sidebars(array('footer-left', 'footer-right', 'footer-lower-left', 'footer-lower-right'), AVIATORS_SIDEBARS_ANY)): ?>
                     <?php require_once 'templates/footer-top.php'; ?>
                 <?php endif;  ?>
@@ -75,6 +75,7 @@
 
                     <?php require_once 'templates/footer-bottom.php'; ?>
                 <?php endif; ?>
+				<div class="clearfix"></div>
             </div><!-- /#footer-inner -->
         </div><!-- /#footer -->
     </div><!-- /#footer-wrapper -->
@@ -98,6 +99,13 @@ jQuery(window).scroll(function () {
     }
     iScrollPos = iCurScrollPos;
 	});
+	
+	//jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+		
+		setTimeout(function(){
+  jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+  }, 1000);
+	
 });
  </script>
 <?php wp_footer(); ?>

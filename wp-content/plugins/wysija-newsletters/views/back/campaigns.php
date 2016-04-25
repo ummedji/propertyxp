@@ -10,7 +10,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 	function __construct() {
 		$this->title = __('All Newsletters');
 		parent::__construct();
-		$this->jsTrans['selecmiss'] = __('Select at least 1 subscriber!', WYSIJA);
+	//	$this->jsTrans['selecmiss'] = __('Select at least 1 subscriber!', WYSIJA);
 		$this->search = array('title' => __('Search newsletters', WYSIJA));
 		$this->column_actions = array('editlist' => __('Edit', WYSIJA), 'duplicatelist' => __('Duplicate', WYSIJA), 'deletelist' => __('Delete', WYSIJA));
 	}
@@ -41,8 +41,8 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 	function main($data) {
 		$this->menuTop($this->action);
 		echo '<form method="post" action="" id="posts-filter">';
-		$this->filtersLink($data);
-		$this->filterDDP($data);
+		//$this->filtersLink($data);
+		//$this->filterDDP($data);
 		$this->listing($data);
 		echo '</form>';
 	}
@@ -336,9 +336,11 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 							<th class="manage-column column-name' . $namesorting . '" id="name" scope="col" style="width:25%"><a href="#" class="orderlink" ><span>' . __('Name', WYSIJA) . '</span><span class="sorting-indicator"></span></a></th>';
 					/* $header.='<th class="manage-column column-fname'.$fnamesorting.'" id="firstname" scope="col" style="width:80px;">'.__('First name',WYSIJA).'</th>
 					  <th class="manage-column column-lname'.$lnamesorting.'" id="lastname" scope="col" style="width:80px;">'.__('Last name',WYSIJA).'</th>'; */
-					$header.='<th class="manage-column column-status' . $statussorting . '" id="status" scope="col" style="width:15%;"><a href="#" class="orderlink" ><span>' . __('Status', WYSIJA) . '</span><span class="sorting-indicator"></span></a></th>';
-					$header.='<th class="manage-column column-list-names" id="list-list" scope="col">' . __('Lists', WYSIJA) . '</th>';
-					$header.='<th class="manage-column column-opened' . $openedsorting . '" id="number_opened" scope="col" style="width:15%;"><a href="#" class="orderlink" ><span>' . __('Open, clicks, unsubscribed', WYSIJA) . '</span><span class="sorting-indicator"></span></a></th>';
+					  
+				//	$header.='<th class="manage-column column-status' . $statussorting . '" id="status" scope="col" style="width:15%;"><a href="#" class="orderlink" ><span>' . __('Status', WYSIJA) . '</span><span class="sorting-indicator"></span></a></th>';
+				//	$header.='<th class="manage-column column-list-names" id="list-list" scope="col">' . __('Lists', WYSIJA) . '</th>';
+				
+				//	$header.='<th class="manage-column column-opened' . $openedsorting . '" id="number_opened" scope="col" style="width:15%;"><a href="#" class="orderlink" ><span>' . __('Open, clicks, unsubscribed', WYSIJA) . '</span><span class="sorting-indicator"></span></a></th>';
 
 
 					/* $header.='<th class="manage-column column-emails" id="emails-list" scope="col">'.__('Emails',WYSIJA).'</th>
@@ -527,13 +529,13 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 									</span>
 					<?php
 				} else {
-					if ($row['type'] == 2) {
+					//if ($row['type'] == 2) {
 						?>
 										| <span class="edit">
 											<a href="admin.php?page=wysija_campaigns&id=<?php echo $row["email_id"] ?>&action=pause&_wpnonce=<?php echo $this->secure(array('action' => 'pause' , 'id' => $row["email_id"]), true); ?>" class="submitedit pause-edit"><?php _e('Edit', WYSIJA) ?></a>
 										</span>
 						<?php
-					}
+					//}
 					if (isset($data['sent'][$row["email_id"]]['to']) && $data['sent'][$row["email_id"]]['to'] > 0) {
 						?>
 
@@ -556,7 +558,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 						?>
 						</div>
 					</td>
-					<td><?php
+					<!--td><?php
 						switch ((int) $row['status']) {
 							case 99:
 							case 3:
@@ -671,8 +673,8 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 								}
 								break;
 						}
-						?></td>
-					<td><?php
+						?></td-->
+					<!--td><?php
 						if (($row['type'] == 2 && isset($row['params']['autonl']['event']) && $row['params']['autonl']['event'] == 'subs-2-nl')) {
 							$row['lists'] = $data['lists'][$row['params']['autonl']['subscribetolist']]['name'];
 						}
@@ -681,15 +683,15 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 							echo $row['lists'];
 						else
 							echo $messageListEdit;
-						?></td>
+						?></td-->
 
-					<td>
+					<!--td>
 					<?php if (isset($row['stats'])) echo $row['stats']; elseif ($row['status'] != 0) { ?>
 							<a href="admin.php?page=wysija_campaigns&id=<?php echo $row["email_id"] ?>&action=viewstats" class="stats" title="<?php echo $row['number_opened'] . ' - ' . $row['number_clicked'] . ' - ' . $row['number_unsub']; ?>">
 						<?php echo $row['rate_opened'] . '% - ' . $row['rate_clicked'] . '% - ' . $row['rate_unsub'] . '%'; ?>
 							</a>
 					<?php } ?>
-					</td>
+					</td-->
 					<td title='<?php echo $this->fieldListHTML_created_at_time($row['modified_at'], get_option('date_format') . ' ' . get_option('time_format')); ?>'><?php echo $this->fieldListHTML_created_at($row['modified_at']); ?></td>
 					<td title='<?php echo $this->fieldListHTML_created_at_time($row['sent_at'], get_option('date_format') . ' ' . get_option('time_format')); ?>'><?php echo $this->fieldListHTML_created_at($row['sent_at']); ?>
 			<?php
@@ -1075,12 +1077,13 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 							   'desc' => __("This is the subject of the email. Be creative since it's the first thing your subscribers will see.", WYSIJA));
 
 						   if ($this->data['lists']) {
-							   $step['lists'] = array(
+							   
+							 /*  $step['lists'] = array(
 								   'type' => 'lists',
 								   'class' => 'validate[minCheckbox[1]] checkbox',
 								   'rowclass' => 'listcheckboxes',
 								   'label' => __('Lists', WYSIJA),
-								   'labeloff' => 1);
+								   'labeloff' => 1); */
 						   }
 
 
@@ -1523,13 +1526,14 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 				}
 
 				if ($this->data['lists']) {
-					$step['lists'] = array(
+				
+					/*$step['lists'] = array(
 						'type' => 'lists',
 						'class' => 'validate[minCheckbox[1]] checkbox',
-						'label' => __('Lists', WYSIJA),
+						'label' => __('Lists ummed', WYSIJA),
 						'labeloff' => 1,
 						'rowclass' => 'listcheckboxes',
-						'desc' => __('The subscriber list that will be used for this campaign.', WYSIJA));
+						'desc' => __('The subscriber list that will be used for this campaign.', WYSIJA)); */
 				}
 
 				$step['from_name'] = array(
@@ -1551,11 +1555,11 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 
 				//we schedule only the type 1 newsletter
 				if ($data['email']['type'] == 1) {
-					$step['scheduleit'] = array(
+				/*	$step['scheduleit'] = array(
 						'type' => 'scheduleit',
 						'class' => '',
 						'label' => __('Schedule it', WYSIJA),
-						'desc' => '');
+						'desc' => ''); */
 				}
 
 				if ((int) $data['email']['sent_at'] === 0 && isset($data['autoresponder'])) {
@@ -1758,11 +1762,12 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 						'type' => 'standard',
 						'label' => __('Standard newsletter', WYSIJA),
 						'default' => 1
-					),
+					)
+					/*,
 					'2' => array(
 						'type' => 'automatic',
 						'label' => __('Automatic newsletter', WYSIJA),
-					)
+					)*/
 				);
 
 				foreach ($typesnl as $typenl => $paramstnl) {
@@ -1810,7 +1815,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 				}
 
 				$fieldHTML.="</div>";
-				return $fieldHTML;
+				//return $fieldHTML;
 			}
 
 			function fieldFormHTML_scheduleit($key, $val, $model, $params) {

@@ -3,6 +3,9 @@ defined('WYSIJA') or die('Restricted access');
 class WYSIJA_control_back_subscribers extends WYSIJA_control_back{
     var $model='user';
     var $view='subscribers';
+    
+   // var $view='subscribers_leads';
+    
     var $list_columns=array('user_id','firstname', 'lastname','email','created_at');
     var $searchable=array('email','firstname', 'lastname');
     var $_separators = array(',', ';'); // csv separator; comma is for standard csv, semi-colon is good for Excel
@@ -284,8 +287,18 @@ class WYSIJA_control_back_subscribers extends WYSIJA_control_back{
 	    '[wysija]user_list.user_id'
 	    );
 
-        $this->data['subscribers'] = $this->modelObj->get_subscribers($select , $filters, '', false, true);
+       // $this->data['subscribers'] = $this->modelObj->get_subscribers($select , $filters, '', false, true);
+        
+        $this->data['subscribers_leads'] = $this->modelObj->get_leads();
+        $this->data['news_letters'] = $this->modelObj->get_newsletters();
 
+        return $this;
+        
+        die;
+        
+     //   echo "<pre>";
+     //   print_r($this->data['subscribers']);
+      //  die;
         $this->data['current_counts'] = $this->modelObj->countRows;
         $this->data['show_batch_select'] = ($this->modelObj->limit >= $this->modelObj->countRows) ? false : true;
         $this->data['selected_lists'] = $this->_get_selected_lists();
@@ -361,7 +374,7 @@ class WYSIJA_control_back_subscribers extends WYSIJA_control_back{
         parent::__construct();
 
         //we change the default model of the controller based on the action
-        if(isset($_REQUEST['action'])){
+       /* if(isset($_REQUEST['action'])){
             switch($_REQUEST['action']){
                 case 'listsedit':
                 case 'savelist':
@@ -372,9 +385,11 @@ class WYSIJA_control_back_subscribers extends WYSIJA_control_back{
                     $this->model='user';
             }
         }
-
+*/
         WYSIJA_control::__construct();
         if(!isset($_REQUEST['action']) || !$_REQUEST['action']) {
+            
+            
             $this->defaultDisplay();
             $this->checkTotalSubscribers();
         } else {

@@ -605,12 +605,57 @@ class WYSIJA_model_user extends WYSIJA_model{
 	    return $this->getResults($query);
         }else{
             if(!empty($count_group_by)){
+               // echo $query.' GROUP BY '.$count_group_by; die;
                 return $this->getResults($query.' GROUP BY '.$count_group_by);
             }else{
+             //   echo $query;die;
                 $result = $this->getResults($query);
                 return $result[0];
             }
         }
+    }
+    
+    
+    function get_leads(){
+        
+        global $wpdb;
+        $user_ID = get_current_user_id();
+        
+        $user = wp_get_current_user();
+        $allowed_roles = array('administrator');
+         if( array_intersect($allowed_roles, $user->roles ) ) {  
+             $where_query = "";
+         }else{
+             $where_query = " WHERE user_id= ".$user_ID;
+         }
+        
+        
+        $query = "SELECT `submit_time` AS 'Submitted', max(if(`field_name`='your-name', `field_value`, null )) AS 'your_name', max(if(`field_name`='activepost', `field_value`, null )) AS 'activepost', max(if(`field_name`='phone', `field_value`, null )) AS 'phone', max(if(`field_name`='your-email', `field_value`, null )) AS 'your_email', max(if(`field_name`='hidden-post_author_email', `field_value`, null )) AS 'hidden_post_author_email', max(if(`field_name`='post_author', `field_value`, null )) AS 'post_author', max(if(`field_name`='hidden-author-id', `field_value`, null )) AS 'hidden_author_id', max(if(`field_name`='post_author_id', `field_value`, null )) AS 'post_author_id', max(if(`field_name`='hidden-property-title', `field_value`, null )) AS 'hidden_property_title', max(if(`field_name`='post_title', `field_value`, null )) AS 'post_title', max(if(`field_name`='Submitted Login', `field_value`, null )) AS 'Submitted_Login', max(if(`field_name`='Submitted From', `field_value`, null )) AS 'Submitted_From', GROUP_CONCAT(if(`file` is null or length(`file`) = 0, null, `field_name`)) AS 'fields_with_file', user_id FROM `wp_cf7dbplugin_submits` ".$where_query."  GROUP BY `submit_time` ORDER BY `submit_time`";
+        
+        $results = $wpdb->get_results($query, OBJECT );
+        return $results;
+       // echo "<pre>";print_r($results);die;
+    }
+    
+    function get_newsletters(){
+        
+        global $wpdb;
+        $user_ID = get_current_user_id();
+        
+        $user = wp_get_current_user();
+        $allowed_roles = array('administrator');
+         if( array_intersect($allowed_roles, $user->roles ) ) {  
+             $where_query = "";
+         }else{
+             $where_query = " WHERE user_id= ".$user_ID;
+         }
+         
+         $query = "SELECT * from  wp_wysija_email ". $where_query;
+         $results = $wpdb->get_results($query, OBJECT );
+         return $results;
+         
+         // echo "<pre>";print_r($results);die;
+        
     }
 
     /**
