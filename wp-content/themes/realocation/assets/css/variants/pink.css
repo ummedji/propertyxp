@@ -8567,7 +8567,7 @@ h4.infobox-subtitle,h4.infobox-subtitle a {
 	left: 0px;
 	padding: 15px;
 	position: fixed;
-	top: 200px;
+	top: 200px; 
 	-webkit-transition: margin 0.2s linear;
 	-moz-transition: margin 0.2s linear;
 	-o-transition: margin 0.2s linear;
@@ -10179,4 +10179,18 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .inn_map_cont .map-tabs-links li a { color: #c02550;}
 .contact_inn { background-color: #c02550;}
 .as_texts { color: #c02550;}
+
+.front_crausol_slider{
+	background-image: url( /wp-content/themes/realocation/assets/css/variants/images/pink/premium_property/pink.jpg );
+}
+
+.front_crausol_slider h2.color-default{
+	color: #fff;
+}
+
+.oss_title_replace{
+	z-index:999999;
+	top: 310px !important;
+}
+
 /*template 1 css*/

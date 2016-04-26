@@ -47,13 +47,13 @@
 	<div class="block-content clearfix background-gray fullwidth text-center block-content-small-padding featured-builders as_featured-builders">
 	<h3 class="center">Featured Builders </h3>
 					        <div class="block-content-inner row">
-					            <ul class="bxslider ">
+					            <ul class="bxslider_featured">
 					            <?php $args = array('post_type'=>'featured-builders', 'post_status' => 'publish', 'posts_per_page' => -1);
 							  $builder_loop = new WP_Query($args);
 							  while ( $builder_loop->have_posts() ) : $builder_loop->the_post(); ?>
 					     		<li><a href="<?php the_field('link_to_builder'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a> </li>
 					     	    <?php endwhile; ?>
-					             </ul>
+					            </ul>
 					        </div>
 					      </div>
 					<?php 			dynamic_sidebar('bottom');
@@ -102,9 +102,15 @@ jQuery(window).scroll(function () {
 	
 	//jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
-		setTimeout(function(){
-  jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
-  }, 1000);
+	setTimeout(function(){
+		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+		
+	}, 1000);
+	
+	jQuery("a#render_all_premium_properties").on("click",function(){
+	
+		jQuery("ul.premium_property_filter li:first-child a").trigger("click");
+	});
 	
 });
  </script>

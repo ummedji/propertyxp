@@ -10178,3 +10178,13 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .inn_map_cont .map-tabs-links li a { color: #FF3401;}
 .contact_inn { background-color: #FF3401;}
 .as_texts { color: #FF3401;}
+.front_crausol_slider{
+	background-image: url( /wp-content/themes/realocation/assets/css/variants/images/red/premium_property/red.jpg );
+}
+.front_crausol_slider h2.color-default {
+    color: #fff;
+}
+.oss_title_replace{
+	z-index:999999;
+	top: 310px !important;
+}

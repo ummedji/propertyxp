@@ -14,7 +14,7 @@
             </div><!-- /.property-picture-inner -->
         </div><!-- /.property-picture -->
 
-        <div class="property-box-meta asproperty-box-meta UMMED SINGH">
+        <div class="property-box-meta asproperty-box-meta">
             <?php //echo hydra_render_group(get_the_ID(), 'meta', 'grid'); ?>
 			
 			

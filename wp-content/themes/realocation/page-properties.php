@@ -122,7 +122,7 @@ if($fullwidth) {
 
         <?php if ($display == 'isotope'): ?>
             <?php if ($filter_terms): ?>
-                <ul class="properties-filter as_properties-filter">
+                <ul class="properties-filter as_properties-filter premium_property_filter">
                     <li class="selected"><a href="#" data-filter="*"><span><?php print __('All', 'aviators'); ?></span></a>
                     </li>
                     <?php foreach ($filter_terms as $slug => $filter_term): ?>
@@ -164,18 +164,18 @@ if($fullwidth) {
                 <?php endwhile; ?>
             </div>
         </div>
-        <div class="col-md-12 text-center"><a class="btn vie_mr_btn" href="#">View All</a></div>
-        <div class="col-md-12 text-center"><h1 class="center">INDIVIDUAL PROPERTIES</h1></div>
+        <div class="col-md-12 text-center"><a class="btn vie_mr_btn" id="render_all_premium_properties" href="javascript:void(0);">View All</a></div>
+        <!--div class="col-md-12 text-center"><h1 class="center">INDIVIDUAL PROPERTIES</h1></div-->
         <!-- /.items-list -->
 
-        <?php if($display_pager): ?>
-            <?php aviators_pagination(); ?>
-        <?php endif; ?>
+        <?php //if($display_pager): ?>
+            <?php //aviators_pagination(); ?>
+        <?php //endif; ?>
 
         <?php wp_reset_query(); ?>
-		<div class="properties-items as_properties-items">
-        <?php if (dynamic_sidebar('content-bottom')) : ?><?php endif; ?>
-		</div>
+		<!--<div class="properties-items as_properties-items">
+        <?php //if (dynamic_sidebar('content-bottom')) : ?><?php //endif; ?>
+		</div>-->
     </div><!-- /#main-content -->
 
     <?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ): ?>

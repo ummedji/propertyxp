@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
         $('.bxslider').bxSlider({
             minSlides: 1,
             maxSlides: 6,
+            //maxSlides: 4,
             slideWidth: 170,
             slideMargin: 30,
             responsive: false,

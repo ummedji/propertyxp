@@ -23,7 +23,76 @@
                     <a href="<?php echo get_permalink($slide); ?>"><?php echo $slide->post_title; ?></a>
                 </h2>
 
-                <?php echo hydra_render_group($slide->ID, 'meta'); ?>
+                <?php 
+				//echo hydra_render_group($slide->ID, 'meta');
+
+				$configration_value = get_field( "configurations", $slide->ID );
+			$possession_value = get_field( "possession", $slide->ID );
+			
+			$area_value = get_field('hf_property_area',$slide->ID);
+			
+			$areavalue = "";
+			if(!empty($area_value)){
+				$areavalue = $area_value["items"][0]["value"];
+			}
+			
+			$price_value = get_field('starting_price',$slide->ID);
+?>
+			
+			
+			<div class=" html-group meta hf-property-meta">
+
+				<div class="field-items">
+					<div class="group-field-item">
+						<div class="field-item-inner">
+							<div class=" col-xs-3 number number hf-property-bathrooms">
+								<div class="label"><p>Configration</p></div>
+								<div class="field-item field-item-0">
+									<div class="field-prefix"></div>
+									<div class="field-value"><?php echo $configration_value; ?></div>
+									<div class="field-suffix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-field-item">
+						<div class="field-item-inner">
+							<div class=" col-xs-3 number number hf-property-bedrooms">
+								<div class="label"><p>Possession</p></div>
+								<div class="field-item field-item-0">
+									<div class="field-prefix"></div>
+									<div class="field-value"><?php echo $possession_value; ?></div>
+									<div class="field-suffix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-field-item">
+						<div class="field-item-inner">
+							<div class=" col-xs-3 number number hf-property-area">
+								<div class="label"><p>Area</p></div>
+								<div class="field-item field-item-0">
+									<div class="field-prefix"></div>
+									<div class="field-value"><?php echo $areavalue; ?></div>
+									<div class="field-suffix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-field-item">
+						<div class="field-item-inner">
+							<div class=" no-columns number number hf-property-price">
+								<div class="label"><p>Price</p></div>
+								<div class="field-item field-item-0">
+									<div class="field-prefix"></div>
+									<div class="field-value"><?php echo $price_value; ?></div>
+									<div class="field-suffix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
             </div>
             <!-- /.slider - info-->
         </div><!-- /.slide-->

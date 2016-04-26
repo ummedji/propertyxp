@@ -6,7 +6,7 @@
  */
 function aviators_properties_widget_js() {
     wp_enqueue_script('bxslider', plugins_url() . '/aviators_properties/assets/js/jquery.bxslider.min.js', array('jquery'));
-    wp_enqueue_script('properties', plugins_url() . '/aviators_properties/assets/js/properties.js', array('jquery'));
+    wp_enqueue_script('properties', plugins_url() . '/aviators_properties/assets/js/properties_1.js', array('jquery'));
 
     wp_enqueue_style('bxslider', plugins_url() . '/aviators_properties/assets/css/jquery.bxslider.css');
 }
