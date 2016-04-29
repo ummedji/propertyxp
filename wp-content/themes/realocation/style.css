@@ -476,7 +476,7 @@ border: 2px solid #ff3401;}
 .as_properties-items .property-box .property-box-inner .property-box-header {
 	min-height: inherit;
 	position: absolute;
-	bottom: 26%;
+	top: 50%;
 	left: 2%;
 	display: block;
 	z-index: 9999;
@@ -497,6 +497,9 @@ border: 2px solid #ff3401;}
 	margin: 0;
 	padding: 0;
 	color: #fff;
+}
+.carousel_prp .slider-info .hf-property-meta .field-item .field-value {
+	font-size: 9px;
 }
 .as_properties-items .property-box .property-box-inner .property-box-header div.property-box-subtitle a {
 	color: #fff;
@@ -572,8 +575,6 @@ border: 2px solid #ff3401;}
 	/*width: 100%;*/
 }
 .vie_mr_btn {
-	border: solid 1px #bdbdbd;
-	background-color: #20242d;
 	color: #fff;
 	font-weight: normal;
 }
@@ -596,7 +597,7 @@ border: 2px solid #ff3401;}
 	display: inline-block;
 }
 .as_featured-builders .bx-default-pager { display: none;}
-.as_featured-builders .bxslider li img {
+.as_featured-builders .bxslider_featured li img {
 	border: solid 2px #d7d7d7;
 }
 .as_featured-builders .bxslider li {
@@ -638,7 +639,51 @@ border: 2px solid #ff3401;}
 .as_footer .footer-top hr { display: none;}
 .as_footer .footer-bottom { display: none;}
 /* end PREMIUM PROPERTIES css*/
-
-
+.front_crausol_slider h2.color-default{
+	color: #fff;
+	border-bottom: solid 2px #fff;
+	display: inline-block !important;
+	width: auto;
+	text-align: center !important;
+	padding-bottom: 5px;
+}
+.fec_property .small .property-box-header {
+	position: absolute;
+	bottom: -9%;
+	width: 100%;
+	z-index: 100;
+	text-align: left;
+	background-color: #fff;
+	left: 0;
+	padding: 6px;
+}
+.fec_property .small .property-box-header .property-box-title {
+	margin: 2px 0 5px 0 !important;
+}
+.fec_property .small .property-box-header .property-box-title a {
+	font-size: 18px;
+	margin: 2px 0 0px 0 !important;
+	color: #322e2e;
+}
+.fec_property .property-box.small {
+	padding-top: 0;
+	margin-bottom: 0px;
+}
+.fec_property .small .property-box-price {
+	bottom: 5px;
+	right: 0;
+	top: auto;
+	left: auto;
+	width: auto;
+}
+.fec_property .field-item .field-value {
+	font-weight: normal;
+	font-size: 11px;
+	color: #322e2e;
+}
+.fec_property .property-box-picture-inner {
+	bottom: 0;
+}
+.fec_property .bx-has-controls-direction { display: none;}
 
 /*end as style*/

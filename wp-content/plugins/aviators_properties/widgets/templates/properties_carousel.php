@@ -1,9 +1,11 @@
 <div class="block-content clearfix front_crausol_slider <?php print $classes; ?>" <?php print $style; ?>>
     <?php if ($title): ?>
-        <h2 class="<?php print $title_classes; ?>"><?php print $title; ?></h2>
+        <div class="col-md-12 text-center">
+           <h2 class="<?php print $title_classes; ?>"><?php print $title; ?></h2>
+        </div>
     <?php endif; ?>
 
-    <div class="block-content-inner row">
+    <div class="block-content-inner row fec_property">
         <ul class="bxslider clearfix">
             <?php while (have_posts()) : the_post(); ?>
                 <li>

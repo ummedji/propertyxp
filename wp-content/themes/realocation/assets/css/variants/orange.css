@@ -5745,7 +5745,7 @@ ol li:last-child {
 }
 
 .block-content p {
-	font-size: 14px;
+	font-size: 13px;
 	margin-bottom: 20px
 }
 
@@ -10186,3 +10186,11 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 	z-index:999999;
 	top: 310px !important;
 }
+.vie_mr_btn {
+	border: solid 1px #a47c1c;
+	background-color: #f3bc3a;
+}
+h2.pro_tl {
+	color: #f3bc3a;
+}
+.top_tena_price .field-value { background-color: #f3bc3a;}

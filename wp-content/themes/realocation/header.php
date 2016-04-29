@@ -88,7 +88,11 @@
 </head>
 
 <body <?php body_class(); ?> >
+<!--<div class="im-interested">
+	<div class="icon icon-message-filled"></div>
+	<?php /*echo do_shortcode('[AnythingPopup id="4"]'); */?>
 
+</div>-->
 	<!--		
 <div class="custom-menu">
 		<a class="custom-menu-button custom-menu-active fa fa-bars " href="##">Menu</a>
@@ -146,16 +150,32 @@
         			if($sa != '')
         				putRevSlider( $sa )
         		?>
-        		<div class="row">
-			        <div class="col-md-12" >
-			            <h1 class="property-detail-title center developer-property-title"><?php the_title(); ?></h1>
-			
-			            <div class="property-detail-subtitle center developer-prperty-price"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
-			                <?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
-			            </div>
-			        </div>
-			        <!-- /.header-title -->
-			    </div>
+        		<div class="tamp_title">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
+							<div class="col-md-4 text-center">
+								<div class="address_tag"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
+								</div>
+							</div>
+							<div class="col-md-4 top_tena_price">
+								<?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
+							</div>
+						</div>
+						<!-- /.header-title -->
+					</div>
+				</div>
+
+							<!--<div class="row">
+								<div class="col-md-12" >
+									<h1 class="property-detail-title aaa center developer-property-title"><?php /*the_title(); */?></h1>
+
+									<div class="property-detail-subtitle center developer-prperty-price"><?php /*print hydra_render_field(get_the_ID(), 'location', 'detail'); */?>
+										<?php /*print hydra_render_field(get_the_ID(), 'price', 'detail'); */?>
+									</div>
+								</div>
+
+							</div>-->
         		<?php 
         		}
         	} ?>
@@ -189,8 +209,20 @@
 						}
                 	  	else {
 						?>
-						<div class="developer-menu center">
-							<div class="developer-menu-links">
+						<div class="developer-menu top-dev-menu">
+							<div class="container">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="dev-360"></span>
+											<span>dkfdk</span>
+										</a>
+									</li>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Home</a></li>
+								</ul>
+							</div>
+							<div class="developer-menu-links as_developer-menu-links">
 							<a href="#details" >
 							<!--<div class="icon-details icon-small"></div> -->
 								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/PROJECT.png"> -->
@@ -234,11 +266,11 @@
 								<div class="title">MARKET</div>
 							</a>
 							</div>
-							<div class="im-interested">
+							<!--<div class="im-interested">
 								<div class="icon icon-message-filled"></div>
-								<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
+								<?php /*echo do_shortcode('[AnythingPopup id="4"]'); */?>
 								
-							</div>
+							</div>-->
 						</div>
 						<?php 
 					  	} 

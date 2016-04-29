@@ -5745,7 +5745,7 @@ ol li:last-child {
 }
 
 .block-content p {
-	font-size: 14px;
+	font-size: 13px;
 	margin-bottom: 20px
 }
 
@@ -10183,14 +10183,16 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .front_crausol_slider{
 	background-image: url( /wp-content/themes/realocation/assets/css/variants/images/pink/premium_property/pink.jpg );
 }
-
-.front_crausol_slider h2.color-default{
-	color: #fff;
-}
-
 .oss_title_replace{
 	z-index:999999;
 	top: 310px !important;
 }
-
+.vie_mr_btn {
+	border: solid 1px #8f193a;
+	background-color: #bf224e;
+}
+h2.pro_tl {
+	color: #bf224e;
+}
+.top_tena_price .field-value { background-color: #c02450;}
 /*template 1 css*/

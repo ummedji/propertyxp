@@ -1,3 +1,4 @@
+
 .mr_50 { margin-bottom: 30px;}
 .as_section_tl h2 {
     background-image: none !important;
@@ -159,4 +160,29 @@ p.icon_cont {
 .inn_properties-items .building-card {
     background-color: #f9f3f3 !important;
     border: none !important;
+}
+h2.pro_tl {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.address_tag {
+    margin: 20px 0;
+}
+.address_tag a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-size: 15px;
+}
+.top_tena_price {
+    margin: 20px 0;
+    text-align: right;
+}
+.top_tena_price .field-value {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.top-dev-menu {
+    margin: 0;
+    background-color: #20242d;
 }

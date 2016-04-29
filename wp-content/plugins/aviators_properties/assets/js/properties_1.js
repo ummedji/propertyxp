@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
             minSlides: 1,
             //maxSlides: 6,
             maxSlides: 4,
-            slideWidth: 170,
+            slideWidth: 250,
             slideMargin: 30,
             responsive: true,
             onSliderLoad: function() {
