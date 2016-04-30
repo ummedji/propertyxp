@@ -73,6 +73,7 @@ jQuery(function(){
 </script>
 
 <div class="property-detail developer-details">
+<?php 	echo do_shortcode('[Social9_Share]'); ?>
     	<div class="row as_flats" id="details" >
     
 	    	<?php /* ?>
@@ -81,6 +82,7 @@ jQuery(function(){
 	        </div>
 	        <?*/?>
         	<div class="col-md-12 about_cont">
+			
 	        	<div class="center section-title as_section_tl"><h2><span>About <?php the_title();?></span></h2></div>
 	            <?php $content = get_the_content(); ?>
 	            <?php if (!empty($content)) : ?>
@@ -163,7 +165,6 @@ jQuery(function(){
     		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
 	        </div>
-	        
 			<?php 
 			    $bedroom_amenities = get_field('2_bedroom_apartment_ame');
 			  
@@ -843,7 +844,7 @@ jQuery(function(){
         </div>
          <hr/>
           <div class="row" id="gallery" >
-	        <div class="col-md-12">
+	        <div class="col-md-12 al_baruj_slider">
 	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
 	        	<ul class="properties-filter">
 	        		<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>

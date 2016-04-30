@@ -1,0 +1,364 @@
+
+.mr_50 { margin-bottom: 30px;}
+.as_section_tl h2 {
+    background-image: none !important;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 20px !important;
+    text-transform: uppercase;
+    border-bottom: solid 2px;
+}
+.as_section_tl h2 span {
+    background: none !important;
+    padding: 0 !important;
+}
+.temp_2about_cont { margin-top: 30px;}
+.temp_2about_cont p strong {
+    color: #2f2f2f;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.about_cont h6 {
+    color: #2f2f2f;
+    border-bottom: solid 2px #2f2f2f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.abtn_icon {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.about_box_tl h6 {
+    font-size: 14px;
+    color: #20242d;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.about_box_tl p {
+    font-size: 12px;
+    color: #20242d;
+    font-weight: normal;
+}
+
+.as_flats { padding: 25px 0 0 0px !important;}
+.about_cont h3 {
+    color: #2f2f2f;
+    border-bottom: solid 2px #2f2f2f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.price_right {
+    position: absolute;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    top: 0;
+    right: 0;
+}
+p.cate_cont {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.bedroom_par { margin-top: 20px;}
+p.icon_cont {
+    font-size: 11px;
+    color: #000000;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.config-content .fade { opacity: 0.4;}
+.as-pull-right {
+    float: right !important;
+}
+
+.as_amenities {
+    padding: 0px !important;
+}
+.as_amenities .amenities-options .single-amenity {
+    margin: 0px 0px 15px 0;
+}
+
+/*tab menu*/
+.as_row-wise-amenities .properties-filter {
+    float: left;
+}
+.as_row-wise-amenities .properties-filter li {
+    display: block;
+    line-height: 5px;
+}
+
+.as_row-wise-amenities .properties-filter li .separator { display: none;}
+/*end tab menu*/
+/*map css*/
+.as_map { border-bottom: none !important;}
+.inn_map_cont #map-content { width: 100% !important;}
+.inn_map_cont #controls { width: 100% !important;}
+.inn_map_cont #map_canvas { width: 100% !important;}
+.map_bot_border span{
+    height: 3px;
+    display: block;
+    width: 100%;
+}
+.inn_map_cont .map-tabs-links {
+    position: absolute;
+    top: 4px;
+    right: 230px;
+    z-index: 99999;
+}
+.inn_map_cont .map-tabs-links li a {
+    font-size: 14px;
+    padding: 7px 11px;
+    text-decoration: none;
+}
+/*end map css*/
+.d_group {
+    background-color: #efefef;
+    padding: 30px 0;
+}
+.contact_inn {
+    color: #fff;
+    padding: 40px 0;
+}
+.right_cont .wpcf7 form p {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 40px;
+}
+.right_cont .wpcf7 form p:first-child { margin-left: 0;}
+.right_cont .wpcf7 form p input {
+    padding: 7px 8px;
+}
+.as_row-wise-amenities span.dev-floors, .as_row-wise-amenities span.dev-fittings, .as_row-wise-amenities span.dev-walls {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+}
+.as_row-wise-amenities .properties-filter .selected a .header-text, .as_row-wise-amenities .properties-filter a .header-text {
+    font-weight: normal;
+    font-size: 13px !important;
+    margin: 5px 0;
+}
+.as_row-wise-amenities .properties-filter li {
+    background-color: #f3ebeb;
+    margin: 0 10px!important;
+    opacity: 1 !important;
+}
+.as_row-wise-amenities .properties-filter li.selected {
+    background-color: transparent;
+}
+.as_texts {
+    font-weight: normal !important;
+    font-size: 18px !important;
+}
+.inn_properties-items .building-card {
+    background-color: #f9f3f3 !important;
+    border: none !important;
+}
+h2.pro_tl {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #fff !important;
+}
+.address_tag {
+    margin: 25px 0;
+}
+.address_tag a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.top_tena_price {
+    margin: 20px 0;
+    text-align: right;
+}
+.top_tena_price .field-value {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #20242d !important;
+}
+.as_inn_slider .tp-leftarrow {
+    left: 42px !important;
+}
+.as_inn_slider .tp-rightarrow {
+    right: 42px !important;
+}
+.temp_2_developer-details {
+    margin: -45px 0 0px 0 !important;
+}
+.newcol-md-1 {
+   width: 10.33333%;
+}
+.newcol-md-11 {
+    width: 89.33333%;
+}
+.top-dev-menu {
+    margin: 0;
+    z-index: 0;
+    position: relative !important;
+}
+.top-dev-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.top-dev-menu ul li {
+    display: block;
+    list-style: none;
+}
+.top-dev-menu ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: auto;
+    background-color: #20242d;
+    display: block;
+    margin-bottom: 2px;
+}
+.top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
+    background-color: #2b2f38;
+}
+.tamp_title {
+    background-color: #bf224e;
+    padding: 0 10px;
+}
+span.nave_sp {
+    height: 38px;
+    width: 38px;
+    display: block;
+    background-size: 38px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0 auto 5px;
+}
+span.detailnave_i {
+    background-image: url(../img/details_i.png);
+    background-image: none,url(../img/details_i.png);
+}
+span.catenave_i {
+    background-image: url(../img/categories_i.png);
+    background-image: none,url(../img/categories_i.png);
+}
+span.amennave_i {
+    background-image: url(../img/amenities_i.png);
+    background-image: none,url(../img/amenities_i.png);
+}
+span.locationnave_i {
+    background-image: url(../img/location_i.png);
+    background-image: none,url(../img/location_i.png);
+}
+span.rotnave_i {
+    background-image: url(../img/360_i.png);
+    background-image: none,url(../img/360_i.png);
+}
+span.gallnave_i {
+    background-image: url(../img/gallery_i.png);
+    background-image: none,url(../img/gallery_i.png);
+}
+span.marketnave_i {
+    background-image: url(../img/market_i.png);
+    background-image: none,url(../img/market_i.png);
+}
+/**/
+.interested_cl {
+    position: fixed;
+    left: -56px;
+    top: 363px;
+    z-index: 9999;
+}
+.in_int_btn {
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.in_int_btn i {
+    /*  display: block;*/
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background-color: #fff;
+    padding: 7px;
+    font-size: 16px;
+}
+.text_of_ints {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.text_of_ints a {
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    width: inherit;
+    padding: 0px 6px;
+}
+.text_of_ints span { padding: 0 5px;}
+/**/
+.left_shar {
+    position: fixed;
+    left: -62px;
+    top: 525px;
+    z-index: 9999;
+}
+.inn_share_btn {
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.share_txt {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.share_txt i {
+    /*  display: block;*/
+    /*-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);*/
+    background-color: #fff;
+    padding: 7px;
+    font-size: 16px;
+}
+.share_txt span { padding: 0 5px;}
+.al_baruj_slider ul li a{
+    border: 2px solid transparent;
+    background-color: #fff;
+    text-decoration: none;
+}
+.al_baruj_slider ul li.selected a {
+    border: 2px solid transparent;
+    color: #fff;
+}

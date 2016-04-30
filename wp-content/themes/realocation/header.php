@@ -143,12 +143,20 @@
                         */
             
                          $selected_template_value = get_field("select_template");    
-                        if($selected_template_value == 'developer'){
+                        if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2'){
                             
         			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' )); 
         			$sa = get_field('slider_alias');
-        			if($sa != '')
-        				putRevSlider( $sa )
+        			if($sa != '') {
+						?>
+						<div class="as_inn_slider">
+						 <?php  putRevSlider($sa); ?>
+							</div>
+						<?php
+					}
+					
+						}
+				 if($selected_template_value == 'developer'){
         		?>
         		<div class="tamp_title">
 					<div class="container">
@@ -192,7 +200,7 @@
                         */
             
                     $selected_template_value = get_field("select_template");    
-                    if($selected_template_value != 'developer'){
+                    if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2'){
 
                     wp_enqueue_script('googlemaps3');
                     wp_enqueue_script('clusterer');
@@ -207,73 +215,130 @@
                     	 endif; 
                     	 add_action('aviators_footer_map_detail', 'aviators_properties_map_detail'); 
 						}
-                	  	else {
+                	  	elseif($selected_template_value == 'developer') {
+							
 						?>
 						<div class="developer-menu top-dev-menu">
 							<div class="container">
 								<ul>
 									<li>
-										<a href="#">
-											<span class="dev-360"></span>
-											<span>dkfdk</span>
+										<a href="#" class="active">
+											<span class="nave_sp detailnave_i"></span>
+											<span>DETAILS</span>
 										</a>
 									</li>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Home</a></li>
+									<li>
+										<a href="#">
+											<span class="nave_sp catenave_i"></span>
+											<span>CATAGORY</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nave_sp amennave_i"></span>
+											<span>AMENITIES</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nave_sp locationnave_i"></span>
+											<span>LOCATION</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nave_sp rotnave_i"></span>
+											<span>360*</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nave_sp gallnave_i"></span>
+											<span>GALLERY</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nave_sp marketnave_i"></span>
+											<span>MARKET</span>
+										</a>
+									</li>
 								</ul>
 							</div>
-							<div class="developer-menu-links as_developer-menu-links">
+							<!--<div class="developer-menu-links as_developer-menu-links">
 							<a href="#details" >
-							<!--<div class="icon-details icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/PROJECT.png"> -->
+							<div class="icon-details icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/PROJECT.png">
 								<span class="dev-details"></span>
 								<div class="title">DETAILS</div>
 							</a>
 							<a  href="#flats">
-							<!--<div class="icon-building-filled icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/CATEGORY.png"> -->
+							<div class="icon-building-filled icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/CATEGORY.png">
 								<span class="dev-category"></span>
 								<div class="title">CATAGORY</div>
 							</a>
 							<a href="#amenities" >
-							<!-- <div class="icon-amenities-filled icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/AMENITIES.png"> -->
+							 <div class="icon-amenities-filled icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/AMENITIES.png">
 								<span class="dev-amenities"></span>
 								<div class="title">AMENITIES</div>
 							</a>
 							<a  href="#map" >
-							<!--<div class="icon-location-filled icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/LOCATION.png"> -->
+							<div class="icon-location-filled icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/LOCATION.png">
 								<span class="dev-location"></span>
 								<div class="title">LOCATION</div>
 							</a>
 							<a  href="#flats" >
-							<!--<div class="icon-plane-filled icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/360.png"> -->
+							<div class="icon-plane-filled icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/360.png">
 								<span class="dev-360"></span>
 								<div class="title">360*</div>
 							</a>
 							<a  href="#gallery" >
-							<!--<div class="icon-gallery-filled icon-small"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/GALLERY.png"> -->
+							<div class="icon-gallery-filled icon-small"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/GALLERY.png">
 								<span class="dev-gallery"></span>
 								<div class="title">GALLERY</div>
 							</a>
 							<a  href="#line_chart" >
-							<!--<div class="icon-small icon-trends-filled"></div> -->
-								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/MARKET.png"> -->
+							<div class="icon-small icon-trends-filled"></div>
+								 <img src="<?php /*bloginfo('template_directory'); */?>/images/MARKET.png">
 								<span class="dev-market"></span>
 								<div class="title">MARKET</div>
 							</a>
-							</div>
-							<!--<div class="im-interested">
-								<div class="icon icon-message-filled"></div>
-								<?php /*echo do_shortcode('[AnythingPopup id="4"]'); */?>
-								
 							</div>-->
+
+							<!--<div class="im-interested" style="border:none !important; border-color:none !important;"> -->
+								
+
+							<div class="im-interested">
+								<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
+							</div>
+							
+							<div class="interested_cl">
+								<div class="in_int_btn">
+									<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
+								</div>
+							</div>
+							
+
+							<div class="left_shar">
+								<div class="inn_share_btn">
+									<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span id="share_property">share Property</span></div>
+									
+									
+								</div>
+								
+								
+								
+							</div>
+
 						</div>
 						<?php 
-					  	} 
+					  	}
+						
                 	}?>
 
                 <div class="container">

@@ -52,12 +52,12 @@
 						<div class="field-item-inner">
 							<div class="col-xs-3 no-columns number number hf-property-bathrooms">
 								<div class="label">
-									<p>Configuration</p>
+									<p>Config.</p>
 								</div>
 								<div class="field-item field-item-0">
-									<div class="field-prefix"></div>
+									
 									<div class="field-value"><?php echo $configration_value; ?></div>
-									<div class="field-suffix"></div>
+									
 								</div>
 							</div>
 						</div>
@@ -69,9 +69,9 @@
 									<p>Area</p>
 								</div>
 								<div class="field-item field-item-0">
-									<div class="field-prefix"></div>
+									
 									<div class="field-value"><?php echo $areavalue; ?></div>
-									<div class="field-suffix"></div>
+									
 								</div>
 							</div>
 						</div>
@@ -81,9 +81,9 @@
 							<div class="col-xs-3 no-columns number number hf-property-area">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
-									<div class="field-prefix"></div>
+									
 									<div class="field-value"><?php echo $possession_value; ?></div>
-									<div class="field-suffix"></div>
+									
 								</div>
 							</div>
 						</div>
@@ -93,9 +93,9 @@
 							<div class=" no-columns number number hf-property-price">
 								<div class="label"><p>Price</p></div>
 								<div class="field-item field-item-0">
-									<div class="field-prefix"></div>
+									
 									<div class="field-value"><?php echo $price_value; ?></div>
-									<div class="field-suffix"></div>
+									
 								</div>
 							</div>
 						</div>

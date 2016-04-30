@@ -21,7 +21,11 @@
         if($selected_template_value == 'developer'){
     		//aviators_get_content_template('property', 'developer');
                 aviators_get_content_template('property', 'template-V1');
-        }else 
+        }
+		elseif($selected_template_value == 'TemplateV2'){
+			 aviators_get_content_template('property', 'template-V2');
+		}
+		else 
     		aviators_get_content_template('property', 'detail'); ?>
 
 

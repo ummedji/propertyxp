@@ -103,17 +103,49 @@ jQuery(window).scroll(function () {
 	//jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
 	setTimeout(function(){
-		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+		//alert("UD");
+		jQuery("div.row-wise-amenities ul.properties-filter > li:first-child a").trigger("click");
 		
-	}, 1000);
+	}, 2000);
+	
+	setTimeout(function(){
+		//alert("HERE");
+		jQuery("div#gallery ul.properties-filter a.first-click-this").trigger("click");
+		
+	}, 4000);
+	
 	
 	jQuery("a#render_all_premium_properties").on("click",function(){
 	
 		jQuery("ul.premium_property_filter li:first-child a").trigger("click");
 	});
 	
+	
+	jQuery(".im-interested .do-not-display").remove();
+	jQuery("div.im-interested").css("border-color","none !important");
+
+	jQuery("span#share_property").on("click",function(){
+	
+		jQuery("div.oss_title_replace").css("display","block");
+		
+		//$( "div.oss_title_replace" ).toggle();
+		
+	
+	});
+	
 });
  </script>
+ 
+ <style>
+ 
+ .oss_title_replace{
+ 
+ display:none;
+ 
+ }
+ 
+ </style>
+ 
 <?php wp_footer(); ?>
 <?php aviators_footer(); ?>
 <?php $person_field = strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid'));if($person_field == 'Developer') {?><script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slidx.js"></script><header> <button id="slidx_button"><i class="fa fa-bars" style="font-size: 26px;"></i></button>        <nav id="slidx_menu">            <?php echo do_shortcode('[custom_menu]'); ?>        </nav></header><?php } ?>

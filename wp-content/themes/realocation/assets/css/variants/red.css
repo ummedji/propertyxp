@@ -10141,6 +10141,28 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .prossesion_square_i {
 	background: url("images/red/prossesion_square_i.png") no-repeat top;
 }
+
+/*tamp2*/
+.about_ii {
+	background: url("images/red/address_square_ii.png") no-repeat top;
+}
+.configuration_ii {
+	background: url("images/red/configuration_square_ii.png") no-repeat top;
+}
+.starting_ii {
+	background: url("images/red/starting_square_ii.png") no-repeat top;
+}
+.builtup_square_ii {
+	background: url("images/red/builtup_square_ii.png") no-repeat top;
+}
+.blocks_square_ii {
+	background: url("images/red/blocks_square_ii.png") no-repeat top;
+}
+.prossesion_square_ii {
+	background: url("images/red/prossesion_square_ii.png") no-repeat top;
+}
+/*tamp2*/
+
 .price_right {background-color: #FF3401;}
 
 .as_properties-filter li.selected a{
@@ -10196,3 +10218,17 @@ h2.pro_tl {
 	color: #FF3401;
 }
 .top_tena_price .field-value { background-color: #FF3401;}
+
+.in_int_btn { background-color: #FF3401;}
+.in_int_btn i { color: #FF3401;}
+.inn_share_btn { background-color: #FF3401;}
+.share_txt i { color: #FF3401;}
+
+.al_baruj_slider ul li a{
+	border-color: rgba(255, 52, 1, 1) !important;
+	color: #FF3401;
+}
+.al_baruj_slider ul li.selected a {
+	border-color: rgba(208, 42, 0, 1) !important;
+	background-color: #FF3401;
+}
