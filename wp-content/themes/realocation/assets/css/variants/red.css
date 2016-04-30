@@ -10179,7 +10179,7 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .contact_inn { background-color: #FF3401;}
 .as_texts { color: #FF3401;}
 .front_crausol_slider{
-	background-image: url( /wp-content/themes/realocation/assets/css/variants/images/red/premium_property/red.jpg );
+	background-image: url(/qa/propertyxp/wp-content/themes/realocation/assets/css/variants/images/red/premium_property/red.jpg );
 }
 .front_crausol_slider h2.color-default {
     color: #fff;
