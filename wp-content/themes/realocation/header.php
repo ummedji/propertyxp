@@ -313,7 +313,7 @@
 							<!--<div class="im-interested" style="border:none !important; border-color:none !important;"> -->
 								
 
-							<div class="im-interested">
+							<div class="im-interested" style="border:none !important; border-color:none !important;">
 								<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
 							</div>
 							
