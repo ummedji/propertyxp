@@ -110,7 +110,7 @@ jQuery(window).scroll(function () {
 	
 	setTimeout(function(){
 	//	alert("HERE");
-		alert(jQuery("div#gallery").find("properties-filter").html());
+	//	alert(jQuery("div#gallery").find("properties-filter").html());
 		
 	}, 4000);
 	
