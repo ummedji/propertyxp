@@ -118,6 +118,9 @@ jQuery(function(){
 		</li>
 	</ul>
 
+	<div class="im-interested" style="border:none !important; border-color:none !important;">
+		<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
+	</div>
 	<div class="interested_cl">
 		<div class="in_int_btn">
 			<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
