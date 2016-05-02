@@ -70,22 +70,24 @@
 	});
 </script>
 
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css" />
   <?php
  $selected_template_value = get_field("select_template");    
      if($selected_template_value == 'developer'){
   ?>
-         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS">
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS" />
 <?php
      }
      elseif($selected_template_value == 'TemplateV2'){
 
 ?>
-         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V2.css">
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V2.CSS" />
 <?php
      }
-
+	elseif($selected_template_value == 'TemplateV3'){
 ?>
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V3.CSS" />
+<?php } ?>
 </head>
 
 <body <?php body_class(); ?> >
@@ -210,8 +212,9 @@
                     <?php $mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE); ?>
                     <?php if (isset($mapPosition['items'][0])): ?>
                         <?php if (!empty($mapPosition['items'][0]['latitude']) && !empty($mapPosition['items'][0]['longitude'])) : ?>
-                            <div id="map-property">
+                            <div class="ASHVIN"><div id="map-property">
                             </div><!-- /#map-property -->
+							</div>
                         <?php endif; 
                     	 endif; 
                     	 add_action('aviators_footer_map_detail', 'aviators_properties_map_detail'); 
