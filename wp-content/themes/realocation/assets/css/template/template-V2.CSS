@@ -121,9 +121,10 @@ p.icon_cont {
 .inn_map_cont .map-tabs-links {
     position: absolute;
     top: 4px;
-    right: 230px;
+    right: 222px;
     z-index: 99999;
 }
+.inn_map_cont .map-tabs-links li { margin: 0 5px 0 3px;}
 .inn_map_cont .map-tabs-links li a {
     font-size: 14px;
     padding: 7px 11px;
@@ -170,9 +171,26 @@ p.icon_cont {
     font-weight: normal !important;
     font-size: 18px !important;
 }
+.inn_properties-items .property-item {
+    padding-bottom: 0 !important;
+}
 .inn_properties-items .building-card {
-    background-color: #f9f3f3 !important;
+    /*background-color: #f9f3f3 !important;*/
     border: none !important;
+}
+.inn_properties-items .pills .header {
+    margin-top: 0 !important;
+}
+.as_pills {
+    background-color: #ecedef;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.inn_properties-items {
+    margin-top: 10px;
+}
+.temp_2_gallery {
+    padding: 30px 0 0 0px !important;
 }
 h2.pro_tl {
     font-size: 24px;
@@ -214,8 +232,26 @@ h2.pro_tl {
 }
 .top-dev-menu {
     margin: 0;
-    z-index: 0;
-    position: relative !important;
+    z-index: 999;
+    /* position: relative !important; */
+    width: 92px;
+    position: absolute;
+    left: -90px;
+    top: -45px;
+}
+.developer-menu.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #20242d;
+    padding: 0 0 0 120px;
+}
+.developer-menu.fixed ul li{
+    display: inline-block;
+}
+.developer-menu.fixed ul li a {
+    padding: 13px 20px;
 }
 .top-dev-menu ul {
     margin: 0;
@@ -238,7 +274,6 @@ h2.pro_tl {
     background-color: #2b2f38;
 }
 .tamp_title {
-    background-color: #bf224e;
     padding: 0 10px;
 }
 span.nave_sp {
@@ -281,9 +316,9 @@ span.marketnave_i {
 /**/
 .interested_cl {
     position: fixed;
-    left: -56px;
+    right: -56px;
     top: 363px;
-    z-index: 9999;
+    z-index: 999999;
 }
 .in_int_btn {
     padding: 5px;
@@ -322,10 +357,11 @@ span.marketnave_i {
 /**/
 .left_shar {
     position: fixed;
-    left: -62px;
+    right: -62px;
     top: 525px;
-    z-index: 9999;
+    z-index: 999999;
 }
+.scroll-top-img { bottom: -2px !important;}
 .inn_share_btn {
     padding: 5px;
     cursor: pointer;
@@ -360,5 +396,48 @@ span.marketnave_i {
 }
 .al_baruj_slider ul li.selected a {
     border: 2px solid transparent;
+    color: #fff;
+}
+/*theme option*/
+.palette-toggle {
+    left: -42px;
+    /*position: fixed;
+    top: 198px;*/
+   /* z-index: 99999;*/
+}
+.palette-wrapper {
+    right: 0px;
+    left: auto;
+}
+.palette-closed {
+    margin-right: -180px;
+}
+.amenities-options li {
+    height: auto;
+}
+/*theme option*/
+.temp_2_amenities .properties-filter {
+    margin-bottom: 0;
+    float: none;
+    text-align: left;
+    line-height: 5px;
+    display: inline-block;
+}
+.temp_2_amenities .properties-filter li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 !important;
+    margin-right: -5px !important;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: solid 2px #b4b4b4;
+    /*border-right: none;*/
+}
+
+.temp_2_amenities .properties-filter li.selected {
+    border: solid 2px #595959;
+    /*border-right: none;*/
+}
+.temp_2_amenities .properties-filter li.selected a {
     color: #fff;
 }

@@ -10232,3 +10232,10 @@ h2.pro_tl {
 	border-color: rgba(208, 42, 0, 1) !important;
 	background-color: #FF3401;
 }
+.cl_tamp_title { background-color: #FF3401;}
+/*templete 2 css*/
+.palette-toggle { border-left: 2px solid #FF3401;}
+.palette-wrapper { border-left: 2px solid #FF3401;}
+.temp_2_amenities .properties-filter li.selected { background-color: #FF3401 !important;}
+.inn_map_cont .map-tabs-links li a { border: solid 2px #FF3401 !important;}
+/*templete 2 css*/

@@ -77,75 +77,73 @@ $selected_template_value = get_field("select_template");
     if($selected_template_value != 'TemplateV2'){
 		echo "NEW HEADER HERE";	
 	}
-?>				
+?>
+
+<div class="developer-menu top-dev-menu">
+
+	<ul>
+		<li>
+			<a href="#details" class="active">
+				<span class="nave_sp detailnave_i"></span>
+				<span>DETAILS</span>
+			</a>
+		</li>
+		<li>
+			<a href="#flats">
+				<span class="nave_sp catenave_i"></span>
+				<span>CATAGORY</span>
+			</a>
+		</li>
+		<li>
+			<a href="#amenities">
+				<span class="nave_sp amennave_i"></span>
+				<span>AMENITIES</span>
+			</a>
+		</li>
+		<li>
+			<a href="#map">
+				<span class="nave_sp locationnave_i"></span>
+				<span>LOCATION</span>
+			</a>
+		</li>
+		<li>
+			<a href="#flats">
+				<span class="nave_sp rotnave_i"></span>
+				<span>360*</span>
+			</a>
+		</li>
+		<li>
+			<a href="#gallery">
+				<span class="nave_sp gallnave_i"></span>
+				<span>GALLERY</span>
+			</a>
+		</li>
+		<li>
+			<a href="#line_chart">
+				<span class="nave_sp marketnave_i"></span>
+				<span>MARKET</span>
+			</a>
+		</li>
+	</ul>
+
+	<div class="interested_cl">
+		<div class="in_int_btn">
+			<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
+		</div>
+	</div>
+
+	<div class="left_shar">
+		<div class="inn_share_btn">
+			<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span>share Property</span></div>
+		</div>
+	</div>
+
+</div>
 
 <div class="property-detail developer-details">
 	<div class="row temp_2_developer-details">
-		<div class="col-md-1 newcol-md-1">
-			<div class="developer-menu top-dev-menu">
-
-					<ul>
-						<li>
-							<a href="#details" class="active">
-								<span class="nave_sp detailnave_i"></span>
-								<span>DETAILS</span>
-							</a>
-						</li>
-						<li>
-							<a href="#flats">
-								<span class="nave_sp catenave_i"></span>
-								<span>CATAGORY</span>
-							</a>
-						</li>
-						<li>
-							<a href="#amenities">
-								<span class="nave_sp amennave_i"></span>
-								<span>AMENITIES</span>
-							</a>
-						</li>
-						<li>
-							<a href="#map">
-								<span class="nave_sp locationnave_i"></span>
-								<span>LOCATION</span>
-							</a>
-						</li>
-						<li>
-							<a href="#flats">
-								<span class="nave_sp rotnave_i"></span>
-								<span>360*</span>
-							</a>
-						</li>
-						<li>
-							<a href="#gallery">
-								<span class="nave_sp gallnave_i"></span>
-								<span>GALLERY</span>
-							</a>
-						</li>
-						<li>
-							<a href="#line_chart">
-								<span class="nave_sp marketnave_i"></span>
-								<span>MARKET</span>
-							</a>
-						</li>
-					</ul>
-
-				<div class="interested_cl">
-					<div class="in_int_btn">
-						<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
-					</div>
-				</div>
-
-				<div class="left_shar">
-					<div class="inn_share_btn">
-						<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span>share Property</span></div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="col-md-11 newcol-md-11">
-			<div class="tamp_title">
+		<div class="col-md-12">
+			<div class="tamp_title cl_tamp_title">
 					<div class="row">
 						<div class="col-md-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
 						<div class="col-md-4 text-center">
@@ -204,14 +202,8 @@ $selected_template_value = get_field("select_template");
 						</div>
 					</div>
 
-
-
 				</div>
 			</div>
-
-
-
-
 		</div>
 	</div>
 
@@ -239,7 +231,7 @@ $selected_template_value = get_field("select_template");
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 		    ?>
 	        
-	        <div class="col-md-12 text-left mr_50">
+	        <div class="col-md-12 text-center mr_50">
 				<h3>2 BedRoom Apartment</h3>
 				<p class="cate_cont"> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
@@ -253,37 +245,37 @@ $selected_template_value = get_field("select_template");
 						<div class="row">
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $living_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/leving-room.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $living;?>" style="text-align: center;">Leaving room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $servant_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/servant_room.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $servant;?>" style="text-align: center;">Servant room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $kitchen_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/kitchen.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $kitchen;?>" style="text-align: center;">Kitchen</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $balconies_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/balconies.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $balconies;?>" style="text-align: center;">Balconies</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $bathrooms_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/bathrooms.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $bathrooms;?>" style="text-align: center;">Bathrooms</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $pooja_room_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/pooja_room.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $pooja_room;?>" style="text-align: center;">Pooja room</p>
 							</div>
@@ -293,37 +285,37 @@ $selected_template_value = get_field("select_template");
 
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $study_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/study_room.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $study;?>" style="text-align: center;">Study room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $ac_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/ac.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $ac;?>" style="text-align: center;">AC</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $intercom_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/intercom.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $intercom;?>" style="text-align: center;">Intercom</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $video_door_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/video_door_phone.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $video_door;?>" style="text-align: center;">Video Door Phone</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $washing_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/washing_area.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $washing;?>" style="text-align: center;">Washing Area</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $gas_line_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/gas_line.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $gas_line;?>" style="text-align: center;">Gas Line</p>
 							</div>
@@ -331,13 +323,13 @@ $selected_template_value = get_field("select_template");
 
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $power_backup_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/power_backup.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $power_backup;?>" style="text-align: center;">Power Backup</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $wooden_fade;?>">
-									<img src="<?php bloginfo('template_directory')?>/images/templatev1/wooden_floor.png" alt=" " width="100%">
+									<img src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $wooden;?>" style="text-align: center;">Wooden Floor</p>
 							</div>
@@ -468,7 +460,7 @@ $selected_template_value = get_field("select_template");
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 		    ?>
 	        
-	        <div class="col-md-12 text-left mr_50">
+	        <div class="col-md-12 text-center mr_50">
 				<h3>3 BedRoom Apartment</h3>
 				<p> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
@@ -483,37 +475,37 @@ $selected_template_value = get_field("select_template");
 						<div class="col-md-12">
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $living_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/leving-room.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $living;?>" style="text-align: center;">Leving room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $servant_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/servant_room.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $servant;?>">Servant room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $kitchen_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/kitchen.png" alt=" " width="100%" />
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%" />
 								</div>
 								<p class="center <?php echo $kitchen;?>">Kitchen</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $balconies_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/balconies.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $balconies;?>">Balconies</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $bathrooms_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/bathrooms.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $bathrooms;?>">Bathrooms</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $pooja_room_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/pooja_room.png" alt=" " width="100%" />
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%" />
 								</div>
 								<p class="center <?php echo $pooja_room;?>">Pooja room</p>
 							</div>
@@ -521,37 +513,37 @@ $selected_template_value = get_field("select_template");
 
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $study_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/study_room.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $study;?>">Study room</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $ac_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/ac.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $ac;?>">AC</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $intercom_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/intercom.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $intercom;?>">Intercom</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $video_door_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/video_door_phone.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $video_door;?>">Video Door Phone</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $washing_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/washing_area.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $washing;?>">Washing Area</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $gas_line_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/gas_line.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $gas_line;?>">Gas Line</p>
 							</div>
@@ -559,13 +551,13 @@ $selected_template_value = get_field("select_template");
 
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $power_backup_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/power_backup.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $power_backup;?>">Power Backup</p>
 							</div>
 							<div class="col-md-2 text-center">
 								<div class="<?php echo $wooden_fade;?>">
-									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/wooden_floor.png" alt=" " width="100%">
+									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $wooden;?>">Wooden Floor</p>
 							</div>
@@ -593,7 +585,7 @@ $selected_template_value = get_field("select_template");
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 		    ?>
 	        
-	        <div class="col-md-12 text-left mr_50">
+	        <div class="col-md-12 text-center mr_50">
 				<h3>4 BedRoom Apartment</h3>
 				<p class="cate_cont"> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
@@ -609,37 +601,37 @@ $selected_template_value = get_field("select_template");
 							<div class="col-md-12">
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $living_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/leving-room.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $living;?>" style="text-align: center;">Leving room</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $servant_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/servant_room.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $servant;?>">Servant room</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $kitchen_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/kitchen.png" alt=" " width="100%" />
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%" />
 									</div>
 									<p class="center <?php echo $kitchen;?>">Kitchen</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $balconies_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/balconies.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $balconies;?>">Balconies</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $bathrooms_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/bathrooms.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $bathrooms;?>">Bathrooms</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $pooja_room_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/pooja_room.png" alt=" " width="100%" />
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%" />
 									</div>
 									<p class="center <?php echo $pooja_room;?>">Pooja room</p>
 								</div>
@@ -647,37 +639,37 @@ $selected_template_value = get_field("select_template");
 
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $study_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/study_room.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $study;?>">Study room</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $ac_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/ac.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $ac;?>">AC</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $intercom_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/intercom.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $intercom;?>">Intercom</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $video_door_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/video_door_phone.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $video_door;?>">Video Door Phone</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $washing_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/washing_area.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $washing;?>">Washing Area</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $gas_line_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/gas_line.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $gas_line;?>">Gas Line</p>
 								</div>
@@ -685,13 +677,13 @@ $selected_template_value = get_field("select_template");
 
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $power_backup_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/power_backup.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $power_backup;?>">Power Backup</p>
 								</div>
 								<div class="col-md-2 text-center">
 									<div class="<?php echo $wooden_fade;?>">
-										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev1/wooden_floor.png" alt=" " width="100%">
+										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $wooden;?>">Wooden Floor</p>
 								</div>
@@ -732,59 +724,59 @@ $selected_template_value = get_field("select_template");
           	<div class="col-md-12" style="margin-top: 20px;">
 	          	<ul class="amenities-options">
 					<li class="single-amenity">
-						<div class="<?php echo $life_fade;?>"><img src="<?php bloginfo('template_directory')?>/images/LIFT.png" ></div>
+						<div class="<?php echo $life_fade;?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Lift.png" ></div>
 						<div class="<?php echo $lift; ?> text amenities_cn">Lift</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $sec_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/SECURITY.png" ></div>
+						<div class="<?php echo $sec_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Security.png" ></div>
 						<div class="<?php echo $security; ?> text amenities_cn">Security</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $internet_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/INTERNET.png" ></div>
+						<div class="<?php echo $internet_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Internet.png" ></div>
 						<div class="<?php echo $internet; ?> text amenities_cn">Internet</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $kids_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/KIDS-ZONE.png" ></div>
+						<div class="<?php echo $kids_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Kids-Zone.png" ></div>
 						<div class="<?php echo $kids_area; ?> text amenities_cn">Kids Zone</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $swim_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/SWIMMING-POOL.png" ></div>
+						<div class="<?php echo $swim_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Swimming-Pool.png" ></div>
 						<div class="<?php echo $swimming_pool; ?> text amenities_cn">Swimming Pool</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $gym_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/GYM.png" ></div>
+						<div class="<?php echo $gym_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Gymnasium.png" ></div>
 						<div class="<?php echo $gymnasium; ?> text amenities_cn">Gymnasium</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $garen_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/GARDEN.png" ></div>
+						<div class="<?php echo $garen_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Garden.png" ></div>
 						<div class="<?php echo $garden; ?> text amenities_cn">Garden</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $lib_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/LIBRARY.png" ></div>
+						<div class="<?php echo $lib_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Library.png" ></div>
 						<div class="<?php echo $llibrary; ?> text amenities_cn">Library</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $com_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/COMMUNITY-HALL.png" ></div>
+						<div class="<?php echo $com_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Community-Hall.png" ></div>
 						<div class="<?php echo $community; ?> text amenities_cn">Community Hall</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $internal_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/INTERNAL-ROADS.png" ></div>
+						<div class="<?php echo $internal_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Internal-Roads.png" ></div>
 						<div class="<?php echo $internal_roads; ?> text amenities_cn">Internal Roads</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $jog_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/JOGGING-TRACK.png" ></div>
+						<div class="<?php echo $jog_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Jogging-Track.png" ></div>
 						<div class="<?php echo $jogging; ?> text amenities_cn">Jogging Track</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $power_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/NO-POWER-BACKUP.png" ></div>
+						<div class="<?php echo $power_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/No-Power-Backup.png" ></div>
 						<div class="<?php echo $no_power_backup; ?> text amenities_cn">No Power Backup</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $club_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/CLUB-HOUSE.png" ></div>
+						<div class="<?php echo $club_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Club-House.png" ></div>
 						<div class="<?php echo $club_house; ?> text amenities_cn">Club House</div>
 					</li>
 					<li class="single-amenity">
-						<div class="<?php echo $indoor_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/INDOOR-GAMES.png" ></div>
+						<div class="<?php echo $indoor_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/amenities/pink/Indoor-Games.png" ></div>
 						<div class="<?php echo $indoor_games; ?> text amenities_cn">Indoor Games</div>
 					</li>
 					
@@ -829,11 +821,11 @@ $selected_template_value = get_field("select_template");
 				</div>
 			</div>
 			*/?>
-			<div class="col-md-12 row-wise-amenities as_row-wise-amenities">
+			<div class="col-md-12 row-wise-amenities as_row-wise-amenities temp_2_amenities">
 				<ul class="properties-filter">
 			       <li class="selected">
 			       		<a href="#" data-filter=".floors" class="first-click-this">
-			       			<div><span class="dev-floors"></span><!-- <img src="<?php bloginfo('template_directory')?>/images/FLOOR.png" > --></div>
+			       			<!--<div><span class="dev-floors"></span><!-- <img src="<?php /*bloginfo('template_directory')*/?>/images/FLOOR.png" > </div>-->
 							<div class="header-text">FLOORS</div>
 							<div class="separator"></div>
 							<div class="clearfix"></div>
@@ -841,16 +833,18 @@ $selected_template_value = get_field("select_template");
 					</li>
 			       <li>
 			       		<a href="#" data-filter=".fittings">
-			       			<div><span class="dev-fittings"></span><!-- <img src="<?php bloginfo('template_directory')?>/images/FITTINGS.png" > --></div>
+			       			<!--<div><span class="dev-fittings"></span><!-- <img src="<?php /*bloginfo('template_directory')*/?>/images/FITTINGS.png" > </div>-->
 							<div class="header-text">FITTINGS</div>
 							<div class="separator"></div>
+							<div class="clearfix"></div>
 						</a>
 					</li>
 			       <li>
 			       		<a href="#" data-filter=".walls">
-			       			<div><span class="dev-walls"></span><!-- <img src="<?php bloginfo('template_directory')?>/images/WALLS.png" > --></div>
+			       			<!--<div><span class="dev-walls"></span><!-- <img src="<?php /*bloginfo('template_directory')*/?>/images/WALLS.png" > </div>-->
 							<div class="header-text">WALLS</div>
 							<div class="separator"></div>
+							<div class="clearfix"></div>
 						</a>
 					</li>
 		     	</ul>
@@ -858,31 +852,117 @@ $selected_template_value = get_field("select_template");
 		  
 		    	<div class="properties-items inn_properties-items isotope">
 		    		<div class="items-list row">
-			    		<div class="building-card floors-card co  floors property-item isotope-item  col-md-12">
-							<div class="pills col-md-4"><div class="header">BALCONY</div><div class="texts as_texts"><?php the_field('balcony'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('kitchen'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">LIVING/DINING</div><div class="texts as_texts"><?php the_field('living/dining'); ?></div></div>
+			    		<div class="building-card floors-card co  floors property-item isotope-item">
+							<div class="row">
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">BALCONY</div>
+										<div class="texts as_texts"><?php the_field('balcony'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">KITCHEN</div>
+										<div class="texts as_texts"><?php the_field('kitchen'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">LIVING/DINING</div>
+										<div class="texts as_texts"><?php the_field('living/dining'); ?></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">MASTER BEDROOM</div>
+										<div class="texts as_texts"><?php the_field('master_bedroom'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">OTHER BEDROOM</div>
+										<div class="texts as_texts"><?php the_field('other_bedroom'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">TOILETS</div>
+										<div class="texts as_texts"><?php the_field('toilets'); ?></div>
+									</div>
+								</div>
+							</div>
 							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">MASTER BEDROOM</div><div class="texts as_texts"><?php the_field('master_bedroom'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">OTHER BEDROOM</div><div class="texts as_texts"><?php the_field('other_bedroom'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('toilets'); ?></div></div>
 						</div>
-						<div class="building-card fittings-card  fittings property-item isotope-item col-md-12">
-							
-							<div class="pills col-md-4"><div class="header">DOORS</div><div class="texts as_texts"><?php the_field('doors'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">ELECTRICAL</div><div class="texts as_texts"><?php the_field('electrical'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('fitting_kitchen'); ?></div></div>
-							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">WINDOWS</div><div class="texts as_texts"><?php the_field('windows'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('fitting_toilets'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">OTHERS</div><div class="texts as_texts"><?php the_field('others'); ?></div></div>
+						<div class="building-card fittings-card  fittings property-item isotope-item">
+							<div class="row">
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">DOORS</div>
+										<div class="texts as_texts"><?php the_field('doors'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">ELECTRICAL</div>
+										<div class="texts as_texts"><?php the_field('electrical'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">KITCHEN</div>
+										<div class="texts as_texts"><?php the_field('fitting_kitchen'); ?></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">WINDOWS</div>
+										<div class="texts as_texts"><?php the_field('windows'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">TOILETS</div>
+										<div class="texts as_texts"><?php the_field('fitting_toilets'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">OTHERS</div>
+										<div class="texts as_texts"><?php the_field('others'); ?></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="building-card walls-card  walls property-item isotope-item col-md-12">
-							<div class="pills col-md-4"><div class="header">EXTERIOR</div><div class="texts as_texts"><?php the_field('exterior'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">INTERIOR</div><div class="texts as_texts"><?php the_field('interior'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('kitchen_walls'); ?></div></div>
-							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('toilets_walls'); ?></div></div>
+						<div class="building-card walls-card  walls property-item isotope-item">
+							<div class="row">
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">EXTERIOR</div>
+										<div class="texts as_texts"><?php the_field('exterior'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">INTERIOR</div>
+										<div class="texts as_texts"><?php the_field('interior'); ?></div>
+									</div>
+								</div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">KITCHEN</div>
+										<div class="texts as_texts"><?php the_field('kitchen_walls'); ?></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="pills col-md-4">
+									<div class="as_pills">
+										<div class="header">TOILETS</div>
+										<div class="texts as_texts"><?php the_field('toilets_walls'); ?></div>
+									</div>
+								</div>
+							</div>
 						</div>
 		    		</div>
 		    	
@@ -898,7 +978,7 @@ $selected_template_value = get_field("select_template");
             
         </div>
          <hr/>
-          <div class="row" id="gallery" >
+          <div class="row temp_2_gallery" id="gallery" >
 	        <div class="col-md-12 al_baruj_slider">
 	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
 	        	<ul class="properties-filter">
@@ -1105,7 +1185,7 @@ $selected_template_value = get_field("select_template");
 		<div class="col-md-12 popup-this-contact-form">
 			<div class="center section-title as_section_tl"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
-				<div class="col-md-4 center">
+				<div class="col-md-4 pull-right center">
 					<?php /*	$image = get_field('developer_image');
 					if( !empty($image) ): */?><!--
 					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />

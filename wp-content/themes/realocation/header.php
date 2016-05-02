@@ -78,7 +78,8 @@
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS">
 <?php
      }
-     else{
+     elseif($selected_template_value == 'TemplateV2'){
+
 ?>
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V2.css">
 <?php

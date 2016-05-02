@@ -104,13 +104,13 @@ jQuery(window).scroll(function () {
 		
 	setTimeout(function(){
 		//alert("UD");
-		jQuery("div.row-wise-amenities ul.properties-filter > li:first-child a").trigger("click");
+		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
 	}, 2000);
 	
 	setTimeout(function(){
-		//alert("HERE");
-		jQuery("div#gallery ul.properties-filter a.first-click-this").trigger("click");
+	//	alert("HERE");
+		alert(jQuery("div#gallery").find("properties-filter").html());
 		
 	}, 4000);
 	
