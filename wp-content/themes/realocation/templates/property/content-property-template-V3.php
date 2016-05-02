@@ -124,11 +124,11 @@ jQuery(function(){
 		</div>
 	</div>
 
-	<div class="left_shar">
+	<!--<div class="left_shar">
 		<div class="inn_share_btn">
 			<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span>share Property</span></div>
 		</div>
-	</div>
+	</div>-->
 
 </div>
 
