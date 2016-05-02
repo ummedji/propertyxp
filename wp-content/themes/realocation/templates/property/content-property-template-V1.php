@@ -73,7 +73,7 @@ jQuery(function(){
 </script>
 
 <div class="property-detail developer-details">
-<?php 	echo do_shortcode('[Social9_Share]'); ?>
+
     	<div class="row as_flats" id="details" >
     
 	    	<?php /* ?>
