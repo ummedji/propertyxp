@@ -71,14 +71,6 @@ jQuery(function(){
         });
     });
 </script>
-
-<?php
-$selected_template_value = get_field("select_template");    
-    if($selected_template_value != 'TemplateV2'){
-		echo "NEW HEADER HERE";	
-	}
-?>
-
 <div class="developer-menu top-dev-menu">
 
 	<ul>

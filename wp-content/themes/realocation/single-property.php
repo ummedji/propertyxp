@@ -25,6 +25,9 @@
 		elseif($selected_template_value == 'TemplateV2'){
 			 aviators_get_content_template('property', 'template-V2');
 		}
+		elseif($selected_template_value == 'TemplateV3'){
+			 aviators_get_content_template('property', 'template-V3');
+		}
 		else 
     		aviators_get_content_template('property', 'detail'); ?>
 

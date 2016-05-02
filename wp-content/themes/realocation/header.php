@@ -212,7 +212,7 @@
                     <?php $mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE); ?>
                     <?php if (isset($mapPosition['items'][0])): ?>
                         <?php if (!empty($mapPosition['items'][0]['latitude']) && !empty($mapPosition['items'][0]['longitude'])) : ?>
-                            <div class="ASHVIN"><div id="map-property">
+                            <div class="temp3map"><div id="map-property">
                             </div><!-- /#map-property -->
 							</div>
                         <?php endif; 
@@ -328,7 +328,7 @@
 							</div>
 							
 
-							<div class="left_shar">
+							<!--div class="left_shar">
 								<div class="inn_share_btn">
 									<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span id="share_property">share Property</span></div>
 									
@@ -337,7 +337,7 @@
 								
 								
 								
-							</div>
+							</div-->
 
 						</div>
 						<?php 
