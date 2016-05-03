@@ -1,4 +1,21 @@
-
+.csbwfs-social-widget {
+    top: 435px !important;
+}
+.csbwfs-social-widget a img { opacity: 0;}
+#csbwfs-social-inner a img { opacity: 1;}
+.csbwfs-hide a img { opacity: 1;}
+.csbwfs-social-widget a#csbwfs-show:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 40px;
+    height: 161px;
+    display: block;
+}
+p.caps_text {
+    text-transform: uppercase;
+}
 .mr_50 { margin-bottom: 30px;}
 .as_section_tl h2 {
     background-image: none !important;
@@ -23,6 +40,7 @@
     font-size: 18px;
     margin-top: 0;
 }
+.about_cont p { text-transform: uppercase;}
 .abtn_icon {
     height: 100px;
     width: 100px;
@@ -171,7 +189,7 @@ h2.pro_tl {
 .address_tag a {
     color: #2f2f2f;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 .top_tena_price {
     margin: 20px 0;
@@ -251,7 +269,7 @@ span.marketnave_i {
 .interested_cl {
     position: fixed;
     left: -56px;
-    top: 363px;
+    top: 335px;
     z-index: 9999;
 }
 .in_int_btn {
@@ -331,3 +349,10 @@ span.marketnave_i {
     border: 2px solid transparent;
     color: #fff;
 }
+.inn_map_cont .select-wrapper select {
+    color: #fff;
+}
+.inn_map_cont .select-wrapper:after {
+    color: #fff !important;
+}
+.properties-filter { text-align: left;}

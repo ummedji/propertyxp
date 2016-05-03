@@ -1,3 +1,6 @@
+.csbwfs-social-widget a#csbwfs-show:before {
+	background: url(./images/red/hide-l-red.png) no-repeat;
+}
 .header-top .container .header-identity .header-title span.varient-logo{background: url("images/red/logo-red.png") no-repeat top;width: 250px;height: 37px;display:block}
 
 .project-spec-details .developer-addr{background: url("images/red/ADDRESS.png") no-repeat top;-webkit-background-size: 300px;background-size: 300px;}
@@ -8568,7 +8571,7 @@ h4.infobox-subtitle,h4.infobox-subtitle a {
 	left: 0px;
 	padding: 15px;
 	position: fixed;
-	top: 200px;
+	top: 170px;
 	-webkit-transition: margin 0.2s linear;
 	-moz-transition: margin 0.2s linear;
 	-o-transition: margin 0.2s linear;
@@ -10238,4 +10241,19 @@ h2.pro_tl {
 .palette-wrapper { border-left: 2px solid #FF3401;}
 .temp_2_amenities .properties-filter li.selected { background-color: #FF3401 !important;}
 .inn_map_cont .map-tabs-links li a { border: solid 2px #FF3401 !important;}
+
+.inn_map_cont .select-wrapper select {
+	border: solid 2px #FF3401 !important;
+	background-color: #FF3401;
+}
+.inn_map_cont .select-wrapper:after {
+	background-color: #FF3401;
+}
 /*templete 2 css*/
+/*templete 3*/
+.left_interested h3 {
+	background-color: #FF3401;
+}
+.cont_deep h4 { color: #FF3401;}
+/*templete 3*/
+.inn_properties-items { border: solid 1px #FF3401 !important}

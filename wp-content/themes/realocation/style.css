@@ -54,7 +54,8 @@ iframe {
 
 
 .amenities-options li {position: relative;display: inline-block;height: 110px;margin: 0px 0px 50px 0;text-align: center;color: #000;vertical-align: top;}
-.amenities-options .icon-large {height: 50px;line-height: 30px;font-size: 48px;}.amenities-options .text {white-space: nowrap;line-height: 30px;font-size: 14px;color: #000000;white-space: normal;}
+.amenities-options .icon-large {height: 50px;line-height: 30px;font-size: 48px;}
+.amenities-options .text {white-space: nowrap;line-height: 30px;font-size: 14px;color: #000000;white-space: normal; text-transform: uppercase;}
 .amenities-options .fade ,.amenities-options .fade-text {/*white-space: nowrap;*/opacity: 0.4;}
 
 #amenities .content {margin: auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 50px 0 0 0;width: 1170px;}
@@ -477,11 +478,13 @@ border: 2px solid #ff3401;}
 	min-height: inherit;
 	position: absolute;
 	top: 50%;
-	left: 2%;
+	left: 0%;
 	display: block;
 	z-index: 9999;
 	text-align: left;
 	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 3px;
 }
 .as_properties-items .property-box .property-box-inner .property-box-header .property-box-title{
 	margin: 0;

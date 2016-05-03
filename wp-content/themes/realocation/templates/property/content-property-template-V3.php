@@ -166,33 +166,33 @@ jQuery(function(){
 					<div class="project-spec-details">
 						<div class="col-md-12">
 							<div class="col-md-2 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon about_ii"></div>
 								<h6>ADDRESS</h6>
+								<div class="abtn_icon about_ii"></div>
 								<p><?php the_field('address');?></p>
 							</div>
 							<div class="col-md-2 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon configuration_ii"></div>
 								<h6>CONFIGURATIONS</h6>
+								<div class="abtn_icon configuration_ii"></div>
 								<p><?php the_field('configurations');?></p>
 							</div>
 							<div class="col-md-2 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon starting_ii"></div>
 								<h6>STARTING PRICE</h6>
+								<div class="abtn_icon starting_ii"></div>
 								<p><i class="icon-rupee"></i> <?php the_field('starting_price');?></p>
 							</div>
 							<div class="col-md-2 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon builtup_square_ii"></div>
 								<h6>BUILTUP AREA</h6>
+								<div class="abtn_icon builtup_square_ii"></div>
 								<p><?php the_field('builtup_area');?></p>
 							</div>
 							<div class="col-md-2 col-sm-6 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon blocks_square_ii"></div>
 								<h6>BLOCKS</h6>
+								<div class="abtn_icon blocks_square_ii"></div>
 								<p><?php the_field('blocks');?></p>
 							</div>
 							<div class="col-md-2 col-sm-6 text-center about_box_tl">
-								<div class="abtn_icon prossesion_square_ii"></div>
 								<h6>POSSESSION</h6>
+								<div class="abtn_icon prossesion_square_ii"></div>
 								<p itemprop="releaseDate"><?php the_field('possession');?></p>
 							</div>
 						</div>
@@ -620,27 +620,7 @@ jQuery(function(){
 
 			</div>
 			<hr/>
-			<div class="row temp_2_gallery" id="gallery" >
-				<div class="col-md-12 al_baruj_slider">
-					<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
-					<ul class="properties-filter">
-						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
-						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
-					</ul>
-					<div class="properties-items isotope">
-						<div class="items-list row">
-							<div class="gallery1 property-item isotope-item  col-md-12">
-								<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
-							</div>
-							<div class="gallery2 property-item isotope-item  col-md-12">
-								<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /.col-md-6 -->
-			</div>
-			<!-- /.row -->
+			
 
 			<?php print hydra_render_field(get_the_ID(), 'related', 'detail'); ?>
 			<?php $presentation = hydra_render_group(get_the_ID(), 'presentation', 'detail'); ?>
@@ -722,6 +702,52 @@ jQuery(function(){
 			<div class="col-md-12 map_bot_border"><span></span></div>
 
 		</div>
+                   <hr/>
+                <div class="row" id="three_sixty_data" >
+	        <div class="col-md-12 three_sixty_data">
+	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
+	        	
+	        		<div class="properties-items isotope">
+			    		<div class="items-list row">
+                                            <div class="gallery1 property-item isotope-item  col-md-12">
+		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
+						if( !empty($three_sixty_data_image) ): ?>
+							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
+						<?php 	endif; ?>
+                                            </div>
+		            		
+                                        </div>
+	        		</div>
+	        </div>
+	        <!-- /.col-md-6 -->
+	    </div>
+	    <!-- /.row -->
+         <hr/>
+                        
+                
+               <div class="row temp_2_gallery" id="gallery" >
+				<div class="col-md-12 al_baruj_slider">
+					<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
+					<ul class="properties-filter">
+						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
+						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
+					</ul>
+					<div class="properties-items isotope">
+						<div class="items-list row">
+							<div class="gallery1 property-item isotope-item  col-md-12">
+								<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
+							</div>
+							<div class="gallery2 property-item isotope-item  col-md-12">
+								<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-md-6 -->
+			</div>
+			<!-- /.row -->
+                        
+                        
 		<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 		<script type="text/javascript">
@@ -846,4 +872,28 @@ jQuery(function(){
 
 	</div>
 </div>
-<div class="col-md-3">sadasda</div>
+<div class="col-md-3 left_interested">
+	<h3>I'M INTERESTED</h3>
+	<div class="cont_deep">
+		<div class="col-md-4"><img src="<?php bloginfo('template_directory')?>/images/since_logo.png" alt=" " class="img-responsive"></div>
+		<div class="col-md-8 text-center">
+			<h4>Contact Deep Group</h4>
+			<h6>079-26446232-33</h6>
+			<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="cont_deep_form">
+			<?php $contact_value = get_field('contact_form_shortcode')?>
+			<?php echo do_shortcode($contact_value)?>
+	</div>
+
+	<div class="share_pro">
+		<a href="#">
+			<img src="<?php bloginfo('template_directory')?>/images/share_property.jpg" alt=" " class="img-responsive">
+			<div class="inn_share_deta"><h3>Share Property</h3></div>
+		</a>
+	</div>
+
+</div>

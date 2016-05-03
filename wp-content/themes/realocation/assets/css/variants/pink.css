@@ -1,3 +1,6 @@
+.csbwfs-social-widget a#csbwfs-show:before {
+	background: url(./images/pink/hide-l.png) no-repeat;
+}
 .header-top .container .header-identity .header-title span.varient-logo{background: url("images/pink/logo-pink.png") no-repeat top;width: 250px;height: 37px;display:block}
 
 .project-spec-details .developer-addr{background: url("images/pink/ADDRESS.png") no-repeat top;-webkit-background-size: 300px;background-size: 300px;}
@@ -8567,7 +8570,7 @@ h4.infobox-subtitle,h4.infobox-subtitle a {
 	left: 0px;
 	padding: 15px;
 	position: fixed;
-	top: 200px; 
+	top: 170px;
 	-webkit-transition: margin 0.2s linear;
 	-moz-transition: margin 0.2s linear;
 	-o-transition: margin 0.2s linear;
@@ -10238,4 +10241,19 @@ h2.pro_tl {
 .palette-wrapper { border-left: 2px solid #bf224e;}
 .temp_2_amenities .properties-filter li.selected { background-color: #c02550 !important;}
 .inn_map_cont .map-tabs-links li a { border: solid 2px rgba(191, 34, 78, 1) !important;}
+
+.inn_map_cont .select-wrapper select {
+	border: solid 2px #bf224e !important;
+	background-color: #bf224e;
+}
+.inn_map_cont .select-wrapper:after {
+	background-color: #bf224e;
+}
 /*templete 2 css*/
+/*templete 3*/
+.left_interested h3 {
+	background-color: #bf224e;
+}
+.cont_deep h4 { color: #bf224e;}
+/*templete 3*/
+.inn_properties-items { border: solid 1px #bf224e !important}

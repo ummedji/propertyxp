@@ -3,7 +3,12 @@
                         </div><!-- /.block-content-small-padding -->
                        
                     <?php 	$person_field = strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid')); 
-                    		if (is_singular(array('property')) && $person_field == 'Developer') { 
+                    
+                                $selected_template_value = get_field("select_template");    
+                    if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2' || $selected_template_value == 'TemplateV3'){
+                    
+                    
+                    		//if (is_singular(array('property')) && $person_field == 'Developer') { 
                     		} else {
 					?>
 					 <?php if(is_front_page()) { ?>
@@ -100,21 +105,37 @@ jQuery(window).scroll(function () {
     iScrollPos = iCurScrollPos;
 	});
 	
+	
+	//jQuery("div#gallery ul.properties-filter li.selected > a").trigger("click").delay( 800 );
+	//jQuery("div#gallery div.properties-filter li:first-child a").trigger("click");
+	
 	//jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
 	setTimeout(function(){
-		//alert("UD");
+	
 		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
 	}, 2000);
 	
-	setTimeout(function(){
-	//	alert("HERE");
-	//	alert(jQuery("div#gallery").find("properties-filter").html());
-		
-	}, 4000);
-	
-	
+        
+        jQuery("div#gallery div.gallery2").hide();
+        jQuery("div#gallery ul.properties-filter li a").on("click",function(){
+            alert('here');
+           var attr_id = jQuery(this).attr('id');
+           
+           if(attr_id == "gallery1"){
+               jQuery("div#gallery div.gallery1").show();
+               jQuery("div#gallery div.gallery2").hide();
+           }
+           if(attr_id == "gallery2"){
+               jQuery("div#gallery div.gallery2").show();
+               jQuery("div#gallery div.gallery1").hide();
+           }
+           
+        });
+        
+        
+        
 	jQuery("a#render_all_premium_properties").on("click",function(){
 	
 		jQuery("ul.premium_property_filter li:first-child a").trigger("click");

@@ -1,3 +1,6 @@
+.csbwfs-social-widget a#csbwfs-show:before {
+	background: url(./images/orange/hide-l-orange.png) no-repeat;
+}
 .header-top .container .header-identity .header-title span.varient-logo{background: url("images/orange/logo-orange.png") no-repeat top;width: 250px;height: 37px;display:block}
 
 .project-spec-details .developer-addr{background: url("images/orange/ADDRESS.png") no-repeat top;-webkit-background-size: 300px;background-size: 300px;}
@@ -8566,7 +8569,7 @@ h4.infobox-subtitle,h4.infobox-subtitle a {
 	left: 0px;
 	padding: 15px;
 	position: fixed;
-	top: 200px;
+	top: 170px;
 	-webkit-transition: margin 0.2s linear;
 	-moz-transition: margin 0.2s linear;
 	-o-transition: margin 0.2s linear;
@@ -10236,4 +10239,19 @@ h2.pro_tl {
 .palette-wrapper { border-left: 2px solid #f3bc3a;}
 .temp_2_amenities .properties-filter li.selected { background-color: #f3bc3a !important;}
 .inn_map_cont .map-tabs-links li a { border: solid 2px #f3bc3a !important;}
+
+.inn_map_cont .select-wrapper select {
+	border: solid 2px #f3bc3a !important;
+	background-color: #f3bc3a;
+}
+.inn_map_cont .select-wrapper:after {
+	background-color: #f3bc3a;
+}
 /*templete 2 css*/
+/*templete 3*/
+.left_interested h3 {
+	background-color: #f3bc3a;
+}
+.cont_deep h4 { color: #f3bc3a;}
+/*templete 3*/
+.inn_properties-items { border: solid 1px #f3bc3a !important}

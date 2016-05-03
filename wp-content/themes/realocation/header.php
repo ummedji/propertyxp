@@ -226,43 +226,43 @@
 							<div class="container">
 								<ul>
 									<li>
-										<a href="#" class="active">
+										<a href="#details" class="active">
 											<span class="nave_sp detailnave_i"></span>
 											<span>DETAILS</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#flats">
 											<span class="nave_sp catenave_i"></span>
 											<span>CATAGORY</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#amenities">
 											<span class="nave_sp amennave_i"></span>
 											<span>AMENITIES</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#map">
 											<span class="nave_sp locationnave_i"></span>
 											<span>LOCATION</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#three_sixty_data">
 											<span class="nave_sp rotnave_i"></span>
 											<span>360*</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#gallery">
 											<span class="nave_sp gallnave_i"></span>
 											<span>GALLERY</span>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#line_chart">
 											<span class="nave_sp marketnave_i"></span>
 											<span>MARKET</span>
 										</a>

@@ -843,27 +843,7 @@ jQuery(function(){
             
         </div>
          <hr/>
-          <div class="row" id="gallery" >
-	        <div class="col-md-12 al_baruj_slider">
-	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
-	        	<ul class="properties-filter">
-	        		<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
-	        		<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
-	        	</ul>
-	        		<div class="properties-items isotope">
-			    		<div class="items-list row">
-				    		<div class="gallery1 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
-		            		</div>
-		            		<div class="gallery2 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
-		            		</div>
-		            	</div>
-	        		</div>
-	        </div>
-	        <!-- /.col-md-6 -->
-	    </div>
-	    <!-- /.row -->
+     
         
     <?php print hydra_render_field(get_the_ID(), 'related', 'detail'); ?>
     <?php $presentation = hydra_render_group(get_the_ID(), 'presentation', 'detail'); ?>
@@ -945,6 +925,54 @@ jQuery(function(){
 		<div class="col-md-12 map_bot_border"><span></span></div>
 	 
 	</div>
+        
+        
+         <hr/>
+          <div class="row" id="three_sixty_data" >
+	        <div class="col-md-12 three_sixty_data">
+	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
+	        	
+	        		<div class="properties-items-three-sixty isotope-three-sixty">
+			    		<div class="items-list-three-sixty row">
+                                            <div class="gallery1 property-item isotope-item-three-sixty  col-md-12">
+		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
+						if( !empty($three_sixty_data_image) ): ?>
+							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
+						<?php 	endif; ?>
+                                            </div>
+		            		
+                                        </div>
+	        		</div>
+	        </div>
+	        <!-- /.col-md-6 -->
+	    </div>
+	    <!-- /.row -->
+         <hr/>
+         
+         
+              <div class="row" id="gallery" >
+	        <div class="col-md-12 al_baruj_slider">
+	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
+	        	<ul class="properties-filter">
+	        		<li class="selected"><a id="gallery1" href="#" >Gallery 1</a></li>
+	        		<li><a id="gallery2" href="#" >Gallery 2</a></li>
+	        	</ul>
+	        		<div class="properties-items-gallery isotope-gallery">
+			    		<div class="items-list-gallery row">
+				    	<div class="gallery1  col-md-12">
+		            			<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
+		            		</div>
+		            		<div class="gallery2  col-md-12">
+		            			<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
+		            		</div>
+		            	</div>
+	        		</div>
+	        </div>
+	        <!-- /.col-md-6 -->
+	    </div>
+	    <!-- /.row -->
+        
+        
 	<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 	<script type="text/javascript">
@@ -1013,7 +1041,7 @@ jQuery(function(){
 	<div class="row" id="line_chart" >
 		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Insights Into <?php the_title();?></span></h2></div>
-	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	        	<p class="caps_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
          </div>
 	
 		<div class="col-md-12">
@@ -1033,7 +1061,7 @@ jQuery(function(){
 					</div>
 				</div>
 				<div class="col-md-8">
-					<p><?php the_field('developer_description'); ?></p>
+					<p class="caps_text"><?php the_field('developer_description'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -1058,7 +1086,7 @@ jQuery(function(){
 					<div class="contact_inn"><h4><?php the_field('developer_contact_no.')?></h4></div>
 					<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
 				</div>
-				<div class="col-md-8 right_cont">
+				<div class="col-md-8 right_cont form_parent">
 					<!--<p></p>-->
 					<?php $contact_value = get_field('contact_form_shortcode')?>
 					<?php echo do_shortcode($contact_value)?>

@@ -1,3 +1,8 @@
+.csbwfs-social-widget {
+    left: auto !important;
+    right: -12px !important;
+    top: 435px !important;
+}
 .temp3map #map-property {
     height: 420px;
 }
@@ -20,6 +25,7 @@
     color: #2f2f2f;
     padding-bottom: 5px;
     margin-bottom: 0px;
+    border-bottom: solid 2px #2f2f2f;
     text-transform: uppercase;
     display: inline-block;
     text-align: left;
@@ -44,7 +50,7 @@
     display: inline-block;
 }
 .about_box_tl h6 {
-    font-size: 14px;
+    font-size: 13px;
     color: #20242d;
     text-transform: uppercase;
     font-weight: normal;
@@ -97,7 +103,6 @@ ul.room_details {
     margin-left: 0;
 }
 p.cate_cont {
-    text-transform: uppercase;
     font-size: 12px;
     margin: 20px 0;
 }
@@ -170,7 +175,7 @@ ul.temp3amenities-options {
 .inn_map_cont .map-tabs-links {
     position: absolute;
     top: 4px;
-    right: 222px;
+    right: 170px;
     z-index: 99999;
 }
 .inn_map_cont .map-tabs-links li { margin: 0 5px 0 3px;}
@@ -237,7 +242,7 @@ ul.temp3amenities-options {
 }
 .inn_properties-items {
     margin-top: 10px;
-    border: solid 1px #bf224e !important;
+   /* border: solid 1px #bf224e !important;*/
 }
 .temp_2_gallery {
     padding: 30px 0 0 0px !important;
@@ -245,7 +250,7 @@ ul.temp3amenities-options {
 h2.pro_tl {
     font-size: 20px;
     margin: 20px 0;
-    color: #bf224e !important;
+    /*color: #bf224e !important;*/
 }
 .address_tag {
     margin: 25px 0;
@@ -253,7 +258,7 @@ h2.pro_tl {
 .address_tag a {
     color: #20242d;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
 }
 .top_tena_price {
     margin: 20px 0;
@@ -293,12 +298,11 @@ h2.pro_tl {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
     background-color: #20242d;
-    padding: 0 0 0 120px;
+    padding: 0 0 0 0px;
 }
 .developer-menu.fixed ul li{
-    display: inline-block;
+    display: block;
 }
 .developer-menu.fixed ul li a {
     padding: 13px 20px;
@@ -367,7 +371,7 @@ span.marketnave_i {
 .interested_cl {
     position: fixed;
     right: -56px;
-    top: 363px;
+    top: 335px;
     z-index: 999999;
 }
 .in_int_btn {
@@ -491,3 +495,81 @@ span.marketnave_i {
 .temp_2_amenities .properties-filter li.selected a {
     color: #fff;
 }
+
+.inn_map_cont .select-wrapper select {
+    background-color: #fff !important;
+}
+.inn_map_cont .select-wrapper:after {
+    background-color: #fff;
+}
+.left_interested h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.cont_deep {
+    margin-bottom: 10px;
+    display: block;
+}
+.cont_deep h4 {
+    font-size: 14px;
+    border-bottom: solid 1px #d1d1d1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.cont_deep h6 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    color: #767676;
+}
+.cont_deep p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #777171;
+}
+
+.share_pro {
+    position: relative;
+    display: block;
+}
+.share_pro img {
+    border: solid 2px #000;
+    width: 100%;
+}
+.inn_share_deta {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    text-align: center;
+}
+.inn_share_deta h3 {
+    color: #fff;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 30% 0;
+}
+.cont_deep_form form p{
+    margin-bottom: 10px;
+}
+.cont_deep_form form input[type="text"], .cont_deep_form form input[type="email"] {
+    border: 2px solid #bdbdbd;
+    padding: 5px 10px;
+}
+.cont_deep_form form input[type="submit"] {
+    background-color: #20242d;
+    border: solid 2px #20242d;
+}
+.cont_deep_form form input[type="submit"]:hover { color: #fff;}
+.cont_deep_form form .wpcf7-response-output { display: none !important;}

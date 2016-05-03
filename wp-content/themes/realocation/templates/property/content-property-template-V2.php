@@ -99,7 +99,7 @@ jQuery(function(){
 			</a>
 		</li>
 		<li>
-			<a href="#flats">
+			<a href="#three_sixty_data">
 				<span class="nave_sp rotnave_i"></span>
 				<span>360*</span>
 			</a>
@@ -457,7 +457,7 @@ jQuery(function(){
 	        
 	        <div class="col-md-12 text-center mr_50">
 				<h3>3 BedRoom Apartment</h3>
-				<p> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="caps_text"> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 
@@ -973,27 +973,7 @@ jQuery(function(){
             
         </div>
          <hr/>
-          <div class="row temp_2_gallery" id="gallery" >
-	        <div class="col-md-12 al_baruj_slider">
-	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
-	        	<ul class="properties-filter">
-	        		<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
-	        		<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
-	        	</ul>
-	        		<div class="properties-items isotope">
-			    		<div class="items-list row">
-				    		<div class="gallery1 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
-		            		</div>
-		            		<div class="gallery2 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
-		            		</div>
-		            	</div>
-	        		</div>
-	        </div>
-	        <!-- /.col-md-6 -->
-	    </div>
-	    <!-- /.row -->
+          
         
     <?php print hydra_render_field(get_the_ID(), 'related', 'detail'); ?>
     <?php $presentation = hydra_render_group(get_the_ID(), 'presentation', 'detail'); ?>
@@ -1075,6 +1055,52 @@ jQuery(function(){
 		<div class="col-md-12 map_bot_border"><span></span></div>
 	 
 	</div>
+        
+        
+         <hr/>
+          <div class="row" id="three_sixty_data" >
+	        <div class="col-md-12 three_sixty_data">
+	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
+	        	
+	        		<div class="properties-items isotope">
+			    		<div class="items-list row">
+                                            <div class="gallery1 property-item isotope-item  col-md-12">
+		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
+						if( !empty($three_sixty_data_image) ): ?>
+							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
+						<?php 	endif; ?>
+                                            </div>
+		            		
+                                        </div>
+	        		</div>
+	        </div>
+	        <!-- /.col-md-6 -->
+	    </div>
+	    <!-- /.row -->
+         <hr/>
+         
+         <div class="row temp_2_gallery" id="gallery" >
+	        <div class="col-md-12 al_baruj_slider">
+	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
+	        	<ul class="properties-filter">
+	        		<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
+	        		<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
+	        	</ul>
+	        		<div class="properties-items isotope">
+			    		<div class="items-list row">
+				    		<div class="gallery1 property-item isotope-item  col-md-12">
+		            			<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
+		            		</div>
+		            		<div class="gallery2 property-item isotope-item  col-md-12">
+		            			<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
+		            		</div>
+		            	</div>
+	        		</div>
+	        </div>
+	        <!-- /.col-md-6 -->
+	    </div>
+	    <!-- /.row -->
+        
 	<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 	<script type="text/javascript">
@@ -1163,7 +1189,7 @@ jQuery(function(){
 					</div>
 				</div>
 				<div class="col-md-8">
-					<p><?php the_field('developer_description'); ?></p>
+					<p class="caps_text"><?php the_field('developer_description'); ?></p>
 				</div>
 			</div>
 		</div>
