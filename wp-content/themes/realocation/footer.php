@@ -118,26 +118,26 @@ jQuery(window).scroll(function () {
 	}, 2000);
 	
         
+        //jQuery("div#gallery div.gallery1").show();
         jQuery("div#gallery div.gallery2").hide();
-        jQuery("div#gallery ul.properties-filter li a").on("click",function(){
-            alert('here');
+        
+        jQuery("div#gallery ul.properties-filter li a").on("click",function(e){
+            e.preventDefault();
+         //   alert('here');
            var attr_id = jQuery(this).attr('id');
            
-           if(attr_id == "gallery1"){
-               jQuery("div#gallery div.gallery1").show();
+           if(attr_id == "gallery1"){               
                jQuery("div#gallery div.gallery2").hide();
+               jQuery("div#gallery div.gallery1").show();
            }
-           if(attr_id == "gallery2"){
-               jQuery("div#gallery div.gallery2").show();
+           if(attr_id == "gallery2"){               
                jQuery("div#gallery div.gallery1").hide();
-           }
-           
-        });
+               jQuery("div#gallery div.gallery2").show();
+           }           
+        });        
         
         
-        
-	jQuery("a#render_all_premium_properties").on("click",function(){
-	
+	jQuery("a#render_all_premium_properties").on("click",function(){	
 		jQuery("ul.premium_property_filter li:first-child a").trigger("click");
 	});
 	

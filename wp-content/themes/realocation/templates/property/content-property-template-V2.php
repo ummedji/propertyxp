@@ -136,7 +136,7 @@ jQuery(function(){
 </div>
 
 <div class="property-detail developer-details">
-	<div class="row temp_2_developer-details">
+	<div class="row temp_2_developer-details" id="details">
 		<div class="col-md-12">
 			<div class="tamp_title cl_tamp_title">
 					<div class="row">
@@ -162,7 +162,7 @@ jQuery(function(){
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="row as_flats" id="details" >
+			<div class="row as_flats" >
 				<div class="project-spec-details">
 					<div class="col-md-12">
 						<div class="col-md-2 col-sm-6 text-center about_box_tl">
@@ -1059,12 +1059,12 @@ jQuery(function(){
         
          <hr/>
           <div class="row" id="three_sixty_data" >
-	        <div class="col-md-12 three_sixty_data">
+	        <div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
 	        	
-	        		<div class="properties-items isotope">
+	        		<div class="properties-items-three_sixty_data isotope">
 			    		<div class="items-list row">
-                                            <div class="gallery1 property-item isotope-item  col-md-12">
+                                            <div class="three_sixty_data-gallery1 property-item-three_sixty_data isotope-item-three_sixty_data  col-md-12">
 		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
 						if( !empty($three_sixty_data_image) ): ?>
 							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />

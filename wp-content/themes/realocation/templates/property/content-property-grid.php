@@ -55,7 +55,7 @@
 									<p>Config.</p>
 								</div>
 								<div class="field-item field-item-0">
-									
+									<?php $configration_value = substr($configration_value,0,6).'..'; ?>
 									<div class="field-value"><?php echo $configration_value; ?></div>
 									
 								</div>
@@ -81,7 +81,7 @@
 							<div class="col-xs-3 no-columns number number hf-property-area">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
-									
+									<?php $possession_value = substr($possession_value,0,6).'..'; ?>
 									<div class="field-value"><?php echo $possession_value; ?></div>
 									
 								</div>

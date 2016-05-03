@@ -674,7 +674,7 @@ jQuery(function(){
         	<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();?></span></h2></div>
           	</div>
-          	<div class="col-md-12" style="margin-top: 20px;">
+          	<div class="col-md-12" >
 	          	<ul class="amenities-options">
 					<li class="single-amenity">
 						<div class="<?php echo $life_fade;?>"><img src="<?php bloginfo('template_directory')?>/images/LIFT.png" ></div>
@@ -926,15 +926,15 @@ jQuery(function(){
 	 
 	</div>
         
-        
          <hr/>
+         
           <div class="row" id="three_sixty_data" >
-	        <div class="col-md-12 three_sixty_data">
+	        <div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
 	        	
 	        		<div class="properties-items-three-sixty isotope-three-sixty">
 			    		<div class="items-list-three-sixty row">
-                                            <div class="gallery1 property-item isotope-item-three-sixty  col-md-12">
+                                            <div class="three_sixty_data-gallery property-item-three_sixty_data isotope-item-three-sixty  col-md-12">
 		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
 						if( !empty($three_sixty_data_image) ): ?>
 							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
@@ -947,8 +947,8 @@ jQuery(function(){
 	        <!-- /.col-md-6 -->
 	    </div>
 	    <!-- /.row -->
+        
          <hr/>
-         
          
               <div class="row" id="gallery" >
 	        <div class="col-md-12 al_baruj_slider">
