@@ -503,6 +503,13 @@ endif;
 if(is_front_page() && $hideOnHome=='yes' ):
 $flitingSidebarContent='';
 endif;
+
+$selected_template_value = get_field("select_template");    
+
+if($selected_template_value == 'TemplateV3'):
+$flitingSidebarContent='';
+endif;
+
 /** hide on 404 pages */
 if(is_404()):$flitingSidebarContent='';endif;
 

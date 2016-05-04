@@ -1601,8 +1601,8 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 							$buttonsendlater = $buttonsave;
 						} else {
 
-							$sendNow = esc_attr(__('Send', WYSIJA));
-							$saveresumesend = esc_attr(__('Send', WYSIJA));
+							$sendNow = esc_attr(__('Save', WYSIJA));
+							$saveresumesend = esc_attr(__('Save', WYSIJA));
 							$buttonsave = esc_attr(__('Save & close', WYSIJA));
 							$buttonsendlater = esc_attr(__('Save as draft and close', WYSIJA));
 						}
@@ -1614,7 +1614,7 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 								<input type="submit" value="<?php echo $sendNow ?>" id="submit-send" name="submit-send" class="button-primary wysija"/>
 						<?php }
 					?>
-							<input type="submit" value="<?php echo $buttonsendlater ?>" id="submit-draft" name="submit-draft" class="button wysija"/>
+						<!--	<input type="submit" value="<?php echo $buttonsendlater ?>" id="submit-draft" name="submit-draft" class="button wysija"/> -->
 					<?php
 				} else {
 					?>
@@ -1626,10 +1626,10 @@ class WYSIJA_view_back_campaigns extends WYSIJA_view_back {
 				?>
 
 				<?php
-				echo str_replace(
-						array('[link]', '[/link]'), array('<a href="admin.php?page=wysija_campaigns&action=editTemplate&id=' . $data['email']['email_id'] . '" id="link-back-step2">', '</a>'), __("or simply [link]go back to design[/link].", WYSIJA)
-				);
-				echo $this->immediatewarning;
+			//	echo str_replace(
+			//			array('[link]', '[/link]'), array('<a href="admin.php?page=wysija_campaigns&action=editTemplate&id=' . $data['email']['email_id'] . '" id="link-back-step2">', '</a>'), __("or simply [link]go back to design[/link].", WYSIJA)
+			//	);
+			//	echo $this->immediatewarning;
 				?>
 					</p>
 				</form>

@@ -124,7 +124,7 @@ tfoot tr:last-child td:last-child {
 <table>
   <thead>
     <tr>
-      <th scope="col">Select Leads</th>
+      <th scope="col">Select Leads &nbsp; <a style="color:#fff;" href="javacript:void(0);" id="select_all_leads">All</a>&nbsp;/&nbsp;<a style="color:#fff;" href="javacript:void(0);" id="deselect_all_leads">None</a></th>
       <th scope="col">Lead</th>
       <th scope="col">Email</th>
     </tr>

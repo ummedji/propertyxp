@@ -234,6 +234,29 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
             <?php
 
             }
+           /* 
+            $final_array = array();
+            
+            foreach ($this->dataIterator as $data){
+               
+                $inner_array = array();
+                
+                foreach($data as $inner_data){
+                    
+                   $inner_array["your-name"] = $inner_data["your-name"];
+                   $inner_array["your-email"] = $inner_data["your-email"];
+                   $inner_array["phone"] = $inner_data["phone"];
+                   $inner_array["post_title"] = $inner_data["post_title"];
+                   $inner_array["Submitted"] = $inner_data["Submitted"];
+                   
+                }
+                
+               $final_array[] = $inner_array;
+            }
+            
+            echo "<pre>";
+            print_r($final_array);
+            */
             foreach ($this->dataIterator->getDisplayColumns() as $aCol) {
                 $colDisplayValue = $aCol;
                 if ($this->headers && isset($this->headers[$aCol])) {
@@ -243,8 +266,24 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
 				if($colDisplayValue == "post_title"){
 					$colDisplayValue = "Property Name";
 				}
+                                
+                                if($colDisplayValue == "your-name"){
+					$colDisplayValue = "Customer Name";
+				}
+                                
+                                if($colDisplayValue == "your-email"){
+					$colDisplayValue = "Customer Email";
+				}
+                                
+                                if($colDisplayValue == "phone"){
+					$colDisplayValue = "Phone No";
+				}
+                                
+                                if($colDisplayValue == "Submitted"){
+					$colDisplayValue = "Enquiry Date";
+				}
 				
-				if($colDisplayValue != "activepost" && $colDisplayValue != "hidden-post_author_email" && $colDisplayValue != "post_author" && $colDisplayValue != "hidden-author-id" && $colDisplayValue != "post_author_id" && $colDisplayValue != "hidden-property-title" && $colDisplayValue != "Submitted Login" && $colDisplayValue != "post_author_id" && $colDisplayValue != "Submitted From"){
+				if($colDisplayValue != "activepost" && $colDisplayValue != "hidden-post_author_email" && $colDisplayValue != "post_author" && $colDisplayValue != "hidden-author-id" && $colDisplayValue != "post_author_id" && $colDisplayValue != "hidden-property-title" && $colDisplayValue != "Submitted Login" && $colDisplayValue != "post_author_id" && $colDisplayValue != "Submitted From" && $colDisplayValue != "mc4wp_checkbox"){
 					printf('<th title="%s"><div id="%s,%s">%s</div></th>', $colDisplayValue, $formName, $aCol, $colDisplayValue);
 				}
             }
@@ -295,7 +334,7 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                         $formName,
                         $aCol);
 
-					if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "Submitted From"){
+					if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "Submitted From" && $aCol != "mc4wp_checkbox"){
 						
 						// NOTE: the ID field is used to identify the cell when an edit happens and we save that to the server
 						printf('<td title="%s"><div id="%s,%s">%s</div></td>', $aCol, $submitKey, $aCol, $cell);
@@ -334,7 +373,7 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                         $formName,
                         $aCol);
 
-					if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "Submitted From"){	
+					if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "Submitted From" && $aCol != "mc4wp_checkbox"){	
 						
 						// NOTE: the ID field is used to identify the cell when an edit happens and we save that to the server
 						printf('<td title="%s"><div id="%s,%s">%s</div></td>', $aCol, $submitKey, $aCol, $cell);

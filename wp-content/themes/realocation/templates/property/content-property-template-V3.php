@@ -118,11 +118,11 @@ jQuery(function(){
 		</li>
 	</ul>
         
-	<div class="interested_cl">
+	<!--<div class="interested_cl">
 		<div class="in_int_btn">
 			<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
 		</div>
-	</div>
+	</div> -->
 
 	<!--<div class="left_shar">
 		<div class="inn_share_btn">
@@ -228,7 +228,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>2 BedRoom Apartment</h3>
-				<p class="cate_cont"> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 				<div class="row bedroom_par">
@@ -283,7 +283,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>3 BedRoom Apartment</h3>
-				<p> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 
@@ -338,7 +338,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>4 BedRoom Apartment</h3>
-				<p class="cate_cont"> Al Burooj is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 

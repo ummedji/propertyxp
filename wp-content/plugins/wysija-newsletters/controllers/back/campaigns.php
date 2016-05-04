@@ -741,7 +741,7 @@ class WYSIJA_control_back_campaigns extends WYSIJA_control_back {
 		}
 
 		if ((int) $this->data['email']['type'] == 1) {
-			$this->jsTrans['alertsend'] = __('You are about to send this newsletter. Please confirm.', WYSIJA);
+		//	$this->jsTrans['alertsend'] = __('You are about to send this newsletter. Please confirm.', WYSIJA);
 		} else {
 			if (isset($this->data['email']['params']['autonl']['event']) && $this->data['email']['params']['autonl']['event'] == 'subs-2-nl') {
 				$this->data['autoresponder'] = 1;

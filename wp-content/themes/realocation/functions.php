@@ -774,6 +774,15 @@ function jquery_send_newsletter(){
                     
                 });
                 
+                jQuery("a#select_all_leads").on("click",function(){ 
+                    jQuery('input[name="user_leads_checkbox"]').prop('checked', true);
+                });
+                
+                jQuery("a#deselect_all_leads").on("click",function(){ 
+                    jQuery('input[name="user_leads_checkbox"]').prop('checked', false);
+                });
+                
+                
                 
                 jQuery("body").find("div.error-msg").remove();
                 
