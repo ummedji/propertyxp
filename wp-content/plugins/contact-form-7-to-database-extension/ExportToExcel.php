@@ -145,6 +145,12 @@ class ExportToExcel extends ExportBase implements CFDBExport {
                                 if($colDisplayValue == "Submitted"){
 					$colDisplayValue = "Enquiry Date";
 				}
+                                if($colDisplayValue == "your-subject"){
+					$colDisplayValue = "Subject";
+				}
+                                if($colDisplayValue == "your-message"){
+					$colDisplayValue = "Message";
+				}
                             
                                  
                                 
