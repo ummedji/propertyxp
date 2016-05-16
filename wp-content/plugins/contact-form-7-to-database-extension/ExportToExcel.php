@@ -36,6 +36,7 @@ class ExportToExcel extends ExportBase implements CFDBExport {
      */
     public function export($formName, $options = null) {
 
+        
         $this->setOptions($options);
         $this->setCommonOptions();
 
@@ -94,8 +95,69 @@ class ExportToExcel extends ExportBase implements CFDBExport {
                 $colDisplayValue = $aCol;
                 if ($this->headers && isset($this->headers[$aCol])) {
                     $colDisplayValue = $this->headers[$aCol];
+                   
                 }
-                $headerRow[] = $colDisplayValue;
+                
+                		
+                        if($formName == "Customer Enquiry"){
+                
+				if($colDisplayValue == "post_title"){
+					$colDisplayValue = "Property Name";
+				}
+                                
+                                if($colDisplayValue == "your-name"){
+					$colDisplayValue = "Customer Name";
+				}
+                                
+                                if($colDisplayValue == "your-email"){
+					$colDisplayValue = "Customer Email";
+				}
+                                
+                                if($colDisplayValue == "phone"){
+					$colDisplayValue = "Phone No";
+				}
+                                
+                                if($colDisplayValue == "Submitted"){
+					$colDisplayValue = "Enquiry Date";
+				}
+                                
+                                 
+                                
+                        }
+                        else{
+                            
+                            if($colDisplayValue == "post_title"){
+					$colDisplayValue = "Property Name";
+				}
+                                
+                                if($colDisplayValue == "your-name"){
+					$colDisplayValue = "Builder Name";
+				}
+                                
+                                if($colDisplayValue == "your-email"){
+					$colDisplayValue = "Builder Email";
+				}
+                                
+                                if($colDisplayValue == "phone"){
+					$colDisplayValue = "Phone No";
+				}
+                                
+                                if($colDisplayValue == "Submitted"){
+					$colDisplayValue = "Enquiry Date";
+				}
+                            
+                                 
+                                
+                        }
+                        
+                        
+                        if($colDisplayValue != "activepost" && $colDisplayValue != "hidden-post_author_email" && $colDisplayValue != "post_author" && $colDisplayValue != "hidden-author-id" && $colDisplayValue != "post_author_id" && $colDisplayValue != "hidden-property-title" && $colDisplayValue != "Submitted Login" && $colDisplayValue != "post_author_id" && $colDisplayValue != "mc4wp_checkbox"){
+                            $headerRow[] = $colDisplayValue;
+                            
+                        }
+                        
+                
+               
             }
             $headerStyle = new Style();
             $headerStyle->setFontBold();
@@ -104,6 +166,9 @@ class ExportToExcel extends ExportBase implements CFDBExport {
 
         // Rows
 //        $showFileUrlsInExport = $this->plugin->getOption('ShowFileUrlsInExport') == 'true';
+        
+       
+        
         while ($this->dataIterator->nextRow()) {
             $dataRow = array();
             $fields_with_file = null;
@@ -117,10 +182,12 @@ class ExportToExcel extends ExportBase implements CFDBExport {
                 $cell = isset($this->dataIterator->row[$aCol]) ? $this->dataIterator->row[$aCol] : '';
                 if ($aCol == 'Submitted' && isset($this->dataIterator->row[$submitTimeKeyName])) {
                     // Put date in a format that Excel et. al. understand
+                   
                     $timestamp = $this->dataIterator->row[$submitTimeKeyName];
-                    $cell = date('Y-m-d H:i:s', $timestamp);
+                    $cell = date('d-m-Y', $timestamp);
                 }
-
+                
+                
                 if (//$showFileUrlsInExport &&
                         $fields_with_file &&
                         $cell &&
@@ -136,9 +203,15 @@ class ExportToExcel extends ExportBase implements CFDBExport {
                         $cell = "=HYPERLINK(\"$url\", \"$cell\")";
                     }
                 }
+                
+                if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "mc4wp_checkbox"){
+                
                 $dataRow[] = $cell;
             }
+               
+            }
             $writer->addRow($dataRow); // add a row at a time
+           // $writer->addRow("NEW DATA HERE");
         }
 
         $writer->close();

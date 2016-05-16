@@ -233,6 +233,7 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
             </th>
             <?php
 
+            
             }
            /* 
             $final_array = array();
@@ -263,6 +264,8 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                     $colDisplayValue = $this->headers[$aCol];
                 }
 				
+                        if($this->options["form_name"] == "Customer Enquiry"){
+                
 				if($colDisplayValue == "post_title"){
 					$colDisplayValue = "Property Name";
 				}
@@ -282,6 +285,30 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                                 if($colDisplayValue == "Submitted"){
 					$colDisplayValue = "Enquiry Date";
 				}
+                        }
+                        else{
+                            
+                            if($colDisplayValue == "post_title"){
+					$colDisplayValue = "Property Name";
+				}
+                                
+                                if($colDisplayValue == "your-name"){
+					$colDisplayValue = "Builder Name";
+				}
+                                
+                                if($colDisplayValue == "your-email"){
+					$colDisplayValue = "Builder Email";
+				}
+                                
+                                if($colDisplayValue == "phone"){
+					$colDisplayValue = "Phone No";
+				}
+                                
+                                if($colDisplayValue == "Submitted"){
+					$colDisplayValue = "Enquiry Date";
+				}
+                            
+                        }
 				
 				if($colDisplayValue != "activepost" && $colDisplayValue != "hidden-post_author_email" && $colDisplayValue != "post_author" && $colDisplayValue != "hidden-author-id" && $colDisplayValue != "post_author_id" && $colDisplayValue != "hidden-property-title" && $colDisplayValue != "Submitted Login" && $colDisplayValue != "post_author_id" && $colDisplayValue != "Submitted From" && $colDisplayValue != "mc4wp_checkbox"){
 					printf('<th title="%s"><div id="%s,%s">%s</div></th>', $colDisplayValue, $formName, $aCol, $colDisplayValue);
@@ -365,6 +392,9 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                     $fields_with_file = explode(',', $this->dataIterator->row['fields_with_file']);
                 }
                 foreach ($this->dataIterator->getDisplayColumns() as $aCol) {
+                    
+                    
+                    
                     $cell = $this->rawValueToPresentationValue(
                         $this->dataIterator->row[$aCol],
                         $showLineBreaks,
@@ -373,6 +403,14 @@ class ExportToHtmlTable extends ExportBase implements CFDBExport {
                         $formName,
                         $aCol);
 
+                    
+                    if($aCol == "Submitted"){
+                        $cell_explode = explode(" ",$cell);
+                        
+                        $cell = date("d-m-Y", strtotime($cell_explode[0]));
+                       
+                    }
+                    
 					if($aCol != "activepost" && $aCol != "hidden-post_author_email" && $aCol != "post_author" && $aCol != "hidden-author-id" && $aCol != "post_author_id" && $aCol != "hidden-property-title" && $aCol != "Submitted Login" && $aCol != "post_author_id" && $aCol != "Submitted From" && $aCol != "mc4wp_checkbox"){	
 						
 						// NOTE: the ID field is used to identify the cell when an edit happens and we save that to the server

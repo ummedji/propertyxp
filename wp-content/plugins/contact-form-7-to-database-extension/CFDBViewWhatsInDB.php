@@ -39,7 +39,8 @@ class CFDBViewWhatsInDB extends CFDBView {
 
         // Identify which forms have data in the database
         $formsList = $plugin->getForms();
-		
+        
+        
         if (count($formsList) == 0) {
             echo htmlspecialchars(__('No form submissions in the database', 'contact-form-7-to-database-extension'));
             return;

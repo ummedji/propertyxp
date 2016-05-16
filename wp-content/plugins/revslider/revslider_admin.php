@@ -123,7 +123,7 @@
 			try{
 				$settings = RevOperations::getWildcardsSettings();
 				
-				self::addMetaBox("Revolution Slider Options",$settings,array("RevSliderAdmin","customPostFieldsOutput"),$postTypes);
+			//	self::addMetaBox("Revolution Slider Options",$settings,array("RevSliderAdmin","customPostFieldsOutput"),$postTypes);
 			}catch(Exception $e){
 				
 			}

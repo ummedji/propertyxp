@@ -1,0 +1,72 @@
+About this listing
+======================
+Property Description
+
+Rooms
+==============
+Room Name : Huge
+Room Description : Gretest
+Room type: Entire home/apt
+Room Beds: 1
+Bathrooms: 1
+Property Type : House
+
+
+Specification
+==================
+Check In: 2:00 PM
+Check Out: 10:00 AM
+Minimum Stay : 5 nights
+House Rules : Rules
+Cancellation Policy : Moderate
+
+
+Prices
+=======
+Regular Price: Rs. 5000
+Weekly Price: Rs. 350
+Monthly Price: Rs. 450
+
+
+Amenities
+===============
+Essentials
+TV
+Air Conditioning
+Heating
+Kitchen
+Internet
+Hot Tub
+Gym
+Free Parking on Premises
+
+
+Services
+===============
+Family/Kid Friendly
+Smoking Allowed
+Suitable for Events
+Pets Allowed
+Pets live on this property
+Wheelchair Accessible
+
+
+Safety Features
+===============
+Smoke Detector
+Carbon Monoxide Detector
+First Aid Kit
+Fire Extinguisher
+Lock on Bedroom Door
+
+
+Images
+===========
+With Slider Like Doc
+
+
+
+
+
+
+http://localhost/open_workstayz/trunk/public/property_master/room_detail/70
