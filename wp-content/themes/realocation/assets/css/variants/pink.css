@@ -6777,7 +6777,9 @@ input[type=text]:active,input[type=text]:focus,input[type=email]:active,input[ty
 	padding: 0px;
 	z-index: 99999;
 }
-
+@media screen and (max-width:767px){
+	.navbar-toggle { margin: 5px 15px 0px 0px;}
+}
 .navbar-toggle .icon-bar {
 	background-color: #bf224e;
 	-webkit-border-radius: 0px;

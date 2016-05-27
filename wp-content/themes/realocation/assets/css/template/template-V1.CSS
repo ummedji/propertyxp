@@ -218,6 +218,9 @@ h2.pro_tl {
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 991px){
+    .top-dev-menu ul { width: 935px;}
+}
 .top-dev-menu ul li {
     display: inline-block;
     list-style: none;
@@ -362,3 +365,22 @@ span.marketnave_i {
     color: #fff !important;
 }
 .properties-filter { text-align: left;}
+
+.config-content_img img { max-width: 80px;}
+
+@media screen and (max-width:991px){
+    .config-content_img { margin-top: 20px;}
+    .amenities-options { padding: 0;}
+    .single-amenity { width: 19% !important;}
+}
+@media screen and (max-width:767px){
+    h2.pro_tl, .top_tena_price { text-align: center;}
+    .price_right { right: 35px;}
+    .single-amenity { width: 32% !important;}
+}
+@media screen and (max-width:600px){
+    .single-amenity {
+        width: 49% !important;
+        margin: 0px 0px 30px 0 !important;
+    }
+}

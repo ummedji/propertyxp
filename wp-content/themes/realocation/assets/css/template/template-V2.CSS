@@ -241,6 +241,7 @@ h2.pro_tl {
     padding: 5px 15px;
     color: #fff;
     font-size: 15px;
+    text-align: center;
     background-color: #20242d !important;
 }
 .as_inn_slider .tp-leftarrow {

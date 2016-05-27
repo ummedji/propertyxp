@@ -70,7 +70,24 @@
 	});
 </script>
 
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css" />
+
+	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+	<script>
+		(function($){
+			$(window).load(function(){
+
+				$("#content-5").mCustomScrollbar({
+					axis:"x",
+					theme:"dark-thin",
+					autoExpandScrollbar:true,
+					advanced:{autoExpandHorizontalScroll:true}
+				});
+
+			});
+		})(jQuery);
+	</script>
   <?php
  $selected_template_value = get_field("select_template");    
      if($selected_template_value == 'developer'){
@@ -164,12 +181,12 @@
         		<div class="tamp_title">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
-							<div class="col-md-4 text-center">
+							<div class="col-md-4 col-sm-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
+							<div class="col-md-4 col-sm-4 text-center">
 								<div class="address_tag"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
 								</div>
 							</div>
-							<div class="col-md-4 top_tena_price">
+							<div class="col-md-4 col-sm-4 top_tena_price">
 								<?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
 							</div>
 						</div>
@@ -222,8 +239,9 @@
                 	  	elseif($selected_template_value == 'developer') {
 							
 						?>
-						<div class="developer-menu top-dev-menu">
+						<div class="developer-menu top-dev-menu df">
 							<div class="container">
+								<div id="content-5" class="content horizontal-images light">
 								<ul>
 									<li>
 										<a href="#details" class="active">
@@ -268,6 +286,7 @@
 										</a>
 									</li>
 								</ul>
+									</div>
 							</div>
 							<!--<div class="developer-menu-links as_developer-menu-links">
 							<a href="#details" >

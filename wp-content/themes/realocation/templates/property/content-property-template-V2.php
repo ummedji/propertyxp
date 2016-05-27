@@ -141,11 +141,11 @@ jQuery(function(){
 			<div class="tamp_title cl_tamp_title">
 					<div class="row">
 						<div class="col-md-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
-						<div class="col-md-4 text-center">
+						<div class="col-md-4 col-sm-4 text-center">
 							<div class="address_tag"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
 							</div>
 						</div>
-						<div class="col-md-4 top_tena_price">
+						<div class="col-md-4 col-sm-4 top_tena_price">
 							<?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
 						</div>
 					</div>
