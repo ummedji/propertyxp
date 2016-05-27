@@ -6772,7 +6772,8 @@ input[type=text]:active,input[type=text]:focus,input[type=email]:active,input[ty
 	-o-border-radius: 0px;
 	border-radius: 0px;
 	margin: 5px 0px 0px 0px;
-	padding: 0px
+	padding: 0px;
+	z-index: 99999;
 }
 
 .navbar-toggle .icon-bar {
@@ -7371,7 +7372,7 @@ div.property-box-subtitle a,div.property-box-subtitle a {
 
 .properties-filter li {
 	display: inline-block;
-	margin: 0px 10px
+	margin: 5px 10px
 }
 
 .properties-filter a {
@@ -9960,11 +9961,22 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 .irs-diapason {
 	background: none #846447
 }
-
-@media ( min-width : 992px) and (max-width: 1199px) {
-	.header-nav li a {
-		padding: 17px 6px 20px 6px
+@media ( min-width : 678px) and (max-width: 1199px) {
+	.header-nav {
+		margin-left: 0;
+		margin-top: 20px;
 	}
+	.header-navigation.pull-right {
+		float: left !important;
+		text-align: center;
+		width: 100%;
+	}
+	.header-nav li a {
+		padding: 5px 6px 20px 6px
+	}
+}
+@media ( min-width : 992px) and (max-width: 1199px) {
+
 	h2,.block-content h3,.block-content .property-detail-subtitle,#dsidx h3,#dsidx .property-detail-subtitle,.block-content h3,.block-content .property-detail-subtitle,.widget .widget-title
 		{
 		font-size: 25px
@@ -9982,9 +9994,9 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 	.header-slogan {
 		display: none
 	}
-	.header-nav li a {
+	/*.header-nav li a {
 		padding: 17px 6px 20px 6px
-	}
+	}*/
 	#header .form-search {
 		display: none
 	}

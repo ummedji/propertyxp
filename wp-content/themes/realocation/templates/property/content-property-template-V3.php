@@ -872,6 +872,19 @@ jQuery(function(){
 
 	</div>
 </div>
+<script type="text/javascript">
+	jQuery("document").ready(function () {
+		var nav = jQuery('.left_interested');
+
+		jQuery(window).scroll(function () {
+			if (jQuery(this).scrollTop() > 550) {
+				nav.addClass("fixed");
+			} else {
+				nav.removeClass("fixed");
+			}
+		});
+	});
+</script>
 <div class="col-md-3 left_interested">
 	<h3>I'M INTERESTED</h3>
 	<div class="cont_deep">
@@ -1123,15 +1136,15 @@ endif;
 
 $flitingSidebarContent .='</div></div>'; //End social-inner
 
-      echo $flitingSidebarContent;          
+
                 
           ?>  
             
             
-		<!--a href="#">
-			<img src="<?php //bloginfo('template_directory')?>/images/share_property.jpg" alt=" " class="img-responsive">
-			<div class="inn_share_deta"><h3>Share Property</h3></div>
-		</a-->
+		<a href="#">
+			<img src="<?php bloginfo('template_directory')?>/images/share_property.jpg" alt=" " class="img-responsive">
+			<div class="inn_share_deta"><?php  echo $flitingSidebarContent; ?></div>
+		</a>
 	</div>
 
 </div>

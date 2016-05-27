@@ -573,3 +573,52 @@ span.marketnave_i {
 }
 .cont_deep_form form input[type="submit"]:hover { color: #fff;}
 .cont_deep_form form .wpcf7-response-output { display: none !important;}
+.inn_share_deta #csbwfs-delaydiv-newdata { padding: 27% 0;}
+.inn_share_deta .csbwfs-sbutton-newdata {
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    width: 45px !important;
+}
+
+
+
+.affix-top {
+    position: relative;
+}
+
+.affix {
+    top: 20px;
+}
+
+.affix,
+.affix-bottom {
+    width: 213px;
+}
+
+.affix-bottom {
+    position: absolute;
+}
+
+.left_interested.fixed {
+    z-index: 9999;
+    position: fixed;
+    left: auto;
+    top: 0;
+    width: 21%;
+    background: #fff;
+    border-bottom: 3px solid #eee;
+    right: 8%;
+}
+@media screen and (max-width:991px){
+    .left_interested.fixed {
+        z-index: 9999;
+        position: relative;
+        left: auto;
+        top: 0;
+        width: inherit;
+        background: #fff;
+        border-bottom: 3px solid #eee;
+        right: inherit;
+    }
+}
