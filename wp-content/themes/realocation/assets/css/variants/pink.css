@@ -5748,7 +5748,7 @@ ol li:last-child {
 }
 
 .block-content p {
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 20px
 }
 
@@ -5762,7 +5762,9 @@ ol li:last-child {
 	line-height: 34px;
 	margin: 0px
 }
-
+.as_flats {
+	padding: 90px 0 0 0;
+}
 .block-content blockquote .author {
 	color: #252525;
 	display: block;

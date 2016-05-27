@@ -20,18 +20,18 @@
     background: none !important;
     padding: 0 !important;
 }
-.temp_2about_cont { margin-top: 30px;}
+.temp_2about_cont { margin-top: 90px;}
 .temp_2about_cont p strong {
     color: #2f2f2f;
     padding-bottom: 5px;
     margin-bottom: 0px;
     border-bottom: solid 2px #2f2f2f;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     display: inline-block;
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 .about_cont h6 {
     color: #2f2f2f;
@@ -61,17 +61,18 @@
     font-weight: normal;
 }
 
-.as_flats { padding: 25px 0 0 0px !important;}
+.as_flats { padding: 90px 0 0 0px !important;}
 .about_cont h3 {
     color: #2f2f2f;
     border-bottom: solid 2px #2f2f2f;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     display: inline-block;
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 0;
+    font-weight: bold;
 }
 .price_right {
     position: absolute;
@@ -119,7 +120,7 @@ p.icon_cont {
 }
 
 .as_amenities {
-    padding: 0px !important;
+    padding: 90px 0 0 0 !important;
 }
 .as_amenities .amenities-options .single-amenity {
     margin: 0px 0px 15px 0;
@@ -276,8 +277,9 @@ h2.pro_tl {
 .as_inn_slider .tp-rightarrow {
     right: 42px !important;
 }
-.temp_2_developer-details {
-    margin: -45px 0 0px 0 !important;
+.temp_2_developer-details#details {
+    padding: 0px 0 0 0;
+    margin-top: -20px;
 }
 .newcol-md-1 {
    width: 10.33333%;
@@ -289,7 +291,7 @@ h2.pro_tl {
     margin: 0;
     z-index: 999;
     /* position: relative !important; */
-    width: 92px;
+    width: 80px;
     position: absolute;
     left: -90px;
     top: -45px;
@@ -305,7 +307,7 @@ h2.pro_tl {
     display: block;
 }
 .developer-menu.fixed ul li a {
-    padding: 13px 20px;
+    padding: 13px 0px;
 }
 .top-dev-menu ul {
     margin: 0;
@@ -322,7 +324,7 @@ h2.pro_tl {
     width: auto;
     background-color: #20242d;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 .top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
     background-color: #2b2f38;
@@ -331,13 +333,16 @@ h2.pro_tl {
     padding: 0 10px;
 }
 span.nave_sp {
-    height: 38px;
+    height: 32px;
     width: 38px;
     display: block;
-    background-size: 38px;
+    background-size: 30px;
     background-position: center top;
     background-repeat: no-repeat;
-    margin: 0 auto 5px;
+    margin: 2px auto 0px;
+}
+.top-dev-menu ul li a {
+    padding: 5px;
 }
 span.detailnave_i {
     background-image: url(../img/details_i.png);

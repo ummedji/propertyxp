@@ -928,7 +928,7 @@ jQuery(function(){
         
          <hr/>
          
-          <div class="row" id="three_sixty_data" >
+          <div class="row as_flats" id="three_sixty_data" >
 	        <div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
 	        	
