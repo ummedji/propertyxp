@@ -6776,7 +6776,7 @@ input[type=text]:active,input[type=text]:focus,input[type=email]:active,input[ty
 	z-index: 99999;
 }
 @media screen and (max-width:767px){
-	.navbar-toggle { margin: 5px 15px 0px 0px;}
+	.navbar-toggle { margin: 5px 5px 0px 0px;}
 }
 .navbar-toggle .icon-bar {
 	background-color: #39b54a;
@@ -10269,3 +10269,23 @@ h2.pro_tl {
 .cont_deep h4 { color: #39b54a;}
 /*templete 3*/
 .inn_properties-items { border: solid 1px #39b54a !important}
+
+/*responsive*/
+@media screen and (max-width: 991px){
+	.properties-filter {
+		margin-bottom: 0px;
+	}
+}
+@media screen and (max-width: 767px){
+	h1,h2,.block-content h3,.block-content .property-detail-subtitle,#dsidx h3,#dsidx .property-detail-subtitle { font-size: 20px;}
+}
+
+@media screen and (max-width: 500px){
+	#wrapper {
+		display: inherit;
+	}
+	#header-wrapper,#main-wrapper,#footer-wrapper {
+		display: inherit;
+	}
+}
+/*responsive*/

@@ -676,7 +676,7 @@ jQuery(function(){
 		if (in_array('Club House', $trimmed_array)){ $club_house = '';} else { $club_house = 'fade-text';$club_fade = 'fade';}
 		if (in_array('Indoor Games', $trimmed_array)){ $indoor_games = '';} else { $indoor_games = 'fade-text';$indoor_fade = 'fade';}
     ?>
-        <div class="row as_amenities" id="amenities" >
+        <div class="row none_row as_amenities" id="amenities" >
         	<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();?></span></h2></div>
           	</div>

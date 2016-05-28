@@ -133,7 +133,7 @@ p.icon_cont {
 /*map css*/
 .as_map { border-bottom: none !important;}
 .inn_map_cont #map-content { width: 100% !important;}
-.inn_map_cont #controls { width: 100% !important;}
+.inn_map_cont #controls { width: auto !important;}
 .inn_map_cont #map_canvas { width: 100% !important;}
 .map_bot_border span{
     height: 3px;
@@ -143,7 +143,7 @@ p.icon_cont {
 .inn_map_cont .map-tabs-links {
     position: absolute;
     top: 4px;
-    right: 222px;
+    right: 200px;
     z-index: 99999;
 }
 .inn_map_cont .select-wrapper select {
@@ -473,4 +473,67 @@ span.marketnave_i {
 }
 .temp_2_amenities .properties-filter li.selected a {
     color: #fff;
+}
+.config-content_img img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+@media screen and (max-width: 1199px){
+.developer-menu {
+    position: fixed;
+    left: 0;
+    top: 100%;
+    background-color: #20242d;
+    padding: 0 0 0 0px;
+    z-index: 99999;
+}
+}
+@media screen and (max-width: 991px){
+    .config-content_img {
+        margin-top: 20px;
+    }
+    .amenities-options {
+        padding: 0;
+    }
+    .single-amenity {
+        width: 19% !important;
+    }
+    .inn_map_cont .map-tabs-links {
+        position: relative;
+        top: inherit;
+        right: inherit;
+        z-index: 99999;
+    }
+    .contact_inn {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    /*.top-dev-menu { top: 0;}*/
+    h2.pro_tl, .top_tena_price { text-align: center;}
+    .developer-menu.fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #20242d;
+        padding: 0 0 0 0px;
+        width: 100%;
+        text-align: center;
+        height: 85px;
+    }
+    .developer-menu.fixed ul li {
+        display: inline-block;
+        width: 100px;
+    }
+    .single-amenity {
+        width: 32% !important;
+    }
+}
+@media screen and (max-width: 600px){
+    .amenities-options li.single-amenity img { max-height: 85px; width: auto;}
+    .single-amenity {
+        width: 49% !important;
+        margin: 0px 0px 30px 0 !important;
+    }
 }

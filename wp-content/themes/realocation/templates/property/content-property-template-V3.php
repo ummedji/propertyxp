@@ -72,7 +72,7 @@ jQuery(function(){
     });
 </script>
 <div class="developer-menu top-dev-menu">
-
+	<div id="content-5" class="content horizontal-images light">
 	<ul>
 		<li>
 			<a href="#details" class="active">
@@ -117,6 +117,7 @@ jQuery(function(){
 			</a>
 		</li>
 	</ul>
+	</div>
         
 	<!--<div class="interested_cl">
 		<div class="in_int_btn">
@@ -140,12 +141,12 @@ jQuery(function(){
 			<div class="col-md-12">
 				<div class="tamp_title">
 					<div class="row">
-						<div class="col-md-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
-						<div class="col-md-4 text-center">
+						<div class="col-md-4 col-sm-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
+						<div class="col-md-4 col-sm-4 text-center">
 							<div class="address_tag"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
 							</div>
 						</div>
-						<div class="col-md-4 top_tena_price">
+						<div class="col-md-4 col-sm-4 top_tena_price">
 							<?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
 						</div>
 					</div>
@@ -185,7 +186,7 @@ jQuery(function(){
 								<div class="abtn_icon builtup_square_ii"></div>
 								<p><?php the_field('builtup_area');?></p>
 							</div>
-							<div class="col-md-2 col-sm-6 col-sm-6 text-center about_box_tl">
+							<div class="col-md-2 col-sm-6 text-center about_box_tl">
 								<h6>BLOCKS</h6>
 								<div class="abtn_icon blocks_square_ii"></div>
 								<p><?php the_field('blocks');?></p>
@@ -236,7 +237,7 @@ jQuery(function(){
 						<?php $sfa = get_field('2_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7">
+					<div class="config-content col-md-7 config-content_img">
 						<div class="row">
 							<ul class="room_details">
 								<li class="<?php echo $living_fade;?>">Leaving room</li>
@@ -292,7 +293,7 @@ jQuery(function(){
 						<?php $sfa = get_field('3_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7" >
+					<div class="config-content col-md-7 config-content_img" >
 						<div class="row">
 							<ul class="room_details">
 								<li class="<?php echo $living_fade;?>">Leving room</li>
@@ -347,7 +348,7 @@ jQuery(function(){
 						<?php $sfa = get_field('4_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7" >
+					<div class="config-content col-md-7 config-content_img" >
 						<div class="row">
 							<ul class="room_details">
 								<li class="<?php echo $living_fade;?>">Leving room</li>
@@ -853,7 +854,7 @@ jQuery(function(){
 			<div class="col-md-12 popup-this-contact-form">
 				<div class="center section-title as_section_tl"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
 				<div class="row">
-					<div class="col-md-4 pull-right center">
+					<div class="col-md-4 col-sm-4 col-xs-12 pull-right center">
 						<?php /*	$image = get_field('developer_image');
 					if( !empty($image) ): */?><!--
 					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />
@@ -861,7 +862,7 @@ jQuery(function(){
 						<div class="contact_inn"><h4><?php the_field('developer_contact_no.')?></h4></div>
 						<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
 					</div>
-					<div class="col-md-8 right_cont">
+					<div class="col-md-8 col-sm-8 col-xs-12 right_cont">
 						<!--<p></p>-->
 						<?php $contact_value = get_field('contact_form_shortcode')?>
 						<?php echo do_shortcode($contact_value)?>
@@ -888,8 +889,8 @@ jQuery(function(){
 <div class="col-md-3 left_interested">
 	<h3>I'M INTERESTED</h3>
 	<div class="cont_deep">
-		<div class="col-md-4"><img src="<?php bloginfo('template_directory')?>/images/since_logo.png" alt=" " class="img-responsive"></div>
-		<div class="col-md-8 text-center">
+		<div class="col-md-4 col-xs-4"><img src="<?php bloginfo('template_directory')?>/images/since_logo.png" alt=" " class="img-responsive"></div>
+		<div class="col-md-8 col-xs-8 text-center">
 			<h4>Contact Deep Group</h4>
 			<h6>079-26446232-33</h6>
 			<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>

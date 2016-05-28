@@ -118,7 +118,7 @@ p.icon_cont {
 /*map css*/
 .as_map { border-bottom: none !important;}
 .inn_map_cont #map-content { width: 100% !important;}
-.inn_map_cont #controls { width: 100% !important;}
+.inn_map_cont #controls { width: auto !important;}
 .inn_map_cont #map_canvas { width: 100% !important;}
 .map_bot_border span{
     height: 3px;
@@ -127,8 +127,8 @@ p.icon_cont {
 }
 .inn_map_cont .map-tabs-links {
     position: absolute;
-    top: 4px;
-    right: 230px;
+    top: 0px;
+    right: 200px;
     z-index: 99999;
 }
 .inn_map_cont .map-tabs-links li a {
@@ -366,17 +366,40 @@ span.marketnave_i {
 }
 .properties-filter { text-align: left;}
 
-.config-content_img img { max-width: 80px;}
-
+.config-content_img img { max-width: 80px; max-height: 80px;}
+.as_row-wise-amenities {
+    margin: 90px 0 0 0;
+}
 @media screen and (max-width:991px){
     .config-content_img { margin-top: 20px;}
     .amenities-options { padding: 0;}
     .single-amenity { width: 19% !important;}
+    .properties-filter { text-align: center;}
+    .inn_map_cont .map-tabs-links {
+        position: relative;
+        top: inherit;
+        right: inherit;
+        z-index: 99999;
+    }
+    .contact_inn { margin-bottom: 20px;}
 }
 @media screen and (max-width:767px){
     h2.pro_tl, .top_tena_price { text-align: center;}
     .price_right { right: 35px;}
     .single-amenity { width: 32% !important;}
+    .as_row-wise-amenities .properties-filter {
+        float: none;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .as_row-wise-amenities .properties-filter li {
+        display: inline-block !important;
+    }
+    .properties-items .items-list.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 @media screen and (max-width:600px){
     .single-amenity {

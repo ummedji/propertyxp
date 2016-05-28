@@ -72,7 +72,7 @@ jQuery(function(){
     });
 </script>
 <div class="developer-menu top-dev-menu">
-
+	<div id="content-5" class="content horizontal-images light">
 	<ul>
 		<li>
 			<a href="#details" class="active">
@@ -117,6 +117,7 @@ jQuery(function(){
 			</a>
 		</li>
 	</ul>
+	</div>
 
 	<div class="im-interested" style="border:none !important; border-color:none !important;">
 		<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
@@ -236,39 +237,39 @@ jQuery(function(){
 						<?php $sfa = get_field('2_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7">
+					<div class="config-content col-md-7 config-content_img">
 						<div class="row">
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $living_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $living;?>" style="text-align: center;">Leaving room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $servant_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $servant;?>" style="text-align: center;">Servant room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $kitchen_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $kitchen;?>" style="text-align: center;">Kitchen</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $balconies_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $balconies;?>" style="text-align: center;">Balconies</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $bathrooms_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $bathrooms;?>" style="text-align: center;">Bathrooms</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $pooja_room_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%">
 								</div>
@@ -278,37 +279,37 @@ jQuery(function(){
 
 
 
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $study_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $study;?>" style="text-align: center;">Study room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $ac_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $ac;?>" style="text-align: center;">AC</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $intercom_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $intercom;?>" style="text-align: center;">Intercom</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $video_door_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $video_door;?>" style="text-align: center;">Video Door Phone</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $washing_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $washing;?>" style="text-align: center;">Washing Area</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $gas_line_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 								</div>
@@ -316,13 +317,13 @@ jQuery(function(){
 							</div>
 							<div class="clearfix"></div>
 
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $power_backup_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 								</div>
 								<p class="icon_cont center<?php echo $power_backup;?>" style="text-align: center;">Power Backup</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $wooden_fade;?>">
 									<img src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 								</div>
@@ -332,104 +333,7 @@ jQuery(function(){
 
 
 						</div>
-<!--							<!--<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $living_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/LIVING-ROOM.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $living;*/?><!--" style="text-align: center;">Leving room</p>-->
-<!--							</div>-->
 
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $servant_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/SERVANT-ROOM.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $servant;*/?><!--">Servant room</p>-->
-<!--							</div>-->
-
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $kitchen_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/Kitchen.png" alt=" " width="100%" />-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $kitchen;*/?><!--">Kitchen</p>-->
-<!--							</div>-->
-
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $balconies_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/BALCONY.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $balconies;*/?><!--">Balconies</p>-->
-<!--							</div>-->
-
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $bathrooms_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/Bathrooms.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $bathrooms;*/?><!--">Bathrooms</p>-->
-<!--							</div>-->
-
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $pooja_room_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/POOJA-ROOM.png" alt=" " width="100%" />-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $pooja_room;*/?><!--">Pooja room</p>-->
-<!--							</div>-->
-
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $study_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/STUDY-ROOM.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $study;*/?><!--">Study room</p>-->
-<!--							</div>-->
-<!--							<div class="clear"></div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $ac_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/ac.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $ac;*/?><!--">AC</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $intercom_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/Intercom.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $intercom;*/?><!--">Intercom</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $video_door_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/VEDIO-DOOR-PHONE.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $video_door;*/?><!--">Video Door Phone</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $washing_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/WASHING-AREA.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $washing;*/?><!--">Washing Area</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $gas_line_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/GAS-LINE.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $gas_line;*/?><!--">Gas Line</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $power_backup_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/POWER-BACKUP.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $power_backup;*/?><!--">Power Backup</p>-->
-<!--							</div>-->
-<!--							<div class="grid10">-->
-<!--								<div class="--><?php ///*echo $wooden_fade;*/?><!--">-->
-<!--									<img class="aligncenter" src="--><?php ///*bloginfo('template_directory')*/?><!--/images/WOODEN-FLOOR.png" alt=" " width="100%">-->
-<!--								</div>-->
-<!--								<p class="center --><?php ///*echo $wooden;*/?><!--">Wooden Floor</p>-->
-<!--							</div>-->
-
-						<!--<div class="col-md-2">
-                            <h3 style="border-bottom: 1px solid #CCC;"><span class="alignnone ut-custom-icon"><i class="fa fa-inr fa-1x"></i></span> 2.98 Crs</h3>
-                            <p>&nbsp;</p>
-                            <p>Text Comes here</p>
-                            <h5>2 Bedroom Apartment</h5>
-                        </div>-->
 					</div>
 				</div>
 			</div>
@@ -466,39 +370,39 @@ jQuery(function(){
 						<?php $sfa = get_field('3_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7" >
+					<div class="config-content col-md-7 config-content_img" >
 						<div class="col-md-12">
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $living_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $living;?>" style="text-align: center;">Leving room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $servant_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $servant;?>">Servant room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $kitchen_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%" />
 								</div>
 								<p class="center <?php echo $kitchen;?>">Kitchen</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $balconies_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $balconies;?>">Balconies</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $bathrooms_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $bathrooms;?>">Bathrooms</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $pooja_room_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%" />
 								</div>
@@ -506,37 +410,37 @@ jQuery(function(){
 							</div>
 							<div class="clearfix"></div>
 
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $study_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $study;?>">Study room</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $ac_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $ac;?>">AC</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $intercom_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $intercom;?>">Intercom</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $video_door_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $video_door;?>">Video Door Phone</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $washing_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $washing;?>">Washing Area</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $gas_line_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 								</div>
@@ -544,13 +448,13 @@ jQuery(function(){
 							</div>
 							<div class="clearfix"></div>
 
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $power_backup_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 								</div>
 								<p class="center <?php echo $power_backup;?>">Power Backup</p>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 								<div class="<?php echo $wooden_fade;?>">
 									<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 								</div>
@@ -591,40 +495,40 @@ jQuery(function(){
 						<?php $sfa = get_field('4_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
-					<div class="config-content col-md-7" >
+					<div class="config-content col-md-7 config-content_img" >
 						<div class="row">
 							<div class="col-md-12">
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $living_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/leving-room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $living;?>" style="text-align: center;">Leving room</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $servant_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/servant_room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $servant;?>">Servant room</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $kitchen_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/kitchen.png" alt=" " width="100%" />
 									</div>
 									<p class="center <?php echo $kitchen;?>">Kitchen</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $balconies_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/balconies.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $balconies;?>">Balconies</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $bathrooms_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/bathrooms.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $bathrooms;?>">Bathrooms</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $pooja_room_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/pooja_room.png" alt=" " width="100%" />
 									</div>
@@ -632,37 +536,37 @@ jQuery(function(){
 								</div>
 								<div class="clearfix"></div>
 
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $study_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/study_room.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $study;?>">Study room</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $ac_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/ac.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $ac;?>">AC</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $intercom_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/intercom.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $intercom;?>">Intercom</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $video_door_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/video_door_phone.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $video_door;?>">Video Door Phone</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $washing_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/washing_area.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $washing;?>">Washing Area</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $gas_line_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/gas_line.png" alt=" " width="100%">
 									</div>
@@ -670,13 +574,13 @@ jQuery(function(){
 								</div>
 								<div class="clearfix"></div>
 
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $power_backup_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/power_backup.png" alt=" " width="100%">
 									</div>
 									<p class="center <?php echo $power_backup;?>">Power Backup</p>
 								</div>
-								<div class="col-md-2 text-center">
+								<div class="col-md-2 col-sm-2 col-xs-6 text-center">
 									<div class="<?php echo $wooden_fade;?>">
 										<img class="aligncenter" src="<?php bloginfo('template_directory')?>/images/templatev2/wooden_floor.png" alt=" " width="100%">
 									</div>
@@ -1206,18 +1110,17 @@ jQuery(function(){
 		<div class="col-md-12 popup-this-contact-form">
 			<div class="center section-title as_section_tl"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
-				<div class="col-md-4 pull-right center">
-					<?php /*	$image = get_field('developer_image');
-					if( !empty($image) ): */?><!--
-					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />
-				--><?php /*	endif; */?>
-					<div class="contact_inn"><h4><?php the_field('developer_contact_no.')?></h4></div>
-					<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
+				<div class="col-md-4 col-sm-4 col-xs-12 pull-right center">
+					<div class="contact_inn">
+						<h4><?php the_field('developer_contact_no.')?></h4>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="col-md-8 right_cont">
-					<!--<p></p>-->
+				<div class="col-md-8 col-sm-8 col-xs-12 right_cont">
 					<?php $contact_value = get_field('contact_form_shortcode')?>
 					<?php echo do_shortcode($contact_value)?>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>

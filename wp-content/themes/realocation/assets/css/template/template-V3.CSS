@@ -166,7 +166,7 @@ ul.temp3amenities-options {
 /*map css*/
 .as_map { border-bottom: none !important;}
 .inn_map_cont #map-content { width: 100% !important;}
-.inn_map_cont #controls { width: 100% !important;}
+.inn_map_cont #controls { width: auto !important;}
 .inn_map_cont #map_canvas { width: 100% !important;}
 .map_bot_border span{
     height: 3px;
@@ -176,8 +176,8 @@ ul.temp3amenities-options {
 .inn_map_cont .map-tabs-links {
     position: absolute;
     top: 4px;
-    right: 170px;
-    z-index: 99999;
+    right: 145px;
+    z-index: 99;
 }
 .inn_map_cont .map-tabs-links li { margin: 0 5px 0 3px;}
 .inn_map_cont .map-tabs-links li a {
@@ -626,4 +626,93 @@ span.marketnave_i {
         border-bottom: 3px solid #eee;
         right: inherit;
     }
+}
+
+@media screen and (max-width: 1199px){
+    .developer-menu {
+        position: fixed;
+        left: 0;
+        top: 100%;
+        background-color: #20242d;
+        padding: 0 0 0 0px;
+        z-index: 999;
+    }
+    .temp3amenities-options li {
+        width: 24%;
+    }
+    .temp3amenities-options li:nth-child(6n+1) {
+        margin-left: 1%;
+    }
+    .temp3amenities-options li:nth-child(4n+1) {
+        margin-left: 0;
+    }
+    .inn_map_cont .map-tabs-links { right: 120px;}
+}
+@media screen and (max-width: 991px){
+    .config-content_img {
+        margin-top: 20px;
+    }
+    .inn_map_cont .map-tabs-links {
+        position: relative;
+        top: inherit;
+        right: inherit;
+    }
+    .contact_inn {
+        margin-bottom: 20px;
+    }
+    .right_cont .wpcf7 form p { margin-left: 1%;}
+}
+@media screen and (max-width: 767px){
+    h2.pro_tl, .top_tena_price { text-align: center;}
+    .developer-menu.fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #20242d;
+        padding: 0 0 0 0px;
+        width: 100%;
+        text-align: center;
+        height: 85px;
+    }
+    .developer-menu.fixed ul li {
+        display: inline-block;
+        width: 100px;
+    }
+    .temp3amenities-options li {
+        width: 32%;
+    }
+    .temp3amenities-options li:nth-child(4n+1) {
+        margin-left: 1%;
+    }
+    .temp3amenities-options li:nth-child(3n+1) {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .temp3amenities-options li {
+        width: 49%;
+    }
+    .temp3amenities-options li:nth-child(4n+1) {
+        margin-left: 1%;
+    }
+    .temp3amenities-options li:nth-child(3n+1) {
+        margin-left: 1%;
+    }
+}
+@media screen and (max-width: 450px){
+    .room_details li {
+        width: 48%;
+    }
+    .room_details li:nth-child(3n+1) {
+        margin-left: 1%;
+    }
+    .room_details li:nth-child(2n+1) {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 414px){
+    .price_right {
+        position: static;
+    }
+    .temp_2_amenities .properties-filter li {padding: 5px 15px;}
 }
