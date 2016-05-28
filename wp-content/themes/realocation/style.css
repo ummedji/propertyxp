@@ -736,6 +736,7 @@ border: 2px solid #ff3401;}
 	width: 180px;
 	border-radius: 50%;
 }
+.three_sixty_data-gallery img { max-width: 100%;}
 @media screen and (max-width: 991px){
 	.as_as_block-content .hex-inner .hex-content {
 		height: 115px;
