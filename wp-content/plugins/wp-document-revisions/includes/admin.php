@@ -253,11 +253,11 @@ class Document_Revisions_Admin {
 		remove_meta_box( 'tagsdiv-workflow_state', 'document', 'side' );
 
 		//add our meta boxes
-		add_meta_box( 'revision-summary', __('Revision Summary', 'wp-document-revisions'), array(&$this, 'revision_summary_cb'), 'document', 'normal', 'default' );
+	//	add_meta_box( 'revision-summary', __('Revision Summary', 'wp-document-revisions'), array(&$this, 'revision_summary_cb'), 'document', 'normal', 'default' );
 		add_meta_box( 'document', __('Document', 'wp-document-revisions'), array(&$this, 'document_metabox'), 'document', 'normal', 'high' );
 
 		if ( $post->post_content != '' )
-			add_meta_box( 'revision-log', 'Revision Log', array( &$this, 'revision_metabox'), 'document', 'normal', 'low' );
+		//	add_meta_box( 'revision-log', 'Revision Log', array( &$this, 'revision_metabox'), 'document', 'normal', 'low' );
 
 		if ( taxonomy_exists( 'workflow_state' )  && ! $this->disable_workflow_states() )
 			add_meta_box( 'workflow-state', __('Workflow State', 'wp-document-revisions'), array( &$this, 'workflow_state_metabox_cb'), 'document', 'side', 'default' );
