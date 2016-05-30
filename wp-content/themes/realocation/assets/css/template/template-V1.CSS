@@ -143,7 +143,12 @@ p.icon_cont {
 }
 .contact_inn {
     color: #fff;
-    padding: 40px 0;
+    padding: 25px 0;
+    background-color: #efefef !important;
+}
+.contact_inn h4 { color: #333;}
+.contact_inn h4 img {
+    max-height: 50px;
 }
 .right_cont .wpcf7 form p {
     width: 48%;
@@ -211,7 +216,7 @@ h2.pro_tl {
 .top-dev-menu {
     margin: 0;
     background-color: #20242d;
-    z-index: 999999;
+    z-index: 99999;
     height: 65px;
 }
 .top-dev-menu ul {

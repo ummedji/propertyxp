@@ -127,7 +127,7 @@ h5.info-links a {margin:0 10px 0 10px}
 		left: auto;
 		right: 50px;
 		top: 4.2% !important;
-		z-index: 999;
+		z-index: 9999999;
 	}
 }
 

@@ -192,7 +192,12 @@ ul.temp3amenities-options {
 }
 .contact_inn {
     color: #fff;
-    padding: 40px 0;
+    padding: 25px 0;
+    background-color: #efefef !important;
+}
+.contact_inn h4 { color: #333;}
+.contact_inn h4 img {
+    max-height: 50px;
 }
 .right_cont .wpcf7 form p {
     width: 48%;

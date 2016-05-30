@@ -1089,7 +1089,15 @@ jQuery(function(){
 					if( !empty($image) ): */?><!--
 					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />
 				--><?php /*	endif; */?>
-					<div class="contact_inn"><h4><?php the_field('developer_contact_no.')?></h4></div>
+				
+					
+				
+					<div class="contact_inn"><h4>
+					<?php 	$image = get_field('developer_image');
+					if( !empty($image) ): ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php 	endif; ?>
+					<?php the_field('developer_contact_no.')?></h4></div>
 					<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
 				</div>
 				<div class="col-md-8 right_cont form_parent">

@@ -55,8 +55,8 @@
 									<p>Config.</p>
 								</div>
 								<div class="field-item field-item-0">
-									<?php $configration_value = substr($configration_value,0,6).'..'; ?>
-									<div class="field-value"><?php echo $configration_value; ?></div>
+									<?php $new_configration_value = substr($configration_value,0,16).'..'; ?>
+									<div class="field-value" title="<?php echo $configration_value; ?>"><?php echo $new_configration_value; ?></div>
 									
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 								<div class="label"><p>Price</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $price_value; ?></div>
+									<div class="field-value"><?php echo $price_value; ?>&nbsp;&#8360;</div>
 									
 								</div>
 							</div>

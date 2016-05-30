@@ -1111,8 +1111,16 @@ jQuery(function(){
 			<div class="center section-title as_section_tl"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-12 pull-right center">
+				
+				
 					<div class="contact_inn">
-						<h4><?php the_field('developer_contact_no.')?></h4>
+						<h4>
+						<?php 	$image = get_field('developer_image');
+						if( !empty($image) ): ?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php 	endif; ?>
+						<?php the_field('developer_contact_no.')?>
+						</h4>
 						<div class="clearfix"></div>
 					</div>
 					<div class="clearfix"></div>
