@@ -84,7 +84,7 @@
 								<div class="label"><p>Price</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $price_value; ?>&nbsp;&#8360;</div>
+									<div class="field-value"><i class="fa fa-inr fa-1x"></i><?php echo $price_value; ?></div>
 									
 								</div>
 							</div>
