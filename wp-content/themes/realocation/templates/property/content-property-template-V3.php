@@ -400,9 +400,18 @@ jQuery(function(){
 				<div class="col-md-12">
 					<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();?></span></h2></div>
 				</div>
+				
+				<div id="hidden_ammineties" style="display:none;">
+					<?php echo $amenities; ?>
+				</div>
+				
 				<div class="col-md-12 text-center" style="margin-top: 20px;">
 
-					<ul class="temp3amenities-options">
+					<ul class="amenities-options">
+					
+					</ul>
+				
+				<!--	<ul class="temp3amenities-options">
 						<li class="<?php echo $life_fade;?>">Lift</li>
 						<li class="<?php echo $sec_fade; ?>">Security</li>
 						<li class="<?php echo $internet_fade; ?>">Internet</li>
@@ -422,7 +431,7 @@ jQuery(function(){
 						<li class="">&nbsp;</li>
 						<li class="">&nbsp;</li>
 						<div class="clearfix"></div>
-					</ul>
+					</ul> -->
 					<div class="clearfix"></div>
 				</div>
 				<div style="clear:both"></div>

@@ -67,6 +67,59 @@
 			jQuery('.custom-menu-button').addClass('custom-menu-active').removeClass('custom-menu-deactive');			
 		});
 		
+		setTimeout(function(){
+		 
+		 var html_data = "";
+		 
+		  jQuery("div#hidden_ammineties div.inner ul li").each(function( index, element){
+			jQuery("ul.amenities-options").empty();
+			jQuery(this).find("i").html();
+			
+			
+			
+			if(jQuery(this).find("i").hasClass("fa-ban")){
+				
+				var regex = /(<([^>]+)>)/ig
+				var result_data = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
+				
+				var result = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
+				
+				if(result.indexOf(' ') >= 0){
+					
+					result = result.replace(/\s+/g, '-');
+					
+				}
+				html_data += '<li class="single-amenity"><div class="fade"><img src="<?php bloginfo('template_directory')?>/images/'+result+'.png" ></div><div class="fade-text text amenities_cn">'+result_data+'</div></li>';
+				
+			}
+			else{
+				var regex = /(<([^>]+)>)/ig
+				
+				
+				var result_data = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
+				
+				var result = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
+				
+				if(result.indexOf(' ') >= 0){
+					
+					result = result.replace(/\s+/g, '-');
+					
+				}
+				
+				
+				html_data += '<li class="single-amenity"><div class=""><img src="<?php bloginfo('template_directory')?>/images/'+result+'.png" ></div><div class=" text amenities_cn">'+result_data+'</div></li>';
+				
+				
+			}
+			
+		  
+		  });
+		  
+		  jQuery("ul.amenities-options").append(html_data);
+		  
+		}, 3000);
+		
+		
 	});
 </script>
 

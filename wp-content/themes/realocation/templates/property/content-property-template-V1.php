@@ -656,10 +656,27 @@ jQuery(function(){
     <!--<hr/>-->
     <?php $amenities = hydra_render_field(get_the_ID(), 'amenities', 'detail');  ?>
     <?php 
-    if ($amenities): //print_r( strip_tags($amenities)); 
+	
+	
+	
+    if ($amenities): 
+	
+	
+	
+		//$value=preg_match_all('/<li><i class=\"fa fa-check ok\"></i>(.*?)<\/li>/s',$amenities,$estimates);
+		
+		//echo "<pre>";
+		//print_r($estimates);
+	
 	    $val_am = trim(strip_tags($amenities));
+		
+		//echo "<pre>";
+		//print_r($val_am);
+		
 	    $diffentiated_amenities = explode(",",$val_am);
 	    $trimmed_array=array_map('trim',$diffentiated_amenities);
+	  
+		
 	  
 	    if (in_array("Lift", $trimmed_array)) { $lift = '';} else { $lift = 'fade-text'; $life_fade = 'fade';}
 	    if (in_array('Security', $trimmed_array)) { $security = '';} else { $security = 'fade-text' ; $sec_fade = 'fade';}
@@ -680,9 +697,14 @@ jQuery(function(){
         	<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();?></span></h2></div>
           	</div>
+			
+			<div id="hidden_ammineties" style="display:none;">
+				<?php echo $amenities; ?>
+			</div>
+			
           	<div class="col-md-12" >
 	          	<ul class="amenities-options">
-					<li class="single-amenity">
+				<!--	<li class="single-amenity">
 						<div class="<?php echo $life_fade;?>"><img src="<?php bloginfo('template_directory')?>/images/LIFT.png" ></div>
 						<div class="<?php echo $lift; ?> text amenities_cn">Lift</div>
 					</li>
@@ -739,8 +761,10 @@ jQuery(function(){
 						<div class="<?php echo $indoor_games; ?> text amenities_cn">Indoor Games</div>
 					</li>
 					
+					-->
+					
 				</ul>
-			</div>
+			</div> 
 			<div style="clear:both"></div>
 			<?php /*?>
 			<div class="col-md-12">
