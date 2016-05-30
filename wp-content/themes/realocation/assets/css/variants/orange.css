@@ -2,6 +2,12 @@
 	background: url(./images/orange/hide-l-orange.png) no-repeat;
 }
 .header-top .container .header-identity .header-title span.varient-logo{background: url("images/orange/logo-orange.png") no-repeat top;width: 250px;height: 37px;display:block}
+@media screen and (max-width: 414px) {
+	.header-top .container .header-identity .header-title span.varient-logo {
+		width: 180px;
+		background-size: 180px;
+	}
+}
 
 .project-spec-details .developer-addr{background: url("images/orange/ADDRESS.png") no-repeat top;-webkit-background-size: 300px;background-size: 300px;}
 .project-spec-details .developer-builtup{background: url("images/orange/BUILT-UP-AREA.png") no-repeat top;-webkit-background-size: 300px;background-size: 300px;}

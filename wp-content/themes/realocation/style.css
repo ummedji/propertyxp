@@ -116,6 +116,21 @@ h5.info-links a {margin:0 10px 0 10px}
 
 .col-md-9 .blog-links a {font-size: 24px;margin: 0 20px 0 0;}
 #nks-content-1 .tooltips-menu a{margin: 0 auto;display: block;width: 55%;margin-bottom: 10px;}
+#nks-content-1 .tooltips-menu a label{
+	font-size: 12px;
+	color: #333;
+	text-transform: capitalize;
+	line-height: 16px;
+}
+@media screen and (max-width: 767px){
+	.nks_cc_sidebar_pos_right .nks_cc_trigger_tabs:not([class*="ncf_tab"]):not([class*="nksub_tab"]) {
+		left: auto;
+		right: 50px;
+		top: 4.2% !important;
+		z-index: 999;
+	}
+}
+
 #nks-content-1{height: 150px;overflow: scroll;background-color: #ffffff !important;}
 .widget_text .state-select option{color:#000;font-weight: 600;}
 .widget_text .select-wrapper{width: 100%;}
