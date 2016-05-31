@@ -741,30 +741,3 @@ span.marketnave_i {
 }
 
 
-.application {
-    border-top: 1px solid #c1e1ec;
-}
-
-.affix-top {
-    position: relative;
-}
-
-.affix {
-    top: 20px;
-}
-
-.affix,
-.affix-bottom {
-    width: 213px;
-}
-
-.affix-bottom {
-    position: absolute;
-}
-
-@media (min-width:1200px) {
-    .affix,
-    .affix-bottom {
-        width: 263px;
-    }
-}
