@@ -311,9 +311,9 @@ h2.pro_tl {
 .developer-menu.fixed ul li{
     display: block;
 }
-.developer-menu.fixed ul li a {
+/*.developer-menu.fixed ul li a {
     padding: 13px 0px;
-}
+}*/
 .top-dev-menu ul {
     margin: 0;
     padding: 0;
@@ -329,10 +329,10 @@ h2.pro_tl {
     width: auto;
     background-color: #20242d;
     display: block;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 .top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
-    background-color: #2b2f38;
+    background-color: #3E4C6B;
 }
 .tamp_title {
     padding: 0 10px;
@@ -620,6 +620,12 @@ span.marketnave_i {
     border-bottom: 3px solid #eee;
     right: 8%;
 }
+
+.parent_amenities ul {
+    padding: 0;
+    text-align: left;
+}
+
 @media screen and (max-width:991px){
     .left_interested.fixed {
         z-index: 9999;
@@ -652,6 +658,9 @@ span.marketnave_i {
         margin-left: 0;
     }
     .inn_map_cont .map-tabs-links { right: 120px;}
+    .single-amenity {
+        width: 20%!important;
+    }
 }
 @media screen and (max-width: 991px){
     .config-content_img {
@@ -692,6 +701,9 @@ span.marketnave_i {
     .temp3amenities-options li:nth-child(3n+1) {
         margin-left: 0;
     }
+    .single-amenity {
+        width: 25%!important;
+    }
 }
 @media screen and (max-width: 500px){
     .temp3amenities-options li {
@@ -702,6 +714,11 @@ span.marketnave_i {
     }
     .temp3amenities-options li:nth-child(3n+1) {
         margin-left: 1%;
+    }
+    .parent_amenities ul { text-align: center;}
+    .single-amenity {
+        width: auto !important;
+        margin: 0 12px !important;
     }
 }
 @media screen and (max-width: 450px){
@@ -719,5 +736,35 @@ span.marketnave_i {
     .price_right {
         position: static;
     }
+
     .temp_2_amenities .properties-filter li {padding: 5px 15px;}
+}
+
+
+.application {
+    border-top: 1px solid #c1e1ec;
+}
+
+.affix-top {
+    position: relative;
+}
+
+.affix {
+    top: 20px;
+}
+
+.affix,
+.affix-bottom {
+    width: 213px;
+}
+
+.affix-bottom {
+    position: absolute;
+}
+
+@media (min-width:1200px) {
+    .affix,
+    .affix-bottom {
+        width: 263px;
+    }
 }

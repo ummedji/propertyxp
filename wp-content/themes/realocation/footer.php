@@ -153,6 +153,7 @@ jQuery(window).scroll(function () {
 		
 	
 	});
+
 	
 });
  </script>

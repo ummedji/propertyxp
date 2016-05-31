@@ -160,6 +160,7 @@ p.icon_cont {
 .right_cont .wpcf7 form p input {
     padding: 7px 8px;
 }
+.right_cont .wpcf7 form p input:hover { color: #fff !important;}
 .as_row-wise-amenities span.dev-floors, .as_row-wise-amenities span.dev-fittings, .as_row-wise-amenities span.dev-walls {
     height: 50px;
     width: 50px;
@@ -237,7 +238,8 @@ h2.pro_tl {
     text-transform: uppercase;
 }
 .top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
-    background-color: #2b2f38;
+    /*background-color: #2b2f38;*/
+    background-color: #3E4C6B;
 }
 span.nave_sp {
     height: 32px;

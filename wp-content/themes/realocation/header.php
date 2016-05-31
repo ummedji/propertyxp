@@ -134,6 +134,13 @@
 		});
 		
 		
+		jQuery("div.developer-menu ul li a").on("click",function(){
+		
+			jQuery("div.developer-menu ul li a").removeClass("active");
+			jQuery(this).addClass("active");
+		
+		});
+		
 		//jQuery("div.hf-property-price div.field-value").empty();
 		//
 		
