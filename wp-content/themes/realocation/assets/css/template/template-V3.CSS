@@ -625,7 +625,9 @@ span.marketnave_i {
     padding: 0;
     text-align: left;
 }
-
+.single-amenity {
+    width: 16%!important;
+}
 @media screen and (max-width:991px){
     .left_interested.fixed {
         z-index: 9999;

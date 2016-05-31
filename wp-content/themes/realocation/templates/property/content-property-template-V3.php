@@ -405,7 +405,7 @@ jQuery(function(){
 					<?php echo $amenities; ?>
 				</div>
 				
-				<div class="col-md-12 text-center" style="margin-top: 20px;">
+				<div class="col-md-12 parent_amenities text-center" style="margin-top: 20px;">
 
 					<ul class="amenities-options">
 					
