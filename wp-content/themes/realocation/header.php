@@ -119,6 +119,24 @@
 		  
 		}, 3000);
 		
+		//var price = jQuery("div.hf-property-price div.field-value").html();
+		
+		jQuery("div.hf-property-price div.field-value").each(function(index,element){
+		
+			var price = jQuery(this).html();
+			
+			if(price != ""){
+				jQuery(this).html('<i class="fa fa-inr fa-1x"></i>&nbsp;'+price);
+			
+			}
+			//alert(index+"===="+element);
+		
+		});
+		
+		
+		//jQuery("div.hf-property-price div.field-value").empty();
+		//
+		
 		
 	});
 </script>

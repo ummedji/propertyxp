@@ -55,8 +55,8 @@
 									<p>Config.</p>
 								</div>
 								<div class="field-item field-item-0">
-									<?php $new_configration_value = substr($configration_value,0,16).'..'; ?>
-									<div class="field-value" title="<?php echo $configration_value; ?>"><?php echo $new_configration_value; ?></div>
+									<?php $new_configration_value = substr($configration_value,0,16); ?>
+									<div class="field-value" title="<?php echo $configration_value; ?>"><?php echo trim($new_configration_value); ?></div>
 									
 								</div>
 							</div>
@@ -81,8 +81,8 @@
 							<div class="col-xs-3 no-columns number number hf-property-area">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
-									<?php $possession_value = substr($possession_value,0,6).'..'; ?>
-									<div class="field-value"><?php echo $possession_value; ?></div>
+									<?php $possession_value = substr($possession_value,0,16); ?>
+									<div class="field-value"><?php echo trim($possession_value); ?></div>
 									
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 								<div class="label"><p>Price</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><i class="fa fa-inr fa-1x"></i><?php echo $price_value; ?></div>
+									<div class="field-value"><?php echo $price_value; ?></div>
 									
 								</div>
 							</div>
