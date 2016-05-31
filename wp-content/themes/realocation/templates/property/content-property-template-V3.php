@@ -719,7 +719,7 @@ jQuery(function(){
 	        	
 	        		<div class="properties-items-three_sixty_data isotope">
 			    		<div class="items-list-three_sixty_data row">
-                                            <div class="three_sixty_data-gallery1 property-item-three_sixty_data isotope-item  col-md-12">
+                                            <div class="three_sixty_data-gallery property-item-three_sixty_data isotope-item  col-md-12">
 		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
 						if( !empty($three_sixty_data_image) ): ?>
 							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
