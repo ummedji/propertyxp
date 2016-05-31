@@ -148,27 +148,30 @@
 		
 		jQuery(window).scroll(function(){
 
-		
-			var footer_offset = jQuery("div#footer-wrapper").offset().top;
-		
+			//console.log("SCROLL");
+			var footer_offset = jQuery("div#footer-wrapper").offset().top;		
 			var left_side_bar = jQuery("div.developer-menu").offset().top;
 			
-			var diff = parseInt(footer_offset)-1100;
+			var diff = parseInt(footer_offset)-600;
+			var data =  parseInt(footer_offset)-1100;
 		
-			console.log(jQuery("div.developer-menu").offset().top+"====="+diff+"==="+footer_offset);
+		/*	console.log(jQuery("div.developer-menu").offset().top +"===="+ diff+"===="+footer_offset+"===="+data+"===");
 		
-			//if(jQuery("div#footer-wrapper").offset().top >= diff){
-		
-			//	alert("INNN");
+			if(jQuery("div.developer-menu").offset().top >= diff){
+				
+				jQuery("div.developer-menu").css({ "top":data, "position": "absolute","left":"-90px" });
+				
 			
-			//}
-		
+			}
+			else{
+			
+				jQuery("div.developer-menu").css({ "top":"0px", "position": "fixed","left":"0px" });
+			}
+		*/
 			
 		});
 		
 		
-		//jQuery("div.hf-property-price div.field-value").empty();
-		//
 		
 		
 	});
