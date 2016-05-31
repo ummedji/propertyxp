@@ -141,6 +141,32 @@
 		
 		});
 		
+		
+		
+		
+		
+		
+		jQuery(window).scroll(function(){
+
+		
+			var footer_offset = jQuery("div#footer-wrapper").offset().top;
+		
+			var left_side_bar = jQuery("div.developer-menu").offset().top;
+			
+			var diff = parseInt(footer_offset)-1100;
+		
+			console.log(jQuery("div.developer-menu").offset().top+"====="+diff+"==="+footer_offset);
+		
+			//if(jQuery("div#footer-wrapper").offset().top >= diff){
+		
+			//	alert("INNN");
+			
+			//}
+		
+			
+		});
+		
+		
 		//jQuery("div.hf-property-price div.field-value").empty();
 		//
 		

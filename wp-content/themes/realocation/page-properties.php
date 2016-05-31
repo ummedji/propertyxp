@@ -164,7 +164,7 @@ if($fullwidth) {
                 <?php endwhile; ?>
             </div>
         </div>
-        <div class="col-md-12 text-center"><a class="btn vie_mr_btn" id="render_all_premium_properties" href="javascript:void(0);">View All</a></div>
+     <!--   <div class="col-md-12 text-center"><a class="btn vie_mr_btn" id="render_all_premium_properties" href="javascript:void(0);">View All</a></div> -->
         <!--div class="col-md-12 text-center"><h1 class="center">INDIVIDUAL PROPERTIES</h1></div-->
         <!-- /.items-list -->
 
