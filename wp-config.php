@@ -17,6 +17,8 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
 if($_SERVER["HTTP_HOST"] == "www.propertyxp.com"){
 
 define('DB_NAME', 'property_proxp_local');
