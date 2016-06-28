@@ -26,7 +26,7 @@
     padding-bottom: 3px;
     margin-bottom: 20px !important;
     text-transform: uppercase;
-    border-bottom: solid 2px;
+    border-bottom: none;
 }
 .as_section_tl h2 span {
     background: none !important;
@@ -40,7 +40,7 @@
     text-transform: capitalize;
     display: inline-block;
     text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 0;
     font-weight: bold;
 }
@@ -83,7 +83,7 @@
     /*text-transform: uppercase;*/
     display: inline-block;
     text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 0;
     font-weight: bold;
 }
@@ -304,12 +304,12 @@ h2.pro_tl {
     font-size: 13px;
     text-transform: uppercase;
     width: auto;
-    background-color: #20242d;
+    background-color: #918171;
     display: block;
     margin-bottom: 0px;
 }
 .top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
-    background-color: #3E4C6B;
+    background-color: #746453;
 }
 .tamp_title {
     padding: 0 10px;

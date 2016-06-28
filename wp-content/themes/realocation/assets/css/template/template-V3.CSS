@@ -14,7 +14,7 @@
     padding-bottom: 3px;
     margin-bottom: 20px !important;
     text-transform: uppercase;
-    border-bottom: solid 2px;
+    border-bottom: none;
 }
 .as_section_tl h2 span {
     background: none !important;
@@ -25,11 +25,11 @@
     color: #2f2f2f;
     padding-bottom: 5px;
     margin-bottom: 0px;
-    border-bottom: solid 2px #2f2f2f;
+    /*border-bottom: solid 2px #2f2f2f;*/
     /*text-transform: uppercase;*/
     display: inline-block;
     text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 0;
     font-weight: bold;
 }
@@ -64,13 +64,13 @@
 .as_flats { padding: 90px 0 0 0px !important;}
 .about_cont h3 {
     color: #2f2f2f;
-    border-bottom: solid 2px #2f2f2f;
+    /*border-bottom: solid 2px #2f2f2f;*/
     padding-bottom: 5px;
     margin-bottom: 10px;
     /*text-transform: uppercase;*/
     display: inline-block;
     text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 0;
     font-weight: bold;
 }
@@ -327,12 +327,12 @@ h2.pro_tl {
     font-size: 13px;
     text-transform: uppercase;
     width: auto;
-    background-color: #20242d;
+    background-color: #918171;
     display: block;
     margin-bottom: 0px;
 }
 .top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
-    background-color: #3E4C6B;
+    background-color: #746453;
 }
 .tamp_title {
     padding: 0 10px;
@@ -526,7 +526,7 @@ span.marketnave_i {
 }
 .cont_deep h4 {
     font-size: 14px;
-    border-bottom: solid 1px #d1d1d1;
+    /*border-bottom: solid 1px #d1d1d1;*/
     padding: 0;
     margin: 0;
     margin-bottom: 5px;

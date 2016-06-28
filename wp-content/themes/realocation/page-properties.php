@@ -35,7 +35,7 @@ switch ($display) {
         $class = empty($fullwidth) ? "col-sm-6 col-md-4" : "col-sm-4 col-md-3";
         break;
     case "isotope":
-        $class = empty($fullwidth) ? "col-sm-6 col-md-3" : "col-sm-6 col-md-4";
+        $class = empty($fullwidth) ? "col-sm-6 col-md-4" : "col-sm-6 col-md-4";
         break;
     default:
         $class = 'post col-sm-12';
@@ -75,19 +75,19 @@ if($fullwidth) {
 <div class="additional-tools as-additional-tools col-md-12">
 <a class="center" href='<?php bloginfo('url');?>/brochures-page/'>
 	<span class="brochure-search"></span>
-	<label class="pro_llb">BROCHURE SEARCH</label>
+	<label class="pro_llb">BROCHURE<br>SEARCH</label>
 </a>
 <a class="center" href='<?php bloginfo('url');?>/mortgage/'>
 	<span class="emi-calculator"></span>
-	<label class="pro_llb">EMI CALCULATOR</label>
+	<label class="pro_llb">EMI<br>CALCULATOR</label>
 </a>
 <a class="center" href="<?php bloginfo('url');?>/map-mode">
 	<span class="map-mode-search"></span>
-	<label class="pro_llb">MAP MODE SEARCH</label>
+	<label class="pro_llb">MAP MODE<br>SEARCH</label>
 </a>
 <a class="center" href="##">
 	<span class="news-and-views"></span>
-	<label class="pro_llb">NEWS AND VIEWS</label>
+	<label class="pro_llb">NEWS AND<br>VIEWS</label>
 </a>
 <a class="center" href="##">
 	<span class="radio-live"></span>

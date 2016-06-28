@@ -1,4 +1,4 @@
-<div class="block-content clearfix front_crausol_slider <?php print $classes; ?>" <?php print $style; ?>>
+<div class="block-content clearfix front_crausol_slider as_fec_property <?php print $classes; ?>" <?php print $style; ?>>
     <?php if ($title): ?>
         <div class="col-md-12 text-center">
            <h2 class="<?php print $title_classes; ?>"><?php print $title; ?></h2>

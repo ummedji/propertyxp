@@ -141,81 +141,81 @@ span.dev-market{
 }
 
 span.brochure-search{ 
-	background-image: url(images/purple/BROCHURE-SEARCH.png);
-	background-image: none,url(images/purple/BROCHURE-SEARCH.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/BROCHURE-SEARCH_.png);
+	background-image: none,url(images/purple/BROCHURE-SEARCH_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 span.emi-calculator{ 
-	background-image: url(images/purple/EMI-CALCULATOR.png);
-	background-image: none,url(images/purple/EMI-CALCULATOR.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/EMI-CALCULATOR_.png);
+	background-image: none,url(images/purple/EMI-CALCULATOR_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 span.map-mode-search{ 
-	background-image: url(images/purple/MAP-MODE-SEARCH.png);
-	background-image: none,url(images/purple/MAP-MODE-SEARCH.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/MAP-MODE-SEARCH_.png);
+	background-image: none,url(images/purple/MAP-MODE-SEARCH_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 
 span.news-and-views{ 
-	background-image: url(images/purple/NEWS-AND-VIEWS.png);
-	background-image: none,url(images/purple/NEWS-AND-VIEWS.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/NEWS-AND-VIEWS_.png);
+	background-image: none,url(images/purple/NEWS-AND-VIEWS_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 
 span.radio-live{ 
-	background-image: url(images/purple/RADIO-LIVE.png);
-	background-image: none,url(images/purple/RADIO-LIVE.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/RADIO-LIVE_.png);
+	background-image: none,url(images/purple/RADIO-LIVE_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 span.subscribe-news-letter{ 
-	background-image: url(images/purple/SUBSCRIBE-NEWS-LETTER.png);
-	background-image: none,url(images/purple/SUBSCRIBE-NEWS-LETTER.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/SUBSCRIBE-NEWS-LETTER_.png);
+	background-image: none,url(images/purple/SUBSCRIBE-NEWS-LETTER_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
 span.tv-lve{ 
-	background-image: url(images/purple/TV-LIVE.png);
-	background-image: none,url(images/purple/TV-LIVE.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(images/purple/TV-LIVE_.png);
+	background-image: none,url(images/purple/TV-LIVE_.png);
+	-webkit-background-size: 85%;
+	background-size: 85%;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 115px;
 	margin: 0 auto 10px;
 	display: block;
 }
@@ -7180,7 +7180,7 @@ input[type=text]:active,input[type=text]:focus,input[type=email]:active,input[ty
 
 .property-box {
 	background-color: #fff;
-	border: 2px solid rgba(0, 0, 0, 0.1);
+	/*border: 2px solid rgba(0, 0, 0, 0.1);*/
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding: 40px 20px 25px 20px;
@@ -10131,7 +10131,7 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 }
 .as-content-pr .block-content-inner h1 {
 	color: #8e5c90;
-	border-bottom: solid 2px #8e5c90;
+	/*border-bottom: solid 2px #8e5c90;*/
 }
 .carousel_prp .carousel-indicators li {
 	border: none;
@@ -10213,7 +10213,7 @@ body.dsidx #dsidx #dsidx-listings>li hr {
 }
 .as_featured-builders h3 {
 	color: #8e5c90;
-	border-bottom: solid 2px #8e5c90;
+	/*border-bottom: solid 2px #8e5c90;*/
 }
 .as_as_block-content .hex-inner .hex-content {background-color: #8e5c90;}
 .as_as_block-content .hex-wrapper a { background-color: #8e5c90;}
@@ -10274,7 +10274,7 @@ h2.pro_tl {
 }
 .cont_deep h4 { color: #8e5c90;}
 /*templete 3*/
-.inn_properties-items { border: solid 1px #8e5c90 !important}
+/*.inn_properties-items { border: solid 1px #8e5c90 !important}*/
 
 /*responsive*/
 @media screen and (max-width: 991px){

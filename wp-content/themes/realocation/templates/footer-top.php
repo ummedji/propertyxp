@@ -43,12 +43,15 @@
             </div><!-- /.row -->
             <div class="row">
             	<div class="col-md-12">
-            		<h3 style="color: #35B54A;">PropertyXP.COM</h3>
+					<img src="<?php bloginfo('template_directory')?>/images/footer_logo.png" class="footer_lg" alt=" ">
+            		<!--<h3 style="color: #35B54A;">PropertyXP.COM</h3>-->
 					<p>The best place to find a new beginning. Catering to India's top developers and real estate agents, the website offers the largest online database of properties for sale and rent in the country. Propertyxp.com is rich in quality listings and user engagement platforms such as Simply ASK - QnA and iConnect with more that 3.5 Lakh subscribers exchanging views and resolving issues. Propertyxp.com, is an 3rd eye Pvt. Ltd, invested Company.</p> 
 					<h5><a href="<?php bloginfo('url');?>/about-us">Read More</a></h5>
 				</div> 
-				<div class="col-md-12">
-					<div class="col-md-3">
+				<div class="col-md-12 text-center">
+					<div class="col-md-8 text-right ftr_text"><i class="fa fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:info@propertyxp.com">info@propertyxp.com</a></div>
+					<div class="col-md-4 text-right ftr_text"><i class="fa fa-phone-square" aria-hidden="true"></i> <strong>Phone:</strong> 079 +9179 400400</div>
+					<!--<div class="col-md-3">
 						<h4>Affordable Housing in India</h4>
 						<p style="color:#aaa">Budget flat from 8 to 20 lacs in Mumbai<br />
 						Budget flat from 8 to 20 lacs in Ahmedabad<br />
@@ -74,9 +77,9 @@
 					</div>
 					<div class="col-md-3"><h4>New</h4>
 						<p style="color:#aaa">Information Here</p>
-					</div>
+					</div>-->
 				</div>
-				<div class="col-md-12">
+				<!--<div class="col-md-12">
 					<div class="col-md-3">
 						<h4>Top Indian Properties</h4>
 						<p  style="color:#aaa">100 Latest Mumbai Propertoes<br />
@@ -91,7 +94,7 @@
 						<h4>Payment Method</h4>
 					</div>
 					<div class="col-md-3"></div>
-				</div>
+				</div>-->
 				<div class="col-md-12">
 					<h3 style="color: #35B54A;">Information</h3>
 					<h5 class="info-links">
