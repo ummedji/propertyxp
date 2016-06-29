@@ -831,6 +831,7 @@ border: 2px solid #ff3401;}
 	padding-top: 0;
 	margin-bottom: 0px;
 	padding: 8px 30px 25px;
+	border: solid 5px #FFF;
 }
 .fec_property .small .property-box-price {
 	bottom: 5px;
@@ -864,7 +865,7 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 	text-decoration: none;
 }
 .ftr_text i { margin-right: 8px;}
-.as_inn_slider .rev_slider .tp-bgimg { background-position: center 50% !important;}
+.as_inn_slider .rev_slider .tp-bgimg { background-position: center 50% !important; background-size: 100% 555px !important;}
 /*responsive*/
 @media screen and (max-width:991px){
 	#AnythingPopup_BoxContainer4 {

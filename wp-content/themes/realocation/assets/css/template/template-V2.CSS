@@ -522,11 +522,11 @@ span.marketnave_i {
         position: fixed;
         left: 0;
         top: 0;
-        background-color: #20242d;
+        background-color: #918171;
         padding: 0 0 0 0px;
         width: 100%;
         text-align: center;
-        height: 85px;
+        height: 70px;
     }
     .developer-menu.fixed ul li {
         display: inline-block;

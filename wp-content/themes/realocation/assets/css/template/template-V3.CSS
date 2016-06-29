@@ -620,6 +620,7 @@ span.marketnave_i {
     border-bottom: 3px solid #eee;
     right: 8%;
 }
+@media screen and (max-width: 1920px) and (min-width: 1700px) {.left_interested.fixed { width: 15%;right: 20%;}}
 
 .parent_amenities ul {
     padding: 0;
@@ -684,11 +685,11 @@ span.marketnave_i {
         position: fixed;
         left: 0;
         top: 0;
-        background-color: #20242d;
+        background-color: #918171;
         padding: 0 0 0 0px;
         width: 100%;
         text-align: center;
-        height: 85px;
+        height: 70px;
     }
     .developer-menu.fixed ul li {
         display: inline-block;
