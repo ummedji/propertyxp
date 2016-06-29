@@ -462,6 +462,9 @@ border: 2px solid #ff3401;}
 	font-weight: normal;
 	font-size: 14px;
 }
+@media screen and (max-width:414px){
+	.filter-horizontal .carousel-select .list-unstyled>li .checkbox label { font-size: 13px;}
+}
 .as_col_col_sm_4 {
 	width: 13.28%;
 	padding: 0;
@@ -885,3 +888,9 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 	}
 }
 /*responsive*/
+/*@media screen and (min-width: 992px) and (max-width: 1199px) { .bx-wrapper { width:970px !important; padding-left: 15px; padding-right: 15px;}}*/
+/*
+@media screen and (min-width: 769px) and (max-width: 991px) { .bx-wrapper { width:750px !important; padding-left: 15px; padding-right: 15px;}}
+/!*@media screen and (min-width: 600px) and (max-width: 768px) { .bx-wrapper { width:600px !important;padding-left: 15px; padding-right: 15px;}}*!/
+@media screen and (min-width: 500px) and (max-width: 599px) { .bx-wrapper { width:500px !important;padding-left: 15px; padding-right: 15px;}}
+@media screen and (min-width: 320px) and (max-width: 499px) { .bx-wrapper { width:auto !important;padding-left: 15px; padding-right: 15px;}}*/

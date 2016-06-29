@@ -233,6 +233,7 @@ h2.pro_tl {
     list-style: none;
     margin-left: 4%;
 }
+.top-dev-menu ul li:first-child { margin-left: 0%;}
 .top-dev-menu ul li a {
     color: #fff;
     font-size: 13px;
