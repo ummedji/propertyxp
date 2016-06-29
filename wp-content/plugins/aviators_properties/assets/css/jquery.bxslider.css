@@ -131,6 +131,7 @@
 	text-indent: -9999px;
 	z-index: 99;
 }
+.map-navigation .bx-wrapper .bx-controls-direction a { top: 50%;}
 @media screen and (max-width: 991px){
 	.bx-wrapper .bx-controls-direction a { top: 50%;}
 }
