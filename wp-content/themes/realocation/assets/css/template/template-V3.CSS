@@ -20,7 +20,7 @@
     background: none !important;
     padding: 0 !important;
 }
-.temp_2about_cont { margin-top: 90px;}
+.temp_2about_cont { margin-top: 62px;}
 .temp_2about_cont p strong {
     color: #2f2f2f;
     padding-bottom: 5px;
@@ -61,7 +61,7 @@
     font-weight: normal;
 }
 
-.as_flats { padding: 90px 0 0 0px !important;}
+.as_flats { padding: 65px 0 0 0px !important;}
 .about_cont h3 {
     color: #2f2f2f;
     /*border-bottom: solid 2px #2f2f2f;*/
@@ -120,7 +120,7 @@ p.icon_cont {
 }
 
 .as_amenities {
-    padding: 90px 0 0 0 !important;
+    padding: 52px 0 0 0 !important;
 }
 .as_amenities .amenities-options .single-amenity {
     margin: 0px 0px 15px 0;
@@ -247,11 +247,12 @@ ul.temp3amenities-options {
     margin-bottom: 10px;
 }
 .inn_properties-items {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
    /* border: solid 1px #bf224e !important;*/
 }
 .temp_2_gallery {
-    padding: 30px 0 0 0px !important;
+    padding: 64px 0 0 0px !important;
 }
 h2.pro_tl {
     font-size: 20px;
@@ -743,4 +744,32 @@ span.marketnave_i {
     .temp_2_amenities .properties-filter li {padding: 5px 15px;}
 }
 
+.room-bto,.room-bto1,.room-bto2{
+    margin-top: 10px !important;
+}
+.temp_2_amenities{
+    margin-top: 58px;
+}
+.block-content-inner #map {
+    padding: 66px 0 0 0px;
+}
+.gallery-top{
+    margin: 0px 0px 25px -6px;
+}
+#line_chart {
+    margin-top: -70px;
+}
+#about-developer {
+    margin-top: -38px;
+}
+#contact-developer {
+    margin-top: -60px;
+}
+.group-bot {
+    margin-bottom: 5px;
+}
+#map .select-wrapper{
+    margin-right: -15px;
+    margin-top: -3px;
 
+}

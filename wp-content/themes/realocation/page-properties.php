@@ -107,7 +107,7 @@ if($fullwidth) {
 </a>
 </div>
 <div class="clear"></div>
-        <div class="col-md-12 text-center"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
+        <div class="col-md-12 text-center top-premuim"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
             <?php the_title(); ?>
             <?php aviators_edit_post_link(); ?>
             <?php aviators_configure_page_link('property', get_the_ID()) ?>

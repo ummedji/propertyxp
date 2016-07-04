@@ -5732,7 +5732,8 @@ ol li:last-child {
 }
 
 .block-padding {
-	padding: 100px 0px
+	/*padding: 100px 0px*/
+	padding: 60px 100px 66px 100px
 }
 
 .block-content h3,.block-content .property-detail-subtitle {
@@ -6092,9 +6093,14 @@ p.block-slogan {
 
 .btn-primary:hover.btn-inversed,.btn:hover.btn-inversed,#comments .btn:hover,#comments input[type=submit]:hover,.hydra-form .btn:hover,input[type=submit]:hover,.map-navigation .btn:hover,#dsidx-contact-form-submit:hover,.btn-white:hover.btn-inversed
 	{
-	background-color: #941a3c
+	background-color: #941a3c;
+	color: #ffffff !important;
 }
-
+.btn-primary:focus.btn-inversed,.btn:focus.btn-inversed,#comments .btn:focus,#comments input[type=submit]:focus,.hydra-form .btn:focus,input[type=submit]:focus,.map-navigation .btn:focus,#dsidx-contact-form-submit:focus,.btn-white:focus.btn-inversed
+{
+	color: #ffffff !important;
+	background-color: #941a3c;
+}
 #footer .btn-primary:hover,#footer .btn:hover,#footer input[type=submit]:hover,#footer #dsidx-contact-form-submit:hover,#footer .btn-white:hover
 	{
 	color: #941a3c
@@ -7375,9 +7381,11 @@ div.property-box-subtitle a,div.property-box-subtitle a {
 
 .properties-filter {
 	line-height: 36px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	margin-bottom: 32px;
 	padding: 0px;
-	text-align: center
+	text-align: center;
+	margin-top: -3px;
 }
 
 .properties-filter li {

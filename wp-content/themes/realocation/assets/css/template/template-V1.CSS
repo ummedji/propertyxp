@@ -16,7 +16,10 @@
 /*p.caps_text {
     text-transform: uppercase;
 }*/
-.mr_50 { margin-bottom: 30px;}
+.mr_50 {
+    /*margin-bottom: 30px;*/
+    margin-bottom: 60px;
+}
 .as_section_tl h2 {
     background-image: none !important;
     text-align: left;
@@ -59,7 +62,10 @@
     font-weight: normal;
 }
 
-.as_flats { padding: 70px 0 0 0px !important;}
+.as_flats {
+    /*padding: 70px 0 0 0px !important;*/
+    padding: 38px 0 20px 0px !important;
+}
 .about_cont h3 {
     color: #2f2f2f;
     /*border-bottom: solid 2px #2f2f2f;*/
@@ -78,12 +84,12 @@
     color: #fff;
     font-size: 15px;
     top: 0;
-    right: 0;
+    right: 15px;
 }
 p.cate_cont {
     /*text-transform: uppercase;*/
     font-size: 14px;
-    margin: 20px 0;
+   /* margin: 20px 0;*/
 }
 .bedroom_par { margin-top: 20px;}
 p.icon_cont {
@@ -98,7 +104,8 @@ p.icon_cont {
 }
 
 .as_amenities {
-    padding: 90px 0 0 0px !important;
+    padding: 0px 0 0 0px !important;
+    margin-top: -20px;
 }
 .as_amenities .amenities-options .single-amenity {
     margin: 0px 0px 15px 0;
@@ -377,7 +384,8 @@ span.marketnave_i {
 
 .config-content_img img { max-width: 80px; max-height: 80px;}
 .as_row-wise-amenities {
-    margin: 90px 0 0 0;
+   /* margin: 90px 0 0 0;*/
+    margin: 48px 0 0 0;
 }
 @media screen and (max-width:991px){
     .config-content_img { margin-top: 20px;}
@@ -415,4 +423,44 @@ span.marketnave_i {
         width: 49% !important;
         margin: 0px 0px 30px 0 !important;
     }
+}
+
+.amenities-options{
+    margin-left: -67px;
+    margin-top: 6px;
+}
+.block-content-inner #map{
+    padding: 66px 0 0 0px;
+}
+.al_baruj_slider{
+    margin-top: -56px;
+}
+#line_chart{
+    margin-top: -70px;
+}
+#about-developer{
+    margin-top: -38px;
+}
+#contact-developer{
+    margin-top: -60px;
+}
+.left-filter{
+    margin-left: -14px;
+}
+.isotope-three-sixty{
+    margin-bottom: 45px;
+}
+.gallery-top{
+    margin: 0px 0px 25px -6px;
+}
+.group-bot{
+    margin-bottom: 28px;
+}
+.room-bto,.room-bto1,.room-bto2{
+    margin-top: 10px !important;
+}
+#map .select-wrapper{
+    margin-right: -15px;
+    margin-top: -3px;
+
 }

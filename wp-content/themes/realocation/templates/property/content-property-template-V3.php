@@ -229,7 +229,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>2 BedRoom Apartment</h3>
-				<p class="cate_cont"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 				<div class="row bedroom_par">
@@ -284,7 +284,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>3 BedRoom Apartment</h3>
-				<p> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="room-bto1"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 
@@ -339,7 +339,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>4 BedRoom Apartment</h3>
-				<p class="cate_cont"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto2"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
 				<div class="clearfix"></div>
 
@@ -405,7 +405,7 @@ jQuery(function(){
 					<?php echo $amenities; ?>
 				</div>
 				
-				<div class="col-md-12 parent_amenities text-center" style="margin-top: 20px;">
+				<div class="col-md-12 parent_amenities text-center" style="margin-top: 5px;">
 
 					<ul class="amenities-options">
 					
@@ -738,7 +738,7 @@ jQuery(function(){
                <div class="row temp_2_gallery" id="gallery" >
 				<div class="col-md-12 al_baruj_slider">
 					<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
-					<ul class="properties-filter">
+					<ul class="properties-filter gallery-top">
 						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
 						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
 					</ul>
@@ -861,7 +861,7 @@ jQuery(function(){
 
 		<div class="row" id="contact-developer">
 			<div class="col-md-12 popup-this-contact-form">
-				<div class="center section-title as_section_tl"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
+				<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-12 pull-right center">
 					

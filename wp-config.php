@@ -21,16 +21,16 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 if($_SERVER["HTTP_HOST"] == "www.propertyxp.com"){
 
-define('DB_NAME', 'property_proxp_local');
+define('DB_NAME', 'open_propertyxp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'sqlyog');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'sqlyog');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.168.1.245');
 }
 else{
     
