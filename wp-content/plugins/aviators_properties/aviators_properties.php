@@ -55,17 +55,17 @@ add_action('init', 'aviators_properties_create_taxonomies', 0);
 
 function aviators_properties_create_taxonomies() {
     $property_types_labels = array(
-        'name' => __('Types', 'aviators'),
-        'singular_name' => __('Type', 'aviators'),
-        'search_items' => __('Search Types', 'aviators'),
-        'all_items' => __('All Types', 'aviators'),
-        'parent_item' => __('Parent Type', 'aviators'),
+        'name' => __('Property Types', 'aviators'),
+        'singular_name' => __('Property Type', 'aviators'),
+        'search_items' => __('Search Property Types', 'aviators'),
+        'all_items' => __('All Property Types', 'aviators'),
+        'parent_item' => __('Parent Property Type', 'aviators'),
         'parent_item_colon' => __('Parent Type:', 'aviators'),
-        'edit_item' => __('Edit Type', 'aviators'),
-        'update_item' => __('Update Type', 'aviators'),
-        'add_new_item' => __('Add New Type', 'aviators'),
-        'new_item_name' => __('New Type', 'aviators'),
-        'menu_name' => __('Types', 'aviators'),
+        'edit_item' => __('Edit Property Type', 'aviators'),
+        'update_item' => __('Update Property Type', 'aviators'),
+        'add_new_item' => __('Add New Property Type', 'aviators'),
+        'new_item_name' => __('New Property Type', 'aviators'),
+        'menu_name' => __('Property Types', 'aviators'),
     );
 
     register_taxonomy('types', 'property', array(
@@ -123,6 +123,30 @@ function aviators_properties_create_taxonomies() {
         'show_ui' => TRUE,
         'show_admin_column' => TRUE,
     ));
+	
+	 $property_amenities_labels = array(
+        'name' => __('Room Amenities', 'aviators'),
+        'singular_name' => __('Room Amenity', 'aviators'),
+        'search_items' => __('Search Room Amenity', 'aviators'),
+        'all_items' => __('All Room Amenities', 'aviators'),
+        'parent_item' => __('Parent Room Amenity', 'aviators'),
+        'parent_item_colon' => __('Parent Room Amenity:', 'aviators'),
+        'edit_item' => __('Edit Room Amenity', 'aviators'),
+        'update_itm' => __('Update Room Amenity', 'aviators'),
+        'add_new_item' => __('Add New Room Amenity', 'aviators'),
+        'new_item_name' => __('New Room Amenity', 'aviators'),
+        'menu_name' => __('Room Amenities', 'aviators'),
+    );
+
+    register_taxonomy('room_amenities', 'property', array(
+        'labels' => $property_amenities_labels,
+        'hierarchical' => TRUE,
+        'query_var' => 'room_amenities',
+        'rewrite' => array('slug' => __('room_amenities', 'aviators')),
+        'public' => TRUE,
+        'show_ui' => TRUE,
+        'show_admin_column' => TRUE,
+    )); 
 
     $property_locations_labels = array(
         'name' => __('Locations', 'aviators'),

@@ -1007,3 +1007,106 @@ function my_assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'my_assets' );
+
+//change menu sequence in builder panel
+function custom_menu_order($menu_ord) {
+    if (!$menu_ord) return true;
+    return array(
+		'edit.php?post_type=property', // Pages
+    );
+}
+function edit_admin_menus() {
+    global $menu;
+    global $submenu;
+	$menu[47][0] = 'Manage Property';
+	if(!current_user_can('administrator')){
+    remove_menu_page('edit.php?post_type=agent');
+	}
+}
+if(!current_user_can('administrator'))
+{
+add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+add_filter('menu_order', 'custom_menu_order');
+}
+function RemoveAddMediaButtonsForNonAdmins()
+{
+   // if ( !current_user_can( 'manage_options' ) ) {
+        remove_action( 'media_buttons', 'media_buttons' );
+  //  }
+}
+if(isset($_GET['post_type']) && $_GET['post_type'] == 'property')
+{
+add_action('admin_head', 'RemoveAddMediaButtonsForNonAdmins');
+}
+add_action('do_meta_boxes', 'wpse33063_move_meta_box');
+function wpse33063_move_meta_box()
+{
+    remove_meta_box( 'postimagediv', 'property', 'side' );
+    add_meta_box('postimagediv', __('Featured Image'), 'post_thumbnail_meta_box', 'property', 'side', 'high');
+}
+function getHydravalue($id, $field)
+{
+	if(!empty($field))
+	{
+		print hydra_render_field(get_the_ID(), $field);
+	}
+}
+add_action('wp_getHydravalue','getHydravalue',5,2);
+
+function count_digit($number) {
+  return strlen($number);
+}
+function divider($number_of_digits) {
+  $tens="1";
+  while(($number_of_digits-1)>0)
+  {
+    $tens.="0";
+    $number_of_digits--;
+  }
+  return $tens;
+}
+
+function getHydrametaTerm($post_id, $meta_key)
+{
+	global $wpdb;
+	$property = get_post_meta($post_id,$meta_key,true);
+	if(!empty($property))
+	{
+	$propertyunseri = maybe_unserialize($property);
+	$amenities = implode('","',$propertyunseri['items'][0]['value']);
+	$data = $wpdb->get_results('SELECT name FROM wp_terms WHERE term_id IN ("'.$amenities.'")');
+	$fdata = array();
+	foreach($data as $val)
+	{
+		$fdata[] = $val->name;
+	}
+	return $fdata;
+	}
+	else{
+		return '';
+	}
+	
+}
+function getHydrameta($post_id, $meta_key, $image='')
+{
+	$property = get_post_meta($post_id,$meta_key,true);
+	if(!empty($property))
+	{
+	$propertyunseri = maybe_unserialize($property);
+	
+	if($image != '')
+	{
+	return $propertyunseri['items'][0][$image];	
+	}
+	else{
+	return $propertyunseri['items'][0]['value'];
+	}	
+	
+	}
+	else{
+	return '';	
+	}
+}
+//add_action('wp_getHydrameta','getHydrameta',10,2);
+
+

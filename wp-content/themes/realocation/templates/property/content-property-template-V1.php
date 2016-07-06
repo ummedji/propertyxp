@@ -71,18 +71,18 @@ jQuery(function(){
         });
     });
 </script>
+<?php
+//$res = do_action('wp_getHydrameta',get_the_ID(),'hf_property_2_amenities');
 
+?>
 <div class="property-detail developer-details">
-
     	<div class="row as_flats" id="details" >
-    
 	    	<?php /* ?>
 	        <div class="col-md-4">
 	            <?php print hydra_render_group(get_the_ID(), 'overview', 'detail'); ?>
 	        </div>
 	        <?*/?>
         	<div class="col-md-12 about_cont">
-			
 	        	<div class="center section-title as_section_tl"><h2><span>About <?php the_title();?></span></h2></div>
 	            <?php $content = get_the_content(); ?>
 	            <?php if (!empty($content)) : ?>
@@ -94,32 +94,39 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon about_i"></div>
 						<h6>ADDRESS</h6>
-						<p><?php the_field('address');?></p>
+						<p><?php 
+							echo getHydrameta(get_the_ID(),'hf_property_address');	//do_action('wp_getHydravalue',get_the_ID(),'address'); ?></p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon configuration_i"></div>
 						<h6>CONFIGURATIONS</h6>
-						<p><?php the_field('configurations');?></p>
+						<p><?php echo getHydrameta(get_the_ID(),'hf_property_configurations');	//do_action('wp_getHydravalue',get_the_ID(),'configurations'); ?><?php //the_field('configurations');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon starting_i"></div>
 						<h6>STARTING PRICE</h6>
-						<p><i class="icon-rupee"></i> <?php the_field('starting_price');?></p>
+						<p><!--<i class="icon-rupee"></i>--><?php 
+					     echo getHydrameta(get_the_ID(),'hf_property_starting_price');	//do_action('wp_getHydravalue',get_the_ID(),'starting_price'); ?><?php //the_field('starting_price');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6  text-center about_box_tl">
 						<div class="abtn_icon builtup_square_i"></div>
 						<h6>BUILTUP AREA</h6>
-						<p><?php the_field('builtup_area');?></p>
+						<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');	//do_action('wp_getHydravalue',get_the_ID(),'builtup_area'); ?><?php //the_field('builtup_area');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 col-sm-6 text-center about_box_tl">
 						<div class="abtn_icon blocks_square_i"></div>
 						<h6>BLOCKS</h6>
-						<p><?php the_field('blocks');?></p>
+						<p><?php echo getHydrameta(get_the_ID(),'hf_property_blocks');	//do_action('wp_getHydravalue',get_the_ID(),'blocks'); ?><?php //the_field('blocks');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon prossesion_square_i"></div>
 						<h6>POSSESSION</h6>
-						<p itemprop="releaseDate"><?php the_field('possession');?></p>
+						<p itemprop="releaseDate"><?php 
+						echo getHydrameta(get_the_ID(),'hf_property_possession');	//do_action('wp_getHydravalue',get_the_ID(),'possession');
+						
+					/*	print hydra_render_field(get_the_ID(), '3_bedroom_apartment_amenities', 'default'); */
+						
+						//do_action('wp_getHydravalue',get_the_ID(),'2_bedroom_apartment_amenities'); ?><?php //the_field('possession');?></p>
 					</div>
 
 
@@ -166,9 +173,37 @@ jQuery(function(){
 	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
 	        </div>
 			<?php 
-			    $bedroom_amenities = get_field('2_bedroom_apartment_ame');
-			  
-				if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
+			   // $bedroom_amenities = get_field('2_bedroom_apartment_ame');
+				
+				$termhydata = getHydrametaTerm(get_the_ID(),'hf_property_2_amenities');
+				if(empty($termhydata))
+				{
+					$termdata = array('1','2');
+				}
+				else
+				{
+					$termdata = $termhydata;	
+				}
+				
+				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
+			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
+				if (in_array('Kitchen', $termdata)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Bathrooms', $termdata)) { $bathrooms = '';$bathrooms_fade='';} else { $bathrooms = 'fade-text' ; $bathrooms_fade = 'fade';}
+				if (in_array('Pooja Room', $termdata)) { $pooja_room = '';$pooja_room_fade='';} else { $pooja_room = 'fade-text' ; $pooja_room_fade = 'fade';}
+				if (in_array('Study Room', $termdata)) { $study = '';$study_fade='';} else { $study = 'fade-text' ;$study_fade = 'fade';}
+				if (in_array('Ac', $termdata)){ $ac = '';$ac_fade='';} else { $ac = 'fade-text' ;$ac_fade = 'fade';}
+				if (in_array('Intercom', $termdata)){ $intercom = '';$intercom_fade='';} else { $intercom = 'fade-text' ;$intercom_fade = 'fade';}
+				if (in_array('Video Door Phone', $termdata)){ $video_door = '';$video_door_fade='';} else { $video_door = 'fade-text' ;$video_door_fade = 'fade';}
+				if (in_array('Washing Area', $termdata)){ $washing = '';$washing_fade='';} else { $washing = 'fade-text' ;$washing_fade = 'fade';}
+				if (in_array('Gas Line', $termdata)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
+				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
+				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
+				
+				
+				
+			/*	if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('kitchen', $bedroom_amenities)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
 				if (in_array('balconies', $bedroom_amenities)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
@@ -182,6 +217,9 @@ jQuery(function(){
 				if (in_array('gasline', $bedroom_amenities)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
+				*/
+				
+				
 		    ?>
 	        
 	        <div class="col-md-12 text-left mr_50">
@@ -191,8 +229,9 @@ jQuery(function(){
 					<div class="clearfix"></div>
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
-						<?php $sfa = get_field('2_bed_flat_slider_alias');
-						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
+						<?php //$sfa = get_field('2_bed_flat_slider_alias');
+						$sfa = getHydrameta(get_the_ID(),'hf_property_2_bed_flat_slider_alias');
+						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' ); ?>
 					</div>
 					<div class="config-content col-md-7 config-content_img">
 						<div class="row">
@@ -400,10 +439,33 @@ jQuery(function(){
 			<!-- -- 3 Bedroom Apartment -- -->			
 			<?php 
 			
-			    $bedroom_amenities = get_field('3_bedroom_apartment_ame');
-			   
+			   // $bedroom_amenities = get_field('3_bedroom_apartment_ame');
+			   $termhydata = getHydrametaTerm(get_the_ID(),'hf_property_3_bedroom_apartment_amenities');
+				if(empty($termhydata))
+				{
+					$termdata = array('1','2');
+				}
+				else
+				{
+					$termdata = $termhydata;	
+				}
+				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
+			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
+				if (in_array('Kitchen', $termdata)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Bathrooms', $termdata)) { $bathrooms = '';$bathrooms_fade='';} else { $bathrooms = 'fade-text' ; $bathrooms_fade = 'fade';}
+				if (in_array('Pooja Room', $termdata)) { $pooja_room = '';$pooja_room_fade='';} else { $pooja_room = 'fade-text' ; $pooja_room_fade = 'fade';}
+				if (in_array('Study Room', $termdata)) { $study = '';$study_fade='';} else { $study = 'fade-text' ;$study_fade = 'fade';}
+				if (in_array('Ac', $termdata)){ $ac = '';$ac_fade='';} else { $ac = 'fade-text' ;$ac_fade = 'fade';}
+				if (in_array('Intercom', $termdata)){ $intercom = '';$intercom_fade='';} else { $intercom = 'fade-text' ;$intercom_fade = 'fade';}
+				if (in_array('Video Door Phone', $termdata)){ $video_door = '';$video_door_fade='';} else { $video_door = 'fade-text' ;$video_door_fade = 'fade';}
+				if (in_array('Washing Area', $termdata)){ $washing = '';$washing_fade='';} else { $washing = 'fade-text' ;$washing_fade = 'fade';}
+				if (in_array('Gas Line', $termdata)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
+				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
+				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 			  
-				if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
+				/*if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('kitchen', $bedroom_amenities)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
 				if (in_array('balconies', $bedroom_amenities)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
@@ -416,7 +478,7 @@ jQuery(function(){
 				if (in_array('washingarea', $bedroom_amenities)){ $washing = '';$washing_fade='';} else { $washing = 'fade-text' ;$washing_fade = 'fade';}
 				if (in_array('gasline', $bedroom_amenities)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
-				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
+				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}*/
 		    ?>
 	        
 	        <div class="col-md-12 text-left mr_50">
@@ -427,7 +489,8 @@ jQuery(function(){
 
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5 as-pull-right">
-						<?php $sfa = get_field('3_bed_flat_slider_alias');
+						<?php //$sfa = get_field('3_bed_flat_slider_alias');
+						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -526,7 +589,7 @@ jQuery(function(){
 			</div>
 			
 			<?php 
-			    $bedroom_amenities = get_field('4_bedroom_apartment_ame');
+			   /* $bedroom_amenities = get_field('4_bedroom_apartment_ame');
 			   
 			    if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
@@ -541,7 +604,32 @@ jQuery(function(){
 				if (in_array('washingarea', $bedroom_amenities)){ $washing = '';$washing_fade='';} else { $washing = 'fade-text' ;$washing_fade = 'fade';}
 				if (in_array('gasline', $bedroom_amenities)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
-				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
+				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}*/
+				
+				$termhydata = getHydrametaTerm(get_the_ID(),'hf_property_4_bedroom_apartment_amenities');
+				if(empty($termhydata))
+				{
+					$termdata = array('1','2');
+				}
+				else
+				{
+					$termdata = $termhydata;	
+				}
+				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
+			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
+				if (in_array('Kitchen', $termdata)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Balconies', $termdata)){ $balconies = '';$balconies_fade='';} else { $balconies = 'fade-text' ;$balconies_fade = 'fade';}
+				if (in_array('Bathrooms', $termdata)) { $bathrooms = '';$bathrooms_fade='';} else { $bathrooms = 'fade-text' ; $bathrooms_fade = 'fade';}
+				if (in_array('Pooja Room', $termdata)) { $pooja_room = '';$pooja_room_fade='';} else { $pooja_room = 'fade-text' ; $pooja_room_fade = 'fade';}
+				if (in_array('Study Room', $termdata)) { $study = '';$study_fade='';} else { $study = 'fade-text' ;$study_fade = 'fade';}
+				if (in_array('Ac', $termdata)){ $ac = '';$ac_fade='';} else { $ac = 'fade-text' ;$ac_fade = 'fade';}
+				if (in_array('Intercom', $termdata)){ $intercom = '';$intercom_fade='';} else { $intercom = 'fade-text' ;$intercom_fade = 'fade';}
+				if (in_array('Video Door Phone', $termdata)){ $video_door = '';$video_door_fade='';} else { $video_door = 'fade-text' ;$video_door_fade = 'fade';}
+				if (in_array('Washing Area', $termdata)){ $washing = '';$washing_fade='';} else { $washing = 'fade-text' ;$washing_fade = 'fade';}
+				if (in_array('Gas Line', $termdata)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
+				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
+				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 		    ?>
 	        
 	        <div class="col-md-12 text-left mr_50">
@@ -552,7 +640,8 @@ jQuery(function(){
 
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
-						<?php $sfa = get_field('4_bed_flat_slider_alias');
+						<?php //$sfa = get_field('4_bed_flat_slider_alias');
+						$sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -832,30 +921,30 @@ jQuery(function(){
 		    	<div class="properties-items inn_properties-items isotope">
 		    		<div class="items-list row">
 			    		<div class="building-card floors-card co  floors property-item isotope-item  col-md-12">
-							<div class="pills col-md-4"><div class="header">BALCONY</div><div class="texts as_texts"><?php the_field('balcony'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('kitchen'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">LIVING/DINING</div><div class="texts as_texts"><?php the_field('living/dining'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">BALCONY</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_balcony'); //the_field('balcony'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_kitchen'); //the_field('kitchen'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">LIVING/DINING</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_livingdining'); //the_field('living/dining'); ?></div></div>
 							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">MASTER BEDROOM</div><div class="texts as_texts"><?php the_field('master_bedroom'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">OTHER BEDROOM</div><div class="texts as_texts"><?php the_field('other_bedroom'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('toilets'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">MASTER BEDROOM</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_master_bedroom');//the_field('master_bedroom'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">OTHER BEDROOM</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_other_bedroom'); //the_field('other_bedroom'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_toilets');  //the_field('toilets'); ?></div></div>
 						</div>
 						<div class="building-card fittings-card  fittings property-item isotope-item col-md-12">
 							
-							<div class="pills col-md-4"><div class="header">DOORS</div><div class="texts as_texts"><?php the_field('doors'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">ELECTRICAL</div><div class="texts as_texts"><?php the_field('electrical'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('fitting_kitchen'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">DOORS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_doors'); //the_field('doors'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">ELECTRICAL</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_electrical');// the_field('electrical'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_kitchen'); //the_field('fitting_kitchen'); ?></div></div>
 							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">WINDOWS</div><div class="texts as_texts"><?php the_field('windows'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('fitting_toilets'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">OTHERS</div><div class="texts as_texts"><?php the_field('others'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">WINDOWS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_windows'); //the_field('windows'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_toiletsf'); //the_field('fitting_toilets'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">OTHERS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_others');  // the_field('others'); ?></div></div>
 						</div>
 						<div class="building-card walls-card  walls property-item isotope-item col-md-12">
-							<div class="pills col-md-4"><div class="header">EXTERIOR</div><div class="texts as_texts"><?php the_field('exterior'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">INTERIOR</div><div class="texts as_texts"><?php the_field('interior'); ?></div></div>
-							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php the_field('kitchen_walls'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">EXTERIOR</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_nexterior'); // the_field('exterior'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">INTERIOR</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_ninterior'); //the_field('interior'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_nkitchen');  //the_field('kitchen_walls'); ?></div></div>
 							<div class="clearfix"></div>
-							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php the_field('toilets_walls'); ?></div></div>
+							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_ntoilets');   //the_field('toilets_walls'); ?></div></div>
 						</div>
 		    		</div>
 		    	
@@ -963,9 +1052,12 @@ jQuery(function(){
 	        		<div class="properties-items-three-sixty isotope-three-sixty">
 			    		<div class="items-list-three-sixty row">
                                             <div class="three_sixty_data-gallery property-item-three_sixty_data isotope-item-three-sixty  col-md-12">
-		            			<?php 	$three_sixty_data_image = get_field('three_sixty_data');
-						if( !empty($three_sixty_data_image) ): ?>
-							<img src="<?php echo $three_sixty_data_image['url']; ?>" alt="<?php echo $three_sixty_data_image['alt']; ?>" />
+								<?php
+								$three_sixty_data_imageurl = getHydrameta(get_the_ID(),'hf_property_three_sixty_data', 'url');
+								$three_sixty_data_imagealt = getHydrameta(get_the_ID(),'hf_property_three_sixty_data', 'alt');
+								//$three_sixty_data_image = get_field('three_sixty_data');
+						if( !empty($three_sixty_data_imageurl) ): ?>
+							<img src="<?php echo $three_sixty_data_imageurl; ?>" alt="<?php echo $three_sixty_data_imagealt; ?>" />
 						<?php 	endif; ?>
                                             </div>
 		            		
@@ -1000,7 +1092,7 @@ jQuery(function(){
 	    </div>
 	    <!-- /.row -->
         
-        
+      
 	<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 	<script type="text/javascript">
@@ -1047,7 +1139,20 @@ jQuery(function(){
 		            marker: {
 		                symbol: 'circle'
 		            },
-		            data: [	<?php if(get_field('jan') != null ) echo get_field('jan'); else echo '7000';?>, 
+		            data: [<?php if(getHydrameta(get_the_ID(),'hf_property_jan') != null ) echo getHydrameta(get_the_ID(),'hf_property_jan'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_feb') != null ) echo getHydrameta(get_the_ID(),'hf_property_feb'); else echo '6900'; ?>,
+		            		<?php if(getHydrameta(get_the_ID(),'hf_property_mar') != null ) echo getHydrameta(get_the_ID(),'hf_property_mar'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_apr') != null ) echo getHydrameta(get_the_ID(),'hf_property_apr'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_may') != null ) echo getHydrameta(get_the_ID(),'hf_property_may'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_june') != null ) echo getHydrameta(get_the_ID(),'hf_property_june'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_july') != null ) echo getHydrameta(get_the_ID(),'hf_property_july'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_aug') != null ) echo getHydrameta(get_the_ID(),'hf_property_aug'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_sep') != null ) echo getHydrameta(get_the_ID(),'hf_property_sep'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_oct') != null ) echo getHydrameta(get_the_ID(),'hf_property_oct'); else echo '6900';?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_nov') != null ) echo getHydrameta(get_the_ID(),'hf_property_nov'); else echo '6900'; ?>,
+							<?php if(getHydrameta(get_the_ID(),'hf_property_dec') != null ) echo getHydrameta(get_the_ID(),'hf_property_dec'); else echo '6900'; ?>,]
+					
+					/*[	<?php if(get_field('jan') != null ) echo get_field('jan'); else echo '7000';?>, 
 		            		<?php if(get_field('feb') != null ) echo get_field('feb'); else echo '6900';?>, 
 		            		<?php if(get_field('mar') != null ) echo get_field('mar'); else echo '9500';?>, 
 		            		<?php if(get_field('apr') != null ) echo get_field('apr'); else echo '14500';?>, 
@@ -1059,7 +1164,7 @@ jQuery(function(){
 				            <?php if(get_field('sep') != null ) echo get_field('sep'); else echo '13000';?>,
 				            <?php if(get_field('oct') != null ) echo get_field('oct'); else echo '8300';?>, 
 				            <?php if(get_field('nov') != null ) echo get_field('nov'); else echo '11000';?>, 
-				            <?php if(get_field('dec') != null ) echo get_field('dec'); else echo '9600';?>,]
+				            <?php if(get_field('dec') != null ) echo get_field('dec'); else echo '9600';?>,] */
 		
 		        }]
 		    });
@@ -1069,7 +1174,7 @@ jQuery(function(){
 	<div class="row" id="line_chart" >
 		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Insights Into <?php the_title();?></span></h2></div>
-	        	<p class="caps_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	        	<p class="caps_text"><?php echo getHydrameta(get_the_ID(),'hf_property_insights'); ?></p>
          </div>
 	
 		<div class="col-md-12">
@@ -1078,33 +1183,35 @@ jQuery(function(){
 	</div>	
 	<div class="row" id="about-developer">
 		<div class="col-md-12">
-			<div class="center section-title as_section_tl group-bot"><h2><span>About <?php the_field('developer_name'); ?></span></h2></div>
+			<div class="center section-title as_section_tl group-bot"><h2><span>About <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
 				<div class="col-md-4 center">
 					<div class="d_group">
-						<?php 	$image = get_field('developer_image');
-						if( !empty($image) ): ?>
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php 	//$image = get_field('developer_image');
+						$imageurl = getHydrameta(get_the_ID(),'hf_property_developer_image', 'url');
+						$imagealt = getHydrameta(get_the_ID(),'hf_property_developer_image', 'alt');
+						if( !empty($imageurl) ): ?>
+							<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" />
 						<?php 	endif; ?>
 					</div>
 				</div>
 				<div class="col-md-8">
-					<p class="caps_text"><?php the_field('developer_description'); ?></p>
+					<p class="caps_text"><?php echo getHydrameta(get_the_ID(),'hf_property_developer_description'); //the_field('developer_description'); ?></p>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-12">
 			<div class="row">
-				<div class="col-md-4 center"><h5>YEAR OF ESTABLISHMENT</h5><p><?php the_field('year_of_establishment')?></p></div>
-				<div class="col-md-4 center"><h5>TOTAL PROJECTS</h5><p><?php the_field('total_projects')?></p></div>
-				<div class="col-md-4 center"><h5>ASSOCIATE MEMBERSHIPS</h5><p><?php the_field('associate_memberships')?></p></div>
+				<div class="col-md-4 center"><h5>YEAR OF ESTABLISHMENT</h5><p><?php echo getHydrameta(get_the_ID(),'hf_property_year_establishment');//the_field('year_of_establishment')?></p></div>
+				<div class="col-md-4 center"><h5>TOTAL PROJECTS</h5><p><?php echo getHydrameta(get_the_ID(),'hf_property_total_projects');//the_field('total_projects')?></p></div>
+				<div class="col-md-4 center"><h5>ASSOCIATE MEMBERSHIPS</h5><p><?php echo getHydrameta(get_the_ID(),'hf_property_associate_memberships'); //the_field('associate_memberships')?></p></div>
 			</div>
 		</div>
 	</div>	
 		
 	<div class="row" id="contact-developer">	
 		<div class="col-md-12 popup-this-contact-form">
-			<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php the_field('developer_name'); ?></span></h2></div>
+			<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
 				<div class="col-md-4 center">
 					<?php /*	$image = get_field('developer_image');
@@ -1115,16 +1222,17 @@ jQuery(function(){
 					
 				
 					<div class="contact_inn"><h4>
-					<?php 	$image = get_field('developer_image');
-					if( !empty($image) ): ?>
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php //	$image = get_field('developer_image');
+					if( !empty($imageurl) ): ?>
+						<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" />
 					<?php 	endif; ?>
-					<?php the_field('developer_contact_no.')?></h4></div>
+					<?php echo getHydrameta(get_the_ID(),'hf_property_developer_contact_no'); //the_field('developer_contact_no.')?></h4></div>
 					<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
 				</div>
 				<div class="col-md-8 right_cont form_parent">
 					<!--<p></p>-->
-					<?php $contact_value = get_field('contact_form_shortcode')?>
+					<?php //$contact_value = get_field('contact_form_shortcode')?>
+					<?php $contact_value = getHydrameta(get_the_ID(),'hf_property_contact_form_shortcode'); ?>
 					<?php echo do_shortcode($contact_value)?>
 				</div>
 			</div>

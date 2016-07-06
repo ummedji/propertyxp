@@ -15,7 +15,32 @@
             </a>
             <div class="slider-info">
                 <div class="price">
-                    <?php echo hydra_render_field($slide->ID, 'price'); ?>
+                    <?php 
+					//echo $slide->ID;
+					$price = getHydrameta($slide->ID,'hf_property_starting_price');
+					$num = $price;
+									$ext="";//thousand,lac, crore
+									$number_of_digits = count_digit($num); //this is call :)
+										if($number_of_digits>3)
+									{
+										if($number_of_digits%2!=0)
+											$divider=divider($number_of_digits-1);
+										else
+											$divider=divider($number_of_digits);
+									}
+									else
+										$divider=1;
+
+									$fraction=$num/$divider;
+									//$fraction=number_format($fraction,2);
+									if($number_of_digits==4 ||$number_of_digits==5)
+										$ext="k";
+									if($number_of_digits==6 ||$number_of_digits==7)
+										$ext="Lac";
+									if($number_of_digits==8 ||$number_of_digits==9)
+										$ext="Cr";
+									echo $fraction." ".$ext;
+					//echo hydra_render_field($slide->ID, 'price'); ?>
                 </div>
                 <!-- /.price-->
 
@@ -84,7 +109,33 @@
 								<div class="label"><p>Price</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $price_value; ?></div>
+									<div class="field-value"><?php
+
+									//function call
+									$num = $price_value;
+									$ext="";//thousand,lac, crore
+									$number_of_digits = count_digit($num); //this is call :)
+										if($number_of_digits>3)
+									{
+										if($number_of_digits%2!=0)
+											$divider=divider($number_of_digits-1);
+										else
+											$divider=divider($number_of_digits);
+									}
+									else
+										$divider=1;
+
+									$fraction=$num/$divider;
+									$fraction=number_format($fraction,2);
+									if($number_of_digits==4 ||$number_of_digits==5)
+										$ext="k";
+									if($number_of_digits==6 ||$number_of_digits==7)
+										$ext="Lac";
+									if($number_of_digits==8 ||$number_of_digits==9)
+										$ext="Cr";
+									echo $fraction." ".$ext;
+
+									//echo $price_value; ?></div>
 									
 								</div>
 							</div>
@@ -147,3 +198,30 @@
     </a>
 </div>
 <?php } ?>
+<?php 
+if (function_exists('count_digit')) { 
+}
+else
+{
+	function count_digit($number) {
+	  return strlen($number);
+	}	
+}
+if (function_exists('divider')) { 
+}
+else
+{
+	function divider($number_of_digits) {
+		$tens="1";
+	  while(($number_of_digits-1)>0)
+	  {
+		$tens.="0";
+		$number_of_digits--;
+	  }
+	  return $tens;
+	}	
+}
+
+
+
+?>
