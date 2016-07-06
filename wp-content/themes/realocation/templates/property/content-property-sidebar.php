@@ -1,4 +1,4 @@
-<div class="property-small clearfix">
+<div class="property-small clearfix small-image-s">
     <?php if(has_post_thumbnail()): ?>
     <div class="property-small-picture col-sm-12 col-md-4">
         <div class="property-small-picture-inner">

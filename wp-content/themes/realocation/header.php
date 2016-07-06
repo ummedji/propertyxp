@@ -42,138 +42,138 @@
       "10000000",
       "50000000",
       "100000000",
- 
+
     ];
 	 jQuery( "#hydra-hf-property-maximum-price-filter-items-0-value" ).autocomplete({
 	      source: availableTags
 	    });
-	    
+
 	  jQuery( "#hydra-hf-property-minimum-price-filter-items-0-value" ).autocomplete({
 	      source: availableTags
 	    });
 	});
     </script>
-    
+
 <script type="text/javascript">
 	jQuery(document).ready(function (){
 
 		jQuery('.custom-menu-button').click(function(){
 			jQuery('.custom-menu-content').addClass('custom-menu-active').removeClass('custom-menu-deactive');
-			jQuery('.custom-menu-button').addClass('custom-menu-deactive').removeClass('custom-menu-active');			
+			jQuery('.custom-menu-button').addClass('custom-menu-deactive').removeClass('custom-menu-active');
 		});
 
 		jQuery('.custom-menu-close').click(function(){
 			jQuery('.custom-menu-content').addClass('custom-menu-deactive').removeClass('custom-menu-active');
-			jQuery('.custom-menu-button').addClass('custom-menu-active').removeClass('custom-menu-deactive');			
+			jQuery('.custom-menu-button').addClass('custom-menu-active').removeClass('custom-menu-deactive');
 		});
-		
+
 		setTimeout(function(){
-		 
+
 		 var html_data = "";
-		 
+
 		  jQuery("div#hidden_ammineties div.inner ul li").each(function( index, element){
 			jQuery("ul.amenities-options").empty();
 			jQuery(this).find("i").html();
-			
-			
-			
+
+
+
 			if(jQuery(this).find("i").hasClass("fa-ban")){
-				
+
 				var regex = /(<([^>]+)>)/ig
 				var result_data = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
-				
+
 				var result = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
-				
+
 				if(result.indexOf(' ') >= 0){
-					
+
 					result = result.replace(/\s+/g, '-');
-					
+
 				}
 				html_data += '<li class="single-amenity"><div class="fade"><img src="<?php bloginfo('template_directory')?>/images/'+result+'.png" ></div><div class="fade-text text amenities_cn">'+result_data+'</div></li>';
-				
+
 			}
 			else{
 				var regex = /(<([^>]+)>)/ig
-				
-				
+
+
 				var result_data = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
-				
+
 				var result = jQuery.trim(jQuery(this).html().replace(regex, "")).toUpperCase();
-				
+
 				if(result.indexOf(' ') >= 0){
-					
+
 					result = result.replace(/\s+/g, '-');
-					
+
 				}
-				
-				
+
+
 				html_data += '<li class="single-amenity"><div class=""><img src="<?php bloginfo('template_directory')?>/images/'+result+'.png" ></div><div class=" text amenities_cn">'+result_data+'</div></li>';
-				
-				
+
+
 			}
-			
-		  
+
+
 		  });
-		  
+
 		  jQuery("ul.amenities-options").append(html_data);
-		  
+
 		}, 3000);
-		
+
 		//var price = jQuery("div.hf-property-price div.field-value").html();
-		
+
 		jQuery("div.hf-property-price div.field-value").each(function(index,element){
-		
+
 			var price = jQuery(this).html();
-			
+
 			if(price != ""){
 				jQuery(this).html('<i class="fa fa-inr fa-1x"></i>&nbsp;'+price);
-			
+
 			}
 			//alert(index+"===="+element);
-		
+
 		});
-		
-		
+
+
 		jQuery("div.developer-menu ul li a").on("click",function(){
-		
+
 			jQuery("div.developer-menu ul li a").removeClass("active");
 			jQuery(this).addClass("active");
-		
+
 		});
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		jQuery(window).scroll(function(){
 
 			//console.log("SCROLL");
-			var footer_offset = jQuery("div#footer-wrapper").offset().top;		
+			var footer_offset = jQuery("div#footer-wrapper").offset().top;
 			var left_side_bar = jQuery("div.developer-menu").offset().top;
-			
+
 			var diff = parseInt(footer_offset)-600;
 			var data =  parseInt(footer_offset)-1100;
-		
+
 		/*	console.log(jQuery("div.developer-menu").offset().top +"===="+ diff+"===="+footer_offset+"===="+data+"===");
-		
+
 			if(jQuery("div.developer-menu").offset().top >= diff){
-				
+
 				jQuery("div.developer-menu").css({ "top":data, "position": "absolute","left":"-90px" });
-				
-			
+
+
 			}
 			else{
-			
+
 				jQuery("div.developer-menu").css({ "top":"0px", "position": "fixed","left":"0px" });
 			}
 		*/
-			
+
 		});
-		
-		
-		
-		
+
+
+
+
 	});
 </script>
 
@@ -196,7 +196,7 @@
 		})(jQuery);
 	</script>
   <?php
- $selected_template_value = get_field("select_template");    
+ $selected_template_value = get_field("select_template");
      if($selected_template_value == 'developer'){
   ?>
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS" />
@@ -220,12 +220,12 @@
 	<?php /*echo do_shortcode('[AnythingPopup id="4"]'); */?>
 
 </div>-->
-	<!--		
+	<!--
 <div class="custom-menu">
 		<a class="custom-menu-button custom-menu-active fa fa-bars " href="##">Menu</a>
 		<div class="custom-menu-content custom-menu-deactive">
 			<a class="custom-menu-close" href="##">X</a>
-			<?php echo do_shortcode('[custom_menu]');?>	
+			<?php echo do_shortcode('[custom_menu]');?>
 		</div>
 </div> -->
 
@@ -244,35 +244,35 @@
 
                 <?php require_once 'templates/header-top.php'; ?>
 
-                <?php 
+                <?php
 	                $person_field = strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid'));
-                
-               
+
+
                 	if($person_field == 'Developer') {
 
                 	} else {
                 		//require_once 'templates/header-navigation.php';
 			}
-				?>	
+				?>
             </div><!-- /.header-inner -->
         </div><!-- /#header -->
     </div><!-- /#header-wrapper -->
 
     <div id="main-wrapper">
         <div id="main">
-        <?php if (is_singular(array('property'))) { 
-            
+        <?php if (is_singular(array('property'))) {
+
         		//if($person_field == 'Developer') {
-            
+
                         /*
                         * NEW TEMPLATE APPROACH CODE ADDED
                         * if statement change on the basics of selected templated value earlier it dependes on person field.
                         */
-            
-                         $selected_template_value = get_field("select_template");    
+
+                         $selected_template_value = get_field("select_template");
                         if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2'){
-                            
-        			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' )); 
+
+        			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' ));
         			$sa = get_field('slider_alias');
         			if($sa != '') {
 						?>
@@ -281,7 +281,7 @@
 							</div>
 						<?php
 					}
-					
+
 						}
 				 if($selected_template_value == 'developer'){
         		?>
@@ -311,22 +311,22 @@
 								</div>
 
 							</div>-->
-        		<?php 
+        		<?php
         		}
         	} ?>
             <div id="main-inner">
                 <?php dynamic_sidebar( 'top-fullwidth' ); ?>
-                
+
                 <?php if (is_singular(array('property'))){
-                    
-    				
-    				//if($person_field != 'Developer') { 
+
+
+    				//if($person_field != 'Developer') {
                     /*
                         * NEW TEMPLATE APPROACH CODE ADDED
                         * if statement change on the basics of selected templated value earlier it dependes on person field.
                         */
-            
-                    $selected_template_value = get_field("select_template");    
+
+                    $selected_template_value = get_field("select_template");
                     if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2'){
 
                     wp_enqueue_script('googlemaps3');
@@ -339,12 +339,12 @@
                             <div class="temp3map"><div id="map-property">
                             </div><!-- /#map-property -->
 							</div>
-                        <?php endif; 
-                    	 endif; 
-                    	 add_action('aviators_footer_map_detail', 'aviators_properties_map_detail'); 
+                        <?php endif;
+                    	 endif;
+                    	 add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
 						}
                 	  	elseif($selected_template_value == 'developer') {
-							
+
 						?>
 						<div class="developer-menu top-dev-menu df">
 							<div class="container">
@@ -441,42 +441,42 @@
 							</div>-->
 
 							<!--<div class="im-interested" style="border:none !important; border-color:none !important;"> -->
-								
+
 
 							<div class="im-interested" style="border:none !important; border-color:none !important;">
 								<?php echo do_shortcode('[AnythingPopup id="4"]'); ?>
 							</div>
-							
+
 							<div class="interested_cl">
 								<div class="in_int_btn">
 									<span class="text_of_ints"><i class="fa fa-envelope"></i><a href="javascript:AnythingPopup_OpenForm('AnythingPopup_BoxContainer4','AnythingPopup_BoxContainerBody4','AnythingPopup_BoxContainerFooter4','800','550');">I'M INTERESTED</a></span>
 								</div>
 							</div>
-							
+
 
 							<!--div class="left_shar">
 								<div class="inn_share_btn">
 									<div class="share_txt"><i class="fa fa-share-alt" aria-hidden="true"></i> <span id="share_property">share Property</span></div>
-									
-									
+
+
 								</div>
-								
-								
-								
+
+
+
 							</div-->
 
 						</div>
-						<?php 
+						<?php
 					  	}
 
                 	}?>
 
                 <div class="container">
-                	<?php 	echo do_shortcode('[AnythingPopup id="1"]'); 
+                	<?php 	echo do_shortcode('[AnythingPopup id="1"]');
                 		echo do_shortcode('[AnythingPopup id="2"]');
                 		echo do_shortcode('[AnythingPopup id="3"]');?>
                     <?php dynamic_sidebar( 'top' ); ?>
-                   
+
                     <?php echo aviators_render_messages(); ?>
 
                     <div class="block-content block-content-small-padding as-content-pr">

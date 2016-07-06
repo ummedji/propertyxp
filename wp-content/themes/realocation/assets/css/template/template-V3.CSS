@@ -773,3 +773,18 @@ span.marketnave_i {
     margin-top: -3px;
 
 }
+
+@media screen and (max-width: 991px) {
+    .map_bot_border{
+        margin-top: 39px;
+    }
+    .v3-filter .select-wrapper{
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    .left_interested.fixed {
+        right: 5%;
+    }
+}

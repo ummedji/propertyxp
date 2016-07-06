@@ -402,7 +402,7 @@ span.marketnave_i {
 }
 @media screen and (max-width:767px){
     h2.pro_tl, .top_tena_price { text-align: center;}
-    .price_right { right: 35px;}
+   /* .price_right { right: 35px;}*/
     .single-amenity { width: 32% !important;}
     .as_row-wise-amenities .properties-filter {
         float: none;
@@ -464,3 +464,31 @@ span.marketnave_i {
     margin-top: -3px;
 
 }
+.v1-filter .properties-filter li{
+    margin: 5px 4px;
+}
+
+/* start al-burooj responsive css */
+@media screen and (max-width: 1200px) {
+    .map-filter{
+        margin-right: -28px !important;
+    }
+}
+/*.map-filter{
+    margin-right: 8px;
+}*/
+
+@media screen and (max-width: 991px) {
+    .gallery-top{
+        text-align: left !important;
+    }
+    .v1-filter .select-wrapper{
+        margin-right: 0px !important;
+    }
+    .al-burooj-border span{
+        margin-top: 39px;
+    }
+}
+
+
+/* End al-burooj responsive css */

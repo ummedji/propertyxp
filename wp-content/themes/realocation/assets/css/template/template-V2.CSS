@@ -143,7 +143,7 @@ p.icon_cont {
 .inn_map_cont .map-tabs-links {
     position: absolute;
     top: 4px;
-    right: 200px;
+    right: 198px;
     z-index: 99999;
 }
 .inn_map_cont .select-wrapper select {
@@ -566,4 +566,19 @@ span.marketnave_i {
     margin-right: -15px;
     margin-top: -3px;
 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .inn_map_cont .map-tabs-links{
+        right: 165px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .map_bot_border span {
+        margin-top: 39px;
+    }
+    .v2-filter .select-wrapper{
+        margin-right: 0px !important;
+    }
 }

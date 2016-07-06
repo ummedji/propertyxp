@@ -935,8 +935,8 @@ jQuery(function(){
 				</div>
 	    </div>
 	    <?php */?>
-	     <div class="col-md-12 inn_map_cont" >
-		     <ul class="map-tabs-links properties-filter">
+	     <div class="col-md-12 inn_map_cont v1-filter">
+		     <ul class="map-tabs-links properties-filter map-filter">
 			       <li class="selected">
 			       		<a href="#"  onclick ="removeonlyMarkers();clearResults();" class="first-click-this">BUILDINGS </a>
 			       </li>
@@ -950,7 +950,7 @@ jQuery(function(){
 	    	$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
 	    	echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]')?>
 	    </div>
-		<div class="col-md-12 map_bot_border"><span></span></div>
+		<div class="col-md-12 map_bot_border al-burooj-border"><span></span></div>
 	 
 	</div>
         

@@ -5,23 +5,23 @@
 
                 <?php if ( get_theme_mod('general_logo') ) : ?>
                     <span class="header-icon"><img src="<?php echo get_theme_mod('general_logo'); ?>" alt="<?php echo __( 'Home', 'aviators' ); ?>" /></span>
-					
+
                 <?php else: ?>
 <!--                     <span class="header-icon"><i class="fa fa-home"></i></span> -->
                 <?php endif; ?>
                 <span class="header-title"><span class="varient-logo"></span>
                 	<!-- <img src="<?php bloginfo('template_directory'); ?>/images/PXP-LOGO.png" ><?php //echo get_bloginfo( 'name' ); ?> -->
-					
+
 					<span class="header-slogan"><?php echo html_entity_decode(get_bloginfo( 'description' )); ?></span><!-- /.header-slogan -->
-					
+
                 </span><!-- /.header-title -->
-				
+
                 <!--span class="header-slogan"><?php //echo html_entity_decode(get_bloginfo( 'description' )); ?></span--><!-- /.header-slogan -->
-				
+
             </a><!-- /.header-identity-target-->
-			
+
         </div><!-- /.header-identity -->
-		
+
 		<?php if(function_exists('aviators_settings_get')): ?>
             <?php if( aviators_settings_get('submission', 'general', 'display_link')): ?>
                 <div class="header-actions">
@@ -36,10 +36,10 @@
 			<?php
 				require_once 'header-navigation.php';
 			?>
-		
-		
 
-       
+
+
+
         <?php endif; ?>
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-navigation" aria-expanded="false">

@@ -694,7 +694,7 @@ jQuery(function(){
 				</div>
 	    </div>
 	    <?php */?>
-			<div class="col-md-12 inn_map_cont" >
+			<div class="col-md-12 inn_map_cont v3-filter">
 				<ul class="map-tabs-links properties-filter">
 					<li class="selected">
 						<a href="#"  onclick ="removeonlyMarkers();clearResults();" class="first-click-this">BUILDINGS </a>

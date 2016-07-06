@@ -911,4 +911,70 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 /*.hexagon_top{
 	margin-top: -40px;
 }*/
+.info-links{
+	margin-left: -10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.amenities-options{
+		margin-left: 0px !important;
+	}
+}
+@media screen and (max-width: 991px){
+	.properties-filter{
+		margin-bottom: 0px !important;
+	}
+	.flex-viewport{
+		width: 100%;
+	}
+	.left-filter{
+		margin-left: 0px !important;
+	}
+
+	.properties-items-three_sixty_data img{
+		width: 100%;
+	}
+	.form_parent{
+		margin-left: -15px;
+	}
+}
+
+
+
+/* start about us page css */
+@media screen and (max-width: 767px){
+	.small-image-s a img{
+		width: inherit !important;
+	}
+	.small-image-s .property-small-content{
+		margin-left: 10px;
+	}
+	.small-image-s .property-small-title{
+		text-transform: capitalize;
+	}
+}
+/* end about us page css */
+
+/* start poupup content css */
+#popup_content .wpcf7 textarea{
+	height: 26px;
+}
+/* start poupup content css */
+
+/* start footer css responsive */
+@media screen and (max-width: 991px) {
+	.right-m-f{
+		margin-right: 20px;
+	}
+}
+/* End footer css responsive */
+@media screen and (max-width: 500px) {
+	.tp-rightarrow{
+		margin-top: 20px !important;
+	}
+	.as_inn_slider .tp-leftarrow{
+		margin-top: 20px !important;
+	}
+}
+
 /* end hr css */

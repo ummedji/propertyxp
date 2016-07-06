@@ -1,6 +1,7 @@
 <div class="header-bar as_header_bar">
     <div class="container">
-        <?php dynamic_sidebar( 'topbar-left'); ?>
+
+       <!-- --><?php /*dynamic_sidebar( 'topbar-left'); */?>
 
         <?php if ( function_exists( 'icl_sitepress_activate' ) ) : ?>
             <?php echo do_action( 'icl_language_selector' ); ?>
@@ -31,7 +32,7 @@
                 <?php //echo $menu; ?>
             <?php //endif ?>
         <?php endif; ?>
-        <?php 
+        <?php
         $terms = get_terms( 'locations' , array('parent'=> 0,) );
         echo '<div class="all-state-list">';
         	echo '<div class="select-your-state-or-city">Select Your state or city</div>';
@@ -56,7 +57,7 @@
 	       
         echo '</div>';
 
-        echo '<div class="terms_and">';
+       /* echo '<div class="terms_and">';
 
             $menu = wp_nav_menu( array(
                 'container_class' => 'header-bar-nav',
@@ -69,7 +70,7 @@
             echo $menu;
 //<a href="#">Terms & Conditions</a>';
 
-        echo '</div>';
+        echo '</div>';*/
         ?>
         <?php /* ?>
         <div class="widget widget_text">
