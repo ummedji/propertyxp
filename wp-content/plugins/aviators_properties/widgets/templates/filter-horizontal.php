@@ -6,6 +6,9 @@
     #hf-property-starting-price-filter-1{
         margin-bottom: 15px !important;
     }
+	#hf-property-starting-price-filter{
+        margin-bottom: 15px !important;
+    }
     #hf-property-type-filter{
         background-color: #bf224e;
     }
