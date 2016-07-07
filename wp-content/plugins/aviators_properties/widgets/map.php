@@ -119,11 +119,7 @@ class Map_Widget extends WP_Widget {
                     <?php add_action('aviators_footer_map_widget', 'aviators_properties_init_map'); ?>
                 </div>
                 <!-- /.map -->
-<?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
-	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-		<?php dynamic_sidebar( 'home_right_1' ); ?>
-	</div><!-- #primary-sidebar -->
-<?php endif; ?>
+
             <?php if ($instance['show_filter']) : ?>
                 <div class="filter-container <?php if($instance['is_horizontal']): ?>filter-horizontal<?php endif; ?>">
 
@@ -145,12 +141,10 @@ class Map_Widget extends WP_Widget {
                                             ?>
                                         <?php endif; ?>
 
-                                        <?php
-										
-										$renderer = new HydraAdvancedRender($form); ?>
+                                        <?php $renderer = new HydraAdvancedRender($form); ?>
 
-                                        <?php /*if($path = aviators_get_template('filter', 'horizontal', null, false)): ?>
-                                            <?php echo $path;  include($path); ?>
+                                        <?php/* if($path = aviators_get_template('filter', 'horizontal', null, false)): ?>
+                                            <?php include($path); ?>
                                         <?php else: */?>
                                             <?php if($instance['is_horizontal']): ?>
                                                 <?php include 'templates/filter-horizontal.php'; ?>

@@ -10293,3 +10293,4 @@ h2.pro_tl {
 	}
 }
 /*responsive*/
+.well_box .form-group, .well_box select { border: solid 1px #4a8fd8 !important;}

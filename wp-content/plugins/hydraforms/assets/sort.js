@@ -122,7 +122,7 @@ function widgetSettings() {
             is_filter = 1;
         }
         jQuery.ajax({
-            url: "/hydrawidget/" + value + "/" + fieldId + "/" + is_filter
+            url: "/qa/propertyxp/hydrawidget/" + value + "/" + fieldId + "/" + is_filter
         }).done(function (data) {
 
                 jQuery("#widget").html(data);

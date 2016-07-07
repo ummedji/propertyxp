@@ -1,6 +1,64 @@
+<?php 
+$args = array('orderby'=>'asc','hide_empty'=>false,'parent'=>0);
+$terms = get_terms('locations', $args);
+foreach($terms as $term)
+{
+	$args = array('orderby'=>'asc','hide_empty'=>false,'parent'=>$term->term_id);
+	$cityterms = get_terms('locations', $args);
+	foreach($cityterms as $cityval)
+	{
+		$cityarr[] = $cityval;
+	}
+}
+$getcurrentcity = $_GET['hf_property_location_filter']['items'][0]['location'];
+if(!empty($getcurrentcity))
+{
+$selcity =	get_term_by( 'id', $getcurrentcity, 'locations');
+//$selcity = get_terms('locations', $getcurrentcity);
+?>
+<script>
+jQuery(document).ready(function() {
+jQuery('.as_header_bar .container > a').html('Chnage City : '+'<?php echo $selcity->name; ?>');	
+});
+</script>
+<?php } ?>
+<script>
+jQuery(document).ready(function() {
+	jQuery('#lunchBegins').change(function() {
+	var term_id = this.value;
+	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter[items][0][location]='+term_id+'&submit=Search';
+	window.location.href = url;
+	});
+});
+
+</script>
+<div class="collapse" id="collapseExample">
+    <div class="well_box text-center">
+        <button class="btn btn-primary cls_btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <div class="fa fa-times" aria-hidden="true"></div>
+        </button>
+        <h3>SELECT YOUR CITY</h3>
+        <form class="form-inline">
+            <div class="form-group">
+                <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Please select a lunch ...">
+				<?php foreach($cityarr as $city) {  
+				if($getcurrentcity == $city->term_id) { 
+				$select = 'selected'; } else { $select = ''; } 
+				?>
+				 <option value="<?php echo $city->term_id; ?>" <?php echo $select; ?>><?php echo '<a href="'.get_bloginfo('url').'/properties/?hf_property_location_filter%5Bitems%5D%5B0%5D%5Bcountry%5D='.$term->term_id.'&submit=Search">' . $city->name . '</a>'; ?></option>
+				<?php } ?>
+				<?php ?>
+                </select>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</div>
 <div class="header-bar as_header_bar">
     <div class="container">
-
+        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Select Your City
+        </a>
        <!-- --><?php /*dynamic_sidebar( 'topbar-left'); */?>
 
         <?php if ( function_exists( 'icl_sitepress_activate' ) ) : ?>
@@ -34,12 +92,11 @@
         <?php endif; ?>
         <?php
         $terms = get_terms( 'locations' , array('parent'=> 0,) );
-        echo '<div class="all-state-list">';
+        /*echo '<div class="all-state-list">';
         	echo '<div class="select-your-state-or-city">Select Your state or city</div>';
 	        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 	        	echo '<div class="state-menu">';
 		        	foreach ( $terms as $term ) {
-						
 		        		echo '<a href="'.get_bloginfo('url').'/properties/?hf_property_location_filter%5Bitems%5D%5B0%5D%5Bcountry%5D='.$term->term_id.'&submit=Search">' . $term->name . '</a>';
 		        		
 		        		$child_terms = get_terms( 'locations' , array('parent'=> $term->term_id) );
@@ -55,7 +112,7 @@
 	        	echo '</div>';
 	        }
 	       
-        echo '</div>';
+        echo '</div>';*/
 
        /* echo '<div class="terms_and">';
 

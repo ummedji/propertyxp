@@ -1,9 +1,9 @@
 <div <?php post_class() ?>>
-    <div class="clearfix">
+    <div class="clearfix top-article">
         <?php $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ); ?>
 
         <div class="col-md-2">
-            <div class="post-date">
+            <div class="post-date date-format">
                 <span class="month"><?php echo get_the_date('M'); ?></span>
                 <span class="day"><?php echo get_the_date('d'); ?></span>
             </div><!-- /.post-date -->

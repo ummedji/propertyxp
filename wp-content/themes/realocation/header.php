@@ -8,6 +8,7 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
 
     <?php wp_head(); ?>
 
@@ -27,6 +28,7 @@
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/developer-icon.css">
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
     <script>
     jQuery( document ).ready(function() {
     var availableTags = [
@@ -181,6 +183,11 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css" />
 
 	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+
+	<!--<link rel="stylesheet" href="<?php /*bloginfo('template_directory'); */?>/assets/css/bootstrap-select.css" />
+	<script type='text/javascript' src="<?php /*bloginfo('template_directory'); */?>/assets/js/bootstrap-select.js" ></script>-->
+
+
 	<script>
 		(function($){
 			$(window).load(function(){
@@ -196,7 +203,10 @@
 		})(jQuery);
 	</script>
   <?php
- $selected_template_value = get_field("select_template");
+  $selected_template = getHydrameta(get_the_ID(),'hf_property_bselect_template');
+ $selected_template_value = get_field("select_template"); 
+ //$selected_template_value = trim($selected_template); 
+ 
      if($selected_template_value == 'developer'){
   ?>
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V1.CSS" />
@@ -273,7 +283,8 @@
                         if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2'){
 
         			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' ));
-        			$sa = get_field('slider_alias');
+        			//$sa = get_field('get_field');
+        			$sa = getHydrameta(get_the_ID(),'hf_property_slider_alias');
         			if($sa != '') {
 						?>
 						<div class="as_inn_slider">

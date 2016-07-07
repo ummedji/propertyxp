@@ -5,6 +5,8 @@ define ('AVIATORS_SIDEBARS_ANY', 0);
 
 define('THEMENAME', 'realocation');
 
+define('PROPERY_ID',get_the_ID());
+
 require_once get_template_directory() . '/launcher/launcher.php';
 /*****************************************************************
  * Misc
@@ -850,9 +852,41 @@ function filter_add_posts_singletime($query)
 	jQuery(document).ready(function(){
            
            <?php
-           if($_REQUEST["post_type"] == "property" || (isset($_REQUEST["post"]) && $_REQUEST["action"] == "edit")){
+          /* if($_REQUEST["post_type"] == "property" || (isset($_REQUEST["post"]) && $_REQUEST["action"] == "edit")){ */
+		  $property_id = get_post_type($_GET['post']);
+			if(trim($property_id) == 'property' || $_REQUEST["post_type"] == "property") {
            ?>
-           
+           jQuery(document).ready(function(){
+			   jQuery( "fieldset" ).addSelectAll('hf_property_2_bedroom_apartment_amenities');
+			  jQuery( "fieldset" ).addSelectAll('hf_property_3_bedroom_apartment_amenities');
+			  jQuery( "fieldset" ).addSelectAll('hf_property_4_bedroom_apartment_amenities');
+			  jQuery( "fieldset" ).addSelectAll('hf_property_amenitiesf');
+			  jQuery('.select_all_entity').click(function() {
+				if(this.checked) {
+				jQuery('[name="'+this.id+'"]').find('input[type=checkbox]').each(function(){
+					jQuery(this).prop('checked', true);
+				});
+				}
+				else{
+					jQuery('[name="'+this.id+'"]').find('input[type=checkbox]').each(function(){
+					jQuery(this).prop('checked', false);
+				});
+				}
+			  });
+		   });
+		  
+			(function($){
+				$.fn.addSelectAll = function( nameAttr ) {
+					
+						 jQuery( "[name="+nameAttr+"]" ).find('h3 > legend').append('<span style="float:right;">Select All <input type="checkbox" class="select_all_entity" id="'+nameAttr+'"></span>');
+						/*  jQuery(".select_all_entity").bind("click", theSelectAllcheck('aaa')); */
+					};
+				
+				}(jQuery));
+		function theSelectAllcheck(data)
+		   {
+			   alert(data);
+		   }	
            jQuery("body").find("label").each(function() {
                 var data = jQuery(this).text();
                 data = data.replace('*', '').trim();
@@ -1030,14 +1064,24 @@ add_filter('menu_order', 'custom_menu_order');
 }
 function RemoveAddMediaButtonsForNonAdmins()
 {
+	
    // if ( !current_user_can( 'manage_options' ) ) {
         remove_action( 'media_buttons', 'media_buttons' );
   //  }
 }
-if(isset($_GET['post_type']) && $_GET['post_type'] == 'property')
-{
+
+/*if(isset($_GET['post_type']) && $_GET['post_type'] == 'property')
+{	
 add_action('admin_head', 'RemoveAddMediaButtonsForNonAdmins');
-}
+}*/
+	
+$property_id = get_post_type($_GET['post']);
+	if(trim($property_id) == 'property' || $_REQUEST["post_type"] == "property")
+	{
+	add_action('admin_head', 'RemoveAddMediaButtonsForNonAdmins');
+	}
+
+
 add_action('do_meta_boxes', 'wpse33063_move_meta_box');
 function wpse33063_move_meta_box()
 {

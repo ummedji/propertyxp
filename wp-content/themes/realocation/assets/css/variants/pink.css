@@ -7677,9 +7677,9 @@ h2.property-detail-title,.block-content h3.property-detail-title,.block-content 
 	display: inline-block;
 	font-size: 14px;
 	font-weight: bold;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 15px;
 	padding: 6px 15px;
-	vertical-align: middle
+	vertical-align: middle;
 }
 
 .property-detail-overview {
@@ -10315,3 +10315,4 @@ h2.pro_tl {
 	}
 }
 /*responsive*/
+.well_box .form-group, .well_box select { border: solid 1px #bf224e !important;}
