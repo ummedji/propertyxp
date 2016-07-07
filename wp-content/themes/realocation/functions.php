@@ -1050,6 +1050,7 @@ function custom_menu_order($menu_ord) {
     );
 }
 function edit_admin_menus() {
+	
     global $menu;
     global $submenu;
 	$menu[47][0] = 'Manage Property';
@@ -1057,6 +1058,7 @@ function edit_admin_menus() {
     remove_menu_page('edit.php?post_type=agent');
 	}
 }
+add_action( 'admin_menu', 'edit_admin_menus' );
 if(!current_user_can('administrator'))
 {
 add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
