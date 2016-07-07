@@ -24,6 +24,12 @@ jQuery('.as_header_bar .container > a').html('Chnage City : '+'<?php echo $selci
 <?php } ?>
 <script>
 jQuery(document).ready(function() {
+	
+	jQuery("#hydra-hf-property-location-filter-items-0-location option:first").html('City');
+	jQuery("#hydra-hf-property-location-filter-items-0-location option:first").attr('selected');
+	jQuery("#hydra-hf-property-location-filter-items-0-sublocation option:first").html('Location');
+	jQuery("#hydra-hf-property-location-filter-items-0-sublocation option:first").attr('selected');
+
 	jQuery('#lunchBegins').change(function() {
 	var term_id = this.value;
 	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter[items][0][location]='+term_id+'&submit=Search';
