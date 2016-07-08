@@ -147,7 +147,7 @@ jQuery(function(){
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4 top_tena_price">
-							<?php print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
+							<?php  echo getHydrameta(get_the_ID(),'hf_property_starting_price');	//print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
 						</div>
 					</div>
 					<!-- /.header-title -->
