@@ -857,7 +857,7 @@ function filter_add_posts_singletime($query)
 				if(!isset($_GET['taxonomy'])) {
            ?>
            jQuery(document).ready(function(){
-			   
+				
 			  jQuery( "fieldset" ).addSelectAll(
 			   'hf_property_2_bedroom_apartment_amenities');
 			  jQuery( "fieldset" ).addSelectAll('hf_property_3_bedroom_apartment_amenities');
@@ -891,7 +891,10 @@ function filter_add_posts_singletime($query)
                  if(jQuery.trim(data.toLowerCase()) in tooltipMessage){ 
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
-					  jQuery("label").addClass('labelclass');
+					jQuery("label").addClass('labelclass');
+					jQuery( "label" ).find( ":checkbox" ).each(function(){   
+					jQuery(this).removeClass('labelclass');
+					});
 				 jQuery(this).attr({
                     title: tooltip_new_data
                   });
@@ -921,6 +924,8 @@ function filter_add_posts_singletime($query)
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
                   
+				  
+				  
                   jQuery(this).attr({
                     title: tooltip_new_data
                   });
