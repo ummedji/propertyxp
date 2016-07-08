@@ -180,7 +180,7 @@ jQuery(function(){
 					$termdata = array('1','2');
 				}
 				else
-				{
+				{  
 					$termdata = $termhydata;	
 				}
 				

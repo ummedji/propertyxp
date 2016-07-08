@@ -209,7 +209,7 @@ jQuery(function(){
 	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
 	        </div>
 			<?php 
-			$termdata = getHydrametaTerm(get_the_ID(),'hf_property_2_amenities');
+			$termhydata = getHydrametaTerm(get_the_ID(),'hf_property_2_amenities');
 				if(empty($termhydata))
 				{
 					$termdata = array('1','2');
