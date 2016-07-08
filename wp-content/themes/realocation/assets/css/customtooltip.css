@@ -216,7 +216,7 @@
 }
 
 .labelclass::after{
-	content: url('/wp-content/themes/realocation/images/question.png');
+	content: url('/qa/propertyxp/wp-content/themes/realocation/images/question.png');
 }
 .checkbox .labelclass::after{
 	content: url('') !important;
