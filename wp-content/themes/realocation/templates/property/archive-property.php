@@ -62,9 +62,11 @@ if($fullwidth) {
 }
 
 ?>
+<div class="col-md-12 text-center top-premuim">
 <h1><?php echo aviators_settings_get('property', 'archive', 'title'); ?></h1>
+</div>
 
-<ul class="properties-filter">
+<ul class="properties-filter as_properties-filter premium_property_filter">
        <li class="selected"><a href="#" data-filter="*"><span>All</span></a></li>
        <li><a href="#" data-filter=".Agent"><span>Agent</span></a></li>
        <li><a href="#" data-filter=".Individual"><span>Individual</span></a></li>
@@ -74,8 +76,8 @@ if($fullwidth) {
 <?php /*if (isset($sort) && $sort): ?>
     <?php aviators_get_template('sort', 'property'); ?>
 <?php endif; */?>
-<div class="properties-items isotope">
-<div class="items-list row">
+<div class="properties-items as_properties-items isotope">
+<div class="items-list">
 <?php //echo do_shortcode('[ajax_load_more post_type="property" offset="3" posts_per_page="9" button_label="Loading..."]'); ?>
     <?php  /*global $wpdb;
    echo "<pre>";

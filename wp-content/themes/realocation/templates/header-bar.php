@@ -32,7 +32,13 @@ jQuery(document).ready(function() {
 
 	jQuery('#lunchBegins').change(function() {
 	var term_id = this.value;
-	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter[items][0][location]='+term_id+'&submit=Search';
+	if(term_id == 0){
+	var url = '<?php echo get_bloginfo('url'); ?>';
+	}
+	else
+	{
+	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter[items][0][location]='+term_id+'&submit=Search';	
+	}
 	window.location.href = url;
 	});
 });
@@ -47,6 +53,7 @@ jQuery(document).ready(function() {
         <form class="form-inline">
             <div class="form-group">
                 <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Please select a lunch ...">
+				<option value="0">Select City</option>
 				<?php foreach($cityarr as $city) {  
 				if($getcurrentcity == $city->term_id) { 
 				$select = 'selected'; } else { $select = ''; } 

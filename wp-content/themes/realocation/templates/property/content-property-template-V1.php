@@ -73,7 +73,6 @@ jQuery(function(){
 </script>
 <?php
 //$res = do_action('wp_getHydrameta',get_the_ID(),'hf_property_2_amenities');
-
 ?>
 <div class="property-detail developer-details">
     	<div class="row as_flats" id="details" >
@@ -1095,8 +1094,10 @@ jQuery(function(){
       
 	<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
+	<?php if(showMap(get_the_ID())) { ?>
 	<script type="text/javascript">
-		jQuery("document").ready(function () {
+		jQuery("document").ready(function () { 
+		
 		    jQuery('#line_chart_container').highcharts({
 		        chart: {
 		            type: 'spline'
@@ -1171,15 +1172,17 @@ jQuery(function(){
 		    jQuery( ".first-click-this" ).trigger( "click" );
 		});
 	</script>
+	<?php } ?>
 	<div class="row" id="line_chart" >
 		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Insights Into <?php the_title();?></span></h2></div>
 	        	<p class="caps_text"><?php echo getHydrameta(get_the_ID(),'hf_property_insights'); ?></p>
          </div>
-	
+		<?php if(showMap(get_the_ID())) { ?>
 		<div class="col-md-12">
 			<div id="line_chart_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		</div>
+		<?php } ?>
 	</div>	
 	<div class="row" id="about-developer">
 		<div class="col-md-12">

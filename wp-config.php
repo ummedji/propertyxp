@@ -17,20 +17,29 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-define( 'AUTOMATIC_UPDATER_DISABLED', true );
-
 if($_SERVER["HTTP_HOST"] == "www.propertyxp.com"){
-
 define('DB_NAME', 'open_propertyxp');
 
 /** MySQL database username */
-define('DB_USER', 'sqlyog');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'sqlyog');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', '192.168.1.245');
+define('DB_HOST', 'localhost');
+
+//define('DB_NAME', 'open_propertyxp');
+
+/** MySQL database username */
+//define('DB_USER', 'sqlyog');
+
+/** MySQL database password */
+//define('DB_PASSWORD', 'sqlyog');
+ 
+ 
+/** MySQL hostname */
+//define('DB_HOST', '192.168.1.245');
 }
 else{
     

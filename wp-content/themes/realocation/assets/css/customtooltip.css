@@ -214,3 +214,14 @@
 #displayform::after{
 	content: url('/qa/propertyxp/wp-content/themes/realocation/images/question.png');
 }
+
+.labelclass::after{
+	content: url('/wp-content/themes/realocation/images/question.png');
+}
+.checkbox .labelclass::after{
+	content: url('') !important;
+}
+#title-prompt-text::after{
+	content: url('') !important;
+}
+

@@ -597,6 +597,11 @@ border: 2px solid #ff3401;}
 .as_properties-items .property-box {
 	padding: 0;
 }
+.as_properties-items .post {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
 .as_properties-items .property-box .property-box-inner .property-box-header {
 	min-height: inherit;
 	position: absolute;
@@ -1059,4 +1064,7 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 	width: 235px;
 	outline: none;
 	font-family: 'Raleway', 'Arial', sans-serif;
+}
+#main-content .properties-filter {
+	text-align: center !important;
 }

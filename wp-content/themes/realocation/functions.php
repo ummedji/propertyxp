@@ -381,7 +381,7 @@ function aviators_post_reference_item_render($view, $meta, $delta, $settings, $i
     $args = array(
         'post_type' => $field->attributes['post_type'],
         'post__in' => $item['value'],
-        'posts_per_page' => '9',
+        'posts_per_page' => '5',
     );
 
     query_posts($args);
@@ -425,7 +425,6 @@ function aviators_property_theme_supported_pages($supported_pages) {
         'meta_value' => 'page-properties.php',
         'numberposts' => -1
     ));
-
     if (!count($pages)) {
         return array();
     }
@@ -855,9 +854,12 @@ function filter_add_posts_singletime($query)
           /* if($_REQUEST["post_type"] == "property" || (isset($_REQUEST["post"]) && $_REQUEST["action"] == "edit")){ */
 		  $property_id = get_post_type($_GET['post']);
 			if(trim($property_id) == 'property' || $_REQUEST["post_type"] == "property") {
+				if(!isset($_GET['taxonomy'])) {
            ?>
            jQuery(document).ready(function(){
-			   jQuery( "fieldset" ).addSelectAll('hf_property_2_bedroom_apartment_amenities');
+			   
+			  jQuery( "fieldset" ).addSelectAll(
+			   'hf_property_2_bedroom_apartment_amenities');
 			  jQuery( "fieldset" ).addSelectAll('hf_property_3_bedroom_apartment_amenities');
 			  jQuery( "fieldset" ).addSelectAll('hf_property_4_bedroom_apartment_amenities');
 			  jQuery( "fieldset" ).addSelectAll('hf_property_amenitiesf');
@@ -877,25 +879,20 @@ function filter_add_posts_singletime($query)
 		  
 			(function($){
 				$.fn.addSelectAll = function( nameAttr ) {
-					
+				
 						 jQuery( "[name="+nameAttr+"]" ).find('h3 > legend').append('<span style="float:right;">Select All <input type="checkbox" class="select_all_entity" id="'+nameAttr+'"></span>');
-						/*  jQuery(".select_all_entity").bind("click", theSelectAllcheck('aaa')); */
+						 jQuery( "[name="+nameAttr+"]" ).find('h3 > legend').css('width','100%');
 					};
 				
-				}(jQuery));
-		function theSelectAllcheck(data)
-		   {
-			   alert(data);
-		   }	
+				}(jQuery));	
            jQuery("body").find("label").each(function() {
                 var data = jQuery(this).text();
                 data = data.replace('*', '').trim();
-                
-                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
+                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){ 
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
-                  
-                  jQuery(this).attr({
+					  jQuery("label").addClass('labelclass');
+				 jQuery(this).attr({
                     title: tooltip_new_data
                   });
               }
@@ -905,7 +902,6 @@ function filter_add_posts_singletime($query)
            jQuery("body").find(".hndle span").each(function() {
                 var data = jQuery(this).text();
                 data = data.replace('*', '').trim();
-               
                  if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
@@ -933,6 +929,7 @@ function filter_add_posts_singletime($query)
            });
            <?php
            }
+			}
            if($_REQUEST["page"] == "CF7DBPluginSubmissions"){
            ?>
            jQuery("body").find("#displayform").each(function() {
@@ -1056,9 +1053,18 @@ function edit_admin_menus() {
 	$menu[47][0] = 'Manage Property';
 	if(!current_user_can('administrator')){
     remove_menu_page('edit.php?post_type=agent');
+	add_action('admin_footer', 'remove_average_price');
 	}
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
+function remove_average_price()
+{ ?>
+<script>
+jQuery(document).ready(function(){
+	jQuery( "[name='hf_property_monthly_average_price']" ).remove();
+});
+</script> 	
+<?php }
 if(!current_user_can('administrator'))
 {
 add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
@@ -1153,6 +1159,37 @@ function getHydrameta($post_id, $meta_key, $image='')
 	return '';	
 	}
 }
-//add_action('wp_getHydrameta','getHydrameta',10,2);
+add_action('admin_footer', 'add_title_to_editor');
+function add_title_to_editor() {
+    global $post;
+    if (get_post_type($post) == 'property') : ?>
+        <script> jQuery('<h2>Add Property Description</h2>').insertBefore('#wp-content-editor-tools'); 
+		jQuery('<h2>Add Property Name</h2>').insertBefore('#titlediv'); </script>
+    <? endif;
+}
 
-
+function showMap($post_id)
+{
+	$month = ['hf_property_jan','hf_property_feb','hf_property_mar','hf_property_apr','hf_property_may','hf_property_june','hf_property_july','hf_property_aug','hf_property_sep','hf_property_oct','hf_property_nov','hf_property_dec'];
+	$a = 0;
+	foreach($month as $m)
+	{
+		if(getHydrameta($post_id,$m)=='')
+		{
+			
+		}
+		else
+		{
+		$a++;
+		break;
+		} 
+	}
+	if($a == 0)
+	{
+	return false;	
+	}
+	else
+	{
+	return true;		
+	}
+}

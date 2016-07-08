@@ -210,6 +210,14 @@ jQuery(function(){
 	        </div>
 			<?php 
 			$termdata = getHydrametaTerm(get_the_ID(),'hf_property_2_amenities');
+				if(empty($termhydata))
+				{
+					$termdata = array('1','2');
+				}
+				else
+				{
+					$termdata = $termhydata;	
+				}
 				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('Kitchen', $termdata)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
