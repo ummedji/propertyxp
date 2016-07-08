@@ -893,7 +893,7 @@ function filter_add_posts_singletime($query)
                   var tooltip_new_data = tooltipMessage[key];
 					jQuery("label").addClass('labelclass');
 					jQuery( "label" ).find( ":checkbox" ).each(function(){   
-					jQuery(this).removeClass('labelclass');
+					jQuery(this).parent().removeClass('labelclass');
 					});
 				 jQuery(this).attr({
                     title: tooltip_new_data
