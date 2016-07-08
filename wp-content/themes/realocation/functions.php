@@ -1192,7 +1192,7 @@ function showMap($post_id)
 	if($a == 0)
 	{
 	return false;	
-	}
+	}    
 	else
 	{
 	return true;		
