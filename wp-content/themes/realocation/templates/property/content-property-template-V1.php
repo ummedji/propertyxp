@@ -224,7 +224,28 @@ jQuery(function(){
 	        <div class="col-md-12 text-left mr_50">
 				<h3>2 BedRoom Apartment</h3>
 				<p class="cate_cont room-bto"> <?php the_title(); ?>  is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php 
+				$num = getHydrameta(get_the_ID(),'hf_property_2bedroomprice');
+				$ext="";
+				$number_of_digits = count_digit($num); 
+				if($number_of_digits>3)
+				{
+				if($number_of_digits%2!=0)
+				$divider=divider($number_of_digits-1);
+				else
+				$divider=divider($number_of_digits);
+				}
+				else
+				$divider=1;
+				$fraction=$num/$divider;
+				//$fraction=number_format($fraction,2);
+				if($number_of_digits==4 ||$number_of_digits==5)
+				$ext="k";
+				if($number_of_digits==6 ||$number_of_digits==7)
+				$ext="Lac";
+				if($number_of_digits==8 ||$number_of_digits==9)
+				$ext="Cr";
+				echo $fraction." ".$ext; ?></div>
 					<div class="clearfix"></div>
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
@@ -483,7 +504,28 @@ jQuery(function(){
 	        <div class="col-md-12 text-left mr_50">
 				<h3>3 BedRoom Apartment</h3>
 				<p class="room-bto1"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php 
+				$num = getHydrameta(get_the_ID(),'hf_property_3bedroomprice');
+				$ext="";
+				$number_of_digits = count_digit($num); 
+				if($number_of_digits>3)
+				{
+				if($number_of_digits%2!=0)
+				$divider=divider($number_of_digits-1);
+				else
+				$divider=divider($number_of_digits);
+				}
+				else
+				$divider=1;
+				$fraction=$num/$divider;
+				//$fraction=number_format($fraction,2);
+				if($number_of_digits==4 ||$number_of_digits==5)
+				$ext="k";
+				if($number_of_digits==6 ||$number_of_digits==7)
+				$ext="Lac";
+				if($number_of_digits==8 ||$number_of_digits==9)
+				$ext="Cr";
+				echo $fraction." ".$ext; ?></div>
 				<div class="clearfix"></div>
 
 				<div class="row bedroom_par">
@@ -634,7 +676,28 @@ jQuery(function(){
 	        <div class="col-md-12 text-left mr_50">
 				<h3>4 BedRoom Apartment</h3>
 				<p class="cate_cont room-bto2"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i> 2.98 Crs</div>
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php 
+				$num = getHydrameta(get_the_ID(),'hf_property_4bedroomprice');
+				$ext="";
+				$number_of_digits = count_digit($num); 
+				if($number_of_digits>3)
+				{
+				if($number_of_digits%2!=0)
+				$divider=divider($number_of_digits-1);
+				else
+				$divider=divider($number_of_digits);
+				}
+				else
+				$divider=1;
+				$fraction=$num/$divider;
+				//$fraction=number_format($fraction,2);
+				if($number_of_digits==4 ||$number_of_digits==5)
+				$ext="k";
+				if($number_of_digits==6 ||$number_of_digits==7)
+				$ext="Lac";
+				if($number_of_digits==8 ||$number_of_digits==9)
+				$ext="Cr";
+				echo $fraction." ".$ext; ?></div>
 				<div class="clearfix"></div>
 
 				<div class="row bedroom_par">

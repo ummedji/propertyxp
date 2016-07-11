@@ -876,20 +876,20 @@ function filter_add_posts_singletime($query)
 			e.preventDefault();
 			jQuery('#publish').click();
 			});
-		  /*jQuery('#hydra-hf-property-contract-type-items-0-value').change(function(){
+		  jQuery('#hydra-hf-property-contract-type-items-0-value').change(function(){
 			  var contracttype = jQuery("#hydra-hf-property-contract-type-items-0-value option[value='"+this.value+"']").text();
 			  if(jQuery.trim(contracttype) == 'Rent')
 			  {
-				jQuery('#hf-property-navailbale').show();
+				jQuery('#hf-property-available').show();
 			  }
 			  else
 			  {
-				 jQuery("#hydra-hf-property-navailbale-items-0-date").val('');
-				 jQuery('#hf-property-navailbale').hide();
+				 jQuery("#hydra-hf-property-available-items-0-date").val('');
+				 jQuery('#hf-property-available').hide();
 			  }
-		  });*/
+		  });
 			  
-			 jQuery('#hf-property-availbale-from').hide();
+			 jQuery('#hf-property-available').hide();
 			 //jQuery('#hf-property-navailbale').hide();
 			  jQuery( "fieldset" ).addSelectAll(
 			   'hf_property_2_bedroom_apartment_amenities');

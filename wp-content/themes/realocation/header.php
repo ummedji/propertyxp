@@ -305,7 +305,7 @@
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 top_tena_price">
-								<?php $price = getHydrameta(get_the_ID(), 'hf_property_starting_price'); 
+								<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php $price = getHydrameta(get_the_ID(), 'hf_property_starting_price'); 
 				$num = $price;
 				$ext="";
 				$number_of_digits = count_digit($num); 
@@ -326,7 +326,7 @@
 				$ext="Lac";
 				if($number_of_digits==8 ||$number_of_digits==9)
 				$ext="Cr";
-				echo $fraction." ".$ext;//print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
+				echo $fraction." ".$ext;//print hydra_render_field(get_the_ID(), 'price', 'detail'); ?></div>
 							</div>
 						</div>
 						<!-- /.header-title -->
