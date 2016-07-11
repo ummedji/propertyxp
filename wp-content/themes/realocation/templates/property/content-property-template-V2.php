@@ -1066,7 +1066,7 @@ jQuery(function(){
          <hr/>
           <div class="row as_flats" id="three_sixty_data" >
 	        <div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>360* OF <?php the_title();?></span></h2></div>
+	        	<div class="center section-title as_section_tl"><h2><span>360* View OF <?php the_title();?></span></h2></div>
 	        	
 	        		<div class="properties-items-three_sixty_data isotope">
 			    		<div class="items-list row">

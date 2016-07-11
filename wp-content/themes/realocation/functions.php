@@ -857,7 +857,40 @@ function filter_add_posts_singletime($query)
 				if(!isset($_GET['taxonomy'])) {
            ?>
            jQuery(document).ready(function(){
-				
+			
+			  //Rent Option customization
+			 /*jQuery('#hydra-hf-property-contract-type-items-0-value').change(function(){
+			  var contracttype = jQuery("#hydra-hf-property-contract-type-items-0-value option[value='"+this.value+"']").text();
+			  if(jQuery.trim(contracttype) == 'Rent')
+			  {
+				jQuery('#hf-property-availbale-from').show();
+			  }
+			  else
+			  {
+				 jQuery("#hydra-hf-property-availbale-from-items-0-value").val('');
+				 jQuery('#hf-property-availbale-from').hide();
+			  }
+		  });*/
+		   jQuery('#post').append('<input type="submit" value="Save" name="save" class="button button-primary button-large metabox_submit">');
+			jQuery('.metabox_submit').click(function(e) {
+			e.preventDefault();
+			jQuery('#publish').click();
+			});
+		  jQuery('#hydra-hf-property-contract-type-items-0-value').change(function(){
+			  var contracttype = jQuery("#hydra-hf-property-contract-type-items-0-value option[value='"+this.value+"']").text();
+			  if(jQuery.trim(contracttype) == 'Rent')
+			  {
+				jQuery('#hf-property-navailbale').show();
+			  }
+			  else
+			  {
+				 jQuery("#hydra-hf-property-navailbale-items-0-date").val('');
+				 jQuery('#hf-property-navailbale').hide();
+			  }
+		  });
+			  
+			// jQuery('#hf-property-availbale-from').hide();
+			 jQuery('#hf-property-navailbale').hide();
 			  jQuery( "fieldset" ).addSelectAll(
 			   'hf_property_2_bedroom_apartment_amenities');
 			  jQuery( "fieldset" ).addSelectAll('hf_property_3_bedroom_apartment_amenities');
@@ -1001,7 +1034,6 @@ function remove_menus_data () {
 	$restricted = array(__('Contact'),__('Media'));
          global $current_user;
              get_currentuserinfo();
-    
              if(!current_user_can('administrator')){
                 end ($menu);
                 while (prev($menu)){
@@ -1049,16 +1081,17 @@ function custom_menu_order($menu_ord) {
     if (!$menu_ord) return true;
     return array(
 		'edit.php?post_type=property', // Pages
+		'CF7DBPluginSubmissions', // Pages
     );
 }
 function edit_admin_menus() {
-	
     global $menu;
     global $submenu;
 	$menu[47][0] = 'Manage Property';
 	if(!current_user_can('administrator')){
     remove_menu_page('edit.php?post_type=agent');
 	add_action('admin_footer', 'remove_average_price');
+	
 	}
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
@@ -1066,15 +1099,16 @@ function remove_average_price()
 { ?>
 <script>
 jQuery(document).ready(function(){
+	jQuery('.separator').each(function(){jQuery(this).parent().remove();});
 	jQuery( "[name='hf_property_monthly_average_price']" ).remove();
 });
 </script> 	
 <?php }
-if(!current_user_can('administrator'))
-{
+/*if(!current_user_can('administrator'))
+{*/
 add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
 add_filter('menu_order', 'custom_menu_order');
-}
+//}
 function RemoveAddMediaButtonsForNonAdmins()
 {
 	
@@ -1092,6 +1126,7 @@ $property_id = get_post_type($_GET['post']);
 	if(trim($property_id) == 'property' || $_REQUEST["post_type"] == "property")
 	{
 	add_action('admin_head', 'RemoveAddMediaButtonsForNonAdmins');
+	
 	}
 
 
