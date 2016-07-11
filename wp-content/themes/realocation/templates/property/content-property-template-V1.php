@@ -1257,7 +1257,7 @@ jQuery(function(){
 						$imageurl = getHydrameta(get_the_ID(),'hf_property_developer_image', 'url');
 						$imagealt = getHydrameta(get_the_ID(),'hf_property_developer_image', 'alt');
 						if( !empty($imageurl) ): ?>
-							<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" style="width:100%; height:auto;" />
+							<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" style="width:25%; height:auto;" />
 						<?php 	endif; ?>
 					</div>
 				</div>
