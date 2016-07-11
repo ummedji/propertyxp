@@ -531,7 +531,7 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5 as-pull-right">
 						<?php //$sfa = get_field('3_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
+						 $sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -703,7 +703,7 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
 						<?php //$sfa = get_field('4_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
+						 $sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -1257,7 +1257,7 @@ jQuery(function(){
 						$imageurl = getHydrameta(get_the_ID(),'hf_property_developer_image', 'url');
 						$imagealt = getHydrameta(get_the_ID(),'hf_property_developer_image', 'alt');
 						if( !empty($imageurl) ): ?>
-							<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" />
+							<img src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" style="width:100%; height:auto;" />
 						<?php 	endif; ?>
 					</div>
 				</div>

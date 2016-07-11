@@ -543,7 +543,6 @@ function add_todaysdate_in_menu( $items, $args ) {
 
 function remove_menus(){
 	if ( !current_user_can('manage_options') ) {
-
 		remove_menu_page( 'index.php' );                  //Dashboard
 		remove_menu_page( 'edit.php' );                   //Posts
 		remove_menu_page( 'upload.php' );                 //Media
@@ -1091,7 +1090,6 @@ function edit_admin_menus() {
 	if(!current_user_can('administrator')){
     remove_menu_page('edit.php?post_type=agent');
 	add_action('admin_footer', 'remove_average_price');
-	
 	}
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
