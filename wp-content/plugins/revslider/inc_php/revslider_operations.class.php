@@ -711,7 +711,7 @@
 				$arrInsert["params"] = stripslashes(json_encode(str_replace("'", '"', $content['params'])));
 				$arrInsert["hover"] = stripslashes(json_encode(str_replace("'", '"', @$content['hover'])));
 				$arrInsert["settings"] = stripslashes(json_encode(str_replace("'", '"', @$content['settings'])));
-				print_r($arrInsert); exit;
+				
 				$result = $db->insert(GlobalsRevSlider::$table_css, $arrInsert);
 			}
 			

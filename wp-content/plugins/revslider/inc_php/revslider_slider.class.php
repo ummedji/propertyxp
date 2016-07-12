@@ -294,11 +294,11 @@
 				
 			$this->validateInputSettings($title, $alias, $params);
 			
-			$user_id = get_current_user_id();
+			/*$user_id = get_current_user_id();
 			if(!empty($user_id))
 			{
 				$params['user_id'] = $user_id;
-			}
+			}*/
 			$jsonParams = json_encode($params);
 			//insert slider to database
 			$arrData = array();
@@ -1477,7 +1477,8 @@
 				}else{
 					if($slider->getParam("template","false") == "true") continue;
 				}
-				if(current_user_can('administrator'))
+				$arrSliders[] = $slider;
+				/*if(current_user_can('administrator'))
 				{
 					$arrSliders[] = $slider;
 				}
@@ -1487,7 +1488,7 @@
 					{
 						$arrSliders[] = $slider;
 					}	
-				}
+				}*/
 				
 				
 			}
