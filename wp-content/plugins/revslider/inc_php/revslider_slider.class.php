@@ -1489,6 +1489,7 @@
 						$arrSliders[] = $slider;
 					}	
 				}
+				$arrSliders[] = $slider;
 			}
 			
 			return($arrSliders);
