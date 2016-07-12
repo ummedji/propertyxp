@@ -829,21 +829,7 @@ function filter_add_posts_singletime($query)
           <script type="text/javascript">      
 	
 	jQuery(document).ready(function(){
-		jQuery('#hydra-hf-property-newpossession-items-0-value').click(function() {
-			jQuery(function() {
-			jQuery('#hydra-hf-property-newpossession-items-0-value').datepicker( {
-			changeMonth: true,
-			changeYear: true,
-			showButtonPanel: true,
-			dateFormat: 'MM yy',
-			onClose: function(dateText, inst) { 
-				var month = jQuery("#ui-datepicker-div .ui-datepicker-month :selected").val();
-				var year = jQuery("#ui-datepicker-div .ui-datepicker-year :selected").val();
-				jQuery(this).datepicker('setDate', new Date(year, month, 1));
-			}
-		});
-		});
-});
+		
 			
            if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
               jQuery("div.wrap h2 a.add-new-h2").remove();
@@ -871,20 +857,21 @@ function filter_add_posts_singletime($query)
 				if(!isset($_GET['taxonomy'])) {
            ?>
            jQuery(document).ready(function(){
-			
-			  //Rent Option customization
-			 /*jQuery('#hydra-hf-property-contract-type-items-0-value').change(function(){
-			  var contracttype = jQuery("#hydra-hf-property-contract-type-items-0-value option[value='"+this.value+"']").text();
-			  if(jQuery.trim(contracttype) == 'Rent')
-			  {
-				jQuery('#hf-property-availbale-from').show();
-			  }
-			  else
-			  {
-				 jQuery("#hydra-hf-property-availbale-from-items-0-value").val('');
-				 jQuery('#hf-property-availbale-from').hide();
-			  }
-		  });*/
+			//Rent Option customization
+			jQuery(function() {
+			jQuery('#hydra-hf-property-newpossession-items-0-value').datepicker( {
+			changeMonth: true,
+			changeYear: true,
+			showButtonPanel: true,
+			dateFormat: 'MM yy',
+			onClose: function(dateText, inst) { 
+				var month = jQuery("#ui-datepicker-div .ui-datepicker-month :selected").val();
+				var year = jQuery("#ui-datepicker-div .ui-datepicker-year :selected").val();
+				jQuery(this).datepicker('setDate', new Date(year, month, 1));
+			}
+			});
+			});
+
 		   jQuery('#post').append('<input type="submit" value="Save" name="save" class="button button-primary button-large metabox_submit">');
 			jQuery('.metabox_submit').click(function(e) {
 			e.preventDefault();
