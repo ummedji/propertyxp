@@ -1477,7 +1477,6 @@
 				}else{
 					if($slider->getParam("template","false") == "true") continue;
 				}
-				//$arrSliders[] = $slider;
 				if(current_user_can('administrator'))
 				{
 					$arrSliders[] = $slider;
@@ -1489,7 +1488,6 @@
 						$arrSliders[] = $slider;
 					}	
 				}
-				$arrSliders[] = $slider;
 			}
 			
 			return($arrSliders);
