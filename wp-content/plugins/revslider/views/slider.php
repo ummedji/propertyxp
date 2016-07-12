@@ -49,8 +49,19 @@
 		$settingsSliderMain->init($settingsMain);
 		
 		$settingsSliderParams->isAccordion(true);
-		
-		require self::getPathTemplate("slider_edit");
+		if(current_user_can('administrator')){
+			require self::getPathTemplate("slider_edit"); 
+		}
+		else
+		{
+		if($slider->getParam("user_id") == get_current_user_id()){
+		require self::getPathTemplate("slider_edit"); 
+		}
+		else 
+		{
+		echo "You are not authorized to access this slider"; exit;
+		}
+		}
 	}
 	
 	else{

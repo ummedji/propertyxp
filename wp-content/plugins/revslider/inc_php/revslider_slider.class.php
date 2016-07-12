@@ -294,21 +294,23 @@
 				
 			$this->validateInputSettings($title, $alias, $params);
 			
+			$user_id = get_current_user_id();
+			if(!empty($user_id))
+			{
+				$params['user_id'] = $user_id;
+			}
 			$jsonParams = json_encode($params);
-			
 			//insert slider to database
 			$arrData = array();
 			$arrData["title"] = $title;
 			$arrData["alias"] = $alias;
 			$arrData["params"] = $jsonParams;
-			
 			if(empty($sliderID)){	//create slider	
 				$sliderID = $this->db->insert(GlobalsRevSlider::$table_sliders,$arrData);
 				return($sliderID);
 				
 			}else{	//update slider
 				$this->initByID($sliderID);
-				
 				$sliderID = $this->db->update(GlobalsRevSlider::$table_sliders,$arrData,array("id"=>$sliderID));				
 			}
 		}
@@ -1465,21 +1467,29 @@
 		 */
 		public function getArrSliders($templates = false){
 			$where = "";
-			
 			$response = $this->db->fetch(GlobalsRevSlider::$table_sliders,$where,"id");
-			
 			$arrSliders = array();
 			foreach($response as $arrData){
 				$slider = new RevSlider();
 				$slider->initByDBData($arrData);
-				
 				if($templates){
 					if($slider->getParam("template","false") == "false") continue;
 				}else{
 					if($slider->getParam("template","false") == "true") continue;
 				}
+				if(current_user_can('administrator'))
+				{
+					$arrSliders[] = $slider;
+				}
+				else
+				{
+				if($slider->getParam("user_id") == get_current_user_id())
+					{
+						$arrSliders[] = $slider;
+					}	
+				}
 				
-				$arrSliders[] = $slider;
+				
 			}
 			
 			return($arrSliders);
