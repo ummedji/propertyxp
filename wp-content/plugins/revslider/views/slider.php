@@ -62,7 +62,7 @@
 		{
 		echo "You are not authorized to access this slider"; exit;
 		}
-		}*/
+		}
 	}
 	
 	else{
