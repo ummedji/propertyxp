@@ -829,7 +829,22 @@ function filter_add_posts_singletime($query)
           <script type="text/javascript">      
 	
 	jQuery(document).ready(function(){
-           
+		jQuery('#hydra-hf-property-newpossession-items-0-value').click(function() {
+			jQuery(function() {
+			jQuery('#hydra-hf-property-newpossession-items-0-value').datepicker( {
+			changeMonth: true,
+			changeYear: true,
+			showButtonPanel: true,
+			dateFormat: 'MM yy',
+			onClose: function(dateText, inst) { 
+				var month = jQuery("#ui-datepicker-div .ui-datepicker-month :selected").val();
+				var year = jQuery("#ui-datepicker-div .ui-datepicker-year :selected").val();
+				jQuery(this).datepicker('setDate', new Date(year, month, 1));
+			}
+		});
+		});
+});
+			
            if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
               jQuery("div.wrap h2 a.add-new-h2").remove();
            }

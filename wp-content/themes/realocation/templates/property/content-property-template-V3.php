@@ -1,8 +1,7 @@
 <script type="text/javascript">
 jQuery.noConflict();
 jQuery(document).ready(function($) {
-
-		$(".details-options a").click(function(){ 
+	$(".details-options a").click(function(){ 
 	//event.preventDefault();
 			$("#menu").slideToggle("slow");
 		});
