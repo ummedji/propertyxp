@@ -294,11 +294,11 @@
 				
 			$this->validateInputSettings($title, $alias, $params);
 			
-			/*$user_id = get_current_user_id();
+			$user_id = get_current_user_id();
 			if(!empty($user_id))
 			{
 				$params['user_id'] = $user_id;
-			}*/
+			}
 			$jsonParams = json_encode($params);
 			//insert slider to database
 			$arrData = array();
