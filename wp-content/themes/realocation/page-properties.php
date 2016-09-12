@@ -168,9 +168,9 @@ if($fullwidth) {
         <!--div class="col-md-12 text-center"><h1 class="center">INDIVIDUAL PROPERTIES</h1></div-->
         <!-- /.items-list -->
 
-        <?php //if($display_pager): ?>
-            <?php //aviators_pagination(); ?>
-        <?php //endif; ?>
+        <?php if($display_pager): ?>
+            <?php aviators_pagination(); ?>
+        <?php endif; ?>
 
         <?php wp_reset_query(); ?>
 		<!--<div class="properties-items as_properties-items">

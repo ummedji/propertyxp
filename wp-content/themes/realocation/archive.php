@@ -10,7 +10,7 @@
             <?php endwhile; ?>
         <?php endif; ?>
 
-        <div style="display: none"><?php aviators_pagination(); ?></div>
+        <div><?php aviators_pagination(); ?></div>
     <?php else : ?>
         <?php get_template_part( 'content', 'none' ); ?>
     <?php endif; ?>
