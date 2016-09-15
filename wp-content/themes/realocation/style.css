@@ -1204,7 +1204,7 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 }
 .filter-horizontal .field-widget-hierarchy_select-wrapper .field-type-select {
 	padding-left: 1px !important;
-	padding-right: 10px !important;
+	padding-right: 3px !important;
 }
 @media screen and (max-width: 991px){
 	.filter-horizontal .field-widget-hierarchy_select-wrapper .field-type-select {
