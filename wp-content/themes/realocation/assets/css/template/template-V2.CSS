@@ -1,7 +1,7 @@
 .csbwfs-social-widget {
     left: auto !important;
     right: -12px !important;
-    top: 435px !important;
+    top: 477px !important;
 }
 .csbwfs-social-widget a img { opacity: 0;}
 #csbwfs-social-inner a img { opacity: 1;}
@@ -357,7 +357,7 @@ span.marketnave_i {
 .interested_cl {
     position: fixed;
     right: -56px;
-    top: 335px;
+    top: 375px;
     z-index: 999999;
 }
 .in_int_btn {

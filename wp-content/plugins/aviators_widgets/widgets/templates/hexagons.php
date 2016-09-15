@@ -15,6 +15,7 @@
 
                                     <div class="hex-content">
                                         <i class="<?php print $data['icon']; ?>"></i>
+                                        <!--<img src="<?php /*print get_template_directory_uri(); */?>/images/smart-property-search.png" alt="" class="hex-image db-blk">-->
                                     </div><!-- /.hex-content -->
                                 </div><!-- /.hex-inner -->
                             </div><!-- /.hex -->

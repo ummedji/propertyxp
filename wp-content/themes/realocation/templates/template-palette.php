@@ -2,7 +2,7 @@
     <div class="palette-inner">
         <div class="palette-toggle">
             <div class="palette-toggle-inner">
-                <span><i class="fa fa-cog"></i><?php echo __('Options', 'aviators'); ?></span>
+                <span><?php echo __('Options', 'aviators'); ?><i class="fa fa-cog"></i></span>
             </div>
         </div>
         <!-- /.palette-toggle -->

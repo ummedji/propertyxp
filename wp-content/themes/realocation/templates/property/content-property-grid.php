@@ -49,7 +49,7 @@
 					
                     <div class="group-field-item">
 						<div class="field-item-inner">
-							<div class="col-xs-3 no-columns number number hf-property-bathrooms">
+							<div class="no-columns number number hf-property-bathrooms">
 								<div class="label">
 									<p>Config.</p>
 								</div>
@@ -63,7 +63,7 @@
 					</div>
                     <div class="group-field-item">
 						<div class="field-item-inner">
-							<div class="col-xs-3 no-columns number number hf-property-bedrooms">
+							<div class="no-columns number number hf-property-bedrooms">
 								<div class="label">
 									<p>Area</p>
 								</div>
@@ -77,7 +77,7 @@
 					</div>
                     <div class="group-field-item">
 						<div class="field-item-inner">
-							<div class="col-xs-3 no-columns number number hf-property-area">
+							<div class="no-columns number number hf-property-area">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
 									<?php $possession_value = substr($possession_value,0,16); ?>
