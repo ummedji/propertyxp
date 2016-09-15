@@ -9461,11 +9461,11 @@ h3.feature-title,.feature-title.property-detail-subtitle {
 }
 
 .carousel-select .bx-wrapper .bx-controls-direction .bx-prev {
-	left: 0px
+	left: 5px
 }
 
 .carousel-select .bx-wrapper .bx-controls-direction .bx-next {
-	right: 0px
+	right: 5px
 }
 
 .carousel-select .list-unstyled,.carousel-select .list-inline {
