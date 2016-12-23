@@ -158,7 +158,8 @@ function itro_display_popup()
 					itro_popup_template();
 					itro_popup_js();
 
-					setcookie( "msg", "str" );
+					setcookie('msg', 'str', time()+60*60*24*365, '/', 'http://www.webcluesglobal.com/qa/propertyxp/', false);
+					//setcookie( "msg", "str" );
 				}
 
 
