@@ -93,9 +93,13 @@ jQuery(document).ready(function() {
 	jQuery( ".scroll-top-img" ).click(function() {
 		jQuery('html, body').animate({scrollTop: '0px'}, 1000);
 	});
-var iScrollPos = 0;
+
+	jQuery( ".scroll-top-img" ).removeClass( "scroll-active" ).addClass( "scroll-deactive" );
+
+var iScrollPos = 100;
 jQuery(window).scroll(function () {
-    var iCurScrollPos = jQuery(this).scrollTop();
+
+	    var iCurScrollPos = jQuery(this).scrollTop();
     if (iCurScrollPos > iScrollPos) {
     	jQuery( ".scroll-top-img" ).removeClass( "scroll-deactive" ).addClass( "scroll-active" );
     } else {
@@ -103,7 +107,11 @@ jQuery(window).scroll(function () {
     	jQuery( ".scroll-top-img" ).removeClass( "scroll-active" ).addClass( "scroll-deactive" );
     }
     iScrollPos = iCurScrollPos;
-	});
+});
+
+
+
+	//var scroll_pos = jQuery(this).scrollTop();
 	
 	
 	//jQuery("div#gallery ul.properties-filter li.selected > a").trigger("click").delay( 800 );
@@ -150,13 +158,12 @@ jQuery(window).scroll(function () {
 		jQuery("div.oss_title_replace").css("display","block");
 		
 		//$( "div.oss_title_replace" ).toggle();
-		
-	
-	});
 
-	
+	});
 });
- </script>
+
+
+</script>
  
  <style>
  

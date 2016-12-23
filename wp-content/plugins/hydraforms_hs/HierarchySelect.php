@@ -257,7 +257,7 @@ class HierarchySelectWidget extends Widgets\Widget {
             $first_level->addValidator('required');
         }
 
-        $locationOptions[''] = __('- ANY -', 'hydraforms');
+        $locationOptions[''] = __(' City ', 'hydraforms');
         if ($options) {
             foreach ($options[0] as $key => $countryOption) {
                 if (isset($options[$key]) && is_array($options[$key])) {
@@ -275,7 +275,7 @@ class HierarchySelectWidget extends Widgets\Widget {
                 ->setOptionsClasses($classes)
                 ->addAttribute('class', 'hierarchy-level-2 form-group');
 
-            $sublocationOptions[''] = __('- ANY -', 'hydraforms');
+            $sublocationOptions[''] = __(' Location ', 'hydraforms');
             foreach ($locationOptions as $key => $locationOption) {
                 if (isset($options[$key]) && is_array($options[$key])) {
                     foreach ($options[$key] as $index => $term) {

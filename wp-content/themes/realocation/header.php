@@ -146,6 +146,7 @@
 
 
 
+/*
 
 
 		jQuery(window).scroll(function(){
@@ -157,7 +158,9 @@
 			var diff = parseInt(footer_offset)-600;
 			var data =  parseInt(footer_offset)-1100;
 
-		/*	console.log(jQuery("div.developer-menu").offset().top +"===="+ diff+"===="+footer_offset+"===="+data+"===");
+
+
+			console.log(jQuery("div.developer-menu").offset().top +"===="+ diff+"===="+footer_offset+"===="+data+"===");
 
 			if(jQuery("div.developer-menu").offset().top >= diff){
 
@@ -169,10 +172,11 @@
 
 				jQuery("div.developer-menu").css({ "top":"0px", "position": "fixed","left":"0px" });
 			}
-		*/
+
 
 		});
 
+*/
 
 
 

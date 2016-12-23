@@ -11,6 +11,25 @@ function itro_popup_js()
 	/* init var */
 	itro_cookie_expiration = <?php echo itro_get_option('cookie_time_exp'); ?>;
 	itro_is_preview = <?php if ( itro_get_option('preview_id') == get_the_id() ){echo 'true';}else{ echo 'false'; } ?>;
+
+
+	//jQuery(window).load(function() {
+		/*if (localStorage.getItem("msg") == null)
+		{
+			jQuery('#itro_opaco').css('visibility', 'visible');
+			jQuery('#itro_popup').css('display', 'block');
+			localStorage.setItem("msg", "str");
+		}
+		else
+		{
+			jQuery('#itro_opaco').css('visibility', 'hidden');
+			jQuery('#itro_popup').css('display', 'none');
+
+			//return false;
+		}*/
+//	});
+
+	//alert("HERE");
 	
 	/* pass true if is the preview page. used for cookie control via js due W3 total cache or similar */
 	itro_is_preview = <?php if( itro_get_option('preview_id') == get_the_id() ){ echo 'true'; }else{ echo 'false'; } ?>;
@@ -20,12 +39,18 @@ function itro_popup_js()
 			echo 'itro_age_restriction = false;';
 			if( itro_get_option('popup_unlockable') != 'yes' )
 			{ ?>
+
+				//alert("111");
 				document.onkeydown = function(event) 
 				{
 					event = event || window.event;
 					var key = event.keyCode;
+
+				//	alert("222");
+
 					if(key==27)
 					{
+					//	alert("333");
 						jQuery("#itro_popup").fadeOut(function() {itro_opaco.style.visibility='Hidden';});
 					} 
 				}; <?php
@@ -35,10 +60,12 @@ function itro_popup_js()
 			{ ?>
 				var delay = <?php echo itro_get_option('popup_delay') . '+' . '1'; ?> ;
 				interval_id_delay = setInterval(function(){popup_delay();},1000);
+	//alert("444");
 			<?php
 			}
 			else /* if popup delay is not setted */
 			{?>
+	//alert("555");
 				itro_enter_anim();
 			<?php
 			}
@@ -56,7 +83,10 @@ function itro_popup_js()
 								echo itro_get_option('popup_time');
 							}
 							?>;
-				interval_id = setInterval(function(){popTimer()},1000); /* the countdown  */
+	//alert("666");
+				interval_id = setInterval(function(){
+					//popTimer()
+				},1000); /* the countdown  */
 				<?php
 			}
 		}
@@ -64,12 +94,14 @@ function itro_popup_js()
 		{
 			if( itro_get_option('popup_delay') != 0 )
 			{ ?>
+//	alert("777");
 				var delay = <?php echo itro_get_option('popup_delay') . '+' . '1'; ?> ;
 				interval_id_delay = setInterval(function(){popup_delay();},1000);
 			<?php
 			}
 			else
 			{?>
+//	alert("888");
 				itro_enter_anim();
 			  <?php
 			}

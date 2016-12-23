@@ -141,12 +141,32 @@ function itro_display_popup()
 			}
 			if( $id_match != NULL || itro_get_option('preview_id') == $current_page_id )
 			{
-				itro_style();
-				itro_popup_template();
-				itro_popup_js();
+
+				//global $session;
+
+				//$session_data = $session->all_userdata();
+				//$d = json_encode($session_data);
+
+				//echo "<script> document.cookie ='msg=str';  console.log(document.cookie);</script>";die;
+
+
+
+
+				if(!isset($_COOKIE["msg"]))
+				{
+					itro_style();
+					itro_popup_template();
+					itro_popup_js();
+
+					setcookie( "msg", "str" );
+				}
+
+
+
 			}
 		break;
 		case 'all':
+			echo "<script>alert('222');</script>";die;
 			itro_style();
 			itro_popup_template();
 			itro_popup_js();
@@ -154,6 +174,7 @@ function itro_display_popup()
 		case 'none':
 			if( itro_get_option('preview_id') == $current_page_id )
 			{
+				echo "<script>alert('333');</script>";die;
 				itro_style();
 				itro_popup_template();
 				itro_popup_js();

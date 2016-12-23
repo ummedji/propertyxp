@@ -110,7 +110,8 @@
         <div id="main">
     
             <div id="main-inner">
-            	<?php 
+            	<?php
+
             	if($_GET['prop_id']) {
 				 echo '<div class="row">
 					<div class="col-md-12">
@@ -122,6 +123,8 @@
 			    	//print_r($mapPosition);
 			    	$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');
 			    	$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
+
+                   // echo "here";die;
 			    	
 			    	echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]');
 			    	echo '</div></div>';

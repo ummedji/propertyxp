@@ -85,11 +85,11 @@ if($fullwidth) {
 	<span class="map-mode-search"></span>
 	<label class="pro_llb">MAP MODE<br>SEARCH</label>
 </a>
-<a class="center" href="##">
+<a class="center" href="#">
 	<span class="news-and-views"></span>
 	<label class="pro_llb">NEWS AND<br>VIEWS</label>
 </a>
-<a class="center" href="##">
+<a class="center" href="#">
 	<span class="radio-live"></span>
 	<label class="pro_llb">RADIO LIVE</label>
 </a>
