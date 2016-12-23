@@ -150,19 +150,29 @@ function itro_display_popup()
 				//echo "<script> document.cookie ='msg=str';  console.log(document.cookie);</script>";die;
 
 
-				if(!isset($_COOKIE["msg"]))
-				{
+				if(!isset($_SESSION['msg'])) {
+
 					itro_style();
 					itro_popup_template();
 					itro_popup_js();
 
+					$_SESSION['msg'] = "str";
+
+				}
+
+				//if(!isset($_COOKIE["msg"]))
+				//{
+				//	itro_style();
+				//	itro_popup_template();
+				//	itro_popup_js();
+
 				//	setcookie('msg', 'str', time()+60*60*24*365, '/', 'http://www.webcluesglobal.com/qa/propertyxp/', false);
 
-					$domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
-					setcookie('msg', 'str', time()+60*60*24*365, '/', $domain, false);
+				//	$domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
+				//	setcookie('msg', 'str', time()+60*60*24*365, '/', $domain, false);
 
 				//	setcookie("msg","str");
-				}
+				//}
 
 
 			}
