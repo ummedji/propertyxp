@@ -194,27 +194,49 @@
 
 			});
 
+			var i = 1;
+
 			jQuery('div.summary').each(function(){
 
-				var data = jQuery.trim(jQuery(this).html()).replace('<strong>Total:</strong>','');
-
-				data = commaSeparateNumber(data);
-				var final_data = "<strong>Total:</strong>"+data;
+				var data = commaSeparateNumber(jQuery.trim(jQuery(this).text()).match(/\d+/));
+				var html_data = "";
+				if(i == 1){
+					html_data = "<strong>Total per Month:</strong>Rs."
+				}
+				else if(i == 2){
+					html_data = "<strong>Total per Year:</strong>Rs."
+				}else{
+					html_data = "<strong>Total:</strong>Rs."
+				}
+				var final_data = html_data+data;
 				jQuery(this).html(final_data);
 
+				i++;
 			});
 
 		}, 2000);
-
-
-
+		
 	});
 
 	function commaSeparateNumber(val){
-		while (/(\d+)(\d{3})/.test(val.toString())){
+		/*while (/(\d+)(\d{3})/.test(val.toString())){
 			val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
 		}
-		return val;
+		return val;*/
+
+		x=val.toString();
+		var afterPoint = '';
+		if(x.indexOf('.') > 0)
+			afterPoint = x.substring(x.indexOf('.'),x.length);
+		x = Math.floor(x);
+		x=x.toString();
+		var lastThree = x.substring(x.length-3);
+		var otherNumbers = x.substring(0,x.length-3);
+		if(otherNumbers != '')
+			lastThree = ',' + lastThree;
+		var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree + afterPoint;
+
+		return res;
 	}
 
 </script>
