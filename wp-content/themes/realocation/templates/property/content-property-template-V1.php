@@ -804,8 +804,10 @@ jQuery(function(){
     	</div>
     <!--<hr/>-->
     <?php $amenities = hydra_render_field(get_the_ID(), 'amenities', 'detail');  ?>
-    <?php 
-	
+    <?php
+
+	//echo "<pre>";
+	//print_r($amenities);
 	
 	
     if ($amenities): 
@@ -844,7 +846,8 @@ jQuery(function(){
     ?>
         <div class="row none_row as_amenities" id="amenities" >
         	<div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();?></span></h2></div>
+	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();
+							?></span></h2></div>
           	</div>
 			
 			<div id="hidden_ammineties" style="display:none;">
@@ -1089,7 +1092,7 @@ jQuery(function(){
 	     <div class="col-md-12 inn_map_cont v1-filter">
 		     <ul class="map-tabs-links properties-filter map-filter">
 			       <li class="selected">
-			       		<a href="#"  onclick ="removeonlyMarkers();clearResults();" class="first-click-this">BUILDINGS </a>
+			       		<a href="#"  onclick ="removeonlyMarkers();removecenterMarkers();clearResults();reallyDoSearch();" class="first-click-this">BUILDINGS </a>
 			       </li>
 			       <li>
 			       		<a href="#" onclick ="removecenterMarkers();reallyDoSearch();" >NEARBY</a>

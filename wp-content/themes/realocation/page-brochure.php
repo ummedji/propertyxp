@@ -70,7 +70,13 @@
 	    		<h4>Search Results as per <b>Brochure Name</b> : <?php echo $_GET['searchfield']?>, <b>State</b> : <?php echo $_GET['statewise']?> and <b>Property Type</b> : <?php echo $_GET['propertywise']?></h4>
 	    	</div>
 	    </div>
-	    <?php global $wpdb;
+	    <?php
+
+	//	echo "<pre>";
+	//	print_r($_GET);
+	//	print_r($_POST);
+
+		global $wpdb;
 	    	$args = array(
 	    					'post_type'=>'brochures',
 	    					'post_status'=>'publish',
@@ -80,6 +86,9 @@
 							'posts_per_page' => -1
 	    					); ?>
 	    <?php $loops = new WP_Query($args); ?>
+
+	<?php //echo $GLOBALS['wp_query']->request;die; ?>
+
 	    <?php while ( $loops->have_posts() ) : $loops->the_post(); ?>
 	        	<div class="row">
 		        	<div class="col-md-12">

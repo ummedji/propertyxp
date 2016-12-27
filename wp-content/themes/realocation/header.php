@@ -77,8 +77,6 @@
 			jQuery("ul.amenities-options").empty();
 			jQuery(this).find("i").html();
 
-
-
 			if(jQuery(this).find("i").hasClass("fa-ban")){
 
 				var regex = /(<([^>]+)>)/ig
@@ -146,6 +144,7 @@
 
 
 
+
 /*
 
 
@@ -179,8 +178,45 @@
 */
 
 
+		setTimeout(function(){
+			jQuery('input#hydra-home-price').val(commaSeparateNumber(jQuery("input#hydra-home-price").val()));
+
+			jQuery('input#hydra-down-price').val(commaSeparateNumber(jQuery("input#hydra-down-price").val()));
+			jQuery('input#hydra-insurance').val(commaSeparateNumber(jQuery("input#hydra-insurance").val()));
+
+			jQuery('table tbody td.item').each(function(){
+
+				var data = jQuery.trim(jQuery(this).html()).replace('Rs.','');
+
+				data = commaSeparateNumber(data);
+				var final_data = "Rs."+data;
+				jQuery(this).html(final_data);
+
+			});
+
+			jQuery('div.summary').each(function(){
+
+				var data = jQuery.trim(jQuery(this).html()).replace('<strong>Total:</strong>','');
+
+				data = commaSeparateNumber(data);
+				var final_data = "<strong>Total:</strong>"+data;
+				jQuery(this).html(final_data);
+
+			});
+
+		}, 2000);
+
+
 
 	});
+
+	function commaSeparateNumber(val){
+		while (/(\d+)(\d{3})/.test(val.toString())){
+			val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+		}
+		return val;
+	}
+
 </script>
 
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/jquery.mCustomScrollbar.css" />
