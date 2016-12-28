@@ -162,12 +162,13 @@ jQuery(function(){
 						<div class="item-value" itemprop="releaseDate"><?php /*the_field('possession');*/?></div>
 					</div>-->
 				</div>
-				
 
-				
+
+				<div class="clearfix"></div>
 			</div>
+			<div class="clearfix"></div>
     	</div>
-    	
+	<div class="clearfix"></div>
     	<div class="row as_flats about_cont" id="flats">
     		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>

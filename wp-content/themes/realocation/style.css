@@ -64,7 +64,7 @@ iframe {
 #amenities .building-card .header-text {color: #000000;top: 20px;position: relative;line-height: 26px;font-size: 22px;font-weight: bold;text-transform: uppercase;text-align: center;}
 #amenities .building-card .separator {top: 20px;position: relative;position: relative;display: inline-block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;text-align: center;height: 5px;width: 30px;margin: 10px 0px 15px 0px;border-bottom: 2px solid #dadada;}
 #amenities .building-card .pills {position: relative;text-align: center;}
-#amenities .building-card .pills .header {position: relative;font-size: 13px;margin: 5px;margin-top: 30px;color: #a8a8a8;text-align: center;}
+#amenities .building-card .pills .header {position: relative;font-size: 14px;margin: 5px;margin-top: 30px;color: #383838;text-align: center;}
 #amenities .building-card .pills .texts {position: relative;font-size: 15px;font-weight: 700;margin: auto;text-align: center;}
 
 
@@ -1231,3 +1231,4 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 .block-content-inner #map { background-color: #fff !important;}
 #map { background-color: #000 !important;}
 .ui-resizable .map-inner .gm-style { opacity: 0.5;}
+

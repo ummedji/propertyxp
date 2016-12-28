@@ -85,7 +85,7 @@
         </div><!-- /#footer -->
     </div><!-- /#footer-wrapper -->
 </div><!-- /#wrapper -->
-<div id="topcontrol" class="scroll-top-img scroll-active" title="Scroll Back to Top" style="position: fixed;  bottom: 5px; right: 5px; cursor: pointer;">
+<div id="topcontrol" class="scroll-top-img scroll-active" title="Scroll Back to Top" style="position: fixed;  bottom: 5px; right: 40px; cursor: pointer;">
 	<img title="Back To Top" src="<?php bloginfo('template_directory'); ?>/images/up.png" style="z-index:1000; position:relative;">
 </div>
 <script type="text/javascript">

@@ -8638,8 +8638,10 @@ h2.palette-title,.block-content h3.palette-title,.block-content .palette-title.p
 	margin-right: 11px
 }
 
-.palette-colors li:nth-child(4n) {
-	margin-right: 0px
+@media screen and (min-width: 1920px){
+	.palette-colors li:nth-child(4n) {
+		margin-right: 0px
+	}
 }
 
 .palette-colors a {
