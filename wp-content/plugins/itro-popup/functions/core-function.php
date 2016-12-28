@@ -178,7 +178,6 @@ function itro_display_popup()
 			}
 		break;
 		case 'all':
-			//echo "<script>alert('222');</script>";die;
 			itro_style();
 			itro_popup_template();
 			itro_popup_js();
@@ -186,7 +185,6 @@ function itro_display_popup()
 		case 'none':
 			if( itro_get_option('preview_id') == $current_page_id )
 			{
-				//echo "<script>alert('333');</script>";die;
 				itro_style();
 				itro_popup_template();
 				itro_popup_js();

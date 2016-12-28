@@ -1233,6 +1233,7 @@ pre code {
 	padding-left: 15px;
 	padding-right: 15px
 }
+
 .col-xs-12,.col-xs-11,.col-xs-10,.col-xs-9,.col-xs-8,.col-xs-7,.col-xs-6,.col-xs-5,.col-xs-4,.col-xs-3,.col-xs-2,.col-xs-1
 	{
 	float: left
@@ -7386,7 +7387,7 @@ div.property-box-subtitle a,div.property-box-subtitle a {
 	margin-bottom: 32px;
 	padding: 0px;
 	text-align: center;
-	margin-top: -3px;
+	margin-top: -9px;
 }
 
 .properties-filter li {

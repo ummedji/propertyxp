@@ -63,7 +63,7 @@ jQuery(function(){
         var nav = jQuery('.developer-menu');
 
         jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 550) {
+            if (jQuery(this).scrollTop() > 700) {
                 nav.addClass("fixed");
             } else {
                 nav.removeClass("fixed");

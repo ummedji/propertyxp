@@ -1,0 +1,14 @@
+.hf-property-price .label { padding: 0;}
+.hf-property-price .label p {
+    color: #000;
+    font-size: 12px;
+}
+.hf-property-price .field-item .field-value { font-size: 14px;}
+.select-wrapper:after { pointer-events: none;}
+@media screen and (max-width: 1919px) {
+    .palette-wrapper .palette-inner {
+        overflow-y: auto;
+        max-height: 430px;
+        margin-right: -12px;
+    }
+}

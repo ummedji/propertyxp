@@ -64,7 +64,8 @@
 
 .as_flats {
     /*padding: 70px 0 0 0px !important;*/
-    padding: 38px 0 20px 0px !important;
+    padding: 66px 0 20px 0px !important;
+    margin-top: -45px;
 }
 .about_cont h3 {
     color: #2f2f2f;
@@ -104,8 +105,8 @@ p.icon_cont {
 }
 
 .as_amenities {
-    padding: 0px 0 0 0px !important;
-    margin-top: -20px;
+    padding: 66px 0 0 0px !important;
+    margin-top: -65px;
 }
 .as_amenities .amenities-options .single-amenity {
     margin: 0px 0px 15px 0;
@@ -435,8 +436,10 @@ span.marketnave_i {
 .al_baruj_slider{
     margin-top: -56px;
 }
+
 #line_chart{
-    margin-top: -70px;
+    padding: 66px 0 0 0px !important;
+    margin-top: -45px;
 }
 #about-developer{
     margin-top: -38px;

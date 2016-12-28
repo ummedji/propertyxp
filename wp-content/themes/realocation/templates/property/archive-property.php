@@ -60,6 +60,7 @@ if($fullwidth) {
         'lg' => 3,
     );
 }
+
 ?>
 <!--
 <?php /*get_header(); */?>
@@ -96,8 +97,8 @@ if($fullwidth) {
    echo "<pre>";
    print_r($post);
    echo "</pre>";*/$count = 0; ?>
-
-
+   
+    
     <?php while (have_posts()) : the_post(); ?>
 
         <?php

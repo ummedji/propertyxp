@@ -98,8 +98,7 @@ jQuery(document).ready(function() {
 
 var iScrollPos = 100;
 jQuery(window).scroll(function () {
-
-	    var iCurScrollPos = jQuery(this).scrollTop();
+    var iCurScrollPos = jQuery(this).scrollTop();
     if (iCurScrollPos > iScrollPos) {
     	jQuery( ".scroll-top-img" ).removeClass( "scroll-deactive" ).addClass( "scroll-active" );
     } else {
@@ -158,12 +157,13 @@ jQuery(window).scroll(function () {
 		jQuery("div.oss_title_replace").css("display","block");
 		
 		//$( "div.oss_title_replace" ).toggle();
-
+		
+	
 	});
+
+	
 });
-
-
-</script>
+ </script>
  
  <style>
  

@@ -63,7 +63,7 @@ jQuery(function(){
         var nav = jQuery('.developer-menu');
 
         jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 550) {
+            if (jQuery(this).scrollTop() > 770) {
                 nav.addClass("fixed");
             } else {
                 nav.removeClass("fixed");
@@ -73,6 +73,7 @@ jQuery(function(){
 </script>
 <?php
 //$res = do_action('wp_getHydrameta',get_the_ID(),'hf_property_2_amenities');
+
 ?>
 <div class="property-detail developer-details">
     	<div class="row as_flats" id="details" >
@@ -180,7 +181,7 @@ jQuery(function(){
 					$termdata = array('1','2');
 				}
 				else
-				{  
+				{
 					$termdata = $termhydata;	
 				}
 				
@@ -531,7 +532,7 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5 as-pull-right">
 						<?php //$sfa = get_field('3_bed_flat_slider_alias');
-						 $sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
+						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -703,7 +704,7 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
 						<?php //$sfa = get_field('4_bed_flat_slider_alias');
-						 $sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
+						$sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -1162,8 +1163,7 @@ jQuery(function(){
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 	<?php if(showMap(get_the_ID())) { ?>
 	<script type="text/javascript">
-		jQuery("document").ready(function () { 
-		
+		jQuery("document").ready(function () {
 		    jQuery('#line_chart_container').highcharts({
 		        chart: {
 		            type: 'spline'

@@ -7375,7 +7375,8 @@ div.property-box-subtitle a,div.property-box-subtitle a {
 	line-height: 36px;
 	margin-bottom: 30px;
 	padding: 0px;
-	text-align: center
+	text-align: center;
+	margin-top: -9px;
 }
 
 .properties-filter li {
@@ -8385,6 +8386,7 @@ h3.agency-row-title,.agency-row-title.property-detail-subtitle {
 .filter-horizontal .map-navigation-wrapper {
 	position: relative
 }
+
 .map-navigation {
 	background-color: rgba(37, 37, 37, 0.9);
 	border-top: 3px solid #39b54a;

@@ -110,8 +110,7 @@
         <div id="main">
     
             <div id="main-inner">
-            	<?php
-
+            	<?php 
             	if($_GET['prop_id']) {
 				 echo '<div class="row">
 					<div class="col-md-12">

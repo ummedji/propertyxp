@@ -7375,7 +7375,8 @@ div.property-box-subtitle a,div.property-box-subtitle a {
 	line-height: 36px;
 	margin-bottom: 30px;
 	padding: 0px;
-	text-align: center
+	text-align: center;
+	margin-top: -9px;
 }
 
 .properties-filter li {
@@ -8691,7 +8692,6 @@ h2.palette-title,.block-content h3.palette-title,.block-content .palette-title.p
 	left: 0px;
 	bottom: 0;
 }
-
 
 .palette-color-green a {
 	background-color: #39b54a

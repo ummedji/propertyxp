@@ -425,6 +425,7 @@ function aviators_property_theme_supported_pages($supported_pages) {
         'meta_value' => 'page-properties.php',
         'numberposts' => -1
     ));
+
     if (!count($pages)) {
         return array();
     }
@@ -543,6 +544,7 @@ function add_todaysdate_in_menu( $items, $args ) {
 
 function remove_menus(){
 	if ( !current_user_can('manage_options') ) {
+
 		remove_menu_page( 'index.php' );                  //Dashboard
 		remove_menu_page( 'edit.php' );                   //Posts
 		remove_menu_page( 'upload.php' );                 //Media
@@ -829,8 +831,7 @@ function filter_add_posts_singletime($query)
           <script type="text/javascript">      
 	
 	jQuery(document).ready(function(){
-		
-			
+           
            if(jQuery("div.wrap h2").find("a.add-new-h2").text() == "Add New Property"){
               jQuery("div.wrap h2 a.add-new-h2").remove();
            }
@@ -922,7 +923,8 @@ function filter_add_posts_singletime($query)
            jQuery("body").find("label").each(function() {
                 var data = jQuery(this).text();
                 data = data.replace('*', '').trim();
-                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){ 
+                
+                 if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
 					jQuery("label").addClass('labelclass');
@@ -939,6 +941,7 @@ function filter_add_posts_singletime($query)
            jQuery("body").find(".hndle span").each(function() {
                 var data = jQuery(this).text();
                 data = data.replace('*', '').trim();
+               
                  if(jQuery.trim(data.toLowerCase()) in tooltipMessage){
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
@@ -958,8 +961,6 @@ function filter_add_posts_singletime($query)
                   var key = jQuery.trim(data.toLowerCase());
                   var tooltip_new_data = tooltipMessage[key];
                   
-				  
-				  
                   jQuery(this).attr({
                     title: tooltip_new_data
                   });
@@ -1035,6 +1036,7 @@ function remove_menus_data () {
 	$restricted = array(__('Contact'),__('Media'));
          global $current_user;
              get_currentuserinfo();
+    
              if(!current_user_can('administrator')){
                 end ($menu);
                 while (prev($menu)){

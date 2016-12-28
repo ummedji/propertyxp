@@ -77,6 +77,8 @@
 			jQuery("ul.amenities-options").empty();
 			jQuery(this).find("i").html();
 
+
+
 			if(jQuery(this).find("i").hasClass("fa-ban")){
 
 				var regex = /(<([^>]+)>)/ig
@@ -147,7 +149,6 @@
 
 /*
 
-
 		jQuery(window).scroll(function(){
 
 			//console.log("SCROLL");
@@ -215,7 +216,7 @@
 			});
 
 		}, 2000);
-		
+
 	});
 
 	function commaSeparateNumber(val){
@@ -248,7 +249,6 @@
 
 	<!--<link rel="stylesheet" href="<?php /*bloginfo('template_directory'); */?>/assets/css/bootstrap-select.css" />
 	<script type='text/javascript' src="<?php /*bloginfo('template_directory'); */?>/assets/js/bootstrap-select.js" ></script>-->
-
 
 	<script>
 		(function($){
