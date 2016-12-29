@@ -2,11 +2,11 @@
 jQuery.noConflict();
 jQuery(document).ready(function($) {
 
-		$(".details-options a").click(function(){ 
+		$(".details-options a").click(function(){
 	//event.preventDefault();
 			$("#menu").slideToggle("slow");
 		});
-	
+
   });
 
     jQuery(document).ready(function($) {
@@ -22,9 +22,9 @@ jQuery(document).ready(function($) {
 
 		if($('#menu').css('display') != 'none')
 			$('#bar').find('a').click();
-		
+
 		return false;
-		
+
     	  }
     	}
     });
@@ -88,13 +88,13 @@ jQuery(function(){
 	            <?php if (!empty($content)) : ?>
 	                <?php the_content(); ?>
 	            <?php endif; ?>
-          	</div>	  
+          	</div>
             <div class="project-spec-details">
 				<div class="col-md-12">
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon about_i"></div>
 						<h6>ADDRESS</h6>
-						<p><?php 
+						<p><?php
 							echo getHydrameta(get_the_ID(),'hf_property_address');	//do_action('wp_getHydravalue',get_the_ID(),'address'); ?></p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
@@ -105,7 +105,7 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon starting_i"></div>
 						<h6>STARTING PRICE</h6>
-						<p><!--<i class="icon-rupee"></i>--><?php 
+						<p><!--<i class="icon-rupee"></i>--><?php
 					     echo getHydrameta(get_the_ID(),'hf_property_starting_price');	//do_action('wp_getHydravalue',get_the_ID(),'starting_price'); ?><?php //the_field('starting_price');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6  text-center about_box_tl">
@@ -121,11 +121,11 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon prossesion_square_i"></div>
 						<h6>POSSESSION</h6>
-						<p itemprop="releaseDate"><?php 
+						<p itemprop="releaseDate"><?php
 						echo getHydrameta(get_the_ID(),'hf_property_possession');	//do_action('wp_getHydravalue',get_the_ID(),'possession');
-						
+
 					/*	print hydra_render_field(get_the_ID(), '3_bedroom_apartment_amenities', 'default'); */
-						
+
 						//do_action('wp_getHydravalue',get_the_ID(),'2_bedroom_apartment_amenities'); ?><?php //the_field('possession');?></p>
 					</div>
 
@@ -145,7 +145,7 @@ jQuery(function(){
 						<div class="item-label"><span>STARTING PRICE</span></div>
 						<div class="item-value"><div class="in-place-currency-dropdown" data-value="11720058"><i class="icon-rupee"></i> <?php /*the_field('starting_price');*/?></div></div>
 					</div>
-				
+
 					<div class="col-md-4 project-specs developer-builtup">
 						<div class="icon-builtup-area icon-small"></div>
 						<div class="item-label"><span>BUILTUP AREA</span></div>
@@ -173,9 +173,9 @@ jQuery(function(){
     		<div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
 	        </div>
-			<?php 
+			<?php
 			   // $bedroom_amenities = get_field('2_bedroom_apartment_ame');
-				
+
 				$termhydata = getHydrametaTerm(get_the_ID(),'hf_property_2_amenities');
 				if(empty($termhydata))
 				{
@@ -183,9 +183,9 @@ jQuery(function(){
 				}
 				else
 				{
-					$termdata = $termhydata;	
+					$termdata = $termhydata;
 				}
-				
+
 				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('Kitchen', $termdata)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
@@ -201,9 +201,9 @@ jQuery(function(){
 				if (in_array('Gas Line', $termdata)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
-				
-				
-				
+
+
+
 			/*	if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('kitchen', $bedroom_amenities)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
@@ -219,17 +219,17 @@ jQuery(function(){
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 				*/
-				
-				
+
+
 		    ?>
-	        
+
 	        <div class="col-md-12 text-left mr_50">
 				<h3>2 BedRoom Apartment</h3>
 				<p class="cate_cont room-bto"> <?php the_title(); ?>  is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php 
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php
 				$num = getHydrameta(get_the_ID(),'hf_property_2bedroomprice');
 				$ext="";
-				$number_of_digits = count_digit($num); 
+				$number_of_digits = count_digit($num);
 				if($number_of_digits>3)
 				{
 				if($number_of_digits%2!=0)
@@ -458,9 +458,9 @@ jQuery(function(){
 					</div>
 				</div>
 			</div>
-			<!-- -- 3 Bedroom Apartment -- -->			
-			<?php 
-			
+			<!-- -- 3 Bedroom Apartment -- -->
+			<?php
+
 			   // $bedroom_amenities = get_field('3_bedroom_apartment_ame');
 			   $termhydata = getHydrametaTerm(get_the_ID(),'hf_property_3_bedroom_apartment_amenities');
 				if(empty($termhydata))
@@ -469,7 +469,7 @@ jQuery(function(){
 				}
 				else
 				{
-					$termdata = $termhydata;	
+					$termdata = $termhydata;
 				}
 				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
@@ -486,7 +486,7 @@ jQuery(function(){
 				if (in_array('Gas Line', $termdata)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
-			  
+
 				/*if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('kitchen', $bedroom_amenities)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
@@ -502,14 +502,14 @@ jQuery(function(){
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}*/
 		    ?>
-	        
+
 	        <div class="col-md-12 text-left mr_50">
 				<h3>3 BedRoom Apartment</h3>
 				<p class="room-bto1"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php 
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php
 				$num = getHydrameta(get_the_ID(),'hf_property_3bedroomprice');
 				$ext="";
-				$number_of_digits = count_digit($num); 
+				$number_of_digits = count_digit($num);
 				if($number_of_digits>3)
 				{
 				if($number_of_digits%2!=0)
@@ -533,7 +533,7 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5 as-pull-right">
 						<?php //$sfa = get_field('3_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');		
+						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');
 						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
@@ -630,10 +630,10 @@ jQuery(function(){
 					</div>
 				</div>
 			</div>
-			
-			<?php 
+
+			<?php
 			   /* $bedroom_amenities = get_field('4_bedroom_apartment_ame');
-			   
+
 			    if (in_array("levingroom", $bedroom_amenities)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('servantroom', $bedroom_amenities)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
 				if (in_array('kitchen', $bedroom_amenities)) { $kitchen = '';$kitchen_fade='';} else { $kitchen = 'fade-text' ; $kitchen_fade = 'fade';}
@@ -648,7 +648,7 @@ jQuery(function(){
 				if (in_array('gasline', $bedroom_amenities)){ $gas_line = '';$gas_line_fade='';} else { $gas_line = 'fade-text';$gas_line_fade = 'fade';}
 				if (in_array('powerbackup', $bedroom_amenities)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('woodenfloor', $bedroom_amenities)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}*/
-				
+
 				$termhydata = getHydrametaTerm(get_the_ID(),'hf_property_4_bedroom_apartment_amenities');
 				if(empty($termhydata))
 				{
@@ -656,7 +656,7 @@ jQuery(function(){
 				}
 				else
 				{
-					$termdata = $termhydata;	
+					$termdata = $termhydata;
 				}
 				if (in_array("Leving room", $termdata)) { $living = ''; $living_fade='';} else { $living = 'fade-text'; $living_fade = 'fade';}
 			    if (in_array('Servant room', $termdata)) { $servant = '';$servant_fade='';} else { $servant = 'fade-text' ; $servant_fade = 'fade';}
@@ -674,14 +674,14 @@ jQuery(function(){
 				if (in_array('Power Backup', $termdata)){ $power_backup = '';$power_backup_fade='';} else { $power_backup = 'fade-text';$power_backup_fade = 'fade';}
 				if (in_array('Wooden Floor', $termdata)){ $wooden = '';$wooden_fade='';} else { $wooden = 'fade-text';$wooden_fade = 'fade';}
 		    ?>
-	        
+
 	        <div class="col-md-12 text-left mr_50">
 				<h3>4 BedRoom Apartment</h3>
 				<p class="cate_cont room-bto2"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
-				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php 
+				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php
 				$num = getHydrameta(get_the_ID(),'hf_property_4bedroomprice');
 				$ext="";
-				$number_of_digits = count_digit($num); 
+				$number_of_digits = count_digit($num);
 				if($number_of_digits>3)
 				{
 				if($number_of_digits%2!=0)
@@ -810,27 +810,27 @@ jQuery(function(){
 
 	//echo "<pre>";
 	//print_r($amenities);
-	
-	
-    if ($amenities): 
-	
-	
-	
+
+
+    if ($amenities):
+
+
+
 		//$value=preg_match_all('/<li><i class=\"fa fa-check ok\"></i>(.*?)<\/li>/s',$amenities,$estimates);
-		
+
 		//echo "<pre>";
 		//print_r($estimates);
-	
+
 	    $val_am = trim(strip_tags($amenities));
-		
+
 		//echo "<pre>";
 		//print_r($val_am);
-		
+
 	    $diffentiated_amenities = explode(",",$val_am);
 	    $trimmed_array=array_map('trim',$diffentiated_amenities);
-	  
-		
-	  
+
+
+
 	    if (in_array("Lift", $trimmed_array)) { $lift = '';} else { $lift = 'fade-text'; $life_fade = 'fade';}
 	    if (in_array('Security', $trimmed_array)) { $security = '';} else { $security = 'fade-text' ; $sec_fade = 'fade';}
 		if (in_array('Internet', $trimmed_array)) { $internet = '';} else { $internet = 'fade-text' ; $internet_fade = 'fade';}
@@ -851,11 +851,11 @@ jQuery(function(){
 	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();
 							?></span></h2></div>
           	</div>
-			
+
 			<div id="hidden_ammineties" style="display:none;">
 				<?php echo $amenities; ?>
 			</div>
-			
+
           	<div class="col-md-12" >
 	          	<ul class="amenities-options">
 				<!--	<li class="single-amenity">
@@ -914,11 +914,11 @@ jQuery(function(){
 						<div class="<?php echo $indoor_fade; ?>"><img src="<?php bloginfo('template_directory')?>/images/INDOOR-GAMES.png" ></div>
 						<div class="<?php echo $indoor_games; ?> text amenities_cn">Indoor Games</div>
 					</li>
-					
+
 					-->
-					
+
 				</ul>
-			</div> 
+			</div>
 			<div style="clear:both"></div>
 			<?php /*?>
 			<div class="col-md-12">
@@ -983,8 +983,8 @@ jQuery(function(){
 						</a>
 					</li>
 		     	</ul>
-		   
-		  
+
+
 		    	<div class="properties-items inn_properties-items isotope">
 		    		<div class="items-list row">
 			    		<div class="building-card floors-card co  floors property-item isotope-item  col-md-12">
@@ -997,7 +997,7 @@ jQuery(function(){
 							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_toilets');  //the_field('toilets'); ?></div></div>
 						</div>
 						<div class="building-card fittings-card  fittings property-item isotope-item col-md-12">
-							
+
 							<div class="pills col-md-4"><div class="header">DOORS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_doors'); //the_field('doors'); ?></div></div>
 							<div class="pills col-md-4"><div class="header">ELECTRICAL</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_electrical');// the_field('electrical'); ?></div></div>
 							<div class="pills col-md-4"><div class="header">KITCHEN</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_kitchen'); //the_field('fitting_kitchen'); ?></div></div>
@@ -1014,21 +1014,21 @@ jQuery(function(){
 							<div class="pills col-md-4"><div class="header">TOILETS</div><div class="texts as_texts"><?php echo getHydrameta(get_the_ID(),'hf_property_ntoilets');   //the_field('toilets_walls'); ?></div></div>
 						</div>
 		    		</div>
-		    	
+
 		    	</div>
 		    </div>
-			
+
 			<?php /*?>
             <div class="property-detail-amenities">
                 <?php //print $amenities; ?>
             </div>
             <?*/?>
-            
-            
+
+
         </div>
          <hr/>
-     
-        
+
+
     <?php print hydra_render_field(get_the_ID(), 'related', 'detail'); ?>
     <?php $presentation = hydra_render_group(get_the_ID(), 'presentation', 'detail'); ?>
 
@@ -1040,82 +1040,42 @@ jQuery(function(){
         <hr/>
     <?php endif; ?>
 
-    
 
-    
+
+
     <?php endif; ?>
-    
-    	<div class="row as_map" id="map" >
+
+    	<div class="row as_map" id="map">
     	 <div class="col-md-12">
 	        	<div class="center section-title as_section_tl"><h2><span>EXPLORE PROJECT AND NEIGHBOURHOOD <?php the_title();?></span></h2></div>
          </div>
-         
-         <?php /*?>
-         <ul class="map-tabs-links properties-filter">
-		       <li class="selected">
-		       		<a href="#" data-filter=".normal-map" class="first-click-this">BUILDINGS </a>
-		       </li>
-		       <li>
-		       		<a href="#" data-filter=".nearby-map">NEARBY</a>
-		       </li>
-		</ul>		
-		<div class="isotope properties-items">
-		    		<div class="items-list row">
-			    		
-			    		<div class="isotope-item   property-item  normal-map col-md-12">
-			    		<?php $latitude = get_field('latitude');
-					    	$longitude = get_field('longitude');?>
-			    		<!-- 	<iframe width="1150" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=<?php echo $latitude?>,<?php echo $longitude?> (<?php the_title()?>)&amp;output=embed"></iframe>
-					    	 --><?php //wp_enqueue_script('googlemaps3');
-    						
-						    wp_enqueue_script('clusterer');
-						    wp_enqueue_script('infobox');
-						    ?>
-						   
-						    <?php $mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE); ?>
-						    <?php if (isset($mapPosition['items'][0])): ?>
-						        <?php if (!empty($mapPosition['items'][0]['latitude']) && !empty($mapPosition['items'][0]['longitude'])) : ?>
-						            <div id="map-property">
-						            </div><!-- /#map-property -->
-						        <?php endif; ?>
-						    <?php endif; ?>
-						    <?php add_action('aviators_footer_map_detail', 'aviators_properties_map_detail'); ?>
-	    					
-	    				</div>
-	    				<div class="isotope-item   property-item  nearby-map col-md-12">
-						    <?php 
-						    	$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');
-						    	$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
-						    	echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]')?>
-						</div>
-				</div>
-	    </div>
-	    <?php */?>
+
+
 	     <div class="col-md-12 inn_map_cont v1-filter">
-		     <ul class="map-tabs-links properties-filter map-filter">
+		     <ul class="map-tabs-links properties-filter map-filter map_section_data">
 			       <li class="selected">
-			       		<a href="#"  onclick ="removeonlyMarkers();removecenterMarkers();clearResults();reallyDoSearch();" class="first-click-this">BUILDINGS </a>
+			       		<a href="#"  onclick ="clearResults();removeonlyMarkers();removecenterMarkers();" class="first-click-this">BUILDINGS </a>
 			       </li>
 			       <li>
 			       		<a href="#" onclick ="removecenterMarkers();reallyDoSearch();" >NEARBY</a>
 			       </li>
-			</ul>	
-	    	<?php 
+			</ul>
+	    	<?php
 	    	$mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE);
 	    	$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');
 	    	$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
-	    	echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]')?>
+	    	echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]');?>
 	    </div>
 		<div class="col-md-12 map_bot_border al-burooj-border"><span></span></div>
-	 
+
 	</div>
-        
+
          <hr/>
-         
+
           <div class="row as_flats" id="three_sixty_data">
 	        <div class="col-md-12"  style="margin-top: 20px;">
 	        	<div class="center section-title as_section_tl"><h2><span>360* View OF <?php the_title();?></span></h2></div>
-	        	
+
 	        		<div class="properties-items-three-sixty isotope-three-sixty">
 			    		<div class="items-list-three-sixty row">
                                             <div class="three_sixty_data-gallery property-item-three_sixty_data isotope-item-three-sixty  col-md-12">
@@ -1127,16 +1087,16 @@ jQuery(function(){
 							<img src="<?php echo $three_sixty_data_imageurl; ?>" alt="<?php echo $three_sixty_data_imagealt; ?>" />
 						<?php 	endif; ?>
                                             </div>
-		            		
+
                                         </div>
 	        		</div>
 	        </div>
 	        <!-- /.col-md-6 -->
 	    </div>
 	    <!-- /.row -->
-        
+
          <hr/>
-         
+
               <div class="row" id="gallery" >
 	        <div class="col-md-12 al_baruj_slider">
 	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
@@ -1158,8 +1118,8 @@ jQuery(function(){
 	        <!-- /.col-md-6 -->
 	    </div>
 	    <!-- /.row -->
-        
-      
+
+
 	<script src="<?php bloginfo('template_directory'); ?>/js/highcharts.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/exporting.js"></script>
 	<?php if(showMap(get_the_ID())) { ?>
@@ -1219,21 +1179,21 @@ jQuery(function(){
 							<?php if(getHydrameta(get_the_ID(),'hf_property_oct') != null ) echo getHydrameta(get_the_ID(),'hf_property_oct'); else echo '6900';?>,
 							<?php if(getHydrameta(get_the_ID(),'hf_property_nov') != null ) echo getHydrameta(get_the_ID(),'hf_property_nov'); else echo '6900'; ?>,
 							<?php if(getHydrameta(get_the_ID(),'hf_property_dec') != null ) echo getHydrameta(get_the_ID(),'hf_property_dec'); else echo '6900'; ?>,]
-					
-					/*[	<?php if(get_field('jan') != null ) echo get_field('jan'); else echo '7000';?>, 
-		            		<?php if(get_field('feb') != null ) echo get_field('feb'); else echo '6900';?>, 
-		            		<?php if(get_field('mar') != null ) echo get_field('mar'); else echo '9500';?>, 
-		            		<?php if(get_field('apr') != null ) echo get_field('apr'); else echo '14500';?>, 
-		            		<?php if(get_field('may') != null ) echo get_field('may'); else echo '10200';?>, 
-		            		<?php if(get_field('jun') != null ) echo get_field('jun'); else echo '1500';?>, 
-		            		<?php if(get_field('jul') != null ) echo get_field('jul'); else echo '10000';?>, 
+
+					/*[	<?php if(get_field('jan') != null ) echo get_field('jan'); else echo '7000';?>,
+		            		<?php if(get_field('feb') != null ) echo get_field('feb'); else echo '6900';?>,
+		            		<?php if(get_field('mar') != null ) echo get_field('mar'); else echo '9500';?>,
+		            		<?php if(get_field('apr') != null ) echo get_field('apr'); else echo '14500';?>,
+		            		<?php if(get_field('may') != null ) echo get_field('may'); else echo '10200';?>,
+		            		<?php if(get_field('jun') != null ) echo get_field('jun'); else echo '1500';?>,
+		            		<?php if(get_field('jul') != null ) echo get_field('jul'); else echo '10000';?>,
 		            		<?php if(get_field('aug') != null ) echo get_field('aug'); else echo '14500'; ?>,
 						    <?php //{y: 15000,marker: {symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'}}, ?>
 				            <?php if(get_field('sep') != null ) echo get_field('sep'); else echo '13000';?>,
-				            <?php if(get_field('oct') != null ) echo get_field('oct'); else echo '8300';?>, 
-				            <?php if(get_field('nov') != null ) echo get_field('nov'); else echo '11000';?>, 
+				            <?php if(get_field('oct') != null ) echo get_field('oct'); else echo '8300';?>,
+				            <?php if(get_field('nov') != null ) echo get_field('nov'); else echo '11000';?>,
 				            <?php if(get_field('dec') != null ) echo get_field('dec'); else echo '9600';?>,] */
-		
+
 		        }]
 		    });
 		    jQuery( ".first-click-this" ).trigger( "click" );
@@ -1250,7 +1210,7 @@ jQuery(function(){
 			<div id="line_chart_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		</div>
 		<?php } ?>
-	</div>	
+	</div>
 	<div class="row" id="about-developer">
 		<div class="col-md-12">
 			<div class="center section-title as_section_tl group-bot"><h2><span>About <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
@@ -1277,9 +1237,9 @@ jQuery(function(){
 				<div class="col-md-4 center"><h5>ASSOCIATE MEMBERSHIPS</h5><p><?php echo getHydrameta(get_the_ID(),'hf_property_associate_memberships'); //the_field('associate_memberships')?></p></div>
 			</div>
 		</div>
-	</div>	
-		
-	<div class="row" id="contact-developer">	
+	</div>
+
+	<div class="row" id="contact-developer">
 		<div class="col-md-12 popup-this-contact-form">
 			<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
@@ -1288,9 +1248,9 @@ jQuery(function(){
 					if( !empty($image) ): */?><!--
 					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />
 				--><?php /*	endif; */?>
-				
-					
-				
+
+
+
 					<div class="contact_inn"><h4>
 					<?php //	$image = get_field('developer_image');
 					if( !empty($imageurl) ): ?>

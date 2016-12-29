@@ -161,6 +161,12 @@ jQuery(window).scroll(function () {
 	
 	});
 
+	jQuery("ul.map_section_data li a").on("click",function(){
+		reallyDoSearch();
+
+return false;
+	});
+
 	
 });
  </script>
