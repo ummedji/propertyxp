@@ -42,3 +42,13 @@
     font-size: 11px;
 }
 .block-content .inner-pro-parent .field-item .field-suffix {display: inherit;}
+
+.csbwfs-social-widget a#csbwfs-show:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 40px;
+    height: 161px;
+    display: block;
+}
