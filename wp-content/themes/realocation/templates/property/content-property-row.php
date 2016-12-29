@@ -1,6 +1,6 @@
 <div class="property-row">
     <div class="row">
-        <div class="property-row-picture col-sm-6 col-md-6 col-lg-4">
+        <div class="property-row-picture col-sm-6 col-md-6 col-lg-4 inner-pro-parent">
 
             <div class="property-row-picture-inner">
                 <a href="<?php echo get_permalink(); ?>" class="property-row-picture-target">

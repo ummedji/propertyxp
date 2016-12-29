@@ -13,3 +13,32 @@
     }
 }
 #AnythingPopup_BoxContainer4, #AnythingPopup_BoxContainerBody4 { height: auto !important;z-index: 9999999999 !important;}
+.wpcf7-mail-sent-ok, .wpcf7-mail-sent-ng {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 5px !important;
+    margin: 0 !important;
+    border: 2px solid #ff0000 !important;
+}
+.gm-style-iw table tr td.iw_attribute_name { vertical-align: top;}
+.gm-style-iw table tr td {
+    font-size: 14px !important;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    padding-bottom: 5px;
+}
+.gm-style-iw table tr td a {font-family: 'Raleway', 'Arial', sans-serif;}
+
+.tp-leftarrow.default {left: 42px !important;}
+.tp-rightarrow {
+    right: 42px !important;
+}
+
+.block-content .inner-pro-parent .property-row-meta .field-items .group-field-item .label p{
+    margin: 5px 0 !important;
+    font-size: 13px;
+}
+.block-content .inner-pro-parent .field-item .field-value {
+    font-size: 11px;
+}
+.block-content .inner-pro-parent .field-item .field-suffix {display: inherit;}

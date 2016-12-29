@@ -172,6 +172,12 @@ p.icon_cont {
 .contact_inn h4 img {
     max-height: 50px;
 }
+#AnythingPopup_BoxContainerBody4 .contact_inn h4 img { max-height: 110px;}
+#AnythingPopup_BoxContainerBody4 .contact_inn {
+    padding: 5px 0;
+    background-color: #fff !important;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
 .right_cont .wpcf7 form p {
     width: 48%;
     float: left;
