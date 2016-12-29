@@ -243,7 +243,7 @@
 </script>
 
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/jquery.mCustomScrollbar.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.CSS" />
 
 	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
 
