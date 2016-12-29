@@ -1,5 +1,5 @@
 .hf-property-price .label { padding: 0;}
-.hf-property-price .label p {
+.infobox-price .hf-property-price .label p {
     color: #000;
     font-size: 12px;
 }
