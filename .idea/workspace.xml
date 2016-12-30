@@ -47,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aviators_submission.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aviators_submission.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_submission/aviators_submission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53195167">
+            <state vertical-scroll-proportion="-7.806452">
               <caret line="234" column="10" selection-start-line="234" selection-start-column="10" selection-end-line="234" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.477396">
+              <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -99,31 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/wysija-newsletters/views/front/confirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="139" selection-start-line="57" selection-start-column="139" selection-end-line="57" selection-end-column="139" />
-              <folding>
-                <marker date="1483025520075" expanded="true" signature="1623:1958" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="1749:1945" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="1788:1931" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="1984:2235" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2004:2072" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2080:2227" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2256:2504" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2276:2343" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2351:2496" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2525:2877" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2545:2610" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="2618:2869" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="3078:3111" placeholder="..." />
-                <marker date="1483025520075" expanded="true" signature="4846:5384" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="widget_nl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -166,6 +151,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-submission-property-index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-submission-property.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_submission/aviators_submission.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/footer.php" />
       </list>
     </option>
   </component>
@@ -255,7 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,93 +259,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wysija-newsletters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wysija-newsletters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wysija-newsletters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wysija-newsletters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validate" />
+              <option name="myItemId" value="realocation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,7 +292,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -478,20 +382,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="139" selection-start-line="57" selection-start-column="139" selection-end-line="57" selection-end-column="139" />
           <folding>
-            <marker date="1483025520075" expanded="true" signature="1623:1958" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1749:1945" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1788:1931" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1984:2235" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2004:2072" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2080:2227" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2256:2504" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2276:2343" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2351:2496" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2525:2877" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2545:2610" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2618:2869" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="3078:3111" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="4846:5384" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -604,20 +508,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="139" selection-start-line="57" selection-start-column="139" selection-end-line="57" selection-end-column="139" />
           <folding>
-            <marker date="1483025520075" expanded="true" signature="1623:1958" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1749:1945" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1788:1931" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="1984:2235" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2004:2072" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2080:2227" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2256:2504" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2276:2343" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2351:2496" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2525:2877" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2545:2610" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="2618:2869" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="3078:3111" placeholder="..." />
-            <marker date="1483025520075" expanded="true" signature="4846:5384" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483025520075" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -706,8 +610,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_submission/aviators_submission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53195167">
+        <state vertical-scroll-proportion="-7.806452">
           <caret line="234" column="10" selection-start-line="234" selection-start-column="10" selection-end-line="234" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.477396">
+          <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
           <folding />
         </state>
       </provider>
