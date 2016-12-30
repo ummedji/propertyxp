@@ -54,7 +54,8 @@ class WYSIJA_view_front_confirm extends WYSIJA_view_front {
 					'<label for="email">' . esc_attr__( 'Email', WYSIJA ) . '</label>' .
 				'</th>' .
 				'<td>' .
-					'<input type="text" size="40" class="validate[required,custom[email]]" id="email" value="' . esc_attr( $data['user']['details']['email'] ) . '" name="wysija[user][email]" />' .
+					'<input type="text" size="40"
+class="validate[required,custom[email]]" id="email" value="' . esc_attr( $data['user']['details']['email'] ) . '" name="wysija[user][email]" />' .
 				'</td>' .
 			'</tr>';
 		}

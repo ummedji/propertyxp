@@ -82,8 +82,10 @@ if ( is_user_logged_in() ) {
 	 *
 	 * @since 2.1.0
 	 */
+
 	do_action( 'wp_ajax_' . $_REQUEST['action'] );
 } else {
+
 	/**
 	 * Fires non-authenticated AJAX actions for logged-out users.
 	 *

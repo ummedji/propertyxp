@@ -41,55 +41,75 @@ $url = get_bloginfo('url');
 
    function calculate_price()
     {
-    
-    
-            
-    var data = {
-    			action: 'get_property_average_value',
-				state_id: jQuery('#state').val(),
-				city_id: jQuery('#vm_location').val()
-			};
-            var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-    		jQuery.post(ajaxurl, data, function(response) {	
-        		console.log(response);	
-        		jQuery('.property_val').html(response);		
-				/*var results = JSON.parse(response);                
-                //var res = JSON.stringify(results);
-                //jQuery('#res').html(res);
-                
-				if(results['wpcf-prise'] != 'undefined')
-				{
-					var floor = $('#floor').val();
-                    var floor_m = 'wpcf-floor-'+floor;
-                    var prise_val = parseInt(results['wpcf-prise']);
-                    var area_val = parseInt($('#area').val());
-                    var floor_val = parseInt(results[floor_m]);                    
-                    var full_f = $('.full_f:checked').val();
-                    
-                    if(full_f=="yes"){ var furnished_val = parseInt(results['wpcf-furnished']); }
-                    else{ var furnished_val = 0;}
-                    var property_value = (area_val*prise_val);
-                    
-                    var property_value = property_value+furnished_val+floor_val;
-                    
-                    var amn_val = 0;
-                    $('.shortchecked:checked').each(function(){                        
-                        var amn_i = 'wpcf-'+$(this).val();
-                            amn_i = parseInt(results[amn_i]);
-                            console.log(amn_i);                            
-                            if(!isNaN(amn_i)){
-                                amn_val += amn_i;
-                                }                        
-                    });
-                    
-                    var property_value = property_value+amn_val;
-                    var property_value = formatNumber(property_value);
-                    $('.property_val').text(property_value+ ' Rs.');
-                    if(property_value==''){ $('.error').text('Please select proper data.'); }
-                    else{ $('.property_val').text(property_value+ ' Rs.'); }
-                    
-				}*/
-    		});
+
+		var state_data = jQuery("select#state").val();
+		var location_data = jQuery("select#vm_location").val();
+	if(state_data != "" && location_data != ""){
+
+		var data = {
+			action: 'get_property_average_value',
+			state_id: jQuery('#state').val(),
+			city_id: jQuery('#vm_location').val()
+		};
+		var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+		jQuery.post(ajaxurl, data, function(response) {
+			console.log(response);
+			jQuery('.property_val').html(response);
+			/*var results = JSON.parse(response);
+			 //var res = JSON.stringify(results);
+			 //jQuery('#res').html(res);
+
+			 if(results['wpcf-prise'] != 'undefined')
+			 {
+			 var floor = $('#floor').val();
+			 var floor_m = 'wpcf-floor-'+floor;
+			 var prise_val = parseInt(results['wpcf-prise']);
+			 var area_val = parseInt($('#area').val());
+			 var floor_val = parseInt(results[floor_m]);
+			 var full_f = $('.full_f:checked').val();
+
+			 if(full_f=="yes"){ var furnished_val = parseInt(results['wpcf-furnished']); }
+			 else{ var furnished_val = 0;}
+			 var property_value = (area_val*prise_val);
+
+			 var property_value = property_value+furnished_val+floor_val;
+
+			 var amn_val = 0;
+			 $('.shortchecked:checked').each(function(){
+			 var amn_i = 'wpcf-'+$(this).val();
+			 amn_i = parseInt(results[amn_i]);
+			 console.log(amn_i);
+			 if(!isNaN(amn_i)){
+			 amn_val += amn_i;
+			 }
+			 });
+
+			 var property_value = property_value+amn_val;
+			 var property_value = formatNumber(property_value);
+			 $('.property_val').text(property_value+ ' Rs.');
+			 if(property_value==''){ $('.error').text('Please select proper data.'); }
+			 else{ $('.property_val').text(property_value+ ' Rs.'); }
+
+			 }*/
+		});
+
+	}else{
+		if(state_data == ""){
+			jQuery( "select#state" ).after("<span class='error'>Please select state.</span>");
+		}
+
+		if(location_data == ""){
+			jQuery( "select#vm_location" ).after("<span class='error'>Please select location.</span>");
+		}
+
+		setTimeout(function(){
+			jQuery("span.error").remove();
+		}, 4000);
+
+		return false;
+
+	}
+
     }
 </script>
 <script>
@@ -100,10 +120,22 @@ $url = get_bloginfo('url');
 	  min: 0,
 	  max: 100,
 	  slide: function( event, ui ) {
-	    jQuery( "#floor" ).val( "" + ui.value );
+		  	    jQuery( "#floor" ).val( "" + ui.value );
 	  }
 	});
 	jQuery( "#floor" ).val( "" + jQuery( "#slider-range-min" ).slider( "value" ) );
+
+		jQuery("input#floor").on("focusout",function(){
+			if(jQuery( "#floor" ).val() > 100){
+				jQuery( "#floor" ).val("");
+
+				jQuery( "#floor" ).after("<span class='error'>Please enter value with in range of 100.</span>");
+				setTimeout(function(){
+					jQuery("span.error").remove();
+				}, 2000);
+			}
+		});
+
 	});
 
 	jQuery(function() {
@@ -117,6 +149,19 @@ $url = get_bloginfo('url');
 	  }
 	});
 		jQuery( "#area" ).val( "" + jQuery( "#slider-range-area" ).slider( "value" ) );
+
+		jQuery("input#area").on("focusout",function(){
+			if(jQuery( "#area" ).val() > 100){
+				jQuery( "#area" ).val("");
+
+				jQuery( "#area" ).after("<span class='error'>Please enter value with in range of 10000.</span>");
+				setTimeout(function(){
+					jQuery("span.error").remove();
+				}, 2000);
+			}
+		});
+
+
 	});
 </script>
 

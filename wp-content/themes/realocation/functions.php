@@ -617,6 +617,7 @@ add_filter('admin_footer_text', 'change_footer_admin');
 
 
 add_action("wp_ajax_search_location_by_city", "search_location_by_city");
+add_action("wp_ajax_nopriv_search_location_by_city", "search_location_by_city");
 
 
 function search_location_by_city() {
@@ -635,7 +636,25 @@ function search_location_by_city() {
 
 }
 
+/*function wp_ajax_nopriv_search_location_by_city() {
+
+    $locations = get_terms('locations', array('parent' => $_REQUEST["state_id"], 'hide_empty' => false));
+
+    $html  = '';
+    foreach ($locations as $location) {
+
+        $html  .= '<option value="'.$location->term_id.'">';
+        $html  .= $location->name;
+        $html  .= '</option>';
+    }
+    echo $html;
+    die();
+
+}*/
+
 add_action("wp_ajax_get_property_average_value", "get_property_average_value");
+add_action("wp_ajax_nopriv_get_property_average_value", "get_property_average_value");
+
 function get_property_average_value(){
 	$state_id = $_REQUEST["state_id"];
 	$city_id = $_REQUEST["city_id"];

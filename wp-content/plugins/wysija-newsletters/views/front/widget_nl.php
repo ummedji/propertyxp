@@ -226,7 +226,8 @@ class WYSIJA_view_front_widget_nl extends WYSIJA_view_front {
 				}
 
 				$classValidate='wysija-email '.$this->getClassValidate($this->model->columns['email'],true);
-				$data.='<p><input type="text" id="'.$form_id_real.'-wysija-to" class="'.$classValidate.'" value="'.$value_attribute.'" name="wysija[user][email]" />';
+				$data.='<p><input type="text" id="'.$form_id_real.'-wysija-to" class="'.$classValidate.'" value="'.$value_attribute.'"
+name="wysija[user][email]" />';
 				$data.=$this->honey($params,$form_id_real);
 				$data.=$submitbutton.'</p>';
 			}
