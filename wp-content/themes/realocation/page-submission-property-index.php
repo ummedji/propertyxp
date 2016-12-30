@@ -3,7 +3,8 @@
  * Template Name: Property Submission Index
  */
 ?>
-<?php aviators_submission_permission_check(); ?>
+<?php
+aviators_submission_permission_check(); ?>
 <?php aviators_transaction_configuration_set(); ?>
 
 <?php get_header(); ?>

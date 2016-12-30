@@ -4,7 +4,9 @@
  */
 ?>
 <?php if ( ! is_user_logged_in() ) : ?>
-  <?php aviators_add_message(__('You are not allowed to access this page as anonymous user. Please sign in before.', 'aviators'), 'danger'); ?>
+  <?php
+
+    aviators_add_message(__('You are not allowed to access this page as anonymous user. Please sign in before.', 'aviators'), 'danger'); ?>
   <?php wp_redirect( home_url() ); exit; ?>
 <?php endif; ?>
 

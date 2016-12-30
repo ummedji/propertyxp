@@ -188,7 +188,7 @@ p.icon_cont {
 .right_cont .wpcf7 form p input {
     padding: 7px 8px;
 }
-.right_cont .wpcf7 form p input:hover { color: #fff !important;}
+.right_cont .wpcf7 form p input:hover { color: #252525 !important;}
 .as_row-wise-amenities span.dev-floors, .as_row-wise-amenities span.dev-fittings, .as_row-wise-amenities span.dev-walls {
     height: 50px;
     width: 50px;
