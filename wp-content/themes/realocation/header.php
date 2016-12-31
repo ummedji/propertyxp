@@ -284,6 +284,13 @@
 ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V3.CSS" />
 <?php } ?>
+
+	<?php
+	//wp_enqueue_script('googlemaps3');
+	//wp_enqueue_script('clusterer');
+	//wp_enqueue_script('infobox');
+	?>
+
 </head>
 
 <body <?php body_class(); ?> >

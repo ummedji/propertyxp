@@ -227,8 +227,10 @@ function aviators_submission_action_delete_confirm($post_type, $post_id) {
 function aviators_submission_permission_check() {
     if(!is_user_logged_in()) {
 
-       // aviators_add_message(__('You are not allowed to access this page as anonymous user. Please sign in before.', 'aviators'), 'danger');
+    //    aviators_add_message(__('You are not allowed to access this page as anonymous user. Please sign in before.', 'aviators'), 'danger');
         $redirect = aviators_settings_get('submission', 'general', 'redirect');
+
+        unset($_SESSION['msg']);
 
         if($redirect) {
             wp_redirect($redirect);

@@ -57,5 +57,10 @@
     font-family: sans-serif;
     line-height: 14px;
 }
-/*
-.vm_ele label { cursor: default;}*/
+.as-content-pr .block-content-inner h1.prop_val-aa:after { display: none !important;}
+.as-content-pr .block-content-inner h1.prop_val-aa {
+    font-size: 24px;
+    margin-bottom: 15px!important;
+    margin-top: 15px!important;
+}
+

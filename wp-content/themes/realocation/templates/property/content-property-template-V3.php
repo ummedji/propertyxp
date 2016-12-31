@@ -859,9 +859,9 @@ jQuery(function(){
 	    </div>
 	    <?php */?>
 			<div class="col-md-12 inn_map_cont v3-filter">
-				<ul class="map-tabs-links properties-filter">
+				<ul class="map-tabs-links properties-filter map_section_data">
 					<li class="selected">
-						<a href="#"  onclick ="removecenterMarkers();removeonlyMarkers();clearResults();" class="first-click-this">BUILDINGS </a>
+						<a href="#"  onclick ="clearResults();removeonlyMarkers();removecenterMarkers();" class="first-click-this">BUILDINGS </a>
 					</li>
 					<li>
 						<a href="#" onclick ="removecenterMarkers();reallyDoSearch();" >NEARBY</a>
@@ -871,6 +871,7 @@ jQuery(function(){
 				$mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE);
 				$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');
 				$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
+
 				echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]');
 				?>
 			</div>

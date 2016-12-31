@@ -292,7 +292,7 @@ citymap['Ahmedabad'] = {
   google.maps.event.addListenerOnce(map, 'idle', function(){
 	    // do something only the first time the map is loaded
 	  removeonlyMarkers();clearResults();
-	})
+	});
 	</script>
 	<div id="map-content">
 	<div id="controls" class="row">

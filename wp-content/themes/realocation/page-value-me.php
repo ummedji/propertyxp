@@ -185,7 +185,7 @@ $url = get_bloginfo('url');
     font-size: 16px;
     }
     .valueme-ele{
-    	width: 98%;
+    	width: 100%;
     }
     .vm_ele{
     	padding: 10px 0px;
@@ -324,7 +324,7 @@ $url = get_bloginfo('url');
 				    </div>
                     <div class="prop_val">
                         <p>Your property estimated valuation: </p>
-    			    	<h1 class="property_val"></h1>
+    			    	<h1 class="property_val prop_val-aa"></h1>
                         <p class="error"></p>
 				    </div>
 					

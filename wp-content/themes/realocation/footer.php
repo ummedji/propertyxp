@@ -163,11 +163,12 @@ jQuery(window).scroll(function () {
 
 	jQuery("ul.map_section_data li a").on("click",function(){
 		reallyDoSearch();
-
-return false;
+		return false;
 	});
 
-	
+	if(jQuery("select#hydra-hf-property-location-filter-items-0-location").is(":disabled")){
+		jQuery("select#hydra-hf-property-location-filter-items-0-location").parent().find("div.select-wrapper").addClass("UMMED");
+	}
 
 	
 });

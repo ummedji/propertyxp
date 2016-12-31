@@ -15,10 +15,15 @@ if ($properties_horizontal->getFormRecord()) {
 $properties_vertical = hydra_form_filter('properties_vertical');
 if ($properties_vertical->getFormRecord()) {
     $tmp_args = $properties_vertical->getQueryArray();
+   // $query_args = $properties_vertical->getQueryArray();
     if (count($tmp_args['meta_query'])) {
         $query_args['meta_query'] = $tmp_args['meta_query'];
     }
 }
+
+//echo "<pre>";
+//print_r($query_args);
+
 
 $paged = get_query_var('paged');
 if (isset($paged)) {
@@ -30,7 +35,11 @@ if (isset($sort) && $sort) {
     aviators_properties_sort_get_query_args(get_the_ID(), $query_args);
 }
 
+//echo "<pre>";
+//print_r($query_args);
+//die;
 query_posts($query_args);
+
 $fullwidth = !is_active_sidebar('sidebar-1');
 switch ($display) {
     case "row":
