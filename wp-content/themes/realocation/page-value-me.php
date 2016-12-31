@@ -236,7 +236,7 @@ $url = get_bloginfo('url');
 </div>
 
 <div class="itembox">
-	<h2 class="title"><?php the_title(); ?></h2>	<div class="col-md-12">				<div class="col-md-2"></div>				<div class="col-md-8 center">				<img style="margin-bottom:20px" src="http://www.propertyxp.com/wp-content/themes/realocation/images/VALUE.png" alt="">				</div>				<div class="col-md-2"></div>			</div>
+	<h2 class="title"><?php the_title(); ?></h2>	<div class="col-md-12">				<div class="col-md-2"></div>				<div class="col-md-8 center">				<img style="margin-bottom:20px" src="<?php echo get_bloginfo('url');?>/wp-content/themes/realocation/images/VALUE.png" alt="">				</div>				<div class="col-md-2"></div>			</div>
 		<div class="itemboxinner">
             <div id="res"></div>
 			<div id="value_me">
