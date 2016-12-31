@@ -152,8 +152,8 @@ $url = get_bloginfo('url');
 	});
 		jQuery( "#area" ).val( "" + jQuery( "#slider-range-area" ).slider( "value" ) );
 
-		jQuery("input#area").on("focusout",function(){
-			if(jQuery( "#area" ).val() > 100){
+		jQuery("input#area").on("keyup",function(){
+			if(jQuery( "#area" ).val() > 10000){
 				jQuery( "#area" ).val("");
 
 				jQuery("span.error").remove();
