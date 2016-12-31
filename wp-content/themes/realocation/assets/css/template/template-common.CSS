@@ -64,3 +64,11 @@
     margin-top: 15px!important;
 }
 
+.header-dark .header-top { background-color: #252525 !important;}
+/*footer light css*/
+.footer-light .footer-top { background-color: #f5f3f3 !important;}
+.footer-light .footer-top p { color: #252525 !important;}
+.footer-light .footer-top a { color: #252525 !important;}
+.footer-light .ftr_text, .footer-light .ftr_text a {color: #252525 !important;}
+/*end footer light css*/
+

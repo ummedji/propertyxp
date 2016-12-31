@@ -18,6 +18,9 @@ function aviators_calculator_mortgage_shortcode($attributes, $content = NULL) {
         $values = aviators_calculators_mt_setting();
     }
 
+    echo "<pre>";
+    print_r($values);die;
+
     $results = aviators_calculator_results($values);
 
     $data = array();

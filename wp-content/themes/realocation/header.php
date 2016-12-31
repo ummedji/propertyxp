@@ -180,10 +180,10 @@
 
 
 		setTimeout(function(){
-			jQuery('input#hydra-home-price').val(commaSeparateNumber(jQuery("input#hydra-home-price").val()));
+			/*jQuery('input#hydra-home-price').val(commaSeparateNumber(jQuery("input#hydra-home-price").val()));
 
 			jQuery('input#hydra-down-price').val(commaSeparateNumber(jQuery("input#hydra-down-price").val()));
-			jQuery('input#hydra-insurance').val(commaSeparateNumber(jQuery("input#hydra-insurance").val()));
+			jQuery('input#hydra-insurance').val(commaSeparateNumber(jQuery("input#hydra-insurance").val()));*/
 
 			jQuery('table tbody td.item').each(function(){
 
