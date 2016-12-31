@@ -132,9 +132,9 @@ $url = get_bloginfo('url');
 				jQuery("span.error").remove();
 
 				jQuery( "#floor" ).after("<span class='error'>Please enter value with in range of 100.</span>");
-				/*setTimeout(function(){
+				setTimeout(function(){
 					jQuery("span.error").remove();
-				}, 2000);*/
+				}, 2000);
 			}
 		});
 
@@ -158,9 +158,9 @@ $url = get_bloginfo('url');
 
 				jQuery("span.error").remove();
 				jQuery( "#area" ).after("<span class='error'>Please enter value with in range of 10000.</span>");
-				/*setTimeout(function(){
+				setTimeout(function(){
 					jQuery("span.error").remove();
-				}, 2000);*/
+				}, 2000);
 			}
 		});
 
