@@ -7,9 +7,19 @@
     </ol>
     <div class="carousel-inner">
 
-    <?php foreach($slides as $index => $slide): ?>
+    <?php
+	$k = 0;
 
-        <div class="item <?php if($index == 0) { print "active"; } ?>">
+	foreach($slides as $index => $slide):
+
+		$class = "";
+		if($k == 0 || $k == 1){
+			$class= " content-pink-parent";
+		}
+
+		?>
+
+        <div class="item <?php if($index == 0) { print "active"; } echo $class; ?>">
             <a href="<?php echo get_permalink($slide); ?>">
                 <img src="<?php echo aviators_get_featured_image($slide->ID, 870, 420); ?> " alt="<?php echo $slide->post_title; ?>">
             </a>
@@ -146,7 +156,11 @@
             </div>
             <!-- /.slider - info-->
         </div><!-- /.slide-->
-    <?php endforeach; ?>
+    <?php
+
+	$k++;
+
+	endforeach; ?>
     </div>
 
     <a class="left carousel-control" href="#properties-slider" data-slide="prev">

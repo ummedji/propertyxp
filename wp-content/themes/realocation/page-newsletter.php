@@ -26,7 +26,9 @@
 					<div class="col-md-2"></div>
 		                    	<div class="newsletter-popup newsletter-page col-md-8">
 			                	<img src="<?php bloginfo('template_directory'); ?>/images/NEWS-LETTER.png" alt="" />
+									<div id="subcribe_search_newsletter">
 								<?php echo do_shortcode('[wysija_form id="1"]'); ?>
+										</div>
 					</div>
 					<div class="col-md-2"></div>
 				    </div>

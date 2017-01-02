@@ -10303,7 +10303,7 @@ h2.pro_tl {
 }
 .cl_tamp_title { background-color: #FF3401;}
 /*templete 2 css*/
-.palette-toggle { border: 2px solid #282c35;}
+.palette-toggle { border: 2px solid #FF3401;}
 .palette-wrapper { border-left: 2px solid #FF3401;}
 .temp_2_amenities .properties-filter li.selected { background-color: #FF3401 !important;}
 .inn_map_cont .map-tabs-links li a { border: solid 2px #FF3401 !important;}
@@ -10355,3 +10355,5 @@ h2.pro_tl {
 		padding-right: 15px !important;
 	}
 }
+/*
+.carousel_prp .content-pink-parent .slider-info { background-color: #FF3401 !important;}*/

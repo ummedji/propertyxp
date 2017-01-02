@@ -79,9 +79,10 @@
     padding: 5px 10px;
     color: #fff;
     font-size: 15px;
-    top: 0;
+    top: -6px;
     right: 0;
     background-color: #20242d !important;
+    font-size: 18px !important;
 }
 ul.room_details {
    margin: 0;
@@ -250,7 +251,7 @@ ul.temp3amenities-options {
 }
 .as_pills {
     background-color: #ecedef;
-    padding: 10px 0;
+    padding: 10px 30px;
     margin-bottom: 10px;
 }
 .inn_properties-items {

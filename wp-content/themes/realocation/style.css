@@ -9,7 +9,42 @@ Tags: two-columns, right-sidebar, featured-images, translation-ready
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl.html
 */
-
+@font-face {
+	font-family:'Raleway-Regular';
+	src: url('fonts/Raleway-Regular_gdi.eot');
+	src: url('fonts/Raleway-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Raleway-Regular_gdi.woff') format('woff'),
+	url('fonts/Raleway-Regular_gdi.ttf') format('truetype'),
+	url('fonts/Raleway-Regular_gdi.svg#Raleway-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'Raleway-Medium';
+	src: url('fonts/Raleway-Medium_gdi.eot');
+	src: url('fonts/Raleway-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Raleway-Medium_gdi.woff') format('woff'),
+	url('fonts/Raleway-Medium_gdi.ttf') format('truetype'),
+	url('fonts/Raleway-Medium_gdi.svg#Raleway-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'Helvetica-Regular';
+	src: url('fonts/Helvetica_gdi.eot');
+	src: url('fonts/Helvetica_gdi.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Helvetica_gdi.woff') format('woff'),
+	url('fonts/Helvetica_gdi.ttf') format('truetype'),
+	url('fonts/Helvetica_gdi.svg#Helvetica-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2212;
+}
 .center             { text-align: center; }
 .aligncenter        { margin: auto; text-align: center; margin-bottom: 22px; display: block !important;}
 .alignleft          { float: left; margin: 0px 30px 22px 0px;  }
@@ -472,8 +507,9 @@ border: 2px solid #ff3401;}
 }
 .filter-horizontal .carousel-select .list-unstyled>li .checkbox label {
 	font-weight: normal;
-	font-size: 14px;
-	font-family: 'Raleway';
+	font-size: 16px;
+	font-family: 'Helvetica-Regular';
+	/*font-weight: bold;*/
 }
 @media screen and (max-width:414px){
 	.filter-horizontal .carousel-select .list-unstyled>li .checkbox label { font-size: 13px;}
@@ -522,6 +558,7 @@ border: 2px solid #ff3401;}
 	display: inline-block;
 	text-align: center;
 	text-transform: uppercase !important;
+	font-family:'Raleway-Medium';
 }
 /*slider css*/
 .as_pro_slider #properties-slider .carousel-inner>.item>a>img {
@@ -544,8 +581,8 @@ border: 2px solid #ff3401;}
 	left: auto;
 	text-align: center;
 }
-.carousel_prp .slider-info .price { color: #fff;}
-.carousel_prp .slider-info h2 a{ color: #fff;}
+.carousel_prp .slider-info .price { color: #fff;font-family:'Helvetica-Regular';}
+.carousel_prp .slider-info h2 a{ color: #fff;font-family:'Helvetica-Regular';}
 .carousel_prp .slider-info .hf-property-meta {
 	position: relative;
 	bottom: 0;
@@ -561,6 +598,7 @@ border: 2px solid #ff3401;}
 }
 .carousel_prp .slider-info .hf-property-meta .label p{
 	margin: 5px 0 0 0 !important;
+	font-family:'Helvetica-Regular';
 }
 .carousel_prp .slider-info .hf-property-meta .field-item {
 	color: #fff;
@@ -660,10 +698,11 @@ border: 2px solid #ff3401;}
 	margin-bottom: 0px;
 }
 .as_properties-items .property-box .property-box-inner .property-box-header .property-box-title a{
-	font-size: 18px;
+	font-size: 20px;
 	color: #fff;
 	font-weight: normal;
 	text-decoration: none;
+	font-family: 'Helvetica-Regular';
 }
 @media screen and (max-width: 1199px){
 	.as_properties-items .property-box .property-box-inner .property-box-header .property-box-title a{
@@ -700,6 +739,7 @@ border: 2px solid #ff3401;}
 }
 .carousel_prp .slider-info .hf-property-meta .field-item .field-value {
 	font-size: 12px;
+	font-family:'Helvetica-Regular';
 }
 .as_properties-items .property-box .property-box-inner .property-box-header div.property-box-subtitle a {
 	color: #fff;
@@ -798,6 +838,7 @@ border: 2px solid #ff3401;}
 	position: relative;
 	display: inline-block;
 	text-transform: uppercase !important;
+	font-family:'Raleway-Medium';
 }
 .as_featured-builders .bx-default-pager { display: none;}
 .as_featured-builders .bxslider_featured li img {
@@ -910,6 +951,7 @@ border: 2px solid #ff3401;}
 	text-transform: uppercase !important;
 	margin-top: -18px !important;
 	margin-bottom: 40px;
+	font-family:'Raleway-Medium';
 }
 .front_crausol_slider h2.color-default:after {
 	content: "";
@@ -1230,5 +1272,29 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 }*/
 .block-content-inner #map { background-color: #fff !important;}
 #map { background-color: #000 !important;}
-.ui-resizable .map-inner .gm-style { opacity: 0.5;}
+.ui-resizable .map-inner .gm-style { opacity: 1;}
+/*.map .map-inner:after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	pointer-events: none;
+}*/
+.as_section_tl h2 {font-family: 'Raleway-Medium';}
+.tlt-wt-margn { margin-bottom: 22px;}
+.as_as_block-content .hex-wrapper a {font-family: 'Raleway-Medium';}
+h2.pro_tl, .address_tag a {font-family: 'Raleway-Medium';}
+.price_right {font-family: 'Raleway-Medium';}
+.about_box_tl h6 {font-family: 'Raleway-Medium';}
+#amenities .building-card .as_pills .header { text-align: left;margin: 0;}
+#amenities .building-card .as_pills .texts { text-align: left; }
+#amenities .building-card .pills-tm-3 .header { text-align: left;margin-left: 0;}
+#amenities .building-card .pills-tm-3 .texts { text-align: left;}
 
+.property-detail.developer-details hr{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border: 0;
+	border-top: 1px solid #fff;
+}

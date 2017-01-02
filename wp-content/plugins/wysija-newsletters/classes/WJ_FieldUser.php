@@ -48,6 +48,9 @@ class WJ_FieldUser {
   public function update($value) {
     global $wpdb;
     $column_name = $this->field->user_column_name();
+
+    //dumpme($column_name);
+
     // Cast value to the correct column type.
     switch ($this->field->type) {
       case 'checkbox':
@@ -71,6 +74,11 @@ class WJ_FieldUser {
     if ($result != false) {
       $this->value = $value;
     }
+
+    //dumpme($result);
+
+    exit;
+
     return $result;
   }
 

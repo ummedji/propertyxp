@@ -88,6 +88,7 @@
 <div id="topcontrol" class="scroll-top-img scroll-active" title="Scroll Back to Top" style="position: fixed;  bottom: 5px; right: 40px; cursor: pointer;">
 	<img title="Back To Top" src="<?php bloginfo('template_directory'); ?>/images/up.png" style="z-index:1000; position:relative;">
 </div>
+
 <script type="text/javascript">
 jQuery(document).ready(function() {
 	jQuery( ".scroll-top-img" ).click(function() {
@@ -244,10 +245,44 @@ jQuery(window).scroll(function () {
 	//	jQuery("select#hydra-hf-property-location-filter-items-0-location").parent().find("div.select-wrapper").addClass("UMMED");
 	}
 
+	//jQuery(".widget_wysija").validate();
+
+	jQuery(".wysija-submit-field").on("click",function(e){
+		e.preventDefault();
+
+		jQuery("span.error").remove();
+
+		var firstname_data = jQuery("div#subcribe_search_newsletter form input#firstname_data").val();
+		var email_data = jQuery("div#subcribe_search_newsletter form input#email_data").val();
+
+		if(email_data != ""){
+
+			var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+			if (filter.test(email_data)) {
+
+				jQuery(this).parents("form").submit();
+
+			}
+			else {
+
+				jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error">Please enter valid email. </span>');
+
+				return false;
+			}
+
+		}
+		else{
+			jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error">Please enter email. </span>');
+			return false;
+		}
 
 
+		setTimeout(function(){
+			jQuery("span.error").remove();
+		}, 2000);
 
-	
+	});
+
 });
  </script>
  

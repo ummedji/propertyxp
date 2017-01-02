@@ -59,7 +59,12 @@ if (isset($sort) && $sort) {
 //print_r($query_args);
 
 //die;
+
+
+//$results = new WP_Query( $query_args );
 query_posts($query_args);
+
+//echo $results->request;
 
 $fullwidth = !is_active_sidebar('sidebar-1');
 switch ($display) {
@@ -141,7 +146,7 @@ if($fullwidth) {
             }
         }
         ?>
-	<?php //echo strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid')); ?>
+	<?php //echo get_the_ID(); //echo strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid')); ?>
         <div class="post property-item isotope-item <?php echo strip_tags(hydra_render_field(get_the_ID(), 'person', 'grid')); ?> <?php print $class; ?> <?php echo $end_line; ?>">
             <?php aviators_get_content_template('property', $display); ?>
         </div>
