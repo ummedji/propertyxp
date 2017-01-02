@@ -18,8 +18,9 @@ function aviators_calculator_mortgage_shortcode($attributes, $content = NULL) {
         $values = aviators_calculators_mt_setting();
     }
 
-    echo "<pre>";
-    print_r($values);die;
+    $values["home_price"] = str_replace(",", "", $values["home_price"]);
+    $values["down_price"] = str_replace(",", "", $values["down_price"]);
+    $values["insurance"] = str_replace(",", "", $values["insurance"]);
 
     $results = aviators_calculator_results($values);
 
@@ -213,7 +214,10 @@ function aviators_calculator_mortgage_form() {
  * @return array
  */
 function aviators_calculator_mortgage_validate($form, $value) {
-    if ($value['home_price'] <= $value['down_price']) {
+
+    //str_replace(",", "", $value["home_price"])
+
+    if (str_replace(",", "", $value["home_price"]) <= str_replace(",", "", $value["down_price"])) {
         return array(
             array(__('Home price cannot be lesser than down price', 'aviators'), 'home_price')
         );

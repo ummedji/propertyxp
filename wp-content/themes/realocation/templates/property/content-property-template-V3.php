@@ -71,6 +71,13 @@ jQuery(function(){
         });
     });
 </script>
+
+<?php
+//wp_enqueue_script('googlemaps3');
+//wp_enqueue_script('clusterer');
+//wp_enqueue_script('infobox');
+?>
+
 <div class="developer-menu top-dev-menu">
 	<div id="content-5" class="content horizontal-images light">
 	<ul>
@@ -99,7 +106,7 @@ jQuery(function(){
 			</a>
 		</li>
 		<li>
-			<a href="#flats">
+			<a href="#three_sixty_data">
 				<span class="nave_sp rotnave_i"></span>
 				<span>360*</span>
 			</a>

@@ -286,9 +286,9 @@
 <?php } ?>
 
 	<?php
-	//wp_enqueue_script('googlemaps3');
-	//wp_enqueue_script('clusterer');
-	//wp_enqueue_script('infobox');
+	/*wp_enqueue_script('googlemaps3');
+	wp_enqueue_script('clusterer');
+	wp_enqueue_script('infobox');*/
 	?>
 
 </head>
@@ -430,11 +430,23 @@
                     $selected_template_value = get_field("select_template");
                     if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2'){
 
-                    wp_enqueue_script('googlemaps3');
+                //    wp_enqueue_script('googlemaps3');
                     wp_enqueue_script('clusterer');
                     wp_enqueue_script('infobox');
                     ?>
-                    <?php $mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE); ?>
+                    <?php $mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE);
+						//echo "<pre>";
+						//print_r($mapPosition);
+						//die;
+
+
+						//$mapPosition = get_post_meta(get_the_ID(), 'hf_property_map', TRUE);
+						//$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');								$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
+
+						//echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]');
+
+
+						?>
                     <?php if (isset($mapPosition['items'][0])): ?>
                         <?php if (!empty($mapPosition['items'][0]['latitude']) && !empty($mapPosition['items'][0]['longitude'])) : ?>
                             <div class="temp3map"><div id="map-property">
@@ -442,7 +454,7 @@
 							</div>
                         <?php endif;
                     	 endif;
-                    	 add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
+                    		add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
 						}
                 	  	elseif($selected_template_value == 'developer') {
 

@@ -17,13 +17,31 @@ if ($properties_vertical->getFormRecord()) {
     $tmp_args = $properties_vertical->getQueryArray();
    // $query_args = $properties_vertical->getQueryArray();
     if (count($tmp_args['meta_query'])) {
+
+      //  echo "<pre>";
+     //   print_r($tmp_args);
+
+
+        $tmp_args['meta_query'][3] = array(
+
+            'key' => 'hf_property_starting_price_%_value',
+            'compare' => 'BETWEEN',
+            'value' => Array
+            (
+                "0" => $tmp_args['meta_query'][4]['value'],
+                "1" => $tmp_args['meta_query'][3]['value']
+            ),
+            'type' => 'numeric'
+        );
+        unset($tmp_args['meta_query'][4]);
+     //   unset($tmp_args['meta_query'][5]);
+
         $query_args['meta_query'] = $tmp_args['meta_query'];
     }
 }
 
-//echo "<pre>";
-//print_r($query_args);
 
+//die;
 
 $paged = get_query_var('paged');
 if (isset($paged)) {
@@ -35,8 +53,11 @@ if (isset($sort) && $sort) {
     aviators_properties_sort_get_query_args(get_the_ID(), $query_args);
 }
 
+
+
 //echo "<pre>";
 //print_r($query_args);
+
 //die;
 query_posts($query_args);
 

@@ -106,6 +106,80 @@ jQuery(window).scroll(function () {
     	jQuery( ".scroll-top-img" ).removeClass( "scroll-active" ).addClass( "scroll-deactive" );
     }
     iScrollPos = iCurScrollPos;
+
+	//DETAIL POSITION
+
+	var detail_top_data = jQuery("#details").offset().top;
+	var detail_bottom_data = jQuery("#details").position().top + jQuery("#details").outerHeight(true);
+
+	//CATEGORY POSITION
+
+	var flat_top_data = jQuery("#flats").offset().top;
+	var flat_bottom_data = jQuery("#flats").position().top + jQuery("#flats").outerHeight(true);
+
+	//AMENITIES POSITION
+
+	var amenities_top_data = jQuery("#amenities").offset().top;
+	var amenities_bottom_data = jQuery("#amenities").position().top + jQuery("#amenities").outerHeight(true);
+
+	//LOCATION POSITION
+
+	var map_top_data = jQuery("#map").offset().top;
+	var map_bottom_data = jQuery("#map").position().top + jQuery("#map").outerHeight(true);
+
+	//THREE SIXTY DATA
+
+	var three_sixty_data_top_data = jQuery("#three_sixty_data").offset().top;
+	var three_sixty_data_bottom_data = jQuery("#three_sixty_data").position().top + jQuery("#three_sixty_data").outerHeight(true);
+
+	//GALLERY POSITION
+
+	var gallery_top_data = jQuery("#gallery").offset().top;
+	var gallery_bottom_data = jQuery("#gallery").position().top + jQuery("#gallery").outerHeight(true);
+
+	// MARKET POSITION
+
+	var line_chart_top_data = jQuery("#line_chart").offset().top;
+	var line_chart_bottom_data = jQuery("#line_chart").position().top + jQuery("#line_chart").outerHeight(true);
+
+	//console.log(iCurScrollPos+"=="+flat_top_data+"==="+flat_bottom_data);
+
+	if(iCurScrollPos >= detail_top_data && iCurScrollPos <= detail_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(1) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= flat_top_data && iCurScrollPos <= flat_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(2) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= amenities_top_data && iCurScrollPos <= amenities_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(3) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= map_top_data && iCurScrollPos <= map_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(4) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= three_sixty_data_top_data && iCurScrollPos <= three_sixty_data_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(5) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= gallery_top_data && iCurScrollPos <= gallery_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(6) a").addClass("active");
+	}
+
+	if(iCurScrollPos >= line_chart_top_data && iCurScrollPos <= line_chart_bottom_data){
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+		jQuery("div#mCSB_1_container ul li:nth-child(7) a").addClass("active");
+	}
+
+	//alert(top_data);
 });
 
 
@@ -167,8 +241,11 @@ jQuery(window).scroll(function () {
 	});
 
 	if(jQuery("select#hydra-hf-property-location-filter-items-0-location").is(":disabled")){
-		jQuery("select#hydra-hf-property-location-filter-items-0-location").parent().find("div.select-wrapper").addClass("UMMED");
+	//	jQuery("select#hydra-hf-property-location-filter-items-0-location").parent().find("div.select-wrapper").addClass("UMMED");
 	}
+
+
+
 
 	
 });
