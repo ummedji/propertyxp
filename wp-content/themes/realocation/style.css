@@ -1299,3 +1299,13 @@ h2.pro_tl, .address_tag a {font-family: 'Raleway-Medium';}
 	border: 0;
 	border-top: 1px solid #fff;
 }
+
+
+.error-sub-n{
+	background-color: transparent !important;
+	color: #ff0000 !important;
+	border-color: transparent !important;
+	font-size: 12px !important;
+	font-family: 'Raleway', 'Arial', sans-serif;
+	font-size: 12px;
+}

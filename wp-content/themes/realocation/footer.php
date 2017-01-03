@@ -300,14 +300,14 @@ jQuery(window).scroll(function () {
 			}
 			else {
 
-				jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error">Please enter valid email. </span>');
+				jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error error-sub-n">Please enter valid email. </span>');
 
 				return false;
 			}
 
 		}
 		else{
-			jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error">Please enter email. </span>');
+			jQuery("div#subcribe_search_newsletter form input#email_data").after('</br><span class="error error-sub-n">Please enter email. </span>');
 			return false;
 		}
 
