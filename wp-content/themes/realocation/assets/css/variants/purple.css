@@ -8402,13 +8402,13 @@ h3.agency-row-title,.agency-row-title.property-detail-subtitle {
 	.map-navigation {padding: 0px;}
 }
 .ui-resizable .map-inner .gm-style:after {
-	content: "";
+	/*content: "";
 	position: absolute !important;
 	background: rgba(0, 0, 0, 0.2);
 	height: 100%;
 	width: 100%;
 	left: 0;
-	top: 0;
+	top: 0;*/
 }
 .map-navigation label {
 	color: #fff;
@@ -8635,7 +8635,7 @@ h2.palette-title,.block-content h3.palette-title,.block-content .palette-title.p
 	float: left;
 	list-style: none;
 	margin-bottom: 11px;
-	margin-right: 11px
+	margin-right: 7px
 }
 
 @media screen and (min-width: 1920px){

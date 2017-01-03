@@ -2,6 +2,8 @@
     #hydraform-properties_horizontal{
         background-color: #ffffff;
         padding: 10px;
+        float: left;
+        width: 100%;
     }
     #hf-property-starting-price-filter-1{
         margin-bottom: 15px !important;
@@ -20,27 +22,35 @@
     }
     #hf-property-location-filter{
         width: 61.84% !important;
-        margin-left: 20em;
-        margin-top: -34px;
+        /*margin-left: 20em;
+        margin-top: -34px;*/
+        margin-left: 5px;
+        margin-top: -10px;
     }
     .field-type-submit{
         width: 13.28% !important;
-        float: right !important;
-        margin-top: -55px !important;
 
     }
     #hydra-submit{
         padding: 6px 0px;
     }
+    @media screen and (min-width: 768px) {
+        #hf-property-location-filter{ float: left;margin-right: 25px;}
+        .field-type-submit{
+            float: left !important;
+            margin-top: -31px !important;
+        }
+    }
     @media screen and (min-width: 768px) and (max-width: 991px) {
         #hf-property-location-filter{
-            margin-left: 12em !important;
+            margin-left: 5px !important;
+            float: left;
         }
     }
 
     @media screen and (min-width: 992px) and (max-width: 1200px) {
         #hf-property-location-filter{
-            margin-left: 16em;
+            margin-left: 5px;
         }
     }
 

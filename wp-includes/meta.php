@@ -26,6 +26,7 @@
  * 		metadata key, no change will be made
  * @return int|bool The meta ID on success, false on failure.
  */
+
 function add_metadata($meta_type, $object_id, $meta_key, $meta_value, $unique = false) {
 	global $wpdb;
 
@@ -1061,6 +1062,9 @@ class WP_Meta_Query {
 					unset( $join[$i] );
 				continue;
 			}
+
+		//	echo "<pre>";
+		//	print_r($meta_value);
 
 			if ( in_array( $meta_compare, array( 'IN', 'NOT IN', 'BETWEEN', 'NOT BETWEEN' ) ) ) {
 				if ( ! is_array( $meta_value ) )

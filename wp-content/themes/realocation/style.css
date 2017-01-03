@@ -656,6 +656,12 @@ border: 2px solid #ff3401;}
 /*end slider css*/
 .as-additional-tools {
 	margin: 60px 0px 20px 0 !important;
+	text-align: center;
+}
+.as-additional-tools a.center{
+	display: inline-block;
+	float: none;
+	vertical-align: top;
 }
 .pro_llb {
 	color: #20242d;

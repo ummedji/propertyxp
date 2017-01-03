@@ -97,6 +97,10 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+//define('WP_DEBUG', true);
+
+error_reporting(0);
+ini_set('display_errors','Off');
 
 /* That's all, stop editing! Happy blogging. */
 

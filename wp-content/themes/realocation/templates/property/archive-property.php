@@ -9,7 +9,26 @@ else {
 
 $properties_horizontal = hydra_form_filter('properties_horizontal');
 if ($properties_horizontal->getFormRecord()) {
+    $query_args1 = $properties_horizontal->getQueryArray();
+
     $query_args = $properties_horizontal->getQueryArray();
+
+    $query_args['meta_query'][1] = array(
+        'key' => '_%_location',
+        'compare' => '=',
+        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["location"]
+    );
+    $query_args['meta_query'][2] = array(
+        'key' => '_%_country',
+        'compare' => '=',
+        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["country"]
+    );
+    $query_args['meta_query'][3] = array(
+        'key' => '_%_sublocation',
+        'compare' => '=',
+        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["sublocation"]
+    );
+
 }
 
 $properties_vertical = hydra_form_filter('properties_vertical');
