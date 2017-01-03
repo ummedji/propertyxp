@@ -38,12 +38,12 @@ jQuery(document).ready(function() {
 	jQuery('#lunchBegins').change(function() {
 	var term_id = this.value;
 	if(term_id == 0){
-		alert("INNN");
+		//alert("INNN");
 	var url = '<?php echo get_bloginfo('url'); ?>';
 	}
 	else
 	{
-		alert("OUT");
+		//alert("OUT");
 	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter='+term_id+'&submit=Search';
 	//[items][0][location]
 		//console.log(url);
