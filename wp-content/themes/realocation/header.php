@@ -353,7 +353,7 @@
                         */
 
                          $selected_template_value = get_field("select_template");
-                        if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2'){
+                        if($selected_template_value == 'developer' || $selected_template_value == 'TemplateV2' || $selected_template_value == 'TemplateV3'){
 
         			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' ));
         			//$sa = get_field('get_field');
@@ -432,7 +432,7 @@
                         */
 
                     $selected_template_value = get_field("select_template");
-                    if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2'){
+                    if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2' && $selected_template_value != 'TemplateV3'){
 
                 //    wp_enqueue_script('googlemaps3');
                     wp_enqueue_script('clusterer');
@@ -458,7 +458,7 @@
 							</div>
                         <?php endif;
                     	 endif;
-                    		add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
+                    		//add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
 						}
                 	  	elseif($selected_template_value == 'developer') {
 

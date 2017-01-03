@@ -156,7 +156,7 @@ function AnythingPopup_shortcode( $atts )
 		$HrefOpen = 'javascript:AnythingPopup_OpenForm("AnythingPopup_BoxContainer'.$pop_content_id.'","AnythingPopup_BoxContainerBody'.$pop_content_id.'","AnythingPopup_BoxContainerFooter'.$pop_content_id.'","'.$pop_width.'","'.$pop_height.'");';
 		$HrefClose = "javascript:AnythingPopup_HideForm('AnythingPopup_BoxContainer".$pop_content_id."','AnythingPopup_BoxContainerFooter".$pop_content_id."');";
 	
-		$pop = $pop . "<a class='do-not-display' href='".$HrefOpen."'>".$pop_caption."</a>";
+		/*$pop = $pop . "<a class='do-not-display' href='".$HrefOpen."'>".$pop_caption."</a>";*/
 		$pop = $pop . '<div style="display: none;" id="AnythingPopup_BoxContainer'.$pop_content_id.'">';
 		  $pop = $pop . '<div id="AnythingPopup_BoxContainerHeader'.$pop_content_id.'">';
 			$pop = $pop . '<div id="AnythingPopup_BoxTitle'.$pop_content_id.'">'.$pop_title.'</div>';

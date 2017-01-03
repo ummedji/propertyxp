@@ -318,6 +318,60 @@ jQuery(window).scroll(function () {
 
 	});
 
+	jQuery("form#hydraform-properties_vertical input#hydra-submit").on("click",function(){
+		//e.preventDefault();
+
+		jQuery("span.error").remove();
+
+		var country = jQuery("select#hydra-hf-property-location-filter-1-items-0-country").val();
+
+		var location = jQuery("select#hydra-hf-property-location-filter-1-items-0-location").val();
+
+		var sub_location = jQuery("select#hydra-hf-property-location-filter-1-items-0-sublocation").val();
+
+		var max_price = jQuery("input#hydra-hf-property-maximum-price-filter-1-items-0-value").val();
+		var min_price = jQuery("input#hydra-hf-property-minimum-price-filter-1-items-0-value").val();
+
+		//alert(country+"==="+location+"==="+sub_location+"==="+max_price+"==="+min_price);
+
+		if(country != "" && location != "" && sub_location != "" && max_price != "" && min_price != ""){
+			//alert("here");
+
+			//jQuery("form#hydraform-properties_vertical")
+
+			//jQuery(this).parents("form").submit();
+		}else{
+
+			if(country == "")
+			{
+				jQuery("select#hydra-hf-property-location-filter-1-items-0-country").parent().after("<span style='color:red;' class='error'>Please select state.</span>");
+			}
+
+			if(location == ""){
+				jQuery("select#hydra-hf-property-location-filter-1-items-0-location").parent().after("<span  style='color:red;' class='error'>Please select city.</span>");
+			}
+
+			if(sub_location == ""){
+				jQuery("select#hydra-hf-property-location-filter-1-items-0-sublocation").parent().after("<span  style='color:red;' class='error'>Please select location.</span>");
+			}
+
+			if(max_price == ""){
+				jQuery("input#hydra-hf-property-maximum-price-filter-1-items-0-value").parent().after("<span  style='color:red;' class='error'>Please enter max price.</span>");
+			}
+
+			if(min_price == ""){
+				jQuery("input#hydra-hf-property-minimum-price-filter-1-items-0-value").parent().after("<span  style='color:red;' class='error'>Please enter min price.</span>");
+			}
+
+			return false;
+		}
+
+		setTimeout(function(){
+			jQuery("span.error").remove();
+		}, 2000);
+
+	});
+
 });
  </script>
  

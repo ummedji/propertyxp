@@ -673,6 +673,7 @@ border: 2px solid #ff3401;}
 /*PREMIUM PROPERTIES css*/
 .as_properties-items .property-box {
 	padding: 0;
+	box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .as_properties-items .post {
 	border-bottom: none;
