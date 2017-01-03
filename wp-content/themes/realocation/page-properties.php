@@ -89,10 +89,10 @@ if($fullwidth) {
 	<span class="news-and-views"></span>
 	<label class="pro_llb">NEWS AND<br>VIEWS</label>
 </a>
-<a class="center" href="#">
+<!--<a class="center" href="#">
 	<span class="radio-live"></span>
 	<label class="pro_llb">RADIO LIVE</label>
-</a>
+</a>-->
 <a class="center" href='<?php bloginfo('url');?>/subscribe-news-letter/'>
 	<span class="subscribe-news-letter"></span>
 	<label class="pro_llb">SUBSCRIBE NEWS LETTER</label>
