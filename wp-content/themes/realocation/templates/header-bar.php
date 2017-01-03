@@ -10,7 +10,12 @@ foreach($terms as $term)
 		$cityarr[] = $cityval;
 	}
 }
-$getcurrentcity = $_GET['hf_property_location_filter']['items'][0]['location'];
+
+$getcurrentcity = $_GET['hf_property_location_filter'];
+$_GET['hf_property_location_filter'] = array();
+$_GET['hf_property_location_filter']['items'][0]['location'] = $getcurrentcity;
+//$getcurrentcity = $_GET['hf_property_location_filter']; //['items'][0]['location'];
+
 if(!empty($getcurrentcity))
 {
 $selcity =	get_term_by( 'id', $getcurrentcity, 'locations');
@@ -39,10 +44,11 @@ jQuery(document).ready(function() {
 	else
 	{
 		alert("OUT");
-	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter[items][0][location]='+term_id+'&submit=Search';
+	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter='+term_id+'&submit=Search';
+	//[items][0][location]
+		//console.log(url);
+		//return false;
 
-		console.log(url);
-		return false;
 	}
 	window.location.href = url;
 	});
