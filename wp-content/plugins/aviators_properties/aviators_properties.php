@@ -330,6 +330,7 @@ function aviators_property_enqueue_script() {
     wp_enqueue_media();
     wp_enqueue_script('gmap', 'http://maps.googleapis.com/maps/api/js?v=3&sensor=true&ver=3.7.1&libraries=places');
     wp_enqueue_script('geolocation', HYDRA_URL . 'assets/geolocation.js', 'gmap');
+   // wp_enqueue_script('geolocation', HYDRA_URL . 'assets/geolocation.js', 'googlemaps3');
 }
 
 add_action('wp_enqueue_scripts', 'aviators_property_enqueue_script');
@@ -400,7 +401,7 @@ function aviators_properties_map_detail() {
 
         <script type="text/javascript">
             (function ($) {
-                var map = $('#map-property').aviators_map({
+                var mapProperty = $('#map-property').aviators_map({
                     locations: new Array([<?php echo $mapPosition['items'][0]['latitude']; ?>,<?php echo $mapPosition['items'][0]['longitude']; ?>]),
                     contents: new Array(''),
                     types: new Array('apartment'),

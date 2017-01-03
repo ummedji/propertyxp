@@ -35,7 +35,7 @@ function aviators_enqueue_files() {
 
 
     // JavaScript
-    wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
+ //   wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
     wp_register_script( 'infobox', get_template_directory_uri() . '/assets/js/gmap3.infobox.js', array('jquery'), '', true );
     wp_register_script( 'clusterer', get_template_directory_uri() . '/assets/js/gmap3.clusterer.js', array('jquery'), '', true );
 

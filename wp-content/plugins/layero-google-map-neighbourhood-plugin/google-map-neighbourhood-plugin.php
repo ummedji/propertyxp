@@ -143,6 +143,7 @@ citymap['Ahmedabad'] = {
     }
     
     if (rankBy == 'distance' && (search.types)) {
+     //   alert("111");
       search.rankBy = google.maps.places.RankBy.DISTANCE;
       search.location = new google.maps.LatLng(<?php echo $wgmnp_location ?>);//place latitude and longitude for finding nearest places
        centerMarker = new google.maps.Marker({
@@ -151,21 +152,28 @@ citymap['Ahmedabad'] = {
         map: map
       });
     } else {
+       // alert("222");
       search.bounds = map.getBounds();
     }
     
     places.search(search, function(results, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-          var icon = '<?php echo wgmnp_get_plugin_url() ?>/images/icons/number_' + (i+1) + '.png';
-          markers.push(new google.maps.Marker({
-            position: results[i].geometry.location,
-            animation: google.maps.Animation.DROP,
-            icon: icon
-          }));
-          google.maps.event.addListener(markers[i], 'click', getDetails(results[i], i));
-          window.setTimeout(dropMarker(i), i * 100);
-          addResult(results[i], i);
+
+
+          {
+
+          for (var i = 0; i < results.length; i++) {
+              var icon = '<?php echo wgmnp_get_plugin_url() ?>/images/icons/number_' + (i + 1) + '.png';
+              markers.push(new google.maps.Marker({
+                  position: results[i].geometry.location,
+                  animation: google.maps.Animation.DROP,
+                  icon: icon
+              }));
+              google.maps.event.addListener(markers[i], 'click', getDetails(results[i], i));
+              //google.maps.event.addListener(markers[i], 'load', getDetails(results[i], i));
+              window.setTimeout(dropMarker(i), i * 100);
+              addResult(results[i], i);
+          }
         }
       }
     });
@@ -436,7 +444,7 @@ function wgmnp_get_plugin_url() {
 }
 // Setting the plugin scripts
 function wgmnp_scripts_method() {
-   // wp_enqueue_script('wgmnp_map','http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true&amp;libraries=places');
+  //  wp_enqueue_script('wgmnp_map','http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true&amp;libraries=places');
 }
 // Setting the plugin styles
 function wgmnp_user_styles() {

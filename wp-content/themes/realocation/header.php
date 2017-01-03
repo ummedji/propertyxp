@@ -246,6 +246,10 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.CSS" />
 
 	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+<?php
+	wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
+
+?>
 
 	<!--<link rel="stylesheet" href="<?php /*bloginfo('template_directory'); */?>/assets/css/bootstrap-select.css" />
 	<script type='text/javascript' src="<?php /*bloginfo('template_directory'); */?>/assets/js/bootstrap-select.js" ></script>-->
