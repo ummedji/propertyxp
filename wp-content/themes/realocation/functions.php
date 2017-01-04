@@ -1268,3 +1268,28 @@ function myStartSession() {
 function myEndSession() {
     session_destroy();
 }
+
+/*function add_jquery_data() {
+    global $parent_file;
+
+  //  echo plugin_dir_url( __FILE__ );die;
+
+    if ( isset( $_GET['post_type'] ) && $_GET['post_type'] == 'property' && $parent_file == 'edit.php') {
+
+       // wp_enqueue_script( 'my_custom_script', plugin_dir_url( __FILE__ ) . '/myscript.js' );
+        wp_enqueue_script( 'my_custom_script', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js' );
+        wp_enqueue_script( 'my_custom_script', plugin_dir_url( __FILE__ ).'/js/admin_common.js' );
+
+    }
+}*/
+
+function my_enqueue() {
+    global $parent_file;
+    //echo "dfd";die;
+
+    //wp_enqueue_script( 'my_custom_script', plugin_dir_url( __FILE__ ) . '/myscript.js' );
+    wp_enqueue_script( 'my_custom_script', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js' );
+    wp_enqueue_script( 'my_custom_common_script', site_url().'/wp-content/themes/realocation/js/admin_common.js' );
+
+}
+add_filter('admin_enqueue_scripts', 'my_enqueue');

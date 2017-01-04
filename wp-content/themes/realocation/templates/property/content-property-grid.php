@@ -25,7 +25,8 @@
 			//$configration_value = get_field( "configurations", $postid );
 			$configration_value = getHydrameta($postid,'hf_property_configurations');	
 			//$possession_value = get_field( "possession", $postid );
-			$possession_value = getHydrameta($postid,'hf_property_possession','date');
+			//$possession_value = getHydrameta($postid,'hf_property_possession','date');
+			$possession_value = getHydrameta($postid,'hf_property_newpossession');
 			//$area_value = get_field('hf_property_area',$postid);
 			$area_value = getHydrameta($postid,'hf_property_builtup_area');
 			//$price_value = get_field('starting_price',$postid);
@@ -69,7 +70,7 @@
 								</div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $area_value; ?></div>
+									<div class="field-value"><?php echo $area_value; ?> Sq. Ft.</div>
 									
 								</div>
 							</div>
@@ -80,8 +81,8 @@
 							<div class="no-columns number number hf-property-area">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
-									<?php $possession_value = substr($possession_value,0,16); ?>
-									<div class="field-value"><?php echo trim($possession_value); ?></div>
+									<?php //$possession_value = substr($possession_value,0,16); ?>
+									<div class="field-value"><?php echo $possession_value; ?></div>
 									
 								</div>
 							</div>

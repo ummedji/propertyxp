@@ -444,7 +444,7 @@ function wgmnp_get_plugin_url() {
 }
 // Setting the plugin scripts
 function wgmnp_scripts_method() {
-  //  wp_enqueue_script('wgmnp_map','http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true&amp;libraries=places');
+    wp_enqueue_script('wgmnp_map','http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true&amp;libraries=places');
 }
 // Setting the plugin styles
 function wgmnp_user_styles() {

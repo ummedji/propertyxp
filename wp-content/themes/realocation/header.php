@@ -138,6 +138,8 @@
 
 		jQuery("div.developer-menu ul li a").on("click",function(){
 
+			//alert("INNN");
+			jQuery(this).dblclick();
 			jQuery("div.developer-menu ul li a").removeClass("active");
 			jQuery(this).addClass("active");
 
@@ -247,7 +249,7 @@
 
 	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
 <?php
-	wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
+	//wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
 
 ?>
 

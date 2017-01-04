@@ -87,7 +87,7 @@ class  HydraMetabox {
 
     public function registerAdminScript() {
         /* Register our script. */
-     //   wp_register_script('gmap', 'http://maps.googleapis.com/maps/api/js?v=3&sensor=true&ver=3.7.1&libraries=places');
+        wp_register_script('gmap', 'http://maps.googleapis.com/maps/api/js?v=3&sensor=true&ver=3.7.1&libraries=places');
         wp_register_script('chained', HYDRA_URL . '/assets/jquery.chained.min.js', array('jquery'), TRUE);
         wp_register_script('geolocation', HYDRA_URL . '/assets/geolocation.js', array('jquery'), TRUE);
         wp_register_script('fields', HYDRA_URL . '/assets/fields.js', array('jquery'), array(), TRUE);
