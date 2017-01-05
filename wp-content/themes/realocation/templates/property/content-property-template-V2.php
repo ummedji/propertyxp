@@ -1294,9 +1294,8 @@ jQuery(function(){
 			<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-12 pull-right center">
-				
-				
-					<div class="contact_inn">
+
+					<div class="contact_inn temp-2-dev">
 						<h4>
 						<?php 	//$image = get_field('developer_image');
 						if( !empty($imageurl) ): ?>

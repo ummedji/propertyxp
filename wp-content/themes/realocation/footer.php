@@ -86,7 +86,8 @@
     </div><!-- /#footer-wrapper -->
 </div><!-- /#wrapper -->
 <div id="topcontrol" class="scroll-top-img scroll-active" title="Scroll Back to Top" style="position: fixed;  bottom: 5px; right: 40px; cursor: pointer;">
-	<img title="Back To Top" src="<?php bloginfo('template_directory'); ?>/images/up.png" style="z-index:1000; position:relative;">
+	<!--<img title="Back To Top dfgdfg" src="<?php /*bloginfo('template_directory'); */?>/images/up.png" style="z-index:1000; position:relative;">-->
+	<div class="back_to_top_arrow"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
 </div>
 
 <script type="text/javascript">
@@ -217,6 +218,8 @@ jQuery(window).scroll(function () {
 
 	//console.log("scroll");
 });
+
+	
 
 	/*jQuery("div#mCSB_1_container ul li a").on("click",function(){
 		alert('click');

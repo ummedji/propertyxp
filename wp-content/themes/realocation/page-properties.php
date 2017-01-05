@@ -110,9 +110,9 @@ if($fullwidth) {
         <div class="col-md-12 text-center top-premuim"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
             <?php the_title(); ?>
             <?php aviators_edit_post_link(); ?>
-            <?php aviators_configure_page_link('property', get_the_ID()) ?>
+            <?php aviators_configure_page_link('property', get_the_ID()); ?>
         </h1></div>
-        <?php the_content() ?>
+        <?php the_content(); ?>
 
         <?php if (isset($sort) && $sort): ?>
             <?php aviators_get_template('sort', 'property'); ?>
@@ -169,8 +169,12 @@ if($fullwidth) {
         <!-- /.items-list -->
 
         <?php if($display_pager): ?>
-            <?php aviators_pagination(); ?>
+            <?php //aviators_pagination(); ?>
         <?php endif; ?>
+
+        <div class="col-md-12 text-center view_all_btn">
+            <a type="button" id="view_all_property" href="#">View All</a>
+        </div>
 
         <?php wp_reset_query(); ?>
 		<!--<div class="properties-items as_properties-items">
