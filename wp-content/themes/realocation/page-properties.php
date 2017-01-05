@@ -173,7 +173,7 @@ if($fullwidth) {
         <?php endif; ?>
 
         <div class="col-md-12 text-center view_all_btn">
-            <a type="button" id="view_all_property" href="#">View All</a>
+            <a type="button" id="view_all_property" href="<?php bloginfo('url');?>/all-properties/">View All</a>
         </div>
 
         <?php wp_reset_query(); ?>

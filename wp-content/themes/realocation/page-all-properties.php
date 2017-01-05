@@ -5,14 +5,14 @@
 ?>
 <?php
 the_post();
-
-//if (get_query_var('page')) {
-    //$paged = get_query_var('page');
-//}
+$paged = 2;
+if (get_query_var('page')) {
+    $paged = 2;
+}
 
 $query_args = array(
-    'post_type' => 'property'
-   // 'paged' => $paged,
+    'post_type' => 'property',
+    'posts_per_page' => -1,
 );
 
 $sort = aviators_settings_get('property', get_the_ID(), 'sort');
@@ -20,13 +20,17 @@ $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager'
 $display = aviators_settings_get('property', get_the_ID(), 'display_type');
 $isotope_taxonomy = aviators_settings_get('property', get_the_ID(), 'isotope_taxonomy');
 
+
+//echo "<pre>";
+//print_r($query_args);die;
+
 if (isset($sort) && $sort) {
     aviators_properties_sort_get_query_args(get_the_ID(), $query_args);
 }
 aviators_properties_filter_get_query_args(get_the_ID(), $query_args);
 
 $fullwidth = !is_active_sidebar('sidebar-1');
-
+$display = "grid";
 switch ($display) {
     case "row":
         $class = empty($fullwidth) ? "col-sm-12" : "col-sm-offset-1 col-sm-10";
@@ -67,9 +71,7 @@ if($fullwidth) {
 
 <?php get_header(); ?>
 
-
 <div id="main-content" class="<?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ) : ?>col-md-9 col-sm-9<?php else : ?>col-md-12 col-sm-12<?php endif; ?>">
-
 
     <div class="clear"></div>
     <div class="col-md-12 text-center top-premuim"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
@@ -137,8 +139,17 @@ if($fullwidth) {
         <?php //aviators_pagination(); ?>
     <?php endif; ?>
 
-    <?php wp_reset_query(); ?>
 
+    <?php wp_reset_query(); ?>
+    <!--<div class="properties-items as_properties-items">
+        <?php //if (dynamic_sidebar('content-bottom')) : ?><?php //endif; ?>
+		</div>-->
 </div><!-- /#main-content -->
+
+<?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ): ?>
+<div class="sidebar col-md-3 col-sm-3">
+    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+</div><!-- /#sidebar -->
+<?php endif; ?>
 
 <?php get_footer(); ?>
