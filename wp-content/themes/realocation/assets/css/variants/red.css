@@ -10358,3 +10358,4 @@ h2.pro_tl {
 /*
 .carousel_prp .content-pink-parent .slider-info { background-color: #FF3401 !important;}*/
 .back_to_top_arrow i{ color: #FF3401;}
+.view_all_btn a:hover, .view_all_btn a:focus { background-color: #FF3401;}

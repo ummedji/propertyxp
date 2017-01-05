@@ -9,51 +9,84 @@ else {
 
 $properties_horizontal = hydra_form_filter('properties_horizontal');
 if ($properties_horizontal->getFormRecord()) {
+
     $query_args1 = $properties_horizontal->getQueryArray();
 
     $query_args = $properties_horizontal->getQueryArray();
 
-    $query_args['meta_query'][1] = array(
-        'key' => '_%_location',
-        'compare' => '=',
-        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["location"]
-    );
-    $query_args['meta_query'][2] = array(
-        'key' => '_%_country',
-        'compare' => '=',
-        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["country"]
-    );
-    $query_args['meta_query'][3] = array(
-        'key' => '_%_sublocation',
-        'compare' => '=',
-        'value' => $query_args1["meta_query"][1]["value"]["items"][0]["sublocation"]
-    );
+    if (isset($query_args1["meta_query"][1]["value"]["items"][0]["location"]) && !empty($query_args1["meta_query"][1]["value"]["items"][0]["location"])) {
+        $query_args['meta_query'][1] = array(
+            'key' => '_%_location',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][1]["value"]["items"][0]["location"]
+        );
+    }
+
+    if (isset($query_args1["meta_query"][1]["value"]["items"][0]["country"]) && !empty($query_args1["meta_query"][1]["value"]["items"][0]["country"]))
+    {
+
+        $query_args['meta_query'][2] = array(
+            'key' => '_%_country',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][1]["value"]["items"][0]["country"]
+        );
+    }
+
+    if(isset($query_args1["meta_query"][1]["value"]["items"][0]["sublocation"]) && !empty($query_args1["meta_query"][1]["value"]["items"][0]["sublocation"])) {
+        $query_args['meta_query'][3] = array(
+            'key' => '_%_sublocation',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][1]["value"]["items"][0]["sublocation"]
+        );
+    }
+
+   // echo "<pre>";
+  //  print_r($query_args);
+   // die;
 
 }
 
 $properties_vertical = hydra_form_filter('properties_vertical');
 if ($properties_vertical->getFormRecord()) {
+
     $tmp_args = $properties_vertical->getQueryArray();
    // $query_args = $properties_vertical->getQueryArray();
     if (count($tmp_args['meta_query'])) {
 
-      //  echo "<pre>";
+        if(isset($tmp_args['meta_query'][4]['value']) && !empty($tmp_args['meta_query'][4]['value']) && isset($tmp_args['meta_query'][3]['value']) && !empty($tmp_args['meta_query'][3]['value']) && $tmp_args['meta_query'][3]['key'] == 'hf_property_maximum_price_%_value' && $tmp_args['meta_query'][4]['key'] == "hf_property_minimum_price_%_value") {
+            $tmp_args['meta_query'][3] = array(
+
+                'key' => 'hf_property_starting_price_%_value',
+                'compare' => 'BETWEEN',
+                'value' => Array
+                (
+                    "0" => $tmp_args['meta_query'][4]['value'],
+                    "1" => $tmp_args['meta_query'][3]['value']
+                ),
+                'type' => 'numeric'
+            );
+            unset($tmp_args['meta_query'][4]);
+        }
+        else if(isset($tmp_args['meta_query'][1]['value']) && !empty($tmp_args['meta_query'][1]['value']) && isset($tmp_args['meta_query'][2]['value']) && !empty($tmp_args['meta_query'][2]['value']) && $tmp_args['meta_query'][1]['key'] == "hf_property_maximum_price_%_value" && $tmp_args['meta_query'][2]['key'] == "hf_property_minimum_price_%_value"){
+
+            $tmp_args['meta_query'][1] = array(
+
+                'key' => 'hf_property_starting_price_%_value',
+                'compare' => 'BETWEEN',
+                'value' => Array
+                (
+                    "0" => $tmp_args['meta_query'][2]['value'],
+                    "1" => $tmp_args['meta_query'][1]['value']
+                ),
+                'type' => 'numeric'
+            );
+            unset($tmp_args['meta_query'][2]);
+        }
+
+     //   echo "<pre>";
      //   print_r($tmp_args);
 
-
-        $tmp_args['meta_query'][3] = array(
-
-            'key' => 'hf_property_starting_price_%_value',
-            'compare' => 'BETWEEN',
-            'value' => Array
-            (
-                "0" => $tmp_args['meta_query'][4]['value'],
-                "1" => $tmp_args['meta_query'][3]['value']
-            ),
-            'type' => 'numeric'
-        );
-        unset($tmp_args['meta_query'][4]);
-     //   unset($tmp_args['meta_query'][5]);
+        //   unset($tmp_args['meta_query'][5]);
 
         $query_args['meta_query'] = $tmp_args['meta_query'];
     }
@@ -64,8 +97,10 @@ if ($properties_vertical->getFormRecord()) {
 
 $paged = get_query_var('paged');
 if (isset($paged)) {
-    $query_args['paged'] = get_query_var('paged');
+    //$query_args['paged'] = get_query_var('paged');
 }
+
+$query_args['posts_per_page'] = -1;
 
 $sort = aviators_settings_get('property', 'archive', 'sort');
 if (isset($sort) && $sort) {

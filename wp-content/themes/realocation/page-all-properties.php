@@ -74,11 +74,11 @@ if($fullwidth) {
 <div id="main-content" class="<?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ) : ?>col-md-9 col-sm-9<?php else : ?>col-md-12 col-sm-12<?php endif; ?>">
 
     <div class="clear"></div>
-    <div class="col-md-12 text-center top-premuim"><h1 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
+    <div class="col-md-12"><h2 <?php if ($display == 'isotope'): ?>class="center"<?php endif; ?>>
             <?php the_title(); ?>
             <?php aviators_edit_post_link(); ?>
             <?php aviators_configure_page_link('property', get_the_ID()); ?>
-        </h1></div>
+        </h2></div>
     <?php the_content(); ?>
 
     <?php if (isset($sort) && $sort): ?>
@@ -101,7 +101,7 @@ if($fullwidth) {
         <?php endif; ?>
     <?php endif; ?>
 
-    <div class="properties-items as_properties-items <?php print $display; ?>">
+    <div class="properties-items all_properties-items as_properties-items <?php print $display; ?>">
         <div class="items-list">
             <?php $count = 0; ?>
             <?php while (have_posts()) : the_post(); ?>
