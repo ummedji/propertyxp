@@ -117,7 +117,7 @@ jQuery(function(){
 					<div class="col-md-4 project-specs developer-builtup">
 	<!-- 					<div class="icon-builtup-area icon-small"></div> -->
 						<div class="item-label"><span>BUILTUP AREA</span></div>
-						<div class="item-value"><?php the_field('builtup_area');?> Sq. Ft.</div>
+						<div class="item-value"><span class="area_data"><?php the_field('builtup_area');?></span> Sq. Ft.</div>
 					</div>
 					<div class="col-md-4 project-specs developer-blocks">
 	<!-- 					<div class="icon-building icon-small"></div> -->

@@ -111,7 +111,7 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6  text-center about_box_tl">
 						<div class="abtn_icon builtup_square_i"></div>
 						<h6>BUILTUP AREA</h6>
-						<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');	//do_action('wp_getHydravalue',get_the_ID(),'builtup_area'); ?><?php //the_field('builtup_area');?> Sq. Ft.</p>
+						<p><span class="area_data"><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');	//do_action('wp_getHydravalue',get_the_ID(),'builtup_area'); ?><?php //the_field('builtup_area');?></span> Sq. Ft.</p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 col-sm-6 text-center about_box_tl">
 						<div class="abtn_icon blocks_square_i"></div>

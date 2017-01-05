@@ -89,7 +89,7 @@
 					<div class="group-field-item">
 						<div class="field-item-inner">
 							<div class=" col-xs-3 number number hf-property-bathrooms">
-								<div class="label"><p>Config.</p></div>
+								<div class="label"><p>Configuration</p></div>
 								<div class="field-item field-item-0">
 									<?php $new_configration_value = substr($configration_value,0,16); ?>
 									<div class="field-value" title="<?php echo $configration_value; ?>"><?php echo trim($new_configration_value); ?></div>
@@ -115,7 +115,7 @@
 								<div class="label"><p>Area</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $areavalue; ?> Sq. Ft.</div>
+									<div class="field-value"><span class="area_data"><?php echo $areavalue; ?></span> Sq. Ft.</div>
 									
 								</div>
 							</div>

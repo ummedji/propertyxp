@@ -182,10 +182,6 @@
 
 
 		setTimeout(function(){
-			/*jQuery('input#hydra-home-price').val(commaSeparateNumber(jQuery("input#hydra-home-price").val()));
-
-			jQuery('input#hydra-down-price').val(commaSeparateNumber(jQuery("input#hydra-down-price").val()));
-			jQuery('input#hydra-insurance').val(commaSeparateNumber(jQuery("input#hydra-insurance").val()));*/
 
 			jQuery('table tbody td.item').each(function(){
 
@@ -195,6 +191,19 @@
 				var final_data = "Rs."+data;
 				jQuery(this).html(final_data);
 
+			});
+
+			jQuery('.area_data').each(function(){
+
+				var data = jQuery.trim(jQuery(this).html());
+
+				var isnum = /^\d+$/.test(data);
+				if(isnum){
+					data = commaSeparateNumber(data);
+				}
+
+				var final_data = data;
+				jQuery(this).html(final_data);
 			});
 
 			var i = 1;

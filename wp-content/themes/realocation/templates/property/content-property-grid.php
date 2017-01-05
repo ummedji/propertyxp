@@ -70,7 +70,7 @@
 								</div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $area_value; ?> Sq. Ft.</div>
+									<div class="field-value"><span class="area_data"><?php echo $area_value; ?></span> Sq. Ft.</div>
 									
 								</div>
 							</div>
