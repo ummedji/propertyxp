@@ -1289,7 +1289,7 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 .block-content-inner #map { background-color: #fff !important;}
 #map { background-color: #000 !important;}
 .ui-resizable .map-inner .gm-style { opacity: 1;}
-.map-navigation-dark .map .map-inner:after {
+.map-navigation-dark .map .map-inner:after, .map-navigation-dark #map_canvas .gm-style:after {
 	content: "";
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
