@@ -1,14 +1,14 @@
 <?php
 /**
- * Template Name: Properties
+ * Template Name: All Properties
  */
 ?>
 <?php
 the_post();
 
-if (get_query_var('page')) {
-    $paged = get_query_var('page');
-}
+//if (get_query_var('page')) {
+    //$paged = get_query_var('page');
+//}
 
 $query_args = array(
     'post_type' => 'property'

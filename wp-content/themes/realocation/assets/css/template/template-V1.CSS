@@ -3,7 +3,7 @@
 }
 .csbwfs-social-widget a img { opacity: 0;}
 #csbwfs-social-inner a img { opacity: 1;}
-.csbwfs-hide a img { opacity: 1;}
+.csbwfs-hide a img { opacity: 1; margin-top: -7px;}
 .csbwfs-social-widget a#csbwfs-show:before {
     position: absolute;
     left: 0;
