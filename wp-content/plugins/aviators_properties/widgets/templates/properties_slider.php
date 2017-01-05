@@ -61,9 +61,17 @@
                 <?php 
 				//echo hydra_render_group($slide->ID, 'meta');
 
-				$configration_value = get_field( "configurations", $slide->ID );
-			$possession_value = get_field( "possession", $slide->ID );
-			
+			$configration_value = get_field( "configurations", $slide->ID );
+			$possession_value = get_field( "hf_property_newpossession", $slide->ID );
+
+				$possessionvalue = "";
+				if(!empty($possession_value)){
+					$possessionvalue = $possession_value["items"][0]["value"];
+				}
+
+			//	echo "<pre>";
+			//	print_r($possession_value);
+
 			$area_value = get_field('hf_property_area',$slide->ID);
 			
 			$areavalue = "";
@@ -94,8 +102,8 @@
 							<div class=" col-xs-3 number number hf-property-bedrooms">
 								<div class="label"><p>Possession</p></div>
 								<div class="field-item field-item-0">
-									<?php $possession_value = substr($possession_value,0,16); ?>
-									<div class="field-value"><?php echo trim($possession_value); ?></div>
+									<?php //$possession_value = substr($possession_value,0,16); ?>
+									<div class="field-value"><?php echo $possessionvalue; ?></div>
 									
 								</div>
 							</div>
@@ -107,7 +115,7 @@
 								<div class="label"><p>Area</p></div>
 								<div class="field-item field-item-0">
 									
-									<div class="field-value"><?php echo $areavalue; ?></div>
+									<div class="field-value"><?php echo $areavalue; ?> Sq. Ft.</div>
 									
 								</div>
 							</div>
