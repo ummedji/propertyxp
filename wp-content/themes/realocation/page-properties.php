@@ -97,7 +97,7 @@ if($fullwidth) {
 	<span class="subscribe-news-letter"></span>
 	<label class="pro_llb">SUBSCRIBE NEWS LETTER</label>
 </a>
-<a class="center" href="##">
+<a class="center" href="<?php bloginfo('url');?>/tv-live/">
 	<span class="tv-lve"></span>
 	<label class="pro_llb">TV LIVE</label>
 </a>
