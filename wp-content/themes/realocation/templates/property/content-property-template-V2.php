@@ -206,7 +206,7 @@ jQuery(function(){
 						<div class="col-md-2 col-sm-6 text-center about_box_tl">
 							<div class="abtn_icon builtup_square_ii"></div>
 							<h6>BUILTUP AREA</h6>
-							<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');//the_field('builtup_area');?></p>
+							<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');//the_field('builtup_area');?> Sq. Ft.</p>
 						</div>
 						<div class="col-md-2 col-sm-6 col-sm-6 text-center about_box_tl">
 							<div class="abtn_icon blocks_square_ii"></div>
@@ -216,7 +216,7 @@ jQuery(function(){
 						<div class="col-md-2 col-sm-6 text-center about_box_tl">
 							<div class="abtn_icon prossesion_square_ii"></div>
 							<h6>POSSESSION</h6>
-							<p itemprop="releaseDate"><?php echo getHydrameta(get_the_ID(),'hf_property_possession');	//the_field('possession');?></p>
+							<p itemprop="releaseDate"><?php echo getHydrameta(get_the_ID(),'hf_property_newpossession');	//the_field('possession');?></p>
 						</div>
 					</div>
 

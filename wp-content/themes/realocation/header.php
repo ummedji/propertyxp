@@ -128,7 +128,7 @@
 			var price = jQuery(this).html();
 
 			if(price != ""){
-				jQuery(this).html('<i class="fa fa-inr fa-1x"></i>&nbsp;'+price);
+				jQuery(this).html('&nbsp;&nbsp;<i class="fa fa-inr fa-1x"></i>&nbsp;'+price);
 
 			}
 			//alert(index+"===="+element);

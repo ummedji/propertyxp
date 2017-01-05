@@ -28,20 +28,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="251" column="6" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="6" />
-              <folding>
-                <element signature="e#8787#8888#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/core/settings/scripts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state vertical-scroll-proportion="3.903226">
+              <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -50,7 +38,7 @@
       <file leaf-file-name="aviators_properties.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.47457626">
               <caret line="341" column="0" selection-start-line="341" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
               <folding />
             </state>
@@ -60,8 +48,8 @@
       <file leaf-file-name="page-properties.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+            <state vertical-scroll-proportion="1.8474576">
+              <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
               <folding>
                 <element signature="e#6#42#0#PHP" expanded="true" />
               </folding>
@@ -69,50 +57,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="properties_slider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/templates/properties_slider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.631579">
-              <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aviators_calculator.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aviators_calculator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_calculator/aviators_calculator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37205082">
-              <caret line="258" column="54" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
+            <state vertical-scroll-proportion="-0.86440676">
+              <caret line="254" column="18" selection-start-line="254" selection-start-column="18" selection-end-line="254" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/functions.php">
+      <file leaf-file-name="content-property-template-V1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1291" column="20" selection-start-line="1291" selection-start-column="20" selection-end-line="1291" selection-end-column="20" />
-              <folding>
-                <element signature="n#search_location_by_city#0;n#!!top" expanded="false" />
-                <marker date="1483533316794" expanded="true" signature="15552:15572" placeholder="..." />
-                <marker date="1483533316794" expanded="true" signature="23673:23685" placeholder="..." />
-                <marker date="1483533316794" expanded="true" signature="24110:24120" placeholder="..." />
-                <marker date="1483533316794" expanded="true" signature="29294:29306" placeholder="..." />
-                <marker date="1483533316794" expanded="true" signature="37644:37705" placeholder="SELECT name ..wp_terms..." />
-              </folding>
+            <state vertical-scroll-proportion="1.0705882">
+              <caret line="124" column="71" selection-start-line="124" selection-start-column="71" selection-end-line="124" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/js/admin_common.js">
+      <file leaf-file-name="content-property-developer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-developer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.33333334">
+              <caret line="129" column="112" selection-start-line="129" selection-start-column="112" selection-end-line="129" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-property-template-V2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4193548">
+              <caret line="218" column="107" selection-start-line="218" selection-start-column="107" selection-end-line="218" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-property-template-V3.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.79818594">
+              <caret line="227" column="111" selection-start-line="227" selection-start-column="111" selection-end-line="227" selection-end-column="111" />
               <folding>
-                <element signature="e#0#39#0" expanded="false" />
+                <marker date="1483600949078" expanded="true" signature="55399:55485" placeholder="SELECT optio..." />
+                <marker date="1483600949078" expanded="true" signature="64006:64017" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="64562:64573" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="65044:65055" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="65581:65592" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="66133:66144" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="66768:66779" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="67263:67274" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="67844:67855" placeholder="..." />
+                <marker date="1483600949078" expanded="true" signature="68382:68393" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -121,8 +121,8 @@
       <file leaf-file-name="content-property-grid.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-grid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state vertical-scroll-proportion="-1.7741935">
+              <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -131,8 +131,8 @@
       <file leaf-file-name="properties_slider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
+            <state vertical-scroll-proportion="-2.8709676">
+              <caret line="131" column="32" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -155,13 +155,11 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-change-password.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-submission-property-index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-submission-property.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V2.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_submission/aviators_submission.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-value-me.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_calculator/aviators_calculator.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/NKS-custom/js/admin.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/header-top.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V3.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/wysija-newsletters/views/front/confirm.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/wysija-newsletters/views/back/subscribers.php" />
@@ -181,11 +179,15 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/hydraforms/hydra.metabox.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/layero-google-map-neighbourhood-plugin/google-map-neighbourhood-plugin.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/core/settings/scripts.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/js/admin_common.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-grid.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/templates/properties_slider.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-developer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V2.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V3.php" />
       </list>
     </option>
   </component>
@@ -458,7 +460,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64364207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2166405" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -491,13 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/footer-bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/archive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21653543">
@@ -516,6 +511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28330207">
-          <caret line="1096" column="22" selection-start-line="1096" selection-start-column="12" selection-end-line="1096" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/hydraforms/template/hydra.form.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.741936">
@@ -649,6 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.762431">
           <caret line="10" column="102" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.612903">
           <caret line="163" column="33" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,6 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="102.41936">
           <caret line="127" column="39" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -670,20 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="11.903226">
           <caret line="1042" column="32" selection-start-line="1042" selection-start-column="32" selection-end-line="1042" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.83871">
-          <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="592" column="127" selection-start-line="592" selection-start-column="123" selection-end-line="592" selection-end-column="127" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -748,6 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4193548">
           <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,6 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="20.070175">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,16 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="251" column="6" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="6" />
-          <folding>
-            <element signature="e#8787#8888#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/core/settings/scripts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -799,11 +770,11 @@
           <caret line="1291" column="20" selection-start-line="1291" selection-start-column="20" selection-end-line="1291" selection-end-column="20" />
           <folding>
             <element signature="n#search_location_by_city#0;n#!!top" expanded="false" />
-            <marker date="1483533316794" expanded="true" signature="15552:15572" placeholder="..." />
-            <marker date="1483533316794" expanded="true" signature="23673:23685" placeholder="..." />
-            <marker date="1483533316794" expanded="true" signature="24110:24120" placeholder="..." />
-            <marker date="1483533316794" expanded="true" signature="29294:29306" placeholder="..." />
-            <marker date="1483533316794" expanded="true" signature="37644:37705" placeholder="SELECT name ..wp_terms..." />
+            <marker date="1483533316794" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483533316794" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483533316794" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483533316794" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1483533316794" expanded="true" signature="-1:-1" placeholder="SELECT name ..wp_terms..." />
           </folding>
         </state>
       </provider>
@@ -814,40 +785,6 @@
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="341" column="0" selection-start-line="341" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-          <folding>
-            <element signature="e#6#42#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,11 +805,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7741935">
+          <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8709676">
+          <caret line="131" column="32" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.903226">
+          <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47457626">
+          <caret line="341" column="0" selection-start-line="341" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8474576">
+          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#42#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_calculator/aviators_calculator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205082">
-          <caret line="258" column="54" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
+        <state vertical-scroll-proportion="-0.86440676">
+          <caret line="254" column="18" selection-start-line="254" selection-start-column="18" selection-end-line="254" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0705882">
+          <caret line="124" column="71" selection-start-line="124" selection-start-column="71" selection-end-line="124" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-developer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33333334">
+          <caret line="129" column="112" selection-start-line="129" selection-start-column="112" selection-end-line="129" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4193548">
+          <caret line="218" column="107" selection-start-line="218" selection-start-column="107" selection-end-line="218" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/content-property-template-V3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79818594">
+          <caret line="227" column="111" selection-start-line="227" selection-start-column="111" selection-end-line="227" selection-end-column="111" />
+          <folding>
+            <marker date="1483600949078" expanded="true" signature="55399:55485" placeholder="SELECT optio..." />
+            <marker date="1483600949078" expanded="true" signature="64006:64017" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="64562:64573" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="65044:65055" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="65581:65592" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="66133:66144" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="66768:66779" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="67263:67274" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="67844:67855" placeholder="..." />
+            <marker date="1483600949078" expanded="true" signature="68382:68393" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

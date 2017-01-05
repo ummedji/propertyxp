@@ -111,7 +111,7 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6  text-center about_box_tl">
 						<div class="abtn_icon builtup_square_i"></div>
 						<h6>BUILTUP AREA</h6>
-						<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');	//do_action('wp_getHydravalue',get_the_ID(),'builtup_area'); ?><?php //the_field('builtup_area');?></p>
+						<p><?php echo getHydrameta(get_the_ID(),'hf_property_builtup_area');	//do_action('wp_getHydravalue',get_the_ID(),'builtup_area'); ?><?php //the_field('builtup_area');?> Sq. Ft.</p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-xs-6 col-sm-6 text-center about_box_tl">
 						<div class="abtn_icon blocks_square_i"></div>
@@ -122,7 +122,7 @@ jQuery(function(){
 						<div class="abtn_icon prossesion_square_i"></div>
 						<h6>POSSESSION</h6>
 						<p itemprop="releaseDate"><?php
-						echo getHydrameta(get_the_ID(),'hf_property_possession');	//do_action('wp_getHydravalue',get_the_ID(),'possession');
+						echo getHydrameta(get_the_ID(),'hf_property_newpossession');	//do_action('wp_getHydravalue',get_the_ID(),'possession');
 
 					/*	print hydra_render_field(get_the_ID(), '3_bedroom_apartment_amenities', 'default'); */
 

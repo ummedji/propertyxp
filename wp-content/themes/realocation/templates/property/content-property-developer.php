@@ -117,7 +117,7 @@ jQuery(function(){
 					<div class="col-md-4 project-specs developer-builtup">
 	<!-- 					<div class="icon-builtup-area icon-small"></div> -->
 						<div class="item-label"><span>BUILTUP AREA</span></div>
-						<div class="item-value"><?php the_field('builtup_area');?></div>
+						<div class="item-value"><?php the_field('builtup_area');?> Sq. Ft.</div>
 					</div>
 					<div class="col-md-4 project-specs developer-blocks">
 	<!-- 					<div class="icon-building icon-small"></div> -->
@@ -127,7 +127,7 @@ jQuery(function(){
 					<div class="col-md-4 project-specs developer-poss">
 	<!-- 					<div class="icon-key icon-small"></div> -->
 						<div class="item-label"><span>POSSESSION</span></div>
-						<div class="item-value" itemprop="releaseDate"><?php the_field('possession');?></div>
+						<div class="item-value" itemprop="releaseDate"><?php the_field('newpossession');?></div>
 					</div>
 				</div>
 				
