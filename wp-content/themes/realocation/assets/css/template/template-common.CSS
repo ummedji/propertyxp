@@ -30,9 +30,9 @@
 .gm-style-iw table tr td a {font-family: 'Raleway', 'Arial', sans-serif;}
 
 .tp-leftarrow.default {left: 85px !important;}
-.tp-rightarrow {
-    right: 85px !important;
-}
+.tp-rightarrow { right: 85px !important;}
+.layout-boxed .tp-leftarrow.default {left: 100px !important;}
+.layout-boxed .tp-rightarrow {right: 100px !important;}
 
 .block-content .inner-pro-parent .property-row-meta .field-items .group-field-item .label p{
     margin: 5px 0 !important;

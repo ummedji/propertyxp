@@ -291,6 +291,8 @@ h2.pro_tl {
 .as_inn_slider .tp-rightarrow {
     right: 42px !important;
 }
+.layout-boxed .as_inn_slider .tp-rightarrow { right: 220px !important;}
+.layout-boxed .as_inn_slider .tp-leftarrow { left: 50px !important;}
 .temp_2_developer-details#details {
     padding: 0px 0 0 0;
     margin-top: -20px;

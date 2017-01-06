@@ -264,6 +264,8 @@ h2.pro_tl {
 .as_inn_slider .tp-rightarrow {
     right: 42px !important;
 }
+.layout-boxed .as_inn_slider .tp-rightarrow { right: 220px !important;}
+.layout-boxed .as_inn_slider .tp-leftarrow { left: 50px !important;}
 /*.temp_2_developer-details {
     margin: -45px 0 0px 0 !important;
 }*/
@@ -277,10 +279,13 @@ h2.pro_tl {
 .newcol-md-11 {
     width: 89.33333%;
 }
+.layout-boxed .top-dev-menu{
+    position: fixed !important;
+}
 .top-dev-menu {
     margin: 0;
     z-index: 999;
-    /* position: relative !important; */
+     /*position: relative !important;*/
     width: 80px;
     position: absolute;
     left: -90px;

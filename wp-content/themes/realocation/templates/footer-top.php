@@ -43,7 +43,8 @@
             </div><!-- /.row -->
             <div class="row">
             	<div class="col-md-12">
-					<img src="<?php bloginfo('template_directory')?>/images/footer_logo.png" class="footer_lg" alt=" ">
+					<div class="dark-ft-logo"><img src="<?php bloginfo('template_directory')?>/images/footer_logo.png" class="footer_lg" alt=" "></div>
+					<div class="light-ft-logo"><img src="<?php bloginfo('template_directory')?>/images/footer_logo-dark.png" class="footer_lg" alt=" "></div>
             		<!--<h3 style="color: #35B54A;">PropertyXP.COM</h3>-->
 					<p>The best place to find a new beginning. Catering to India's top developers and real estate agents, the website offers the largest online database of properties for sale and rent in the country. Propertyxp.com is rich in quality listings and user engagement platforms such as Simply ASK - QnA and iConnect with more that 3.5 Lakh subscribers exchanging views and resolving issues. Propertyxp.com, is an 3rd eye Pvt. Ltd, invested Company.</p>
 					<h5><a href="<?php bloginfo('url');?>/about-us">Read More</a></h5>

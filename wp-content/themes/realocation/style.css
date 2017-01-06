@@ -71,8 +71,9 @@ b                   { font-weight: bold; }
 iframe {
     max-width: 100%;
 }
-
-.developer-details #details , .developer-details #amenities , .developer-details #gallery , .developer-details #flats , .developer-details #map , .developer-details #line_chart , .developer-details #about-developer , .developer-details #contact-developer{position:relative;padding: 120px 0 0 0px} 
+.light-ft-logo, .footer-light .dark-ft-logo { display: none;}
+.footer-light .light-ft-logo { display: block;}
+.developer-details #details , .developer-details #amenities , .developer-details #gallery , .developer-details #flats , .developer-details #map , .developer-details #line_chart , .developer-details #about-developer , .developer-details #contact-developer{position:relative;padding: 120px 0 0 0px}
 .property-main-image{height:550px;width: 100%;display: block;}
 .developer-property-title{margin-top: -100px!important;position:relative;color:#fff;z-index:9999;font-weight: 600!important;}
 .developer-prperty-price{margin-top: -10px!important;z-index:9999;position:relative}.developer-menu a{text-align: center;cursor: pointer;vertical-align: middle;text-decoration: none;display: inline-block;position: relative;font-size: 14px;color: #666666;width: 90px;padding: 13px 10px;}
@@ -1067,7 +1068,7 @@ div.wpcf7-mail-sent-ng { border: none !important;}
 	text-decoration: none;
 }
 .ftr_text i { margin-right: 8px;}
-.as_inn_slider .rev_slider .tp-bgimg { background-position: center 50% !important; background-size: 100% 555px !important;}
+.as_inn_slider .rev_slider .tp-bgimg { /*background-position: center 50% !important; background-size: 100% 555px !important;*/}
 /*responsive*/
 @media screen and (max-width:991px){
 	#AnythingPopup_BoxContainer4 {
