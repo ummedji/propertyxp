@@ -457,6 +457,7 @@
                     $selected_template_value = get_field("select_template");
                     if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2' && $selected_template_value != 'TemplateV3'){
 
+						echo "asasas";exit;
                 //    wp_enqueue_script('googlemaps3');
                     wp_enqueue_script('clusterer');
                     wp_enqueue_script('infobox');
@@ -481,7 +482,8 @@
 							</div>
                         <?php endif;
                     	 endif;
-                    		//add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
+
+                    	//	add_action('aviators_footer_map_detail', 'aviators_properties_map_detail');
 						}
                 	  	elseif($selected_template_value == 'developer') {
 

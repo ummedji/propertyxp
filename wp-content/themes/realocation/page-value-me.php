@@ -95,11 +95,11 @@ $url = get_bloginfo('url');
 
 	}else{
 		if(state_data == ""){
-			jQuery( "select#state" ).after("<span class='error'>Please select state.</span>");
+			jQuery( "select#state" ).after("<span class='error state_error'>Please select state.</span>");
 		}
 
 		if(location_data == ""){
-			jQuery( "select#vm_location" ).after("<span class='error'>Please select location.</span>");
+			jQuery( "select#vm_location" ).after("<span class='error location_error'>Please select location.</span>");
 		}
 
 		/*setTimeout(function(){
@@ -109,6 +109,16 @@ $url = get_bloginfo('url');
 		jQuery('html, body').animate({
 			scrollTop: jQuery("form#location_form").offset().top
 		},1000);
+
+
+		jQuery("select#state").on("change",function(){
+			jQuery("span.state_error").remove();
+			jQuery("span.location_error").remove();
+		});
+
+		jQuery("select#vm_location").on("change",function(){
+			jQuery("span.location_error").remove();
+		});
 
 		return false;
 
