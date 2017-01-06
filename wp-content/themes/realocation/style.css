@@ -1351,3 +1351,15 @@ h2.pro_tl, .address_tag a {font-family: 'Raleway-Medium';}
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
+
+#map-content #listing { width: 207px !important;}
+#hydraform-properties_vertical .form-group{
+	margin-bottom: 0px !important;
+}
+#hydraform-properties_vertical .form-group label {
+	margin-top: 10px !important;
+	margin-bottom: 0px !important;
+}
+#hydraform-properties_vertical .form-group input[type="submit"] {
+	margin-top: 20px;
+}

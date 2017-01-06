@@ -662,6 +662,9 @@ function get_property_average_value(){
 	$city_name = get_term_by('id', $city_id, 'locations');
 	//print_r($city_name->slug);
 
+   // echo $city_name;
+   // die;
+
 	$args = array(
 				'post_type' => 'property', 
 				'posts_per_page' => -1 , 
@@ -670,8 +673,12 @@ function get_property_average_value(){
 							
 			);
 	
-	$loops = new WP_Query($args); 
-	
+	$loops = new WP_Query($args);
+
+    /*echo "<pre>";
+    print_r($loops);
+    die;*/
+
 	$total_prize_arr = array();
 	while ($loops->have_posts()) : $loops->the_post();
 	
