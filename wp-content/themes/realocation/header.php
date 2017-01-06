@@ -183,6 +183,12 @@
 
 		setTimeout(function(){
 
+			var home_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-home-price").val()));
+			jQuery("form#mortgage input#hydra-home-price").val(home_price);
+
+			var down_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-down-price").val()));
+			jQuery("form#mortgage input#hydra-down-price").val(down_price);
+
 			jQuery('table tbody td.item').each(function(){
 
 				var data = jQuery.trim(jQuery(this).html()).replace('Rs.','');
