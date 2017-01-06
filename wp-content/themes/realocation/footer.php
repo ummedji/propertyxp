@@ -109,113 +109,104 @@ jQuery(window).scroll(function () {
     }
     iScrollPos = iCurScrollPos;
 
-	//DETAIL POSITION
+	if(jQuery("#details").length > 0) {
 
-	var detail_top_data = jQuery("#details").offset().top;
-	//var detail_bottom_data = jQuery("#details").position().top + jQuery("#details").outerHeight(true);
+		//DETAIL POSITION
 
-	var detail_bottom_data = jQuery("#details").offset().top + jQuery("#details").outerHeight(true);
+		var detail_top_data = jQuery("#details").offset().top;
+		//var detail_bottom_data = jQuery("#details").position().top + jQuery("#details").outerHeight(true);
+
+		var detail_bottom_data = jQuery("#details").offset().top + jQuery("#details").outerHeight(true);
 
 
-	//CATEGORY POSITION
+		//CATEGORY POSITION
 
-	var flat_top_data = jQuery("#flats").offset().top;
-	//var flat_bottom_data = jQuery("#flats").position().top + jQuery("#flats").outerHeight(true);
-	var flat_bottom_data = jQuery("#flats").offset().top + jQuery("#flats").outerHeight(true);
+		var flat_top_data = jQuery("#flats").offset().top;
+		var flat_bottom_data = jQuery("#flats").offset().top + jQuery("#flats").outerHeight(true);
 
-	//AMENITIES POSITION
+		//AMENITIES POSITION
 
-	var amenities_top_data = jQuery("#amenities").offset().top;
-	//var amenities_bottom_data = jQuery("#amenities").position().top + jQuery("#amenities").outerHeight(true);
+		var amenities_top_data = jQuery("#amenities").offset().top;
+		var amenities_bottom_data = jQuery("#amenities").offset().top + jQuery("#amenities").outerHeight(true);
 
-	var amenities_bottom_data = jQuery("#amenities").offset().top + jQuery("#amenities").outerHeight(true);
+		//LOCATION POSITION
 
-	//LOCATION POSITION
+		var map_top_data = jQuery("#map").offset().top;
+		var map_bottom_data = jQuery("#map").offset().top + jQuery("#map").outerHeight(true);
 
-	var map_top_data = jQuery("#map").offset().top;
-	//var map_bottom_data = jQuery("#map").position().top + jQuery("#map").outerHeight(true);
+		//THREE SIXTY DATA
 
-	var map_bottom_data = jQuery("#map").offset().top + jQuery("#map").outerHeight(true);
+		var three_sixty_data_top_data = jQuery("#three_sixty_data").offset().top;
+		var three_sixty_data_bottom_data = jQuery("#three_sixty_data").offset().top + jQuery("#three_sixty_data").outerHeight(true);
 
-	//THREE SIXTY DATA
+		//GALLERY POSITION
 
-	var three_sixty_data_top_data = jQuery("#three_sixty_data").offset().top;
-	//var three_sixty_data_bottom_data = jQuery("#three_sixty_data").position().top + jQuery("#three_sixty_data").outerHeight(true);
+		var gallery_top_data = jQuery("#gallery").offset().top;
+		var gallery_bottom_data = jQuery("#gallery").offset().top + jQuery("#gallery").outerHeight(true);
 
-	var three_sixty_data_bottom_data = jQuery("#three_sixty_data").offset().top + jQuery("#three_sixty_data").outerHeight(true);
+		// MARKET POSITION
 
-	//GALLERY POSITION
+		var line_chart_top_data = jQuery("#line_chart").offset().top;
+		var line_chart_bottom_data = jQuery("#line_chart").offset().top + jQuery("#line_chart").outerHeight(true);
 
-	var gallery_top_data = jQuery("#gallery").offset().top;
-	//var gallery_bottom_data = jQuery("#gallery").position().top + jQuery("#gallery").outerHeight(true);
+		jQuery("div#mCSB_1_container ul li a").removeClass("active");
 
-	var gallery_bottom_data = jQuery("#gallery").offset().top + jQuery("#gallery").outerHeight(true);
+		if (iCurScrollPos >= detail_top_data && iCurScrollPos <= detail_bottom_data) {
 
-	// MARKET POSITION
+			//console.log(iCurScrollPos+"=="+detail_top_data+"==="+detail_bottom_data);
 
-	var line_chart_top_data = jQuery("#line_chart").offset().top;
-	//var line_chart_bottom_data = jQuery("#line_chart").position().top + jQuery("#line_chart").outerHeight(true);
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(1) a").addClass("active");
+		}
 
-	var line_chart_bottom_data = jQuery("#line_chart").offset().top + jQuery("#line_chart").outerHeight(true);
+		if (iCurScrollPos >= flat_top_data && iCurScrollPos <= flat_bottom_data) {
 
-	jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			//console.log(iCurScrollPos+"=="+flat_top_data+"==="+flat_bottom_data);
 
-	if(iCurScrollPos >= detail_top_data && iCurScrollPos <= detail_bottom_data){
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(2) a").addClass("active");
+		}
 
-		//console.log(iCurScrollPos+"=="+detail_top_data+"==="+detail_bottom_data);
+		if (iCurScrollPos >= amenities_top_data && iCurScrollPos <= amenities_bottom_data) {
 
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(1) a").addClass("active");
+			//console.log(iCurScrollPos+"=="+amenities_top_data+"==="+amenities_bottom_data);
+
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(3) a").addClass("active");
+		}
+
+		if (iCurScrollPos >= map_top_data && iCurScrollPos <= map_bottom_data) {
+
+			//console.log(iCurScrollPos+"=="+map_top_data+"==="+map_bottom_data);
+
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(4) a").addClass("active");
+		}
+
+		if (iCurScrollPos >= three_sixty_data_top_data && iCurScrollPos <= three_sixty_data_bottom_data) {
+
+			//console.log(iCurScrollPos+"=="+three_sixty_data_top_data+"==="+three_sixty_data_bottom_data);
+
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(5) a").addClass("active");
+		}
+
+		if (iCurScrollPos >= gallery_top_data && iCurScrollPos <= gallery_bottom_data) {
+
+			//console.log(iCurScrollPos+"=="+gallery_top_data+"==="+gallery_bottom_data);
+
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(6) a").addClass("active");
+		}
+
+		if (iCurScrollPos >= line_chart_top_data && iCurScrollPos <= line_chart_bottom_data) {
+
+			//console.log(iCurScrollPos+"=="+line_chart_top_data+"==="+line_chart_bottom_data);
+
+			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li:nth-child(7) a").addClass("active");
+		}
 	}
-
-	if(iCurScrollPos >= flat_top_data && iCurScrollPos <= flat_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+flat_top_data+"==="+flat_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(2) a").addClass("active");
-	}
-
-	if(iCurScrollPos >= amenities_top_data && iCurScrollPos <= amenities_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+amenities_top_data+"==="+amenities_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(3) a").addClass("active");
-	}
-
-	if(iCurScrollPos >= map_top_data && iCurScrollPos <= map_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+map_top_data+"==="+map_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(4) a").addClass("active");
-	}
-
-	if(iCurScrollPos >= three_sixty_data_top_data && iCurScrollPos <= three_sixty_data_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+three_sixty_data_top_data+"==="+three_sixty_data_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(5) a").addClass("active");
-	}
-
-	if(iCurScrollPos >= gallery_top_data && iCurScrollPos <= gallery_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+gallery_top_data+"==="+gallery_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(6) a").addClass("active");
-	}
-
-	if(iCurScrollPos >= line_chart_top_data && iCurScrollPos <= line_chart_bottom_data){
-
-		//console.log(iCurScrollPos+"=="+line_chart_top_data+"==="+line_chart_bottom_data);
-
-		//jQuery("div#mCSB_1_container ul li a").removeClass("active");
-		jQuery("div#mCSB_1_container ul li:nth-child(7) a").addClass("active");
-	}
-
 	//console.log("scroll");
 });
 

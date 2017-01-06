@@ -675,10 +675,6 @@ function get_property_average_value(){
 	
 	$loops = new WP_Query($args);
 
-    /*echo "<pre>";
-    print_r($loops);
-    die;*/
-
 	$total_prize_arr = array();
 	while ($loops->have_posts()) : $loops->the_post();
 	
@@ -688,7 +684,9 @@ function get_property_average_value(){
 	$total_prize_arr[] = str_replace(" ","",strip_tags(hydra_render_field(get_the_ID(), 'price', 'detail')));
 	
 	endwhile;
+
 	$total_prize_arr = array_filter($total_prize_arr);
+
 	$total_value =  array_sum($total_prize_arr);
 	$num_valu_in_array = count($total_prize_arr);
 	
