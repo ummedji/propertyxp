@@ -440,50 +440,55 @@ $flitingSidebarContent .= '<div id="csbwfs-social-inner">';
 
 /** FB */
 if($pluginOptionsVal['csbwfs_fpublishBtn']!=''):
-$flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-fb" class="csbwfs-fb"><a href="http://www.facebook.com/sharer/sharer.php?u='.$shareurl.'" onclick="javascript:window.open(\'//www.facebook.com/sharer/sharer.php?u='.$shareurl.'\', \'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600\');return false;" target="_blank" title="'.$fImgAlt.'" '.$fImgbg.'><img src="'.$fImg.'" alt="'.$fImgAlt.'" width="35" height="35" ></a></div></div>';
+$flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-fb" class="csbwfs-fb"><a
+ target="_blank" href="http://www.facebook.com/sharer/sharer.php?u='.$shareurl.'"
+onclick="javascript:window.open(\'//www.facebook.com/sharer/sharer.php?u='.$shareurl.'\', \'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600\');return false;" target="_blank" title="'.$fImgAlt.'" '.$fImgbg.'><img src="'.$fImg.'" alt="'.$fImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** TW */
 if($pluginOptionsVal['csbwfs_tpublishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-tw" class="csbwfs-tw"><a
-href="http://twitter.com/share?url='.$shareurl.'" onclick="window.open(\'//twitter.com/share?url='.$shareurl.'&text='.$ShareTitle.'\',\'_blank\',\'width=800,height=300\')" title="'.$tImgAlt.'" '.$tImgbg.'><img src="'.$tImg.'" alt="'.$tImgAlt.'" width="35" height="35" ></a></div></div>';
+href="http://twitter.com/share?url='.$shareurl.'" target="_blank"
+onclick="javascript:window.open(\'//twitter.com/share?url='.$shareurl.'&text='.$ShareTitle.'\',\'_blank\',\'width=800,height=300\'); return false;" title="'.$tImgAlt.'" '.$tImgbg.'><img src="'.$tImg.'" alt="'.$tImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** GP */
 if($pluginOptionsVal['csbwfs_gpublishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-gp" class="csbwfs-gp"><a
-href="http://plus.google.com/share?url='.$shareurl.'"
+href="http://plus.google.com/share?url='.$shareurl.'" target="_blank"
  onclick="javascript:window.open(\'//plus.google.com/share?url='.$shareurl.'\',\'\',\'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=800\');return false;" title="'.$gImgAlt.'" '.$gImgbg.'><img src="'.$gImg.'" alt="'.$gImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /**  LI */
 if($pluginOptionsVal['csbwfs_lpublishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-li" class="csbwfs-li"><a
-href="http://www.linkedin.com/cws/share?mini=true&url='. $shareurl.'"
+href="http://www.linkedin.com/cws/share?mini=true&url='. $shareurl.'" target="_blank"
 onclick="javascript:window.open(\'//www.linkedin.com/cws/share?mini=true&url='. $shareurl.'\',\'\',\'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=800\');return false;" title="'.$lImgAlt.'" '.$lImgbg.'><img src="'.$lImg.'" alt="'.$lImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** PIN */
 if($pluginOptionsVal['csbwfs_ppublishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-pin" class="csbwfs-pin"><a
-onclick="window.open(\'//pinterest.com/pin/create/button/?url='.$shareurl.'&amp;media='.$pinShareImg.'&amp;description='.$ShareTitle.' :'.$shareurl.'\',\'pinIt\',\'toolbar=0,status=0,width=800,height=500\');" href="http://pinterest.com/pin/create/button/?url='.$shareurl.'" '.$pImgbg.' title="'.$pImgAlt.'"><img src="'.$pImg.'" alt="'.$pImgAlt.'" width="35" height="35" ></a></div></div>';
+onclick="javascript:window.open(\'//pinterest.com/pin/create/button/?url='.$shareurl.'&amp;media='.$pinShareImg.'&amp;description='.$ShareTitle.' :'.$shareurl.'\',\'pinIt\',\'toolbar=0,status=0,width=800,height=500\');" target="_blank" href="http://pinterest.com/pin/create/button/?url='.$shareurl.'" '.$pImgbg.' title="'.$pImgAlt.'"><img src="'.$pImg.'" alt="'.$pImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** YT */	 	 
 if(isset($pluginOptionsVal['csbwfs_ytpublishBtn']) && $pluginOptionsVal['csbwfs_ytpublishBtn']!=''):
-$flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-yt" class="csbwfs-yt"><a onclick="window.open(\''.$pluginOptionsVal['csbwfs_ytPath'].'\');" href="'.$pluginOptionsVal['csbwfs_ytPath'].'" '.$ytImgbg.' title="'.$ytImgAlt.'"><img src="'.$ytImg.'" alt="'.$ytImgAlt.'" width="35" height="35" ></a></div></div>';
+$flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-yt" class="csbwfs-yt"><a
+onclick="javascript:window.open(\''.$pluginOptionsVal['csbwfs_ytPath'].'\');" href="'.$pluginOptionsVal['csbwfs_ytPath'].'" target="_blank" '.$ytImgbg.'
+title="'.$ytImgAlt.'"><img src="'.$ytImg.'" alt="'.$ytImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** Reddit */
 if(isset($pluginOptionsVal['csbwfs_republishBtn']) && $pluginOptionsVal['csbwfs_republishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-re" class="csbwfs-re"><a
-onclick="window.open(\'//reddit.com/submit?url='.$shareurl.'&amp;title='.$ShareTitle.'\',\'Reddit\',\'toolbar=0,status=0,width=1000,height=800\');" href="http://reddit.com/submit?url='.$shareurl.'" '.$reImgbg.' title="'.$reImgAlt.'"><img src="'.$reImg.'" alt="'.$reImgAlt.'" width="35" height="35" ></a></div></div>';
+onclick="javascript:window.open(\'//reddit.com/submit?url='.$shareurl.'&amp;title='.$ShareTitle.'\',\'Reddit\',\'toolbar=0,status=0,width=1000,height=800\');" target="_blank" href="http://reddit.com/submit?url='.$shareurl.'" '.$reImgbg.' title="'.$reImgAlt.'"><img src="'.$reImg.'" alt="'.$reImgAlt.'" width="35" height="35" ></a></div></div>';
 endif;
 
 /** Stumbleupon */
 if(isset($pluginOptionsVal['csbwfs_stpublishBtn']) && $pluginOptionsVal['csbwfs_stpublishBtn']!=''):
 $flitingSidebarContent .='<div class="csbwfs-sbutton csbwfsbtns"><div id="csbwfs-st" class="csbwfs-st"><a
-onclick="window.open(\'//www.stumbleupon.com/submit?url='.$shareurl.'&amp;title='.$ShareTitle.'\',\'Stumbleupon\',\'toolbar=0,status=0,width=1000,height=800\');"  href="http://www.stumbleupon.com/submit?url='.$shareurl.'" '.$stImgbg.' title="'.$stImgAlt.'"><img src="'. $stImg.'" alt="'.$stImgAlt.'" width="35" height="35" ></a></div></div>';
+onclick="javascript:window.open(\'//www.stumbleupon.com/submit?url='.$shareurl.'&amp;title='.$ShareTitle.'\',\'Stumbleupon\',\'toolbar=0,status=0,width=1000,height=800\');" target="_blank" href="http://www.stumbleupon.com/submit?url='.$shareurl.'" '.$stImgbg.' title="'.$stImgAlt.'"><img src="'. $stImg.'" alt="'.$stImgAlt.'" width="35" height="35" ></a></div></div>';
 endif; 
 
 /** Mail*/
