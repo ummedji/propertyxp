@@ -102,9 +102,13 @@ $url = get_bloginfo('url');
 			jQuery( "select#vm_location" ).after("<span class='error'>Please select location.</span>");
 		}
 
-		setTimeout(function(){
+		/*setTimeout(function(){
 			jQuery("span.error").remove();
-		}, 4000);
+		}, 4000);*/
+
+		jQuery('html, body').animate({
+			scrollTop: jQuery("form#location_form").offset().top
+		},1000);
 
 		return false;
 
