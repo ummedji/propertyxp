@@ -183,11 +183,17 @@
 
 		setTimeout(function(){
 
-			var home_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-home-price").val()));
-			jQuery("form#mortgage input#hydra-home-price").val(home_price);
+		//	var home_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-home-price").val()));
+			var x = jQuery("form#mortgage input#hydra-home-price").val();
 
-			var down_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-down-price").val()));
-			jQuery("form#mortgage input#hydra-down-price").val(down_price);
+			jQuery("form#mortgage input#hydra-home-price").val(x.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+			var y = jQuery("form#mortgage input#hydra-down-price").val();
+
+			jQuery("form#mortgage input#hydra-down-price").val(y.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+			//var down_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-down-price").val()));
+
 
 			jQuery('table tbody td.item').each(function(){
 
