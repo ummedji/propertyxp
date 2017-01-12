@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="archive-property.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="archive-property.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27118644">
-              <caret line="116" column="77" selection-start-line="116" selection-start-column="77" selection-end-line="116" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.72958255">
+              <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="properties_carousel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="properties_carousel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_carousel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68393785">
+            <state vertical-scroll-proportion="-10.645162">
               <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
               <folding />
             </state>
@@ -124,8 +124,8 @@
         <option value="$PROJECT_DIR$/OLD/wp-content/themes/realocation/assets/css/variants/pink.css" />
         <option value="$PROJECT_DIR$/OLD/wp-content/themes/realocation/assets/css/realocation.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/assets/css/variants/pink.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_carousel.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php" />
       </list>
     </option>
   </component>
@@ -827,42 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OLD/wp-content/themes/realocation/assets/css/variants/pink.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="666.1539">
-          <caret line="8496" column="24" selection-start-line="8496" selection-start-column="24" selection-end-line="8496" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/assets/css/variants/pink.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20905924">
           <caret line="8489" column="1" selection-start-line="8489" selection-start-column="1" selection-end-line="8489" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OLD/wp-content/themes/realocation/assets/css/realocation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47284344">
-          <caret line="0" column="190154" selection-start-line="0" selection-start-column="190154" selection-end-line="0" selection-end-column="190154" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OLD/wp-content/plugins/aviators_properties/widgets/templates/properties_slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8070866">
-          <caret line="183" column="32" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27118644">
-          <caret line="116" column="77" selection-start-line="116" selection-start-column="77" selection-end-line="116" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -885,8 +853,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_carousel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68393785">
+        <state vertical-scroll-proportion="-10.645162">
           <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72958255">
+          <caret line="189" column="26" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
           <folding />
         </state>
       </provider>
