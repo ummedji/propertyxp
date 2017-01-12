@@ -50,15 +50,54 @@ class PropertiesCarousel_Widget extends WP_Widget {
             $query['post__in'] = explode(',',$instance['property_ids']);
         }
         else {
-            if (isset($instance['types']) && $instance['types']) {
-                $query['tax_query'] = array(
-                    array(
-                        'taxonomy' => 'types',
-                        'terms' => $instance['types']
-                    )
-                );
+
+            if(!isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] == "") {
+
+                if (isset($instance['types']) && $instance['types']) {
+                    $query['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'types',
+                            'terms' => $instance['types']
+                        )
+                    );
+                }
+            }
+            else
+            {
+
+                if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+                    $query['meta_query'][] = array(
+                        'key' => '_%_location',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_city_id"]
+                    );
+                }
+
+                if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+
+                    $query['meta_query'][] = array(
+                        'key' => '_%_country',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_cou_id"]
+                    );
+
+                }
+
+                if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+
+                    $query['meta_query'][] = array(
+                        'key' => '_%_sublocation',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_subloc_id"]
+                    );
+
+                }
+
             }
         }
+
+      //  echo "<pre>";
+      //  print_r($query);
 
         query_posts($query);
         echo $before_widget;

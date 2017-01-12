@@ -186,11 +186,15 @@
 		//	var home_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-home-price").val()));
 			var x = jQuery("form#mortgage input#hydra-home-price").val();
 
-			jQuery("form#mortgage input#hydra-home-price").val(x.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+			if(jQuery("form#mortgage input#hydra-home-price").length > 0){
+				jQuery("form#mortgage input#hydra-home-price").val(x.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+			}
 
 			var y = jQuery("form#mortgage input#hydra-down-price").val();
 
-			jQuery("form#mortgage input#hydra-down-price").val(y.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+			if(jQuery("form#mortgage input#hydra-down-price").length > 0){
+				jQuery("form#mortgage input#hydra-down-price").val(y.toString().replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+			}
 
 			//var down_price = commaSeparateNumber(jQuery.trim(jQuery("form#mortgage input#hydra-down-price").val()));
 
@@ -239,8 +243,32 @@
 			});
 
 		}, 2000);
+			jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["selected_cou_id"]; ?>);
+
+			location_data('<?php echo $_SESSION["selected_cou_id"]; ?>','city');
+			location_data('<?php echo $_SESSION["selected_city_id"]; ?>','sublocation');
 
 	});
+	
+	function location_data(locationdata,datatype){
+
+		jQuery.ajax({
+
+			type:"POST",
+			url: "/wp-admin/admin-ajax.php", // our PHP handler file
+			data: {action: "get_location_data",location_data: locationdata,type_data:datatype},
+			success:function(results){
+				if(datatype == "city"){
+					jQuery("select#hydra-hf-property-location-filter-items-0-location").html(results);
+				}
+				if(datatype == "sublocation"){
+					jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").html(results);
+				}
+			}
+
+		});
+
+	}
 
 	function commaSeparateNumber(val){
 		/*while (/(\d+)(\d{3})/.test(val.toString())){
@@ -457,7 +485,7 @@
                     $selected_template_value = get_field("select_template");
                     if($selected_template_value != 'developer' && $selected_template_value != 'TemplateV2' && $selected_template_value != 'TemplateV3'){
 
-						echo "asasas";exit;
+					//	echo "asasas";exit;
                 //    wp_enqueue_script('googlemaps3');
                     wp_enqueue_script('clusterer');
                     wp_enqueue_script('infobox');

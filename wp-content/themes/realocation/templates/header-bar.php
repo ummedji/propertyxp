@@ -19,11 +19,17 @@ $_GET['hf_property_location_filter']['items'][0]['location'] = $getcurrentcity;
 if(!empty($getcurrentcity))
 {
 $selcity =	get_term_by( 'id', $getcurrentcity, 'locations');
+
+	$_SESSION["selected_city"] = $selcity->name;
+
+	//echo $_SESSION["selected_city"];die;
+
 //$selcity = get_terms('locations', $getcurrentcity);
 ?>
 <script>
 jQuery(document).ready(function() {
-jQuery('.as_header_bar .container > a').html('Chnage City : '+'<?php echo $selcity->name; ?>');	
+jQuery('.as_header_bar .container > a').html('Change City : '+'<?php echo $selcity->name; ?>');
+
 });
 </script>
 <?php } ?>

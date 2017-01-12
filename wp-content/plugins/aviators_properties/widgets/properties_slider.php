@@ -12,18 +12,22 @@ class PropertiesSlider_Widget extends Aviators_Widget {
     }
 
     function widget($args, $instance) {
+        global $wpdb;
         extract($args);
         $query_args['post_type'] = 'property';
         // property ids are set, ignore rest
 
         if (!$instance['property_ids']) {
-            // taxonomy contract types
-            if (isset($instance['contract_types']) && $instance['contract_types']) {
-                $query_args['tax_query'][] = array(
-                    'taxonomy' => 'contract_types',
-                    'terms' => array_keys($instance['contract_types']),
-                );
-            }
+
+            if(!isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] == ""){
+
+                // taxonomy contract types
+                if (isset($instance['contract_types']) && $instance['contract_types']) {
+                    $query_args['tax_query'][] = array(
+                        'taxonomy' => 'contract_types',
+                        'terms' => array_keys($instance['contract_types']),
+                    );
+                }
 
             // taxonomy types
             if (isset($instance['types']) && $instance['types']) {
@@ -59,19 +63,75 @@ class PropertiesSlider_Widget extends Aviators_Widget {
                     break;
             }
 
-            if ($instance['limit'] > 0) {
-                $query_args['posts_per_page'] = $instance['limit'];
+                if ($instance['limit'] > 0) {
+                    $query_args['posts_per_page'] = $instance['limit'];
+                }
+
+                $query_args['meta_query'][] = array('key' => '_thumbnail_id');
+                $slides = get_posts($query_args);
+
+              //  echo "aaaa";die;
+
             }
+            else{
+
+               // echo "bbbb";die;
+
+
+                if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+                    $query_args['meta_query'][] = array(
+                        'key' => '_%_location',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_city_id"]
+                    );
+                }
+
+                if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+
+                    $query_args['meta_query'][] = array(
+                        'key' => '_%_country',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_cou_id"]
+                    );
+
+                }
+
+                if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+
+                    $query_args['meta_query'][] = array(
+                        'key' => '_%_sublocation',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_subloc_id"]
+                    );
+
+                }
+
+                $slides = query_posts($query_args);
+
+
+            }
+
         } else {
             $property_ids = explode(',', $instance['property_ids']);
             $property_ids = array_map('trim', $property_ids);
             $query_args['post__in'] = $property_ids;
-        }
 
         $query_args['meta_query'][] = array('key' => '_thumbnail_id');
 
+            $slides = get_posts($query_args);
+        }
 
-        $slides = get_posts($query_args);
+
+
+      //  echo "<pre>";
+      //  print_r($query_args);
+
+
+
+      //  echo $wpdb->last_query;
+
+     //   echo "<pre>";
+     //   print_r($slides);
 
         if (!count($slides)) {
             return;

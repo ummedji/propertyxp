@@ -15,10 +15,40 @@ $query_args = array(
     'paged' => $paged,
 );
 
+
 $sort = aviators_settings_get('property', get_the_ID(), 'sort');
 $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager');
 $display = aviators_settings_get('property', get_the_ID(), 'display_type');
 $isotope_taxonomy = aviators_settings_get('property', get_the_ID(), 'isotope_taxonomy');
+
+if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+    $query_args['meta_query'][] = array(
+        'key' => '_%_location',
+        'compare' => '=',
+        'value' => $_SESSION["selected_city_id"]
+    );
+}
+
+if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+
+    $query_args['meta_query'][] = array(
+        'key' => '_%_country',
+        'compare' => '=',
+        'value' => $_SESSION["selected_cou_id"]
+    );
+
+}
+
+if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+
+    $query_args['meta_query'][] = array(
+        'key' => '_%_sublocation',
+        'compare' => '=',
+        'value' => $_SESSION["selected_subloc_id"]
+    );
+
+}
+
 
 if (isset($sort) && $sort) {
     aviators_properties_sort_get_query_args(get_the_ID(), $query_args);

@@ -7,6 +7,8 @@ Author:         Aviators
 Author URI:     http://byaviators.com
 */
 
+session_start();
+
 require_once 'aviators_properties.settings.php';
 require_once 'aviators_properties.widgets.php';
 require_once 'aviators_properties.sort.php';
@@ -340,12 +342,30 @@ add_action('wp_enqueue_scripts', 'aviators_property_enqueue_script');
  * Adds javascript code to fire the map
  */
 
+// function to get  the address
+function get_lat_long($address){
+
+    $address = str_replace(" ", "+", $address);
+
+    $json = file_get_contents("http://maps.google.com/maps/api/geocode/json?address=".strtolower($address)."&sensor=false");
+    $json = json_decode($json);
+
+    $lat = $json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'};
+    $long = $json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'};
+    
+    $arry_data = array($lat,$long);
+    
+    return $arry_data;
+}
+
 function aviators_properties_init_map($instance = NULL) {
 
     if ($instance == NULL && !empty($GLOBALS['map_widget_instance'])) {
         $instance = $GLOBALS['map_widget_instance'];
     }
     $properties = aviators_properties_get_for_map($instance);
+
+    $image_array = array();
 
     $contents = '';
     foreach ( $properties as $property ) {
@@ -356,8 +376,41 @@ function aviators_properties_init_map($instance = NULL) {
         $content = str_replace(array("\r\n", "\n", "\t"), "", $content);
         $content = addslashes($content);
         $contents .= "'$content',";
+
+/*
+        if (has_post_thumbnail( $property->ID ) ):
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $property->ID ), 'single-post-thumbnail' );
+            $image_array[] = $image[0];
+        endif;*/
+
     }
     $contents = trim($contents, ',');
+
+    $final_string = "";
+
+    if((isset($_SESSION["selected_city"]) && $_SESSION["selected_city"] != "") || (isset($_SESSION["selected_cou"]) && $_SESSION["selected_cou"] != "") || (isset($_SESSION["selected_subloc"]) && $_SESSION["selected_subloc"] != ""))
+    {
+
+       $final_string = $_SESSION["selected_subloc"]." ".$_SESSION["selected_city"]." ".$_SESSION["selected_cou"];
+
+        $lat_long_data = get_lat_long($final_string);
+
+        //$lat_long_data = explode(",",$lat_long_data);
+
+      //  print_r($lat_long_data);
+      //  die;
+
+        $instance['latitude'] = $lat_long_data[0];
+        $instance['longitude'] = $lat_long_data[1];
+    }
+
+    if((isset($_SESSION["selected_subloc"]) && $_SESSION["selected_subloc"] != "")){
+        $instance['zoom'] = 15;
+    }
+/*
+    echo "<pre>";
+    print_r($instance);
+    die;*/
     ?>
 
 
@@ -370,7 +423,10 @@ function aviators_properties_init_map($instance = NULL) {
                 locations: new Array(<?php foreach ($properties as $property) : ?>[<?php $mapPosition = get_post_meta( $property->ID, 'hf_property_map', TRUE ); echo $mapPosition['items'][0]['latitude']; ?>, <?php echo $mapPosition['items'][0]['longitude']; ?>]<?php if ( end( $properties ) != $property ) : ?>, <?php endif; ?><?php endforeach; ?>),
                 types: new Array(<?php foreach ( $properties as $property ) : ?>'<?php $terms = wp_get_object_terms( $property->ID, 'types', TRUE); if (!empty($terms['slug'])) { echo $terms[ 'slug' ]; } ?>'<?php if ( end( $properties ) != $property ) : ?>, <?php endif; ?><?php endforeach; ?>),
                 contents: new Array(<?php print $contents; ?>),
-                images: new Array(<?php foreach ( $properties as $property ): $flag = hydra_render_field($property->ID, 'flag', 'grid'); ?>'<?php if (!empty($flag)): ?><div class="label"><?php echo str_replace(array("\r\n", "\n", "\t"), "", strip_tags($flag)); ?></div><?php endif;?><?php $type_terms = wp_get_object_terms( $property->ID, 'types', TRUE); if(isset($type_terms[0])) { echo aviators_properties_get_term_image($type_terms[0]->term_id); } ?>'<?php if ( end( $properties ) != $property ) : ?>, <?php endif; ?><?php endforeach; ?>),
+                images: new Array(<?php foreach ( $properties as $property ): ?>'<?php if (has_post_thumbnail( $property->ID ) ): ?>
+              <?php  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $property->ID ), 'thumbnail' ); ?>
+            <?php echo '<img width="42" height="42" src="'.$image[0].'" class="attachment-thumbnail size-thumbnail wp-post-image" alt="interiors">'; ?>
+           <?php endif; ?>'<?php if ( end( $properties ) != $property ) : ?>, <?php endif; ?><?php endforeach; ?>),
                 transparentMarkerImage: '<?php echo get_template_directory_uri(); ?>/assets/img/marker-transparent.png',
                 transparentClusterImage: '<?php echo get_template_directory_uri(); ?>/assets/img/cluster-transparent.png',
                 zoom: <?php echo $instance['zoom']; ?>,
@@ -381,6 +437,7 @@ function aviators_properties_init_map($instance = NULL) {
                 },
                 enableGeolocation: <?php echo $instance['enable_geolocation'] ? 'true' : 'false'; ?>
             });
+            //debugger;
         })(jQuery);
     </script>
     <?php

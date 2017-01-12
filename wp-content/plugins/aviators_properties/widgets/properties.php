@@ -10,9 +10,12 @@ class Properties_Widget extends Aviators_Widget {
             ));
     }
 
-    function widget($args, $instance) {
+    function widget($args, $instance)
+    {
         extract($args);
         $query_args['post_type'] = 'property';
+
+        if (!isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] == ""){
 
         if (isset($instance['contract_types']) && $instance['contract_types']) {
             $query_args['tax_query'][] = array(
@@ -56,6 +59,37 @@ class Properties_Widget extends Aviators_Widget {
                 }
 
                 break;
+        }
+    }else{
+
+            if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+                $query_args['meta_query'][] = array(
+                    'key' => '_%_location',
+                    'compare' => '=',
+                    'value' => $_SESSION["selected_city_id"]
+                );
+            }
+
+            if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+
+                $query_args['meta_query'][] = array(
+                    'key' => '_%_country',
+                    'compare' => '=',
+                    'value' => $_SESSION["selected_cou_id"]
+                );
+
+            }
+
+            if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+
+                $query_args['meta_query'][] = array(
+                    'key' => '_%_sublocation',
+                    'compare' => '=',
+                    'value' => $_SESSION["selected_subloc_id"]
+                );
+
+            }
+
         }
 
         query_posts($query_args);

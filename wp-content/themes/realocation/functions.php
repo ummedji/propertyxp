@@ -1298,3 +1298,41 @@ function my_enqueue() {
 
 }
 add_filter('admin_enqueue_scripts', 'my_enqueue');
+
+function get_location_data(){
+
+    global $wpdb;
+
+    $data = $_POST["location_data"];
+    $type_data = $_POST["type_data"];
+
+   // $term_id = 10;
+
+    $sql = "SELECT * FROM `wp_term_taxonomy` as wtt JOIN wp_terms as wt ON wt.term_id = wtt.term_id AND taxonomy='locations' WHERE parent
+=$data";
+
+    $childdata = $wpdb->get_results($sql, OBJECT);
+
+    $html = "";
+    if(!empty($childdata)) {
+        foreach ($childdata as $key => $child) {
+            $seclected = "";
+
+            if($_SESSION["selected_subloc_id"] == $child->term_id && $type_data == "sublocation"){
+                $seclected = "selected= 'selected'";
+            }
+
+            if($_SESSION["selected_city_id"] == $child->term_id && $type_data == "city"){
+                $seclected = "selected= 'selected'";
+            }
+
+            $html .= "<option ".$seclected." value='" . $child->term_id . "'>" . $child->name . "</option>";
+        }
+    }
+
+    echo $html;
+    die();
+}
+
+add_action('wp_ajax_get_location_data', 'get_location_data');
+add_action('wp_ajax_nopriv_get_location_data', 'get_location_data');

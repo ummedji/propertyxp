@@ -180,7 +180,7 @@
     </a>
 </div>
 <?php }else{ ?>
-<div id="properties-slider" class="carousel slide" data-ride="carousel">
+<div id="properties-slider" class="carousel slide carousel_prp" data-ride="carousel">
     <ol class="carousel-indicators">
         <?php foreach($slides as $index => $slide): ?>
             <li data-target="#properties-slider" data-slide-to="<?php echo $index; ?>" class="<?php if($index == 0 ) { echo "active"; } ?>"></li>
