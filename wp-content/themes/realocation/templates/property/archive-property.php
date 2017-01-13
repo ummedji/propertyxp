@@ -182,10 +182,10 @@ if($fullwidth) {
 //echo get_site_url();
 
 //header('Location:'.get_site_url());
-//wp_redirect(get_site_url());
+wp_redirect(get_site_url());
 
 //wp_safe_redirect(home_url());
-//exit;
+exit;
 
 /*global $pagenow;
 if ( !preg_match("!wp-admin!",$_SERVER["REQUEST_URI"] ) and !in_array( $pagenow, array( 'wp-login.php', 'wp-register.php' ) ) ){
