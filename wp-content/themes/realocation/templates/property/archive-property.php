@@ -185,7 +185,7 @@ echo get_site_url();
 //wp_redirect(get_site_url());
 
 echo "<script type='text/javascript'>";
-echo "alert('HERE');";
+echo "window.location.href = '".get_site_url()."'; ";
 echo "</script>";
 
 //wp_safe_redirect(home_url());
