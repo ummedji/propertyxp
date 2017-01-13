@@ -199,6 +199,8 @@ if (isset($_POST)) {
         //  Use the wp redirect function
         wp_redirect(home_url());
     } else {
+
+        echo "HERE !!!";
         //  If errros found output the header since we are staying on this page
         if (isset($_GET['noheader'])) {
             require_once(ABSPATH . 'wp-admin/admin-header.php');
