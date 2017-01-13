@@ -187,7 +187,7 @@ if($fullwidth) {
 //wp_safe_redirect(home_url());
 //exit;
 
-global $pagenow;
+/*global $pagenow;
 if ( !preg_match("!wp-admin!",$_SERVER["REQUEST_URI"] ) and !in_array( $pagenow, array( 'wp-login.php', 'wp-register.php' ) ) ){
     $scheme = is_ssl() && !is_admin() ? 'https' : 'http';
     $current_url=$scheme . '://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
@@ -195,7 +195,7 @@ if ( !preg_match("!wp-admin!",$_SERVER["REQUEST_URI"] ) and !in_array( $pagenow,
     if (!is_user_logged_in() and $current_url!=$network_url){
         wp_redirect( home_url() );  exit;
     }
-}
+}*/
 
 ?>
 
