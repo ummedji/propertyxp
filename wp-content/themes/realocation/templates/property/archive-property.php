@@ -184,10 +184,37 @@ if($fullwidth) {
 //header('Location:'.get_site_url());
 //wp_redirect(get_site_url());
 
-wp_safe_redirect(home_url());
-exit;
+//wp_safe_redirect(home_url());
+//exit;
 
 ?>
+
+<?php
+if (isset($_POST)) {
+    // Add your code here to check for errors and execute a query to save the data if no errors.
+    $errors = FALSE;
+
+    //  Some input field checking
+    if ($errors == FALSE) {
+        //  Use the wp redirect function
+        wp_redirect(home_url());
+    } else {
+        //  If errros found output the header since we are staying on this page
+        if (isset($_GET['noheader'])) {
+            require_once(ABSPATH . 'wp-admin/admin-header.php');
+        }
+    }
+}
+?>
+    <div class="wrap">
+        <h2>wp_redirect test</h2>
+        <form method="post" action="admin.php?page=".basename(__FILE__)."add&noheader=true">
+        <p class="submit">
+            <input type="submit" class="button-primary" value="Submit" />
+        </p>
+        </form>
+    </div>
+
 <!--
 <?php /*get_header(); */?>
 

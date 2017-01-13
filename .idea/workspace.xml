@@ -28,8 +28,8 @@
       <file leaf-file-name="archive-property.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45595855">
-              <caret line="186" column="17" selection-start-line="186" selection-start-column="17" selection-end-line="186" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6580311">
+              <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -640,6 +640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1525424">
           <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -833,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45595855">
-          <caret line="186" column="17" selection-start-line="186" selection-start-column="17" selection-end-line="186" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6580311">
+          <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
           <folding />
         </state>
       </provider>
