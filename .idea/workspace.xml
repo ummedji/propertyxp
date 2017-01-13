@@ -28,8 +28,8 @@
       <file leaf-file-name="archive-property.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31606218">
-              <caret line="202" column="22" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.73402417">
+              <caret line="195" column="31" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -727,6 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22970639">
           <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -734,6 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6977549">
           <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/property/archive-property.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31606218">
-          <caret line="202" column="22" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.73402417">
+          <caret line="195" column="31" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
           <folding />
         </state>
       </provider>

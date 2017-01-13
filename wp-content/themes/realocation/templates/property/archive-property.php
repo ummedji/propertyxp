@@ -187,35 +187,17 @@ if($fullwidth) {
 //wp_safe_redirect(home_url());
 //exit;
 
-?>
-
-<?php
-if (isset($_POST)) {
-    // Add your code here to check for errors and execute a query to save the data if no errors.
-    $errors = FALSE;
-
-    //  Some input field checking
-    if ($errors == FALSE) {
-        //  Use the wp redirect function
-        wp_redirect(home_url());
-    } else {
-
-        echo "HERE !!!";
-        //  If errros found output the header since we are staying on this page
-        if (isset($_GET['noheader'])) {
-            require_once(ABSPATH . 'wp-admin/admin-header.php');
-        }
+global $pagenow;
+if ( !preg_match("!wp-admin!",$_SERVER["REQUEST_URI"] ) and !in_array( $pagenow, array( 'wp-login.php', 'wp-register.php' ) ) ){
+    $scheme = is_ssl() && !is_admin() ? 'https' : 'http';
+    $current_url=$scheme . '://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+    $network_url=network_home_url( '/receptionist' );
+    if (!is_user_logged_in() and $current_url!=$network_url){
+        wp_redirect( home_url() );  exit;
     }
 }
+
 ?>
-    <div class="wrap">
-        <h2>wp_redirect test</h2>
-        <form method="post" action="admin.php?page=".basename(__FILE__)."add&noheader=true">
-        <p class="submit">
-            <input type="submit" class="button-primary" value="Submit" />
-        </p>
-        </form>
-    </div>
 
 <!--
 <?php /*get_header(); */?>
