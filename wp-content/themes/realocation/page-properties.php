@@ -15,7 +15,6 @@ $query_args = array(
     'paged' => $paged,
 );
 
-
 $sort = aviators_settings_get('property', get_the_ID(), 'sort');
 $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager');
 $display = aviators_settings_get('property', get_the_ID(), 'display_type');
