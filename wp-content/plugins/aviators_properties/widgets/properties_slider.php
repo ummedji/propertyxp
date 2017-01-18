@@ -19,7 +19,7 @@ class PropertiesSlider_Widget extends Aviators_Widget {
 
         if (!$instance['property_ids']) {
 
-            if(!isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] == ""){
+            if(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == ""){
 
                 // taxonomy contract types
                 if (isset($instance['contract_types']) && $instance['contract_types']) {
@@ -78,33 +78,34 @@ class PropertiesSlider_Widget extends Aviators_Widget {
                // echo "bbbb";die;
 
 
-                if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+                if(isset($_SESSION["selected_city_id1"]) && $_SESSION["selected_city_id1"] != ""){
                     $query_args['meta_query'][] = array(
                         'key' => '_%_location',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_city_id"]
+                        'value' => $_SESSION["selected_city_id1"]
                     );
                 }
 
-                if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+                if(isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] != ""){
 
                     $query_args['meta_query'][] = array(
                         'key' => '_%_country',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_cou_id"]
+                        'value' => $_SESSION["selected_cou_id1"]
                     );
 
                 }
 
-                if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+                if(isset($_SESSION["selected_subloc_id1"]) && $_SESSION["selected_subloc_id1"] != ""){
 
                     $query_args['meta_query'][] = array(
                         'key' => '_%_sublocation',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_subloc_id"]
+                        'value' => $_SESSION["selected_subloc_id1"]
                     );
 
                 }
+               // echo "cdfd";die;
 
                 $slides = query_posts($query_args);
 
@@ -112,6 +113,7 @@ class PropertiesSlider_Widget extends Aviators_Widget {
             }
 
         } else {
+
             $property_ids = explode(',', $instance['property_ids']);
             $property_ids = array_map('trim', $property_ids);
             $query_args['post__in'] = $property_ids;
@@ -126,7 +128,7 @@ class PropertiesSlider_Widget extends Aviators_Widget {
       //  echo "<pre>";
       //  print_r($query_args);
 
-
+//echo "DATA HERE";
 
       //  echo $wpdb->last_query;
 

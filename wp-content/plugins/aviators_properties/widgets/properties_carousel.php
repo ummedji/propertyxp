@@ -51,7 +51,7 @@ class PropertiesCarousel_Widget extends WP_Widget {
         }
         else {
 
-            if(!isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] == "") {
+            if(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == "") {
 
                 if (isset($instance['types']) && $instance['types']) {
                     $query['tax_query'] = array(
@@ -65,30 +65,30 @@ class PropertiesCarousel_Widget extends WP_Widget {
             else
             {
 
-                if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+                if(isset($_SESSION["selected_city_id1"]) && $_SESSION["selected_city_id1"] != ""){
                     $query['meta_query'][] = array(
                         'key' => '_%_location',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_city_id"]
+                        'value' => $_SESSION["selected_city_id1"]
                     );
                 }
 
-                if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
+                if(isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] != ""){
 
                     $query['meta_query'][] = array(
                         'key' => '_%_country',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_cou_id"]
+                        'value' => $_SESSION["selected_cou_id1"]
                     );
 
                 }
 
-                if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
+                if(isset($_SESSION["selected_subloc_id1"]) && $_SESSION["selected_subloc_id1"] != ""){
 
                     $query['meta_query'][] = array(
                         'key' => '_%_sublocation',
                         'compare' => '=',
-                        'value' => $_SESSION["selected_subloc_id"]
+                        'value' => $_SESSION["selected_subloc_id1"]
                     );
 
                 }
@@ -98,6 +98,7 @@ class PropertiesCarousel_Widget extends WP_Widget {
 
       //  echo "<pre>";
       //  print_r($query);
+
 
         query_posts($query);
         echo $before_widget;

@@ -567,15 +567,15 @@ if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
     $querystr .= " JOIN wp_postmeta as wpm ON wp_posts.ID = wpm.post_id ";
 }
 
-if(isset($_SESSION["selected_city_id"])) {
+if(isset($_SESSION["selected_city_id1"])) {
     $querystr .= " JOIN wp_postmeta as wpm1 ON wp_posts.ID = wpm1.post_id ";
 }
 
-if(isset($_SESSION["selected_cou_id"])) {
+if(isset($_SESSION["selected_cou_id1"])) {
     $querystr .= " JOIN wp_postmeta as wpm2 ON wp_posts.ID = wpm2.post_id ";
 }
 
-if(isset($_SESSION["selected_subloc_id"])) {
+if(isset($_SESSION["selected_subloc_id1"])) {
     $querystr .= " JOIN wp_postmeta as wpm3 ON wp_posts.ID = wpm3.post_id ";
 }
 
@@ -585,21 +585,21 @@ if(isset($_SESSION["selected_subloc_id"])) {
         $querystr .= " AND wpm.meta_key = 'hf_property_starting_price_0_value' AND wpm.meta_value BETWEEN (".$_SESSION["min_range"] ." AND ".$_SESSION["max_range"].") ";
     }
 
-if(isset($_SESSION["selected_city_id"])) {
-    $querystr .= " AND wpm1.meta_key = 'hf_property_location_0_location' AND wpm1.meta_value=". $_SESSION["selected_city_id"] ;
+if(isset($_SESSION["selected_city_id1"])) {
+    $querystr .= " AND wpm1.meta_key = 'hf_property_location_0_location' AND wpm1.meta_value=". $_SESSION["selected_city_id1"] ;
 }
 
-if(isset($_SESSION["selected_cou_id"])) {
-    $querystr .= " AND wpm2.meta_key = 'hf_property_location_0_country' AND wpm2.meta_value= ".$_SESSION["selected_cou_id"];
+if(isset($_SESSION["selected_cou_id1"])) {
+    $querystr .= " AND wpm2.meta_key = 'hf_property_location_0_country' AND wpm2.meta_value= ".$_SESSION["selected_cou_id1"];
 }
 
-if(isset($_SESSION["selected_subloc_id"])) {
-    $querystr .= " AND wpm3.meta_key = 'hf_property_location_0_sublocation' AND wpm3.meta_value=".$_SESSION["selected_subloc_id"];
+if(isset($_SESSION["selected_subloc_id1"])) {
+    $querystr .= " AND wpm3.meta_key = 'hf_property_location_0_sublocation' AND wpm3.meta_value=".$_SESSION["selected_subloc_id1"];
 }
 
         $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' LIMIT 9";
 
-       // echo $querystr;
+        //echo $querystr;
 
         $pageposts = $wpdb->get_results($querystr, OBJECT);
 
