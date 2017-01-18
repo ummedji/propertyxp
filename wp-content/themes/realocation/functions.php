@@ -1313,7 +1313,7 @@ function get_location_data(){
 
    // $term_id = 10;
 
-   echo $sql = "SELECT * FROM `wp_term_taxonomy` as wtt JOIN wp_terms as wt ON wt.term_id = wtt.term_id AND taxonomy='locations' WHERE parent
+    $sql = "SELECT * FROM `wp_term_taxonomy` as wtt JOIN wp_terms as wt ON wt.term_id = wtt.term_id AND taxonomy='locations' WHERE parent
 =$data";
 
     $childdata = $wpdb->get_results($sql, OBJECT);
