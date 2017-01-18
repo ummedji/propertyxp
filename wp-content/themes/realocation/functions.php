@@ -1351,3 +1351,54 @@ function get_location_data(){
 
 add_action('wp_ajax_get_location_data', 'get_location_data');
 add_action('wp_ajax_nopriv_get_location_data', 'get_location_data');
+
+function get_waiting_lists( $field ) {
+
+    $field['choices'] = array();
+
+  /*  // Query Waiting Lists Products
+    $args = array(
+        'post_type' => 'memberpressproduct',
+        'orderby' => 'name',
+        'order' => 'ASC',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy'  => 'topics',
+                'field'     => 'id',
+                'terms'     => '22',
+                'operator'  => 'IN'
+            ),
+        )
+    );
+    $lists_array = get_posts( $args );
+
+    foreach ( $lists_array as $list ) {
+
+        $choices[$list->ID] = $list->post_title;
+
+    }*/
+
+    $args = array('orderby'=>'asc','hide_empty'=>false,'parent'=>0);
+    $terms = get_terms('locations', $args);
+    $cityarr = array();
+    foreach($terms as $term)
+    {
+        $args = array('orderby'=>'asc','hide_empty'=>false,'parent'=>$term->term_id);
+        $cityterms = get_terms('locations', $args);
+        foreach($cityterms as $cityval)
+        {
+            $cityarr[] = $cityval;
+        }
+    }
+
+    foreach($cityarr as $key => $data){
+        $field['choices'][$data->term_id] = $data->name;
+    }
+
+    wp_reset_postdata();
+
+    return $field;
+}
+
+add_filter('acf/load_field/name=location', 'get_waiting_lists');
