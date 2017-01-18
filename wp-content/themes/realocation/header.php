@@ -252,6 +252,8 @@
 	
 	function location_data(locationdata,datatype){
 
+		//alert(locationdata+"=="+datatype);
+
 		jQuery.ajax({
 
 			type:"POST",

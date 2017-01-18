@@ -83,7 +83,7 @@ function aviators_settings_save($form, $values) {
 }
 
 function aviators_settings_get($page, $group, $field = null) {
-    $options = get_option('aviators_settings_' . $page . '_' . $group);
+    $options = get_option('aviators_settings_'.$page .'_'.$group);
     // options do not exist, revert to default
     if(!$options) {
         $defaults = aviators_settings_get_default($page, $group);
