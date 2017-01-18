@@ -388,10 +388,14 @@ function aviators_properties_init_map($instance = NULL) {
 
     $final_string = "";
 
-    if((isset($_SESSION["selected_city"]) && $_SESSION["selected_city"] != "") || (isset($_SESSION["selected_cou"]) && $_SESSION["selected_cou"] != "") || (isset($_SESSION["selected_subloc"]) && $_SESSION["selected_subloc"] != ""))
+   // print_r($_SESSION);
+
+    if((isset($_SESSION["selected_city1"]) && $_SESSION["selected_city1"] != "") || (isset($_SESSION["selected_cou"]) && $_SESSION["selected_cou"] != "") || (isset($_SESSION["selected_subloc"]) && $_SESSION["selected_subloc"] != ""))
     {
 
-       $final_string = $_SESSION["selected_subloc"]." ".$_SESSION["selected_city"]." ".$_SESSION["selected_cou"];
+       $final_string = $_SESSION["selected_subloc"]." ".$_SESSION["selected_city1"]." ".$_SESSION["selected_cou"];
+
+      ///  echo $final_string;die;
 
         $lat_long_data = get_lat_long($final_string);
 

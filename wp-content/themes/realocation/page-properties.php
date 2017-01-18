@@ -34,8 +34,9 @@ if ($properties_horizontal->getFormRecord()) {
             'value' => $query_args1["meta_query"][1]["value"]
         );
         $selloc =	get_term_by( 'id', $query_args1["meta_query"][1]["value"], 'locations');
-       // print_r($selloc);
+     //   print_r($selloc);
         $_SESSION["selected_city"] = $selloc->name;
+        $_SESSION["selected_city1"] = $selloc->name;
         $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
 
 
@@ -133,6 +134,7 @@ if ($properties_vertical->getFormRecord()) {
 
         $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
         $_SESSION["selected_city"] = $selloc->name;
+        $_SESSION["selected_city1"] = $selloc->name;
 
         $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
         $_SESSION["selected_cou"] = $selcou->name;
@@ -159,7 +161,7 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
         'value' => $_GET["hf_property_header_location_filter"]
     );
 
-
+/*
     $args1 = array('orderby'=>'asc','hide_empty'=>false,'parent'=>0);
     $terms1 = get_terms('locations', $args1);
     $parent_data = "";
@@ -170,7 +172,7 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
             break;
         }
        // break;
-    }
+    }*/
 
  //   echo "<pre>";
  //   print_r($terms1);
@@ -376,7 +378,7 @@ if(isset($_SESSION["selected_subloc_id"])) {
     $querystr .= " AND wpm3.meta_key = 'hf_property_location_0_sublocation' AND wpm3.meta_value=".$_SESSION["selected_subloc_id"];
 }
 
-        $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' ";
+        $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' LIMIT 9";
 
        // echo $querystr;
 
