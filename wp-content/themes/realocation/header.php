@@ -257,7 +257,7 @@
 		jQuery.ajax({
 
 			type:"POST",
-			url: "/wp-admin/admin-ajax.php", // our PHP handler file
+			url: "<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php", // our PHP handler file
 			data: {action: "get_location_data",location_data: locationdata,type_data:datatype},
 			success:function(results){
 				if(datatype == "city"){
