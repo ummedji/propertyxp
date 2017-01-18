@@ -395,7 +395,7 @@ function aviators_properties_init_map($instance = NULL) {
 
        $final_string = $_SESSION["selected_subloc"]." ".$_SESSION["selected_city1"]." ".$_SESSION["selected_cou"];
 
-      ///  echo $final_string;die;
+      //  echo $final_string;die;
 
         $lat_long_data = get_lat_long($final_string);
 

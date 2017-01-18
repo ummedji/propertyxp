@@ -1320,6 +1320,16 @@ function get_location_data(){
 
     $html = "";
     if(!empty($childdata)) {
+
+        if($type_data == "city"){
+            $html .= "<option>City</option>";
+        }
+
+        if($type_data == "sublocation"){
+            $html .= "<option>Location</option>";
+        }
+
+
         foreach ($childdata as $key => $child) {
             $seclected = "";
 

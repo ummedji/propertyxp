@@ -262,9 +262,11 @@
 			success:function(results){
 				if(datatype == "city"){
 					jQuery("select#hydra-hf-property-location-filter-items-0-location").html(results);
+					jQuery("select#hydra-hf-property-location-filter-items-0-location").removeAttr("disabled");
 				}
 				if(datatype == "sublocation"){
 					jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").html(results);
+					jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").removeAttr("disabled");
 				}
 			}
 

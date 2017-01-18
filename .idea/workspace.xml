@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php" line="515" />
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php" line="517" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fb5fd30-c214-4d2a-b1b6-857d5373b67c" name="Default" comment="" />
@@ -76,8 +76,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5411764">
-              <caret line="248" column="66" selection-start-line="248" selection-start-column="66" selection-end-line="248" selection-end-column="66" />
+            <state vertical-scroll-proportion="1.3058823">
+              <caret line="264" column="85" selection-start-line="264" selection-start-column="85" selection-end-line="264" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -86,16 +86,16 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.423729">
-              <caret line="1329" column="39" selection-start-line="1329" selection-start-column="26" selection-end-line="1329" selection-end-column="39" />
+            <state vertical-scroll-proportion="12.559322">
+              <caret line="1328" column="38" selection-start-line="1328" selection-start-column="38" selection-end-line="1328" selection-end-column="38" />
               <folding>
                 <element signature="n#search_location_by_city#0;n#!!top" expanded="false" />
-                <marker date="1484739930558" expanded="true" signature="15645:15665" placeholder="..." />
-                <marker date="1484739930558" expanded="true" signature="23801:23813" placeholder="..." />
-                <marker date="1484739930558" expanded="true" signature="24238:24248" placeholder="..." />
-                <marker date="1484739930558" expanded="true" signature="29422:29434" placeholder="..." />
-                <marker date="1484739930558" expanded="true" signature="37772:37833" placeholder="SELECT name ..wp_terms..." />
-                <marker date="1484739930558" expanded="true" signature="40462:40589" placeholder="SELECT * FRO..." />
+                <marker date="1484748959598" expanded="true" signature="15645:15665" placeholder="..." />
+                <marker date="1484748959598" expanded="true" signature="23801:23813" placeholder="..." />
+                <marker date="1484748959598" expanded="true" signature="24238:24248" placeholder="..." />
+                <marker date="1484748959598" expanded="true" signature="29422:29434" placeholder="..." />
+                <marker date="1484748959598" expanded="true" signature="37772:37833" placeholder="SELECT name ..wp_terms..." />
+                <marker date="1484748959598" expanded="true" signature="40462:40589" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -104,22 +104,22 @@
       <file leaf-file-name="page-properties.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39927405">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.95644283">
+              <caret line="339" column="42" selection-start-line="339" selection-start-column="42" selection-end-line="339" selection-end-column="42" />
               <folding>
-                <element signature="e#29403#30183#0#PHP" expanded="false" />
-                <marker date="1484746523360" expanded="true" signature="16170:16201" placeholder="SELECT wp_po..wp_posts..." />
-                <marker date="1484746523360" expanded="true" signature="16170:17611" placeholder="SELECT wp_po..wp_posts..." />
-                <marker date="1484746523360" expanded="true" signature="18006:18097" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="18264:18428" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="18276:18398" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="18630:18963" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="18667:18963" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="30503:30570" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="30774:30841" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="31496:31570" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="31668:31752" placeholder="..." />
-                <marker date="1484746523360" expanded="true" signature="32014:32050" placeholder="..." />
+                <element signature="e#33643#34423#0#PHP" expanded="false" />
+                <marker date="1484748099152" expanded="true" signature="20410:20441" placeholder="SELECT wp_po..wp_posts..." />
+                <marker date="1484748099152" expanded="true" signature="20410:21851" placeholder="SELECT wp_po..wp_posts..." />
+                <marker date="1484748099152" expanded="true" signature="22246:22337" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="22504:22668" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="22516:22638" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="22870:23203" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="22907:23203" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="34743:34810" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="35014:35081" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="35736:35810" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="35908:35992" placeholder="..." />
+                <marker date="1484748099152" expanded="true" signature="36254:36290" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -128,8 +128,8 @@
       <file leaf-file-name="aviators_properties.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7288136">
-              <caret line="397" column="9" selection-start-line="397" selection-start-column="9" selection-end-line="397" selection-end-column="9" />
+            <state vertical-scroll-proportion="-3.8474576">
+              <caret line="403" column="8" selection-start-line="403" selection-start-column="8" selection-end-line="403" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -214,10 +214,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_settings/aviators_settings.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/header-bar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/functions.php" />
       </list>
     </option>
   </component>
@@ -895,30 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7288136">
-          <caret line="397" column="9" selection-start-line="397" selection-start-column="9" selection-end-line="397" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.423729">
-          <caret line="1329" column="39" selection-start-line="1329" selection-start-column="26" selection-end-line="1329" selection-end-column="39" />
-          <folding>
-            <element signature="n#search_location_by_city#0;n#!!top" expanded="false" />
-            <marker date="1484739930558" expanded="true" signature="15645:15665" placeholder="..." />
-            <marker date="1484739930558" expanded="true" signature="23801:23813" placeholder="..." />
-            <marker date="1484739930558" expanded="true" signature="24238:24248" placeholder="..." />
-            <marker date="1484739930558" expanded="true" signature="29422:29434" placeholder="..." />
-            <marker date="1484739930558" expanded="true" signature="37772:37833" placeholder="SELECT name ..wp_terms..." />
-            <marker date="1484739930558" expanded="true" signature="40462:40589" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="110.47458">
@@ -940,32 +916,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/aviators_properties/aviators_properties.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8474576">
+          <caret line="403" column="8" selection-start-line="403" selection-start-column="8" selection-end-line="403" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5411764">
-          <caret line="248" column="66" selection-start-line="248" selection-start-column="66" selection-end-line="248" selection-end-column="66" />
+        <state vertical-scroll-proportion="1.3058823">
+          <caret line="264" column="85" selection-start-line="264" selection-start-column="85" selection-end-line="264" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.559322">
+          <caret line="1328" column="38" selection-start-line="1328" selection-start-column="38" selection-end-line="1328" selection-end-column="38" />
+          <folding>
+            <element signature="n#search_location_by_city#0;n#!!top" expanded="false" />
+            <marker date="1484748959598" expanded="true" signature="15645:15665" placeholder="..." />
+            <marker date="1484748959598" expanded="true" signature="23801:23813" placeholder="..." />
+            <marker date="1484748959598" expanded="true" signature="24238:24248" placeholder="..." />
+            <marker date="1484748959598" expanded="true" signature="29422:29434" placeholder="..." />
+            <marker date="1484748959598" expanded="true" signature="37772:37833" placeholder="SELECT name ..wp_terms..." />
+            <marker date="1484748959598" expanded="true" signature="40462:40589" placeholder="SELECT * FRO..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39927405">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state vertical-scroll-proportion="-0.95644283">
+          <caret line="339" column="42" selection-start-line="339" selection-start-column="42" selection-end-line="339" selection-end-column="42" />
           <folding>
-            <element signature="e#29403#30183#0#PHP" expanded="false" />
-            <marker date="1484746523360" expanded="true" signature="16170:16201" placeholder="SELECT wp_po..wp_posts..." />
-            <marker date="1484746523360" expanded="true" signature="16170:17611" placeholder="SELECT wp_po..wp_posts..." />
-            <marker date="1484746523360" expanded="true" signature="18006:18097" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="18264:18428" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="18276:18398" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="18630:18963" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="18667:18963" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="30503:30570" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="30774:30841" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="31496:31570" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="31668:31752" placeholder="..." />
-            <marker date="1484746523360" expanded="true" signature="32014:32050" placeholder="..." />
+            <element signature="e#33643#34423#0#PHP" expanded="false" />
+            <marker date="1484748099152" expanded="true" signature="20410:20441" placeholder="SELECT wp_po..wp_posts..." />
+            <marker date="1484748099152" expanded="true" signature="20410:21851" placeholder="SELECT wp_po..wp_posts..." />
+            <marker date="1484748099152" expanded="true" signature="22246:22337" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="22504:22668" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="22516:22638" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="22870:23203" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="22907:23203" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="34743:34810" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="35014:35081" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="35736:35810" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="35908:35992" placeholder="..." />
+            <marker date="1484748099152" expanded="true" signature="36254:36290" placeholder="..." />
           </folding>
         </state>
       </provider>
