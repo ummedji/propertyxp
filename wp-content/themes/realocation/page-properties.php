@@ -16,6 +16,16 @@ $query_args = array(
     'paged' => $paged,
 );
 
+unset($_SESSION["min_range"]);
+unset($_SESSION["max_range"]);
+unset($_SESSION["selected_cou1"]);
+unset($_SESSION["selected_cou_id1"]);
+unset($_SESSION["selected_city"]);
+unset($_SESSION["selected_city1"]);
+unset($_SESSION["selected_city_id"]);
+unset($_SESSION["selected_city_id1"]);
+unset($_SESSION["selected_subloc1"]);
+unset($_SESSION["selected_subloc_id1"]);
 
 $properties_horizontal = hydra_form_filter('properties_horizontal');
 if ($properties_horizontal->getFormRecord()) {
@@ -409,10 +419,6 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
 
 
 }
-
-
-//print_r($query_args);
-
 
 $sort = aviators_settings_get('property', get_the_ID(), 'sort');
 $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager');

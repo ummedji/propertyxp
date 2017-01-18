@@ -390,10 +390,10 @@ function aviators_properties_init_map($instance = NULL) {
 
    // print_r($_SESSION);
 
-    if((isset($_SESSION["selected_city1"]) && $_SESSION["selected_city1"] != "") || (isset($_SESSION["selected_cou"]) && $_SESSION["selected_cou"] != "") || (isset($_SESSION["selected_subloc"]) && $_SESSION["selected_subloc"] != ""))
+    if((isset($_SESSION["selected_city1"]) && $_SESSION["selected_city1"] != "") || (isset($_SESSION["selected_cou1"]) && $_SESSION["selected_cou1"] != "") || (isset($_SESSION["selected_subloc1"]) && $_SESSION["selected_subloc1"] != ""))
     {
 
-       $final_string = $_SESSION["selected_subloc"]." ".$_SESSION["selected_city1"]." ".$_SESSION["selected_cou"];
+       $final_string = $_SESSION["selected_subloc1"]." ".$_SESSION["selected_city1"]." ".$_SESSION["selected_cou1"];
 
       //  echo $final_string;die;
 
