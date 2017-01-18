@@ -182,12 +182,12 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
     $_SESSION["selected_city"] = $selloc->name;
     $_SESSION["selected_city_id"] = $_GET["hf_property_header_location_filter"];
 
-    $selcou =	get_term_by( 'id',$parent_data, 'locations');
-    $_SESSION["selected_cou"] = $selcou->name;
-    $_SESSION["selected_cou_id"] = $parent_data;
+  //  $selcou =	get_term_by( 'id',$parent_data, 'locations');
+  //  $_SESSION["selected_cou"] = $selcou->name;
+  //  $_SESSION["selected_cou_id"] = $parent_data;
 
-    //unset($_SESSION["selected_cou_id"]);
-   // unset($_SESSION["selected_cou"]);
+    unset($_SESSION["selected_cou_id"]);
+    unset($_SESSION["selected_cou"]);
     unset($_SESSION["selected_subloc_id"]);
     unset($_SESSION["selected_subloc"]);
 
