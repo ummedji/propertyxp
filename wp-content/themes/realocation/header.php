@@ -243,10 +243,10 @@
 			});
 
 		}, 2000);
-			jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["selected_cou_id"]; ?>);
+			jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["selected_cou_id1"]; ?>);
 
-			location_data('<?php echo $_SESSION["selected_cou_id"]; ?>','city');
-			location_data('<?php echo $_SESSION["selected_city_id"]; ?>','sublocation');
+			location_data('<?php echo $_SESSION["selected_cou_id1"]; ?>','city');
+			location_data('<?php echo $_SESSION["selected_city_id1"]; ?>','sublocation');
 
 	});
 	
