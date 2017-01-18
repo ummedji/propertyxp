@@ -406,7 +406,9 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
     $selloc =	get_term_by( 'id', $_GET["hf_property_header_location_filter"], 'locations');
     // print_r($selloc);
     $_SESSION["selected_city"] = $selloc->name;
+    $_SESSION["selected_city1"] = $selloc->name;
     $_SESSION["selected_city_id"] = $_GET["hf_property_header_location_filter"];
+    $_SESSION["selected_city_id1"] = $_GET["hf_property_header_location_filter"];
 
   //  $selcou =	get_term_by( 'id',$parent_data, 'locations');
   //  $_SESSION["selected_cou"] = $selcou->name;
