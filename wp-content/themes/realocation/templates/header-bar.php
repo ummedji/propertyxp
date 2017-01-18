@@ -50,7 +50,7 @@ jQuery(document).ready(function() {
 	else
 	{
 		//alert("OUT");
-	var url = '<?php echo get_bloginfo('url'); ?>'+'/properties/?hf_property_location_filter='+term_id+'&submit=Search';
+	var url = '<?php echo get_bloginfo('url'); ?>'+'/?hf_property_header_location_filter='+term_id+'&submit=Search';
 	//[items][0][location]
 		//console.log(url);
 		//return false;

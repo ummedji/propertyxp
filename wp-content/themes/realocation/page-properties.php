@@ -4,6 +4,7 @@
  */
 ?>
 <?php
+session_start();
 the_post();
 
 if (get_query_var('page')) {
@@ -15,13 +16,158 @@ $query_args = array(
     'paged' => $paged,
 );
 
+
+
+$properties_horizontal = hydra_form_filter('properties_horizontal');
+if ($properties_horizontal->getFormRecord()) {
+
+    $query_args1 = $properties_horizontal->getQueryArray();
+
+    $query_args = $properties_horizontal->getQueryArray();
+
+  //  print_r($query_args1);
+
+    if (isset($query_args1["meta_query"][1]["value"]) && !empty($query_args1["meta_query"][1]["value"])) {
+        $query_args['meta_query'][1] = array(
+            'key' => '_%_location',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][1]["value"]
+        );
+        $selloc =	get_term_by( 'id', $query_args1["meta_query"][1]["value"], 'locations');
+       // print_r($selloc);
+        $_SESSION["selected_city"] = $selloc->name;
+        $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
+
+
+    }
+
+    if (isset($query_args1["meta_query"][2]["value"]) && !empty($query_args1["meta_query"][2]["value"]))
+    {
+
+        $query_args['meta_query'][2] = array(
+            'key' => '_%_country',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][2]["value"]
+        );
+        $selcou =	get_term_by( 'id',$query_args1["meta_query"][2]["value"], 'locations');
+        $_SESSION["selected_cou"] = $selcou->name;
+        $_SESSION["selected_cou_id"] = $query_args1["meta_query"][2]["value"];
+
+    }
+
+
+    if(isset($query_args1["meta_query"][3]["value"]) && !empty($query_args1["meta_query"][3]["value"])) {
+        $query_args['meta_query'][3] = array(
+            'key' => '_%_sublocation',
+            'compare' => '=',
+            'value' => $query_args1["meta_query"][3]["value"]
+        );
+        $selsubloc =	get_term_by( 'id',  $query_args1["meta_query"][3]["value"], 'locations');
+        $_SESSION["selected_subloc"] = $selsubloc->name;
+        $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][3]["value"];
+
+    }
+
+}
+
+
+$properties_vertical = hydra_form_filter('properties_vertical');
+if ($properties_vertical->getFormRecord()) {
+
+    $tmp_args = $properties_vertical->getQueryArray();
+    // $query_args = $properties_vertical->getQueryArray();
+    if (count($tmp_args['meta_query'])) {
+
+        if(isset($tmp_args['meta_query'][4]['value']) && !empty($tmp_args['meta_query'][4]['value']) && isset($tmp_args['meta_query'][3]['value']) && !empty($tmp_args['meta_query'][3]['value']) && $tmp_args['meta_query'][3]['key'] == 'hf_property_maximum_price_%_value' && $tmp_args['meta_query'][4]['key'] == "hf_property_minimum_price_%_value") {
+            $tmp_args['meta_query'][3] = array(
+
+                'key' => 'hf_property_starting_price_%_value',
+                'compare' => 'BETWEEN',
+                'value' => Array
+                (
+                    "0" => $tmp_args['meta_query'][4]['value'],
+                    "1" => $tmp_args['meta_query'][3]['value']
+                ),
+                'type' => 'numeric'
+            );
+            unset($tmp_args['meta_query'][4]);
+        }
+        else if(isset($tmp_args['meta_query'][1]['value']) && !empty($tmp_args['meta_query'][1]['value']) && isset($tmp_args['meta_query'][2]['value']) && !empty($tmp_args['meta_query'][2]['value']) && $tmp_args['meta_query'][1]['key'] == "hf_property_maximum_price_%_value" && $tmp_args['meta_query'][2]['key'] == "hf_property_minimum_price_%_value"){
+
+            $tmp_args['meta_query'][1] = array(
+
+                'key' => 'hf_property_starting_price_%_value',
+                'compare' => 'BETWEEN',
+                'value' => Array
+                (
+                    "0" => $tmp_args['meta_query'][2]['value'],
+                    "1" => $tmp_args['meta_query'][1]['value']
+                ),
+                'type' => 'numeric'
+            );
+            unset($tmp_args['meta_query'][2]);
+        }
+
+        //   echo "<pre>";
+        //   print_r($tmp_args);
+
+        //   unset($tmp_args['meta_query'][5]);
+
+        $query_args['meta_query'] = $tmp_args['meta_query'];
+
+        //  echo "<pre>";
+        //  print_r($query_args);
+        //die;
+
+        $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
+        $_SESSION["selected_city"] = $selloc->name;
+
+        $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
+        $_SESSION["selected_cou"] = $selcou->name;
+
+        $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][2]["value"], 'locations');
+        $_SESSION["selected_subloc"] = $selsubloc->name;
+
+        $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
+        $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
+        $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
+        // echo $_SESSION["selected_city"]."===".$_SESSION["selected_cou"]."===".$_SESSION["selected_subloc"];die;
+
+    }
+}
+
+if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_header_location_filter"] != ""){
+
+    $query_args['meta_query'][1] = array(
+        'key' => '_%_location',
+        'compare' => '=',
+        'value' => $_GET["hf_property_header_location_filter"]
+    );
+
+    $selloc =	get_term_by( 'id', $_GET["hf_property_header_location_filter"], 'locations');
+    // print_r($selloc);
+    $_SESSION["selected_city"] = $selloc->name;
+    $_SESSION["selected_city_id"] = $_GET["hf_property_header_location_filter"];
+
+    unset($_SESSION["selected_cou_id"]);
+    unset($_SESSION["selected_cou"]);
+    unset($_SESSION["selected_subloc_id"]);
+    unset($_SESSION["selected_subloc"]);
+
+
+}
+
+
+//print_r($query_args);
+
+
 $sort = aviators_settings_get('property', get_the_ID(), 'sort');
 $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager');
 $display = aviators_settings_get('property', get_the_ID(), 'display_type');
 $isotope_taxonomy = aviators_settings_get('property', get_the_ID(), 'isotope_taxonomy');
 
-if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
-    $query_args['meta_query'][] = array(
+/*if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
+    $query_args['meta_query'][1] = array(
         'key' => '_%_location',
         'compare' => '=',
         'value' => $_SESSION["selected_city_id"]
@@ -30,7 +176,7 @@ if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
 
 if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
 
-    $query_args['meta_query'][] = array(
+    $query_args['meta_query'][2] = array(
         'key' => '_%_country',
         'compare' => '=',
         'value' => $_SESSION["selected_cou_id"]
@@ -40,19 +186,22 @@ if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
 
 if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
 
-    $query_args['meta_query'][] = array(
+    $query_args['meta_query'][3] = array(
         'key' => '_%_sublocation',
         'compare' => '=',
         'value' => $_SESSION["selected_subloc_id"]
     );
 
-}
+}*/
 
+//print_r($query_args);
 
 if (isset($sort) && $sort) {
-    aviators_properties_sort_get_query_args(get_the_ID(), $query_args);
+   aviators_properties_sort_get_query_args(get_the_ID(), $query_args);
 }
 aviators_properties_filter_get_query_args(get_the_ID(), $query_args);
+
+//query_posts($query_args);
 
 $fullwidth = !is_active_sidebar('sidebar-1');
 
@@ -90,6 +239,8 @@ if($fullwidth) {
         'lg' => 3,
     );
 }
+
+//echo $display;
 
 
 ?>

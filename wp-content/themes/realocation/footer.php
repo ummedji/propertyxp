@@ -231,27 +231,62 @@ jQuery(window).scroll(function () {
 	setTimeout(function(){
 	
 		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
+
+		jQuery("a#gallery1").trigger("click");
 		
-	}, 2000);
-	
-        
+	}, 1000);
+
+
         //jQuery("div#gallery div.gallery1").show();
+
         jQuery("div#gallery div.gallery2").hide();
-        
+
         jQuery("div#gallery ul.properties-filter li a").on("click",function(e){
             e.preventDefault();
-         //   alert('here');
+            //alert('here');
            var attr_id = jQuery(this).attr('id');
+
+
+			//jQuery("div#gallery").append('<div class="loader" style="display:none;"></div>');
+
+
+			//alert(attr_id);
            
            if(attr_id == "gallery1"){               
                jQuery("div#gallery div.gallery2").hide();
                jQuery("div#gallery div.gallery1").show();
+
+			//   jQuery(".loader").css("display","block");
+
+			   setTimeout(function(){
+				   //alert("INNN");
+				   jQuery("div#gallery div.properties-items").css("height","1000px");
+				   jQuery("ul.slides li").css("width","1132px");
+			   },1000);
+
            }
            if(attr_id == "gallery2"){               
                jQuery("div#gallery div.gallery1").hide();
                jQuery("div#gallery div.gallery2").show();
-           }           
-        });        
+
+
+			//   jQuery(".loader").css("display","block");
+
+			   setTimeout(function(){
+				//   console.log("INNN");
+				   jQuery("div#gallery div.properties-items").css("height","1000px");
+				   jQuery("ul.slides li").css("width","1132px");
+			   },2000);
+
+           }
+
+			setTimeout(function(){
+			//	jQuery(".loader").css("display","none;");
+			},5000);
+
+        });
+
+
         
         
 	jQuery("a#render_all_premium_properties").on("click",function(){	
@@ -371,6 +406,13 @@ jQuery(window).scroll(function () {
 		}, 2000);
 
 	});
+/*
+
+	$(window).load(function() {
+
+	})
+*/
+
 
 });
  </script>
@@ -382,6 +424,7 @@ jQuery(window).scroll(function () {
  display:none;
  
  }
+
  
  </style>
  
