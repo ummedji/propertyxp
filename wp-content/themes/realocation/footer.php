@@ -53,17 +53,33 @@
 	<h3 class="center">Featured Builders </h3>
 					        <div class="block-content-inner row">
 					            <ul class="bxslider_featured">
-					            <?php $args = array(
-									'post_type'=>'featured-builders',
-									'post_status' => 'publish',
-									//'posts_per_page' => -1,
-									'meta_query'  => array(
-									array(
-										'key' => 'location',
-										'value' => $_SESSION["selected_city_id1"],
-                						'compare' => 'LIKE'
-									)
-								));
+					            <?php
+
+
+								if(isset($_SESSION["selected_city_id1"])){
+
+									$args = array(
+										'post_type'=>'featured-builders',
+										'post_status' => 'publish',
+										//'posts_per_page' => -1,
+										'meta_query'  => array(
+											array(
+												'key' => 'location',
+												'value' => $_SESSION["selected_city_id1"],
+												'compare' => 'LIKE'
+											)
+										));
+
+								}else{
+
+									$args = array(
+										'post_type'=>'featured-builders',
+										'post_status' => 'publish',
+										'posts_per_page' => -1,
+										);
+								}
+
+
 							  $builder_loop = new WP_Query($args);
 
 							//	echo "<pre>";

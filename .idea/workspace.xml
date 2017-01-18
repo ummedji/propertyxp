@@ -38,13 +38,13 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20952381">
-              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.41904762">
+              <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
               <folding>
-                <marker date="1484756820655" expanded="true" signature="10020:10033" placeholder="..." />
-                <marker date="1484756820655" expanded="true" signature="13913:13923" placeholder="..." />
-                <marker date="1484756820655" expanded="true" signature="14498:14508" placeholder="..." />
-                <marker date="1484756820655" expanded="true" signature="14693:14703" placeholder="..." />
+                <marker date="1484757158902" expanded="true" signature="10269:10282" placeholder="..." />
+                <marker date="1484757158902" expanded="true" signature="14162:14172" placeholder="..." />
+                <marker date="1484757158902" expanded="true" signature="14747:14757" placeholder="..." />
+                <marker date="1484757158902" expanded="true" signature="14942:14952" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -949,13 +949,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20952381">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.41904762">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
           <folding>
-            <marker date="1484756820655" expanded="true" signature="10020:10033" placeholder="..." />
-            <marker date="1484756820655" expanded="true" signature="13913:13923" placeholder="..." />
-            <marker date="1484756820655" expanded="true" signature="14498:14508" placeholder="..." />
-            <marker date="1484756820655" expanded="true" signature="14693:14703" placeholder="..." />
+            <marker date="1484757158902" expanded="true" signature="10269:10282" placeholder="..." />
+            <marker date="1484757158902" expanded="true" signature="14162:14172" placeholder="..." />
+            <marker date="1484757158902" expanded="true" signature="14747:14757" placeholder="..." />
+            <marker date="1484757158902" expanded="true" signature="14942:14952" placeholder="..." />
           </folding>
         </state>
       </provider>
