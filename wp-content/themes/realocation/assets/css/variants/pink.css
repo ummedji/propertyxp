@@ -8490,9 +8490,8 @@ h3.agency-row-title,.agency-row-title.property-detail-subtitle {
 }
 
 .marker-inner img {
-	/*height: 26px !important;
-	width: 26px !important;*/
-	border-radius: 23px;
+	height: 26px !important;
+	width: 26px !important;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70 );
 	opacity: 0.7
 }
@@ -8619,7 +8618,7 @@ h4.infobox-subtitle,h4.infobox-subtitle a {
 	width: 180px;
 	z-index: 999999999
 }
-
+@media screen and (max-width: 500px){.palette-wrapper {z-index: 999;}}
 .palette-wrapper select {
 	display: block;
 	margin-bottom: 15px;
@@ -10382,7 +10381,7 @@ h2.pro_tl {
 		display: inherit;
 	}
 	#header-wrapper,#main-wrapper,#footer-wrapper {
-		display: inherit;
+		display: inline;
 	}
 }
 /*responsive*/

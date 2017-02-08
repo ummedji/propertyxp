@@ -63,7 +63,7 @@ jQuery(function(){
         var nav = jQuery('.developer-menu');
 
         jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 550) {
+            if (jQuery(this).scrollTop() > 700) {
                 nav.addClass("fixed");
             } else {
                 nav.removeClass("fixed");
@@ -914,8 +914,8 @@ jQuery(function(){
 				<div class="col-md-12 al_baruj_slider">
 					<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
 					<ul class="properties-filter gallery-top">
-						<li class="selected"><a id="gallery1" href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
-						<li><a id="gallery2" href="#" data-filter=".gallery2">Gallery 2</a></li>
+						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
+						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
 					</ul>
 					<div class="properties-items isotope">
 						<div class="items-list row">
@@ -1085,7 +1085,7 @@ jQuery(function(){
 		var nav = jQuery('.left_interested');
 
 		jQuery(window).scroll(function () {
-			if (jQuery(this).scrollTop() > 550) {
+			if (jQuery(this).scrollTop() > 760) {
 				nav.addClass("fixed");
 			} else {
 				nav.removeClass("fixed");
