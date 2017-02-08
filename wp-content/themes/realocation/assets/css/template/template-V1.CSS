@@ -230,7 +230,17 @@ h2.pro_tl {
 .as_inn_slider .tp-rightarrow {
     right: 42px !important;
 }
-.layout-boxed .as_inn_slider .tp-rightarrow { right: 220px !important;}
+/*.layout-boxed .as_inn_slider .tp-rightarrow { right: 220px !important;}*/
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .layout-boxed .as_inn_slider .tp-rightarrow { left: 1090px !important;}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .layout-boxed .as_inn_slider .tp-rightarrow { left: 880px !important;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .layout-boxed .as_inn_slider .tp-rightarrow { left: 670px !important;}
+}
+
 .layout-boxed .as_inn_slider .tp-leftarrow { left: 50px !important;}
 .top-dev-menu {
     margin: 0;
