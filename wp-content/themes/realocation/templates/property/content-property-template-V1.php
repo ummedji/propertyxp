@@ -1215,7 +1215,7 @@ jQuery(function(){
 		<div class="col-md-12">
 			<div class="center section-title as_section_tl group-bot"><h2><span>About <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
-				<div class="col-md-4 center">
+				<div class="col-md-4 center pull-right">
 					<div class="d_group">
 						<?php 	//$image = get_field('developer_image');
 						$imageurl = getHydrameta(get_the_ID(),'hf_property_developer_image', 'url');
@@ -1243,7 +1243,7 @@ jQuery(function(){
 		<div class="col-md-12 popup-this-contact-form">
 			<div class="center section-title as_section_tl group-bot"><h2><span>Contact <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name');//the_field('developer_name'); ?></span></h2></div>
 			<div class="row">
-				<div class="col-md-4 center">
+				<div class="col-md-4 center pull-right">
 					<?php /*	$image = get_field('developer_image');
 					if( !empty($image) ): */?><!--
 					<img src="<?php /*echo $image['url']; */?>" alt="<?php /*echo $image['alt']; */?>" />

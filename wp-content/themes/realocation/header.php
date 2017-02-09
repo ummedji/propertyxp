@@ -139,8 +139,8 @@
 		jQuery("div.developer-menu ul li a").on("click",function(){
 
 			//alert("INNN");
-			jQuery(this).dblclick();
-			jQuery("div.developer-menu ul li a").removeClass("active");
+		//	jQuery(this).dblclick();
+		//	jQuery("div.developer-menu ul li a").removeClass("active");
 			//jQuery(this).addClass("active");
 
 		});

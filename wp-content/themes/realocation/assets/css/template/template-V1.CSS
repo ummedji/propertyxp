@@ -28,6 +28,7 @@
     margin-bottom: 20px !important;
     text-transform: uppercase;
 }
+.contact-form-content .as_section_tl h2 { display: inline-block !important;}
 .as_section_tl h2 span {
     background: none !important;
     padding: 0 !important;
