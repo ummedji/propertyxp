@@ -399,7 +399,15 @@ jQuery(window).scroll(function () {
 
 	});
 
-setTimeout(function(){
+	var pathname = window.location.pathname;
+	var str1 = "map-mode";
+	if(str1.indexOf(pathname) != -1){
+		var timedata = "0";
+	}else{
+		var timedata = "8000";
+	}
+
+	setTimeout(function(){
 
 	if(jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-location option").length ==0) {
 		jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-location").append('<option selected value="">City</option>');
@@ -409,7 +417,7 @@ setTimeout(function(){
 		jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-sublocation").append('<option selected value="">Location</option>');
 	}
 
-},10000);
+},timedata);
 
 	jQuery("form#hydraform-properties_vertical input#hydra-submit").on("click",function(){
 		//e.preventDefault();

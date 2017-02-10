@@ -649,11 +649,12 @@
 				<?php
 
 				$page_url =  $_SERVER["REQUEST_URI"];
-				$page_name_data = explode("/",$page_url);
+				//$page_name_data = explode("/",$page_url);
 
-				$page_name = $page_name_data[count($page_name_data)-2];
+				//$page_name = $page_name_data[count($page_name_data)-2];
 
-				if($page_name == "map-mode"){
+				if (strpos($page_url, 'map-mode') !== false) {
+				//if($page_name == "map-mode"){
 				?>
 					<?php
 					if($_GET['prop_id']) {

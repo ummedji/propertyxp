@@ -25,16 +25,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19662921">
-              <caret line="404" column="54" selection-start-line="404" selection-start-column="54" selection-end-line="404" selection-end-column="54" />
+            <state vertical-scroll-proportion="5.7192984">
+              <caret line="411" column="20" selection-start-line="411" selection-start-column="20" selection-end-line="411" selection-end-column="20" />
               <folding>
-                <marker date="1486737303513" expanded="true" signature="10663:10676" placeholder="..." />
-                <marker date="1486737303513" expanded="true" signature="15185:15195" placeholder="..." />
-                <marker date="1486737303513" expanded="true" signature="15770:15780" placeholder="..." />
-                <marker date="1486737303513" expanded="true" signature="15965:15975" placeholder="..." />
+                <marker date="1486738895982" expanded="true" signature="10663:10676" placeholder="..." />
+                <marker date="1486738895982" expanded="true" signature="15349:15359" placeholder="..." />
+                <marker date="1486738895982" expanded="true" signature="15934:15944" placeholder="..." />
+                <marker date="1486738895982" expanded="true" signature="16129:16139" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -90,15 +90,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-139.80646">
-              <caret line="263" column="35" selection-start-line="263" selection-start-column="35" selection-end-line="263" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.37078652">
+              <caret line="653" column="18" selection-start-line="653" selection-start-column="18" selection-end-line="653" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1486725449103" expanded="true" signature="21360:21550" placeholder="..." />
-                <marker date="1486725449103" expanded="true" signature="21389:21520" placeholder="..." />
+                <marker date="1486738949312" expanded="true" signature="21417:21607" placeholder="..." />
+                <marker date="1486738949312" expanded="true" signature="21446:21577" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -191,7 +191,6 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_carousel.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/properties_slider.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realocation/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/page-properties.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/footer-top.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/aviators_properties/widgets/templates/properties_carousel.php" />
@@ -201,6 +200,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/templates/header-bar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/js/frontend-custom.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/realocation/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realocation/header.php" />
       </list>
     </option>
   </component>
@@ -408,7 +408,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -822,18 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-139.80646">
-          <caret line="263" column="35" selection-start-line="263" selection-start-column="35" selection-end-line="263" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1486725449103" expanded="true" signature="21360:21550" placeholder="..." />
-            <marker date="1486725449103" expanded="true" signature="21389:21520" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/templates/header-bar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.935484">
@@ -844,13 +832,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19662921">
-          <caret line="404" column="54" selection-start-line="404" selection-start-column="54" selection-end-line="404" selection-end-column="54" />
+        <state vertical-scroll-proportion="5.7192984">
+          <caret line="411" column="20" selection-start-line="411" selection-start-column="20" selection-end-line="411" selection-end-column="20" />
           <folding>
-            <marker date="1486737303513" expanded="true" signature="10663:10676" placeholder="..." />
-            <marker date="1486737303513" expanded="true" signature="15185:15195" placeholder="..." />
-            <marker date="1486737303513" expanded="true" signature="15770:15780" placeholder="..." />
-            <marker date="1486737303513" expanded="true" signature="15965:15975" placeholder="..." />
+            <marker date="1486738895982" expanded="true" signature="10663:10676" placeholder="..." />
+            <marker date="1486738895982" expanded="true" signature="15349:15359" placeholder="..." />
+            <marker date="1486738895982" expanded="true" signature="15934:15944" placeholder="..." />
+            <marker date="1486738895982" expanded="true" signature="16129:16139" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realocation/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37078652">
+          <caret line="653" column="18" selection-start-line="653" selection-start-column="18" selection-end-line="653" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1486738949312" expanded="true" signature="21417:21607" placeholder="..." />
+            <marker date="1486738949312" expanded="true" signature="21446:21577" placeholder="..." />
           </folding>
         </state>
       </provider>
