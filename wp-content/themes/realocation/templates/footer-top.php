@@ -103,8 +103,8 @@
 						<a href="<?php bloginfo('url'); ?>/contact-us">Contact Us</a> |
 						<a href="<?php bloginfo('url'); ?>/privacy-policy/">Privacy Policy</a> |
 						<a href="<?php bloginfo('url'); ?>/refund-cancellation/">Refund & Cancellation</a> |
-						<a href="<?php bloginfo('url'); ?>/terms-conditions/">Terms & Conditions</a> |
-						<a href="<?php bloginfo('url'); ?>/frontend-property-submission/">Advertise With Us</a></h5>
+						<a href="<?php bloginfo('url'); ?>/terms-conditions/">Terms & Conditions</a><!-- |
+						<a href="<?php /*bloginfo('url'); */?>/frontend-property-submission/">Advertise With Us</a>--></h5>
 				</div>
             </div>
         <?php endif; ?>

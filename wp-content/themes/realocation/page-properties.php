@@ -606,7 +606,7 @@ if(isset($_SESSION["selected_subloc_id1"])) {
         $pageposts = $wpdb->get_results($querystr, OBJECT);
 
 
-      //  echo "<pre>";
+       // echo "<pre>";
       //  print_r($pageposts);
 
        // print_r($query_args); query_posts($query_args); ?>
@@ -629,7 +629,12 @@ if(isset($_SESSION["selected_subloc_id1"])) {
             <div class="items-list">
                 <?php $count = 0; ?>
                 <?php //while (have_posts()) : the_post(); ?>
-                <?php foreach($pageposts as $key=>$propertydata){
+                <?php
+
+                //echo "<pre>";
+                //print_r($pageposts);
+
+                foreach($pageposts as $key=>$propertydata){
                     $postid = $propertydata->ID;
                     ?>
                     <?php
@@ -662,14 +667,14 @@ if(isset($_SESSION["selected_subloc_id1"])) {
                     <div class="property-box">
                         <div class="property-box-inner">
                             <div class="property-box-header">
-                                <h3 class="property-box-title"><a href="<?php echo $propertydata->guid; ?>"><?php echo $propertydata->post_title; ?></a></h3>
+                                <h3 class="property-box-title"><a href="<?php echo get_permalink($postid); ?>"><?php echo $propertydata->post_title; ?></a></h3>
                                 <div class="property-box-subtitle"><?php print hydra_render_field($postid, 'location', 'grid'); ?></div>
                             </div><!-- /.property-box-header -->
 
                             <div class="property-box-picture">
                                 <div class="property-box-price"><?php echo hydra_render_field($postid, 'price', 'grid'); ?></div><!-- /.property-box-price -->
                                 <div class="property-box-picture-inner">
-                                    <a href="<?php echo $propertydata->guid; ?>" class="property-box-picture-target">
+                                    <a href="<?php echo get_permalink($postid); ?>" class="property-box-picture-target">
                                         <?php
                                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($postid), 'large' );
                                          ?>

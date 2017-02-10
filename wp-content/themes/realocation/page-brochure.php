@@ -27,17 +27,17 @@
 				<form method="GET" action="<?php bloginfo('url'); ?>/brochures-page/">
 					<div class="col-md-3">
 						<label>Brochure Name</label>
-						<p><input type="text" name="searchfield" /></p>
+						<p><input type="text" name="searchfield" value="<?php echo (isset($_GET['searchfield'])  && $_GET['searchfield'] != "")?$_GET['searchfield']:""; ?>"/></p>
 					</div>
 					<div class="col-md-3">
 						<label>State</label>
 						<div class="statewise">
-							<select name="form-control">
+							<select name="statewise" class="form-control">
 							<option value="">Any</option>
-							<option value="gujarat">Gujarat</option>
-							<option value="madhya-pradesh">Madhya Pradesh</option>
-							<option value="rajesthan">Rajesthan</option>
-							<option value="maharashtra">Maharashtra</option>
+							<option value="gujarat" <?php echo (isset($_GET['statewise'])  && $_GET['statewise'] != "" && $_GET['statewise'] == "gujarat")? "selected":""; ?>>Gujarat</option>
+							<option <?php echo (isset($_GET['statewise'])  && $_GET['statewise'] != "" && $_GET['statewise'] == "madhya-pradesh")? "selected":""; ?> value="madhya-pradesh">Madhya Pradesh</option>
+							<option <?php echo (isset($_GET['statewise'])  && $_GET['statewise'] != "" && $_GET['statewise'] == "rajasthan")? "selected":""; ?> value="rajasthan">Rajasthan</option>
+							<option <?php echo (isset($_GET['statewise'])  && $_GET['statewise'] != "" && $_GET['statewise'] == "maharashtra")? "selected":""; ?> value="maharashtra">Maharashtra</option>
 							</select>
 						</div>
 					</div>
@@ -45,11 +45,11 @@
 					<div class="col-md-3">
 						<label>Property Type</label>
 						<div class="propertywise">
-							<select name="form-control">
+							<select name="propertywise" class="form-control">
 							<option value="">Any</option>
-							<option value="villa">Villa</option>
-							<option value="bunglows">Bunglows</option>
-							<option value="apartment">Apartment</option>
+							<option <?php echo (isset($_GET['propertywise'])  && $_GET['propertywise'] != "" && $_GET['propertywise'] == "villa")? "selected":""; ?> value="villa">Villa</option>
+							<option <?php echo (isset($_GET['propertywise'])  && $_GET['propertywise'] != "" && $_GET['propertywise'] == "bunglows")? "selected":""; ?> value="bunglows">Bunglows</option>
+							<option <?php echo (isset($_GET['propertywise'])  && $_GET['propertywise'] != "" && $_GET['propertywise'] == "apartment")? "selected":""; ?> value="apartment">Apartment</option>
 							</select>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 	<?php //if( $_GET['searchfield'] != '' || $_GET['statewise'] != '' || $_GET['propertywise'] != '' ) { ?>	    
 	    <div class="row">
 	    	<div class="col-md-12">
-	    		<h4>Search Results as per <b>Brochure Name</b> : <?php echo $_GET['searchfield']?>, <b>State</b> : <?php echo $_GET['statewise']?> and <b>Property Type</b> : <?php echo $_GET['propertywise']?></h4>
+	    		<h4>Search Results as per <b>Brochure Name</b> : <?php echo $_GET['searchfield']; ?>, <b>State</b> : <?php echo $_GET['statewise']; ?> and <b>Property Type</b> : <?php echo $_GET['propertywise']; ?></h4>
 	    	</div>
 	    </div>
 	    <?php
@@ -84,8 +84,9 @@
 	    					'propertywise' => $_GET['propertywise'],
 	    					's' => $_GET['searchfield'],
 							'posts_per_page' => -1
-	    					); ?>
-	    <?php $loops = new WP_Query($args); ?>
+			); ?>
+
+	<?php $loops = new WP_Query($args); ?>
 
 	<?php //echo $GLOBALS['wp_query']->request;die; ?>
 

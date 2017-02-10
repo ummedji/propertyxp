@@ -11,7 +11,8 @@ foreach($terms as $term)
 	}
 }
 
-$getcurrentcity = $_GET['hf_property_location_filter'];
+//$getcurrentcity = $_GET['hf_property_location_filter'];
+$getcurrentcity = $_GET['hf_property_header_location_filter'];
 $_GET['hf_property_location_filter'] = array();
 $_GET['hf_property_location_filter']['items'][0]['location'] = $getcurrentcity;
 //$getcurrentcity = $_GET['hf_property_location_filter']; //['items'][0]['location'];

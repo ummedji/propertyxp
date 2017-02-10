@@ -112,13 +112,37 @@ class Map_Widget extends WP_Widget {
 
 
             <div class="map-wrapper">
-                <div class="map ">
+                <div class="map">
                     <div id="map" class="map-inner" style="height: <?php echo $instance['height']; ?>"></div>
                     <!-- /.map-inner -->
                     <?php $GLOBALS['map_widget_instance'] = $instance; ?>
                     <?php add_action('aviators_footer_map_widget', 'aviators_properties_init_map'); ?>
                 </div>
                 <!-- /.map -->
+
+                <?php
+               // echo "<pre>";
+               // print_r($instance);
+
+                if($instance["filter"] == "map_filter" && $instance["show_filter"] == "on"){
+
+                    $instance = array(
+                        "title"=> "",
+                        "latitude" => 23.0300,
+                        "longitude" => 72.5800,
+                        "zoom" => 11,
+                        "height" => "650px",
+                        "show_filter" => "on",
+                        "filter" => "properties_horizontal",
+                        "is_horizontal" => "on",
+                        "enable_geolocation" => 0,
+                        "map_filtering" =>"",
+                        "horizontal" =>""
+                    );
+
+                }
+
+                ?>
 
             <?php if ($instance['show_filter']) : ?>
                 <div class="filter-container <?php if($instance['is_horizontal']): ?>filter-horizontal<?php endif; ?>">
@@ -146,11 +170,11 @@ class Map_Widget extends WP_Widget {
                                         <?php/* if($path = aviators_get_template('filter', 'horizontal', null, false)): ?>
                                             <?php include($path); ?>
                                         <?php else: */?>
-                                            <?php if($instance['is_horizontal']): ?>
+                                            <?php if($instance['is_horizontal']){ ?>
                                                 <?php include 'templates/filter-horizontal.php'; ?>
-                                            <?php else: ?>
+                                            <?php }else{  ?>
                                                 <?php include 'templates/filter-vertical.php'; ?>
-                                            <?php endif; ?>
+                                            <?php } ?>
                                         <?php// endif; ?>
 
                                     </div>

@@ -8473,12 +8473,13 @@ h3.agency-row-title,.agency-row-title.property-detail-subtitle {
 	border-radius: 50%;
 	height: 42px;
 	line-height: 40px;
-	width: 42px
+	width: 42px;
+	overflow: hidden;
 }
 
 .marker-inner img {
-	height: 26px !important;
-	width: 26px !important;
+	height: 50px !important;
+	width: 50px !important;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70 );
 	opacity: 0.7
 }

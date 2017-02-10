@@ -509,7 +509,8 @@
 						?>
                     <?php if (isset($mapPosition['items'][0])): ?>
                         <?php if (!empty($mapPosition['items'][0]['latitude']) && !empty($mapPosition['items'][0]['longitude'])) : ?>
-                            <div class="temp3map"><div id="map-property">
+                            <div class="temp3map">
+								<div id="map-property">
                             </div><!-- /#map-property -->
 							</div>
                         <?php endif;
@@ -644,6 +645,41 @@
 					  	}
 
                 	}?>
+
+				<?php
+
+				$page_url =  $_SERVER["REQUEST_URI"];
+				$page_name_data = explode("/",$page_url);
+
+				$page_name = $page_name_data[count($page_name_data)-2];
+
+				if($page_name == "map-mode"){
+				?>
+					<?php
+					if($_GET['prop_id']) {
+						echo '<div class="row">
+					<div class="col-md-12">
+	        			<div class="center section-title"><h2><span>'.get_the_title( $_GET['prop_id'] ).'</span></h2></div>
+         			</div>
+
+					<div class="col-sm-12">';
+						$mapPosition = get_post_meta($_GET['prop_id'], 'hf_property_map', TRUE);
+						//print_r($mapPosition);
+						$latitude = $mapPosition['items'][0]['latitude'];//get_field('latitude');
+						$longitude = $mapPosition['items'][0]['longitude'];//get_field('longitude');
+
+						// echo "here";die;
+
+						echo do_shortcode('[map_neighbourhood location="'.$latitude.','.$longitude.'"]');
+						echo '</div></div>';
+					} else {
+						?>
+						<?php dynamic_sidebar( 'mapmode-fullwidth' );?>
+					<?php } ?>
+				<?php
+				}
+				?>
+
 
                 <div class="container">
                 	<?php 	echo do_shortcode('[AnythingPopup id="1"]');

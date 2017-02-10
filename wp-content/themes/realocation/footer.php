@@ -122,6 +122,16 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
+
+	setTimeout(function(){
+		if(jQuery("div.featured-builders div.bx-viewport ul li").not(':has(li.bx-clone)').length <= 3) {
+			jQuery("div.featured-builders div.bx-viewport").css("overflow", "inherit");
+		}
+	},500);
+
+
+
+
 	jQuery( ".scroll-top-img" ).click(function() {
 		jQuery('html, body').animate({scrollTop: '0px'}, 1000);
 	});
@@ -388,6 +398,18 @@ jQuery(window).scroll(function () {
 		}, 2000);
 
 	});
+
+setTimeout(function(){
+
+	if(jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-location option").length ==0) {
+		jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-location").append('<option selected value="">City</option>');
+	}
+
+	if(jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-sublocation option").length ==0) {
+		jQuery("form#hydraform-properties_horizontal select#hydra-hf-property-location-filter-items-0-sublocation").append('<option selected value="">Location</option>');
+	}
+
+},10000);
 
 	jQuery("form#hydraform-properties_vertical input#hydra-submit").on("click",function(){
 		//e.preventDefault();
