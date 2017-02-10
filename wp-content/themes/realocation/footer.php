@@ -404,7 +404,7 @@ jQuery(window).scroll(function () {
 	if(str1.indexOf(pathname) != -1){
 		var timedata = "0";
 	}else{
-		var timedata = "6000";
+		var timedata = "3000";
 	}
 
 	setTimeout(function(){
