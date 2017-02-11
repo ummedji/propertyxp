@@ -56,7 +56,7 @@ if (function_exists('divider')) {
 else
 {
 	function divider($number_of_digits) {
-		echo "bbb";
+		//echo "bbb";
 		$tens="1";
 	  while(($number_of_digits-1)>0)
 	  {

@@ -9467,8 +9467,13 @@ h3.feature-title,.feature-title.property-detail-subtitle {
 .carousel-select .bx-wrapper .bx-controls-direction .bx-prev {
 	left: 5px
 }
-
+.layout-boxed .carousel-select .bx-wrapper .bx-controls-direction .bx-prev {
+	left: 5px
+}
 .carousel-select .bx-wrapper .bx-controls-direction .bx-next {
+	right: 5px
+}
+.layout-boxed .carousel-select .bx-wrapper .bx-controls-direction .bx-next {
 	right: 5px
 }
 
@@ -9613,7 +9618,7 @@ h3.feature-title,.feature-title.property-detail-subtitle {
 	width: 28px
 }
 
-.layout-boxed .bx-wrapper .bx-controls-direction {
+/*.layout-boxed .bx-wrapper .bx-controls-direction {
 	margin-right: -47px;
 	position: absolute;
 	right: 50%;
@@ -9627,7 +9632,7 @@ h3.feature-title,.feature-title.property-detail-subtitle {
 
 .layout-boxed .bx-wrapper .bx-controls-direction a.bx-next {
 	right: 0px
-}
+}*/
 
 .bx-wrapper .bx-controls-direction a {
 	background-image: none;
@@ -9654,9 +9659,15 @@ h3.feature-title,.feature-title.property-detail-subtitle {
 .bx-wrapper .bx-controls-direction a.bx-prev {
 	left: -52px
 }
+.layout-boxed .bx-wrapper .bx-controls-direction a.bx-prev {
+	left: -35px
+}
 
 .bx-wrapper .bx-controls-direction a.bx-next {
 	right: -52px
+}
+.layout-boxed .bx-wrapper .bx-controls-direction a.bx-next {
+	right: -35px
 }
 
 .flexslider {
@@ -10358,3 +10369,6 @@ h2.pro_tl {
 .carousel_prp .content-pink-parent .slider-info { background-color: #8e5c90 !important;}*/
 .back_to_top_arrow i{ color: #8e5c90;}
 .view_all_btn a:hover, .view_all_btn a:focus { background-color: #8e5c90;}
+@media screen and (min-width: 1200px) {
+	.layout-boxed .filter-container .container { width: 100% !important;}
+}

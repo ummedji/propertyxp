@@ -212,6 +212,10 @@ $properties_vertical = hydra_form_filter('properties_vertical');
 if ($properties_vertical->getFormRecord()) {
 
     $tmp_args = $properties_vertical->getQueryArray();
+
+  //  echo "<pre>";
+  //  print_r($tmp_args);
+
     // $query_args = $properties_vertical->getQueryArray();
     if (count($tmp_args['meta_query'])) {
 
@@ -252,8 +256,8 @@ if ($properties_vertical->getFormRecord()) {
 
         $query_args['meta_query'] = $tmp_args['meta_query'];
 
-         // echo "<pre>";
-        //  print_r($query_args);
+       //   echo "<pre>";
+       //  print_r($query_args);
         //die;
 
         if($query_args["meta_query"][0]["key"] == "_%_country"){
@@ -371,8 +375,8 @@ if ($properties_vertical->getFormRecord()) {
 
         // echo $_SESSION["selected_city"]."===".$_SESSION["selected_cou"]."===".$_SESSION["selected_subloc"];die;
 
-        $_SESSION["min_range"] = $query_args["meta_query"][3]["value"][0];
-        $_SESSION["max_range"] = $query_args["meta_query"][3]["value"][1];
+        $_SESSION["min_range"] = $query_args["meta_query"][3]["value"];
+        $_SESSION["max_range"] = $query_args["meta_query"][2]["value"];
 
     }
 }
@@ -562,8 +566,10 @@ if($fullwidth) {
         <?php endif; ?>
 
         <?php
+      //  echo "<pre>";
+      //  print_r($_SESSION);
 
-        $querystr = " SELECT wp_posts.* FROM wp_posts ";
+   /*     $querystr = " SELECT wp_posts.* FROM wp_posts ";
 
 if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
     $querystr .= " JOIN wp_postmeta as wpm ON wp_posts.ID = wpm.post_id ";
@@ -599,12 +605,74 @@ if(isset($_SESSION["selected_subloc_id1"])) {
     $querystr .= " AND wpm3.meta_key = 'hf_property_location_0_sublocation' AND wpm3.meta_value=".$_SESSION["selected_subloc_id1"];
 }
 
-        $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' LIMIT 9";
+        $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' LIMIT 9";*/
 
-        //echo $querystr;
+      //  echo $querystr;
+      //  $pageposts = $wpdb->get_results($querystr, OBJECT);
 
-        $pageposts = $wpdb->get_results($querystr, OBJECT);
 
+       $new_sql =  "SELECT * FROM $wpdb->posts as posts ";
+
+if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
+    $new_sql .=   " , $wpdb->postmeta as postmeta ";
+}
+
+if(isset($_SESSION["selected_city_id1"])) {
+    $new_sql .= " , $wpdb->postmeta as postmeta1 ";
+}
+
+if(isset($_SESSION["selected_cou_id1"])) {
+    $new_sql .= " , $wpdb->postmeta as postmeta2 ";
+}
+
+if(isset($_SESSION["selected_subloc_id1"])) {
+    $new_sql .= " , $wpdb->postmeta as postmeta3 ";
+}
+ //   $new_sql .= " , $wpdb->wp_terms as wt ";
+
+    $new_sql .= " WHERE 1 ";
+
+if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
+    $new_sql .=   " AND posts.ID = postmeta.post_id ";
+}
+
+if(isset($_SESSION["selected_city_id1"])) {
+    $new_sql .= " AND posts.ID = postmeta1.post_id  ";
+}
+
+if(isset($_SESSION["selected_cou_id1"])) {
+    $new_sql .= " AND posts.ID = postmeta2.post_id ";
+}
+
+if(isset($_SESSION["selected_subloc_id1"])) {
+    $new_sql .= " AND posts.ID = postmeta3.post_id ";
+}
+
+//$new_sql .= " AND posts.ID = postmeta4.post_id ";
+
+if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
+    $new_sql .= "  AND postmeta.meta_key = 'hf_property_starting_price_0_value' AND CAST(postmeta.meta_value AS UNSIGNED) >= ".$_SESSION["min_range"] ." AND CAST(postmeta.meta_value AS UNSIGNED) <= ".$_SESSION["max_range"]."  ";
+}
+
+if(isset($_SESSION["selected_city_id1"])) {
+    $new_sql .= " AND postmeta1.meta_key = 'hf_property_location_0_location' AND postmeta1.meta_value=". $_SESSION["selected_city_id1"] ;
+}
+
+if(isset($_SESSION["selected_cou_id1"])) {
+    $new_sql .= " AND postmeta2.meta_key = 'hf_property_location_0_country' AND postmeta2.meta_value= ".$_SESSION["selected_cou_id1"];
+}
+
+if(isset($_SESSION["selected_subloc_id1"])) {
+    $new_sql .= " AND postmeta3.meta_key = 'hf_property_location_0_sublocation' AND postmeta3.meta_value=".$_SESSION["selected_subloc_id1"];
+}
+
+      //  $new_sql .= " AND postmeta4.meta_key = 'hf_property_type_0_value' AND wt.term_id= postmeta4.meta_value";
+
+    $new_sql .= " AND posts.post_status = 'publish' AND posts.post_type = 'property' ORDER BY posts.ID DESC LIMIT 9 ";
+
+      //  echo $new_sql;
+
+        $pageposts = $wpdb->get_results($new_sql, OBJECT);
 
        // echo "<pre>";
       //  print_r($pageposts);
@@ -631,8 +699,8 @@ if(isset($_SESSION["selected_subloc_id1"])) {
                 <?php //while (have_posts()) : the_post(); ?>
                 <?php
 
-                //echo "<pre>";
-                //print_r($pageposts);
+             //   echo "<pre>";
+             //   print_r($pageposts);
 
                 foreach($pageposts as $key=>$propertydata){
                     $postid = $propertydata->ID;
@@ -654,14 +722,15 @@ if(isset($_SESSION["selected_subloc_id1"])) {
                     //print_r($options);
 
                     //$categories = get_the_terms($postid);
-                    //echo "<pre>";
-                    //print_r($categories);
+                   // echo "<pre>";
+                   // print_r($isotope_taxonomy);die;
 
                     $property_class = aviators_properties_append_term_classes($isotope_taxonomy);
+
                     ?>
 
 
-                    <div class="property-item property-office <?php print $class; ?> <?php print $property_class; ?>">
+                    <div class="property-item <?php print $class; ?> <?php print $property_class; ?>">
 
 
                     <div class="property-box">

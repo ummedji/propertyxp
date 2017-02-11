@@ -87,9 +87,9 @@ jQuery(document).ready(function() {
 </div>
 <div class="header-bar as_header_bar">
     <div class="container">
-        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Select Your City
-        </a>
+        </button>
        <!-- --><?php /*dynamic_sidebar( 'topbar-left'); */?>
 
         <?php if ( function_exists( 'icl_sitepress_activate' ) ) : ?>

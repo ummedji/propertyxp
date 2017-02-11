@@ -144,6 +144,7 @@ citymap['Ahmedabad'] = {
     
     if (rankBy == 'distance' && (search.types)) {
      //   alert("111");
+
       search.rankBy = google.maps.places.RankBy.DISTANCE;
       search.location = new google.maps.LatLng(<?php echo $wgmnp_location ?>);//place latitude and longitude for finding nearest places
        centerMarker = new google.maps.Marker({
@@ -155,22 +156,35 @@ citymap['Ahmedabad'] = {
        // alert("222");
       search.bounds = map.getBounds();
     }
+
+    //  var bounds = new google.maps.LatLngBounds();
     
     places.search(search, function(results, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
 
-
           {
+
+              console.log(results);
 
           for (var i = 0; i < results.length; i++) {
               var icon = '<?php echo wgmnp_get_plugin_url() ?>/images/icons/number_' + (i + 1) + '.png';
+
+              console.log(results[i].geometry.location);
+
               markers.push(new google.maps.Marker({
                   position: results[i].geometry.location,
                   animation: google.maps.Animation.DROP,
                   icon: icon
               }));
+
+            //  bounds.extend(markers[i].getPosition());
+
               google.maps.event.addListener(markers[i], 'click', getDetails(results[i], i));
               //google.maps.event.addListener(markers[i], 'load', getDetails(results[i], i));
+
+
+             // map.fitBounds(bounds);
+
               window.setTimeout(dropMarker(i), i * 100);
               addResult(results[i], i);
           }
@@ -178,7 +192,17 @@ citymap['Ahmedabad'] = {
       }
     });
   }
-  function clearMarkers() {
+
+        function newLocation(newLat,newLng)
+        {
+            map.setCenter({
+                lat : newLat,
+                lng : newLng
+            });
+        }
+
+
+        function clearMarkers() {
     for (var i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
     }
@@ -244,6 +268,11 @@ citymap['Ahmedabad'] = {
       places.getDetails({
           reference: result.reference
       }, showInfoWindow(i));
+        console.log(result);
+
+        //map.setCenter(result[i].getPosition());
+
+       // newLocation(lat_long_data[0],lat_long_data[1]);
     }
   }
 

@@ -3,6 +3,18 @@
     right: -12px !important;
     top: 477px !important;
 }
+
+a, a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
 .temp3map #map-property {
     height: 420px;
 }
@@ -168,7 +180,8 @@ ul.temp3amenities-options {
 .as_map { border-bottom: none !important;}
 .inn_map_cont #map-content { width: 100% !important;}
 .inn_map_cont #controls { width: auto !important;}
-.inn_map_cont #map_canvas { width: 100% !important;}
+/*.inn_map_cont #map_canvas { width: 100% !important;}*/
+.inn_map_cont #map_canvas { width: 640px !important;}
 .map_bot_border span{
     height: 3px;
     display: block;
