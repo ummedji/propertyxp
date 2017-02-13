@@ -141,6 +141,8 @@ citymap['Ahmedabad'] = {
     if (type != 'establishment') {
       search.types = [type];
     }
+
+      alert(type);
     
     if (rankBy == 'distance' && (search.types)) {
      //   alert("111");
@@ -261,6 +263,15 @@ citymap['Ahmedabad'] = {
     while (results.childNodes[0]) {
       results.removeChild(results.childNodes[0]);
     }
+
+      removeonlyMarkers();
+     /* if (markersArray) {
+          for (i in markersArray) {
+              markersArray[i].setVisible(false)
+          }
+          //markersArray.length = 0;
+      }*/
+
   }
 
   function getDetails(result, i) {

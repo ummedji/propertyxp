@@ -1,4 +1,14 @@
-<?php do_action('aviators_pre_render'); ?>
+<?php
+session_start();
+//echo "<pre>";
+//print_r($_SESSION);
+//die;
+
+if(isset($_GET['hf_property_header_location_filter'])){
+	$_SESSION["parent_selected_location_id"] = $_GET['hf_property_header_location_filter'];
+}
+
+do_action('aviators_pre_render'); ?>
 <!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
@@ -11,6 +21,10 @@
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
 
     <?php wp_head(); ?>
+	<?php
+	//session_start();
+	//unset($_SESSION["parent_selected_location_id"]);
+	?>
 
     <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <title><?php echo wp_title('|', FALSE, 'right'); ?></title>
@@ -55,6 +69,56 @@
 	    });
 	});
     </script>
+<?php
+	//$getcurrentcity = $_GET['hf_property_location_filter'];
+	$getcurrentcity = $_GET['hf_property_header_location_filter'];
+	$_GET['hf_property_location_filter'] = array();
+	$_GET['hf_property_location_filter']['items'][0]['location'] = $getcurrentcity;
+	//$getcurrentcity = $_GET['hf_property_location_filter']; //['items'][0]['location'];
+
+	//unset($_SESSION["parent_selected_location_id"]);
+	if(!empty($getcurrentcity))
+	{
+	$selcity =	get_term_by( 'id', $getcurrentcity, 'locations');
+
+	$_SESSION["selected_city"] = $selcity->name;
+
+	$parent_term = get_term( $getcurrentcity,'locations');
+
+	$_SESSION["parent_selected_location_id"] = $parent_term->parent;
+
+	//echo $_SESSION["selected_city"];die;
+
+	//$selcity = get_terms('locations', $getcurrentcity);
+	?>
+	<script>
+		jQuery(document).ready(function() {
+			//alert("111");
+			jQuery('.as_header_bar .container > button').html('Change City : '+'<?php echo $selcity->name; ?>');
+
+		});
+	</script>
+	<?php }else{
+
+		if(isset($_SESSION["selected_city1"]) && $_SESSION["selected_city1"] != ""){
+			$selcity->name = $_SESSION["selected_city1"];
+
+			?>
+			<script>
+				jQuery(document).ready(function() {
+					//alert("222");
+					jQuery('.as_header_bar .container > button').html('Change City : '+'<?php echo $selcity->name; ?>');
+
+					jQuery('select#lunchBegins').val('<?php echo $_SESSION["selected_city_id1"]; ?>');
+					//console.log('SESSION ID: <?php echo $_SESSION["selected_city_id1"]; ?>');
+				});
+			</script>
+			<?php
+		}
+		?>
+		<?php
+	} ?>
+
 
 <script type="text/javascript">
 	jQuery(document).ready(function (){
@@ -144,10 +208,6 @@
 			//jQuery(this).addClass("active");
 
 		});
-
-
-
-
 
 /*
 
@@ -242,11 +302,55 @@
 				i++;
 			});
 
-		}, 2000);
-			jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["selected_cou_id1"]; ?>);
 
-			location_data('<?php echo $_SESSION["selected_cou_id1"]; ?>','city');
+
+
+			var url_data = window.location.href;
+			var str1 = "hf_property_header_location_filter";
+
+			var header_search_data = '<?php echo $_SESSION["parent_selected_location_id"]; ?>';
+
+			//	alert(header_search_data);
+
+			if(jQuery("select#hydra-hf-property-location-filter-items-0-country").length > 0) {
+
+				if(url_data.indexOf(str1) != -1){
+					//alert("INNN");
+
+					//alert(header_search_data);
+					jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["parent_selected_location_id"]; ?>);
+				}
+				else{
+					jQuery("select#hydra-hf-property-location-filter-items-0-country").val(<?php echo $_SESSION["selected_cou_id1"]; ?>);
+				}
+
+			}
+
+			if(jQuery("select#hydra-hf-property-location-filter-1-items-0-country").length > 0) {
+
+				if(header_search_data != ""){
+					jQuery("select#hydra-hf-property-location-filter-1-items-0-country").val(<?php echo $_SESSION["parent_selected_location_id"]; ?>);
+				}else{
+					jQuery("select#hydra-hf-property-location-filter-1-items-0-country").val(<?php echo $_SESSION["selected_cou_id1"]; ?>);
+				}
+			}
+
+			//if(url_data.indexOf(str1) != -1){
+			if(header_search_data != ""){
+				location_data('<?php echo $_SESSION["parent_selected_location_id"]; ?>','city');
+			}
+			else{
+				location_data('<?php echo $_SESSION["selected_cou_id1"]; ?>','city');
+			}
+
 			location_data('<?php echo $_SESSION["selected_city_id1"]; ?>','sublocation');
+
+
+
+
+		}, 2000);
+
+
 
 	});
 	
@@ -261,12 +365,30 @@
 			data: {action: "get_location_data",location_data: locationdata,type_data:datatype},
 			success:function(results){
 				if(datatype == "city"){
-					jQuery("select#hydra-hf-property-location-filter-items-0-location").html(results);
-					jQuery("select#hydra-hf-property-location-filter-items-0-location").removeAttr("disabled");
+
+					if(jQuery("select#hydra-hf-property-location-filter-items-0-location").length > 0) {
+						jQuery("select#hydra-hf-property-location-filter-items-0-location").html(results);
+						jQuery("select#hydra-hf-property-location-filter-items-0-location").removeAttr("disabled");
+					}
+
+					if(jQuery("select#hydra-hf-property-location-filter-1-items-0-location").length > 0) {
+						jQuery("select#hydra-hf-property-location-filter-1-items-0-location").html(results);
+						jQuery("select#hydra-hf-property-location-filter-1-items-0-location").removeAttr("disabled");
+					}
+
 				}
 				if(datatype == "sublocation"){
-					jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").html(results);
-					jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").removeAttr("disabled");
+
+					if(jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").length > 0) {
+						jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").html(results);
+						jQuery("select#hydra-hf-property-location-filter-items-0-sublocation").removeAttr("disabled");
+					}
+
+
+					if(jQuery("select#hydra-hf-property-location-filter-1-items-0-sublocation").length > 0) {
+						jQuery("select#hydra-hf-property-location-filter-1-items-0-sublocation").html(results);
+						jQuery("select#hydra-hf-property-location-filter-1-items-0-sublocation").removeAttr("disabled");
+					}
 				}
 			}
 

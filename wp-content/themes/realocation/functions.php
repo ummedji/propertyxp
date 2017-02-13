@@ -1304,6 +1304,10 @@ function my_enqueue() {
 }
 add_filter('admin_enqueue_scripts', 'my_enqueue');
 
+/*
+ * BELOW CODE FOR SHOWING HOME PAGE FILTER DATA SELECTED
+ */
+
 function get_location_data(){
 
     global $wpdb;

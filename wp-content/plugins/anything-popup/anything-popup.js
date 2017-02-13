@@ -35,7 +35,9 @@ function AnythingPopup_OpenForm(AnythingPopup_BoxContainer_Id,AnythingPopup_BoxC
 	//formdiv.style.top = "200px";
     //formdiv.style.left = "550px";
 
-    formdiv.handlerobj = new AnythingPopup_Move(formdiv);
+    //FOR STOPING MOUSE MOVEMENT DEFAULT
+
+ //   formdiv.handlerobj = new AnythingPopup_Move(formdiv);
     
     var containerdiv = document.getElementById(AnythingPopup_BoxContainerBody_Id);
     if(containerdiv && containerdiv.SavedInnerHTML)

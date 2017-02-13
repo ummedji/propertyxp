@@ -1366,3 +1366,4 @@ h2.pro_tl, .address_tag a {font-family: 'Raleway-Medium';}
 #hydraform-properties_vertical .form-group input[type="submit"] {
 	margin-top: 20px;
 }
+.block-content .inner-pro-parent .field-item .field-value { font-size: 10px !important;}

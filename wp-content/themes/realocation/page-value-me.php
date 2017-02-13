@@ -294,14 +294,15 @@ $url = get_bloginfo('url');
 
 					<div class="full vm_ele vm_ele_sel" id="field_title_wrapper">
 						<label>You Reside/Flat on floor no.: </label>
-						<span class="vm_small">Floor </span><input type="text" id="floor" name="floor"/>
-						<div id="slider-range-min" class="searchslider"></div>
+						<span class="vm_small">Floor </span><input type="text" id="floor" name="floor" readonly />
+						</br>
+						<div style="left:250px;margin-top: 6px;" id="slider-range-min" class="searchslider"></div>
 					</div>
 
 					<div class="full vm_ele vm_ele_sel" id="field_title_wrapper">
 						<label>Your Property area </label>
-						<span class="vm_small">Sq.Ft</span> <input type="text" name="area" id="area"/>
-						<div id="slider-range-area" class="searchslider"></div>
+						<span class="vm_small">Sq.Ft</span> <input type="text" name="area" id="area" readonly/>
+						<div style="left: 176px;margin-top: 6px;" id="slider-range-area" class="searchslider"></div>
 					</div>
                     
                     <div class="full vm_ele vm_ele_sel" id="field_title_wrapper">

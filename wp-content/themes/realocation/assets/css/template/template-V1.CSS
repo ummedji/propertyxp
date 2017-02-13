@@ -170,7 +170,7 @@ p.icon_cont {
     padding: 25px 0;
     background-color: #efefef !important;
 }
-.contact_inn h4 { color: #333;}
+.contact_inn h4 { color: #333; font-size: 13px;}
 .contact_inn h4 img {
     max-height: 50px;
 }

@@ -4,7 +4,8 @@
  */
 ?>
 <?php
-session_start();
+//echo "test";
+
 the_post();
 
 if (get_query_var('page')) {
@@ -27,357 +28,364 @@ unset($_SESSION["selected_city_id1"]);
 unset($_SESSION["selected_subloc1"]);
 unset($_SESSION["selected_subloc_id1"]);
 
-$properties_horizontal = hydra_form_filter('properties_horizontal');
-if ($properties_horizontal->getFormRecord()) {
+if(isset($_GET["hf_property_location_filter"])) {
 
-    $query_args1 = $properties_horizontal->getQueryArray();
+    $properties_horizontal = hydra_form_filter('properties_horizontal');
+    if ($properties_horizontal->getFormRecord()) {
 
-    $query_args = $properties_horizontal->getQueryArray();
+        $query_args1 = $properties_horizontal->getQueryArray();
 
-    //print_r($query_args1);
+        $query_args = $properties_horizontal->getQueryArray();
 
-    if (isset($query_args1["meta_query"][1]["value"]) && !empty($query_args1["meta_query"][1]["value"])) {
+        //print_r($query_args1);
 
-        if($query_args1["meta_query"][1]["key"] == "_%_country"){
+        if (isset($query_args1["meta_query"][1]["value"]) && !empty($query_args1["meta_query"][1]["value"])) {
 
-           // echo "INNN";
-            $key = $query_args1["meta_query"][1]["key"];
+            if ($query_args1["meta_query"][1]["key"] == "_%_country") {
 
-            $selcou =	get_term_by( 'id',$query_args1["meta_query"][1]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args1["meta_query"][1]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][1]["value"];
+                // echo "INNN";
+                $key = $query_args1["meta_query"][1]["key"];
 
-        }
+                $selcou = get_term_by('id', $query_args1["meta_query"][1]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args1["meta_query"][1]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][1]["value"];
 
-        if($query_args1["meta_query"][1]["key"] == "_%_location"){
+            }
 
-           // echo "2222";
-             $key = $query_args1["meta_query"][1]["key"];
-             $selloc =	get_term_by( 'id', $query_args1["meta_query"][1]["value"], 'locations');
+            if ($query_args1["meta_query"][1]["key"] == "_%_location") {
 
-             $_SESSION["selected_city"] = $selloc->name;
-             $_SESSION["selected_city1"] = $selloc->name;
-             $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
-             $_SESSION["selected_city_id1"] = $query_args1["meta_query"][1]["value"];
+                // echo "2222";
+                $key = $query_args1["meta_query"][1]["key"];
+                $selloc = get_term_by('id', $query_args1["meta_query"][1]["value"], 'locations');
 
-        }
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
+                $_SESSION["selected_city_id1"] = $query_args1["meta_query"][1]["value"];
 
-        if($query_args1["meta_query"][1]["key"] == "_%_sublocation"){
+            }
 
-            $key = $query_args1["meta_query"][1]["key"];
-            $selsubloc = get_term_by( 'id',  $query_args1["meta_query"][1]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][1]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][1]["value"];
+            if ($query_args1["meta_query"][1]["key"] == "_%_sublocation") {
 
-        }
+                $key = $query_args1["meta_query"][1]["key"];
+                $selsubloc = get_term_by('id', $query_args1["meta_query"][1]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][1]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][1]["value"];
 
-        $query_args['meta_query'][1] = array(
-            'key' => $key,
-            'compare' => '=',
-            'value' => $query_args1["meta_query"][1]["value"]
-        );
+            }
 
-
-       // $selloc =	get_term_by( 'id', $query_args1["meta_query"][1]["value"], 'locations');
-
-       // $_SESSION["selected_city"] = $selloc->name;
-       // $_SESSION["selected_city1"] = $selloc->name;
-       // $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
+            $query_args['meta_query'][1] = array(
+                'key' => $key,
+                'compare' => '=',
+                'value' => $query_args1["meta_query"][1]["value"]
+            );
 
 
-    }/*else{
+            // $selloc =	get_term_by( 'id', $query_args1["meta_query"][1]["value"], 'locations');
+
+            // $_SESSION["selected_city"] = $selloc->name;
+            // $_SESSION["selected_city1"] = $selloc->name;
+            // $_SESSION["selected_city_id"] = $query_args1["meta_query"][1]["value"];
+
+
+        }/*else{
         unset($_SESSION["selected_city"]);
         unset($_SESSION["selected_city_id"]);
     }*/
 
-    if (isset($query_args1["meta_query"][2]["value"]) && !empty($query_args1["meta_query"][2]["value"]))
-    {
+        if (isset($query_args1["meta_query"][2]["value"]) && !empty($query_args1["meta_query"][2]["value"])) {
 
-        if($query_args1["meta_query"][2]["key"] == "_%_country"){
+            if ($query_args1["meta_query"][2]["key"] == "_%_country") {
 
-            $key = $query_args1["meta_query"][2]["key"];
+                $key = $query_args1["meta_query"][2]["key"];
 
-            $selcou =	get_term_by( 'id',$query_args1["meta_query"][2]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args1["meta_query"][2]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][2]["value"];
+                $selcou = get_term_by('id', $query_args1["meta_query"][2]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args1["meta_query"][2]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][2]["value"];
 
+            }
+
+            if ($query_args1["meta_query"][2]["key"] == "_%_location") {
+
+                $key = $query_args1["meta_query"][2]["key"];
+                $selloc = get_term_by('id', $query_args1["meta_query"][2]["value"], 'locations');
+
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args1["meta_query"][2]["value"];
+                $_SESSION["selected_city_id1"] = $query_args1["meta_query"][2]["value"];
+
+            }
+
+            if ($query_args1["meta_query"][2]["key"] == "_%_sublocation") {
+
+                $key = $query_args1["meta_query"][2]["key"];
+                $selsubloc = get_term_by('id', $query_args1["meta_query"][2]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][2]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][2]["value"];
+
+            }
+
+
+            $query_args['meta_query'][2] = array(
+                'key' => $key,
+                'compare' => '=',
+                'value' => $query_args1["meta_query"][2]["value"]
+            );
+            // $selcou =	get_term_by( 'id',$query_args1["meta_query"][2]["value"], 'locations');
+            // $_SESSION["selected_cou"] = $selcou->name;
+            // $_SESSION["selected_cou_id"] = $query_args1["meta_query"][2]["value"];
+
+        } else {
+            unset($_SESSION["selected_cou"]);
+            unset($_SESSION["selected_cou_id"]);
         }
 
-        if($query_args1["meta_query"][2]["key"] == "_%_location"){
 
-            $key = $query_args1["meta_query"][2]["key"];
-            $selloc =	get_term_by( 'id', $query_args1["meta_query"][2]["value"], 'locations');
+        if (isset($query_args1["meta_query"][3]["value"]) && !empty($query_args1["meta_query"][3]["value"])) {
 
-            $_SESSION["selected_city"] = $selloc->name;
-            $_SESSION["selected_city1"] = $selloc->name;
-            $_SESSION["selected_city_id"] = $query_args1["meta_query"][2]["value"];
-            $_SESSION["selected_city_id1"] = $query_args1["meta_query"][2]["value"];
+            if ($query_args1["meta_query"][3]["key"] == "_%_country") {
 
+                $key = $query_args1["meta_query"][3]["key"];
+
+                $selcou = get_term_by('id', $query_args1["meta_query"][3]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args1["meta_query"][3]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][3]["value"];
+
+            }
+
+            if ($query_args1["meta_query"][3]["key"] == "_%_location") {
+
+                $key = $query_args1["meta_query"][3]["key"];
+                $selloc = get_term_by('id', $query_args1["meta_query"][3]["value"], 'locations');
+
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args1["meta_query"][3]["value"];
+                $_SESSION["selected_city_id1"] = $query_args1["meta_query"][3]["value"];
+
+            }
+
+            if ($query_args1["meta_query"][3]["key"] == "_%_sublocation") {
+
+                $key = $query_args1["meta_query"][3]["key"];
+                $selsubloc = get_term_by('id', $query_args1["meta_query"][3]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][3]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][3]["value"];
+
+            }
+
+
+            $query_args['meta_query'][3] = array(
+                'key' => $key,
+                'compare' => '=',
+                'value' => $query_args1["meta_query"][3]["value"]
+            );
+            //  $selsubloc =	get_term_by( 'id',  $query_args1["meta_query"][3]["value"], 'locations');
+            //  $_SESSION["selected_subloc"] = $selsubloc->name;
+            //  $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][3]["value"];
+
+        } else {
+            unset($_SESSION["selected_subloc"]);
+            unset($_SESSION["selected_subloc_id"]);
         }
 
-        if($query_args1["meta_query"][2]["key"] == "_%_sublocation"){
+        $_SESSION["min_range"] = $query_args["meta_query"][0]["value"][0];
+        $_SESSION["max_range"] = $query_args["meta_query"][0]["value"][1];
 
-            $key = $query_args1["meta_query"][2]["key"];
-            $selsubloc = get_term_by( 'id',  $query_args1["meta_query"][2]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][2]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][2]["value"];
-
-        }
-
-
-
-        $query_args['meta_query'][2] = array(
-            'key' => $key,
-            'compare' => '=',
-            'value' => $query_args1["meta_query"][2]["value"]
-        );
-       // $selcou =	get_term_by( 'id',$query_args1["meta_query"][2]["value"], 'locations');
-       // $_SESSION["selected_cou"] = $selcou->name;
-       // $_SESSION["selected_cou_id"] = $query_args1["meta_query"][2]["value"];
-
-    }else{
-        unset($_SESSION["selected_cou"]);
-        unset($_SESSION["selected_cou_id"]);
+    //    echo "HORIZONTAL FILTER<pre>";
+    //    print_r($query_args);
     }
-
-
-    if(isset($query_args1["meta_query"][3]["value"]) && !empty($query_args1["meta_query"][3]["value"])) {
-
-        if($query_args1["meta_query"][3]["key"] == "_%_country"){
-
-            $key = $query_args1["meta_query"][3]["key"];
-
-            $selcou =	get_term_by( 'id',$query_args1["meta_query"][3]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args1["meta_query"][3]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args1["meta_query"][3]["value"];
-
-        }
-
-        if($query_args1["meta_query"][3]["key"] == "_%_location"){
-
-            $key = $query_args1["meta_query"][3]["key"];
-            $selloc =	get_term_by( 'id', $query_args1["meta_query"][3]["value"], 'locations');
-
-            $_SESSION["selected_city"] = $selloc->name;
-            $_SESSION["selected_city1"] = $selloc->name;
-            $_SESSION["selected_city_id"] = $query_args1["meta_query"][3]["value"];
-            $_SESSION["selected_city_id1"] = $query_args1["meta_query"][3]["value"];
-
-        }
-
-        if($query_args1["meta_query"][3]["key"] == "_%_sublocation"){
-
-            $key = $query_args1["meta_query"][3]["key"];
-            $selsubloc = get_term_by( 'id',  $query_args1["meta_query"][3]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][3]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args1["meta_query"][3]["value"];
-
-        }
-
-
-        $query_args['meta_query'][3] = array(
-            'key' => $key,
-            'compare' => '=',
-            'value' => $query_args1["meta_query"][3]["value"]
-        );
-      //  $selsubloc =	get_term_by( 'id',  $query_args1["meta_query"][3]["value"], 'locations');
-      //  $_SESSION["selected_subloc"] = $selsubloc->name;
-      //  $_SESSION["selected_subloc_id"] = $query_args1["meta_query"][3]["value"];
-
-    }else{
-        unset($_SESSION["selected_subloc"]);
-        unset($_SESSION["selected_subloc_id"]);
-    }
-
-    $_SESSION["min_range"] = $query_args["meta_query"][0]["value"][0];
-    $_SESSION["max_range"] = $query_args["meta_query"][0]["value"][1];
-
 }
 
 //print_r($_SESSION);
 
-$properties_vertical = hydra_form_filter('properties_vertical');
-if ($properties_vertical->getFormRecord()) {
+if(isset($_GET["hf_property_location_filter_1"])) {
+    $properties_vertical = hydra_form_filter('properties_vertical');
+    if ($properties_vertical->getFormRecord()) {
 
-    $tmp_args = $properties_vertical->getQueryArray();
+        $tmp_args = $properties_vertical->getQueryArray();
 
-  //  echo "<pre>";
-  //  print_r($tmp_args);
+        //  echo "<pre>";
+        //  print_r($tmp_args);
 
-    // $query_args = $properties_vertical->getQueryArray();
-    if (count($tmp_args['meta_query'])) {
+        // $query_args = $properties_vertical->getQueryArray();
+        if (count($tmp_args['meta_query'])) {
 
-        if(isset($tmp_args['meta_query'][4]['value']) && !empty($tmp_args['meta_query'][4]['value']) && isset($tmp_args['meta_query'][3]['value']) && !empty($tmp_args['meta_query'][3]['value']) && $tmp_args['meta_query'][3]['key'] == 'hf_property_maximum_price_%_value' && $tmp_args['meta_query'][4]['key'] == "hf_property_minimum_price_%_value") {
-            $tmp_args['meta_query'][3] = array(
+            if (isset($tmp_args['meta_query'][4]['value']) && !empty($tmp_args['meta_query'][4]['value']) && isset($tmp_args['meta_query'][3]['value']) && !empty($tmp_args['meta_query'][3]['value']) && $tmp_args['meta_query'][3]['key'] == 'hf_property_maximum_price_%_value' && $tmp_args['meta_query'][4]['key'] == "hf_property_minimum_price_%_value") {
+                $tmp_args['meta_query'][3] = array(
 
-                'key' => 'hf_property_starting_price_%_value',
-                'compare' => 'BETWEEN',
-                'value' => Array
-                (
-                    "0" => $tmp_args['meta_query'][4]['value'],
-                    "1" => $tmp_args['meta_query'][3]['value']
-                ),
-                'type' => 'numeric'
-            );
-            unset($tmp_args['meta_query'][4]);
+                    'key' => 'hf_property_starting_price_%_value',
+                    'compare' => 'BETWEEN',
+                    'value' => Array
+                    (
+                        "0" => $tmp_args['meta_query'][4]['value'],
+                        "1" => $tmp_args['meta_query'][3]['value']
+                    ),
+                    'type' => 'numeric'
+                );
+                unset($tmp_args['meta_query'][4]);
+            } else if (isset($tmp_args['meta_query'][1]['value']) && !empty($tmp_args['meta_query'][1]['value']) && isset($tmp_args['meta_query'][2]['value']) && !empty($tmp_args['meta_query'][2]['value']) && $tmp_args['meta_query'][1]['key'] == "hf_property_maximum_price_%_value" && $tmp_args['meta_query'][2]['key'] == "hf_property_minimum_price_%_value") {
+
+                $tmp_args['meta_query'][1] = array(
+
+                    'key' => 'hf_property_starting_price_%_value',
+                    'compare' => 'BETWEEN',
+                    'value' => Array
+                    (
+                        "0" => $tmp_args['meta_query'][2]['value'],
+                        "1" => $tmp_args['meta_query'][1]['value']
+                    ),
+                    'type' => 'numeric'
+                );
+                unset($tmp_args['meta_query'][2]);
+            }
+
+            //   echo "<pre>";
+            //   print_r($tmp_args);
+
+            //   unset($tmp_args['meta_query'][5]);
+
+            $query_args['meta_query'] = $tmp_args['meta_query'];
+
+            //   echo "<pre>";
+            //  print_r($query_args);
+            //die;
+
+            if ($query_args["meta_query"][0]["key"] == "_%_country") {
+
+                $selcou = get_term_by('id', $query_args["meta_query"][0]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args["meta_query"][0]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args["meta_query"][0]["value"];
+
+            }
+
+            if ($query_args["meta_query"][0]["key"] == "_%_location") {
+
+                $selloc = get_term_by('id', $query_args["meta_query"][0]["value"], 'locations');
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
+                $_SESSION["selected_city_id1"] = $query_args["meta_query"][0]["value"];
+
+            }
+
+            if ($query_args["meta_query"][0]["key"] == "_%_sublocation") {
+
+                $selsubloc = get_term_by('id', $query_args["meta_query"][0]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args["meta_query"][0]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][0]["value"];
+
+            }
+
+            //============================
+
+            if ($query_args["meta_query"][1]["key"] == "_%_country") {
+
+                $selcou = get_term_by('id', $query_args["meta_query"][1]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args["meta_query"][1]["value"];
+
+            }
+
+            if ($query_args["meta_query"][1]["key"] == "_%_location") {
+
+                $selloc = get_term_by('id', $query_args["meta_query"][1]["value"], 'locations');
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args["meta_query"][1]["value"];
+                $_SESSION["selected_city_id1"] = $query_args["meta_query"][1]["value"];
+
+            }
+
+            if ($query_args["meta_query"][1]["key"] == "_%_sublocation") {
+
+                $selsubloc = get_term_by('id', $query_args["meta_query"][1]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args["meta_query"][1]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][1]["value"];
+
+            }
+
+            //========================================
+
+
+            if ($query_args["meta_query"][2]["key"] == "_%_country") {
+
+                $selcou = get_term_by('id', $query_args["meta_query"][2]["value"], 'locations');
+                $_SESSION["selected_cou"] = $selcou->name;
+                $_SESSION["selected_cou1"] = $selcou->name;
+                $_SESSION["selected_cou_id"] = $query_args["meta_query"][2]["value"];
+                $_SESSION["selected_cou_id1"] = $query_args["meta_query"][2]["value"];
+
+            }
+
+            if ($query_args["meta_query"][2]["key"] == "_%_location") {
+
+                $selloc = get_term_by('id', $query_args["meta_query"][2]["value"], 'locations');
+                $_SESSION["selected_city"] = $selloc->name;
+                $_SESSION["selected_city1"] = $selloc->name;
+                $_SESSION["selected_city_id"] = $query_args["meta_query"][2]["value"];
+                $_SESSION["selected_city_id1"] = $query_args["meta_query"][2]["value"];
+
+            }
+
+            if ($query_args["meta_query"][2]["key"] == "_%_sublocation") {
+
+                $selsubloc = get_term_by('id', $query_args["meta_query"][2]["value"], 'locations');
+                $_SESSION["selected_subloc"] = $selsubloc->name;
+                $_SESSION["selected_subloc1"] = $selsubloc->name;
+                $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
+                $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][2]["value"];
+
+            }
+
+
+            /*
+                    $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
+                    $_SESSION["selected_city"] = $selloc->name;
+                    $_SESSION["selected_city1"] = $selloc->name;
+                    $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
+
+                    $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
+                    $_SESSION["selected_cou"] = $selcou->name;
+                    $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
+
+                    $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][2]["value"], 'locations');
+                    $_SESSION["selected_subloc"] = $selsubloc->name;
+                    $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
+                   */
+
+
+            // echo $_SESSION["selected_city"]."===".$_SESSION["selected_cou"]."===".$_SESSION["selected_subloc"];die;
+
+          //  echo "VERTICAL FILTER<pre>";
+          //  print_r($query_args);
+
+            $_SESSION["min_range"] = $query_args["meta_query"][3]["value"];
+            $_SESSION["max_range"] = $query_args["meta_query"][2]["value"];
+
+
         }
-        else if(isset($tmp_args['meta_query'][1]['value']) && !empty($tmp_args['meta_query'][1]['value']) && isset($tmp_args['meta_query'][2]['value']) && !empty($tmp_args['meta_query'][2]['value']) && $tmp_args['meta_query'][1]['key'] == "hf_property_maximum_price_%_value" && $tmp_args['meta_query'][2]['key'] == "hf_property_minimum_price_%_value"){
-
-            $tmp_args['meta_query'][1] = array(
-
-                'key' => 'hf_property_starting_price_%_value',
-                'compare' => 'BETWEEN',
-                'value' => Array
-                (
-                    "0" => $tmp_args['meta_query'][2]['value'],
-                    "1" => $tmp_args['meta_query'][1]['value']
-                ),
-                'type' => 'numeric'
-            );
-            unset($tmp_args['meta_query'][2]);
-        }
-
-        //   echo "<pre>";
-        //   print_r($tmp_args);
-
-        //   unset($tmp_args['meta_query'][5]);
-
-        $query_args['meta_query'] = $tmp_args['meta_query'];
-
-       //   echo "<pre>";
-       //  print_r($query_args);
-        //die;
-
-        if($query_args["meta_query"][0]["key"] == "_%_country"){
-
-            $selcou =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args["meta_query"][0]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args["meta_query"][0]["value"];
-
-        }
-
-        if($query_args["meta_query"][0]["key"] == "_%_location"){
-
-            $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
-            $_SESSION["selected_city"] = $selloc->name;
-            $_SESSION["selected_city1"] = $selloc->name;
-            $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
-            $_SESSION["selected_city_id1"] = $query_args["meta_query"][0]["value"];
-
-        }
-
-        if($query_args["meta_query"][0]["key"] == "_%_sublocation"){
-
-            $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][0]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args["meta_query"][0]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][0]["value"];
-
-        }
-
-        //============================
-
-        if($query_args["meta_query"][1]["key"] == "_%_country"){
-
-            $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args["meta_query"][1]["value"];
-
-        }
-
-        if($query_args["meta_query"][1]["key"] == "_%_location"){
-
-            $selloc =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
-            $_SESSION["selected_city"] = $selloc->name;
-            $_SESSION["selected_city1"] = $selloc->name;
-            $_SESSION["selected_city_id"] = $query_args["meta_query"][1]["value"];
-            $_SESSION["selected_city_id1"] = $query_args["meta_query"][1]["value"];
-
-        }
-
-        if($query_args["meta_query"][1]["key"] == "_%_sublocation"){
-
-            $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][1]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args["meta_query"][1]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][1]["value"];
-
-        }
-
-        //========================================
-
-
-        if($query_args["meta_query"][2]["key"] == "_%_country"){
-
-            $selcou =	get_term_by( 'id',$query_args["meta_query"][2]["value"], 'locations');
-            $_SESSION["selected_cou"] = $selcou->name;
-            $_SESSION["selected_cou1"] = $selcou->name;
-            $_SESSION["selected_cou_id"] = $query_args["meta_query"][2]["value"];
-            $_SESSION["selected_cou_id1"] = $query_args["meta_query"][2]["value"];
-
-        }
-
-        if($query_args["meta_query"][2]["key"] == "_%_location"){
-
-            $selloc =	get_term_by( 'id',$query_args["meta_query"][2]["value"], 'locations');
-            $_SESSION["selected_city"] = $selloc->name;
-            $_SESSION["selected_city1"] = $selloc->name;
-            $_SESSION["selected_city_id"] = $query_args["meta_query"][2]["value"];
-            $_SESSION["selected_city_id1"] = $query_args["meta_query"][2]["value"];
-
-        }
-
-        if($query_args["meta_query"][2]["key"] == "_%_sublocation"){
-
-            $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][2]["value"], 'locations');
-            $_SESSION["selected_subloc"] = $selsubloc->name;
-            $_SESSION["selected_subloc1"] = $selsubloc->name;
-            $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
-            $_SESSION["selected_subloc_id1"] = $query_args["meta_query"][2]["value"];
-
-        }
-
-
-/*
-        $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
-        $_SESSION["selected_city"] = $selloc->name;
-        $_SESSION["selected_city1"] = $selloc->name;
-        $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
-
-        $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
-        $_SESSION["selected_cou"] = $selcou->name;
-        $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
-
-        $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][2]["value"], 'locations');
-        $_SESSION["selected_subloc"] = $selsubloc->name;
-        $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
-       */
-
-
-
-        // echo $_SESSION["selected_city"]."===".$_SESSION["selected_cou"]."===".$_SESSION["selected_subloc"];die;
-
-        $_SESSION["min_range"] = $query_args["meta_query"][3]["value"];
-        $_SESSION["max_range"] = $query_args["meta_query"][2]["value"];
-
     }
 }
 
@@ -431,6 +439,8 @@ $display_pager = aviators_settings_get('property', get_the_ID(), 'display_pager'
 $display = aviators_settings_get('property', get_the_ID(), 'display_type');
 $isotope_taxonomy = aviators_settings_get('property', get_the_ID(), 'isotope_taxonomy');
 
+//echo "<pre>";
+//print_r($_GET);
 
 /*if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
     $query_args['meta_query'][1] = array(
@@ -566,8 +576,8 @@ if($fullwidth) {
         <?php endif; ?>
 
         <?php
-      //  echo "<pre>";
-      //  print_r($_SESSION);
+    //    echo "<pre>";
+    //    print_r($_SESSION);
 
    /*     $querystr = " SELECT wp_posts.* FROM wp_posts ";
 
