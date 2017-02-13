@@ -629,8 +629,10 @@ if(isset($_SESSION["selected_subloc_id1"])) {
     $new_sql .= " , $wpdb->postmeta as postmeta3 ";
 }
 
-   $new_sql .= " JOIN wp_postmeta as wp1 ON posts.ID = wp1.post_id  ";
-   $new_sql .= " JOIN wp_terms as wt ON wt.term_id = wp1.meta_value AND wp1.meta_key = 'hf_property_type_0_value'   ";
+   $new_sql .= " , wp_postmeta as wp1 , wp_terms as wt ";
+
+  // $new_sql .= " JOIN wp_postmeta as wp1 ON posts.ID = wp1.post_id  ";
+ //  $new_sql .= " JOIN wp_terms as wt ON wt.term_id = wp1.meta_value AND wp1.meta_key = 'hf_property_type_0_value'   ";
  //   $new_sql .= " , $wpdb->wp_terms as wt ";
 
     $new_sql .= " WHERE 1 ";
@@ -651,7 +653,7 @@ if(isset($_SESSION["selected_subloc_id1"])) {
     $new_sql .= " AND posts.ID = postmeta3.post_id ";
 }
 
-//$new_sql .= " AND posts.ID = postmeta4.post_id ";
+$new_sql .= "  AND posts.ID = wp1.post_id  ";
 
 if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
     $new_sql .= "  AND postmeta.meta_key = 'hf_property_starting_price_0_value' AND CAST(postmeta.meta_value AS UNSIGNED) >= ".$_SESSION["min_range"] ." AND CAST(postmeta.meta_value AS UNSIGNED) <= ".$_SESSION["max_range"]."  ";
@@ -669,11 +671,11 @@ if(isset($_SESSION["selected_subloc_id1"])) {
     $new_sql .= " AND postmeta3.meta_key = 'hf_property_location_0_sublocation' AND postmeta3.meta_value=".$_SESSION["selected_subloc_id1"];
 }
 
-      //  $new_sql .= " AND postmeta4.meta_key = 'hf_property_type_0_value' AND wt.term_id= postmeta4.meta_value";
+    $new_sql .= " AND wt.term_id = wp1.meta_value AND wp1.meta_key = 'hf_property_type_0_value' ";
 
     $new_sql .= " AND posts.post_status = 'publish' AND posts.post_type = 'property' ORDER BY posts.ID DESC LIMIT 9 ";
 
-      //  echo $new_sql;
+       // echo $new_sql;
 
         $pageposts = $wpdb->get_results($new_sql, OBJECT);
 
