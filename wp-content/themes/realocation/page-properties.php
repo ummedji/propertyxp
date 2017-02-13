@@ -628,6 +628,9 @@ if(isset($_SESSION["selected_cou_id1"])) {
 if(isset($_SESSION["selected_subloc_id1"])) {
     $new_sql .= " , $wpdb->postmeta as postmeta3 ";
 }
+
+   $new_sql .= " JOIN wp_postmeta as wp1 ON posts.ID = wp1.post_id  ";
+   $new_sql .= " JOIN wp_terms as wt ON wt.term_id = wp1.meta_value AND wp1.meta_key = 'hf_property_type_0_value'   ";
  //   $new_sql .= " , $wpdb->wp_terms as wt ";
 
     $new_sql .= " WHERE 1 ";
@@ -693,7 +696,7 @@ if(isset($_SESSION["selected_subloc_id1"])) {
             <?php endif; ?>
         <?php endif; ?>
 
-        <div class="properties-items as_properties-items <?php //print $display; ?>">
+        <div class="isotope properties-items as_properties-items <?php //print $display; ?>">
             <div class="items-list">
                 <?php $count = 0; ?>
                 <?php //while (have_posts()) : the_post(); ?>
@@ -727,10 +730,12 @@ if(isset($_SESSION["selected_subloc_id1"])) {
 
                     $property_class = aviators_properties_append_term_classes($isotope_taxonomy);
 
+                    $property_class1 = $propertydata->slug;
+
                     ?>
 
 
-                    <div class="property-item <?php print $class; ?> <?php print $property_class; ?>">
+                    <div class="property-item property-<?php echo $property_class1; ?> <?php print $class; ?> <?php print $property_class; ?>">
 
 
                     <div class="property-box">
