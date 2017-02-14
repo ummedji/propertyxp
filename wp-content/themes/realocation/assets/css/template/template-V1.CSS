@@ -282,7 +282,10 @@ h2.pro_tl {
     font-size: 13px;
     text-transform: uppercase;
 }
-.top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, .top-dev-menu ul li a.active {
+
+/**.top-dev-menu ul li a:hover, .top-dev-menu ul li a:focus, **/
+
+.top-dev-menu ul li a.active {
     /*background-color: #2b2f38;*/
     background-color: #746453;
 }

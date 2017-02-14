@@ -83,7 +83,7 @@ jQuery(function(){
 	        </div>
 	        <?*/?>
         	<div class="col-md-12 about_cont">
-	        	<div class="center section-title as_section_tl"><h2><span>About <?php the_title();?></span></h2></div>
+	        	<div class="center about_data section-title as_section_tl"><h2><span>About <?php the_title();?></span></h2></div>
 	            <?php $content = get_the_content(); ?>
 	            <?php if (!empty($content)) : ?>
 	                <?php the_content(); ?>
@@ -171,7 +171,7 @@ jQuery(function(){
 	<div class="clearfix"></div>
     	<div class="row as_flats about_cont" id="flats">
     		<div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
+	        	<div class="center category_data section-title as_section_tl"><h2><span>Configuration Available <?php the_title();?></span></h2></div>
 	        </div>
 			<?php
 			   // $bedroom_amenities = get_field('2_bedroom_apartment_ame');
@@ -848,7 +848,7 @@ jQuery(function(){
     ?>
         <div class="row none_row as_amenities" id="amenities" >
         	<div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>Amenities in <?php the_title();
+	        	<div class="center amenities_data section-title as_section_tl"><h2><span>Amenities in <?php the_title();
 							?></span></h2></div>
           	</div>
 
@@ -1047,7 +1047,7 @@ jQuery(function(){
 
     	<div class="row as_map" id="map">
     	 <div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>EXPLORE PROJECT AND NEIGHBOURHOOD <?php the_title();?></span></h2></div>
+	        	<div class="center location_data section-title as_section_tl"><h2><span>EXPLORE PROJECT AND NEIGHBOURHOOD <?php the_title();?></span></h2></div>
          </div>
 
 
@@ -1074,7 +1074,7 @@ jQuery(function(){
 
           <div class="row as_flats" id="three_sixty_data">
 	        <div class="col-md-12"  style="margin-top: 20px;">
-	        	<div class="center section-title as_section_tl"><h2><span>360* View OF <?php the_title();?></span></h2></div>
+	        	<div class="center three_sixty_data section-title as_section_tl"><h2><span>360* View OF <?php the_title();?></span></h2></div>
 
 	        		<div class="properties-items-three-sixty isotope-three-sixty">
 			    		<div class="items-list-three-sixty row">
@@ -1099,7 +1099,7 @@ jQuery(function(){
 
               <div class="row" id="gallery" >
 	        <div class="col-md-12 al_baruj_slider">
-	        	<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
+	        	<div class="center gallery_data section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
 	        	<ul class="properties-filter gallery-top">
 	        		<li class="selected"><a id="gallery1" href="#" >Gallery 1</a></li>
 	        		<li><a id="gallery2" href="#" >Gallery 2</a></li>
@@ -1202,7 +1202,7 @@ jQuery(function(){
 	<?php } ?>
 	<div class="row" id="line_chart" >
 		<div class="col-md-12">
-	        	<div class="center section-title as_section_tl"><h2><span>Insights Into <?php the_title();?></span></h2></div>
+	        	<div class="center market_data section-title as_section_tl"><h2><span>Insights Into <?php the_title();?></span></h2></div>
 	        	<p class="caps_text"><?php echo getHydrameta(get_the_ID(),'hf_property_insights'); ?></p>
          </div>
 		<?php if(showMap(get_the_ID())) { ?>

@@ -138,9 +138,11 @@ jQuery(document).ready(function() {
 
 	jQuery( ".scroll-top-img" ).removeClass( "scroll-active" ).addClass( "scroll-deactive" );
 
+	//var clicked_data = "";
+
 var iScrollPos = 100;
 jQuery(window).scroll(function () {
-    var iCurScrollPos = jQuery(this).scrollTop();
+    var iCurScrollPos = jQuery(this).scrollTop()+70;
     if (iCurScrollPos > iScrollPos) {
     	jQuery( ".scroll-top-img" ).removeClass( "scroll-deactive" ).addClass( "scroll-active" );
     } else {
@@ -155,6 +157,7 @@ jQuery(window).scroll(function () {
 		//DETAIL POSITION
 
 		var detail_top_data = jQuery("#details").offset().top;
+		//var detail_top_data = jQuery("div.about_data").offset().top;
 		//var detail_bottom_data = jQuery("#details").position().top + jQuery("#details").outerHeight(true);
 
 		var detail_bottom_data = jQuery("#details").offset().top + jQuery("#details").outerHeight(true);
@@ -162,97 +165,124 @@ jQuery(window).scroll(function () {
 
 		//CATEGORY POSITION
 
-		var flat_top_data = parseInt(jQuery("#flats").offset().top)+300;
+		var flat_top_data = parseInt(jQuery("#flats").offset().top);
+		//var flat_top_data = parseInt(jQuery("div.category_data").offset().top);
 		var flat_bottom_data = jQuery("#flats").offset().top + jQuery("#flats").outerHeight(true);
 
 		//AMENITIES POSITION
 
 		var amenities_top_data = jQuery("#amenities").offset().top;
+		//var amenities_top_data = jQuery("div.amenities_data").offset().top;
 		var amenities_bottom_data = jQuery("#amenities").offset().top + jQuery("#amenities").outerHeight(true);
 
 		//LOCATION POSITION
 
 		var map_top_data = jQuery("#map").offset().top;
+		//var map_top_data = jQuery("div.location_data").offset().top;
 		var map_bottom_data = jQuery("#map").offset().top + jQuery("#map").outerHeight(true);
 
 		//THREE SIXTY DATA
 
 		var three_sixty_data_top_data = jQuery("#three_sixty_data").offset().top;
+		//var three_sixty_data_top_data = jQuery("div.three_sixty_data").offset().top;
 		var three_sixty_data_bottom_data = jQuery("#three_sixty_data").offset().top + jQuery("#three_sixty_data").outerHeight(true);
 
 		//GALLERY POSITION
 
 		var gallery_top_data = jQuery("#gallery").offset().top;
+		//var gallery_top_data = jQuery("div.gallery_data").offset().top;
 		var gallery_bottom_data = jQuery("#gallery").offset().top + jQuery("#gallery").outerHeight(true);
 
 		// MARKET POSITION
 
-		var line_chart_top_data = jQuery("#line_chart").offset().top;
+		var line_chart_top_data = jQuery("#line_chart").offset().top-50;
+		//var line_chart_top_data = jQuery("div.market_data").offset().top;
 		var line_chart_bottom_data = jQuery("#line_chart").offset().top + jQuery("#line_chart").outerHeight(true);
 
+		console.log(clicked_data);
 
-		jQuery("div#mCSB_1_container ul li a").removeClass("active");
+	//	jQuery("div#mCSB_1_container ul li a").removeClass("active");
 
-		if (iCurScrollPos >= detail_top_data && iCurScrollPos <= detail_bottom_data) {
+		if (iCurScrollPos > detail_top_data && iCurScrollPos < flat_top_data) {
 
-			//console.log(iCurScrollPos+"=="+detail_top_data+"==="+detail_bottom_data);
+			console.log(iCurScrollPos+"=="+detail_top_data+"==="+detail_bottom_data);
 
+			//clicked_data = "detail";
 			//console.log("111");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(1) a").addClass("active");
+			if(clicked_data != "#details"){
+			//	jQuery("div#mCSB_1_container ul li:nth-child(1) a").trigger("click");
+			}
+
 		}
+		else if (iCurScrollPos > flat_top_data && iCurScrollPos < amenities_top_data) {
 
-		if (iCurScrollPos >= flat_top_data && iCurScrollPos <= flat_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+flat_top_data+"==="+flat_bottom_data);
+			console.log(iCurScrollPos+"=="+flat_top_data+"==="+flat_bottom_data);
 
 			//console.log("222");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(2) a").addClass("active");
+			if(clicked_data != "#flats") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(2) a").trigger("click");
+			}
 		}
+		else if (iCurScrollPos > amenities_top_data && iCurScrollPos < map_top_data) {
 
-		if (iCurScrollPos >= amenities_top_data && iCurScrollPos <= amenities_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+amenities_top_data+"==="+amenities_bottom_data);
+			console.log(iCurScrollPos+"=="+amenities_top_data+"==="+amenities_bottom_data);
 
 			//console.log("333");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(3) a").addClass("active");
+			if(clicked_data != "#amenities") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(3) a").trigger("click");
+			}
 		}
+		else if (iCurScrollPos > map_top_data && iCurScrollPos < three_sixty_data_top_data) {
 
-		if (iCurScrollPos >= map_top_data && iCurScrollPos <= map_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+map_top_data+"==="+map_bottom_data);
+			console.log(iCurScrollPos+"=="+map_top_data+"==="+map_bottom_data);
 
 			//console.log("444");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(4) a").addClass("active");
+			if(clicked_data != "#map") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(4) a").trigger("click");
+			}
 		}
+		else if (iCurScrollPos > three_sixty_data_top_data && iCurScrollPos < gallery_top_data) {
 
-		if (iCurScrollPos >= three_sixty_data_top_data && iCurScrollPos <= three_sixty_data_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+three_sixty_data_top_data+"==="+three_sixty_data_bottom_data);
+			console.log(iCurScrollPos+"=="+three_sixty_data_top_data+"==="+three_sixty_data_bottom_data);
 
 			//console.log("555");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(5) a").addClass("active");
+			if(clicked_data != "#three_sixty_data") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(5) a").trigger("click");
+			}
 		}
+		else if (iCurScrollPos > gallery_top_data && iCurScrollPos < line_chart_top_data) {
 
-		if (iCurScrollPos >= gallery_top_data && iCurScrollPos <= gallery_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+gallery_top_data+"==="+gallery_bottom_data);
+			console.log(iCurScrollPos+"=="+gallery_top_data+"==="+gallery_bottom_data);
 			//console.log("666");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(6) a").addClass("active");
+
+			if(clicked_data != "#gallery") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(6) a").trigger("click");
+			}
 		}
+		else if (iCurScrollPos > line_chart_top_data && iCurScrollPos < line_chart_bottom_data) {
 
-		if (iCurScrollPos >= line_chart_top_data && iCurScrollPos <= line_chart_bottom_data) {
-
-			//console.log(iCurScrollPos+"=="+line_chart_top_data+"==="+line_chart_bottom_data);
+			console.log(iCurScrollPos+"=="+line_chart_top_data+"==="+line_chart_bottom_data);
 			//console.log("777");
-			//jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
 			jQuery("div#mCSB_1_container ul li:nth-child(7) a").addClass("active");
+
+			if(clicked_data != "#line_chart") {
+			//	jQuery("div#mCSB_1_container ul li:nth-child(7) a").trigger("click");
+			}
 		}
+
 	}
 	//console.log("scroll");
 });

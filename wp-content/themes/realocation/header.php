@@ -121,6 +121,7 @@ do_action('aviators_pre_render'); ?>
 
 
 <script type="text/javascript">
+	var clicked_data = "";
 	jQuery(document).ready(function (){
 
 		jQuery('.custom-menu-button').click(function(){
@@ -203,9 +204,10 @@ do_action('aviators_pre_render'); ?>
 		jQuery("div.developer-menu ul li a").on("click",function(){
 
 			//alert("INNN");
-		//	jQuery(this).dblclick();
-		//	jQuery("div.developer-menu ul li a").removeClass("active");
-			//jQuery(this).addClass("active");
+			clicked_data = jQuery(this).attr("href");
+			jQuery("div#mCSB_1_container ul li a").removeClass("active");
+			jQuery(this).addClass("active");
+			return false;
 
 		});
 
