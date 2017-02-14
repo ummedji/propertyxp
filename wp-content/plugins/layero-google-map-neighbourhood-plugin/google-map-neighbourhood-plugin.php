@@ -142,7 +142,7 @@ citymap['Ahmedabad'] = {
       search.types = [type];
     }
 
-      alert(type);
+     // alert(type);
     
     if (rankBy == 'distance' && (search.types)) {
      //   alert("111");
