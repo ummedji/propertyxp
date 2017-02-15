@@ -20,6 +20,8 @@ class ImageWidget extends Widget {
         $url = $itemSet->addField('text', array('url', __('Url', 'hydraforms')))
             ->addAttribute('class', 'hydra-image-url');
 
+
+
         // required validator for field
         if($this->isRequired() && $index == 0) {
             $url->addValidator('required');
@@ -29,6 +31,10 @@ class ImageWidget extends Widget {
 
         $itemSet->addField('button', array('add-image', __('Select Image', 'hydraforms')))
             ->addAttribute('class', 'hydra-add-image')
+            ->addAttribute('class', 'btn btn-primary');
+
+        $itemSet->addField('button', array('cancel-image', __('Delete Image', 'hydraforms')))
+            ->addAttribute('class', 'hydra-delete-image')
             ->addAttribute('class', 'btn btn-primary');
     }
 

@@ -752,7 +752,14 @@ function jquery_remove_counts()
         jQuery("div#hf-property-bselect-template").hide();
 
 
+
 	});
+
+    jQuery(document).on("click",".hydra-delete-image",function(){
+        jQuery(this).parent().parent().remove();
+      //  jQuery(this).parent().parent().find("input#hydra-hf-property-3-bed-flat-slider-count");
+    });
+
 	</script>
 	<?php
 }
@@ -1418,4 +1425,3 @@ function enqueue_media_uploader()
 }
 
 add_action("admin_enqueue_scripts", "enqueue_media_uploader");
-
