@@ -312,8 +312,24 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
 						<?php //$sfa = get_field('2_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_2_bed_flat_slider_alias');
-						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
+						/*$sfa = getHydrameta(get_the_ID(),'hf_property_2_bed_flat_slider_alias');
+						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );*/
+
+						$data2 = get_post_meta(get_the_ID(),'hf_property_2_bed_flat_slider');
+						?>
+						<ul class="rslides" id="slider2">
+							<?php
+
+							if(!empty($data2)){
+								foreach($data2[0]["items"] as $key_data2 =>$slider_data2) {
+									?>
+									<li><img src="<?php echo $slider_data2["url"]; ?>" alt="<?php //echo $slider_data2["alt"]; ?>" /></li>
+									<?php
+								}
+							} ?>
+
+						</ul>
+
 					</div>
 					<div class="config-content col-md-7 config-content_img">
 						<div class="row">
@@ -414,8 +430,24 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5 as-pull-right">
 						<?php //$sfa = get_field('3_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');
-						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
+						/*$sfa = getHydrameta(get_the_ID(),'hf_property_3_bed_flat_slider_alias');
+						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );*/
+
+						$data3 = get_post_meta(get_the_ID(),'hf_property_3_bed_flat_slider');
+						?>
+						<ul class="rslides" id="slider3">
+							<?php
+
+							if(!empty($data3)){
+								foreach($data3[0]["items"] as $key_data3 =>$slider_data3) {
+									?>
+									<li><img src="<?php echo $slider_data3["url"]; ?>" alt="<?php //echo $slider_data3["alt"]; ?>" /></li>
+									<?php
+								}
+							} ?>
+
+						</ul>
+
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
 						<div class="row">
@@ -516,8 +548,24 @@ jQuery(function(){
 				<div class="row bedroom_par">
 					<div class="small-flat-slider col-md-5">
 						<?php //$sfa = get_field('4_bed_flat_slider_alias');
-						$sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
-						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );?>
+						/*$sfa = getHydrameta(get_the_ID(),'hf_property_4_bed_flat_slider_alias');
+						if($sfa != '') putRevSlider( $sfa ); else putRevSlider( 'property_1004_flats' );*/
+
+						$data4 = get_post_meta(get_the_ID(),'hf_property_4_bed_flat_slider');
+						?>
+						<ul class="rslides" id="slider4">
+							<?php
+
+							if(!empty($data4)){
+								foreach($data4[0]["items"] as $key_data4 =>$slider_data4) {
+									?>
+									<li><img src="<?php echo $slider_data4["url"]; ?>" alt="<?php //echo $slider_data4["alt"]; ?>" /></li>
+									<?php
+								}
+							} ?>
+
+						</ul>
+
 					</div>
 					<div class="config-content col-md-7 config-content_img" >
 						<div class="row">

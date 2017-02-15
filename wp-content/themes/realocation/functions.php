@@ -1411,3 +1411,11 @@ function get_waiting_lists( $field ) {
 }
 
 add_filter('acf/load_field/name=location', 'get_waiting_lists');
+
+function enqueue_media_uploader()
+{
+    wp_enqueue_media();
+}
+
+add_action("admin_enqueue_scripts", "enqueue_media_uploader");
+

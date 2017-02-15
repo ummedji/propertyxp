@@ -129,7 +129,25 @@ jQuery(document).ready(function() {
 		}
 	},500);
 
+	jQuery("#slider1").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
 
+	jQuery("#slider2").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
+
+	jQuery("#slider3").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
+
+	jQuery("#slider4").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
 
 
 	jQuery( ".scroll-top-img" ).click(function() {

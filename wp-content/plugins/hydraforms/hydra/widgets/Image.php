@@ -25,7 +25,7 @@ class ImageWidget extends Widget {
             $url->addValidator('required');
         }
 
-        $itemSet->addField('text', array('alt', __('Alternate text', 'hydraforms')));
+   //     $itemSet->addField('text', array('alt', __('Alternate text', 'hydraforms')));
 
         $itemSet->addField('button', array('add-image', __('Select Image', 'hydraforms')))
             ->addAttribute('class', 'hydra-add-image')

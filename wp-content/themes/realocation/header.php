@@ -424,6 +424,10 @@ do_action('aviators_pre_render'); ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-common.CSS" />
 
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/responsiveslides.css" />
+
+	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/responsiveslides.js" ></script>
+
 	<script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.mCustomScrollbar.concat.min.js" ></script>
 <?php
 	//wp_register_script( 'googlemaps3', 'http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true', array('jquery'), '', true);
@@ -467,6 +471,7 @@ do_action('aviators_pre_render'); ?>
 ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/template/template-V3.CSS" />
 <?php } ?>
+
 
 	<?php
 	/*wp_enqueue_script('googlemaps3');
@@ -537,14 +542,61 @@ do_action('aviators_pre_render'); ?>
         			//the_post_thumbnail(array(1500,500), array( 'class' => 'property-main-image center' ));
         			//$sa = get_field('get_field');
         			$sa = getHydrameta(get_the_ID(),'hf_property_slider_alias');
-        			if($sa != '') {
+        		//	if($sa != '') {
 						?>
 						<div class="as_inn_slider">
-						 <?php  putRevSlider($sa); ?>
+						 <?php  // putRevSlider($sa); ?>
+
+
+						 <?php
+
+						 $data = get_post_meta(get_the_ID(),'hf_property_mail_slider_gallery');
+
+						// echo "<pre>";
+						// print_r($data);
+
+						 ?>
+
+							<ul class="rslides" id="slider1">
+								<?php
+
+								if(!empty($data)){
+									foreach($data[0]["items"] as $key_data =>$slider_data) {
+										?>
+										<li><img src="<?php echo $slider_data["url"]; ?>" alt="<?php echo $slider_data["alt"]; ?>" /></li>
+										<?php
+									}
+								} ?>
+
+							</ul>
+
+
+
+
 							</div>
 						<?php
-					}
+				//	}
+					?>
 
+							<!--<div class="row" id="gallery" >
+								<div class="col-md-12 al_baruj_slider">
+									<div class="center gallery_data section-title as_section_tl"><h2><span>NEW SLIDER</span></h2></div>
+
+									<div class="properties-items-gallery isotope-gallery">
+										<div class="items-list-gallery row">
+											<div class="gallery1  col-md-12">
+
+												<?php /*//print hydra_render_field(get_the_ID(), 'mail_slider_gallery', 'detail'); */?>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+-->
+
+<?php
 						}
 				 if($selected_template_value == 'developer'){
         		?>
