@@ -105,6 +105,23 @@ class PropertiesSlider_Widget extends Aviators_Widget {
                     );
 
                 }
+
+
+                if(isset($_SESSION["min_range"]) && $_SESSION["min_range"] != "" && isset($_SESSION["max_range"]) && $_SESSION["max_range"] != "")
+                {
+                    $query_args['meta_query'][] = array(
+                        'key' => 'hf_property_starting_price_%_value',
+                        'compare' => 'BETWEEN',
+                        'value' => Array
+                        (
+                            "0" => $_SESSION["min_range"],
+                            "1" => $_SESSION["max_range"]
+                        ),
+                        'type' => 'numeric'
+                    );
+                }
+
+
                // echo "cdfd";die;
 
                 $slides = query_posts($query_args);
@@ -126,14 +143,15 @@ class PropertiesSlider_Widget extends Aviators_Widget {
 
 
       //  echo "<pre>";
+     //   print_r($_SESSION);
       //  print_r($query_args);
 
 //echo "DATA HERE";
 
       //  echo $wpdb->last_query;
 
-     //   echo "<pre>";
-     //   print_r($slides);
+        //echo "<pre>";
+       // print_r($slides);
 
         if (!count($slides)) {
             return;

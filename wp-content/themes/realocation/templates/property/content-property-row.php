@@ -112,7 +112,7 @@
                 <?php echo hydra_render_field(get_the_ID(), 'location', 'row'); ?>
             </div><!-- /.property-row-subtitle -->
 
-            <div class="property-row-price"><?php echo hydra_render_field(get_the_ID(), 'price', 'row'); ?></div>
+            <div class="property-row-price"><?php  echo $fraction." ".$ext;//hydra_render_field(get_the_ID(), 'price', 'row'); ?></div>
             <!-- /.property-row-price -->
 
             <?php the_excerpt(); ?>

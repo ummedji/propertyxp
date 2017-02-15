@@ -226,7 +226,6 @@ if(isset($_GET["hf_property_location_filter_1"])) {
 
             if (isset($tmp_args['meta_query'][4]['value']) && !empty($tmp_args['meta_query'][4]['value']) && isset($tmp_args['meta_query'][3]['value']) && !empty($tmp_args['meta_query'][3]['value']) && $tmp_args['meta_query'][3]['key'] == 'hf_property_maximum_price_%_value' && $tmp_args['meta_query'][4]['key'] == "hf_property_minimum_price_%_value") {
                 $tmp_args['meta_query'][3] = array(
-
                     'key' => 'hf_property_starting_price_%_value',
                     'compare' => 'BETWEEN',
                     'value' => Array
@@ -360,22 +359,6 @@ if(isset($_GET["hf_property_location_filter_1"])) {
             }
 
 
-            /*
-                    $selloc =	get_term_by( 'id',$query_args["meta_query"][0]["value"], 'locations');
-                    $_SESSION["selected_city"] = $selloc->name;
-                    $_SESSION["selected_city1"] = $selloc->name;
-                    $_SESSION["selected_city_id"] = $query_args["meta_query"][0]["value"];
-
-                    $selcou =	get_term_by( 'id',$query_args["meta_query"][1]["value"], 'locations');
-                    $_SESSION["selected_cou"] = $selcou->name;
-                    $_SESSION["selected_cou_id"] = $query_args["meta_query"][1]["value"];
-
-                    $selsubloc =	get_term_by( 'id',      $query_args["meta_query"][2]["value"], 'locations');
-                    $_SESSION["selected_subloc"] = $selsubloc->name;
-                    $_SESSION["selected_subloc_id"] = $query_args["meta_query"][2]["value"];
-                   */
-
-
             // echo $_SESSION["selected_city"]."===".$_SESSION["selected_cou"]."===".$_SESSION["selected_subloc"];die;
 
           //  echo "VERTICAL FILTER<pre>";
@@ -397,18 +380,6 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
         'value' => $_GET["hf_property_header_location_filter"]
     );
 
-/*
-    $args1 = array('orderby'=>'asc','hide_empty'=>false,'parent'=>0);
-    $terms1 = get_terms('locations', $args1);
-    $parent_data = "";
-    foreach($terms1 as $term1)
-    {
-        if($term1->term_taxonomy_id == $_GET["hf_property_header_location_filter"]){
-            $parent_data = $term1->term_id;
-            break;
-        }
-       // break;
-    }*/
 
  //   echo "<pre>";
  //   print_r($terms1);
@@ -441,34 +412,6 @@ $isotope_taxonomy = aviators_settings_get('property', get_the_ID(), 'isotope_tax
 
 //echo "<pre>";
 //print_r($_GET);
-
-/*if(isset($_SESSION["selected_city_id"]) && $_SESSION["selected_city_id"] != ""){
-    $query_args['meta_query'][1] = array(
-        'key' => '_%_location',
-        'compare' => '=',
-        'value' => $_SESSION["selected_city_id"]
-    );
-}
-
-if(isset($_SESSION["selected_cou_id"]) && $_SESSION["selected_cou_id"] != ""){
-
-    $query_args['meta_query'][2] = array(
-        'key' => '_%_country',
-        'compare' => '=',
-        'value' => $_SESSION["selected_cou_id"]
-    );
-
-}
-
-if(isset($_SESSION["selected_subloc_id"]) && $_SESSION["selected_subloc_id"] != ""){
-
-    $query_args['meta_query'][3] = array(
-        'key' => '_%_sublocation',
-        'compare' => '=',
-        'value' => $_SESSION["selected_cou_id"]
-    );
-
-}*/
 
 //print_r($query_args);
 
@@ -579,47 +522,6 @@ if($fullwidth) {
     //    echo "<pre>";
     //    print_r($_SESSION);
 
-   /*     $querystr = " SELECT wp_posts.* FROM wp_posts ";
-
-if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]) {
-    $querystr .= " JOIN wp_postmeta as wpm ON wp_posts.ID = wpm.post_id ";
-}
-
-if(isset($_SESSION["selected_city_id1"])) {
-    $querystr .= " JOIN wp_postmeta as wpm1 ON wp_posts.ID = wpm1.post_id ";
-}
-
-if(isset($_SESSION["selected_cou_id1"])) {
-    $querystr .= " JOIN wp_postmeta as wpm2 ON wp_posts.ID = wpm2.post_id ";
-}
-
-if(isset($_SESSION["selected_subloc_id1"])) {
-    $querystr .= " JOIN wp_postmeta as wpm3 ON wp_posts.ID = wpm3.post_id ";
-}
-
-        $querystr .= " WHERE 1 ";
-
-    if(isset($_SESSION["min_range"]) && $_SESSION["max_range"]){
-        $querystr .= " AND wpm.meta_key = 'hf_property_starting_price_0_value' AND wpm.meta_value BETWEEN (".$_SESSION["min_range"] ." AND ".$_SESSION["max_range"].") ";
-    }
-
-if(isset($_SESSION["selected_city_id1"])) {
-    $querystr .= " AND wpm1.meta_key = 'hf_property_location_0_location' AND wpm1.meta_value=". $_SESSION["selected_city_id1"] ;
-}
-
-if(isset($_SESSION["selected_cou_id1"])) {
-    $querystr .= " AND wpm2.meta_key = 'hf_property_location_0_country' AND wpm2.meta_value= ".$_SESSION["selected_cou_id1"];
-}
-
-if(isset($_SESSION["selected_subloc_id1"])) {
-    $querystr .= " AND wpm3.meta_key = 'hf_property_location_0_sublocation' AND wpm3.meta_value=".$_SESSION["selected_subloc_id1"];
-}
-
-        $querystr .= " AND wp_posts.post_status = 'publish' AND wp_posts.post_type = 'property' LIMIT 9";*/
-
-      //  echo $querystr;
-      //  $pageposts = $wpdb->get_results($querystr, OBJECT);
-
 
        $new_sql =  "SELECT * FROM $wpdb->posts as posts ";
 
@@ -719,6 +621,9 @@ if(isset($_SESSION["selected_subloc_id1"])) {
 
                 foreach($pageposts as $key=>$propertydata){
                     $postid = $propertydata->ID;
+
+                    hydra_render_field($postid, 'location', 'grid');
+
                     ?>
                     <?php
                     $end_line = '';
@@ -754,7 +659,13 @@ if(isset($_SESSION["selected_subloc_id1"])) {
                         <div class="property-box-inner">
                             <div class="property-box-header">
                                 <h3 class="property-box-title"><a href="<?php echo get_permalink($postid); ?>"><?php echo $propertydata->post_title; ?></a></h3>
-                                <div class="property-box-subtitle"><?php print hydra_render_field($postid, 'location', 'grid'); ?></div>
+                                <div class="property-box-subtitle"><?php
+                                    echo hydra_render_field($postid, 'location', 'grid');
+
+                                 /*   echo "<pre>";
+                                    print_r($data);
+                                    die;*/
+                                    ?></div>
                             </div><!-- /.property-box-header -->
 
                             <div class="property-box-picture">

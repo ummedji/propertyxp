@@ -745,7 +745,12 @@ function jquery_remove_counts()
 		jQuery("li.publish").remove();
 		jQuery("li.trash").remove();
         jQuery("li.draft").remove();
-		
+
+        jQuery("div#hf-property-minimum-price").hide();
+        jQuery("div#hf-property-maximum-price").hide();
+        jQuery("div#hf-property-price").hide();
+        jQuery("div#hf-property-bselect-template").hide();
+
 
 	});
 	</script>

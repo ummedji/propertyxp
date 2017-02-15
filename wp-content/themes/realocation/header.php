@@ -448,8 +448,8 @@ do_action('aviators_pre_render'); ?>
 		})(jQuery);
 	</script>
   <?php
-  $selected_template = getHydrameta(get_the_ID(),'hf_property_bselect_template');
- $selected_template_value = get_field("select_template"); 
+ // $selected_template = getHydrameta(get_the_ID(),'hf_property_bselect_template');
+ $selected_template_value = get_field("select_template");
  //$selected_template_value = trim($selected_template); 
  
      if($selected_template_value == 'developer'){

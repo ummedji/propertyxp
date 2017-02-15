@@ -93,10 +93,26 @@ class PropertiesCarousel_Widget extends WP_Widget {
 
                 }
 
+
+                if(isset($_SESSION["min_range"]) && $_SESSION["min_range"] != "" && isset($_SESSION["max_range"]) && $_SESSION["max_range"] != "")
+                {
+                    $query['meta_query'][] = array(
+                        'key' => 'hf_property_starting_price_%_value',
+                        'compare' => 'BETWEEN',
+                        'value' => Array
+                        (
+                            "0" => $_SESSION["min_range"],
+                            "1" => $_SESSION["max_range"]
+                        ),
+                        'type' => 'numeric'
+                    );
+                }
+
+
             }
         }
 
-      //  echo "<pre>";
+       // echo "<pre>";
       //  print_r($query);
 
 
