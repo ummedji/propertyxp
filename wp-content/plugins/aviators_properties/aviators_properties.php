@@ -79,7 +79,7 @@ function aviators_properties_create_taxonomies() {
         'show_ui' => TRUE,
     ));
 
-    $property_contract_types_labels = array(
+   /* $property_contract_types_labels = array(
         'name' => __('Contract Types', 'aviators'),
         'singular_name' => __('Contract Type', 'aviators'),
         'search_items' => __('Search Contract Types', 'aviators'),
@@ -100,7 +100,7 @@ function aviators_properties_create_taxonomies() {
         'rewrite' => array('slug' => __('contract-type', 'aviators')),
         'public' => TRUE,
         'show_ui' => TRUE,
-    ));
+    ));*/
 
     $property_amenities_labels = array(
         'name' => __('Amenities', 'aviators'),
