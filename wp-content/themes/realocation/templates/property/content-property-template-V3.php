@@ -962,12 +962,12 @@ jQuery(function(){
 				<div class="col-md-12 al_baruj_slider">
 					<div class="center section-title as_section_tl"><h2><span>Images of <?php the_title();?></span></h2></div>
 					<ul class="properties-filter gallery-top">
-						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
-						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
+						<li class="selected"><a id="gallery1" href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
+						<li><a id="gallery2" href="#" data-filter=".gallery2">Gallery 2</a></li>
 					</ul>
 					<div class="">
 						<div class="items-list row">
-							<div class="gallery1 property-item isotope-item  col-md-12">
+							<div class="gallery1  col-md-12">
 								<?php //print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
 
 								<?php
@@ -987,7 +987,7 @@ jQuery(function(){
 								</ul>
 
 							</div>
-							<div class="gallery2 property-item isotope-item  col-md-12">
+							<div class="gallery2  col-md-12">
 								<?php //print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
 
 								<?php

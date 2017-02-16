@@ -1209,7 +1209,7 @@ jQuery(function(){
 	        	</ul>
 	        		<div class="">
 			    		<div class="items-list row">
-				    		<div class="gallery1 property-item isotope-item  col-md-12">
+				    		<div class="gallery1 col-md-12">
 		            			<?php //print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
 
 								<?php
@@ -1230,7 +1230,7 @@ jQuery(function(){
 
 
 		            		</div>
-		            		<div class="gallery2 property-item isotope-item  col-md-12">
+		            		<div class="gallery2  col-md-12">
 		            			<?php //print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
 
 								<?php

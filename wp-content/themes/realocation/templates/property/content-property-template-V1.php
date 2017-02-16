@@ -1153,7 +1153,7 @@ jQuery(function(){
 	        		<li class="selected"><a id="gallery1" href="#" >Gallery 1</a></li>
 	        		<li><a id="gallery2" href="#" >Gallery 2</a></li>
 	        	</ul>
-	        		<div class="properties-items-gallery isotope-gallery">
+	        		<div class="">
 			    		<div class="items-list-gallery row">
 				    	<div class="gallery1  col-md-12">
 		            			<?php //print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
