@@ -149,6 +149,16 @@ jQuery(document).ready(function() {
 		speed: 800
 	});
 
+	jQuery("#gallery-slider").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
+
+	jQuery("#gallery2-slider").responsiveSlides({
+		maxwidth: 800,
+		speed: 800
+	});
+
 
 	jQuery( ".scroll-top-img" ).click(function() {
 		jQuery('html, body').animate({scrollTop: '0px'}, 1000);
@@ -371,8 +381,8 @@ jQuery(window).scroll(function () {
 
 			   setTimeout(function(){
 				//   console.log("INNN");
-				   jQuery("div#gallery div.properties-items").css("height","1000px");
-				   jQuery("ul.slides li").css("width","1132px");
+				 //  jQuery("div#gallery div.properties-items").css("height","1000px");
+				 //  jQuery("ul.slides li").css("width","1132px");
 			   },2000);
 
            }

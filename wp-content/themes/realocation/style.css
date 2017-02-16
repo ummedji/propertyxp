@@ -497,7 +497,6 @@ border: 2px solid #ff3401;}
 	margin-right: 0px !important;
 	margin-left: 0px !important;
 	box-shadow: none;
-	float: left !important;
 }
 .filter-horizontal ul.list-unstyled li:hover, .filter-horizontal ul.list-unstyled li:focus, .filter-horizontal ul.list-unstyled li:active {
 	-webkit-transform: scale(1);
@@ -1370,3 +1369,6 @@ h2.pro_tl, .address_tag a {font-family: 'Raleway-Medium';}
 .block-content .inner-pro-parent .field-item .field-value { font-size: 10px !important;}
 
 .as_inn_slider { position: relative;}
+#gallery-slider, #gallery2-slider {
+	max-width: inherit !important;
+}

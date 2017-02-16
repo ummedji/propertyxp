@@ -762,7 +762,7 @@ function jquery_remove_counts()
         jQuery("input#hydra-hf-property-contact-form-shortcode-items-0-value").val('[contact-form-7 id="2396" title="Customer Enquiry"]');
 
         jQuery("div#hf-property-contact-form-shortcode").hide();
-        
+
 	});
 
     jQuery(document).on("click",".hydra-delete-image",function(){

@@ -1210,10 +1210,45 @@ jQuery(function(){
 	        		<div class="properties-items isotope">
 			    		<div class="items-list row">
 				    		<div class="gallery1 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
+		            			<?php //print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
+
+								<?php
+								$gallery_data = get_post_meta(get_the_ID(),'hf_property_gallery');
+								?>
+								<ul class="rslides" id="gallery-slider">
+									<?php
+
+									if(!empty($gallery_data)){
+										foreach($gallery_data[0]["items"] as $gallery_data =>$slider_gallery_data) {
+											?>
+											<li><img src="<?php echo $slider_gallery_data["url"]; ?>" alt="<?php //echo $slider_data4["alt"]; ?>" /></li>
+											<?php
+										}
+									} ?>
+
+								</ul>
+
+
 		            		</div>
 		            		<div class="gallery2 property-item isotope-item  col-md-12">
-		            			<?php print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
+		            			<?php //print hydra_render_field(get_the_ID(), 'gallery2', 'detail'); ?>
+
+								<?php
+								$gallery2_data = get_post_meta(get_the_ID(),'hf_property_gallery2');
+								?>
+								<ul class="rslides" id="gallery2-slider">
+									<?php
+
+									if(!empty($gallery2_data)){
+										foreach($gallery2_data[0]["items"] as $gallery2_data =>$slider_gallery2_data) {
+											?>
+											<li><img src="<?php echo $slider_gallery2_data["url"]; ?>" alt="<?php //echo $slider_data4["alt"]; ?>" /></li>
+											<?php
+										}
+									} ?>
+
+								</ul>
+
 		            		</div>
 		            	</div>
 	        		</div>
