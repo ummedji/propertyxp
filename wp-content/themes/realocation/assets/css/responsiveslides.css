@@ -34,3 +34,46 @@
   width: 100%;
   border: 0;
   }
+
+.rslides1_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  z-index: 999999;
+  opacity: 0.7;
+  /*text-indent: -9999px;*/
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  /*background: transparent url(https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png) no-repeat left top;*/
+  margin-top: 0px;
+  font-size: 40px;
+  color: #fff;
+}
+.rslides_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  opacity: 0.7;
+  /*text-indent: -9999px;*/
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 42px;
+  /*background: transparent url(https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png) no-repeat left top;*/
+  margin-top: 0px;
+  font-size: 40px;
+  color: #fff;
+  padding: 2px;
+}
+
+.rslides_nav.prev {left: 45px;}
+.rslides_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 45px;
+}

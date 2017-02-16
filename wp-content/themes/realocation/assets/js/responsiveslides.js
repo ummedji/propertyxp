@@ -17,12 +17,13 @@
       "speed": 500,             // Integer: Speed of the transition, in milliseconds
       "timeout": 4000,          // Integer: Time between slide transitions, in milliseconds
       "pager": false,           // Boolean: Show pager, true or false
+      "pagination": true,
       "nav": true,             // Boolean: Show navigation, true or false
       "random": false,          // Boolean: Randomize the order of the slides, true or false
       "pause": false,           // Boolean: Pause on hover, true or false
       "pauseControls": true,    // Boolean: Pause when hovering controls, true or false
-      "prevText": "Prev",   // String: Text for the "previous" button
-      "nextText": "Next",       // String: Text for the "next" button
+      "prevText": "<i class='fa fa-arrow-circle-left' aria-hidden='true'></i>",   // String: Text for the "previous" button
+      "nextText": "<i class='fa fa-arrow-circle-right' aria-hidden='true'></i>",       // String: Text for the "next" button
       "maxwidth": "",           // Integer: Max-width of the slideshow, in pixels
       "navContainer": "",       // Selector: Where auto generated controls should be appended to, default is after the <ul>
       "manualControls": "",     // Selector: Declare custom pager navigation

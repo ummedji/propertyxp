@@ -751,16 +751,71 @@ function jquery_remove_counts()
         jQuery("div#hf-property-price").hide();
         jQuery("div#hf-property-bselect-template").hide();
 
+        jQuery("fieldset#hf-property-mail-slider-gallery legend").after("<span style='color:green;'>&nbsp;&nbsp;<i>Please add images of dimensions 1920px &times; 815px.</i></span>");
 
+        jQuery("fieldset#hf-property-2-bed-flat-slider legend").after("<span style='color:green;'>&nbsp;&nbsp;<i>Please add images of dimensions 460px &times; 380px.</i></span>");
 
+        jQuery("fieldset#hf-property-3-bed-flat-slider legend").after("<span style='color:green;'>&nbsp;&nbsp;<i>Please add images of dimensions 460px &times; 380px.</i></span>");
+
+        jQuery("fieldset#hf-property-4-bed-flat-slider legend").after("<span style='color:green;'>&nbsp;&nbsp;<i>Please add images of dimensions 460px &times; 380px.</i></span>");
+
+        jQuery("input#hydra-hf-property-contact-form-shortcode-items-0-value").val('[contact-form-7 id="2396" title="Customer Enquiry"]');
+
+        jQuery("div#hf-property-contact-form-shortcode").hide();
+        
 	});
 
     jQuery(document).on("click",".hydra-delete-image",function(){
+
+        var button_name = jQuery(this).attr("name");
+
+        var button_split_name = button_name.split("[");
+
+        button_split_name[0] = button_split_name[0].replace(/_/g, '-');
+
+        jQuery("input#hydra-"+button_split_name[0]+"-count").val(parseInt(jQuery("input.hydra-"+button_split_name[0]+"-count").val())-1);
+
         jQuery(this).parent().parent().remove();
-      //  jQuery(this).parent().parent().find("input#hydra-hf-property-3-bed-flat-slider-count");
+
     });
 
 	</script>
+
+    <style>
+        fieldset#hf-property-mail-slider-gallery div div div:nth-child(2), fieldset#hf-property-mail-slider-gallery div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        fieldset#hf-property-gallery div div div:nth-child(2), fieldset#hf-property-gallery div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        fieldset#hf-property-gallery2 div div div:nth-child(2), fieldset#hf-property-gallery2 div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        fieldset#hf-property-2-bed-flat-slider div div div:nth-child(2), fieldset#hf-property-2-bed-flat-slider div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        fieldset#hf-property-3-bed-flat-slider div div div:nth-child(2), fieldset#hf-property-3-bed-flat-slider div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        fieldset#hf-property-4-bed-flat-slider div div div:nth-child(2), fieldset#hf-property-4-bed-flat-slider div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        div#hf-property-three-sixty-data div div div:nth-child(2), div#hf-property-three-sixty-data div div div:nth-child(3){
+            display:inline-block;
+        }
+
+        div#hf-property-developer-image div div div:nth-child(2), div#hf-property-developer-image div div div:nth-child(3){
+            display:inline-block;
+        }
+
+    </style>
+
 	<?php
 }
 add_action('admin_footer', 'jquery_remove_counts');

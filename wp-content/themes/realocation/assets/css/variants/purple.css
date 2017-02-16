@@ -10372,3 +10372,4 @@ h2.pro_tl {
 @media screen and (min-width: 1200px) {
 	.layout-boxed .filter-container .container { width: 100% !important;}
 }
+a.rslides_nav:hover, a.rslides_nav:focus {color: #8e5c90;}
