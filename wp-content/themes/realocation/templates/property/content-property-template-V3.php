@@ -965,7 +965,7 @@ jQuery(function(){
 						<li class="selected"><a href="#" data-filter=".gallery1" class="first-click-this">Gallery 1</a></li>
 						<li><a href="#" data-filter=".gallery2">Gallery 2</a></li>
 					</ul>
-					<div class="properties-items isotope">
+					<div class="">
 						<div class="items-list row">
 							<div class="gallery1 property-item isotope-item  col-md-12">
 								<?php //print hydra_render_field(get_the_ID(), 'gallery', 'detail'); ?>
