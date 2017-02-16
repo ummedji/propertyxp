@@ -105,8 +105,32 @@ jQuery(function(){
 					<div class="col-md-2 col-sm-6 col-xs-6 text-center about_box_tl">
 						<div class="abtn_icon starting_i"></div>
 						<h6>STARTING PRICE</h6>
-						<p><!--<i class="icon-rupee"></i>--><?php
-					     echo getHydrameta(get_the_ID(),'hf_property_starting_price');	//do_action('wp_getHydravalue',get_the_ID(),'starting_price'); ?><?php //the_field('starting_price');?></p>
+						<p><i class="icon-rupee"></i>
+
+							<?php $price = getHydrameta(get_the_ID(), 'hf_property_starting_price');
+							$num = $price;
+							$ext="";
+							$number_of_digits = count_digit($num);
+							if($number_of_digits>3)
+							{
+							if($number_of_digits%2!=0)
+							$divider=divider($number_of_digits-1);
+							else
+							$divider=divider($number_of_digits);
+							}
+							else
+							$divider=1;
+							$fraction=$num/$divider;
+							//$fraction=number_format($fraction,2);
+							if($number_of_digits==4 ||$number_of_digits==5)
+							$ext="k";
+							if($number_of_digits==6 ||$number_of_digits==7)
+							$ext="Lac";
+							if($number_of_digits==8 ||$number_of_digits==9)
+							$ext="Cr";
+							echo $fraction." ".$ext;//print hydra_render_field(get_the_ID(), 'price', 'detail'); ?>
+							<!--<i class="icon-rupee"></i>--><?php
+					     //echo getHydrameta(get_the_ID(),'hf_property_starting_price');	//do_action('wp_getHydravalue',get_the_ID(),'starting_price'); ?><?php //the_field('starting_price');?></p>
 					</div>
 					<div class="col-md-2 col-sm-6  text-center about_box_tl">
 						<div class="abtn_icon builtup_square_i"></div>
