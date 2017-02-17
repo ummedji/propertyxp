@@ -108,8 +108,7 @@ ini_set('display_errors','Off');
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-
-date_default_timezone_set('Asia/Kolkata');
+ini_set( 'date.timezone', 'Asia/Kolkata' );
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
