@@ -13,7 +13,9 @@
  */
 define('WP_USE_THEMES', true);
 
-//echo date_default_timezone_get();die;
+echo date("Y-m-d H:i:s");
+
+echo date_default_timezone_get();die;
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
