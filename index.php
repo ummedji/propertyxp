@@ -13,11 +13,5 @@
  */
 define('WP_USE_THEMES', true);
 
-
-date_default_timezone_set('Asia/Kolkata');
-echo date("Y-m-d H:i:s");
-
-die;
-
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
