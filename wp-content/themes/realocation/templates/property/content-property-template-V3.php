@@ -150,7 +150,47 @@ jQuery(function(){
 					<div class="row">
 						<div class="col-md-4 col-sm-4"><h2 class="pro_tl"><?php the_title(); ?></h2></div>
 						<div class="col-md-4 col-sm-4 text-center">
-							<div class="address_tag"><?php print hydra_render_field(get_the_ID(), 'location', 'detail'); ?>
+							<div class="address_tag">
+
+								<?php //print hydra_render_field(get_the_ID(), 'location', 'detail');
+								$state_values = get_post_meta( get_the_ID(), 'hf_property_location_0_country' );
+								$city_values = get_post_meta( get_the_ID(), 'hf_property_location_0_location' );
+								$location_values = get_post_meta( get_the_ID(), 'hf_property_location_0_sublocation' );
+
+								$statedata = "";
+								$citydata = "";
+								$locationdata = "";
+
+								$final_data = "";
+
+								if(!empty($state_values) && isset($state_values[0])){
+									$statedata = get_term($state_values[0],"locations");
+
+									$statedata = $statedata->name;
+								}
+
+								if(!empty($city_values) && isset($city_values[0])){
+									$citydata = get_term($city_values[0],"locations");
+
+									$citydata = $citydata->name;
+								}
+
+								if(!empty($location_values) && isset($location_values[0])){
+									$locationdata = get_term($location_values[0],"locations");
+									$locationdata = $locationdata->name;
+								}
+
+								?>
+
+
+								<div class=" no-columns hierarchy_select_formatter hierarchy-select hf-property-location"><div class="field-item field-item-0"><div class="field-value">
+											<a href="<?php echo get_home_url(); ?>/location/<?php echo $locationdata; ?>"><?php echo $locationdata; ?></a>
+											, <a href="<?php echo get_home_url(); ?>/location/<?php echo $citydata; ?>"><?php echo $citydata; ?></a>
+											, <a href="<?php echo get_home_url(); ?>/location/<?php echo $statedata; ?>"><?php echo $statedata; ?></a>
+										</div></div></div>
+
+
+
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4 top_tena_price">

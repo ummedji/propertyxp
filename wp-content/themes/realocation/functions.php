@@ -991,11 +991,13 @@ function filter_add_posts_singletime($query)
 			  
 			 jQuery('#hf-property-available').hide();
 			 //jQuery('#hf-property-navailbale').hide();
-			  jQuery( "fieldset" ).addSelectAll(
+			  jQuery("fieldset").addSelectAll(
 			   'hf_property_2_bedroom_apartment_amenities');
-			  jQuery( "fieldset" ).addSelectAll('hf_property_3_bedroom_apartment_amenities');
-			  jQuery( "fieldset" ).addSelectAll('hf_property_4_bedroom_apartment_amenities');
-			  jQuery( "fieldset" ).addSelectAll('hf_property_amenities');
+			  jQuery("fieldset").addSelectAll('hf_property_3_bedroom_apartment_amenities');
+			  jQuery("fieldset").addSelectAll('hf_property_4_bedroom_apartment_amenities');
+
+			  jQuery("fieldset").addSelectAll('hf_property_amenitiesf');
+
 			  jQuery('.select_all_entity').click(function() {
 				if(this.checked) {
 				jQuery('[name="'+this.id+'"]').find('input[type=checkbox]').each(function(){

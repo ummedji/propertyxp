@@ -334,14 +334,17 @@ jQuery(window).scroll(function () {
 	//jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 		
 	setTimeout(function(){
-	
-		jQuery("div.row-wise-amenities ul.properties-filter li:first-child a").trigger("click");
 
 		jQuery("a#gallery1").trigger("click");
+	//	alert("HERE");
+		jQuery("div.row-wise-amenities ul.properties-filter li:nth-child(1) a").trigger("click");
+
+	//	alert("THERE");
+
 
 		//jQuery("div#map_canvas").css("width","933px");
 		
-	}, 1000);
+	}, 2000);
 
 
         //jQuery("div#gallery div.gallery1").show();
