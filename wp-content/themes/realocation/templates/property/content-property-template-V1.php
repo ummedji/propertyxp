@@ -249,7 +249,7 @@ jQuery(function(){
 
 	        <div class="col-md-12 text-left mr_50">
 				<h3>2 BedRoom Apartment</h3>
-				<p class="cate_cont room-bto"> <?php the_title(); ?>  is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto"> <?php the_title(); ?>  <?php  echo getHydrameta(get_the_ID(),'hf_property_2_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php
 				$num = getHydrameta(get_the_ID(),'hf_property_2bedroomprice');
 				$ext="";
@@ -544,7 +544,7 @@ jQuery(function(){
 
 	        <div class="col-md-12 text-left mr_50">
 				<h3>3 BedRoom Apartment</h3>
-				<p class="room-bto1"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="room-bto1"> <?php the_title(); ?> <?php  echo getHydrameta(get_the_ID(),'hf_property_3_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php
 				$num = getHydrameta(get_the_ID(),'hf_property_3bedroomprice');
 				$ext="";
@@ -733,7 +733,7 @@ jQuery(function(){
 
 	        <div class="col-md-12 text-left mr_50">
 				<h3>4 BedRoom Apartment</h3>
-				<p class="cate_cont room-bto2"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto2"> <?php the_title(); ?> <?php  echo getHydrameta(get_the_ID(),'hf_property_4_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php
 				$num = getHydrameta(get_the_ID(),'hf_property_4bedroomprice');
 				$ext="";

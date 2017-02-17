@@ -311,7 +311,7 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>2 BedRoom Apartment</h3>
-				<p class="cate_cont room-bto"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto"> <?php the_title(); ?> <?php  echo getHydrameta(get_the_ID(),'hf_property_2_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php 
 				$num = getHydrameta(get_the_ID(),'hf_property_2bedroomprice');
 				$ext="";
@@ -374,7 +374,7 @@ jQuery(function(){
 								<li class="<?php echo $gas_line_fade;?>">Gas Line</li>
 								<li class="<?php echo $power_backup_fade;?>">Power Backup</li>
 								<li class="<?php echo $wooden_fade;?>">Wooden Floor</li>
-								<li class="">&nbsp;</li>
+								<!--<li class="">&nbsp;</li>-->
 							</ul>
 						</div>
 					</div>
@@ -428,9 +428,9 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>3 BedRoom Apartment</h3>
-				<p class="room-bto1"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="room-bto1"> <?php the_title(); ?> <?php  echo getHydrameta(get_the_ID(),'hf_property_3_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i> <?php 
-				$num = getHydrameta(get_the_ID(),'hf_property_4bedroomprice');
+				$num = getHydrameta(get_the_ID(),'hf_property_3bedroomprice');
 				$ext="";
 				$number_of_digits = count_digit($num); 
 				if($number_of_digits>3)
@@ -492,7 +492,7 @@ jQuery(function(){
 								<li class="<?php echo $gas_line_fade;?>">Gas Line</li>
 								<li class="<?php echo $power_backup_fade;?>">Power Backup</li>
 								<li class="<?php echo $wooden_fade;?>">Wooden Floor</li>
-								<li class="">&nbsp;</li>
+								<!--<li class="">&nbsp;</li>-->
 							</ul>
 
 						</div>
@@ -546,9 +546,9 @@ jQuery(function(){
 
 			<div class="col-md-12 text-center mr_50">
 				<h3>4 BedRoom Apartment</h3>
-				<p class="cate_cont room-bto2"> <?php the_title(); ?> is a beyond lifestyle apartment scheme having equal focus on spaces like interior space, private space & community space. It is indeed a place to taste, smell, touch, see and feel luxury everywhere, just like living with ultra sophistication and pure refinement.</p>
+				<p class="cate_cont room-bto2"> <?php the_title(); ?> <?php  echo getHydrameta(get_the_ID(),'hf_property_4_bhk_description'); ?></p>
 				<div class="price_right"><i class="fa fa-inr fa-1x"></i><?php 
-				$num = getHydrameta(get_the_ID(),'hf_property_3bedroomprice');
+				$num = getHydrameta(get_the_ID(),'hf_property_4bedroomprice');
 				$ext="";
 				$number_of_digits = count_digit($num); 
 				if($number_of_digits>3)
@@ -610,7 +610,7 @@ jQuery(function(){
 								<li class="<?php echo $gas_line_fade;?>">Gas Line</li>
 								<li class="<?php echo $power_backup_fade;?>">Power Backup</li>
 								<li class="<?php echo $wooden_fade;?>">Wooden Floor</li>
-								<li class="">&nbsp;</li>
+								<!--<li class="">&nbsp;</li>-->
 							</ul>
 						</div>
 					</div>
@@ -1202,18 +1202,26 @@ jQuery(function(){
 <div class="col-md-3 left_interested">
 	<h3>I'M INTERESTED</h3>
 	<div class="cont_deep">
-		<div class="col-md-4 col-xs-4"><img src="<?php bloginfo('template_directory')?>/images/since_logo.png" alt=" " class="img-responsive"></div>
+		<div class="col-md-4 col-xs-4">
+			<!--<img src="<?php /*bloginfo('template_directory')*/?>/images/since_logo.png" alt=" " class="img-responsive">-->
+
+			<?php 	//$image = get_field('developer_image');
+			if( !empty($imageurl) ): ?>
+				<img class="img-responsive" src="<?php echo $imageurl; ?>" alt="<?php echo $imagealt; ?>" />
+			<?php 	endif; ?>
+
+		</div>
 		<div class="col-md-8 col-xs-8 text-center">
-			<h4>Contact Deep Group</h4>
-			<h6>079-26446232-33</h6>
-			<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>
+			<h4>Contact <?php echo getHydrameta(get_the_ID(),'hf_property_developer_name'); ?></h4>
+			<h6><?php echo getHydrameta(get_the_ID(),'hf_property_developer_contact_no'); ?></h6>
+			<!--<p>Sold exclusively by Hiranandani without the intervention of any third party.</p>-->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 
 	<div class="cont_deep_form">
-			<?php $contact_value = get_field('contact_form_shortcode')?>
-			<?php echo do_shortcode($contact_value)?>
+			<?php $contact_value = get_field('contact_form_shortcode'); ?>
+			<?php echo do_shortcode($contact_value); ?>
 	</div>
 
 	<div class="share_pro">
