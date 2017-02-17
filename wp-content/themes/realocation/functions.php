@@ -763,6 +763,8 @@ function jquery_remove_counts()
 
         jQuery("div#hf-property-contact-form-shortcode").hide();
 
+        jQuery("div#setting-error-tgmpa").hide();
+
 	});
 
     jQuery(document).on("click",".hydra-delete-image",function(){
