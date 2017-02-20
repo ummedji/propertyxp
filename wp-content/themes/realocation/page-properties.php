@@ -28,9 +28,6 @@ unset($_SESSION["selected_city_id1"]);
 unset($_SESSION["selected_subloc1"]);
 unset($_SESSION["selected_subloc_id1"]);
 
-unset($_SESSION["parent_selected_location_id"]);
-unset($_SESSION["selected_location_id"]);
-
 if(isset($_GET["hf_property_location_filter"])) {
 
     $properties_horizontal = hydra_form_filter('properties_horizontal');
@@ -212,6 +209,8 @@ if(isset($_GET["hf_property_location_filter"])) {
     //    print_r($query_args);
     }
 
+    unset($_SESSION["parent_selected_location_id"]);
+    unset($_SESSION["selected_location_id"]);
 }
 
 //print_r($_SESSION);
@@ -373,6 +372,9 @@ if(isset($_GET["hf_property_location_filter_1"])) {
 
         }
     }
+
+    unset($_SESSION["parent_selected_location_id"]);
+    unset($_SESSION["selected_location_id"]);
 
 }
 
