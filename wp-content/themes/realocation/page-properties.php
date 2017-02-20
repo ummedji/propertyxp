@@ -472,6 +472,10 @@ if($fullwidth) {
 
 <?php get_header(); ?>
 
+<script type="text/javascript">
+    jQuery("div#csbwfs-social-widget").remove();
+</script>
+
 
     <div id="main-content" class="<?php if ( is_active_sidebar( 'sidebar-1' ) && !aviators_settings_get('property', get_the_ID(), 'disable_sidebar') ) : ?>col-md-9 col-sm-9<?php else : ?>col-md-12 col-sm-12<?php endif; ?>">
 		<div class="col-md-12 text-center tlt-wt-margn"><h1 class="center">HOT PROPERTIES</h1></div>
