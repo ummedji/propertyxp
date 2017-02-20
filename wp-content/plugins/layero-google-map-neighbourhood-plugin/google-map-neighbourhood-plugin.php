@@ -308,7 +308,7 @@ citymap['Ahmedabad'] = {
     content += '<table>';
     content += '<tr class="iw_table_row">';
     content += '<td style="text-align: right"><img class="hotelIcon" src="' + place.icon + '"/></td>';
-    content += '<td><b><a href="' + place.url + '">' + place.name + '</a></b></td></tr>';
+    content += '<td><b><a target="_blank" href="' + place.url + '">' + place.name + '</a></b></td></tr>';
     content += '<tr class="iw_table_row"><td class="iw_attribute_name">Address:</td><td>' + place.vicinity + '</td></tr>';
     if (place.formatted_phone_number) {
       content += '<tr class="iw_table_row"><td class="iw_attribute_name">Telephone:</td><td>' + place.formatted_phone_number + '</td></tr>';      
@@ -331,7 +331,7 @@ citymap['Ahmedabad'] = {
         website = 'http://' + place.website + '/';
         fullUrl = website;
       }
-      content += '<tr class="iw_table_row"><td class="iw_attribute_name">Website:</td><td><a href="' + fullUrl + '">' + website + '</a></td></tr>';
+      content += '<tr class="iw_table_row"><td class="iw_attribute_name">Website:</td><td><a target="_blank" href="' + fullUrl + '">' + website + '</a></td></tr>';
     }
     content += '</table>';
     return content;
