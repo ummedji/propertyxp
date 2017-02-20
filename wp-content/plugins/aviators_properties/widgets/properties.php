@@ -92,6 +92,8 @@ class Properties_Widget extends Aviators_Widget {
 
         }
 
+     //   echo "UMMED SINGH";die;
+
         query_posts($query_args);
         if (more_posts()) {
             echo $before_widget;

@@ -51,8 +51,8 @@ jQuery(document).ready(function() {
                 <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Please select a lunch ...">
 				<option value="0">Select City</option>
 				<?php foreach($cityarr as $city) {  
-				if($getcurrentcity == $city->term_id) { 
-				$select = 'selected'; } else { $select = ''; } 
+				if($_SESSION["selected_location_id"] == $city->term_id) {
+				$select = 'selected'; } else { $select = ''; }
 				?>
 				 <option value="<?php echo $city->term_id; ?>" <?php echo $select; ?>><?php echo '<a href="'.get_bloginfo('url').'/properties/?hf_property_location_filter%5Bitems%5D%5B0%5D%5Bcountry%5D='.$term->term_id.'&submit=Search">' . $city->name . '</a>'; ?></option>
 				<?php } ?>

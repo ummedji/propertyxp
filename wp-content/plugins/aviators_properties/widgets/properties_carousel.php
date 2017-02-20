@@ -41,17 +41,48 @@ class PropertiesCarousel_Widget extends WP_Widget {
             $style = 'style="background-image: url(' . $image_url . ');"';
         }
 
+      //  echo "<pre>";
+      //  print_r($_SESSION);
+
 
         $query = array(
             'post_type' => 'property',
         );
 
         if (isset($instance['property_ids']) && !empty($instance['property_ids'])) {
+         //   echo "111";
             $query['post__in'] = explode(',',$instance['property_ids']);
         }
         else {
 
-            if(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == "") {
+          //  echo "222";
+
+            if(isset($_SESSION["parent_selected_location_id"]) && $_SESSION["parent_selected_location_id"] != "" && isset($_SESSION["selected_location_id"]) && $_SESSION["selected_location_id"] != ""){
+
+                if(isset($_SESSION["selected_location_id"]) && $_SESSION["selected_location_id"] != ""){
+                   // echo "555";
+                    $query['meta_query'][] = array(
+                        'key' => '_%_location',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_location_id"]
+                    );
+                }
+
+                if(isset($_SESSION["parent_selected_location_id"]) && $_SESSION["parent_selected_location_id"] != ""){
+                  //  echo "666";
+                    $query['meta_query'][] = array(
+                        'key' => '_%_country',
+                        'compare' => '=',
+                        'value' => $_SESSION["parent_selected_location_id"]
+                    );
+
+                }
+
+
+            }
+            elseif(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == "") {
+
+              //  echo "333";
 
                 if (isset($instance['types']) && $instance['types']) {
                     $query['tax_query'] = array(
@@ -65,7 +96,9 @@ class PropertiesCarousel_Widget extends WP_Widget {
             else
             {
 
+                //echo "444";
                 if(isset($_SESSION["selected_city_id1"]) && $_SESSION["selected_city_id1"] != ""){
+                    //echo "555";
                     $query['meta_query'][] = array(
                         'key' => '_%_location',
                         'compare' => '=',
@@ -112,8 +145,8 @@ class PropertiesCarousel_Widget extends WP_Widget {
             }
         }
 
-       // echo "<pre>";
-      //  print_r($query);
+     //   echo "UMMED<pre>";
+     //   print_r($query);
 
 
         query_posts($query);

@@ -19,7 +19,32 @@ class PropertiesSlider_Widget extends Aviators_Widget {
 
         if (!$instance['property_ids']) {
 
-            if(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == ""){
+            if(isset($_SESSION["parent_selected_location_id"]) && $_SESSION["parent_selected_location_id"] != "" && isset($_SESSION["selected_location_id"]) && $_SESSION["selected_location_id"] != "")
+            {
+
+                if(isset($_SESSION["selected_location_id"]) && $_SESSION["selected_location_id"] != ""){
+                    // echo "555";
+                    $query_args['meta_query'][] = array(
+                        'key' => '_%_location',
+                        'compare' => '=',
+                        'value' => $_SESSION["selected_location_id"]
+                    );
+                }
+
+                if(isset($_SESSION["parent_selected_location_id"]) && $_SESSION["parent_selected_location_id"] != ""){
+                    //  echo "666";
+                    $query_args['meta_query'][] = array(
+                        'key' => '_%_country',
+                        'compare' => '=',
+                        'value' => $_SESSION["parent_selected_location_id"]
+                    );
+
+                }
+
+                $slides = query_posts($query_args);
+
+            }
+            elseif(!isset($_SESSION["selected_cou_id1"]) && $_SESSION["selected_cou_id1"] == ""){
 
                 // taxonomy contract types
                 if (isset($instance['contract_types']) && $instance['contract_types']) {
@@ -74,9 +99,6 @@ class PropertiesSlider_Widget extends Aviators_Widget {
 
             }
             else{
-
-               // echo "bbbb";die;
-
 
                 if(isset($_SESSION["selected_city_id1"]) && $_SESSION["selected_city_id1"] != ""){
                     $query_args['meta_query'][] = array(
@@ -146,7 +168,6 @@ class PropertiesSlider_Widget extends Aviators_Widget {
      //   print_r($_SESSION);
       //  print_r($query_args);
 
-//echo "DATA HERE";
 
       //  echo $wpdb->last_query;
 

@@ -28,6 +28,9 @@ unset($_SESSION["selected_city_id1"]);
 unset($_SESSION["selected_subloc1"]);
 unset($_SESSION["selected_subloc_id1"]);
 
+unset($_SESSION["parent_selected_location_id"]);
+unset($_SESSION["selected_location_id"]);
+
 if(isset($_GET["hf_property_location_filter"])) {
 
     $properties_horizontal = hydra_form_filter('properties_horizontal');
@@ -208,6 +211,7 @@ if(isset($_GET["hf_property_location_filter"])) {
     //    echo "HORIZONTAL FILTER<pre>";
     //    print_r($query_args);
     }
+
 }
 
 //print_r($_SESSION);
@@ -367,9 +371,9 @@ if(isset($_GET["hf_property_location_filter_1"])) {
             $_SESSION["min_range"] = $query_args["meta_query"][3]["value"];
             $_SESSION["max_range"] = $query_args["meta_query"][2]["value"];
 
-
         }
     }
+
 }
 
 if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_header_location_filter"] != ""){
@@ -401,7 +405,6 @@ if(isset($_GET["hf_property_header_location_filter"]) && $_GET["hf_property_head
     unset($_SESSION["selected_cou"]);
     unset($_SESSION["selected_subloc_id"]);
     unset($_SESSION["selected_subloc"]);
-
 
 }
 
@@ -616,8 +619,8 @@ if(isset($_SESSION["selected_subloc_id1"])) {
                 <?php //while (have_posts()) : the_post(); ?>
                 <?php
 
-             //   echo "<pre>";
-             //   print_r($pageposts);
+            //    echo "<pre>";
+            //    print_r($_SESSION);
 
                 foreach($pageposts as $key=>$propertydata){
                     $postid = $propertydata->ID;
