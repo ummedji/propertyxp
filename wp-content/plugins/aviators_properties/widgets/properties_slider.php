@@ -171,7 +171,7 @@ class PropertiesSlider_Widget extends Aviators_Widget {
 
       //  echo $wpdb->last_query;
 
-        //echo "<pre>";
+       // echo "<pre>";
        // print_r($slides);
 
         if (!count($slides)) {

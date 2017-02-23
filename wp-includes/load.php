@@ -350,6 +350,8 @@ function require_wp_db() {
 		return;
 
 	$wpdb = new wpdb( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST );
+
+	//echo "<pre>";print_r($wpdb);die;
 }
 
 /**

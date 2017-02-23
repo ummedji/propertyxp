@@ -1,0 +1,7 @@
+::::: fearsafe.com :::: 
+device to server url =>http://fearsafe.com/devicetoserver.php
+server to device url =>http://fearsafe.com/index.php/users/servertodevice/device_id/9
+
+::::: webclues :::: 
+device to server url =>http://webcluesglobal.com/qa/fearsafe/devicetoserver.php
+server to device url =>http://webcluesglobal.com/qa/fearsafe/index.php/users/servertodevice/device_id/9

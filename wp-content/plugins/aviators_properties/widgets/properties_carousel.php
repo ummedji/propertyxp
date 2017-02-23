@@ -37,9 +37,9 @@ class PropertiesCarousel_Widget extends WP_Widget {
         $classes_variables = array($background_color, $fullwidth, $padding);
         $classes = implode(' ', $classes_variables);
         $style = "";
-        if ($image_url) {
+     /*   if ($image_url) {
             $style = 'style="background-image: url(' . $image_url . ');"';
-        }
+        }*/
 
       //  echo "<pre>";
       //  print_r($_SESSION);
@@ -145,11 +145,13 @@ class PropertiesCarousel_Widget extends WP_Widget {
             }
         }
 
-     //   echo "UMMED<pre>";
-     //   print_r($query);
+      //  echo "UMMED<pre>";
+      //  print_r($query);
 
 
         query_posts($query);
+
+      //  print_r($d);
         echo $before_widget;
         include 'templates/properties_carousel.php';
         echo $after_widget;

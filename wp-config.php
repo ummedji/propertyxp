@@ -54,6 +54,7 @@ else{
 /** MySQL hostname */
 //define('DB_HOST', '192.168.1.245');
 
+//define('WP_ALLOW_REPAIR', true);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
