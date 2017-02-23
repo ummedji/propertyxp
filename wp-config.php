@@ -38,10 +38,16 @@ define('DB_HOST', '192.168.1.245');
 }
 else{
     
-    define('DB_NAME', 'ab95976_pxp');
+    /*define('DB_NAME', 'ab95976_pxp');
     define('DB_USER', 'ab95976_pxp');
     define('DB_PASSWORD', 'as*yX=7wwv9$');
-    define('DB_HOST', 'ftp.webcluesglobal.com');
+    define('DB_HOST', 'ftp.webcluesglobal.com');*/
+
+    define('DB_NAME', 'wcg_propertyxp');
+    define('DB_PASSWORD', 'Bynq341!');
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'wcg_propertyxp');
+
 }
 //define('DB_NAME', 'property_proxp_new');
 
