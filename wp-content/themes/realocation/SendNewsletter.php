@@ -18,3 +18,4 @@ $body = $results[0]->body;
 $res = wp_mail( $multiple_recipients, $subj, $body,$headers );
 echo $res;
 die;
+exit;
