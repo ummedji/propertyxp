@@ -858,11 +858,25 @@ function jquery_send_newsletter(){
                          
                          // CALL AJAX TO SEND NEWS LETTER
                          var url = "<?php echo site_url(); ?>";
-                         jQuery.post(url+"/send-newsletter",{user_lead : user_lead_array,newsletter:selected_newsletter},function(response){
+                         /*jQuery.post(url+"/send-newsletter",{user_lead : user_lead_array,newsletter:selected_newsletter},function(response){
                              
                              jQuery("div.error_message").append("<span style='color:green;'>Newsletter Send Successfully.</span></br></br>");
                              
+                         });*/
+
+                         jQuery.ajax({
+
+                             type: "POST",
+                             url: "<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php", // our PHP handler file
+                             data: {action: "get_sendnewsletter_data", user_lead: user_lead_array, newsletter:selected_newsletter},
+                             success: function (results) {
+                                 jQuery("div.error_message").append("<span style='color:green;'>Newsletter Send Successfully.</span></br></br>");
+                             }
                          });
+
+
+
+
                      }
                      else{
                          
@@ -1486,3 +1500,24 @@ function enqueue_media_uploader()
 }
 
 add_action("admin_enqueue_scripts", "enqueue_media_uploader");
+
+function get_sendnewsletter_data(){
+
+    global $wpdb;
+
+    $multiple_recipients = $_POST["user_lead"];
+    $newsletter_id = $_POST["newsletter"];
+
+    $query = "SELECT * from  wp_wysija_email where email_id = ".$newsletter_id;
+    $results = $wpdb->get_results($query, OBJECT );
+
+    $headers = array('Content-Type: text/html; charset=UTF-8','From: WebcluesAdmin <webclues.admn@gmail.com');
+    $subj = $results[0]->subject;
+    $body = $results[0]->body;
+    $res = wp_mail( $multiple_recipients, $subj, $body,$headers );
+    echo $res;
+    die;
+}
+
+add_action('wp_ajax_get_sendnewsletter_data', 'get_sendnewsletter_data');
+add_action('wp_ajax_nopriv_get_sendnewsletter_data', 'get_sendnewsletter_data');
