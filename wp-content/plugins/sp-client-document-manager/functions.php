@@ -1099,13 +1099,13 @@ $im->destroy();
   });
   </script>
 <form action="admin.php?page=sp-client-document-manager" method="post">
-<table class="wp-list-table widefat fixed posts" cellspacing="0" style="margin:20px 0px">
+<!--<table class="wp-list-table widefat fixed posts" cellspacing="0" style="margin:20px 0px">
 <tr><td style="width:70px">
 <strong>Show</strong> <br><input style="width:50px"type="text" name="cdm_limit" value="'.get_option('cdm_admin_listings_limit', 15).'">  </td><td style="width:170px"><label for="from"><strong>From</strong></label>
 <br><input type="text" id="from" name="from" value="'.$_POST['from'].'"></td><td style="width:170px">
 <label for="to"><strong>to</strong></label><br>
 <input type="text" id="to" name="to"  value="'.$_POST['to'].'"></td><td><input style="margin-top:20px;" type="submit" value="Show" name="limit">
-</td></tr></table>
+</td></tr></table> -->
 </form>';
 			}
             if ($r == FALSE) {
@@ -1277,7 +1277,7 @@ $html .='<input type="hidden" name="action" value="cdm_email_vendor">'.wp_nonce_
 
 			<div id="updateme"></div>
 
-				' . __("Choose  the files you want to send above, type a message and choose a vendor then click submit:", "sp-cdm") . '  <select name="vendor">
+				' . '
 
 				';
                 if ($_POST['submit-vendor'] != "") {
@@ -1286,9 +1286,9 @@ $html .='<input type="hidden" name="action" value="cdm_email_vendor">'.wp_nonce_
                 $vendors = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "options   where option_name  LIKE 'sp_client_upload_vendors%'  order by option_name", ARRAY_A);
                 for ($i = 0; $i < count($vendors); $i++) {
                     $vendor_info[$i] = unserialize($vendors[$i]['option_value']);
-                    $html .= '<option value="' . $vendor_info[$i]['email'] . '">' . $vendor_info[$i]['name'] . '</option>';
+
                 }
-                $html .= '</select> ' . __("Message:", "sp-cdm") . ' <input type="text" name="vendor-message"> <select name="vendor_attach"><option value="1">' . __("Attach to email:", "sp-cdm") . ' </option><option value="0">' . __("Send links to files", "sp-cdm") . ' </option><option value="3">' . __("Attach and link to to files", "sp-cdm") . ' </option></select> <input type="submit" name="submit-vendor" value="' . __("Email vendor files!", "sp-cdm") . '" onclick="sp_client_upload_email_vendor();return false;"> 
+                $html .= '
 
 				</div>
 
