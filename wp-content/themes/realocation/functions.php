@@ -1521,3 +1521,45 @@ function get_sendnewsletter_data(){
 
 add_action('wp_ajax_get_sendnewsletter_data', 'get_sendnewsletter_data');
 add_action('wp_ajax_nopriv_get_sendnewsletter_data', 'get_sendnewsletter_data');
+
+
+add_action( 'admin_footer', 'my_action_javascript' ); // Write our JS below here
+
+function my_action_javascript() { ?>
+    <script type="text/javascript" >
+        jQuery(document).ready(function($) {
+
+            var user_uid= jQuery("select#user_uid").val();
+            var data = {
+                'action': 'my_action',
+                'useruid': user_uid
+            };
+
+            jQuery.post(ajaxurl, data, function(response) {
+
+                if(response != "administrator") {
+                    jQuery("#user_uid").prop("disabled", "disabled");
+                }else{
+                    jQuery("#user_uid").prop("disabled", false);
+                }
+            });
+        });
+    </script> <?php
+}
+
+
+add_action( 'wp_ajax_my_action', 'my_action' );
+
+function my_action() {
+global $wpdb; // this is how you get access to the database
+
+$useruid = $_POST['useruid'];
+
+    $user = new WP_User( $useruid );
+
+    foreach ( $user->roles as $role )
+        echo $role;
+die;
+
+wp_die(); // this is required to terminate immediately and return a proper response
+}
