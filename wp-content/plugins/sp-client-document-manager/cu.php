@@ -4,7 +4,7 @@ Plugin Name: SP Project & Document Manager
 Plugin URI: http://smartypantsplugins.com/
 Description: A WordPress plug-in that allows your business manage documents and projects with permissions in an easy to use interface.
 Author: smartypants
-Version: 2.6.6.0
+Version: 2.6.6.1
 Text Domain: sp-cdm
 Author URI: http://smartypantsplugins.com
 */
@@ -12,7 +12,7 @@ Author URI: http://smartypantsplugins.com
 
 
 global $sp_client_upload;
-$sp_client_upload = "2.6.6.0";
+$sp_client_upload = "2.6.6.1";
 
 #@error_reporting(E_ERROR | E_WARNING | E_PARSE); 
 
@@ -308,28 +308,28 @@ function sp_client_upload_menu()
     $sp_cdm_fileview = new sp_cdm_fileview;
 
     add_menu_page('Documents', 'Documents', 'sp_cdm', 'sp-client-document-manager', 'sp_client_upload_options','dashicons-media-default');
-  //  add_submenu_page('sp-client-document-manager', sp_cdm_folder_name(1), sp_cdm_folder_name(1), 'sp_cdm_projects', 'sp-client-document-manager-projects', array(
-   //     $projects,
-  //      'view'
-  //  ));
+    add_submenu_page('sp-client-document-manager', sp_cdm_folder_name(1), sp_cdm_folder_name(1), 'sp_cdm_projects', 'sp-client-document-manager-projects', array(
+        $projects,
+        'view'
+    ));
 
-//	add_submenu_page('sp-client-document-manager', 'Vendors', 'Vendors', 'sp_cdm_vendors', 'sp-client-document-manager-vendors', 'sp_client_upload_options_vendors');
-  //  add_submenu_page('sp-client-document-manager', 'Help', 'Help', 'sp_cdm_help', 'sp-client-document-manager-help', 'sp_client_upload_help');
+	add_submenu_page('sp-client-document-manager', 'Vendors', 'Vendors', 'sp_cdm_vendors', 'sp-client-document-manager-vendors', 'sp_client_upload_options_vendors');
+    add_submenu_page('sp-client-document-manager', 'Help', 'Help', 'sp_cdm_help', 'sp-client-document-manager-help', 'sp_client_upload_help');
     add_submenu_page('sp-client-document-manager', 'Settings', 'Settings', 'sp_cdm_settings', 'sp-client-document-manager-settings', 'sp_client_upload_settings');
     
-   // add_submenu_page('sp-client-document-manager', 'User Files', 'User Files', 'sp_cdm_uploader', 'sp-client-document-manager-fileview', array(
-  //      $sp_cdm_fileview,
-  //      'view'
-  //  ));
+    add_submenu_page('sp-client-document-manager', 'User Files', 'User Files', 'sp_cdm_uploader', 'sp-client-document-manager-fileview', array(
+        $sp_cdm_fileview,
+        'view'
+    ));
 	
 	
 	do_action('sp_cu_admin_menu');
 	
 	 if (current_user_can('sp_cdm_show_folders_as_nav')) {
-//	add_menu_page('Folders', 'Folders', 'sp_cdm_show_folders_as_nav', 'sp-client-document-manager-projects',array(
- //       $projects,
- //       'view'
- //   ),'dashicons-portfolio');
+	add_menu_page('Folders', 'Folders', 'sp_cdm_show_folders_as_nav', 'sp-client-document-manager-projects',array(
+        $projects,
+        'view'
+    ),'dashicons-portfolio');	 
 	 }
 	
 }

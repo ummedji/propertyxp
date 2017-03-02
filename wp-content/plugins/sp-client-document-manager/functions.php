@@ -880,12 +880,12 @@ $im->destroy();
             }
             if (current_user_can('sp_cdm_settings')) {
                 $content .= '<li><a href="admin.php?page=sp-client-document-manager-settings" >' . __("Settings", "sp-cdm") . '</a><ul>';
-				   // $content .= '<li><a href="admin.php?page=sp-client-document-manager-settings" >' . __("Global Settings", "sp-cdm") . '</a></li>';
+				    $content .= '<li><a href="admin.php?page=sp-client-document-manager-settings" >' . __("Global Settings", "sp-cdm") . '</a></li>';
                 if (current_user_can('sp_cdm_vendors')) {
-                    //$content .= '<li><a href="admin.php?page=sp-client-document-manager-vendors" >' . __("Vendors", "sp-cdm") . '</a></li>';
+               //     $content .= '<li><a href="admin.php?page=sp-client-document-manager-vendors" >' . __("Vendors", "sp-cdm") . '</a></li>';
                 }
                 if (current_user_can('sp_cdm_projects')) {
-                   // $content .= '<li><a href="admin.php?page=sp-client-document-manager-projects" >' .sp_cdm_folder_name(1) . '</a></li>';
+                 //   $content .= '<li><a href="admin.php?page=sp-client-document-manager-projects" >' .sp_cdm_folder_name(1) . '</a></li>';
                 }
 					
                 if (@CU_PREMIUM == 1) {
@@ -904,8 +904,7 @@ $im->destroy();
                 $content .= '' . $extra_menus . '</ul></li>';
             }
             if (current_user_can('sp_cdm_uploader')) {
-                $content .= '<li><a href="admin.php?page=sp-client-document-manager-fileview&id='.get_current_user_id().'" >
-' . __("User Files / Uploader", "sp-cdm") . '</a></li>
+                $content .= '<li><a href="admin.php?page=sp-client-document-manager-fileview&id='.get_current_user_id().'" >' . __("User Files / Uploader", "sp-cdm") . '</a></li>
 
 			';
             }
@@ -1064,20 +1063,12 @@ $im->destroy();
                 echo '<h2>' . __("User Uploads", "sp-cdm") . '</h2><a name="downloads"></a>';
                 $r             = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where uid = $user_id  and parent = 0 order by date desc", ARRAY_A);
                 $delete_page   = 'user-edit.php?user_id=' . $user_id . '';
-
                
             } else {
-
-            //    echo $user_id;
-            $user_data = get_current_user_id();
 				
-             //   $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where   parent = 0 ".$search." order by id desc LIMIT ".$limit."", ARRAY_A);
-
-                $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where   uid = $user_data AND  parent = 0 ".$search." order by id desc LIMIT
-".$limit."", ARRAY_A);
+                $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where  parent = 0 ".$search." order by id desc LIMIT ".$limit."", ARRAY_A);
             
                 $delete_page   = 'admin.php?page=sp-client-document-manager';
-
               
             }
 			

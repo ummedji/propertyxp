@@ -662,7 +662,7 @@ $info = new SplFileInfo($file);
 			   }
               
 				
-                add_user_meta($user_ID, 'last_project', $a['pid']);
+                add_user_meta($user_ID, 'last_project', $a['pid'],true);
                 if (@CU_PREMIUM == 1) {
                     process_sp_cdm_form_vars($data['custom_forms'], $file_id);
                 }

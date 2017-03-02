@@ -488,6 +488,28 @@ function cdm_file_size($file)
       return $filesize = 'Unknown file size';}
    else{return round($filesize, 2).' '.$type;}
 }
+function cdm_get_folder_tree($pid,$projects = array()){
+			global $wpdb;
+		
+		
+		global $wpdb;
+		$r = $wpdb->get_results($wpdb->prepare("SELECT * FROM " . $wpdb->prefix . "sp_cu_project WHERE  parent = %d", $pid), ARRAY_A);
+		
+		if($r != false){
+			
+		 for ($i = 0; $i < count($r); $i++) {
+			 
+			$projects[$r[$i]['id']] =  $r[$i]['id'];
+			$projects = cdm_get_folder_tree($r[$i]['id'],$projects);
+		 }
+		 
+		 
+			
+		}
+		
+		return $projects;
+			
+		}
 
 function cdm_file_permissions($pid){
 			global $wpdb, $current_user;
@@ -495,6 +517,8 @@ function cdm_file_permissions($pid){
 		
 				
 				$pid = apply_filters('cdm/file_permissions', $pid);
+				$parent = findRootParent($pid);
+				$parent_tree = cdm_get_folder_tree($parent);
 				
 				$uid = $current_user->ID;
 				//if an admin
@@ -580,6 +604,8 @@ function cdm_file_permissions($pid){
 											  
 										   }
 									   }
+					
+					
 											
 							
 							  //end roles permission
@@ -636,13 +662,46 @@ function cdm_file_permissions($pid){
 		
 		return $permission;
 	}
+
+
+function cdm_contains_viewable($pid){
 	
+	$show = 0;
+	
+	
+	$viewable = array();
+	
+	$viewable = cdm_get_folder_tree($pid);
+	$viewable[] = $pid;
+
+			if(count($viewable)>0){
+				
+				foreach($viewable as $vid){
+				
+				if(cdm_folder_permissions($vid) == 1){
+				$show = 1;	
+				}	
+					
+				}
+				
+			}
+	
+	
+	return $show;
+	
+}
 
 function cdm_folder_permissions($pid){
 			global $wpdb, $current_user;
 			$permission = 0;
+			
 			$opid  = $pid;
 			$pid = apply_filters('cdm/file_permissions', $pid);
+			
+				$parent = findRootParent($pid);
+				$parent_tree = array();
+				$parent_tree = cdm_get_folder_tree($parent);
+			
 				$uid = $current_user->ID;
 				
 				//if an admin
@@ -714,9 +773,11 @@ function cdm_folder_permissions($pid){
 							  
 							  
 							  //check roles permission
-							     $folder_perm_roles =sp_cdm_groups_addon_projects::get_permissions('' .$sp_cdm_groups_perm->namesake . '_role_permission_add_' . $pid . '');
+							     $folder_perm_roles =sp_cdm_groups_addon_projects::get_permissions('' .$sp_cdm_groups_perm->namesake . '_role_permission_' . $pid . '');
+								
+								
 								$user_roles = $current_user->roles;
-							
+								
 	 			 				 if(count($user_roles) > 0){
 										   foreach ($user_roles as $key =>$role) {
 											 
@@ -726,8 +787,41 @@ function cdm_folder_permissions($pid){
 											  
 										   }
 									   }
-	 
-	 		  
+	 		
+			
+		/*
+				if(count($parent_tree)>0){
+					$total = count($parent_tree);
+					foreach($parent_tree as $tree){
+				
+					$parent_look .= ' OR option_name = "' .$sp_cdm_groups_perm->namesake . '_role_permission_'.$tree.'" ';	
+						
+					}
+					
+					  $query = "SELECT * FROM  " . $wpdb->prefix . "options  
+	   									   WHERE (option_value = 'null' ".$parent_look.")";
+							
+	  						  $parent_lookup = $wpdb->get_results($query, ARRAY_A);
+				
+						if($parent_lookup != false && count($parent_lookup) >0){
+								 for ($i = 0; $i < count( $parent_lookup); $i++) {
+										unset($roles_array);
+										$roles_array = unserialize(unserialize( $parent_lookup[$i]['option_value']));
+										
+										foreach ($user_roles as $key =>$role) {
+											
+											if (@in_array($role, $roles_array)) {
+												
+												  $permission = 1;
+										}	
+											
+										}
+										
+								}
+						}
+				}
+				
+	 				*/
 							  //end roles permission
 						      $folder_perm =sp_cdm_groups_addon_projects::get_permissions('sp_cdm_groups_addon_groups_permission_add_' . $pid . '');
 						
@@ -796,7 +890,7 @@ function cdm_folder_permissions($pid){
 				//is part of premium group
 		
 				if($pid == 0 or $pid == ''){
-				#	$permission = 1;
+				$permission = 1;
 					
 				}
 			if($permission != 1){		
@@ -806,6 +900,7 @@ function cdm_folder_permissions($pid){
 			if(current_user_can('manage_options')){
 				$permission = 1;	
 				}	
+				
 		return $permission;
 	}
 function cdm_delete_permission($pid){

@@ -4,7 +4,7 @@ Donate link: http://smartypantsplugins.com/donate/
 Tags: document manager, file manager, document management, file uploads, records manager, customer file manager, project management, file sharing, Dropbox importer, Google Drive importer, enterprise document control, Distribution, Retrieval & storage, Versioning, Productivity
 Requires at least: 4.0
 Tested up to: 4.7.2
-Stable tag: 2.6.6.0
+Stable tag: 2.6.6.1
 
 Project & Document  Manager. file sharing & management tool to upload, share, track, group, distribute & organize any type of document.
 
