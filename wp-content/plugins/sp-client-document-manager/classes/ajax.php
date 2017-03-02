@@ -240,7 +240,7 @@ jQuery(function($) {
                 $img = '<img src="' . SP_CDM_PLUGIN_URL . 'images/package_labled.png">';
             } else {
 
-                $img = SP_CDM_UPLOADS_DIR_URL."/".$r[0]['uid']."/".$r[0]['file'].'<img UMMED src="' . sp_cdm_thumbnail('' . SP_CDM_UPLOADS_DIR_URL . '' . $r[0]['uid'] . '/' . $r[0]['file'] . '', 250) . '">';
+                $img = '<img  src="' . sp_cdm_thumbnail('' . SP_CDM_UPLOADS_DIR_URL . '' . $r[0]['uid'] . '/' . $r[0]['file'] . '', 250) . '">';
             }
         } elseif ($ext == 'xls' or $ext == 'xlsx') {
             $img = '<img src="' . SP_CDM_PLUGIN_URL . 'images/microsoft_office_excel.png">';
