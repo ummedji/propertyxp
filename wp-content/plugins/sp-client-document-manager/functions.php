@@ -1065,9 +1065,14 @@ $im->destroy();
                 $delete_page   = 'user-edit.php?user_id=' . $user_id . '';
                
             } else {
+
+                $user_data = get_current_user_id();
 				
-                $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where  parent = 0 ".$search." order by id desc LIMIT ".$limit."", ARRAY_A);
-            
+              //  $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where  parent = 0 ".$search." order by id desc LIMIT ".$limit."", ARRAY_A);
+
+                $r = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "sp_cu   where   uid = $user_data AND  parent = 0 ".$search." order by id desc LIMIT
+".$limit."", ARRAY_A);
+                
                 $delete_page   = 'admin.php?page=sp-client-document-manager';
               
             }
