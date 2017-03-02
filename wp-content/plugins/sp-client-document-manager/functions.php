@@ -1165,7 +1165,7 @@ $html .='<input type="hidden" name="action" value="cdm_email_vendor">'.wp_nonce_
 
 <th>' . __("Download", "sp-cdm") . '</th>
 
-<th>' . __("Email", "sp-cdm") . '</th>
+
 
 </tr>
 
@@ -1259,7 +1259,8 @@ $html .='<input type="hidden" name="action" value="cdm_email_vendor">'.wp_nonce_
 
     <td><a style="margin-right:15px" href="javascript:cdmViewFile(' . $r[$i]['id'] . ')" >' . __("View", "sp-cdm") . '</a> <a href="' . $delete_page . '&dlg-delete-file=' . $r[$i]['id'] . '#downloads">' . __("Delete", "sp-cdm") . '</a> </td>
 
-<td><input type="checkbox" name="vendor_email[]" value="' . $r[$i]['id'] . '"></td>	</tr>
+
+	</tr>
 
 
 
