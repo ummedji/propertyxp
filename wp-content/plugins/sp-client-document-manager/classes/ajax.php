@@ -265,6 +265,9 @@ jQuery(function($) {
         }
 		
 		$img = apply_filters('sp_cdm_viewfile_image', $img,$r[0]);
+
+	//	var_dump($img);
+
         $file_info .= '
 
 				

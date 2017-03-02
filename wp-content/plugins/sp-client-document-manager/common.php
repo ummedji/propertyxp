@@ -1354,7 +1354,10 @@ function sp_uploadFile($files, $history = NULL){
 
 			$dir = ''.SP_CDM_UPLOADS_DIR.''.$user_ID.'/';
  if (!is_dir($dir)) {
-            mkdir($dir, 0777);
+            //mkdir($dir, 0777);
+			 $oldmask = umask(0);
+			 mkdir($dir, 0777);
+			 umask($oldmask);
         }
 			$count = sp_array_remove_empty($files['dlg-upload-file']['name']);
 
