@@ -870,7 +870,7 @@ $html .= '<div style="display:none">
                 $addbuttons = apply_filters('sp_cdm_add_buttons', $addbuttons);
 				$html .= $addbuttons;
 				if((get_option('sp_cu_user_projects') == 1  or current_user_can( 'manage_options' )) && sp_cdm_is_featured_disabled('base', 'disable_folders') == false){	
-			    $html .= '  <a href="#folder" class="sp_cdm_add_folder hide_add_folder_permission"><i class="fa fa-folder" aria-hidden="true"></i> ' . __("Add Folder", "sp-cdm") . '</a>  ';
+			//    $html .= '  <a href="#folder" class="sp_cdm_add_folder hide_add_folder_permission"><i class="fa fa-folder" aria-hidden="true"></i> ' . __("Add Folder", "sp-cdm") . '</a>  ';
 				}
 				$morebuttons = '';
                 $morebuttons .= apply_filters('sp_cdm_more_buttons', $morebuttons);
@@ -878,7 +878,7 @@ $html .= '<div style="display:none">
                 $html .= '   <a href="javascript:cdm_ajax_search()"  class="sp_cdm_refresh"><i class="fa fa-refresh" aria-hidden="true"></i> ' . __("Refresh", "sp-cdm") . '</a> ';
             }
 			if(sp_cdm_is_featured_disabled('base', 'disable_logout') == false){
-			$html .= '   <a href="'. cdm_logout_url().'"  class="sp_cdm_logout" ><i class="fa fa-sign-out" aria-hidden="true"></i> ' . __("Logout", "sp-cdm") . '</a> ';
+			//$html .= '   <a href="'. cdm_logout_url().'"  class="sp_cdm_logout" ><i class="fa fa-sign-out" aria-hidden="true"></i> ' . __("Logout", "sp-cdm") . '</a> ';
 			}
 			$html .='<div style="clear:both"></div>';
 			
