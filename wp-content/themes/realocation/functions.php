@@ -1529,6 +1529,24 @@ function my_action_javascript() { ?>
     <script type="text/javascript" >
         jQuery(document).ready(function($) {
 
+            /*jQuery("input#dlg-upload").on("click",function(e){
+                e.preventDefault();
+
+                if(jQuery("div.sp_upload_div").length < 1){
+
+                    jQuery("div#cdm_upload_fields").before("<span style='color:red;' id='message_data'>Please select some files to upload.</span>");
+
+                    setTimeout(function(){
+                        jQuery("span#message_data").remove();
+                    }, 2000);
+                    return false;
+                }
+                else{
+                    jQuery("form#upload_form").submit();
+                }
+
+            });*/
+
             var user_uid= jQuery("select#user_uid").val();
             var data = {
                 'action': 'my_action',

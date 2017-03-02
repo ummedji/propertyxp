@@ -359,7 +359,7 @@ $html .='
 			<p>
 			<label>' . __("File Name:", "sp-cdm") . '</label>
 
-    <input  type="text" name="dlg-upload-name" class="required"></p>
+    <input  type="hidden" name="dlg-upload-name" class=""></p>
 
   
 
@@ -388,16 +388,16 @@ $html .='
  <p>
 			<label>' . __("Tags:", "sp-cdm") . '</label>
 
-    <textarea id="tags" name="tags"  style="width:90%;height:30px"></textarea>
+    <textarea id="tags" name="tags"  style="width:90%;height:30px;"></textarea>
 
   </p>';
             }
             $html .= display_sp_cdm_form();
         } else {
             $html .= '<p>
-			<label>' . __("Notes:", "sp-cdm") . '</label>
+			<!--<label>' . __("Notes:", "sp-cdm") . '</label> -->
 
-    <textarea style="width:90%;height:50px" name="dlg-upload-notes"></textarea>
+    <textarea style="width:90%;height:50px;display:none;" name="dlg-upload-notes"></textarea>
 	</p>
 
   ';

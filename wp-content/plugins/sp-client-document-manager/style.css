@@ -179,9 +179,9 @@ overflow-y: scroll;}
 
 .sp_upload_div{border:1px solid #CCC;margin:2px;padding:2px; background-color:#FFF;}
 
-.sp_upload_div input{padding:1px;margin:1px;font-size:.6em !important;}
+.sp_upload_div input{padding:1px;margin:6px;font-size:.9em !important;}
 
-.sp_upload_name{width:360px;float:left;}
+.sp_upload_name{width:360px;float:left;padding: 8px;}
 
 
 
